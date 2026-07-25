@@ -53,8 +53,11 @@ jobs:
       # below works without it, since src/generated is gitignored.
       - run: npm ci
 
+      # Explicit flags rather than "$DATABASE_URL": that URL carries Prisma's
+      # ?schema=public parameter, which libpq rejects as an invalid URI query
+      # parameter.
       - name: Create the integration test database
-        run: psql "$DATABASE_URL" -c 'CREATE DATABASE bep_infra_tracker_test OWNER bep;'
+        run: psql -h localhost -p 5432 -U bep -d postgres -c 'CREATE DATABASE bep_infra_tracker_test OWNER bep;'
         env:
           PGPASSWORD: bep
 
