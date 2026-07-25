@@ -1,0 +1,366 @@
+// BEP AI Infrastructure Tracker — data model
+//
+// Design notes that are not obvious from the field names:
+//
+// * Money and capacity use Decimal, never Float. Float would silently lose
+//   precision on multi-billion-dollar capex sums in the analytics rollups.
+// * Project carries denormalised estimated*/confirmed* columns for fast table
+//   and dashboard queries, while ProjectMetric holds the full evidence trail
+//   (one row per claim, each with its own source and confidence). The columns
+//   are the "current best answer"; ProjectMetric is "how we know".
+// * Source has no DB-level unique on (projectId, url) because the spec allows an
+//   explicit override for legitimately duplicated URLs. Uniqueness is enforced
+//   in lib/services/sources.ts, which the override flag can bypass.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ---------------------------------------------------------------------------
+// Auth
+// ---------------------------------------------------------------------------
+
+enum Role {
+  ADMIN
+  ANALYST
+  VIEWER
+}
+
+model User {
+  id           String   @id @default(cuid())
+  name         String?
+  email        String   @unique
+  passwordHash String?
+  role         Role     @default(VIEWER)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  accounts  Account[]
+  sessions  Session[]
+  revisions ProjectRevision[]
+
+  @@index([role])
+}
+
+// Auth.js adapter models. Present so an OAuth provider can be added later
+// without a migration; the MVP authenticates with credentials only.
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@index([userId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// ---------------------------------------------------------------------------
+// Companies
+// ---------------------------------------------------------------------------
+
+enum CompanyType {
+  HYPERSCALER
+  NEOCLOUD
+  COLOCATION_PROVIDER
+  GPU_VENDOR
+  SERVER_VENDOR
+  NETWORKING_VENDOR
+  COOLING_VENDOR
+  POWER_VENDOR
+  UTILITY
+  CONSTRUCTION
+  REAL_ESTATE
+  GOVERNMENT
+  OTHER
+}
+
+model Company {
+  id                  String      @id @default(cuid())
+  name                String
+  slug                String      @unique
+  companyType         CompanyType
+  ticker              String?
+  website             String?
+  headquartersCountry String?
+  description         String?
+  createdAt           DateTime    @default(now())
+  updatedAt           DateTime    @updatedAt
+
+  ownedProjects Project[]        @relation("ProjectOwner")
+  projectLinks  ProjectCompany[]
+
+  @@index([companyType])
+  @@index([ticker])
+  @@index([name])
+}
+
+// ---------------------------------------------------------------------------
+// Projects
+// ---------------------------------------------------------------------------
+
+enum ProjectType {
+  AI_FACTORY
+  DATA_CENTER
+  GPU_CLUSTER
+  HYPERSCALE_CAMPUS
+  COLOCATION
+  SOVEREIGN_AI
+  HPC
+  POWER_PROJECT
+  OTHER
+}
+
+enum ProjectStatus {
+  RUMORED
+  ANNOUNCED
+  PLANNING
+  PERMITTING
+  UNDER_CONSTRUCTION
+  PARTIALLY_OPERATIONAL
+  OPERATIONAL
+  DELAYED
+  PAUSED
+  CANCELLED
+}
+
+model Project {
+  id             String  @id @default(cuid())
+  slug           String  @unique
+  name           String
+  description    String?
+  ownerCompanyId String?
+
+  projectType ProjectType
+  status      ProjectStatus
+
+  city        String?
+  stateRegion String?
+  country     String
+  latitude    Float?
+  longitude   Float?
+
+  announcementDate    DateTime?
+  expectedOpeningDate DateTime?
+  actualOpeningDate   DateTime?
+
+  // Capacity: Decimal(12,3) supports sub-MW precision at any realistic scale.
+  estimatedPowerMw  Decimal? @db.Decimal(12, 3)
+  confirmedPowerMw  Decimal? @db.Decimal(12, 3)
+  estimatedGpuCount Int?
+  confirmedGpuCount Int?
+  gpuModel          String?
+  computePlatform   String?
+
+  estimatedCapexUsd Decimal? @db.Decimal(18, 2)
+  confirmedCapexUsd Decimal? @db.Decimal(18, 2)
+
+  squareFeet        Int?
+  coolingTechnology String?
+  powerSource       String?
+  utilityProvider   String?
+
+  confidenceScore Int?
+  analystNotes    String?
+  lastVerifiedAt  DateTime?
+
+  // Every seeded row carries this flag so demo figures can never be mistaken
+  // for researched ones anywhere in the UI or in an export.
+  isDemoData Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  ownerCompany Company?          @relation("ProjectOwner", fields: [ownerCompanyId], references: [id], onDelete: SetNull)
+  companies    ProjectCompany[]
+  sources      Source[]
+  metrics      ProjectMetric[]
+  revisions    ProjectRevision[]
+  tags         Tag[]             @relation("ProjectTags")
+
+  @@index([status])
+  @@index([projectType])
+  @@index([country])
+  @@index([ownerCompanyId])
+  @@index([lastVerifiedAt])
+  @@index([expectedOpeningDate])
+  @@index([name])
+}
+
+enum ProjectCompanyRole {
+  OWNER
+  OPERATOR
+  DEVELOPER
+  TENANT
+  INVESTOR
+  GPU_SUPPLIER
+  SERVER_SUPPLIER
+  NETWORKING_SUPPLIER
+  COOLING_SUPPLIER
+  POWER_EQUIPMENT_SUPPLIER
+  UTILITY
+  CONSTRUCTION_PARTNER
+  LAND_OWNER
+  OTHER
+}
+
+model ProjectCompany {
+  id        String             @id @default(cuid())
+  projectId String
+  companyId String
+  role      ProjectCompanyRole
+  notes     String?
+  createdAt DateTime           @default(now())
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  company Company @relation(fields: [companyId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, companyId, role])
+  @@index([companyId])
+  @@index([projectId])
+}
+
+// ---------------------------------------------------------------------------
+// Evidence
+// ---------------------------------------------------------------------------
+
+enum SourceType {
+  COMPANY_ANNOUNCEMENT
+  SEC_FILING
+  EARNINGS_CALL
+  GOVERNMENT_FILING
+  PERMIT
+  UTILITY_FILING
+  NEWS_ARTICLE
+  INDUSTRY_REPORT
+  CONFERENCE
+  SOCIAL_MEDIA
+  OTHER
+}
+
+model Source {
+  id               String     @id @default(cuid())
+  projectId        String
+  title            String
+  publisher        String?
+  url              String
+  publicationDate  DateTime?
+  sourceType       SourceType
+  excerpt          String?
+  archivedUrl      String?
+  reliabilityScore Int?
+  isPrimarySource  Boolean    @default(false)
+  accessedAt       DateTime?
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
+
+  project Project         @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  metrics ProjectMetric[]
+
+  @@index([projectId])
+  @@index([sourceType])
+  @@index([url])
+}
+
+enum MetricType {
+  POWER_MW
+  GPU_COUNT
+  CAPEX_USD
+  SQUARE_FEET
+  RACK_COUNT
+  LAND_ACRES
+  PUE
+  OPENING_DATE
+  OTHER
+}
+
+enum ConfidenceLevel {
+  CONFIRMED
+  HIGH
+  MEDIUM
+  LOW
+  ESTIMATED
+}
+
+model ProjectMetric {
+  id         String     @id @default(cuid())
+  projectId  String
+  metricType MetricType
+  // Decimal(20,4) covers a PUE of 1.2345 and a capex of 500,000,000,000.00
+  // in the same column without a precision branch per metric type.
+  numericValue Decimal? @db.Decimal(20, 4)
+  textValue    String?
+  unit         String?
+
+  confidenceLevel ConfidenceLevel
+  methodology     String?
+  effectiveDate   DateTime?
+  sourceId        String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  source  Source? @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+
+  @@index([projectId])
+  @@index([metricType])
+  @@index([sourceId])
+}
+
+model ProjectRevision {
+  id            String   @id @default(cuid())
+  projectId     String
+  userId        String?
+  changeSummary String
+  previousData  Json?
+  newData       Json?
+  createdAt     DateTime @default(now())
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  user    User?   @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([projectId, createdAt])
+  @@index([userId])
+}
+
+model Tag {
+  id   String @id @default(cuid())
+  name String @unique
+  slug String @unique
+
+  projects Project[] @relation("ProjectTags")
+}

@@ -1,0 +1,27 @@
+# Postgres for local development. The app itself runs on the host via
+# `npm run dev` — only the database is containerised, which keeps the
+# edit/reload loop fast.
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: bep-infra-tracker-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: bep
+      POSTGRES_PASSWORD: bep
+      POSTGRES_DB: bep_infra_tracker
+    ports:
+      - "5432:5432"
+    volumes:
+      - bep_pgdata:/var/lib/postgresql/data
+      # Creates the test database on first boot so the integration suite has
+      # somewhere to run without a manual createdb step.
+      - ./docker/init-test-db.sql:/docker-entrypoint-initdb.d/init-test-db.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bep -d bep_infra_tracker"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  bep_pgdata:

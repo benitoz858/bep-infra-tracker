@@ -1,26 +1,118 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ---------------------------------------------------------------------------
+   BEP institutional terminal theme.
+
+   Palette is carried over from the BEP Research site's tailwind tokens so the
+   tracker reads as part of the same product family. Dark only, by design — this
+   is a terminal, not a marketing site, so there is no light mode to maintain.
+   --------------------------------------------------------------------------- */
+
+@theme {
+  /* Surfaces */
+  --color-bg: #0a0a0a;
+  --color-panel: #111111;
+  --color-panel-2: #161616;
+  --color-line: #262626;
+  --color-line-2: #333333;
+
+  /* Text */
+  --color-fg: #e8e8e8;
+  --color-fg-dim: #9a9a9a;
+  --color-fg-muted: #6b6b6b;
+
+  /* Accents */
+  --color-cyan: #00d4ff;
+  --color-green: #76b900;
+  --color-amber: #ffb800;
+  --color-red: #ff4444;
+  --color-purple: #a855f7;
+
+  /* Status semantics. Kept as their own tokens rather than reusing the accent
+     names so a status colour can be retuned without touching UI chrome. */
+  --color-status-operational: #76b900;
+  --color-status-construction: #ffb800;
+  --color-status-risk: #ff4444;
+  --color-status-planned: #00d4ff;
+  --color-status-inert: #6b6b6b;
+
+  /* Loaded by next/font in app/layout.tsx; fallbacks cover the swap window. */
+  --font-sans:
+    var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono:
+    var(--font-jetbrains-mono), "SF Mono", ui-monospace, Menlo, Consolas, monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  * {
+    border-color: var(--color-line);
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "tnum" 1; /* tabular figures: columns of numbers align */
+  }
+
+  /* Numeric and identifier content is monospaced throughout the app; declaring
+     it once here keeps the table cells from each restating it. */
+  .num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-cyan) 30%, transparent);
+  }
+
+  /* Visible focus for keyboard users — required for the command palette and
+     the dense tables to be navigable without a mouse. */
+  :focus-visible {
+    outline: 2px solid var(--color-cyan);
+    outline-offset: 2px;
+  }
+
+  /* Scrollbars tuned for dark panels; default macOS light scrollbars flash
+     white against #0A0A0A on scroll. */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a2a2a;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3a3a3a;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* Section eyebrow label — small, tracked-out, uppercase mono. Used above
+     every panel so scanning the page reads like a terminal readout. */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-fg-dim);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

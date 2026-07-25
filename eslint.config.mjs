@@ -12,6 +12,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Prisma output is regenerated on every schema change and is not ours to fix.
+    "src/generated/**",
+    "playwright-report/**",
+    "test-results/**",
   ]),
 ]);
 
