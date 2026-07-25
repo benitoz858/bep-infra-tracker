@@ -1,5 +1,7 @@
 import type { Prisma } from "@/generated/prisma/client";
 import { prisma } from "@/lib/db";
+import { NotFoundError } from "@/lib/services/errors";
+import { recordRevision } from "@/lib/services/revisions";
 import { toNumber } from "@/lib/format";
 
 /**
@@ -230,10 +232,45 @@ export async function getVerificationQueue(now = new Date()): Promise<QueueItem[
   );
 }
 
-/** Stamp a project as verified now. Used by the queue's quick actions. */
-export async function markVerified(projectId: string): Promise<void> {
-  await prisma.project.update({
+/**
+ * Stamp a project as verified and record who did it.
+ *
+ * The update and the revision are one transaction: a verification that left no
+ * audit entry would make "when was this last checked, and by whom" unanswerable,
+ * which is the only reason the queue is trustworthy. This is the single path for
+ * marking verified — the API route calls it rather than reimplementing it.
+ */
+export async function markProjectVerified(
+  projectId: string,
+  userId: string | null,
+  now = new Date(),
+): Promise<{ id: string; slug: string; lastVerifiedAt: Date | null }> {
+  const existing = await prisma.project.findUnique({
     where: { id: projectId },
-    data: { lastVerifiedAt: new Date() },
+    select: { id: true, lastVerifiedAt: true },
+  });
+  if (!existing) throw new NotFoundError("Project");
+
+  return prisma.$transaction(async (tx) => {
+    const project = await tx.project.update({
+      where: { id: projectId },
+      data: { lastVerifiedAt: now },
+      select: { id: true, slug: true, lastVerifiedAt: true },
+    });
+
+    await recordRevision(tx, {
+      projectId,
+      userId,
+      diffs: [
+        {
+          field: "lastVerifiedAt",
+          from: existing.lastVerifiedAt?.toISOString() ?? null,
+          to: now.toISOString(),
+        },
+      ],
+      summary: "Marked as verified.",
+    });
+
+    return project;
   });
 }

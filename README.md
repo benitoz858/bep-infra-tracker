@@ -199,6 +199,23 @@ revision. It does not change any figure, so a stale number stays stale.
 | Delete        | ✅    | —       | —      |
 | Manage users  | ✅    | —       | —      |
 
+Roles are capability-based (`src/lib/capabilities.ts`): code asks
+`can(role, "record:edit")`, never `role === "ADMIN"`, so adding a role is a change
+to one table rather than a hunt through call sites.
+
+Admins manage accounts at **/admin/users** — create users, change roles and
+delete accounts. Two invariants are enforced in the service, not just the UI, so
+an API caller cannot bypass them:
+
+- you cannot change your own role or delete your own account
+- the last remaining admin cannot be demoted or deleted
+
+Deleting a user keeps their edit history; `ProjectRevision.userId` is
+`onDelete: SetNull`, so past revisions show as "System" rather than vanishing.
+
+There is no invite email or self-service password change in this MVP: an admin
+sets an initial password and passes it on out of band.
+
 ---
 
 ## Demo data
@@ -225,7 +242,11 @@ Integration tests run against `TEST_DATABASE_URL` and truncate it between tests.
 npx dotenv -e .env -- sh -c 'DATABASE_URL="$TEST_DATABASE_URL" npx prisma migrate deploy'
 ```
 
-Current suite: 142 unit + integration tests, 2 Playwright specs.
+Current suite: 152 unit + integration tests, 2 Playwright specs.
+
+CI (`.github/workflows/ci.yml`) runs typecheck, lint, the full unit/integration
+suite, a production build and the Playwright specs against a Postgres 17 service
+container on every push and pull request.
 
 ---
 

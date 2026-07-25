@@ -17,6 +17,7 @@ export const metadata: Metadata = { title: "Source inbox" };
 
 export default async function SourcesPage() {
   const user = await requireUser();
+  const canCreate = can(user.role, "record:create");
   const [recent, missing] = await Promise.all([
     listRecentSources(40),
     listProjectsMissingSources(20),
@@ -152,9 +153,11 @@ export default async function SourcesPage() {
                       >
                         {p.name}
                       </Link>
-                      <Button asChild variant="ghost" size="sm">
-                        <Link href={`/sources/new?projectId=${p.id}`}>Add</Link>
-                      </Button>
+                      {canCreate ? (
+                        <Button asChild variant="ghost" size="sm">
+                          <Link href={`/sources/new?projectId=${p.id}`}>Add</Link>
+                        </Button>
+                      ) : null}
                     </li>
                   ))}
                 </ul>

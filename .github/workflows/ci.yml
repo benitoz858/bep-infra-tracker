@@ -1,0 +1,95 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  # A new push to the same ref cancels the in-flight run.
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: bep
+          POSTGRES_PASSWORD: bep
+          POSTGRES_DB: bep_infra_tracker
+        ports: ["5432:5432"]
+        # Without this the job races the container and the first migration fails.
+        options: >-
+          --health-cmd "pg_isready -U bep"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 12
+
+    env:
+      DATABASE_URL: postgresql://bep:bep@localhost:5432/bep_infra_tracker?schema=public
+      TEST_DATABASE_URL: postgresql://bep:bep@localhost:5432/bep_infra_tracker_test?schema=public
+      AUTH_SECRET: ci-only-secret-not-used-in-any-deployment
+      AUTH_TRUST_HOST: "true"
+      SEED_ADMIN_EMAIL: admin@bepresearch.com
+      SEED_ADMIN_PASSWORD: bep-dev-admin
+      SEED_ADMIN_NAME: BEP Admin
+      CI: "true"
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      # `npm ci` runs postinstall, which generates the Prisma client. Nothing
+      # below works without it, since src/generated is gitignored.
+      - run: npm ci
+
+      - name: Create the integration test database
+        run: psql "$DATABASE_URL" -c 'CREATE DATABASE bep_infra_tracker_test OWNER bep;'
+        env:
+          PGPASSWORD: bep
+
+      - name: Apply migrations
+        run: npx prisma migrate deploy
+
+      - name: Apply migrations to the test database
+        run: npx prisma migrate deploy
+        env:
+          DATABASE_URL: ${{ env.TEST_DATABASE_URL }}
+
+      - run: npm run db:seed
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Unit and integration tests
+        run: npm run test
+
+      - name: Build
+        run: npm run build
+
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
+      - name: End-to-end tests
+        run: npm run test:e2e
+
+      - name: Upload Playwright report on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7

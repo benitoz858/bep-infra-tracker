@@ -9,6 +9,7 @@ import {
   EvidenceTable,
   SourceList,
 } from "@/components/projects/evidence-section";
+import { DeleteProjectButton } from "@/components/projects/delete-project-button";
 import { ProjectMiniList } from "@/components/project-mini-list";
 import { ConfidenceMeter, DemoDataBadge, StatusBadge } from "@/components/status-badge";
 import { Badge } from "@/components/ui/badge";
@@ -143,12 +144,28 @@ export default async function ProjectDetailPage({
                 </Link>
               </Button>
             ) : null}
-            <Button asChild variant="outline" size="sm">
-              <Link href={`/sources/new?projectId=${project.id}`}>Add source</Link>
-            </Button>
+            {can(user.role, "record:create") ? (
+              <Button asChild variant="outline" size="sm">
+                <Link href={`/sources/new?projectId=${project.id}`}>Add source</Link>
+              </Button>
+            ) : null}
           </>
         }
       />
+
+      {can(user.role, "record:delete") ? (
+        <div className="mb-4">
+          <DeleteProjectButton
+            projectId={project.id}
+            projectName={project.name}
+            counts={{
+              sources: project.sources.length,
+              metrics: project.metrics.length,
+              revisions: project.revisions.length,
+            }}
+          />
+        </div>
+      ) : null}
 
       <div className="mb-4 flex flex-wrap items-center gap-2">
         <StatusBadge status={project.status} />
@@ -383,9 +400,11 @@ export default async function ProjectDetailPage({
         <Panel className="lg:col-span-2">
           <PanelHeader>
             <PanelTitle>Sources</PanelTitle>
-            <Button asChild variant="ghost" size="sm">
-              <Link href={`/sources/new?projectId=${project.id}`}>Add source</Link>
-            </Button>
+            {can(user.role, "record:create") ? (
+              <Button asChild variant="ghost" size="sm">
+                <Link href={`/sources/new?projectId=${project.id}`}>Add source</Link>
+              </Button>
+            ) : null}
           </PanelHeader>
           <PanelBody className="pt-0">
             <SourceList sources={project.sources} />

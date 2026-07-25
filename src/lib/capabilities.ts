@@ -40,3 +40,19 @@ export function can(role: Role | undefined | null, capability: Capability): bool
   if (!role) return false;
   return CAPABILITIES[role].includes(capability);
 }
+
+/** Every capability a role holds. Used to hide nav items the role cannot use. */
+export function capabilitiesFor(role: Role | undefined | null): Capability[] {
+  if (!role) return [];
+  return [...CAPABILITIES[role]];
+}
+
+/** The full capability list, for exhaustiveness checks in tests. */
+export const ALL_CAPABILITIES: Capability[] = [
+  "record:create",
+  "record:edit",
+  "record:delete",
+  "data:export",
+  "data:import",
+  "user:manage",
+];

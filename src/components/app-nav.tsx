@@ -9,10 +9,12 @@ import {
   PieChart,
   ShieldCheck,
   Upload,
+  Users,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import type { Capability } from "@/lib/capabilities";
 import { cn } from "@/lib/utils";
 
 const NAV = [
@@ -23,15 +25,27 @@ const NAV = [
   { href: "/companies", label: "Companies", icon: Building2 },
   { href: "/sources", label: "Source inbox", icon: Inbox },
   { href: "/verification", label: "Verification", icon: ShieldCheck },
-  { href: "/import", label: "Import", icon: Upload },
-] as const;
+  { href: "/import", label: "Import", icon: Upload, requires: "data:import" },
+  { href: "/admin/users", label: "Users", icon: Users, requires: "user:manage" },
+] as const satisfies readonly {
+  href: string;
+  label: string;
+  icon: typeof Users;
+  requires?: Capability;
+}[];
 
-export function AppNav() {
+export function AppNav({ capabilities }: { capabilities: Capability[] }) {
   const pathname = usePathname();
+
+  // Hiding a link is presentation only — every page and API route re-checks the
+  // capability server-side, so a hidden link is not the access control.
+  const visible = NAV.filter(
+    (item) => !("requires" in item) || capabilities.includes(item.requires),
+  );
 
   return (
     <nav aria-label="Main" className="flex items-center gap-0.5 overflow-x-auto">
-      {NAV.map(({ href, label, icon: Icon }) => {
+      {visible.map(({ href, label, icon: Icon }) => {
         // Section-level match so /projects/foo keeps "Projects" active.
         const active = pathname === href || pathname.startsWith(`${href}/`);
         return (

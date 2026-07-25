@@ -3,7 +3,7 @@ import { afterAll, beforeEach, describe, expect, it } from "vitest";
 import {
   STALE_AFTER_DAYS,
   getVerificationQueue,
-  markVerified,
+  markProjectVerified,
 } from "@/lib/services/verification";
 import { disconnectTestDb, resetDatabase, testDb } from "../helpers/db";
 import { makeProject } from "../helpers/factories";
@@ -183,7 +183,7 @@ describe("verification queue rules", () => {
   });
 });
 
-describe("markVerified", () => {
+describe("markProjectVerified", () => {
   it("clears the staleness reason but leaves other reasons standing", async () => {
     const project = await makeProject({
       name: "Partly Fixed",
@@ -196,11 +196,40 @@ describe("markVerified", () => {
     expect(before[0]!.reasons).toContain("stale_verification");
     expect(before[0]!.reasons).toContain("single_source");
 
-    await markVerified(project.id);
+    await markProjectVerified(project.id, null);
 
     const after = await getVerificationQueue();
     // Still queued — verifying does not add a source.
     expect(after).toHaveLength(1);
     expect(after[0]!.reasons).toEqual(["single_source"]);
+  });
+
+  it("records a revision so the check is auditable", async () => {
+    const project = await makeProject({
+      name: "Audited Verification",
+      status: "OPERATIONAL",
+      lastVerifiedAt: daysAgo(200),
+      sourceCount: 2,
+    });
+    const user = await testDb.user.create({
+      data: { email: "checker@bepresearch.com", role: "ANALYST" },
+    });
+
+    await markProjectVerified(project.id, user.id);
+
+    const revisions = await testDb.projectRevision.findMany({
+      where: { projectId: project.id },
+      orderBy: { createdAt: "desc" },
+    });
+    expect(revisions[0]?.changeSummary).toMatch(/verified/i);
+    expect(revisions[0]?.userId).toBe(user.id);
+    // The diff names the field that changed, so history is inspectable.
+    expect(revisions[0]?.newData).toHaveProperty("lastVerifiedAt");
+  });
+
+  it("rejects an unknown project id rather than silently doing nothing", async () => {
+    await expect(markProjectVerified("does-not-exist", null)).rejects.toThrow(
+      /not found/i,
+    );
   });
 });

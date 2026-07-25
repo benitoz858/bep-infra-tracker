@@ -14,6 +14,7 @@ import {
   formatPowerScaled,
   formatUsdCompact,
 } from "@/lib/format";
+import { can, requireUser } from "@/lib/permissions";
 import {
   getDashboardSummary,
   getPowerByCountry,
@@ -26,6 +27,7 @@ import {
 export const metadata: Metadata = { title: "Dashboard" };
 
 export default async function DashboardPage() {
+  const user = await requireUser();
   const [summary, statuses, byCountry, byOwner, recent, updated] = await Promise.all([
     getDashboardSummary(),
     getStatusBreakdown(),
@@ -61,9 +63,11 @@ export default async function DashboardPage() {
             <Button asChild variant="outline" size="sm">
               <Link href="/projects">Open database</Link>
             </Button>
-            <Button asChild variant="primary" size="sm">
-              <Link href="/projects/new">Add project</Link>
-            </Button>
+            {can(user.role, "record:create") ? (
+              <Button asChild variant="primary" size="sm">
+                <Link href="/projects/new">Add project</Link>
+              </Button>
+            ) : null}
           </>
         }
       />
