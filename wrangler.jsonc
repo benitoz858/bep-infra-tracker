@@ -15,6 +15,15 @@
     "binding": "ASSETS"
   },
 
+  // Custom domain. `custom_domain: true` makes wrangler create and manage the
+  // DNS record itself, which requires the zone to be in this Cloudflare account.
+  "routes": [
+    {
+      "pattern": "tracker.bepresearch.com",
+      "custom_domain": true
+    }
+  ],
+
   "observability": {
     "enabled": true
   },
@@ -34,6 +43,11 @@
   // AUTH_SECRET and NEXT_PUBLIC_MAPBOX_TOKEN are set with `wrangler secret put`
   // and live only in Cloudflare.
   "vars": {
-    "AUTH_TRUST_HOST": "true"
+    "AUTH_TRUST_HOST": "true",
+    // Pinned to the canonical origin so sign-in redirects always land on the
+    // custom domain, even when a request arrives via the workers.dev hostname.
+    // This must stay unset in development — hardcoding it there sends redirects
+    // to the wrong port.
+    "AUTH_URL": "https://tracker.bepresearch.com"
   }
 }
