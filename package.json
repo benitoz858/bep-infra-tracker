@@ -22,7 +22,9 @@
     "test:e2e": "playwright test",
     "test:e2e:install": "playwright install chromium",
     "check": "npm run typecheck && npm run lint && npm run test",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "ingest": "tsx scripts/ingest.ts",
+    "ingest:list": "tsx scripts/ingest.ts --list"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.11.3",

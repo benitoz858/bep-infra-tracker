@@ -1,0 +1,63 @@
+name: Ingest
+
+# Runs the watchers on a schedule and stages what they find for human review.
+# Nothing this workflow writes appears in any dashboard total: candidates land
+# in the ingestion staging tables and only become evidence when someone accepts
+# them at /ingest.
+on:
+  schedule:
+    # 06:15 UTC daily — after US market close and before the London morning.
+    - cron: "15 6 * * *"
+  workflow_dispatch:
+    inputs:
+      watcher:
+        description: "Single watcher key (blank = all)"
+        required: false
+      since:
+        description: "ISO date to look back to (blank = 7 days)"
+        required: false
+
+concurrency:
+  # Never let two ingest runs overlap: they would race on the URL unique index.
+  group: ingest
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    # DATABASE_URL must point at the deployed database. Until the app is
+    # deployed this job has nowhere to write, so it exits early rather than
+    # failing noisily every morning.
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Check the database secret is configured
+        id: guard
+        run: |
+          if [ -z "${DATABASE_URL}" ]; then
+            echo "DATABASE_URL secret is not set — skipping."
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - if: steps.guard.outputs.configured == 'true'
+        run: npm ci
+
+      - if: steps.guard.outputs.configured == 'true'
+        name: Run watchers
+        run: |
+          ARGS=""
+          if [ -n "${{ inputs.watcher }}" ]; then ARGS="$ARGS --watcher ${{ inputs.watcher }}"; fi
+          if [ -n "${{ inputs.since }}" ]; then ARGS="$ARGS --since ${{ inputs.since }}"; fi
+          npm run ingest -- $ARGS

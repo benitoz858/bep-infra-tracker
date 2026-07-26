@@ -10,6 +10,7 @@ import {
   ShieldCheck,
   Upload,
   Users,
+  Bot,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -25,6 +26,7 @@ const NAV = [
   { href: "/companies", label: "Companies", icon: Building2 },
   { href: "/sources", label: "Source inbox", icon: Inbox },
   { href: "/verification", label: "Verification", icon: ShieldCheck },
+  { href: "/ingest", label: "Agent inbox", icon: Bot, requires: "record:create" },
   { href: "/import", label: "Import", icon: Upload, requires: "data:import" },
   { href: "/admin/users", label: "Users", icon: Users, requires: "user:manage" },
 ] as const satisfies readonly {

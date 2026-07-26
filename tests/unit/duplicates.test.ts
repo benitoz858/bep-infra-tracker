@@ -29,7 +29,16 @@ describe("normalizeName", () => {
   });
 
   it("strips domain noise words that carry no information", () => {
-    expect(normalizeName("The Denton AI Factory Project")).toBe("denton factory");
+    // "factory" was added to the noise list after agent ingestion matched every
+    // "AI Factories" headline to the seeded "Denton AI Factory". Like "campus"
+    // and "facility" before it, the word describes the category, not the asset.
+    //
+    // The tradeoff is accepted deliberately: "Denton AI Factory" and "Denton
+    // Data Center" now normalise alike, so duplicate detection will flag them
+    // as possible matches. That is the safer error — detection is advisory and
+    // the analyst can dismiss it, whereas a missed duplicate silently splits
+    // one campus across two records and double-counts its megawatts.
+    expect(normalizeName("The Denton AI Factory Project")).toBe("denton");
   });
 
   it("normalises accents so the same place matches", () => {

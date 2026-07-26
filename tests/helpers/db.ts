@@ -22,6 +22,8 @@ export const testDb = new PrismaClient({
 export async function resetDatabase(): Promise<void> {
   await testDb.$executeRawUnsafe(`
     TRUNCATE TABLE
+      "IngestionCandidate",
+      "IngestionRun",
       "ProjectRevision",
       "ProjectMetric",
       "Source",

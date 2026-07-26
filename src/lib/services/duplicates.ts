@@ -24,7 +24,7 @@ export function normalizeName(input: string): string {
       .replace(/\bphase\s*(three|3|iii)\b/g, "phase3")
       // Words that carry no distinguishing information in this domain.
       .replace(
-        /\b(the|a|an|data ?cent(er|re)|datacent(er|re)|campus|site|project|facility|cluster|region|expansion|ai)\b/g,
+        /\b(the|a|an|data ?cent(er|re)|datacent(er|re)|campus|site|project|facility|facilities|factory|factories|cluster|region|expansion|ai)\b/g,
         " ",
       )
       .replace(/[^a-z0-9]+/g, " ")

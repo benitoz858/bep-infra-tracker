@@ -250,6 +250,51 @@ container on every push and pull request.
 
 ---
 
+## Agent ingestion
+
+Automated watchers poll publisher-operated feeds and stage what they find at
+**/ingest**. They never write to `Project`, `Source` or `ProjectMetric`.
+
+```bash
+npm run ingest:list                        # available watchers
+npm run ingest                             # all watchers, last 7 days
+npm run ingest -- --watcher rss:aws-news
+npm run ingest -- --since 2026-01-01 --limit 20
+```
+
+A scheduled workflow (`.github/workflows/ingest.yml`) runs this daily once the
+`DATABASE_URL` secret is set; until then it exits early rather than failing
+every morning.
+
+**The rule the design turns on: an agent proposes, a human commits.** A crawler
+writing straight into `confirmedPowerMw` would move the dashboard totals on
+unreviewed machine output and make the confidence levels meaningless. So:
+
+1. a watcher finds an item and stages an `IngestionCandidate`
+2. the heuristic extractor proposes claims, always at `LOW`, always quoting the
+   sentence it read the number from
+3. a reviewer picks the project, ticks only the claims the source supports, and
+   accepts
+4. acceptance calls the same `createSourceWithClaims` the manual inbox uses, so
+   URL uniqueness, the confirmed-needs-a-source rule and revision writing all
+   still apply
+
+Claims are capped at `LOW` in the service, not merely in the UI — an extractor
+cannot launder its own guess into a fact. Raising confidence is a separate,
+deliberate edit.
+
+Rejection is recorded rather than deleted, so the same URL is not re-proposed on
+the next run. Failed watcher runs are surfaced on /ingest: a feed that silently
+stops returning results otherwise looks identical to a quiet week.
+
+Coverage is honest but narrow. Newsroom feeds carry announcements; the
+confirmable numbers live in permit dockets and interconnection queues, and most
+of those need per-jurisdiction work rather than one generic crawler. An LLM
+extractor is stubbed in `lib/ingest/extract.ts` but not implemented — it needs
+its own evaluation before anything it says goes near the queue.
+
+---
+
 ## Known limitations
 
 - **The map is not verified end-to-end.** Without a Mapbox token the render path

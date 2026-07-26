@@ -43,6 +43,7 @@ model User {
   accounts  Account[]
   sessions  Session[]
   revisions ProjectRevision[]
+  reviewedCandidates IngestionCandidate[]
 
   @@index([role])
 }
@@ -211,6 +212,8 @@ model Project {
   revisions    ProjectRevision[]
   tags         Tag[]             @relation("ProjectTags")
 
+  ingestionCandidates IngestionCandidate[] @relation("SuggestedProject")
+
   @@index([status])
   @@index([projectType])
   @@index([country])
@@ -363,4 +366,106 @@ model Tag {
   slug String @unique
 
   projects Project[] @relation("ProjectTags")
+}
+
+// ---------------------------------------------------------------------------
+// Agent ingestion (staging)
+//
+// Automated watchers write here, never into Project/Source/ProjectMetric. The
+// reason is the whole editorial premise of the product: a figure is only worth
+// citing because a human read the source and said so. If a crawler could write
+// straight into confirmedPowerMw, the dashboard totals would move on unreviewed
+// machine output and the confidence levels would stop meaning anything.
+//
+// A candidate is promoted by lib/services/ingestion.ts, which calls the same
+// sources service the manual inbox uses — so URL-uniqueness, the
+// confirmed-needs-a-source rule and revision writing all still apply on accept.
+// ---------------------------------------------------------------------------
+
+enum IngestionStatus {
+  PENDING
+  ACCEPTED
+  REJECTED
+  /// Superseded because the same URL was already cited on the target project.
+  DUPLICATE
+}
+
+enum IngestionRunStatus {
+  RUNNING
+  COMPLETED
+  FAILED
+}
+
+model IngestionRun {
+  id         String             @id @default(cuid())
+  /// Watcher key, e.g. "rss:microsoft-newsroom".
+  watcher    String
+  status     IngestionRunStatus @default(RUNNING)
+  startedAt  DateTime           @default(now())
+  finishedAt DateTime?
+  /// Items the watcher saw, before dedup.
+  itemsSeen  Int                @default(0)
+  /// Candidates actually written (new to us).
+  itemsNew   Int                @default(0)
+  /// Populated when status is FAILED. A failed run must be visible, not silent:
+  /// a watcher that quietly stops returning results looks identical to "no news".
+  error      String?
+
+  candidates IngestionCandidate[]
+
+  @@index([watcher, startedAt])
+  @@index([status])
+}
+
+model IngestionCandidate {
+  id      String          @id @default(cuid())
+  runId   String
+  status  IngestionStatus @default(PENDING)
+
+  // --- the proposed source ---
+  url             String
+  title           String
+  publisher       String?
+  publicationDate DateTime?
+  sourceType      SourceType @default(NEWS_ARTICLE)
+  excerpt         String?
+
+  /// Best guess at which project this concerns; null means the reviewer must
+  /// pick one (or create the project first).
+  suggestedProjectId String?
+  /// 0-100. How confident the matcher is about suggestedProjectId — not about
+  /// the claims themselves, which carry their own ConfidenceLevel.
+  matchScore         Int?
+  /// Why it matched, shown to the reviewer so the suggestion is auditable
+  /// rather than an opaque nudge.
+  matchReason        String?
+
+  /// Proposed claims, shaped like candidateClaimSchema. Held as JSON rather
+  /// than rows because nothing here is a fact yet — it is a suggestion awaiting
+  /// judgement, and giving it a ProjectMetric row would imply otherwise.
+  proposedClaims Json?
+
+  /// Which extractor produced the claims ("none", "heuristic", "claude:<model>"),
+  /// so a bad extractor's output can be found and re-reviewed later.
+  extractor String @default("none")
+
+  reviewedAt     DateTime?
+  reviewedById   String?
+  reviewNote     String?
+  /// Set on accept, linking the candidate to what it became.
+  createdSourceId String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  run               IngestionRun @relation(fields: [runId], references: [id], onDelete: Cascade)
+  suggestedProject  Project?     @relation("SuggestedProject", fields: [suggestedProjectId], references: [id], onDelete: SetNull)
+  reviewedBy        User?        @relation(fields: [reviewedById], references: [id], onDelete: SetNull)
+
+  /// The dedup key. A watcher re-run must not re-propose what it already
+  /// proposed, so the same URL can only appear once across all runs.
+  @@unique([url])
+  @@index([status, createdAt])
+  @@index([suggestedProjectId])
+  @@index([runId])
 }
