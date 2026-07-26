@@ -334,10 +334,39 @@ its own evaluation before anything it says goes near the queue.
 The app needs a server runtime and a hosted Postgres; it cannot be a static
 export. Production data lives on Neon.
 
+Live at **https://bep-infra-tracker.benitos.workers.dev** (Cloudflare Workers +
+Neon Postgres).
+
 ```bash
 npm run db:migrate:production      # apply migrations to PRODUCTION_DATABASE_URL
 npm run db:seed:admin:production   # create/update the admin user — and nothing else
+npm run cf:build                   # build for Workers (swaps in the workerd Prisma client)
+npm run cf:deploy                  # build + deploy
 ```
+
+Secrets live in Cloudflare, not in `wrangler.jsonc` (which is committed):
+
+```bash
+npx wrangler secret put DATABASE_URL
+npx wrangler secret put AUTH_SECRET
+npx wrangler secret put NEXT_PUBLIC_MAPBOX_TOKEN
+```
+
+### Three things the Workers build needs, none of them obvious
+
+1. **`rules: [{ type: "CompiledWasm", globs: ["**/*.wasm"] }]` in wrangler.jsonc.**
+   Prisma 7's query compiler is WASM, and Workers refuse to compile WASM from
+   bytes at runtime — "Wasm code generation disallowed by embedder". This rule is
+   what makes the platform compile it ahead of time instead. Without it every
+   database call fails and Auth.js reports a generic `Configuration` error that
+   says nothing about the real cause.
+2. **A `runtime = "workerd"` Prisma client**, swapped in on disk by
+   `scripts/cf-build.mjs`. A package.json conditional subpath import looks like
+   the right tool and is not: `next build` resolves and inlines the import before
+   the OpenNext esbuild pass, which is the only step that applies the `workerd`
+   condition. The generator also does not emit the `.wasm` its own import points
+   at, so the script copies it from the CLI package.
+3. **No `proxy.ts`.** See `docs/auth-notes.md`.
 
 **Demo data never goes to production.** `npm run db:seed` writes 16 demo
 projects and 8 demo restrictions for UI development; a live tracker whose

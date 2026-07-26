@@ -19,6 +19,17 @@
     "enabled": true
   },
 
+  // Prisma's workerd client imports its query compiler as a WASM module. Workers
+  // refuse to compile WASM from bytes at runtime, so it has to arrive as a module
+  // the platform compiles ahead of time — which is what this rule declares.
+  "rules": [
+    {
+      "type": "CompiledWasm",
+      "globs": ["**/*.wasm"],
+      "fallthrough": true
+    }
+  ],
+
   // Secrets are NOT listed here — this file is committed. DATABASE_URL,
   // AUTH_SECRET and NEXT_PUBLIC_MAPBOX_TOKEN are set with `wrangler secret put`
   // and live only in Cloudflare.
