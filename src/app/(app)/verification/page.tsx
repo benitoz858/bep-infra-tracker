@@ -12,7 +12,7 @@ import { Table, TableWrap, Td, Th, Tr } from "@/components/ui/table";
 import { VerifyButton } from "@/components/verification/verify-button";
 import type { ProjectStatus } from "@/generated/prisma/enums";
 import { formatCount, formatDate, formatRelative } from "@/lib/format";
-import { can, requireUser } from "@/lib/permissions";
+import { can, getSessionUser } from "@/lib/permissions";
 import {
   REVIEW_REASON_LABEL,
   STALE_AFTER_DAYS,
@@ -31,7 +31,7 @@ const EVIDENCE_REASONS: ReviewReason[] = [
 ];
 
 export default async function VerificationPage() {
-  const user = await requireUser();
+  const user = await getSessionUser();
   const queue = await getVerificationQueue();
 
   const counts = queue.reduce<Record<string, number>>((acc, item) => {
@@ -98,7 +98,7 @@ export default async function VerificationPage() {
                   <Th className="text-right">Sources</Th>
                   <Th>Last verified</Th>
                   <Th>Expected opening</Th>
-                  {can(user.role, "record:edit") ? <Th>Actions</Th> : null}
+                  {can(user?.role, "record:edit") ? <Th>Actions</Th> : null}
                 </tr>
               </thead>
               <tbody>
@@ -149,7 +149,7 @@ export default async function VerificationPage() {
                     <Td className="num whitespace-nowrap text-fg-dim">
                       {formatDate(item.expectedOpeningDate)}
                     </Td>
-                    {can(user.role, "record:edit") ? (
+                    {can(user?.role, "record:edit") ? (
                       <Td>
                         <div className="flex items-center gap-1.5">
                           <VerifyButton projectId={item.id} />

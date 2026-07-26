@@ -10,14 +10,14 @@ import { EmptyState } from "@/components/ui/misc";
 import { Table, TableWrap, Td, Th, Tr } from "@/components/ui/table";
 import { SOURCE_TYPE_LABEL } from "@/lib/domain";
 import { formatDate, formatRelative } from "@/lib/format";
-import { can, requireUser } from "@/lib/permissions";
+import { can, getSessionUser } from "@/lib/permissions";
 import { listProjectsMissingSources, listRecentSources } from "@/lib/services/sources";
 
 export const metadata: Metadata = { title: "Source inbox" };
 
 export default async function SourcesPage() {
-  const user = await requireUser();
-  const canCreate = can(user.role, "record:create");
+  const user = await getSessionUser();
+  const canCreate = can(user?.role, "record:create");
   const [recent, missing] = await Promise.all([
     listRecentSources(40),
     listProjectsMissingSources(20),
@@ -29,7 +29,7 @@ export default async function SourcesPage() {
         title="Source inbox"
         subtitle="Paste a URL, record what it says, and turn its claims into cited metrics. Nothing is auto-extracted — every figure is entered by the analyst who read the source."
         actions={
-          can(user.role, "record:create") ? (
+          can(user?.role, "record:create") ? (
             <Button asChild variant="primary" size="sm">
               <Link href="/sources/new">Add source</Link>
             </Button>

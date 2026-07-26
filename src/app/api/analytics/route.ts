@@ -1,5 +1,4 @@
 import { handler, ok } from "@/lib/api";
-import { requireUser } from "@/lib/permissions";
 import {
   getCapacityByYear,
   getCoolingMix,
@@ -16,7 +15,6 @@ import {
 } from "@/lib/services/companies";
 
 export const GET = handler(async () => {
-  await requireUser();
 
   const [
     summary,

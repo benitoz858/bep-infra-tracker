@@ -23,9 +23,18 @@ export const metadata: Metadata = {
     template: "%s · BEP AI Infrastructure Tracker",
   },
   description: "Global AI compute, power and supply-chain intelligence.",
-  // Private research tool: keep it out of every index regardless of where it
-  // ends up hosted.
-  robots: { index: false, follow: false, nocache: true },
+  // Open project: indexable. The tracker is public and being found is the point.
+  robots: { index: true, follow: true },
+  metadataBase: new URL("https://tracker.bepresearch.com"),
+  openGraph: {
+    title: "BEP AI Infrastructure Tracker",
+    description:
+      "Open data on global AI compute, power and supply chain. Confirmed vs estimated capacity, siting risk in megawatts, and a source for every claim.",
+    url: "https://tracker.bepresearch.com",
+    siteName: "BEP AI Infrastructure Tracker",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image", title: "BEP AI Infrastructure Tracker" },
 };
 
 export const viewport: Viewport = {

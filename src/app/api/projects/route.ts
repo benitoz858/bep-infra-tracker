@@ -1,10 +1,9 @@
 import { handler, ok, parseJson } from "@/lib/api";
-import { requireCapability, requireUser } from "@/lib/permissions";
+import { requireCapability } from "@/lib/permissions";
 import { createProject, listProjects } from "@/lib/services/projects";
 import { projectInputSchema, projectQuerySchema } from "@/lib/validations/project";
 
 export const GET = handler(async (request: Request) => {
-  await requireUser();
 
   const params = Object.fromEntries(new URL(request.url).searchParams.entries());
   const query = projectQuerySchema.parse(params);

@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { PageHeader } from "@/components/page-header";
 import { SourceInboxForm } from "@/components/sources/source-inbox-form";
 import { prisma } from "@/lib/db";
-import { can, requireUser } from "@/lib/permissions";
+import { can, getSessionUser } from "@/lib/permissions";
 
 export const metadata: Metadata = { title: "Add source" };
 
@@ -13,7 +13,8 @@ export default async function NewSourcePage({
 }: {
   searchParams: Promise<{ projectId?: string }>;
 }) {
-  const user = await requireUser();
+  const user = await getSessionUser();
+  if (!user) redirect("/login");
   if (!can(user.role, "record:create")) redirect("/sources");
 
   const { projectId } = await searchParams;

@@ -12,13 +12,14 @@ import { EmptyState } from "@/components/ui/misc";
 import { StatTile } from "@/components/ui/stat-tile";
 import { prisma } from "@/lib/db";
 import { formatCount, formatRelative } from "@/lib/format";
-import { can, requireUser } from "@/lib/permissions";
+import { can, getSessionUser } from "@/lib/permissions";
 import { getIngestionStats, listCandidates } from "@/lib/services/ingestion";
 
 export const metadata: Metadata = { title: "Agent inbox" };
 
 export default async function IngestPage() {
-  const user = await requireUser();
+  const user = await getSessionUser();
+  if (!user) redirect("/login");
   if (!can(user.role, "record:create")) redirect("/dashboard");
 
   const [candidates, stats, projects] = await Promise.all([

@@ -1,10 +1,8 @@
 import { handler, fail } from "@/lib/api";
-import { requireUser } from "@/lib/permissions";
 import { CSV_TEMPLATES } from "@/lib/services/export";
 
 /** Downloadable blank CSV templates, one per importable entity. */
 export const GET = handler(async (request: Request) => {
-  await requireUser();
 
   const entity = new URL(request.url).searchParams.get("entity") ?? "projects";
   if (!(entity in CSV_TEMPLATES)) {

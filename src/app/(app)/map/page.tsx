@@ -5,7 +5,7 @@ import { PageHeader } from "@/components/page-header";
 import { ProjectMap } from "@/components/map/project-map";
 import { ProjectsFilters } from "@/components/projects/projects-filters";
 import { Skeleton } from "@/components/ui/misc";
-import { requireUser } from "@/lib/permissions";
+import { getSessionUser } from "@/lib/permissions";
 import { getFilterFacets, listProjectsForMap } from "@/lib/services/projects";
 import { projectQuerySchema } from "@/lib/validations/project";
 
@@ -16,7 +16,7 @@ export default async function MapPage({
 }: {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
-  await requireUser();
+  await getSessionUser();
   const raw = await searchParams;
 
   // Same query schema as the table, so a filter set carries between the two views.

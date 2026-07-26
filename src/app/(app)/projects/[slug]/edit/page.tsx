@@ -6,7 +6,7 @@ import {
   type ProjectFormValues,
   ProjectForm,
 } from "@/components/projects/project-form";
-import { can, requireUser } from "@/lib/permissions";
+import { can, getSessionUser } from "@/lib/permissions";
 import { getCompanyOptions } from "@/lib/services/companies";
 import { NotFoundError } from "@/lib/services/errors";
 import { getProjectBySlug } from "@/lib/services/projects";
@@ -28,7 +28,8 @@ export default async function EditProjectPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const user = await requireUser();
+  const user = await getSessionUser();
+  if (!user) redirect("/login");
   const { slug } = await params;
 
   if (!can(user.role, "record:edit")) redirect(`/projects/${slug}`);

@@ -13,7 +13,7 @@ import { Panel, PanelBody, PanelHeader, PanelTitle } from "@/components/ui/card"
 import { Table, TableWrap, Td, Th, Tr } from "@/components/ui/table";
 import { COMPANY_TYPE_LABEL, PROJECT_STATUS_META } from "@/lib/domain";
 import { formatCount, formatCountCompact, formatPowerScaled } from "@/lib/format";
-import { requireUser } from "@/lib/permissions";
+import { getSessionUser } from "@/lib/permissions";
 import {
   getCapacityByYear,
   getCoolingMix,
@@ -31,7 +31,7 @@ import {
 export const metadata: Metadata = { title: "Analytics" };
 
 export default async function AnalyticsPage() {
-  await requireUser();
+  await getSessionUser();
 
   const [
     byYear,

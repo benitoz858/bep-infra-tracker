@@ -9,7 +9,7 @@ import { EmptyState } from "@/components/ui/misc";
 import { Table, TableWrap, Td, Th, Tr } from "@/components/ui/table";
 import { COMPANY_TYPE_LABEL } from "@/lib/domain";
 import { formatCount } from "@/lib/format";
-import { requireUser } from "@/lib/permissions";
+import { getSessionUser } from "@/lib/permissions";
 import { listCompanies } from "@/lib/services/companies";
 import { companyQuerySchema } from "@/lib/validations/company";
 import { CompaniesFilters } from "@/components/companies/companies-filters";
@@ -21,7 +21,7 @@ export default async function CompaniesPage({
 }: {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
-  await requireUser();
+  await getSessionUser();
   const raw = await searchParams;
 
   const query = companyQuerySchema.parse(

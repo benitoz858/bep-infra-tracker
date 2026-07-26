@@ -1,5 +1,4 @@
 import { handler } from "@/lib/api";
-import { requireCapability } from "@/lib/permissions";
 import { exportProjectsCsv, exportProjectsJson } from "@/lib/services/export";
 import { projectQuerySchema } from "@/lib/validations/project";
 
@@ -8,7 +7,6 @@ import { projectQuerySchema } from "@/lib/validations/project";
  * what the analyst is looking at. All three roles may export (see permissions).
  */
 export const GET = handler(async (request: Request) => {
-  await requireCapability("data:export");
 
   const url = new URL(request.url);
   const format = url.searchParams.get("format") === "json" ? "json" : "csv";

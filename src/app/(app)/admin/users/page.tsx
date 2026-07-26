@@ -6,13 +6,14 @@ import { PageHeader } from "@/components/page-header";
 import { StatTile } from "@/components/ui/stat-tile";
 import { ROLE_LABEL } from "@/lib/domain";
 import { formatCount } from "@/lib/format";
-import { can, requireUser } from "@/lib/permissions";
+import { can, getSessionUser } from "@/lib/permissions";
 import { getRoleCounts, listUsers } from "@/lib/services/users";
 
 export const metadata: Metadata = { title: "Users" };
 
 export default async function UsersPage() {
-  const user = await requireUser();
+  const user = await getSessionUser();
+  if (!user) redirect("/login");
   // Route-level gate. The API re-checks independently, so a non-admin who
   // guesses the endpoint is still refused.
   if (!can(user.role, "user:manage")) redirect("/dashboard");

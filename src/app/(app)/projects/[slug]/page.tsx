@@ -31,7 +31,7 @@ import {
   formatUsdExact,
   NOT_DISCLOSED,
 } from "@/lib/format";
-import { can, requireUser } from "@/lib/permissions";
+import { can, getSessionUser } from "@/lib/permissions";
 import { NotFoundError } from "@/lib/services/errors";
 import { getProjectBySlug, getRelatedProjects } from "@/lib/services/projects";
 import { decimalToString } from "@/lib/serialize";
@@ -87,7 +87,7 @@ export default async function ProjectDetailPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const user = await requireUser();
+  const user = await getSessionUser();
   const { slug } = await params;
 
   let project: Awaited<ReturnType<typeof getProjectBySlug>>;
@@ -137,14 +137,14 @@ export default async function ProjectDetailPage({
         subtitle={project.description ?? undefined}
         actions={
           <>
-            {can(user.role, "record:edit") ? (
+            {can(user?.role, "record:edit") ? (
               <Button asChild variant="outline" size="sm">
                 <Link href={`/projects/${project.slug}/edit`}>
                   <Pencil /> Edit
                 </Link>
               </Button>
             ) : null}
-            {can(user.role, "record:create") ? (
+            {can(user?.role, "record:create") ? (
               <Button asChild variant="outline" size="sm">
                 <Link href={`/sources/new?projectId=${project.id}`}>Add source</Link>
               </Button>
@@ -153,7 +153,7 @@ export default async function ProjectDetailPage({
         }
       />
 
-      {can(user.role, "record:delete") ? (
+      {can(user?.role, "record:delete") ? (
         <div className="mb-4">
           <DeleteProjectButton
             projectId={project.id}
@@ -400,7 +400,7 @@ export default async function ProjectDetailPage({
         <Panel className="lg:col-span-2">
           <PanelHeader>
             <PanelTitle>Sources</PanelTitle>
-            {can(user.role, "record:create") ? (
+            {can(user?.role, "record:create") ? (
               <Button asChild variant="ghost" size="sm">
                 <Link href={`/sources/new?projectId=${project.id}`}>Add source</Link>
               </Button>

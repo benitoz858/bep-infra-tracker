@@ -18,7 +18,7 @@ import {
   formatMonthYear,
   formatPowerScaled,
 } from "@/lib/format";
-import { requireUser } from "@/lib/permissions";
+import { getSessionUser } from "@/lib/permissions";
 import { getCompanyBySlug } from "@/lib/services/companies";
 import { NotFoundError } from "@/lib/services/errors";
 
@@ -41,7 +41,7 @@ export default async function CompanyDetailPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  await requireUser();
+  await getSessionUser();
   const { slug } = await params;
 
   let data: Awaited<ReturnType<typeof getCompanyBySlug>>;

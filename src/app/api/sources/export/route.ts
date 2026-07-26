@@ -1,5 +1,4 @@
 import { handler } from "@/lib/api";
-import { requireCapability } from "@/lib/permissions";
 import { exportMetricsCsv, exportSourcesCsv } from "@/lib/services/export";
 
 /**
@@ -8,7 +7,6 @@ import { exportMetricsCsv, exportSourcesCsv } from "@/lib/services/export";
  * audit the database's provenance outside the app.
  */
 export const GET = handler(async (request: Request) => {
-  await requireCapability("data:export");
 
   const kind = new URL(request.url).searchParams.get("kind") === "metrics" ? "metrics" : "sources";
   const csv = kind === "metrics" ? await exportMetricsCsv() : await exportSourcesCsv();

@@ -16,7 +16,7 @@ import {
   RESTRICTION_STATUS_META,
 } from "@/lib/domain";
 import { formatCount, formatDate, formatPowerScaled } from "@/lib/format";
-import { requireUser } from "@/lib/permissions";
+import { getSessionUser } from "@/lib/permissions";
 import {
   getAdoptionBaseRate,
   getExpiryCalendar,
@@ -30,7 +30,7 @@ import {
 export const metadata: Metadata = { title: "Siting risk" };
 
 export default async function SitingPage() {
-  await requireUser();
+  await getSessionUser();
 
   const [summary, byRegion, byOwner, exposure, expiries, baseRate, restrictions] =
     await Promise.all([

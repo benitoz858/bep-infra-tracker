@@ -4,12 +4,13 @@ import { redirect } from "next/navigation";
 import { ImportWizard } from "@/components/import/import-wizard";
 import { PageHeader } from "@/components/page-header";
 import { Button } from "@/components/ui/button";
-import { can, requireUser } from "@/lib/permissions";
+import { can, getSessionUser } from "@/lib/permissions";
 
 export const metadata: Metadata = { title: "Import" };
 
 export default async function ImportPage() {
-  const user = await requireUser();
+  const user = await getSessionUser();
+  if (!user) redirect("/login");
   if (!can(user.role, "data:import")) redirect("/projects");
 
   return (

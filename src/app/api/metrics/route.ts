@@ -2,7 +2,7 @@ import { z } from "zod";
 
 import { handler, ok, parseJson } from "@/lib/api";
 import { prisma } from "@/lib/db";
-import { requireCapability, requireUser } from "@/lib/permissions";
+import { requireCapability } from "@/lib/permissions";
 import { DataQualityError, NotFoundError } from "@/lib/services/errors";
 import { candidateClaimSchema } from "@/lib/validations/source";
 
@@ -14,7 +14,6 @@ const createSchema = candidateClaimSchema.and(
 );
 
 export const GET = handler(async (request: Request) => {
-  await requireUser();
 
   const projectId = new URL(request.url).searchParams.get("projectId");
   return ok(

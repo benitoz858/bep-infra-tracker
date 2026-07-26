@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { redirect } from "next/navigation";
 
 import { AppNav } from "@/components/app-nav";
 import { BrandLockup } from "@/components/brand";
@@ -9,13 +8,15 @@ import { capabilitiesFor } from "@/lib/capabilities";
 import { getSessionUser } from "@/lib/permissions";
 
 /**
- * Shell for every authenticated page. Middleware already blocks anonymous
- * requests; this second check is what makes `user` non-null for the children
- * and covers the case where middleware is bypassed (e.g. a direct RSC call).
+ * Shell for every page. The tracker is public: reading needs no account, so
+ * `user` may be null and children must handle that. Writes are gated in two
+ * independent places — the page redirects, and the API route re-checks the
+ * capability — so a missing session simply means no capabilities at all.
  */
 export default async function AppLayout({ children }: { children: React.ReactNode }) {
+  // Public by design: anyone can read the tracker. Writes are gated per page and
+  // per API route, so an anonymous visitor simply holds no capabilities.
   const user = await getSessionUser();
-  if (!user) redirect("/login");
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -34,11 +35,20 @@ export default async function AppLayout({ children }: { children: React.ReactNod
             <BrandLockup />
           </Link>
           <div className="order-3 w-full lg:order-2 lg:w-auto lg:flex-1">
-            <AppNav capabilities={capabilitiesFor(user.role)} />
+            <AppNav capabilities={capabilitiesFor(user?.role)} />
           </div>
           <div className="order-2 ml-auto flex items-center gap-3 lg:order-3">
             <CommandPalette />
-            <UserMenu email={user.email} name={user.name} role={user.role} />
+            {user ? (
+              <UserMenu email={user.email} name={user.name} role={user.role} />
+            ) : (
+              <Link
+                href="/login"
+                className="rounded-md border border-line-2 px-2.5 py-1.5 text-[12px] text-fg-dim hover:border-cyan hover:text-cyan"
+              >
+                Sign in
+              </Link>
+            )}
           </div>
         </div>
       </header>
