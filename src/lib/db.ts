@@ -1,3 +1,4 @@
+import { PrismaNeon } from "@prisma/adapter-neon";
 import { PrismaPg } from "@prisma/adapter-pg";
 
 import { PrismaClient } from "@/generated/prisma/client";
@@ -20,9 +21,38 @@ function connectionString(): string {
   return url;
 }
 
+/**
+ * Cloudflare Workers identify themselves through navigator.userAgent. Checking
+ * the runtime rather than the URL is deliberate: a Neon URL is still best served
+ * by the pooled pg driver when running under Node, which is exactly what the
+ * seed and migration scripts do.
+ */
+function isWorkersRuntime(): boolean {
+  return (
+    typeof navigator !== "undefined" &&
+    (navigator as { userAgent?: string }).userAgent === "Cloudflare-Workers"
+  );
+}
+
+/**
+ * Two drivers, chosen at runtime.
+ *
+ * node-postgres needs a persistent pooled TCP connection — right for dev,
+ * scripts, tests and CI. A Worker has nowhere to keep a pool between requests
+ * and would leak a connection per invocation until Neon refused new ones, so it
+ * uses Neon's HTTP/WebSocket driver instead.
+ *
+ * The matching *client* swap (the Workers build needs a different generated
+ * client entirely, because of WASM) happens on disk in scripts/cf-build.mjs —
+ * see that file for why it cannot be done with a conditional import.
+ */
 function createPrismaClient() {
+  const url = connectionString();
+
   return new PrismaClient({
-    adapter: new PrismaPg({ connectionString: connectionString() }),
+    adapter: isWorkersRuntime()
+      ? new PrismaNeon({ connectionString: url })
+      : new PrismaPg({ connectionString: url }),
     log: process.env.NODE_ENV === "development" ? ["warn", "error"] : ["error"],
   });
 }

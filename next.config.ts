@@ -15,6 +15,11 @@ const nextConfig: NextConfig = {
   // silently. (Next 16 dropped the `eslint` config key — linting is a separate
   // `npm run lint` step, wired into `npm run check`.)
   typescript: { ignoreBuildErrors: false },
+
+  // Keep the Postgres drivers out of Next's own bundle so the OpenNext/esbuild
+  // pass resolves them from node_modules with their full package contents,
+  // rather than a pruned copy that is missing the file `main` points at.
+  serverExternalPackages: ["pg", "pg-cloudflare", "@prisma/adapter-pg"],
 };
 
 export default nextConfig;

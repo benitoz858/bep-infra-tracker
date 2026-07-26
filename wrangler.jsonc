@@ -1,0 +1,28 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bep-infra-tracker",
+  "main": ".open-next/worker.js",
+  // Pinned rather than floating: a compatibility date is the Workers runtime's
+  // behaviour contract, and letting it drift means the deployed app can change
+  // semantics without a code change.
+  "compatibility_date": "2025-09-23",
+  // nodejs_compat gives the Worker Node built-ins (crypto, buffer, streams)
+  // that Next, Auth.js and bcryptjs all reach for.
+  "compatibility_flags": ["nodejs_compat"],
+
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+
+  "observability": {
+    "enabled": true
+  },
+
+  // Secrets are NOT listed here — this file is committed. DATABASE_URL,
+  // AUTH_SECRET and NEXT_PUBLIC_MAPBOX_TOKEN are set with `wrangler secret put`
+  // and live only in Cloudflare.
+  "vars": {
+    "AUTH_TRUST_HOST": "true"
+  }
+}

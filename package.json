@@ -27,11 +27,16 @@
     "ingest:list": "tsx scripts/ingest.ts --list",
     "db:seed:admin": "tsx scripts/seed-admin.ts",
     "db:seed:admin:production": "dotenv -e .env -- sh -c 'DATABASE_URL=\"$PRODUCTION_DATABASE_URL\" SEED_ADMIN_PASSWORD=\"$PRODUCTION_ADMIN_PASSWORD\" tsx scripts/seed-admin.ts'",
-    "db:migrate:production": "dotenv -e .env -- sh -c 'DATABASE_URL=\"$PRODUCTION_DATABASE_URL\" prisma migrate deploy'"
+    "db:migrate:production": "dotenv -e .env -- sh -c 'DATABASE_URL=\"$PRODUCTION_DATABASE_URL\" prisma migrate deploy'",
+    "cf:build": "node scripts/cf-build.mjs",
+    "cf:preview": "opennextjs-cloudflare preview",
+    "cf:deploy": "opennextjs-cloudflare deploy"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.11.3",
     "@hookform/resolvers": "^5.4.2",
+    "@neondatabase/serverless": "^1.1.0",
+    "@prisma/adapter-neon": "^7.9.0",
     "@prisma/adapter-pg": "^7.9.0",
     "@prisma/client": "^7.9.0",
     "@radix-ui/react-checkbox": "^1.3.11",
@@ -54,6 +59,7 @@
     "next": "16.2.11",
     "next-auth": "^5.0.0-beta.32",
     "papaparse": "^5.5.4",
+    "pg-cloudflare": "^1.4.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-hook-form": "^7.83.0",
@@ -63,6 +69,7 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.2",
     "@playwright/test": "^1.62.0",
     "@tailwindcss/postcss": "^4",
     "@types/bcryptjs": "^2.4.6",
@@ -81,7 +88,8 @@
     "tsx": "^4.23.1",
     "typescript": "^5",
     "vite-tsconfig-paths": "^6.1.1",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.10",
+    "wrangler": "^4.114.0"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

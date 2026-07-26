@@ -14,6 +14,10 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     // Prisma output is regenerated on every schema change and is not ours to fix.
     "src/generated/**",
+    // Build output. Without these ESLint walks the ~18 MB OpenNext bundle and
+    // exhausts the heap before reporting anything.
+    ".open-next/**",
+    ".wrangler/**",
     "playwright-report/**",
     "test-results/**",
   ]),
