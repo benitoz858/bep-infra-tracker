@@ -111,6 +111,7 @@ every other page is unaffected.
 | `npm run db:seed`                 | Seed demo data + admin user     |
 | `npm run db:reset`                | Drop, re-migrate, re-seed       |
 | `npm run db:studio`               | Prisma Studio                   |
+| `npm run og:image`                | Regenerate the share card       |
 
 ---
 
@@ -345,8 +346,19 @@ its own evaluation before anything it says goes near the queue.
 The app needs a server runtime and a hosted Postgres; it cannot be a static
 export. Production data lives on Neon.
 
-Live at **https://bep-infra-tracker.benitos.workers.dev** (Cloudflare Workers +
-Neon Postgres).
+Live at **https://tracker.bepresearch.com** (Cloudflare Workers + Neon Postgres).
+
+Deployment is automatic. `.github/workflows/deploy.yml` waits for CI to go green
+on `main`, applies any pending migrations to the production database, then builds
+and deploys the Worker. That matters more than convenience: this project accepts
+data corrections from strangers, and a correction that sits unpublished until a
+maintainer next opens a laptop is a correction the project did not really accept.
+
+It needs three repository secrets — `CLOUDFLARE_API_TOKEN`,
+`CLOUDFLARE_ACCOUNT_ID` and `PRODUCTION_DATABASE_URL`.
+
+The same steps still run by hand, for the first deploy or when something has gone
+wrong:
 
 ```bash
 npm run db:migrate:production      # apply migrations to PRODUCTION_DATABASE_URL

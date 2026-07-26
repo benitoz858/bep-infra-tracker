@@ -1,0 +1,72 @@
+# Deploy runs only after CI has gone green on main.
+#
+# Before this workflow existed, deploying was a manual step on a maintainer's
+# laptop, which meant an accepted correction could sit invisible on the live site
+# for days. The whole point of taking data contributions is that they show up.
+
+name: Deploy
+
+on:
+  # Not `push: main`. A deploy must never race the checks — this fires only once
+  # CI has finished, and the `success` guard below means a red build stops here.
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  # Deploys queue rather than cancel. Cancelling mid-`wrangler deploy` can leave
+  # the Worker and the database schema out of step with each other.
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    # workflow_dispatch has no workflow_run payload, so the conclusion check has
+    # to tolerate it being absent.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment: production
+
+    env:
+      # Both the build and the migration talk to the production database. The
+      # build needs it because Next evaluates server components while
+      # prerendering; it only reads.
+      DATABASE_URL: ${{ secrets.PRODUCTION_DATABASE_URL }}
+
+    steps:
+      # workflow_run starts from the default branch, not the commit that was
+      # tested, so the SHA has to be named explicitly or a deploy can ship
+      # something CI never saw.
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      # postinstall runs `prisma generate`, which emits both clients: the Node
+      # one and the workerd one that scripts/cf-build.mjs swaps in.
+      - run: npm ci
+
+      # `migrate deploy` only applies migration files already committed and
+      # reviewed — it never generates one, and never resets. It runs before the
+      # deploy so the schema is never behind the code that expects it.
+      - name: Apply migrations to production
+        run: npx prisma migrate deploy
+
+      - name: Build for Workers
+        run: npm run cf:build
+
+      - name: Deploy
+        run: npx opennextjs-cloudflare deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

@@ -94,3 +94,12 @@ went wrong without it.
 
 Code is MIT. Data is CC BY 4.0 — see `LICENSE` and `LICENSE-DATA`. By
 contributing you agree your work is released under those terms.
+
+---
+
+## Conduct
+
+[`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) applies to every issue, PR and
+review. The short version, for a project that exists to argue about numbers:
+attack the figure, never the person who entered it. Everyone here will be
+confidently wrong in public eventually, maintainers included.

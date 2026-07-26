@@ -28,6 +28,7 @@
     "db:seed:admin": "tsx scripts/seed-admin.ts",
     "db:seed:admin:production": "dotenv -e .env -- sh -c 'DATABASE_URL=\"$PRODUCTION_DATABASE_URL\" SEED_ADMIN_PASSWORD=\"$PRODUCTION_ADMIN_PASSWORD\" tsx scripts/seed-admin.ts'",
     "db:migrate:production": "dotenv -e .env -- sh -c 'DATABASE_URL=\"$PRODUCTION_DATABASE_URL\" prisma migrate deploy'",
+    "og:image": "node scripts/og-image.mjs",
     "cf:build": "node scripts/cf-build.mjs",
     "cf:preview": "opennextjs-cloudflare preview",
     "cf:deploy": "opennextjs-cloudflare deploy"
