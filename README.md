@@ -2,12 +2,23 @@
 
 **Global AI compute, power and supply-chain intelligence.**
 
-A private research application tracking major AI infrastructure projects worldwide —
-AI factories, hyperscale campuses, GPU clusters, sovereign AI programmes, neocloud
-and colocation build-outs, HPC systems, and the power projects tied to them.
+An open-source research application tracking major AI infrastructure projects
+worldwide — AI factories, hyperscale campuses, GPU clusters, sovereign AI
+programmes, neocloud and colocation build-outs, HPC systems, and the power
+projects tied to them.
 
-Built for a single analyst, with a schema and permission model that support
-multiple users and paid enterprise access later.
+**Live: [tracker.bepresearch.com](https://tracker.bepresearch.com)**
+· Code MIT · Data [CC BY 4.0](LICENSE-DATA)
+· [Contributing](CONTRIBUTING.md)
+
+Most trackers in this space count announcements. This one tries to answer harder
+questions: how much capacity is *confirmed* rather than announced, how much is
+actually blocked by siting restrictions, and — for every figure — who said so and
+where. Every claim carries its own confidence level and source, and the two are
+never averaged into a single number nobody can defend.
+
+**Corrections are the most valuable contribution.** If a figure here is wrong,
+open an issue and show why.
 
 ---
 
