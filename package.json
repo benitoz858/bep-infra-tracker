@@ -24,7 +24,10 @@
     "check": "npm run typecheck && npm run lint && npm run test",
     "postinstall": "prisma generate",
     "ingest": "tsx scripts/ingest.ts",
-    "ingest:list": "tsx scripts/ingest.ts --list"
+    "ingest:list": "tsx scripts/ingest.ts --list",
+    "db:seed:admin": "tsx scripts/seed-admin.ts",
+    "db:seed:admin:production": "dotenv -e .env -- sh -c 'DATABASE_URL=\"$PRODUCTION_DATABASE_URL\" SEED_ADMIN_PASSWORD=\"$PRODUCTION_ADMIN_PASSWORD\" tsx scripts/seed-admin.ts'",
+    "db:migrate:production": "dotenv -e .env -- sh -c 'DATABASE_URL=\"$PRODUCTION_DATABASE_URL\" prisma migrate deploy'"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.11.3",

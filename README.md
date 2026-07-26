@@ -329,6 +329,29 @@ its own evaluation before anything it says goes near the queue.
 
 ---
 
+## Deploying
+
+The app needs a server runtime and a hosted Postgres; it cannot be a static
+export. Production data lives on Neon.
+
+```bash
+npm run db:migrate:production      # apply migrations to PRODUCTION_DATABASE_URL
+npm run db:seed:admin:production   # create/update the admin user — and nothing else
+```
+
+**Demo data never goes to production.** `npm run db:seed` writes 16 demo
+projects and 8 demo restrictions for UI development; a live tracker whose
+headline reads "1.9 GW at risk" from invented figures is a liability even behind
+a login. `db:seed:admin` exists for that reason and writes only the one account.
+
+Use Neon's **pooled** connection string, and prefer `sslmode=verify-full` to
+`require` — node-postgres treats bare `require` ambiguously and warns about it,
+while verify-full also checks the hostname.
+
+The daily ingest workflow runs once the `DATABASE_URL` repo secret is set.
+
+---
+
 ## Known limitations
 
 - **The map is not verified end-to-end.** Without a Mapbox token the render path
