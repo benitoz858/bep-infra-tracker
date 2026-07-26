@@ -40,9 +40,9 @@ model User {
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
-  accounts  Account[]
-  sessions  Session[]
-  revisions ProjectRevision[]
+  accounts           Account[]
+  sessions           Session[]
+  revisions          ProjectRevision[]
   reviewedCandidates IngestionCandidate[]
 
   @@index([role])
@@ -198,6 +198,11 @@ model Project {
   analystNotes    String?
   lastVerifiedAt  DateTime?
 
+  /// Grid operator and interconnection queue position. Restrictions bite
+  /// through the queue, so this is how exposure is actually grouped.
+  gridRegion GridRegion?
+  queueZone  String?
+
   // Every seeded row carries this flag so demo figures can never be mistaken
   // for researched ones anywhere in the UI or in an export.
   isDemoData Boolean @default(false)
@@ -213,6 +218,7 @@ model Project {
   tags         Tag[]             @relation("ProjectTags")
 
   ingestionCandidates IngestionCandidate[] @relation("SuggestedProject")
+  restrictions        ProjectRestriction[]
 
   @@index([status])
   @@index([projectType])
@@ -319,12 +325,12 @@ enum ConfidenceLevel {
 }
 
 model ProjectMetric {
-  id         String     @id @default(cuid())
-  projectId  String
-  metricType MetricType
+  id           String     @id @default(cuid())
+  projectId    String
+  metricType   MetricType
   // Decimal(20,4) covers a PUE of 1.2345 and a capex of 500,000,000,000.00
   // in the same column without a precision branch per metric type.
-  numericValue Decimal? @db.Decimal(20, 4)
+  numericValue Decimal?   @db.Decimal(20, 4)
   textValue    String?
   unit         String?
 
@@ -418,9 +424,9 @@ model IngestionRun {
 }
 
 model IngestionCandidate {
-  id      String          @id @default(cuid())
-  runId   String
-  status  IngestionStatus @default(PENDING)
+  id     String          @id @default(cuid())
+  runId  String
+  status IngestionStatus @default(PENDING)
 
   // --- the proposed source ---
   url             String
@@ -449,18 +455,18 @@ model IngestionCandidate {
   /// so a bad extractor's output can be found and re-reviewed later.
   extractor String @default("none")
 
-  reviewedAt     DateTime?
-  reviewedById   String?
-  reviewNote     String?
+  reviewedAt      DateTime?
+  reviewedById    String?
+  reviewNote      String?
   /// Set on accept, linking the candidate to what it became.
   createdSourceId String?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  run               IngestionRun @relation(fields: [runId], references: [id], onDelete: Cascade)
-  suggestedProject  Project?     @relation("SuggestedProject", fields: [suggestedProjectId], references: [id], onDelete: SetNull)
-  reviewedBy        User?        @relation(fields: [reviewedById], references: [id], onDelete: SetNull)
+  run              IngestionRun @relation(fields: [runId], references: [id], onDelete: Cascade)
+  suggestedProject Project?     @relation("SuggestedProject", fields: [suggestedProjectId], references: [id], onDelete: SetNull)
+  reviewedBy       User?        @relation(fields: [reviewedById], references: [id], onDelete: SetNull)
 
   /// The dedup key. A watcher re-run must not re-propose what it already
   /// proposed, so the same URL can only appear once across all runs.
@@ -468,4 +474,209 @@ model IngestionCandidate {
   @@index([status, createdAt])
   @@index([suggestedProjectId])
   @@index([runId])
+}
+
+// ---------------------------------------------------------------------------
+// Siting risk
+//
+// The gap this closes: a tracker that counts ordinances tells you how many
+// jurisdictions said something, not how much capacity is actually blocked. Two
+// things make that answerable —
+//
+//  1. Bindingness is graded, not boolean. A six-month zoning pause pending a
+//     study and a permanent prohibition are both called "moratorium" in the
+//     press and are not remotely the same fact. See BindingLevel.
+//  2. Restrictions attach to projects through an explicit join, never by
+//     inferring from a location string. A wrong inference would silently move
+//     the headline GW-at-risk number, which is the one figure this page exists
+//     to produce.
+//
+// An expiring restriction is tracked as deliberately as a new one: it is the
+// positive catalyst nobody publishes a list of.
+// ---------------------------------------------------------------------------
+
+/// Grid operator. Restrictions bite on projects through the interconnection
+/// queue, so exposure is far more meaningful by RTO than by country.
+enum GridRegion {
+  PJM
+  ERCOT
+  MISO
+  CAISO
+  SPP
+  NYISO
+  ISONE
+  WECC_NON_ISO
+  SERC_NON_ISO
+  CANADA
+  EU_ENTSOE
+  UK_NESO
+  NORDIC
+  JAPAN
+  KOREA
+  INDIA
+  OTHER
+}
+
+enum JurisdictionLevel {
+  CITY
+  TOWN
+  VILLAGE
+  TOWNSHIP
+  BOROUGH
+  COUNTY
+  STATE
+  PROVINCE
+  NATIONAL
+  SPECIAL_DISTRICT
+  TRIBAL
+  UTILITY_TERRITORY
+}
+
+/// What the restriction actually stops. "Moratorium" alone is not specific
+/// enough to reason about: a water-use cap and a rezoning freeze constrain
+/// completely different projects.
+enum RestrictionScope {
+  NEW_CONSTRUCTION
+  REZONING
+  PERMIT_ISSUANCE
+  UTILITY_INTERCONNECTION
+  WATER_USE
+  BEHIND_METER_GENERATION
+  NOISE_OR_SETBACK
+  TAX_ABATEMENT
+  DISCLOSURE_ONLY
+  OTHER
+}
+
+/// How hard the restriction actually binds. The whole point of the scale: most
+/// trackers collapse all of this into one dot.
+enum BindingLevel {
+  /// 0 — a study, task force or advisory resolution. Binds nothing.
+  ADVISORY
+  /// 1 — proposed but not yet adopted.
+  PROPOSED
+  /// 2 — extra process: hearings, disclosure, review boards. Slows, not stops.
+  PROCEDURAL
+  /// 3 — conditional cap or threshold; some projects still proceed.
+  CONDITIONAL
+  /// 4 — time-limited prohibition with a defined end date.
+  TEMPORARY_BAN
+  /// 5 — indefinite or permanent prohibition.
+  PERMANENT_BAN
+}
+
+enum RestrictionStatus {
+  PROPOSED
+  ACTIVE
+  EXPIRED
+  LIFTED
+  REJECTED
+  SUPERSEDED
+}
+
+model Restriction {
+  id   String @id @default(cuid())
+  slug String @unique
+
+  /// Human name of the jurisdiction, e.g. "Loudoun County".
+  jurisdiction String
+  level        JurisdictionLevel
+  stateRegion  String?
+  country      String
+  latitude     Float?
+  longitude    Float?
+
+  gridRegion GridRegion?
+
+  scope        RestrictionScope
+  bindingLevel BindingLevel
+  status       RestrictionStatus
+
+  title    String
+  summary  String?
+  /// Ordinance / bill number, so a reader can find the primary document.
+  citation String?
+
+  proposedDate DateTime?
+  enactedDate  DateTime?
+  /// Null with a TEMPORARY_BAN means the end date was never published — worth
+  /// surfacing, not silently treating as indefinite.
+  expiryDate   DateTime?
+  liftedDate   DateTime?
+
+  analystNotes    String?
+  confidenceScore Int?
+  lastVerifiedAt  DateTime?
+  isDemoData      Boolean   @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  projects ProjectRestriction[]
+  sources  RestrictionSource[]
+
+  @@index([status])
+  @@index([bindingLevel])
+  @@index([country, stateRegion])
+  @@index([gridRegion])
+  @@index([expiryDate])
+}
+
+/// Evidence for a restriction.
+///
+/// A separate model rather than making Source polymorphic: Source.projectId is
+/// non-null and every service, export and validation path depends on that. A
+/// nullable foreign key there would weaken the guarantee that project evidence
+/// always belongs to a project, to save one small table.
+model RestrictionSource {
+  id               String     @id @default(cuid())
+  restrictionId    String
+  title            String
+  publisher        String?
+  url              String
+  publicationDate  DateTime?
+  sourceType       SourceType
+  excerpt          String?
+  archivedUrl      String?
+  reliabilityScore Int?
+  isPrimarySource  Boolean    @default(false)
+  accessedAt       DateTime?
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
+
+  restriction Restriction @relation(fields: [restrictionId], references: [id], onDelete: Cascade)
+
+  @@index([restrictionId])
+}
+
+/// How a restriction affects one project. Explicit, analyst-asserted — never
+/// inferred from matching location strings.
+enum RestrictionImpact {
+  /// The project cannot proceed while this stands.
+  BLOCKED
+  /// Proceeding but delayed or made more expensive.
+  DELAYED
+  /// In the jurisdiction but exempt (grandfathered, pre-permitted).
+  EXEMPT
+  /// Same jurisdiction, effect not yet established.
+  UNDER_REVIEW
+}
+
+model ProjectRestriction {
+  id            String            @id @default(cuid())
+  projectId     String
+  restrictionId String
+  impact        RestrictionImpact
+  /// Capacity actually at risk, where it is less than the project's full size
+  /// (e.g. only a later phase is blocked). Null means the whole project.
+  affectedMw    Decimal?          @db.Decimal(12, 3)
+  notes         String?
+  createdAt     DateTime          @default(now())
+
+  project     Project     @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  restriction Restriction @relation(fields: [restrictionId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, restrictionId])
+  @@index([restrictionId])
+  @@index([projectId])
 }

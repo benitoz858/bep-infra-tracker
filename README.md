@@ -242,11 +242,45 @@ Integration tests run against `TEST_DATABASE_URL` and truncate it between tests.
 npx dotenv -e .env -- sh -c 'DATABASE_URL="$TEST_DATABASE_URL" npx prisma migrate deploy'
 ```
 
-Current suite: 152 unit + integration tests, 2 Playwright specs.
+Current suite: 190 unit + integration tests, 2 Playwright specs.
 
 CI (`.github/workflows/ci.yml`) runs typecheck, lint, the full unit/integration
 suite, a production build and the Playwright specs against a Postgres 17 service
 container on every push and pull request.
+
+---
+
+## Siting risk
+
+**/siting** answers how much announced capacity is actually blocked, rather than
+how many ordinances exist. Three rules make that number defensible, and each one
+is the reason a naive version of the metric is wrong:
+
+1. **Bindingness is graded 0–5, not boolean.** An advisory study and a permanent
+   prohibition are both reported as "moratoriums". Only `CONDITIONAL` (3) and
+   above count toward MW at risk; `ADVISORY`, `PROPOSED` and `PROCEDURAL` add
+   process and cost without stopping anything. The page shows the count of
+   live-but-non-binding restrictions explicitly, because that gap *is* the
+   difference between this and an ordinance tracker.
+2. **Only live restrictions count.** Expired, lifted and rejected block nothing;
+   proposed has not blocked anything yet.
+3. **Each project counts once**, at its largest affected capacity — never the
+   sum of its restrictions. A campus under both a county moratorium and a state
+   bill is one block of megawatts, and summing join rows would inflate exactly
+   the largest and most contested projects.
+
+Restrictions are linked to projects **explicitly by an analyst**, never inferred
+from matching location strings. A wrong inference would silently move the one
+number the page exists to produce.
+
+Also on the page: exposure by **grid region** (restrictions bite through the
+interconnection queue, so RTO is the meaningful grouping), exposure by **owner
+with ticker**, an **expiry calendar** — an expiry releases blocked capacity and
+is a positive catalyst nobody publishes a list of — and an **adoption base rate**
+that excludes undecided proposals rather than counting them as failures.
+
+A time-limited ban with no published end date is shown as "Not published" rather
+than being treated as indefinite.
 
 ---
 

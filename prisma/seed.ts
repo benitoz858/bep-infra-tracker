@@ -16,7 +16,13 @@ import "dotenv/config";
 import { hash } from "bcryptjs";
 
 import {
+  type BindingLevel,
   type CompanyType,
+  type GridRegion,
+  type JurisdictionLevel,
+  type RestrictionImpact,
+  type RestrictionScope,
+  type RestrictionStatus,
   type ConfidenceLevel,
   type MetricType,
   type ProjectCompanyRole,
@@ -1415,6 +1421,312 @@ async function main() {
   }
 
   console.log(`  projects: ${PROJECTS.length} (all flagged isDemoData)`);
+
+  // --- Siting restrictions ------------------------------------------------
+  // Illustrative like everything else here, but deliberately spread across the
+  // bindingness scale so the /siting page demonstrates the distinction it
+  // exists to make: only CONDITIONAL and above count toward MW at risk.
+  type RestrictionSeed = {
+    jurisdiction: string;
+    level: JurisdictionLevel;
+    stateRegion?: string;
+    country: string;
+    gridRegion?: GridRegion;
+    scope: RestrictionScope;
+    bindingLevel: BindingLevel;
+    status: RestrictionStatus;
+    title: string;
+    summary: string;
+    citation?: string;
+    enactedDate?: string;
+    expiryDate?: string;
+    confidenceScore: number;
+    /** Project slugs this restriction touches, with the asserted impact. */
+    projects: { slug: string; impact: RestrictionImpact; affectedMw?: number }[];
+    sources: { title: string; publisher: string; url: string; sourceType: SourceType; isPrimarySource: boolean; reliabilityScore: number };
+  };
+
+  const RESTRICTIONS: RestrictionSeed[] = [
+    {
+      jurisdiction: "Loudoun County",
+      level: "COUNTY",
+      stateRegion: "Virginia",
+      country: "United States",
+      gridRegion: "PJM",
+      scope: "REZONING",
+      bindingLevel: "TEMPORARY_BAN",
+      status: "ACTIVE",
+      title: "18-month rezoning pause for data center applications",
+      summary:
+        "Board paused acceptance of rezoning applications for new data centers pending a comprehensive plan update.",
+      citation: "ZOAM-2026-0004",
+      enactedDate: "2026-02-10",
+      expiryDate: "2027-08-10",
+      confidenceScore: 78,
+      projects: [{ slug: "loudoun-colocation-block-c", impact: "BLOCKED" }],
+      sources: {
+        title: "Loudoun County land development applications",
+        publisher: "Loudoun County",
+        url: "https://www.loudoun.gov/",
+        sourceType: "PERMIT",
+        isPrimarySource: true,
+        reliabilityScore: 92,
+      },
+    },
+    {
+      jurisdiction: "Mount Pleasant",
+      level: "VILLAGE",
+      stateRegion: "Wisconsin",
+      country: "United States",
+      gridRegion: "MISO",
+      scope: "WATER_USE",
+      bindingLevel: "CONDITIONAL",
+      status: "ACTIVE",
+      title: "Cap on non-potable withdrawals for cooling",
+      summary:
+        "Water utility capped new industrial withdrawals, constraining evaporative cooling designs above a threshold.",
+      enactedDate: "2026-04-01",
+      confidenceScore: 61,
+      projects: [
+        { slug: "mount-pleasant-ai-campus-phase-2", impact: "DELAYED", affectedMw: 450 },
+      ],
+      sources: {
+        title: "Village of Mount Pleasant utilities",
+        publisher: "Village of Mount Pleasant",
+        url: "https://www.mtpleasantwi.gov/",
+        sourceType: "GOVERNMENT_FILING",
+        isPrimarySource: true,
+        reliabilityScore: 88,
+      },
+    },
+    {
+      jurisdiction: "Texas",
+      level: "STATE",
+      stateRegion: "Texas",
+      country: "United States",
+      gridRegion: "ERCOT",
+      scope: "UTILITY_INTERCONNECTION",
+      bindingLevel: "PROCEDURAL",
+      status: "ACTIVE",
+      title: "Large load interconnection review requirements",
+      summary:
+        "Additional review and curtailment terms for large loads. Adds process and cost; does not prohibit construction.",
+      enactedDate: "2025-09-01",
+      confidenceScore: 70,
+      // Procedural: deliberately NOT counted in MW at risk.
+      projects: [
+        { slug: "abilene-stargate-site-1", impact: "DELAYED" },
+        { slug: "denton-ai-factory", impact: "DELAYED" },
+      ],
+      sources: {
+        title: "ERCOT large load interconnection",
+        publisher: "ERCOT",
+        url: "https://www.ercot.com/",
+        sourceType: "UTILITY_FILING",
+        isPrimarySource: true,
+        reliabilityScore: 96,
+      },
+    },
+    {
+      jurisdiction: "New Albany",
+      level: "CITY",
+      stateRegion: "Ohio",
+      country: "United States",
+      gridRegion: "PJM",
+      scope: "BEHIND_METER_GENERATION",
+      bindingLevel: "PERMANENT_BAN",
+      status: "ACTIVE",
+      title: "Prohibition on new on-site combustion generation",
+      summary:
+        "Ordinance prohibits new permanent on-site combustion generation within city limits.",
+      citation: "ORD-2026-041",
+      enactedDate: "2026-05-19",
+      confidenceScore: 66,
+      projects: [{ slug: "prometheus-cluster", impact: "BLOCKED" }],
+      sources: {
+        title: "New Albany city ordinances",
+        publisher: "City of New Albany",
+        url: "https://www.newalbanyohio.org/",
+        sourceType: "GOVERNMENT_FILING",
+        isPrimarySource: true,
+        reliabilityScore: 90,
+      },
+    },
+    {
+      jurisdiction: "Maricopa County",
+      level: "COUNTY",
+      stateRegion: "Arizona",
+      country: "United States",
+      gridRegion: "WECC_NON_ISO",
+      scope: "NEW_CONSTRUCTION",
+      bindingLevel: "PROPOSED",
+      status: "PROPOSED",
+      title: "Proposed moratorium on new data center construction",
+      summary: "Introduced by two supervisors; no vote scheduled.",
+      confidenceScore: 40,
+      projects: [],
+      sources: {
+        title: "Maricopa County board agendas",
+        publisher: "Maricopa County",
+        url: "https://www.maricopa.gov/",
+        sourceType: "GOVERNMENT_FILING",
+        isPrimarySource: true,
+        reliabilityScore: 85,
+      },
+    },
+    {
+      jurisdiction: "Prince William County",
+      level: "COUNTY",
+      stateRegion: "Virginia",
+      country: "United States",
+      gridRegion: "PJM",
+      scope: "NEW_CONSTRUCTION",
+      bindingLevel: "TEMPORARY_BAN",
+      status: "EXPIRED",
+      title: "12-month construction moratorium (expired)",
+      summary: "Expired without renewal; applications resumed.",
+      enactedDate: "2025-01-15",
+      expiryDate: "2026-01-15",
+      confidenceScore: 74,
+      projects: [],
+      sources: {
+        title: "Prince William County planning office",
+        publisher: "Prince William County",
+        url: "https://www.pwcva.gov/",
+        sourceType: "GOVERNMENT_FILING",
+        isPrimarySource: true,
+        reliabilityScore: 88,
+      },
+    },
+    {
+      jurisdiction: "Chandler",
+      level: "CITY",
+      stateRegion: "Arizona",
+      country: "United States",
+      gridRegion: "WECC_NON_ISO",
+      scope: "NEW_CONSTRUCTION",
+      bindingLevel: "PROPOSED",
+      status: "REJECTED",
+      title: "Proposed data center construction ban (rejected)",
+      summary: "Voted down 5-2.",
+      confidenceScore: 72,
+      projects: [],
+      sources: {
+        title: "Chandler city council minutes",
+        publisher: "City of Chandler",
+        url: "https://www.chandleraz.gov/",
+        sourceType: "GOVERNMENT_FILING",
+        isPrimarySource: true,
+        reliabilityScore: 86,
+      },
+    },
+    {
+      jurisdiction: "Sines",
+      level: "CITY",
+      stateRegion: "Setúbal",
+      country: "Portugal",
+      gridRegion: "EU_ENTSOE",
+      scope: "PERMIT_ISSUANCE",
+      bindingLevel: "TEMPORARY_BAN",
+      status: "ACTIVE",
+      title: "Grid connection permits suspended pending capacity study",
+      summary:
+        "Permit issuance suspended for large loads; no published end date, which is itself worth flagging.",
+      enactedDate: "2026-03-01",
+      confidenceScore: 55,
+      projects: [{ slug: "sines-atlantic-campus", impact: "BLOCKED" }],
+      sources: {
+        title: "Portuguese energy regulator publications",
+        publisher: "ERSE",
+        url: "https://www.erse.pt/",
+        sourceType: "GOVERNMENT_FILING",
+        isPrimarySource: true,
+        reliabilityScore: 84,
+      },
+    },
+  ];
+
+  for (const r of RESTRICTIONS) {
+    const slug = slugify(`${r.jurisdiction} ${r.title}`);
+    await prisma.restriction.deleteMany({ where: { slug, isDemoData: true } });
+
+    const restriction = await prisma.restriction.create({
+      data: {
+        slug,
+        jurisdiction: r.jurisdiction,
+        level: r.level,
+        stateRegion: r.stateRegion ?? null,
+        country: r.country,
+        gridRegion: r.gridRegion ?? null,
+        scope: r.scope,
+        bindingLevel: r.bindingLevel,
+        status: r.status,
+        title: r.title,
+        summary: r.summary,
+        citation: r.citation ?? null,
+        enactedDate: date(r.enactedDate),
+        expiryDate: date(r.expiryDate),
+        confidenceScore: r.confidenceScore,
+        analystNotes: DEMO_NOTE,
+        lastVerifiedAt: new Date(Date.UTC(2026, 6, 20)),
+        isDemoData: true,
+        sources: {
+          create: [
+            {
+              title: r.sources.title,
+              publisher: r.sources.publisher,
+              url: r.sources.url,
+              sourceType: r.sources.sourceType,
+              isPrimarySource: r.sources.isPrimarySource,
+              reliabilityScore: r.sources.reliabilityScore,
+              accessedAt: new Date(Date.UTC(2026, 6, 20)),
+            },
+          ],
+        },
+      },
+    });
+
+    for (const link of r.projects) {
+      const project = await prisma.project.findUnique({
+        where: { slug: link.slug },
+        select: { id: true },
+      });
+      if (!project) continue;
+      await prisma.projectRestriction.create({
+        data: {
+          projectId: project.id,
+          restrictionId: restriction.id,
+          impact: link.impact,
+          affectedMw: link.affectedMw ?? null,
+        },
+      });
+    }
+  }
+
+  // Grid regions on the seeded projects, so exposure groups by RTO.
+  const GRID_BY_SLUG: Record<string, GridRegion> = {
+    "mount-pleasant-ai-campus-phase-2": "MISO",
+    "new-carlisle-data-center-region": "PJM",
+    "council-bluffs-tpu-expansion": "MISO",
+    "prometheus-cluster": "PJM",
+    "abilene-stargate-site-1": "ERCOT",
+    "colossus-2": "SERC_NON_ISO",
+    "denton-ai-factory": "ERCOT",
+    "permian-flare-gas-compute-node-7": "ERCOT",
+    "loudoun-colocation-block-c": "PJM",
+    "sines-atlantic-campus": "EU_ENTSOE",
+    "glomfjord-sovereign-cluster": "NORDIC",
+    "iceland-hpc-node": "NORDIC",
+    "sakura-ai-bridge": "JAPAN",
+    "jamnagar-green-ai-campus": "INDIA",
+    "queretaro-inference-region": "OTHER",
+    "ohio-campus-expansion-cancelled": "PJM",
+  };
+  for (const [slug, gridRegion] of Object.entries(GRID_BY_SLUG)) {
+    await prisma.project.updateMany({ where: { slug }, data: { gridRegion } });
+  }
+
+  console.log(`  restrictions: ${RESTRICTIONS.length} (all flagged isDemoData)`);
   console.log("Seed complete.");
 }
 

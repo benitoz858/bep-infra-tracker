@@ -1,5 +1,11 @@
 import {
+  BindingLevel,
   CompanyType,
+  GridRegion,
+  JurisdictionLevel,
+  RestrictionImpact,
+  RestrictionScope,
+  RestrictionStatus,
   ConfidenceLevel,
   MetricType,
   ProjectCompanyRole,
@@ -258,3 +264,150 @@ export const PROJECT_COMPANY_ROLE_OPTIONS = options(PROJECT_COMPANY_ROLE_LABEL);
 export const SOURCE_TYPE_OPTIONS = options(SOURCE_TYPE_LABEL);
 export const METRIC_TYPE_OPTIONS = options(METRIC_TYPE_META);
 export const CONFIDENCE_OPTIONS = options(CONFIDENCE_META);
+
+// ---------------------------------------------------------------------------
+// Siting risk
+// ---------------------------------------------------------------------------
+
+export const GRID_REGION_LABEL: Record<GridRegion, string> = {
+  PJM: "PJM",
+  ERCOT: "ERCOT",
+  MISO: "MISO",
+  CAISO: "CAISO",
+  SPP: "SPP",
+  NYISO: "NYISO",
+  ISONE: "ISO-NE",
+  WECC_NON_ISO: "WECC (non-ISO)",
+  SERC_NON_ISO: "SERC (non-ISO)",
+  CANADA: "Canada",
+  EU_ENTSOE: "EU / ENTSO-E",
+  UK_NESO: "UK / NESO",
+  NORDIC: "Nordic",
+  JAPAN: "Japan",
+  KOREA: "Korea",
+  INDIA: "India",
+  OTHER: "Other",
+};
+
+export const JURISDICTION_LEVEL_LABEL: Record<JurisdictionLevel, string> = {
+  CITY: "City",
+  TOWN: "Town",
+  VILLAGE: "Village",
+  TOWNSHIP: "Township",
+  BOROUGH: "Borough",
+  COUNTY: "County",
+  STATE: "State",
+  PROVINCE: "Province",
+  NATIONAL: "National",
+  SPECIAL_DISTRICT: "Special district",
+  TRIBAL: "Tribal",
+  UTILITY_TERRITORY: "Utility territory",
+};
+
+export const RESTRICTION_SCOPE_LABEL: Record<RestrictionScope, string> = {
+  NEW_CONSTRUCTION: "New construction",
+  REZONING: "Rezoning",
+  PERMIT_ISSUANCE: "Permit issuance",
+  UTILITY_INTERCONNECTION: "Utility interconnection",
+  WATER_USE: "Water use",
+  BEHIND_METER_GENERATION: "Behind-meter generation",
+  NOISE_OR_SETBACK: "Noise / setback",
+  TAX_ABATEMENT: "Tax abatement",
+  DISCLOSURE_ONLY: "Disclosure only",
+  OTHER: "Other",
+};
+
+/**
+ * The bindingness scale. `score` is the 0–5 headline; `blocking` marks the
+ * levels that actually stop a project, which is what the MW-at-risk rollup
+ * counts. Everything below CONDITIONAL slows or annoys but does not block, and
+ * conflating the two is exactly what makes ordinance-counting misleading.
+ */
+export const BINDING_LEVEL_META: Record<
+  BindingLevel,
+  { score: number; label: string; tone: StatusTone; blocking: boolean; description: string }
+> = {
+  ADVISORY: {
+    score: 0,
+    label: "Advisory",
+    tone: "inert",
+    blocking: false,
+    description: "A study, task force or resolution. Binds nothing.",
+  },
+  PROPOSED: {
+    score: 1,
+    label: "Proposed",
+    tone: "planned",
+    blocking: false,
+    description: "Introduced but not adopted.",
+  },
+  PROCEDURAL: {
+    score: 2,
+    label: "Procedural",
+    tone: "planned",
+    blocking: false,
+    description: "Extra hearings, disclosure or review. Slows, does not stop.",
+  },
+  CONDITIONAL: {
+    score: 3,
+    label: "Conditional",
+    tone: "construction",
+    blocking: true,
+    description: "Cap or threshold; some projects still proceed.",
+  },
+  TEMPORARY_BAN: {
+    score: 4,
+    label: "Temporary ban",
+    tone: "risk",
+    blocking: true,
+    description: "Time-limited prohibition with a defined end date.",
+  },
+  PERMANENT_BAN: {
+    score: 5,
+    label: "Permanent ban",
+    tone: "risk",
+    blocking: true,
+    description: "Indefinite or permanent prohibition.",
+  },
+};
+
+export const BINDING_LEVEL_ORDER: BindingLevel[] = [
+  "ADVISORY",
+  "PROPOSED",
+  "PROCEDURAL",
+  "CONDITIONAL",
+  "TEMPORARY_BAN",
+  "PERMANENT_BAN",
+];
+
+export const RESTRICTION_STATUS_META: Record<
+  RestrictionStatus,
+  { label: string; tone: StatusTone; live: boolean }
+> = {
+  PROPOSED: { label: "Proposed", tone: "planned", live: false },
+  ACTIVE: { label: "Active", tone: "risk", live: true },
+  EXPIRED: { label: "Expired", tone: "operational", live: false },
+  LIFTED: { label: "Lifted", tone: "operational", live: false },
+  REJECTED: { label: "Rejected", tone: "operational", live: false },
+  SUPERSEDED: { label: "Superseded", tone: "inert", live: false },
+};
+
+export const RESTRICTION_IMPACT_META: Record<
+  RestrictionImpact,
+  { label: string; tone: StatusTone; countsAtRisk: boolean }
+> = {
+  BLOCKED: { label: "Blocked", tone: "risk", countsAtRisk: true },
+  DELAYED: { label: "Delayed", tone: "construction", countsAtRisk: true },
+  EXEMPT: { label: "Exempt", tone: "operational", countsAtRisk: false },
+  UNDER_REVIEW: { label: "Under review", tone: "planned", countsAtRisk: false },
+};
+
+export const GRID_REGION_OPTIONS = options(GRID_REGION_LABEL);
+export const JURISDICTION_LEVEL_OPTIONS = options(JURISDICTION_LEVEL_LABEL);
+export const RESTRICTION_SCOPE_OPTIONS = options(RESTRICTION_SCOPE_LABEL);
+export const BINDING_LEVEL_OPTIONS = BINDING_LEVEL_ORDER.map((level) => ({
+  value: level,
+  label: `${BINDING_LEVEL_META[level].score} — ${BINDING_LEVEL_META[level].label}`,
+}));
+export const RESTRICTION_STATUS_OPTIONS = options(RESTRICTION_STATUS_META);
+export const RESTRICTION_IMPACT_OPTIONS = options(RESTRICTION_IMPACT_META);

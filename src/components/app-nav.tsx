@@ -11,6 +11,7 @@ import {
   Upload,
   Users,
   Bot,
+  ShieldAlert,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -23,6 +24,7 @@ const NAV = [
   { href: "/projects", label: "Projects", icon: Database },
   { href: "/map", label: "Map", icon: Globe2 },
   { href: "/analytics", label: "Analytics", icon: PieChart },
+  { href: "/siting", label: "Siting risk", icon: ShieldAlert },
   { href: "/companies", label: "Companies", icon: Building2 },
   { href: "/sources", label: "Source inbox", icon: Inbox },
   { href: "/verification", label: "Verification", icon: ShieldCheck },
