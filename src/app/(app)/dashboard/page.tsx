@@ -57,7 +57,7 @@ export default async function DashboardPage() {
     <>
       <PageHeader
         title="Dashboard"
-        subtitle="Global AI compute, power and supply-chain intelligence. Capacity totals combine confirmed disclosures with analyst estimates — the confirmed subtotal is shown separately on every power figure."
+        subtitle="Open data on global AI compute, power and supply chain. Most trackers count announcements; this one separates what is confirmed from what is merely announced, and shows a source for every claim. Anyone can read it, download it, or correct it."
         actions={
           <>
             <Button asChild variant="outline" size="sm">

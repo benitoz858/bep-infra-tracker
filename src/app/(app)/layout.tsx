@@ -57,11 +57,27 @@ export default async function AppLayout({ children }: { children: React.ReactNod
         {children}
       </main>
 
-      <footer className="border-t border-line px-4 py-4">
-        <p className="mx-auto max-w-[1600px] text-[11px] leading-relaxed text-fg-muted">
-          BEP AI Infrastructure Tracker — internal research tool. Figures combine
-          confirmed disclosures with analyst estimates; check the confidence level and
-          sources on a project before citing any number.
+      <footer className="border-t border-line px-4 py-5">
+        <div className="mx-auto flex max-w-[1600px] flex-wrap items-center gap-x-5 gap-y-2 text-[11px] text-fg-muted">
+          <span className="text-fg-dim">
+            Open data on global AI compute, power and supply chain.
+          </span>
+          <a href="https://github.com/benitoz858/bep-infra-tracker" target="_blank" rel="noopener noreferrer" className="text-cyan hover:underline">
+            Source on GitHub
+          </a>
+          <a href="https://github.com/benitoz858/bep-infra-tracker/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="text-cyan hover:underline">
+            Contribute or correct a figure
+          </a>
+          <a href="/api/projects/export?format=csv" download className="text-cyan hover:underline">Download CSV</a>
+          <a href="/api/projects/export?format=json" download className="text-cyan hover:underline">JSON</a>
+          <span className="ml-auto">
+            Code MIT · Data <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer" className="text-cyan hover:underline">CC BY 4.0</a>
+          </span>
+        </div>
+        <p className="mx-auto mt-2 max-w-[1600px] text-[11px] leading-relaxed text-fg-muted">
+          Figures combine confirmed disclosures with analyst estimates. Every claim
+          carries a confidence level and, where one exists, a source — check both
+          before citing any number. Not investment advice.
         </p>
       </footer>
     </div>
