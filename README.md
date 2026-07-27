@@ -1,24 +1,48 @@
 # BEP AI Infrastructure Tracker
 
-**Global AI compute, power and supply-chain intelligence.**
+### 13.5 GW of AI datacenter capacity has been announced. 300 MW is confirmed running.
 
-An open-source research application tracking major AI infrastructure projects
-worldwide — AI factories, hyperscale campuses, GPU clusters, sovereign AI
-programmes, neocloud and colocation build-outs, HPC systems, and the power
-projects tied to them.
+That gap — roughly 2% — is what this project exists to measure. Most trackers
+count announcements and report one number. This one separates what is
+**confirmed** from what is merely **announced**, and shows a source and a
+confidence level for every individual claim.
 
-**Live: [tracker.bepresearch.com](https://tracker.bepresearch.com)**
-· Code MIT · Data [CC BY 4.0](LICENSE-DATA)
-· [Contributing](CONTRIBUTING.md)
+**[tracker.bepresearch.com](https://tracker.bepresearch.com)** — no login to read
+· [Data snapshot](data/) · [Contributing](CONTRIBUTING.md) · Code MIT · Data [CC BY 4.0](LICENSE-DATA)
 
-Most trackers in this space count announcements. This one tries to answer harder
-questions: how much capacity is *confirmed* rather than announced, how much is
-actually blocked by siting restrictions, and — for every figure — who said so and
-where. Every claim carries its own confidence level and source, and the two are
-never averaged into a single number nobody can defend.
+```bash
+curl -s https://tracker.bepresearch.com/api/projects/export?format=csv
+```
 
-**Corrections are the most valuable contribution.** If a figure here is wrong,
-open an issue and show why.
+---
+
+## Three things it does that an announcement tracker cannot
+
+**Tells you which numbers it can stand behind.** Estimated and confirmed are
+separate fields, never averaged. A project page shows 1,200 MW `MEDIUM` from an
+owner statement next to 200 MW `CONFIRMED` from a utility filing — because those
+are different facts, and collapsing them into one figure destroys the only thing
+that made either worth citing.
+
+**Measures siting risk in megawatts, not ordinances.** Bindingness is graded 0–5.
+An advisory study and a permanent prohibition are both reported as
+"moratoriums"; only levels that actually block count toward capacity at risk,
+and the page shows how many live restrictions block nothing at all.
+
+**Says "not disclosed" instead of zero.** A blank is a missing value, never a 0.
+The formatter enforces it and the tests pin it, because a spreadsheet that fills
+blanks with zeros understates every total it produces.
+
+---
+
+## Contributing
+
+Corrections are the most valuable contribution. If a figure here is wrong, open
+an issue and show why — a quoted sentence from a source beats an argument.
+
+Data arrives as a proposal and is reviewed before it reaches the live figures.
+That is not gatekeeping for its own sake: a tracker anyone can silently edit is
+a tracker nobody can quote. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 

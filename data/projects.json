@@ -1,0 +1,867 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-27T01:15:19.042Z",
+    "count": 14,
+    "disclaimer": "Figures combine confirmed disclosures with analyst estimates. Check confidence and sources per project before use. Rows with isDemoData=true are illustrative seed data and must not be used in analysis.",
+    "demoRowCount": 0
+  },
+  "projects": [
+    {
+      "slug": "abilene-clean-campus-crusoe",
+      "name": "Abilene Clean Campus (Crusoe)",
+      "description": "Crusoe-developed capacity adjacent to Stargate Abilene, reported at roughly 900 MW after OpenAI declined the expansion.",
+      "owner": {
+        "name": "Crusoe Energy",
+        "ticker": null
+      },
+      "projectType": "COLOCATION",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Abilene",
+        "stateRegion": "Texas",
+        "country": "United States",
+        "latitude": 32.4487,
+        "longitude": -99.7331
+      },
+      "timeline": {
+        "announcementDate": "2026-01-15T00:00:00.000Z",
+        "expectedOpeningDate": "2027-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 900,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": 48,
+      "lastVerifiedAt": "2026-07-27T01:02:15.488Z",
+      "isDemoData": false,
+      "analystNotes": "Tenancy is unsettled: OpenAI declined the expansion and Microsoft is reported to be in talks. Recorded as unattributed capacity rather than assigned to a tenant that has not signed."
+    },
+    {
+      "slug": "meta-hyperion-louisiana",
+      "name": "Meta Hyperion",
+      "description": "Multi-gigawatt AI training campus in Richland Parish, Louisiana — the largest single-site build publicly announced.",
+      "owner": {
+        "name": "Meta",
+        "ticker": "META"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Richland Parish",
+        "stateRegion": "Louisiana",
+        "country": "United States",
+        "latitude": 32.4735,
+        "longitude": -91.7793
+      },
+      "timeline": {
+        "announcementDate": "2024-12-04T00:00:00.000Z",
+        "expectedOpeningDate": "2030-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 5000,
+        "confirmedMw": null,
+        "source": "Grid + on-site generation",
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 27000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 0,
+        "metricCount": 3
+      },
+      "confidenceScore": 58,
+      "lastVerifiedAt": "2026-07-26T18:02:27.368Z",
+      "isDemoData": false,
+      "analystNotes": "5 GW is a full-build target across many phases, not near-term capacity. Treated as an estimate; no phase is confirmed energised in the sources reviewed."
+    },
+    {
+      "slug": "meta-prometheus-new-albany",
+      "name": "Meta Prometheus",
+      "description": "New Albany, Ohio campus targeting 1 GW, with nuclear supply agreements signed in January 2026.",
+      "owner": {
+        "name": "Meta",
+        "ticker": "META"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "New Albany",
+        "stateRegion": "Ohio",
+        "country": "United States",
+        "latitude": 40.081,
+        "longitude": -82.8088
+      },
+      "timeline": {
+        "announcementDate": "2025-07-14T00:00:00.000Z",
+        "expectedOpeningDate": "2027-06-30T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1000,
+        "confirmedMw": null,
+        "source": "Nuclear PPAs + grid",
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [
+        {
+          "name": "TerraPower",
+          "role": "POWER_EQUIPMENT_SUPPLIER"
+        },
+        {
+          "name": "Oklo",
+          "role": "POWER_EQUIPMENT_SUPPLIER"
+        },
+        {
+          "name": "Vistra",
+          "role": "UTILITY"
+        }
+      ],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": 60,
+      "lastVerifiedAt": "2026-07-26T18:02:30.104Z",
+      "isDemoData": false,
+      "analystNotes": "Nuclear agreements with TerraPower, Oklo and Vistra are power-purchase commitments, not on-site reactors delivering today."
+    },
+    {
+      "slug": "microsoft-fairwater-atlanta",
+      "name": "Microsoft Fairwater — Atlanta",
+      "description": "Atlanta campus paired with the Wisconsin Fairwater site over dedicated fibre to operate as one distributed training system.",
+      "owner": {
+        "name": "Microsoft",
+        "ticker": "MSFT"
+      },
+      "projectType": "AI_FACTORY",
+      "status": "OPERATIONAL",
+      "location": {
+        "city": "Atlanta",
+        "stateRegion": "Georgia",
+        "country": "United States",
+        "latitude": 33.749,
+        "longitude": -84.388
+      },
+      "timeline": {
+        "announcementDate": "2025-09-01T00:00:00.000Z",
+        "expectedOpeningDate": "2026-03-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 350,
+        "confirmedMw": null,
+        "source": "Grid",
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": 58,
+      "lastVerifiedAt": "2026-07-26T18:02:31.863Z",
+      "isDemoData": false,
+      "analystNotes": "Paired with the Wisconsin site; the two are reported to operate as a single distributed training fabric."
+    },
+    {
+      "slug": "microsoft-fairwater-wisconsin",
+      "name": "Microsoft Fairwater — Wisconsin",
+      "description": "Mount Pleasant, Wisconsin site, reported live June 2026, linked by dedicated fibre to the Atlanta Fairwater campus.",
+      "owner": {
+        "name": "Microsoft",
+        "ticker": "MSFT"
+      },
+      "projectType": "AI_FACTORY",
+      "status": "OPERATIONAL",
+      "location": {
+        "city": "Mount Pleasant",
+        "stateRegion": "Wisconsin",
+        "country": "United States",
+        "latitude": 42.7089,
+        "longitude": -87.8917
+      },
+      "timeline": {
+        "announcementDate": "2025-03-12T00:00:00.000Z",
+        "expectedOpeningDate": "2026-06-30T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 350,
+        "confirmedMw": null,
+        "source": "Grid",
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": 62,
+      "lastVerifiedAt": "2026-07-26T18:02:31.204Z",
+      "isDemoData": false,
+      "analystNotes": "Closed-loop liquid cooling, reported to eliminate operational water consumption. Reported as exceeding 350 MW and scaling further, so 350 MW is a floor rather than a point estimate."
+    },
+    {
+      "slug": "naver-gak-sejong-ai-factory",
+      "name": "NAVER GAK Sejong AI Factory",
+      "description": "Sovereign AI factory at NAVER's GAK Sejong hyperscale data centre, announced 25 July 2026 for expansion to 200 MW by 2028 with Brookfield as exclusive capital partner.",
+      "owner": {
+        "name": "NAVER",
+        "ticker": "035420.KS"
+      },
+      "projectType": "SOVEREIGN_AI",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Sejong",
+        "stateRegion": "Sejong",
+        "country": "South Korea",
+        "latitude": 36.48,
+        "longitude": 127.289
+      },
+      "timeline": {
+        "announcementDate": "2026-07-25T00:00:00.000Z",
+        "expectedOpeningDate": "2028-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 200,
+        "confirmedMw": null,
+        "source": "Grid",
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": 100000,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA Vera Rubin (DSX platform)",
+        "computePlatform": "NVIDIA DSX"
+      },
+      "capex": {
+        "estimatedUsd": 10000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [
+        "NVIDIA",
+        "Rubin",
+        "sovereign AI"
+      ],
+      "suppliers": [
+        {
+          "name": "NAVER",
+          "role": "OWNER"
+        },
+        {
+          "name": "NVIDIA",
+          "role": "GPU_SUPPLIER"
+        },
+        {
+          "name": "Brookfield",
+          "role": "INVESTOR"
+        }
+      ],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 2,
+        "metricCount": 5
+      },
+      "confidenceScore": 72,
+      "lastVerifiedAt": "2026-07-26T17:59:06.539Z",
+      "isDemoData": false,
+      "analystNotes": "NAVER states a long-term ambition to reach 1 GW of NVIDIA AI infrastructure. That is an intent, not a committed build, and is deliberately NOT counted in the capacity figures — only the announced 200 MW by 2028 is. Funding split: Brookfield up to $9B as exclusive capital partner, NVIDIA $1B, NAVER the remainder."
+    },
+    {
+      "slug": "project-rainier-new-carlisle",
+      "name": "Project Rainier",
+      "description": "AWS campus at New Carlisle, Indiana built for Anthropic training workloads on Trainium.",
+      "owner": {
+        "name": "Amazon Web Services",
+        "ticker": "AMZN"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "PARTIALLY_OPERATIONAL",
+      "location": {
+        "city": "New Carlisle",
+        "stateRegion": "Indiana",
+        "country": "United States",
+        "latitude": 41.7017,
+        "longitude": -86.5083
+      },
+      "timeline": {
+        "announcementDate": "2024-01-24T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1000,
+        "confirmedMw": null,
+        "source": "Grid",
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": "AWS Trainium",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [
+        {
+          "name": "Anthropic",
+          "role": "TENANT"
+        }
+      ],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": 60,
+      "lastVerifiedAt": "2026-07-26T18:02:32.532Z",
+      "isDemoData": false,
+      "analystNotes": "Reported at roughly 1 GW or more of IT power. IT load and site power are different quantities and the sources are not always explicit about which is meant."
+    },
+    {
+      "slug": "stargate-abilene-texas",
+      "name": "Stargate Abilene",
+      "description": "Anchor site of the Stargate programme in Abilene, Texas, operated by Oracle with OpenAI as tenant.",
+      "owner": {
+        "name": "Oracle",
+        "ticker": "ORCL"
+      },
+      "projectType": "AI_FACTORY",
+      "status": "PARTIALLY_OPERATIONAL",
+      "location": {
+        "city": "Abilene",
+        "stateRegion": "Texas",
+        "country": "United States",
+        "latitude": 32.4487,
+        "longitude": -99.7331
+      },
+      "timeline": {
+        "announcementDate": "2025-01-21T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1200,
+        "confirmedMw": 300,
+        "source": "Grid + on-site gas turbines",
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA GB200 NVL72",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [
+        {
+          "name": "OpenAI",
+          "role": "TENANT"
+        },
+        {
+          "name": "Oracle",
+          "role": "OPERATOR"
+        }
+      ],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 3
+      },
+      "confidenceScore": 64,
+      "lastVerifiedAt": "2026-07-27T01:02:10.763Z",
+      "isDemoData": false,
+      "analystNotes": "Gas turbines rated up to ~300 MW are reported on site, bridging the gap while grid capacity is built."
+    },
+    {
+      "slug": "stargate-dona-ana-county",
+      "name": "Stargate Doña Ana County",
+      "description": "Stargate site in Doña Ana County, New Mexico, announced by OpenAI with Oracle and SoftBank.",
+      "owner": {
+        "name": "Oracle",
+        "ticker": "ORCL"
+      },
+      "projectType": "AI_FACTORY",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Doña Ana County",
+        "stateRegion": "New Mexico",
+        "country": "United States",
+        "latitude": 32.3199,
+        "longitude": -106.7637
+      },
+      "timeline": {
+        "announcementDate": "2025-09-23T00:00:00.000Z",
+        "expectedOpeningDate": "2028-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [
+        {
+          "name": "OpenAI",
+          "role": "TENANT"
+        },
+        {
+          "name": "SoftBank Group",
+          "role": "INVESTOR"
+        }
+      ],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": 55,
+      "lastVerifiedAt": "2026-07-27T01:02:13.295Z",
+      "isDemoData": false,
+      "analystNotes": "Site confirmed by OpenAI's own announcement; no per-site capacity was published, so power is deliberately left blank rather than guessed."
+    },
+    {
+      "slug": "stargate-lordstown-ohio",
+      "name": "Stargate Lordstown",
+      "description": "Stargate site at Lordstown, Ohio, announced by OpenAI with Oracle and SoftBank.",
+      "owner": {
+        "name": "Oracle",
+        "ticker": "ORCL"
+      },
+      "projectType": "AI_FACTORY",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Lordstown",
+        "stateRegion": "Ohio",
+        "country": "United States",
+        "latitude": 41.1656,
+        "longitude": -80.8542
+      },
+      "timeline": {
+        "announcementDate": "2025-09-23T00:00:00.000Z",
+        "expectedOpeningDate": "2028-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [
+        {
+          "name": "OpenAI",
+          "role": "TENANT"
+        },
+        {
+          "name": "SoftBank Group",
+          "role": "INVESTOR"
+        }
+      ],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": 55,
+      "lastVerifiedAt": "2026-07-27T01:02:14.014Z",
+      "isDemoData": false,
+      "analystNotes": "Site confirmed by OpenAI; no per-site capacity published."
+    },
+    {
+      "slug": "stargate-milam-county",
+      "name": "Stargate Milam County",
+      "description": "Stargate site in Milam County, Texas, announced by OpenAI with Oracle and SoftBank.",
+      "owner": {
+        "name": "Oracle",
+        "ticker": "ORCL"
+      },
+      "projectType": "AI_FACTORY",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Milam County",
+        "stateRegion": "Texas",
+        "country": "United States",
+        "latitude": 30.786,
+        "longitude": -96.9772
+      },
+      "timeline": {
+        "announcementDate": "2025-09-23T00:00:00.000Z",
+        "expectedOpeningDate": "2028-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [
+        {
+          "name": "OpenAI",
+          "role": "TENANT"
+        },
+        {
+          "name": "SoftBank Group",
+          "role": "INVESTOR"
+        }
+      ],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": 55,
+      "lastVerifiedAt": "2026-07-27T01:02:14.733Z",
+      "isDemoData": false,
+      "analystNotes": "Site confirmed by OpenAI; no per-site capacity published."
+    },
+    {
+      "slug": "stargate-shackelford-county",
+      "name": "Stargate Shackelford County",
+      "description": "Vantage-developed Stargate site in Shackelford County, Texas — ten single-storey buildings across roughly 1,200 acres.",
+      "owner": {
+        "name": "Vantage Data Centers",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Shackelford County",
+        "stateRegion": "Texas",
+        "country": "United States",
+        "latitude": 32.7357,
+        "longitude": -99.335
+      },
+      "timeline": {
+        "announcementDate": "2025-09-23T00:00:00.000Z",
+        "expectedOpeningDate": "2028-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1400,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": 3700000,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [
+        {
+          "name": "OpenAI",
+          "role": "TENANT"
+        },
+        {
+          "name": "Oracle",
+          "role": "OPERATOR"
+        }
+      ],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 1,
+        "metricCount": 3
+      },
+      "confidenceScore": 64,
+      "lastVerifiedAt": "2026-07-27T01:02:12.416Z",
+      "isDemoData": false,
+      "analystNotes": "1.4 GW is stated as IT capacity, which is not the same as site power draw. Recorded as IT capacity and flagged, because the two are routinely conflated in reporting."
+    },
+    {
+      "slug": "stargate-uae-abu-dhabi",
+      "name": "Stargate UAE",
+      "description": "1 GW compute cluster inside the UAE–US AI Campus in Abu Dhabi, built by G42 and operated with OpenAI and Oracle.",
+      "owner": {
+        "name": "G42",
+        "ticker": null
+      },
+      "projectType": "SOVEREIGN_AI",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Abu Dhabi",
+        "stateRegion": "Abu Dhabi",
+        "country": "United Arab Emirates",
+        "latitude": 24.4539,
+        "longitude": 54.3773
+      },
+      "timeline": {
+        "announcementDate": "2025-05-22T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1000,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [
+        {
+          "name": "OpenAI",
+          "role": "OPERATOR"
+        },
+        {
+          "name": "Oracle",
+          "role": "OPERATOR"
+        },
+        {
+          "name": "NVIDIA",
+          "role": "GPU_SUPPLIER"
+        },
+        {
+          "name": "Cisco",
+          "role": "NETWORKING_SUPPLIER"
+        },
+        {
+          "name": "SoftBank Group",
+          "role": "INVESTOR"
+        }
+      ],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": 66,
+      "lastVerifiedAt": "2026-07-27T01:02:11.146Z",
+      "isDemoData": false,
+      "analystNotes": "The 1 GW cluster sits inside a wider 5 GW UAE–US AI Campus. Only the 1 GW cluster is counted here — counting the campus envelope as well would double-count the same megawatts."
+    },
+    {
+      "slug": "xai-colossus-2-memphis",
+      "name": "xAI Colossus 2",
+      "description": "Training cluster spanning Memphis, Tennessee and Southaven, Mississippi, generating power on site rather than waiting for utility interconnection.",
+      "owner": {
+        "name": "xAI",
+        "ticker": null
+      },
+      "projectType": "GPU_CLUSTER",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Memphis",
+        "stateRegion": "Tennessee",
+        "country": "United States",
+        "latitude": 35.0651,
+        "longitude": -90.0673
+      },
+      "timeline": {
+        "announcementDate": "2025-06-02T00:00:00.000Z",
+        "expectedOpeningDate": "2027-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 2000,
+        "confirmedMw": null,
+        "source": "On-site generation",
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": 555000,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA GB200/GB300",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 0,
+        "metricCount": 2
+      },
+      "confidenceScore": 52,
+      "lastVerifiedAt": "2026-07-26T18:02:28.321Z",
+      "isDemoData": false,
+      "analystNotes": "On-site generation is the defining feature: the site sidesteps the interconnection queue, which is why its timeline is faster than grid-dependent peers."
+    }
+  ]
+}
