@@ -46,6 +46,31 @@ export function ProjectMap({
   );
   const unplottable = useMemo(() => countUnplottable(projects), [projects]);
 
+  // Frame the camera on the data rather than on a fixed point. A hardcoded
+  // centre was wrong the moment the pipeline stopped being US-only: it put most
+  // markers on the unlit limb of the globe, so the map looked empty on load.
+  // Read once, on mount — refitting as filters change would yank the view out
+  // from under someone who had just panned somewhere deliberately.
+  const initialViewState = useMemo(() => {
+    const points = collection.features.map((f) => f.geometry.coordinates);
+    if (points.length === 0) return { longitude: -30, latitude: 35, zoom: 1.6 };
+
+    const lngs = points.map(([lng]) => lng);
+    const lats = points.map(([, lat]) => lat);
+
+    return {
+      bounds: [
+        [Math.min(...lngs), Math.min(...lats)],
+        [Math.max(...lngs), Math.max(...lats)],
+      ] as [[number, number], [number, number]],
+      // maxZoom keeps a single plotted project from slamming the camera down to
+      // street level, where a site reads as a rooftop rather than a location.
+      fitBoundsOptions: { padding: 64, maxZoom: 5 },
+    };
+    // Deliberately mount-only: see comment above.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const selectedFeature = collection.features.find((f) => f.properties.id === selected);
 
   // Without a token Mapbox cannot render at all. Rather than a broken grey box,
@@ -111,8 +136,12 @@ export function ProjectMap({
       <div className="h-[640px] overflow-hidden rounded-lg border border-line">
         <Map
           mapboxAccessToken={mapboxToken}
-          initialViewState={{ longitude: -30, latitude: 35, zoom: 1.6 }}
+          initialViewState={initialViewState}
           mapStyle="mapbox://styles/mapbox/dark-v11"
+          // Mapbox v3 renders a globe at low zoom. A globe is the wrong
+          // instrument here: half the dataset is always on the far side, and
+          // the visible half is distorted by the curve. Flat fills the frame.
+          projection={{ name: "mercator" }}
           interactiveLayerIds={["clusters", "unclustered"]}
           onClick={(event: MapMouseEvent) => {
             const feature = event.features?.[0];
