@@ -36,7 +36,10 @@ export function BarList({
       {rows.map((row) => (
         <div
           key={row.key}
-          className="grid grid-cols-[minmax(90px,1fr)_2fr_auto] items-center gap-3"
+          // The label track floors at 0 rather than 90px: on a 375px screen a
+          // 90px floor plus the bar and the value adds up to more than the
+          // panel has, and the label already truncates.
+          className="grid grid-cols-[minmax(0,1.1fr)_2fr_auto] items-center gap-3"
         >
           <span className="truncate text-[12px] text-fg-dim" title={row.label}>
             {row.label}

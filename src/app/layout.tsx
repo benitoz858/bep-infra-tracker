@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   // Open project: indexable. The tracker is public and being found is the point.
   robots: { index: true, follow: true },
   metadataBase: new URL("https://tracker.bepresearch.com"),
+  alternates: { canonical: "/" },
   openGraph: {
     title: "BEP AI Infrastructure Tracker",
     description:
@@ -33,8 +34,25 @@ export const metadata: Metadata = {
     url: "https://tracker.bepresearch.com",
     siteName: "BEP AI Infrastructure Tracker",
     type: "website",
+    // Declaring summary_large_image without an image is worse than declaring
+    // nothing: X, Slack and LinkedIn all render the wide card and leave it
+    // blank. Static rather than generated — an OG image is served to crawlers
+    // on the hot path of every share, and og.png cannot fail at runtime.
+    // Regenerate with scripts/make-og-image.py.
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "BEP AI Infrastructure Tracker — announced capacity is not operating capacity.",
+      },
+    ],
   },
-  twitter: { card: "summary_large_image", title: "BEP AI Infrastructure Tracker" },
+  twitter: {
+    card: "summary_large_image",
+    title: "BEP AI Infrastructure Tracker",
+    images: ["/og.png"],
+  },
 };
 
 export const viewport: Viewport = {
