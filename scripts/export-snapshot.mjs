@@ -2,9 +2,12 @@
  * Writes a public CC BY 4.0 snapshot of the live database into data/.
  *
  * The point is that "open data" should not require running the application.
- * A committed CSV is curl-able, diffable in a pull request, and rendered by
- * GitHub in the browser — so a reader can check a figure without trusting the
- * site, and a contributor can propose a correction as a diff.
+ * A committed CSV is curl-able and rendered by GitHub in the browser, so a
+ * reader can check a figure without trusting the site.
+ *
+ * These files are output, never input: this script overwrites all of them,
+ * including data/README.md. A correction has to reach the database — see
+ * CONTRIBUTING.md.
  *
  * Run: npm run snapshot   (refreshed by .github/workflows/snapshot.yml)
  */
@@ -25,20 +28,38 @@ const FILES = [
 fs.mkdirSync(OUT, { recursive: true });
 
 /**
- * Retry on 5xx. A cold Cloudflare Worker has to compile Prisma's WASM query
- * compiler before it can answer, and the first request after an idle period or
- * a deploy can exceed that budget and 500. It is transient, so a couple of
- * retries is the correct response — failing the snapshot job over it would just
- * produce noisy red builds.
+ * Retry on 5xx, and on the two status codes that mean "the edge did not like
+ * the look of you" rather than "this resource is unavailable".
+ *
+ * 5xx: a cold Cloudflare Worker has to compile Prisma's WASM query compiler
+ * before it can answer, and the first request after an idle period or a deploy
+ * can exceed that budget.
+ *
+ * 403/429: Cloudflare bot protection challenges requests from datacenter
+ * addresses, which is exactly where CI runs from. This job has already failed
+ * that way once while the same request from a residential connection succeeded.
+ * Retrying is a mitigation, not a fix — if it recurs, the real answer is a WAF
+ * skip rule for /api/*, because the same block hits any researcher scripting
+ * against a supposedly open API.
  */
+const RETRYABLE = new Set([403, 408, 425, 429]);
+
 async function fetchWithRetry(url, attempts = 4) {
   let last;
   for (let i = 0; i < attempts; i += 1) {
-    const res = await fetch(url);
+    const res = await fetch(url, {
+      // Identify the caller. A bot filter treats an anonymous datacenter
+      // request far more harshly than a named one, and it is good manners.
+      headers: {
+        "user-agent":
+          "bep-infra-tracker-snapshot/1.0 (+https://github.com/benitoz858/bep-infra-tracker)",
+        accept: "text/csv, application/json;q=0.9, */*;q=0.5",
+      },
+    });
     if (res.ok) return res;
     last = `${res.status} ${res.statusText}`;
-    if (res.status < 500) break;
-    await new Promise((r) => setTimeout(r, 2000 * (i + 1)));
+    if (!RETRYABLE.has(res.status) && res.status < 500) break;
+    await new Promise((r) => setTimeout(r, 3000 * (i + 1)));
   }
   throw new Error(`${url} -> ${last}`);
 }
@@ -55,6 +76,12 @@ fs.writeFileSync(
   `# Data snapshot
 
 Machine-readable export of the live tracker, refreshed automatically.
+
+> **Generated — do not edit.** Every file in this directory, including this
+> README, is rebuilt from the database nightly and force-committed, so a change
+> made here is overwritten within a day. To correct a figure,
+> [open an issue](https://github.com/benitoz858/bep-infra-tracker/issues/new?labels=data)
+> with a source; see [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 | File | Contents |
 | --- | --- |

@@ -2,9 +2,10 @@
 
 Machine-readable export of the live tracker, refreshed automatically.
 
-> **Generated — do not edit.** These files are rebuilt from the database every
-> night and force-committed, so an edit here is overwritten within a day. To
-> correct a figure, [open an issue](https://github.com/benitoz858/bep-infra-tracker/issues/new?labels=data)
+> **Generated — do not edit.** Every file in this directory, including this
+> README, is rebuilt from the database nightly and force-committed, so a change
+> made here is overwritten within a day. To correct a figure,
+> [open an issue](https://github.com/benitoz858/bep-infra-tracker/issues/new?labels=data)
 > with a source; see [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 | File | Contents |
