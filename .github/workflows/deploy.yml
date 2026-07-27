@@ -1,0 +1,82 @@
+name: Deploy
+
+# Ships main to Cloudflare once CI has passed on that exact commit.
+#
+# Gated on CI rather than running the checks again: a deploy that re-runs the
+# suite in parallel with CI can ship a commit whose tests are still red, which
+# is the one failure mode this workflow exists to prevent. `workflow_run` also
+# means a contributor watches their merged fix reach production without anyone
+# having to remember to run wrangler.
+on:
+  workflow_run:
+    workflows: ["CI"]
+    branches: [main]
+    types: [completed]
+  workflow_dispatch:
+
+concurrency:
+  # Never two deploys at once; a superseded one is simply dropped, since the
+  # newer commit already contains whatever the older one was shipping.
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    # A failed or cancelled CI run still fires workflow_run.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          # Deploy the commit CI actually tested, not whatever main has drifted
+          # to since. Falls back to the default ref for a manual dispatch.
+          ref: ${{ github.event.workflow_run.head_sha || github.ref }}
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build for Cloudflare
+        # The build inlines NEXT_PUBLIC_* into the client bundle, so the Mapbox
+        # token has to be present here and not only at runtime — without it the
+        # deployed map renders its "needs a token" empty state.
+        env:
+          NEXT_PUBLIC_MAPBOX_TOKEN: ${{ secrets.NEXT_PUBLIC_MAPBOX_TOKEN }}
+        run: npm run cf:build
+
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Verify the deploy actually serves pages
+        # A green wrangler deploy is not proof the site works — the WASM and
+        # driver failures this project has already hit both deployed cleanly and
+        # broke at request time. Fetch real pages and require complete HTML.
+        run: |
+          sleep 15
+          fail=0
+          for path in / /projects /siting /api/projects/export?format=csv; do
+            url="https://tracker.bepresearch.com${path}"
+            body=$(curl -sL --max-time 30 "$url")
+            code=$(curl -sL -o /dev/null -w '%{http_code}' --max-time 30 "$url")
+            if [ "$code" != "200" ]; then
+              echo "::error::$path returned $code"; fail=1; continue
+            fi
+            case "$path" in
+              /api/*) ;;
+              *) if ! printf '%s' "$body" | grep -q '</body>'; then
+                   echo "::error::$path returned truncated HTML (no closing body tag)"; fail=1
+                 fi ;;
+            esac
+            echo "ok $path ($code)"
+          done
+          exit $fail

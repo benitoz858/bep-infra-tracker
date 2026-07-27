@@ -36,12 +36,19 @@ all. A tracker anyone can silently edit is a tracker nobody can quote.
 
 ### How to submit
 
-**Open an issue** using the data template. Fastest, no setup, good for one-offs.
+**Open an issue** using the data template. No setup, and it is the way data
+gets in — there is no faster path that a pull request would unlock.
 
-**Open a pull request** against the data files if you are comfortable with git.
-CI validates every row against the same Zod schemas the application uses, so you
-get the same errors an analyst would — bad enum, negative megawatts, a
-`CONFIRMED` claim with no source — before a human ever looks.
+> **Do not open a pull request against `data/`.** Those files are a *generated
+> snapshot*, exported from the live database and refreshed every night. A change
+> merged into them would be overwritten within a day, and your work would vanish
+> for reasons that had nothing to do with whether it was right. The database is
+> the source of truth; `data/` is what falls out of it.
+
+A maintainer reads your source, records the claim with its confidence level, and
+replies on the issue with a link to the updated project page — so you can check
+that what landed matches what you meant. Code pull requests are a different
+story and are very welcome; see below.
 
 Corrections are as welcome as additions. If a figure here is wrong, say so and
 show why; that is more valuable than a new row.
