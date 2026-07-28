@@ -44,16 +44,36 @@ function fail(message) {
 }
 
 const raw = await read(process.stdin);
-// A paste routinely arrives with a trailing newline, surrounding quotes, or a
-// `psql ` prefix copied along with the command Neon displays.
-const url = raw
-  .trim()
-  .replace(/^psql\s+/, "")
-  .replace(/^['"]|['"]$/g, "")
-  .trim();
 
-if (!url) fail("nothing was pasted.");
-if (/\s/.test(url)) fail("the string contains a space or newline in the middle.");
+/**
+ * Pull the URL out of whatever it was copied inside.
+ *
+ * Neon's console offers the credential in several shapes depending on which
+ * tab is open — a bare string, `psql '…'`, `DATABASE_URL="…"`, a .env block,
+ * a code snippet. Insisting on the bare form means a person mid-outage has to
+ * find the right copy button; extracting it means any of them work. The value
+ * is still parsed and connected to before anything is written, so being
+ * permissive here costs nothing.
+ */
+function extractUrl(input) {
+  const match = input.match(/postgres(?:ql)?:\/\/\S+/i);
+  if (!match) return "";
+  // Trailing punctuation from the surrounding syntax: quote, backtick,
+  // semicolon, comma, or a closing bracket.
+  return match[0].replace(/['"`;,)\]}]+$/, "");
+}
+
+const url = extractUrl(raw);
+
+if (!url) {
+  // Describe the input without echoing it — it may contain the password.
+  const lines = raw.trim().split("\n").length;
+  console.error(`Received ${raw.trim().length} characters across ${lines} line(s).`);
+  console.error("No postgresql:// URL found in it.");
+  fail("copy the connection string from Neon's Connect dialog and try again.");
+}
+
+if (/\s/.test(url)) fail("the extracted URL still contains whitespace.");
 
 let parsed;
 try {
