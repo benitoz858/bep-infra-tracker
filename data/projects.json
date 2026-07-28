@@ -1,11 +1,173 @@
 {
   "meta": {
-    "generatedAt": "2026-07-28T09:17:36.151Z",
-    "count": 14,
+    "generatedAt": "2026-07-28T16:19:54.107Z",
+    "count": 70,
     "disclaimer": "Figures combine confirmed disclosures with analyst estimates. Check confidence and sources per project before use. Rows with isDemoData=true are illustrative seed data and must not be used in analysis.",
     "demoRowCount": 0
   },
   "projects": [
+    {
+      "slug": "aws-madison-county-mississippi",
+      "name": "AWS Madison County (Mississippi)",
+      "description": null,
+      "owner": {
+        "name": "Amazon Web Services",
+        "ticker": "AMZN"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Canton",
+        "stateRegion": "Mississippi",
+        "country": "United States",
+        "latitude": 32.61,
+        "longitude": -90.03
+      },
+      "timeline": {
+        "announcementDate": "2024-01-25T00:00:00.000Z",
+        "expectedOpeningDate": "2027-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 21000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 2,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:51.760Z",
+      "isDemoData": false,
+      "analystNotes": "Two campuses across ~1,700 acres. Capex is Madison County only: the original $10B (Jan 2024) plus the $11B expansion (Apr 2026). Amazon's total Mississippi commitment is $25B including other sites. No MW disclosed."
+    },
+    {
+      "slug": "aws-richmond-county-north-carolina",
+      "name": "AWS Richmond County (North Carolina)",
+      "description": null,
+      "owner": {
+        "name": "Amazon Web Services",
+        "ticker": "AMZN"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Rockingham",
+        "stateRegion": "North Carolina",
+        "country": "United States",
+        "latitude": 34.94,
+        "longitude": -79.77
+      },
+      "timeline": {
+        "announcementDate": "2025-06-04T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 10000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:52.724Z",
+      "isDemoData": false,
+      "analystNotes": "~800 acres, ~20 planned buildings, adjacent to Duke Energy's Smith Energy Complex. Largest single capital project in North Carolina history; broke ground July 2026. No MW disclosed."
+    },
+    {
+      "slug": "aws-salem-township-susquehanna",
+      "name": "AWS Salem Township (Susquehanna)",
+      "description": null,
+      "owner": {
+        "name": "Amazon Web Services",
+        "ticker": "AMZN"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "PARTIALLY_OPERATIONAL",
+      "location": {
+        "city": "Salem Township",
+        "stateRegion": "Pennsylvania",
+        "country": "United States",
+        "latitude": 41.09,
+        "longitude": -76.15
+      },
+      "timeline": {
+        "announcementDate": "2024-03-04T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 960,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:52.226Z",
+      "isDemoData": false,
+      "analystNotes": "Former Talen Cumulus campus adjacent to the Susquehanna nuclear plant, bought for $650M in Mar 2024 with ~240 MW developed at acquisition; ramping toward up to 960 MW site power. The 2025 Talen PPA covers up to 1,920 MW across AWS Pennsylvania sites. No source states the currently energized level, so nothing is recorded as confirmed."
+    },
     {
       "slug": "abilene-clean-campus-crusoe",
       "name": "Abilene Clean Campus (Crusoe)",
@@ -61,6 +223,1248 @@
       "analystNotes": "Tenancy is unsettled: OpenAI declined the expansion and Microsoft is reported to be in talks. Recorded as unattributed capacity rather than assigned to a tenant that has not signed."
     },
     {
+      "slug": "airtrunk-syd3",
+      "name": "AirTrunk SYD3",
+      "description": null,
+      "owner": {
+        "name": "AirTrunk",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Sydney",
+        "stateRegion": "New South Wales",
+        "country": "Australia",
+        "latitude": -33.8,
+        "longitude": 150.86
+      },
+      "timeline": {
+        "announcementDate": null,
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 330,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:07.533Z",
+      "isDemoData": false,
+      "analystNotes": "AirTrunk (Blackstone) lists SYD3 at 330 MW+; industry trackers cite a >400 MW master plan. Serves hyperscale cloud/AI customers; anchor tenants not officially disclosed. Full campus not energized."
+    },
+    {
+      "slug": "bytedance-johor-sedenak-tech-park",
+      "name": "ByteDance Johor (Sedenak Tech Park)",
+      "description": null,
+      "owner": {
+        "name": "ByteDance",
+        "ticker": null
+      },
+      "projectType": "DATA_CENTER",
+      "status": "PARTIALLY_OPERATIONAL",
+      "location": {
+        "city": "Kulai",
+        "stateRegion": "Johor",
+        "country": "Malaysia",
+        "latitude": 1.62,
+        "longitude": 103.65
+      },
+      "timeline": {
+        "announcementDate": "2024-06-18T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 2130000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:06.343Z",
+      "isDemoData": false,
+      "analystNotes": "Capex is the June 2024 RM10B (~$2.13B) AI-hub commitment; Johor officials put cumulative ByteDance datacenter investment above RM29.5B (~$6.6B) by Jan 2026, spread across own-build and leased capacity. Existing Sedenak facility operating, expansion ongoing. No site MW disclosed."
+    },
+    {
+      "slug": "campus-ia-fouju-ile-de-france",
+      "name": "Campus IA (Fouju, Île-de-France)",
+      "description": null,
+      "owner": {
+        "name": "MGX",
+        "ticker": null
+      },
+      "projectType": "AI_FACTORY",
+      "status": "PERMITTING",
+      "location": {
+        "city": "Fouju",
+        "stateRegion": "Seine-et-Marne",
+        "country": "France",
+        "latitude": 48.596,
+        "longitude": 2.782
+      },
+      "timeline": {
+        "announcementDate": "2025-05-19T00:00:00.000Z",
+        "expectedOpeningDate": "2028-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1400,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:15.996Z",
+      "isDemoData": false,
+      "analystNotes": "UAE-backed JV of MGX, Bpifrance, Mistral AI and NVIDIA, announced at Choose France 2025; site fixed at ZAC des Bordes, Fouju. Public inquiry under way per the prefecture (hence PERMITTING); construction planned from H2 2026, operations by 2028. Reported ~€8.5B initial investment not captured from a primary source, so no capex recorded."
+    },
+    {
+      "slug": "cassava-ai-factory-cape-town",
+      "name": "Cassava AI Factory (Cape Town)",
+      "description": null,
+      "owner": {
+        "name": "Cassava Technologies",
+        "ticker": null
+      },
+      "projectType": "GPU_CLUSTER",
+      "status": "OPERATIONAL",
+      "location": {
+        "city": "Cape Town",
+        "stateRegion": "Western Cape",
+        "country": "South Africa",
+        "latitude": -33.925,
+        "longitude": 18.424
+      },
+      "timeline": {
+        "announcementDate": null,
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA (model not confirmed)",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 0
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:13.180Z",
+      "isDemoData": false,
+      "analystNotes": "Africa's first NVIDIA-powered 'AI factory', live March 2026 inside existing Africa Data Centres facilities — GPU-as-a-service, not a new-build campus, so no MW is recorded. The 12,000-GPU figure is a continent-wide acquisition claim, initial SA deployment reported around 3,000; neither is confirmed, so no GPU count is recorded. Johannesburg expansion planned."
+    },
+    {
+      "slug": "core-scientific-denton-coreweave",
+      "name": "Core Scientific Denton (CoreWeave)",
+      "description": null,
+      "owner": {
+        "name": "Core Scientific",
+        "ticker": "CORZ"
+      },
+      "projectType": "GPU_CLUSTER",
+      "status": "PARTIALLY_OPERATIONAL",
+      "location": {
+        "city": "Denton",
+        "stateRegion": "Texas",
+        "country": "United States",
+        "latitude": 33.232,
+        "longitude": -97.216
+      },
+      "timeline": {
+        "announcementDate": "2025-02-26T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 260,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:58.469Z",
+      "isDemoData": false,
+      "analystNotes": "CoreWeave's largest contracted Core Scientific site (~260 MW critical IT load; 590 MW across six sites in the relationship, full delivery targeted early 2027). Converted bitcoin-mining site. The $1.2B figure is contracted hosting revenue, not capex, so no capex is recorded."
+    },
+    {
+      "slug": "coreweave-lancaster",
+      "name": "CoreWeave Lancaster",
+      "description": null,
+      "owner": {
+        "name": "CoreWeave",
+        "ticker": "CRWV"
+      },
+      "projectType": "DATA_CENTER",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Lancaster",
+        "stateRegion": "Pennsylvania",
+        "country": "United States",
+        "latitude": 40.038,
+        "longitude": -76.305
+      },
+      "timeline": {
+        "announcementDate": "2025-07-15T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 100,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 6000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:58.958Z",
+      "isDemoData": false,
+      "analystNotes": "Initial 100 MW expandable to 300 MW. Capex is CoreWeave's stated 'up to $6 billion' commitment."
+    },
+    {
+      "slug": "datavolt-oxagon-ai-factory-neom",
+      "name": "DataVolt Oxagon AI Factory (NEOM)",
+      "description": null,
+      "owner": {
+        "name": "DataVolt",
+        "ticker": null
+      },
+      "projectType": "AI_FACTORY",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Oxagon",
+        "stateRegion": "Tabuk Province",
+        "country": "Saudi Arabia",
+        "latitude": 27.9,
+        "longitude": 35.3
+      },
+      "timeline": {
+        "announcementDate": "2025-02-10T00:00:00.000Z",
+        "expectedOpeningDate": "2028-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1500,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 5000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:10.743Z",
+      "isDemoData": false,
+      "analystNotes": "1.5 GW total campus target, basis unstated; capex of $5B covers phase one only, with the first ~300 MW targeted for 2028. NEOM megaprojects have a documented history of rescoping and no construction on this campus is documented as of mid-2026 — treat scale as aspirational."
+    },
+    {
+      "slug": "deutsche-telekom-industrial-ai-cloud-munich",
+      "name": "Deutsche Telekom Industrial AI Cloud (Munich)",
+      "description": null,
+      "owner": {
+        "name": "Deutsche Telekom",
+        "ticker": null
+      },
+      "projectType": "SOVEREIGN_AI",
+      "status": "OPERATIONAL",
+      "location": {
+        "city": "Munich",
+        "stateRegion": "Bavaria",
+        "country": "Germany",
+        "latitude": 48.152,
+        "longitude": 11.593
+      },
+      "timeline": {
+        "announcementDate": null,
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": 10000,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA Blackwell (DGX B200)",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 1150000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:18.565Z",
+      "isDemoData": false,
+      "analystNotes": "Opened February 2026 in a renovated Munich Tucherpark datacenter; ~€1B privately financed with NVIDIA. GPU count is DT's stated 'up to 10,000' ceiling (1,000+ DGX B200 systems). Facility MW not disclosed. Anchor customers reported include Mercedes-Benz, Siemens and BMW."
+    },
+    {
+      "slug": "ecocloud-g42-olkaria-geothermal-campus",
+      "name": "EcoCloud–G42 Olkaria Geothermal Campus",
+      "description": null,
+      "owner": {
+        "name": "EcoCloud",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "PAUSED",
+      "location": {
+        "city": "Naivasha",
+        "stateRegion": "Nakuru County",
+        "country": "Kenya",
+        "latitude": -0.886,
+        "longitude": 36.292
+      },
+      "timeline": {
+        "announcementDate": "2024-03-06T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 100,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 1000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:11.374Z",
+      "isDemoData": false,
+      "analystNotes": "Geothermal-powered campus with Microsoft as cloud partner (~$1B initial investment announced May 2024). Recorded at the 100 MW initial phase, not the 1 GW ceiling. Per May 2026 reporting the plan has stalled — the commissioning date was abandoned and government approval never materialized — hence PAUSED. A smaller ~60 MW KenGen-led project continues separately."
+    },
+    {
+      "slug": "edged-merlin-extremadura-campuses",
+      "name": "Edged–Merlin Extremadura Campuses",
+      "description": null,
+      "owner": {
+        "name": "Merlin Properties",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Navalmoral de la Mata",
+        "stateRegion": "Extremadura",
+        "country": "Spain",
+        "latitude": 39.891,
+        "longitude": -5.54
+      },
+      "timeline": {
+        "announcementDate": "2025-01-14T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 2000,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:16.544Z",
+      "isDemoData": false,
+      "analystNotes": "Two campuses (Navalmoral de la Mata and Valdecaballeros) of up to 1 GW IT each, recorded as one combined 2 GW row matching the partners' joint announcement. Public–private with the regional government; no construction, tenant, capex or timeline confirmed — aspirational scale."
+    },
+    {
+      "slug": "firmus-dayone-batam-ai-factory",
+      "name": "Firmus–DayOne Batam AI Factory",
+      "description": null,
+      "owner": {
+        "name": "Firmus Technologies",
+        "ticker": null
+      },
+      "projectType": "AI_FACTORY",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Batam",
+        "stateRegion": "Riau Islands",
+        "country": "Indonesia",
+        "latitude": 1.08,
+        "longitude": 104.03
+      },
+      "timeline": {
+        "announcementDate": "2026-06-29T00:00:00.000Z",
+        "expectedOpeningDate": "2027-03-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 360,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": 170000,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA Grace-Blackwell / Vera Rubin",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:05.700Z",
+      "isDemoData": false,
+      "analystNotes": "Co-developed with DayOne; NVIDIA compute partnership through 2034, GPU deliveries through 2027–28. The cited $25–30B is committed offtake revenue, not capex. First operations targeted Q1 2027. GPU count is the announced deployment ceiling ('up to 170,000')."
+    },
+    {
+      "slug": "fluidstack-abernathy",
+      "name": "Fluidstack Abernathy",
+      "description": null,
+      "owner": {
+        "name": "Fluidstack",
+        "ticker": null
+      },
+      "projectType": "AI_FACTORY",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Abernathy",
+        "stateRegion": "Texas",
+        "country": "United States",
+        "latitude": 33.832,
+        "longitude": -101.843
+      },
+      "timeline": {
+        "announcementDate": "2025-10-14T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 168,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:59.595Z",
+      "isDemoData": false,
+      "analystNotes": "Originally a TeraWulf–Fluidstack 51/49 JV (Google-backed); in July 2026 TeraWulf sold its stake to a Fluidstack-led group. 168 MW critical IT / 240 MW gross site power. Delivery expected H2 2026. Widely reported as the Texas site of Anthropic's $50B Fluidstack program."
+    },
+    {
+      "slug": "foxconn-kaohsiung-ai-factory",
+      "name": "Foxconn Kaohsiung AI Factory",
+      "description": null,
+      "owner": {
+        "name": "Foxconn",
+        "ticker": null
+      },
+      "projectType": "AI_FACTORY",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Kaohsiung",
+        "stateRegion": "Kaohsiung",
+        "country": "Taiwan",
+        "latitude": 22.62,
+        "longitude": 120.3
+      },
+      "timeline": {
+        "announcementDate": "2025-05-18T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 100,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": 10000,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA Blackwell (GB300 NVL72)",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:06.904Z",
+      "isDemoData": false,
+      "analystNotes": "National AI factory with NVIDIA, TSMC and Taiwan's NSTC; phased 20→60→100 MW due to grid constraints, full deployment targeted 2026. Phase-1 energization not independently confirmed."
+    },
+    {
+      "slug": "google-ai-hub-visakhapatnam",
+      "name": "Google AI Hub Visakhapatnam",
+      "description": null,
+      "owner": {
+        "name": "Google",
+        "ticker": "GOOGL"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Visakhapatnam",
+        "stateRegion": "Andhra Pradesh",
+        "country": "India",
+        "latitude": 17.47,
+        "longitude": 82.93
+      },
+      "timeline": {
+        "announcementDate": "2025-10-14T00:00:00.000Z",
+        "expectedOpeningDate": "2028-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1000,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 15000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:03.021Z",
+      "isDemoData": false,
+      "analystNotes": "Google's largest AI hub outside the US; $15B over 2026–2030 includes subsea cable gateway and clean energy. Foundation laid April 2026. 1 GW is 'compute capacity' with basis unstated. Partners AdaniConneX and Nxtra."
+    },
+    {
+      "slug": "google-cedar-rapids",
+      "name": "Google Cedar Rapids",
+      "description": null,
+      "owner": {
+        "name": "Google",
+        "ticker": "GOOGL"
+      },
+      "projectType": "DATA_CENTER",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Cedar Rapids",
+        "stateRegion": "Iowa",
+        "country": "United States",
+        "latitude": 41.9,
+        "longitude": -91.65
+      },
+      "timeline": {
+        "announcementDate": "2025-05-30T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 0
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:51.368Z",
+      "isDemoData": false,
+      "analystNotes": "Google's second Iowa campus at Alliant Energy's Big Cedar Industrial Center; first building projected complete 2026, four more in later phases. $7B is statewide over two years, so no campus-level capex is recorded. No MW disclosed."
+    },
+    {
+      "slug": "google-stillwater",
+      "name": "Google Stillwater",
+      "description": null,
+      "owner": {
+        "name": "Google",
+        "ticker": "GOOGL"
+      },
+      "projectType": "DATA_CENTER",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Stillwater",
+        "stateRegion": "Oklahoma",
+        "country": "United States",
+        "latitude": 36.12,
+        "longitude": -97.06
+      },
+      "timeline": {
+        "announcementDate": "2025-08-13T00:00:00.000Z",
+        "expectedOpeningDate": "2027-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 1,
+        "metricCount": 0
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:51.061Z",
+      "isDemoData": false,
+      "analystNotes": "New AI-focused campus on ~400 acres, phase one targeted 2027. The $9B figure is statewide (also expands the existing Pryor campus), so no campus-level capex is recorded. No MW disclosed."
+    },
+    {
+      "slug": "google-west-memphis",
+      "name": "Google West Memphis",
+      "description": null,
+      "owner": {
+        "name": "Google",
+        "ticker": "GOOGL"
+      },
+      "projectType": "DATA_CENTER",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "West Memphis",
+        "stateRegion": "Arkansas",
+        "country": "United States",
+        "latitude": 35.15,
+        "longitude": -90.18
+      },
+      "timeline": {
+        "announcementDate": "2025-10-02T00:00:00.000Z",
+        "expectedOpeningDate": "2027-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 4000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:50.584Z",
+      "isDemoData": false,
+      "analystNotes": "~1,000-acre site powered by Entergy Arkansas; construction began Oct 2025 on an 18–24 month build. $4B through 2027 is the company-stated figure; local bond filings suggest the ultimate buildout could be far larger. No MW disclosed."
+    },
+    {
+      "slug": "humain-ai-factories-phase-1-riyadh-dammam",
+      "name": "HUMAIN AI Factories Phase 1 (Riyadh & Dammam)",
+      "description": null,
+      "owner": {
+        "name": "HUMAIN",
+        "ticker": null
+      },
+      "projectType": "SOVEREIGN_AI",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Riyadh",
+        "stateRegion": "Riyadh Province",
+        "country": "Saudi Arabia",
+        "latitude": 24.7136,
+        "longitude": 46.6753
+      },
+      "timeline": {
+        "announcementDate": "2025-05-13T00:00:00.000Z",
+        "expectedOpeningDate": "2026-06-30T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 200,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": 18000,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA GB300",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 3,
+        "primarySourceCount": 2,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:09.562Z",
+      "isDemoData": false,
+      "analystNotes": "PIF-backed sovereign program. 200 MW covers the two under-construction launch sites (up to 100 MW each, Riyadh and Dammam), basis unstated. The 500 MW NVIDIA target, a separate 500 MW AMD collaboration and the up-to-6 GW-by-2034 ambition are aspirational and not recorded as capacity. No source confirms energization as of late July 2026."
+    },
+    {
+      "slug": "humain-xai-data-center-saudi-arabia",
+      "name": "HUMAIN–xAI Data Center (Saudi Arabia)",
+      "description": null,
+      "owner": {
+        "name": "HUMAIN",
+        "ticker": null
+      },
+      "projectType": "AI_FACTORY",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": null,
+        "stateRegion": null,
+        "country": "Saudi Arabia",
+        "latitude": null,
+        "longitude": null
+      },
+      "timeline": {
+        "announcementDate": "2025-11-19T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 500,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA GB300",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:10.192Z",
+      "isDemoData": false,
+      "analystNotes": "Announced at the US–Saudi investment forum; described as xAI's largest datacenter outside the US, for Grok training. Exact site, timeline and phasing undisclosed, so no coordinates are recorded. No construction documented as of July 2026."
+    },
+    {
+      "slug": "isambard-ai-bristol",
+      "name": "Isambard-AI (Bristol)",
+      "description": null,
+      "owner": {
+        "name": "University of Bristol",
+        "ticker": null
+      },
+      "projectType": "HPC",
+      "status": "OPERATIONAL",
+      "location": {
+        "city": "Bristol",
+        "stateRegion": "England",
+        "country": "United Kingdom",
+        "latitude": 51.503,
+        "longitude": -2.481
+      },
+      "timeline": {
+        "announcementDate": null,
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": 5,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": 5448,
+        "gpuModel": "NVIDIA GH200",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 288000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 2,
+        "metricCount": 3
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:19.812Z",
+      "isDemoData": false,
+      "analystNotes": "UK's most powerful supercomputer, fully launched July 2025, serving the UK AI Research Resource; 5,448 GH200 superchips. The 5 MW figure describes the operating facility, stated by the operator, hence recorded as confirmed. Capex converts the quoted £225M."
+    },
+    {
+      "slug": "jupiter-julich",
+      "name": "JUPITER (Jülich)",
+      "description": null,
+      "owner": {
+        "name": "Forschungszentrum Jülich",
+        "ticker": null
+      },
+      "projectType": "HPC",
+      "status": "OPERATIONAL",
+      "location": {
+        "city": "Jülich",
+        "stateRegion": "North Rhine-Westphalia",
+        "country": "Germany",
+        "latitude": 50.904,
+        "longitude": 6.404
+      },
+      "timeline": {
+        "announcementDate": null,
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": 24000,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA GH200",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 587000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:19.180Z",
+      "isDemoData": false,
+      "analystNotes": "Europe's first exascale system, inaugurated September 2025 and in operation; funded 50% EuroHPC JU, 50% German federal/NRW. Capex includes six years of operations. A ~18 MW power figure circulates from TOP500 data but no quotable source was captured, so no MW is recorded."
+    },
+    {
+      "slug": "lambda-kansas-city",
+      "name": "Lambda Kansas City",
+      "description": null,
+      "owner": {
+        "name": "Lambda",
+        "ticker": null
+      },
+      "projectType": "AI_FACTORY",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Kansas City",
+        "stateRegion": "Missouri",
+        "country": "United States",
+        "latitude": 39.1,
+        "longitude": -94.579
+      },
+      "timeline": {
+        "announcementDate": "2025-11-01T00:00:00.000Z",
+        "expectedOpeningDate": "2026-06-30T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 24,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": 10000,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA GB300",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 500000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 3
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:00.552Z",
+      "isDemoData": false,
+      "analystNotes": "Retrofit of a vacant facility; $500M per Missouri economic-development reporting. 24 MW at launch, potential to scale past 100 MW; energization not publicly confirmed as of July 2026. Announcement date approximate (Nov 2025)."
+    },
+    {
+      "slug": "meta-el-paso",
+      "name": "Meta El Paso",
+      "description": null,
+      "owner": {
+        "name": "Meta",
+        "ticker": "META"
+      },
+      "projectType": "AI_FACTORY",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "El Paso",
+        "stateRegion": "Texas",
+        "country": "United States",
+        "latitude": 31.79,
+        "longitude": -106.28
+      },
+      "timeline": {
+        "announcementDate": "2025-10-15T00:00:00.000Z",
+        "expectedOpeningDate": "2028-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1000,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 14000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 2,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:48.968Z",
+      "isDemoData": false,
+      "analystNotes": "Broke ground Oct 2025. On 2026-07-28 Meta and BlackRock (with GIP and HPS) announced a JV owning the campus — BlackRock funds 80%, Meta 20%, ~$14B total development cost. Capacity online from 2028. Reported to rely partly on on-site natural gas generation."
+    },
+    {
       "slug": "meta-hyperion-louisiana",
       "name": "Meta Hyperion",
       "description": "Multi-gigawatt AI training campus in Richland Parish, Louisiana — the largest single-site build publicly announced.",
@@ -113,6 +1517,60 @@
       "lastVerifiedAt": "2026-07-26T18:02:27.368Z",
       "isDemoData": false,
       "analystNotes": "5 GW is a full-build target across many phases, not near-term capacity. Treated as an estimate; no phase is confirmed energised in the sources reviewed."
+    },
+    {
+      "slug": "meta-lebanon-indiana",
+      "name": "Meta Lebanon (Indiana)",
+      "description": null,
+      "owner": {
+        "name": "Meta",
+        "ticker": "META"
+      },
+      "projectType": "AI_FACTORY",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Lebanon",
+        "stateRegion": "Indiana",
+        "country": "United States",
+        "latitude": 40.05,
+        "longitude": -86.47
+      },
+      "timeline": {
+        "announcementDate": "2026-02-11T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1000,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 10000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:49.521Z",
+      "isDemoData": false,
+      "analystNotes": "Groundbreaking 2026-02-11; Meta's 27th US data center. Reported full operation late 2027/early 2028, recorded as no date since sources give a range. 1 GW basis (IT vs site) not specified."
     },
     {
       "slug": "meta-prometheus-new-albany",
@@ -290,6 +1748,168 @@
       "analystNotes": "Closed-loop liquid cooling, reported to eliminate operational water consumption. Reported as exceeding 350 MW and scaling further, so 350 MW is a floor rather than a point estimate."
     },
     {
+      "slug": "microsoft-india-south-central-hyderabad",
+      "name": "Microsoft India South Central (Hyderabad)",
+      "description": null,
+      "owner": {
+        "name": "Microsoft",
+        "ticker": "MSFT"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Hyderabad",
+        "stateRegion": "Telangana",
+        "country": "India",
+        "latitude": 17.385,
+        "longitude": 78.487
+      },
+      "timeline": {
+        "announcementDate": "2025-12-09T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 1,
+        "metricCount": 0
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:04.119Z",
+      "isDemoData": false,
+      "analystNotes": "Flagship of Microsoft's $17.5B 2026–2029 India commitment (country-wide figure, so no site capex recorded). Three availability zones; targeted live mid-2026. No site MW disclosed."
+    },
+    {
+      "slug": "microsoft-pecos",
+      "name": "Microsoft Pecos",
+      "description": null,
+      "owner": {
+        "name": "Microsoft",
+        "ticker": "MSFT"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Pecos",
+        "stateRegion": "Texas",
+        "country": "United States",
+        "latitude": 31.42,
+        "longitude": -103.49
+      },
+      "timeline": {
+        "announcementDate": "2026-06-22T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 2000,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:50.094Z",
+      "isDemoData": false,
+      "analystNotes": "Reeves County, West Texas. ~2 GW served by a co-located behind-the-meter natural gas facility; 'multibillion-dollar' investment over five to seven years, no specific capex stated. Basis (IT vs site) not stated. Distinct from the Fairwater sites."
+    },
+    {
+      "slug": "microsoft-khazna-uae-expansion",
+      "name": "Microsoft–Khazna UAE Expansion",
+      "description": null,
+      "owner": {
+        "name": "Khazna Data Centers",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Abu Dhabi",
+        "stateRegion": "Abu Dhabi",
+        "country": "United Arab Emirates",
+        "latitude": 24.4539,
+        "longitude": 54.3773
+      },
+      "timeline": {
+        "announcementDate": "2025-11-05T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 200,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:11.985Z",
+      "isDemoData": false,
+      "analystNotes": "Part of Microsoft's $15.2B UAE commitment through 2029 (country-wide figure, so no capex recorded here). Khazna groundbreakings in Abu Dhabi support under-construction status; specific sites for the full 200 MW not disclosed. Distinct from Stargate UAE."
+    },
+    {
       "slug": "naver-gak-sejong-ai-factory",
       "name": "NAVER GAK Sejong AI Factory",
       "description": "Sovereign AI factory at NAVER's GAK Sejong hyperscale data centre, announced 25 July 2026 for expansion to 200 MW by 2028 with Brookfield as exclusive capital partner.",
@@ -361,6 +1981,492 @@
       "analystNotes": "NAVER states a long-term ambition to reach 1 GW of NVIDIA AI infrastructure. That is an intent, not a committed build, and is deliberately NOT counted in the capacity figures — only the announced 200 MW by 2028 is. Funding split: Brookfield up to $9B as exclusive capital partner, NVIDIA $1B, NAVER the remainder."
     },
     {
+      "slug": "nebius-bethune",
+      "name": "Nebius Béthune",
+      "description": null,
+      "owner": {
+        "name": "Nebius Group",
+        "ticker": "NBIS"
+      },
+      "projectType": "DATA_CENTER",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Béthune",
+        "stateRegion": "Hauts-de-France",
+        "country": "France",
+        "latitude": 50.529,
+        "longitude": 2.64
+      },
+      "timeline": {
+        "announcementDate": "2026-02-12T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 240,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:17.479Z",
+      "isDemoData": false,
+      "analystNotes": "Redevelopment of a former Bridgestone tyre plant near Lille. Reuters: first capacity online by late summer 2026 and roughly half the site operational by end of 2026. Nebius did not disclose cost; third-party estimates are excluded."
+    },
+    {
+      "slug": "nebius-highridge-pennsylvania",
+      "name": "Nebius Highridge (Pennsylvania)",
+      "description": null,
+      "owner": {
+        "name": "Nebius Group",
+        "ticker": "NBIS"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "PLANNING",
+      "location": {
+        "city": "Butler Township",
+        "stateRegion": "Pennsylvania",
+        "country": "United States",
+        "latitude": 40.749,
+        "longitude": -76.223
+      },
+      "timeline": {
+        "announcementDate": "2026-07-24T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1200,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:55.126Z",
+      "isDemoData": false,
+      "analystNotes": "Nebius's second US gigawatt-scale campus, Schuylkill County; ~3-year build, still in local approvals as of July 2026. 1.2 GW is grid supply from PPL (site power, not stated as IT load)."
+    },
+    {
+      "slug": "nebius-lappeenranta-ai-factory",
+      "name": "Nebius Lappeenranta AI Factory",
+      "description": null,
+      "owner": {
+        "name": "Nebius Group",
+        "ticker": "NBIS"
+      },
+      "projectType": "AI_FACTORY",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Lappeenranta",
+        "stateRegion": "South Karelia",
+        "country": "Finland",
+        "latitude": 61.058,
+        "longitude": 28.186
+      },
+      "timeline": {
+        "announcementDate": "2026-03-31T00:00:00.000Z",
+        "expectedOpeningDate": "2027-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 310,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:17.012Z",
+      "isDemoData": false,
+      "analystNotes": "Nebius's largest facility outside the US, on a ~100-acre industrial site. Press reports value the project above $10B but that is not in the primary release, so no capex is recorded. Distinct from Nebius's operational Mäntsälä site."
+    },
+    {
+      "slug": "nebius-vineland",
+      "name": "Nebius Vineland",
+      "description": null,
+      "owner": {
+        "name": "Nebius Group",
+        "ticker": "NBIS"
+      },
+      "projectType": "DATA_CENTER",
+      "status": "PARTIALLY_OPERATIONAL",
+      "location": {
+        "city": "Vineland",
+        "stateRegion": "New Jersey",
+        "country": "United States",
+        "latitude": 39.486,
+        "longitude": -75.026
+      },
+      "timeline": {
+        "announcementDate": "2025-03-05T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 300,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 2,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:57.908Z",
+      "isDemoData": false,
+      "analystNotes": "Phased development to 300 MW design capacity (basis not stated as IT load). Anchor for Nebius's ~$17.4B Microsoft dedicated-capacity agreement; first phases energized, full 300 MW not confirmed operating."
+    },
+    {
+      "slug": "nexus-ai-factory-morocco",
+      "name": "Nexus AI Factory Morocco",
+      "description": null,
+      "owner": {
+        "name": "Nexus Core Systems",
+        "ticker": null
+      },
+      "projectType": "SOVEREIGN_AI",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Nouaceur",
+        "stateRegion": "Casablanca-Settat",
+        "country": "Morocco",
+        "latitude": 33.367,
+        "longitude": -7.577
+      },
+      "timeline": {
+        "announcementDate": "2025-06-13T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 500,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA GB200",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 1200000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:12.536Z",
+      "isDemoData": false,
+      "analystNotes": "Consortium with NAVER, NVIDIA and Lloyd Capital; first phase 40 MW with GB200s, staged toward a 500 MW target; renewable supply via TAQA. Construction start not independently confirmed, so ANNOUNCED. Would be among Africa's largest AI facilities."
+    },
+    {
+      "slug": "nscale-barstow-texas-for-microsoft",
+      "name": "Nscale Barstow (Texas, for Microsoft)",
+      "description": null,
+      "owner": {
+        "name": "Nscale",
+        "ticker": null
+      },
+      "projectType": "GPU_CLUSTER",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Barstow",
+        "stateRegion": "Texas",
+        "country": "United States",
+        "latitude": 31.463,
+        "longitude": -103.398
+      },
+      "timeline": {
+        "announcementDate": "2025-10-15T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 240,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": 104000,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA GB300 NVL72",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:56.226Z",
+      "isDemoData": false,
+      "analystNotes": "Site leased from Ionic Digital; fourth Nscale–Microsoft deal, reported at up to $24B (contract value, not capex). Construction from Q3 2026; Microsoft holds an option for a further 700 MW from Q1 2027. 240 MW initial, expandable to 1.2 GW; basis unstated. GPU count is the announced deployment plan."
+    },
+    {
+      "slug": "nscale-loughton-for-microsoft",
+      "name": "Nscale Loughton (for Microsoft)",
+      "description": null,
+      "owner": {
+        "name": "Nscale",
+        "ticker": null
+      },
+      "projectType": "AI_FACTORY",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Loughton",
+        "stateRegion": "Essex",
+        "country": "United Kingdom",
+        "latitude": 51.649,
+        "longitude": 0.056
+      },
+      "timeline": {
+        "announcementDate": "2025-09-16T00:00:00.000Z",
+        "expectedOpeningDate": "2027-03-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 90,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": 23040,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA GB300",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:17.940Z",
+      "isDemoData": false,
+      "analystNotes": "Billed as the UK's largest AI supercomputer when live, serving Microsoft Azure. 90 MW is the scalable ceiling (50 MW initial). GPU count is the announced initial deployment for Q1 2027. Part of Nscale's ~200,000-GB300 Microsoft contract across Europe and the US."
+    },
+    {
+      "slug": "ooredoo-sovereign-ai-cloud-doha",
+      "name": "Ooredoo Sovereign AI Cloud (Doha)",
+      "description": null,
+      "owner": {
+        "name": "Ooredoo",
+        "ticker": null
+      },
+      "projectType": "SOVEREIGN_AI",
+      "status": "OPERATIONAL",
+      "location": {
+        "city": "Doha",
+        "stateRegion": "Doha",
+        "country": "Qatar",
+        "latitude": 25.2854,
+        "longitude": 51.531
+      },
+      "timeline": {
+        "announcementDate": "2025-07-04T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA Hopper",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 0
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:13.636Z",
+      "isDemoData": false,
+      "analystNotes": "First NVIDIA Cloud Partner sovereign AI cloud in Qatar, live since ~July 2025 in existing Ooredoo/Syntys facilities. Dedicated MW and GPU count undisclosed, so no figures are recorded. Syntys's >120 MW / ~$1B plan is a group datacenter target, not this deployment."
+    },
+    {
+      "slug": "openai-tata-hypervault-india",
+      "name": "OpenAI–Tata HyperVault (India)",
+      "description": null,
+      "owner": {
+        "name": "Tata Group",
+        "ticker": null
+      },
+      "projectType": "DATA_CENTER",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": null,
+        "stateRegion": null,
+        "country": "India",
+        "latitude": null,
+        "longitude": null
+      },
+      "timeline": {
+        "announcementDate": "2026-02-18T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 100,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:46.131Z",
+      "isDemoData": false,
+      "analystNotes": "OpenAI is the first customer of TCS's HyperVault data-center business: 100 MW initially, with plans to scale to 1 GW. Site undisclosed, so no coordinates are recorded. Part of Stargate per OpenAI."
+    },
+    {
       "slug": "project-rainier-new-carlisle",
       "name": "Project Rainier",
       "description": "AWS campus at New Carlisle, Indiana built for Anthropic training workloads on Trainium.",
@@ -418,6 +2524,222 @@
       "lastVerifiedAt": "2026-07-26T18:02:32.532Z",
       "isDemoData": false,
       "analystNotes": "Reported at roughly 1 GW or more of IT power. IT load and site power are different quantities and the sources are not always explicit about which is meant."
+    },
+    {
+      "slug": "reliance-jamnagar-ai-campus",
+      "name": "Reliance Jamnagar AI Campus",
+      "description": null,
+      "owner": {
+        "name": "Reliance Industries",
+        "ticker": null
+      },
+      "projectType": "AI_FACTORY",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Jamnagar",
+        "stateRegion": "Gujarat",
+        "country": "India",
+        "latitude": 22.47,
+        "longitude": 70.05
+      },
+      "timeline": {
+        "announcementDate": "2024-10-24T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1000,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA Blackwell (GB200)",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:03.641Z",
+      "isDemoData": false,
+      "analystNotes": "Media reports of up to 3 GW / 'world's largest' ambitions are unconfirmed by Reliance filings, so the 1 GW planned figure is used, basis unstated. A Meta–Reliance JV anchors a reported 168 MW lease at Jamnagar. A separate MOU for a twin 1 GW campus in Andhra Pradesh is MOU-stage and not recorded."
+    },
+    {
+      "slug": "sk-telecom-aws-ulsan-ai-data-center",
+      "name": "SK Telecom–AWS Ulsan AI Data Center",
+      "description": null,
+      "owner": {
+        "name": "SK Telecom",
+        "ticker": "SKM"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Ulsan",
+        "stateRegion": "Ulsan",
+        "country": "South Korea",
+        "latitude": 35.519,
+        "longitude": 129.36
+      },
+      "timeline": {
+        "announcementDate": "2025-06-21T00:00:00.000Z",
+        "expectedOpeningDate": "2027-11-30T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 103,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:02.547Z",
+      "isDemoData": false,
+      "analystNotes": "Groundbreaking Aug 2025; AWS anchor tenant. First phase 41 MW by Nov 2027, expanding to 103 MW by Feb 2029; basis unstated. The $5.88B figure is AWS's Korea-wide investment, so no site capex is recorded. SKT's July 2026 15 GW-by-2035 regional plan is aspirational and not recorded."
+    },
+    {
+      "slug": "softbank-france-ai-program-hauts-de-france",
+      "name": "SoftBank France AI Program (Hauts-de-France)",
+      "description": null,
+      "owner": {
+        "name": "SoftBank",
+        "ticker": "9984.T"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Loon-Plage",
+        "stateRegion": "Hauts-de-France",
+        "country": "France",
+        "latitude": 51.005,
+        "longitude": 2.218
+      },
+      "timeline": {
+        "announcementDate": "2026-05-31T00:00:00.000Z",
+        "expectedOpeningDate": "2031-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 5000,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 87000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:15.384Z",
+      "isDemoData": false,
+      "analystNotes": "Announced at Choose France 2026. Program across three sites (Loon-Plage/Dunkirk, Bosquel, Bouchain); capex is the USD equivalent of the up-to-€75B pledge, phase one €45B for 3.1 GW by 2031. Program-stage — no construction confirmed. Coordinates are the Loon-Plage lead site."
+    },
+    {
+      "slug": "softbank-sakai-ai-data-center",
+      "name": "SoftBank Sakai AI Data Center",
+      "description": null,
+      "owner": {
+        "name": "SoftBank",
+        "ticker": "9984.T"
+      },
+      "projectType": "AI_FACTORY",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Sakai",
+        "stateRegion": "Osaka",
+        "country": "Japan",
+        "latitude": 34.567,
+        "longitude": 135.428
+      },
+      "timeline": {
+        "announcementDate": "2024-06-07T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 150,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 676000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:04.503Z",
+      "isDemoData": false,
+      "analystNotes": "Conversion of Sharp's former Sakai LCD plant; over 150 MW initially with a stated path to over 400 MW. Capex is the property purchase (~$676M), not full fit-out. Original 2025 target slipped to 2026. Linked to the SB OpenAI Japan JV (Cristal Intelligence workloads)."
     },
     {
       "slug": "stargate-abilene-texas",
@@ -483,6 +2805,60 @@
       "analystNotes": "Gas turbines rated up to ~300 MW are reported on site, bridging the gap while grid capacity is built."
     },
     {
+      "slug": "stargate-argentina-patagonia",
+      "name": "Stargate Argentina (Patagonia)",
+      "description": null,
+      "owner": {
+        "name": "Sur Energy",
+        "ticker": null
+      },
+      "projectType": "AI_FACTORY",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": null,
+        "stateRegion": "Patagonia",
+        "country": "Argentina",
+        "latitude": null,
+        "longitude": null
+      },
+      "timeline": {
+        "announcementDate": "2025-10-10T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 500,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 25000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:45.502Z",
+      "isDemoData": false,
+      "analystNotes": "Letter-of-intent stage: OpenAI and Sur Energy signed an LOI, up to $25B under Argentina's RIGI incentive regime. 'Up to 500 MW'; exact location and start date undisclosed, so no coordinates are recorded."
+    },
+    {
       "slug": "stargate-dona-ana-county",
       "name": "Stargate Doña Ana County",
       "description": "Stargate site in Doña Ana County, New Mexico, announced by OpenAI with Oracle and SoftBank.",
@@ -544,6 +2920,114 @@
       "lastVerifiedAt": "2026-07-27T01:02:13.295Z",
       "isDemoData": false,
       "analystNotes": "Site confirmed by OpenAI's own announcement; no per-site capacity was published, so power is deliberately left blank rather than guessed."
+    },
+    {
+      "slug": "stargate-korea-sk-jeollanam-do",
+      "name": "Stargate Korea — SK (Jeollanam-do)",
+      "description": null,
+      "owner": {
+        "name": "SK Group",
+        "ticker": null
+      },
+      "projectType": "SOVEREIGN_AI",
+      "status": "RUMORED",
+      "location": {
+        "city": null,
+        "stateRegion": "Jeollanam-do",
+        "country": "South Korea",
+        "latitude": null,
+        "longitude": null
+      },
+      "timeline": {
+        "announcementDate": "2025-10-01T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 1,
+        "metricCount": 0
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:47.374Z",
+      "isDemoData": false,
+      "analystNotes": "MOU stage only; exact site still being selected at announcement, so no coordinates are recorded. Shares the reported 20 MW combined initial capacity with the Samsung/Pohang site, so no per-site power claim is recorded."
+    },
+    {
+      "slug": "stargate-korea-samsung-pohang",
+      "name": "Stargate Korea — Samsung (Pohang)",
+      "description": null,
+      "owner": {
+        "name": "Samsung Group",
+        "ticker": null
+      },
+      "projectType": "SOVEREIGN_AI",
+      "status": "RUMORED",
+      "location": {
+        "city": "Pohang",
+        "stateRegion": "North Gyeongsang",
+        "country": "South Korea",
+        "latitude": 36.019,
+        "longitude": 129.3435
+      },
+      "timeline": {
+        "announcementDate": "2025-10-01T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 0,
+        "metricCount": 0
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:46.978Z",
+      "isDemoData": false,
+      "analystNotes": "MOU/LOI stage only, signed 2025-10-01 during Altman's Seoul visit; no binding construction contract published. The reported 20 MW initial capacity is combined across both Korean sites, so no per-site power claim is recorded."
     },
     {
       "slug": "stargate-lordstown-ohio",
@@ -609,6 +3093,60 @@
       "analystNotes": "Site confirmed by OpenAI; no per-site capacity published."
     },
     {
+      "slug": "stargate-michigan-saline-township",
+      "name": "Stargate Michigan (Saline Township)",
+      "description": null,
+      "owner": {
+        "name": "Related Digital",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Saline Township",
+        "stateRegion": "Michigan",
+        "country": "United States",
+        "latitude": 42.13,
+        "longitude": -83.85
+      },
+      "timeline": {
+        "announcementDate": "2025-10-30T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1400,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 16000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:43.646Z",
+      "isDemoData": false,
+      "analystNotes": "Developed by Related Digital for OpenAI/Oracle; DTE Energy supply plan approved at 1.4 GW (site power). The companies' own announcement says 'more than a gigawatt' of capacity. Groundbreaking held 2026-06-01. Capex ~$16B per press reports, not confirmed by the companies."
+    },
+    {
       "slug": "stargate-milam-county",
       "name": "Stargate Milam County",
       "description": "Stargate site in Milam County, Texas, announced by OpenAI with Oracle and SoftBank.",
@@ -670,6 +3208,60 @@
       "lastVerifiedAt": "2026-07-27T01:02:14.733Z",
       "isDemoData": false,
       "analystNotes": "Site confirmed by OpenAI; no per-site capacity published."
+    },
+    {
+      "slug": "stargate-norway-kvandal-narvik",
+      "name": "Stargate Norway (Kvandal, Narvik)",
+      "description": null,
+      "owner": {
+        "name": "Nscale",
+        "ticker": null
+      },
+      "projectType": "SOVEREIGN_AI",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Narvik",
+        "stateRegion": "Nordland",
+        "country": "Norway",
+        "latitude": 68.53,
+        "longitude": 17.72
+      },
+      "timeline": {
+        "announcementDate": "2025-07-31T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 230,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": 100000,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:44.873Z",
+      "isDemoData": false,
+      "analystNotes": "Nscale-Aker 50/50 JV, OpenAI offtaker; first European OpenAI-for-Countries site. Hydropower-fed. Capacity basis (IT vs site) not specified. The 100,000-GPU figure is a target, not a deployed count, recorded as an estimate, matching how other announced site targets are held. Both parties committed ~$1B to the initial 20 MW phase only."
     },
     {
       "slug": "stargate-shackelford-county",
@@ -810,6 +3402,384 @@
       "analystNotes": "The 1 GW cluster sits inside a wider 5 GW UAE–US AI Campus. Only the 1 GW cluster is counted here — counting the campus envelope as well would double-count the same megawatts."
     },
     {
+      "slug": "stargate-uk-cobalt-park-north-tyneside",
+      "name": "Stargate UK (Cobalt Park, North Tyneside)",
+      "description": null,
+      "owner": {
+        "name": "Nscale",
+        "ticker": null
+      },
+      "projectType": "SOVEREIGN_AI",
+      "status": "PAUSED",
+      "location": {
+        "city": "North Tyneside",
+        "stateRegion": "North East England",
+        "country": "United Kingdom",
+        "latitude": 55.023,
+        "longitude": -1.47
+      },
+      "timeline": {
+        "announcementDate": "2025-09-19T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 0
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:46.519Z",
+      "isDemoData": false,
+      "analystNotes": "Announced Sept 2025; PAUSED April 2026 over UK energy costs and AI copyright rules, with no construction started. The 8,000/31,000 GPU figures were offtake exploration targets, never deployed, so no GPU claim is recorded. No MW figure was ever disclosed."
+    },
+    {
+      "slug": "stargate-wisconsin-vantage-lighthouse",
+      "name": "Stargate Wisconsin (Vantage Lighthouse)",
+      "description": null,
+      "owner": {
+        "name": "Vantage Data Centers",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Port Washington",
+        "stateRegion": "Wisconsin",
+        "country": "United States",
+        "latitude": 43.3872,
+        "longitude": -87.8756
+      },
+      "timeline": {
+        "announcementDate": "2025-10-22T00:00:00.000Z",
+        "expectedOpeningDate": "2028-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 902,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 15000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:44.227Z",
+      "isDemoData": false,
+      "analystNotes": "One of the five Stargate sites announced 2025-09-23. 902 MW across four buildings per local reporting of the approved plan; Vantage's own words are 'close to a gigawatt of AI capacity' (IT). Site draw reported at 1.3 GW with later phases potentially to 3.5 GW. Groundbreaking Dec 2025, completion scheduled 2028."
+    },
+    {
+      "slug": "terawulf-justified-anthropic-lease",
+      "name": "TeraWulf Justified (Anthropic lease)",
+      "description": null,
+      "owner": {
+        "name": "TeraWulf",
+        "ticker": "WULF"
+      },
+      "projectType": "AI_FACTORY",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Hawesville",
+        "stateRegion": "Kentucky",
+        "country": "United States",
+        "latitude": 37.9,
+        "longitude": -86.755
+      },
+      "timeline": {
+        "announcementDate": "2026-07-06T00:00:00.000Z",
+        "expectedOpeningDate": "2028-03-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 401,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:55.689Z",
+      "isDemoData": false,
+      "analystNotes": "Anthropic is the direct tenant on a 20-year lease (~$19B contracted revenue — revenue, not capex). Initial capacity H2 2027, full 401 MW critical IT load by early 2028. Part of Anthropic's US compute buildout alongside the Fluidstack program."
+    },
+    {
+      "slug": "terawulf-lake-mariner-fluidstack-anthropic",
+      "name": "TeraWulf Lake Mariner (Fluidstack/Anthropic)",
+      "description": null,
+      "owner": {
+        "name": "TeraWulf",
+        "ticker": "WULF"
+      },
+      "projectType": "DATA_CENTER",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Barker",
+        "stateRegion": "New York",
+        "country": "United States",
+        "latitude": 43.364,
+        "longitude": -78.723
+      },
+      "timeline": {
+        "announcementDate": "2025-08-18T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 360,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 2,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:57.429Z",
+      "isDemoData": false,
+      "analystNotes": "Former bitcoin mine on Lake Ontario converted to AI. Fluidstack leases total ~360 MW critical IT load; Google backstops ~$3.2B of Fluidstack obligations. Widely reported as the New York site of Anthropic's $50B Fluidstack program, though Anthropic's announcement does not name Lake Mariner."
+    },
+    {
+      "slug": "tesla-cortex-giga-texas",
+      "name": "Tesla Cortex (Giga Texas)",
+      "description": null,
+      "owner": {
+        "name": "Tesla",
+        "ticker": "TSLA"
+      },
+      "projectType": "AI_FACTORY",
+      "status": "PARTIALLY_OPERATIONAL",
+      "location": {
+        "city": "Austin",
+        "stateRegion": "Texas",
+        "country": "United States",
+        "latitude": 30.223,
+        "longitude": -97.617
+      },
+      "timeline": {
+        "announcementDate": "2024-08-26T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 500,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": 50000,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA H100",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:56.868Z",
+      "isDemoData": false,
+      "analystNotes": "Cortex 1 operational since 2024 at ~130 MW launch draw with 50,000 H100s shown; 500 MW is the stated full site-power target for the Cortex 2.0 expansion (reported mid-2026 completion). Larger 2026 GPU-count claims circulate only in weak sources and are not recorded."
+    },
+    {
+      "slug": "ytl-green-data-center-park",
+      "name": "YTL Green Data Center Park",
+      "description": null,
+      "owner": {
+        "name": "YTL Power International",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "PARTIALLY_OPERATIONAL",
+      "location": {
+        "city": "Kulai",
+        "stateRegion": "Johor",
+        "country": "Malaysia",
+        "latitude": 1.66,
+        "longitude": 103.6
+      },
+      "timeline": {
+        "announcementDate": null,
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 500,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA GB200 NVL72",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:05.144Z",
+      "isDemoData": false,
+      "analystNotes": "1,640-acre campus ~30 km from Singapore; 500 MW planned park capacity paired with a co-located 500 MW solar plant. Malaysia's first NVIDIA GB200 NVL72 AI datacenter (YTL AI Cloud) operational since Oct 2025; full park capacity not energized."
+    },
+    {
+      "slug": "xai-colossus-1",
+      "name": "xAI Colossus 1",
+      "description": null,
+      "owner": {
+        "name": "xAI",
+        "ticker": null
+      },
+      "projectType": "AI_FACTORY",
+      "status": "OPERATIONAL",
+      "location": {
+        "city": "Memphis",
+        "stateRegion": "Tennessee",
+        "country": "United States",
+        "latitude": 35.048,
+        "longitude": -90.15
+      },
+      "timeline": {
+        "announcementDate": "2024-06-05T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": 300,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": 230000,
+        "gpuModel": "NVIDIA H100/H200 + ~30,000 GB200",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:17:54.488Z",
+      "isDemoData": false,
+      "analystNotes": "Original Colossus at the former Electrolux plant, operational since 2024. 300 MW is facility power consumption for the completed Phase 2 buildout, not on-site generation (the site separately has ~150 MW of Megapack buffering and gas turbines). 2026 reporting says Colossus 1 now serves inference while training moved to Colossus 2."
+    },
+    {
       "slug": "xai-colossus-2-memphis",
       "name": "xAI Colossus 2",
       "description": "Training cluster spanning Memphis, Tennessee and Southaven, Mississippi, generating power on site rather than waiting for utility interconnection.",
@@ -862,6 +3832,60 @@
       "lastVerifiedAt": "2026-07-26T18:02:28.321Z",
       "isDemoData": false,
       "analystNotes": "On-site generation is the defining feature: the site sidesteps the interconnection queue, which is why its timeline is faster than grid-dependent peers."
+    },
+    {
+      "slug": "xai-macrohardrr-southaven",
+      "name": "xAI MACROHARDRR (Southaven)",
+      "description": null,
+      "owner": {
+        "name": "xAI",
+        "ticker": null
+      },
+      "projectType": "AI_FACTORY",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Southaven",
+        "stateRegion": "Mississippi",
+        "country": "United States",
+        "latitude": 34.972,
+        "longitude": -90.012
+      },
+      "timeline": {
+        "announcementDate": "2025-12-30T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 0
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:00.080Z",
+      "isDemoData": false,
+      "analystNotes": "Third Colossus-complex building, announced by Musk on X 2025-12-30; warehouse conversion under way through 2026. The ~2 GW figure is the stated target for the whole Memphis-area complex, not this building, so no power is recorded here."
     }
   ]
 }

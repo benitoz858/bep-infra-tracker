@@ -1,8 +1,11 @@
 # BEP AI Infrastructure Tracker
 
-### 13.5 GW of AI datacenter capacity has been announced. 300 MW is confirmed running.
+### 41 GW of AI datacenter capacity has been announced. About 0.6 GW is confirmed running.
 
-That gap — roughly 2% — is what this project exists to measure. Most trackers
+<!-- These figures drift as the database grows — check the live dashboard for
+     current numbers before quoting them. -->
+
+That gap — under 2% — is what this project exists to measure. Most trackers
 count announcements and report one number. This one separates what is
 **confirmed** from what is merely **announced**, and shows a source and a
 confidence level for every individual claim.
