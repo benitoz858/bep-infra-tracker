@@ -13,7 +13,9 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/", "/login", "/import", "/projects/new", "/admin/"],
+      // /submit is deliberately absent — it is the contribution path and should
+      // be findable. /account is per-user and has nothing to index.
+      disallow: ["/api/", "/login", "/register", "/account", "/import", "/projects/new", "/admin/"],
     },
     sitemap: "https://tracker.bepresearch.com/sitemap.xml",
     host: "https://tracker.bepresearch.com",

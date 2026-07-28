@@ -65,8 +65,11 @@ export default async function AppLayout({ children }: { children: React.ReactNod
           <a href="https://github.com/benitoz858/bep-infra-tracker" target="_blank" rel="noopener noreferrer" className="text-cyan hover:underline">
             Source on GitHub
           </a>
+          <Link href="/submit" className="text-cyan hover:underline">
+            Submit or correct a figure
+          </Link>
           <a href="https://github.com/benitoz858/bep-infra-tracker/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="text-cyan hover:underline">
-            Contribute or correct a figure
+            Contributing guide
           </a>
           <a href="/api/projects/export?format=csv" download className="text-cyan hover:underline">Download CSV</a>
           <a href="/api/projects/export?format=json" download className="text-cyan hover:underline">JSON</a>

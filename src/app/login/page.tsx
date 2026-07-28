@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import { BrandLockup } from "@/components/brand";
@@ -25,14 +26,34 @@ export default async function LoginPage({
         </div>
         <div className="rounded-lg border border-line bg-panel p-6">
           <h1 className="mb-1 text-base font-semibold text-fg">Sign in</h1>
+          {/* Reading the tracker needs no account, so anyone who lands here has
+              taken a wrong turn unless they maintain it. Say which it is rather
+              than calling a public site a private terminal. */}
           <p className="mb-5 text-xs leading-relaxed text-fg-dim">
-            Private research terminal. Access is restricted to authorised BEP Research
-            analysts.
+            For maintainers. Reading, downloading and citing the tracker needs no
+            account — to correct a figure,{" "}
+            <a
+              href="https://github.com/benitoz858/bep-infra-tracker/issues/new?labels=data"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan hover:underline"
+            >
+              open an issue
+            </a>
+            .
           </p>
           <LoginForm callbackUrl={callbackUrl} />
         </div>
-        <p className="mt-4 text-center text-[11px] text-fg-muted">
-          Global AI compute, power and supply-chain intelligence
+        <p className="mt-4 text-center text-[11px] leading-relaxed text-fg-muted">
+          No account?{" "}
+          <Link href="/register" className="text-cyan hover:underline">
+            Create one
+          </Link>{" "}
+          to track your submissions — or{" "}
+          <Link href="/submit" className="text-cyan hover:underline">
+            submit without one
+          </Link>
+          .
         </p>
       </div>
     </main>

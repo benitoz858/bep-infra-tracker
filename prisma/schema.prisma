@@ -50,6 +50,9 @@ model User {
   sessions           Session[]
   revisions          ProjectRevision[]
   reviewedCandidates IngestionCandidate[]
+  /// Candidates this user proposed, as distinct from ones they reviewed. A
+  /// maintainer can legitimately be both.
+  submittedCandidates IngestionCandidate[] @relation("SubmittedCandidates")
 
   @@index([role])
 }
@@ -402,6 +405,15 @@ enum IngestionStatus {
   DUPLICATE
 }
 
+/// Who proposed a candidate. Both kinds land in the same queue and neither can
+/// write to the live figures, but a reviewer should be able to tell a feed
+/// scraper from a person who typed an explanation — the second deserves a
+/// reply, and its claims tend to be better than a heuristic extractor's.
+enum IngestionOrigin {
+  WATCHER
+  PUBLIC_SUBMISSION
+}
+
 enum IngestionRunStatus {
   RUNNING
   COMPLETED
@@ -433,6 +445,24 @@ model IngestionCandidate {
   id     String          @id @default(cuid())
   runId  String
   status IngestionStatus @default(PENDING)
+  origin IngestionOrigin @default(WATCHER)
+
+  // --- who sent it, when a person did ---
+  /// All optional: a correction is worth having from someone who would rather
+  /// not leave a name, and demanding identification would cost more good
+  /// submissions than it would prevent bad ones.
+  submitterName  String?
+  submitterEmail String?
+  /// Free text from the submitter — why this matters, what to look at. Kept
+  /// apart from `excerpt`, which must stay a quote from the source itself.
+  submitterNote  String?
+  /// Set when the submitter was signed in, so their own submissions can be
+  /// listed back to them. Null for anonymous submissions.
+  submitterUserId String?
+  /// Salted SHA-256 of the submitter's IP, never the address itself. Enough to
+  /// rate-limit a flood; useless for identifying or tracking anyone, and it
+  /// falls out of scope of most personal-data regimes by construction.
+  submitterIpHash String?
 
   // --- the proposed source ---
   url             String
@@ -473,10 +503,12 @@ model IngestionCandidate {
   run              IngestionRun @relation(fields: [runId], references: [id], onDelete: Cascade)
   suggestedProject Project?     @relation("SuggestedProject", fields: [suggestedProjectId], references: [id], onDelete: SetNull)
   reviewedBy       User?        @relation(fields: [reviewedById], references: [id], onDelete: SetNull)
+  submitter        User?        @relation("SubmittedCandidates", fields: [submitterUserId], references: [id], onDelete: SetNull)
 
   /// The dedup key. A watcher re-run must not re-propose what it already
   /// proposed, so the same URL can only appear once across all runs.
   @@unique([url])
+  @@index([origin, status, createdAt])
   @@index([status, createdAt])
   @@index([suggestedProjectId])
   @@index([runId])

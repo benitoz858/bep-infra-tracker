@@ -31,6 +31,10 @@ export type CandidateView = {
   matchReason: string | null;
   extractor: string;
   watcher: string;
+  origin: "WATCHER" | "PUBLIC_SUBMISSION";
+  submitterName: string | null;
+  submitterEmail: string | null;
+  submitterNote: string | null;
   suggestedProject: { id: string; name: string; slug: string; country: string } | null;
   proposedClaims: ProposedClaimView[];
 };
@@ -124,17 +128,53 @@ export function CandidateReview({
           </a>
           <p className="mt-1 text-[11px] text-fg-muted">
             {candidate.publisher ?? "Unknown publisher"} ·{" "}
-            {formatDate(candidate.publicationDate)} · via{" "}
-            <span className="font-mono">{candidate.watcher}</span>
+            {formatDate(candidate.publicationDate)} ·{" "}
+            {candidate.origin === "PUBLIC_SUBMISSION" ? (
+              <>
+                submitted by{" "}
+                <span className="text-fg-dim">
+                  {candidate.submitterName ?? "someone anonymous"}
+                </span>
+                {candidate.submitterEmail ? (
+                  <>
+                    {" "}
+                    <a
+                      href={`mailto:${candidate.submitterEmail}?subject=${encodeURIComponent(`Your submission to the BEP AI Infrastructure Tracker: ${candidate.title}`)}`}
+                      className="text-cyan hover:underline"
+                    >
+                      (reply)
+                    </a>
+                  </>
+                ) : null}
+              </>
+            ) : (
+              <>
+                via <span className="font-mono">{candidate.watcher}</span>
+              </>
+            )}
           </p>
         </div>
         <div className="flex shrink-0 items-center gap-1.5">
+          {candidate.origin === "PUBLIC_SUBMISSION" ? (
+            <Badge tone="planned">From a person</Badge>
+          ) : null}
           <Badge tone="neutral">{SOURCE_TYPE_LABEL[candidate.sourceType]}</Badge>
           <Badge tone={candidate.extractor === "none" ? "inert" : "planned"}>
             {candidate.extractor}
           </Badge>
         </div>
       </div>
+
+      {candidate.submitterNote ? (
+        <div className="mx-4 mt-3 rounded border border-cyan/25 bg-cyan/5 px-3 py-2">
+          <p className="eyebrow mb-1 text-cyan">Note from the submitter</p>
+          {/* Kept visually apart from the excerpt: one is what the source says,
+              the other is what a stranger thinks it means. */}
+          <p className="whitespace-pre-wrap text-[12px] leading-relaxed text-fg-dim">
+            {candidate.submitterNote}
+          </p>
+        </div>
+      ) : null}
 
       {candidate.excerpt ? (
         <blockquote className="mx-4 mt-3 border-l-2 border-line-2 pl-3 text-[12px] leading-relaxed text-fg-dim">

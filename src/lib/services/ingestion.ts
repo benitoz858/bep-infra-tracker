@@ -218,7 +218,9 @@ export async function runWatcher(
 export async function listCandidates(status: "PENDING" | "ACCEPTED" | "REJECTED" | "DUPLICATE" = "PENDING") {
   return prisma.ingestionCandidate.findMany({
     where: { status },
-    orderBy: [{ matchScore: "desc" }, { createdAt: "desc" }],
+    // People before scrapers. Someone who typed an explanation is waiting for a
+    // reply and will notice how long it takes; a watcher will not.
+    orderBy: [{ origin: "desc" }, { matchScore: "desc" }, { createdAt: "desc" }],
     take: 200,
     include: {
       run: { select: { watcher: true } },

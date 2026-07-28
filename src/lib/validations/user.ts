@@ -36,3 +36,27 @@ export const userUpdateSchema = z.object({
 });
 
 export type UserUpdateInput = z.infer<typeof userUpdateSchema>;
+
+/**
+ * Self-registration. No role field: the service always assigns VIEWER, so a
+ * crafted payload cannot ask for ANALYST.
+ */
+export const registerSchema = z.object({
+  email: z
+    .string()
+    .trim()
+    .min(1, "Email is required.")
+    .email("Must be a valid email address.")
+    .transform((v) => v.toLowerCase()),
+  name: optionalString(120),
+  password,
+});
+
+export type RegisterInput = z.infer<typeof registerSchema>;
+
+export const changePasswordSchema = z.object({
+  currentPassword: z.string().min(1, "Enter your current password."),
+  newPassword: password,
+});
+
+export type ChangePasswordInput = z.infer<typeof changePasswordSchema>;

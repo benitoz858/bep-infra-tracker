@@ -36,8 +36,17 @@ all. A tracker anyone can silently edit is a tracker nobody can quote.
 
 ### How to submit
 
-**Open an issue** using the data template. No setup, and it is the way data
-gets in — there is no faster path that a pull request would unlock.
+**Use the form at [tracker.bepresearch.com/submit](https://tracker.bepresearch.com/submit).**
+No account, no GitHub, no setup. Paste the URL, quote the sentence the figure
+comes from, and add the figures if you have them. It lands in the same review
+queue the automated watchers feed, and a maintainer decides what it changes.
+
+**Or open an issue** using the data template, if you would rather work in git.
+Both paths end in the same place; neither is faster than the other.
+
+An account is optional and grants no editing rights — it exists so your
+submissions are attributed and you can see at
+[/account](https://tracker.bepresearch.com/account) what a reviewer decided.
 
 > **Do not open a pull request against `data/`.** Those files are a *generated
 > snapshot*, exported from the live database and refreshed every night. A change

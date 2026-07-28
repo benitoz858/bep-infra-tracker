@@ -7,6 +7,7 @@ import {
   Inbox,
   LayoutDashboard,
   PieChart,
+  Send,
   ShieldCheck,
   Upload,
   Users,
@@ -26,8 +27,11 @@ const NAV = [
   { href: "/analytics", label: "Analytics", icon: PieChart },
   { href: "/siting", label: "Siting risk", icon: ShieldAlert },
   { href: "/companies", label: "Companies", icon: Building2 },
-  { href: "/sources", label: "Source inbox", icon: Inbox },
+  { href: "/sources", label: "Sources", icon: Inbox },
   { href: "/verification", label: "Verification", icon: ShieldCheck },
+  // Public and unguarded: contributing is the point, so it sits in the main nav
+  // rather than being reachable only from the footer.
+  { href: "/submit", label: "Submit a source", icon: Send },
   { href: "/ingest", label: "Agent inbox", icon: Bot, requires: "record:create" },
   { href: "/import", label: "Import", icon: Upload, requires: "data:import" },
   { href: "/admin/users", label: "Users", icon: Users, requires: "user:manage" },

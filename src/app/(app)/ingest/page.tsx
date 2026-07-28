@@ -81,7 +81,7 @@ export default async function IngestPage() {
             <Panel>
               <EmptyState
                 title="Nothing awaiting review"
-                description="Run the watchers with `npm run ingest`, or wait for the scheduled run."
+                description="Public submissions from /submit land here, as do the watchers — run them with `npm run ingest` or wait for the scheduled run."
               />
             </Panel>
           ) : (
@@ -97,6 +97,10 @@ export default async function IngestPage() {
                   publicationDate: c.publicationDate,
                   sourceType: c.sourceType,
                   excerpt: c.excerpt,
+                  origin: c.origin,
+                  submitterName: c.submitterName,
+                  submitterEmail: c.submitterEmail,
+                  submitterNote: c.submitterNote,
                   matchScore: c.matchScore,
                   matchReason: c.matchReason,
                   extractor: c.extractor,
