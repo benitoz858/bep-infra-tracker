@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-07-28T16:19:54.107Z",
-    "count": 70,
+    "generatedAt": "2026-07-29T00:19:27.239Z",
+    "count": 103,
     "disclaimer": "Figures combine confirmed disclosures with analyst estimates. Check confidence and sources per project before use. Rows with isDemoData=true are illustrative seed data and must not be used in analysis.",
     "demoRowCount": 0
   },
@@ -59,6 +59,60 @@
       "lastVerifiedAt": "2026-07-28T16:17:51.760Z",
       "isDemoData": false,
       "analystNotes": "Two campuses across ~1,700 acres. Capex is Madison County only: the original $10B (Jan 2024) plus the $11B expansion (Apr 2026). Amazon's total Mississippi commitment is $25B including other sites. No MW disclosed."
+    },
+    {
+      "slug": "aws-mexico-central-region-queretaro",
+      "name": "AWS Mexico (Central) Region — Querétaro",
+      "description": null,
+      "owner": {
+        "name": "Amazon Web Services",
+        "ticker": "AMZN"
+      },
+      "projectType": "DATA_CENTER",
+      "status": "OPERATIONAL",
+      "location": {
+        "city": "Querétaro",
+        "stateRegion": "Querétaro",
+        "country": "Mexico",
+        "latitude": 20.593,
+        "longitude": -100.39
+      },
+      "timeline": {
+        "announcementDate": "2025-01-14T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 5000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:28.823Z",
+      "isDemoData": false,
+      "analystNotes": "$5B is a 15-year commitment across three Querétaro data centers, not a single-site capex; AWS projects ~$10B GDP contribution and ~7,000 jobs. Region live since Jan 14, 2025 with AI/ML services framing; MW never disclosed. Querétaro also hosts Google and Microsoft regions — Mexico's datacenter epicenter, with drought/water scrutiny."
     },
     {
       "slug": "aws-richmond-county-north-carolina",
@@ -277,6 +331,168 @@
       "analystNotes": "AirTrunk (Blackstone) lists SYD3 at 330 MW+; industry trackers cite a >400 MW master plan. Serves hyperscale cloud/AI customers; anchor tenants not officially disclosed. Full campus not energized."
     },
     {
+      "slug": "aligned-project-caprock-hale-county",
+      "name": "Aligned Project Caprock (Hale County)",
+      "description": null,
+      "owner": {
+        "name": "Aligned Data Centers",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Abernathy",
+        "stateRegion": "Texas (Hale County)",
+        "country": "United States",
+        "latitude": 33.832,
+        "longitude": -101.843
+      },
+      "timeline": {
+        "announcementDate": "2026-04-09T00:00:00.000Z",
+        "expectedOpeningDate": "2027-03-28T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 540,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 2,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:35.643Z",
+      "isDemoData": false,
+      "analystNotes": "Capex null: release says 'The site is expected to infuse $5B into the regional economy' — regional economic impact, not stated construction capex. First data center LBB-01 'anticipated service date of Q1 2027.' Closed-loop cooling avoiding Ogallala Aquifer draw. Same county as the covered Fluidstack/Anthropic Abernathy campus but a separate project. Aligned itself was acquired in a ~$40B deal by the MGX/BlackRock-GIP AI Infrastructure Partnership (Oct 2025)."
+    },
+    {
+      "slug": "applied-digital-polaris-forge-1-ellendale",
+      "name": "Applied Digital Polaris Forge 1 (Ellendale)",
+      "description": null,
+      "owner": {
+        "name": "Applied Digital",
+        "ticker": "APLD"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "PARTIALLY_OPERATIONAL",
+      "location": {
+        "city": "Ellendale",
+        "stateRegion": "North Dakota (Dickey County)",
+        "country": "United States",
+        "latitude": 46.003,
+        "longitude": -98.527
+      },
+      "timeline": {
+        "announcementDate": "2025-08-29T00:00:00.000Z",
+        "expectedOpeningDate": "2025-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 400,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 2,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:36.836Z",
+      "isDemoData": false,
+      "analystNotes": "Capex null per rules: the headline '$11B' is contracted lease revenue ('brings Applied Digital's total anticipated contracted lease revenue to approximately $11B'), not construction capex. 400MW is critical IT load (leases ~15 years, first two signed May-June 2025). Applied Digital is also developing Polaris Forge 2 (Harwood, ND). First 50MW came online 2025; Building 1 Phase 1 ready-for-service achieved for CoreWeave."
+    },
+    {
+      "slug": "bell-ai-fabric-kamloops-cluster-with-groq",
+      "name": "Bell AI Fabric (Kamloops cluster, with Groq)",
+      "description": null,
+      "owner": {
+        "name": "Bell Canada",
+        "ticker": "BCE"
+      },
+      "projectType": "SOVEREIGN_AI",
+      "status": "PARTIALLY_OPERATIONAL",
+      "location": {
+        "city": "Kamloops",
+        "stateRegion": "British Columbia",
+        "country": "Canada",
+        "latitude": 50.676,
+        "longitude": -120.341
+      },
+      "timeline": {
+        "announcementDate": "2025-05-28T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 66,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": "Groq LPUs",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 3,
+        "primarySourceCount": 2,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:24.502Z",
+      "isDemoData": false,
+      "analystNotes": "500MW six-site target is ambition, not committed capacity: first 7MW Groq-equipped Kamloops site live June 2025, 7MW Merritt site and 26MW Thompson Rivers University facility (2026) plus second 26MW Kamloops facility (2027) committed; two further ~400MW-combined sites only 'in advanced planning'. Bloomberg reported (2026-06-18) BCE teaming with Cohere on a Canada AI data center, and (2026-03-16) CoreWeave/BCE backing a large western-Canada facility — expansion of this fabric."
+    },
+    {
       "slug": "bytedance-johor-sedenak-tech-park",
       "name": "ByteDance Johor (Sedenak Tech Park)",
       "description": null,
@@ -329,6 +545,60 @@
       "lastVerifiedAt": "2026-07-28T16:18:06.343Z",
       "isDemoData": false,
       "analystNotes": "Capex is the June 2024 RM10B (~$2.13B) AI-hub commitment; Johor officials put cumulative ByteDance datacenter investment above RM29.5B (~$6.6B) by Jan 2026, spread across own-build and leased capacity. Existing Sedenak facility operating, expansion ongoing. No site MW disclosed."
+    },
+    {
+      "slug": "bytedance-pecem-ai-datacenter-campus-omnia-casa-dos-ventos",
+      "name": "ByteDance Pecém AI datacenter campus (Omnia / Casa dos Ventos)",
+      "description": null,
+      "owner": {
+        "name": "ByteDance",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Caucaia / São Gonçalo do Amarante (Pecém port complex)",
+        "stateRegion": "Ceará",
+        "country": "Brazil",
+        "latitude": -3.59,
+        "longitude": -38.79
+      },
+      "timeline": {
+        "announcementDate": null,
+        "expectedOpeningDate": "2027-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 200,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 3,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:26.890Z",
+      "isDemoData": false,
+      "analystNotes": "ByteDance's largest datacenter outside China; R$200B (~US$38.4B) lifetime figure is the full multi-phase ambition — initial build is ~200MW IT (20 halls), with reported scaling to ~900MW-1GW by 2029. First reported by Reuters late 2025; construction began Jan 2026 (only pillars erected as of July 2026). Omnia (Pátria) signed a US$2B, 20-year wind PPA with Casa dos Ventos (630MW Ibiapaba complex). Local grid-strain scrutiny in Ceará. Capex omitted on review: the R$200B (~US$38.4B) figure is the full multi-phase lifetime ambition, not committed phase-one spend."
     },
     {
       "slug": "campus-ia-fouju-ile-de-france",
@@ -439,6 +709,330 @@
       "analystNotes": "Africa's first NVIDIA-powered 'AI factory', live March 2026 inside existing Africa Data Centres facilities — GPU-as-a-service, not a new-build campus, so no MW is recorded. The 12,000-GPU figure is a continent-wide acquisition claim, initial SA deployment reported around 3,000; neither is confirmed, so no GPU count is recorded. Johannesburg expansion planned."
     },
     {
+      "slug": "china-telecom-lingang-intelligent-computing-center",
+      "name": "China Telecom Lingang intelligent computing center",
+      "description": null,
+      "owner": {
+        "name": "China Telecom",
+        "ticker": "0728.HK"
+      },
+      "projectType": "DATA_CENTER",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Shanghai (Lingang New Area)",
+        "stateRegion": "Shanghai",
+        "country": "China",
+        "latitude": 30.9,
+        "longitude": 121.93
+      },
+      "timeline": {
+        "announcementDate": "2023-06-02T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": "Domestic Chinese GPUs (stated focus)",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 1,
+        "primarySourceCount": 1,
+        "metricCount": 0
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:18.990Z",
+      "isDemoData": false,
+      "analystNotes": "40,000 high-power racks planned in Lingang free-trade zone, mainly serving home-grown GPU development for Shanghai/Yangtze Delta AI firms. Per-site rack figure, no MW disclosed. Context: China Telecom is China's largest AIDC operator (900+ DCs, ~8GW total per company statements — aggregate, not this site)."
+    },
+    {
+      "slug": "china-telecom-shaoguan-ai-data-center-alibaba-zhenwu-10-000-chip-cluster",
+      "name": "China Telecom Shaoguan AI data center (Alibaba Zhenwu 10,000-chip cluster)",
+      "description": null,
+      "owner": {
+        "name": "China Telecom (chips/cluster by Alibaba T-Head)",
+        "ticker": "0728.HK"
+      },
+      "projectType": "GPU_CLUSTER",
+      "status": "OPERATIONAL",
+      "location": {
+        "city": "Shaoguan",
+        "stateRegion": "Guangdong",
+        "country": "China",
+        "latitude": 24.81,
+        "longitude": 113.59
+      },
+      "timeline": {
+        "announcementDate": "2026-04-08T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": 10000,
+        "confirmedGpuCount": null,
+        "gpuModel": "Alibaba T-Head Zhenwu 810E",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:17.474Z",
+      "isDemoData": false,
+      "analystNotes": "Shaoguan is a Greater Bay Area national hub node under East Data West Computing. China Telecom owns/operates the facility; Alibaba supplies Zhenwu 810E accelerators (96GB HBM2e, T-Head architecture). Companies say the cluster is expected to expand to 100,000 chips; that expansion figure is a plan, not installed capacity."
+    },
+    {
+      "slug": "cipher-black-pearl-for-aws",
+      "name": "Cipher Black Pearl (for AWS)",
+      "description": null,
+      "owner": {
+        "name": "Cipher Mining",
+        "ticker": "CIFR"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Wink",
+        "stateRegion": "Texas (Winkler County)",
+        "country": "United States",
+        "latitude": 31.751,
+        "longitude": -103.16
+      },
+      "timeline": {
+        "announcementDate": "2025-11-03T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-28T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 300,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 3,
+        "primarySourceCount": 2,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:38.007Z",
+      "isDemoData": false,
+      "analystNotes": "Capex null: '~$5.5Bn Estimated Contract Value' is 15-year lease revenue, not construction capex. 300MW is gross power (site energized as front-of-the-meter bitcoin campus; Phase I 150MW mined BTC from Q2 2025). AWS also later revealed as tenant at Cipher's Stingray site ('a 70 MW critical IT load'). Cipher's separate Barber Lake site (244MW gross/168MW IT) is leased to Fluidstack with a $1.4B Google backstop, and its 1GW Colchis site is expected to energize in 2028."
+    },
+    {
+      "slug": "cloudhq-paulinia-gru-campus",
+      "name": "CloudHQ Paulínia (GRU) Campus",
+      "description": null,
+      "owner": {
+        "name": "CloudHQ",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Paulínia",
+        "stateRegion": "São Paulo",
+        "country": "Brazil",
+        "latitude": -22.759,
+        "longitude": -47.154
+      },
+      "timeline": {
+        "announcementDate": "2023-03-02T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 228,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 3000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 3,
+        "primarySourceCount": 0,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:27.533Z",
+      "isDemoData": false,
+      "analystNotes": "CloudHQ's first Latin America campus; press reports cite '$3.2B' but the sourced quote says 'more than $3 billion' — capex recorded at $3B floor. 225MW substation (expandable toward 400MW) energized; hyperscale AI/cloud tenants targeted. Roughly 100km from São Paulo metro."
+    },
+    {
+      "slug": "cloudhq-qro-campus-queretaro",
+      "name": "CloudHQ QRO Campus Querétaro",
+      "description": null,
+      "owner": {
+        "name": "CloudHQ",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Querétaro",
+        "stateRegion": "Querétaro",
+        "country": "Mexico",
+        "latitude": 20.588,
+        "longitude": -100.389
+      },
+      "timeline": {
+        "announcementDate": "2025-09-25T00:00:00.000Z",
+        "expectedOpeningDate": "2027-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 900,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 4800000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 3,
+        "primarySourceCount": 0,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:28.168Z",
+      "isDemoData": false,
+      "analystNotes": "CloudHQ's largest single investment: six AI-oriented buildings (~US$800M each) on ~52ha, 900MW private substation + 2GW maneuvering substation, water-free cooling, LEED targets. Infrastructure delivery/first operations targeted 2027; ~7,000 construction jobs. Would be Mexico's largest hyperscale hub."
+    },
+    {
+      "slug": "compass-meridian",
+      "name": "Compass Meridian",
+      "description": null,
+      "owner": {
+        "name": "Compass Datacenters",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Meridian",
+        "stateRegion": "Mississippi (Lauderdale County)",
+        "country": "United States",
+        "latitude": 32.364,
+        "longitude": -88.704
+      },
+      "timeline": {
+        "announcementDate": "2025-01-09T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 500,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 10000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 2,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:36.190Z",
+      "isDemoData": false,
+      "analystNotes": "'The campus will consist of eight data centers that will be constructed over an eight-year period.' Compass leases build-to-suit to investment-grade hyperscalers; end tenant not officially disclosed (Meta widely speculated in trade press, unconfirmed). 500MW figure is utility supply (site power), not critical IT load. 10-year state tax exemptions granted."
+    },
+    {
       "slug": "core-scientific-denton-coreweave",
       "name": "Core Scientific Denton (CoreWeave)",
       "description": null,
@@ -493,6 +1087,60 @@
       "analystNotes": "CoreWeave's largest contracted Core Scientific site (~260 MW critical IT load; 590 MW across six sites in the relationship, full delivery targeted early 2027). Converted bitcoin-mining site. The $1.2B figure is contracted hosting revenue, not capex, so no capex is recorded."
     },
     {
+      "slug": "coreweave-cambridge-cohere-anchor",
+      "name": "CoreWeave Cambridge (Cohere anchor)",
+      "description": null,
+      "owner": {
+        "name": "CoreWeave",
+        "ticker": "CRWV"
+      },
+      "projectType": "AI_FACTORY",
+      "status": "OPERATIONAL",
+      "location": {
+        "city": "Cambridge",
+        "stateRegion": "Ontario",
+        "country": "Canada",
+        "latitude": 43.397,
+        "longitude": -80.311
+      },
+      "timeline": {
+        "announcementDate": "2024-12-06T00:00:00.000Z",
+        "expectedOpeningDate": "2025-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA (latest generation)",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 3,
+        "primarySourceCount": 0,
+        "metricCount": 0
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:25.691Z",
+      "isDemoData": false,
+      "analystNotes": "First investment under Canada's C$2B Sovereign AI Compute Strategy: up to C$240M federal financing toward Cohere's C$725M compute plan (figures in CAD, hence capexUsd null). CoreWeave operates the Cambridge facility, opened mid-2025; MW capacity undisclosed. Cohere has since also sourced Canadian compute via Bell's sovereign AI alliance (The Logic/Bloomberg, June 2026)."
+    },
+    {
       "slug": "coreweave-lancaster",
       "name": "CoreWeave Lancaster",
       "description": null,
@@ -545,6 +1193,114 @@
       "lastVerifiedAt": "2026-07-28T16:17:58.958Z",
       "isDemoData": false,
       "analystNotes": "Initial 100 MW expandable to 300 MW. Capex is CoreWeave's stated 'up to $6 billion' commitment."
+    },
+    {
+      "slug": "crusoe-goodnight-armstrong-county",
+      "name": "Crusoe Goodnight (Armstrong County)",
+      "description": null,
+      "owner": {
+        "name": "Crusoe Energy",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Claude",
+        "stateRegion": "Texas (Armstrong County, Panhandle)",
+        "country": "United States",
+        "latitude": 35.112,
+        "longitude": -101.363
+      },
+      "timeline": {
+        "announcementDate": "2025-11-01T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 933,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:33.500Z",
+      "isDemoData": false,
+      "analystNotes": "Part of Google's November 2025 plan to 'invest $40 billion in Texas data centers' (Armstrong and Haskell counties) — capex null because $40B spans multiple sites. 'In January 2026, Crusoe filed a permit to build a 933 MW natural gas power plant onsite'; satellite imagery confirms two buildings under construction; first phase shares interconnection with a wind farm, segment due online in 2026. Third-party trackers list full build at ~1,030MW / 7 buildings / 3.4M sq ft. Distinct from Crusoe's covered Abilene (Stargate) campus and from Crusoe-Lancium's separately announced 1GW Childress partnership."
+    },
+    {
+      "slug": "cyrusone-freestone",
+      "name": "CyrusOne Freestone",
+      "description": null,
+      "owner": {
+        "name": "CyrusOne",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Fairfield area",
+        "stateRegion": "Texas (Freestone County)",
+        "country": "United States",
+        "latitude": 31.725,
+        "longitude": -96.165
+      },
+      "timeline": {
+        "announcementDate": "2026-02-09T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 760,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 2,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:34.611Z",
+      "isDemoData": false,
+      "analystNotes": "CyrusOne's largest single announced US AI campus; brings Constellation/Calpine-contracted CyrusOne capacity in Texas to 'a total of over 1100 MW under contract' including the earlier 400MW Whitney/Bosque County campus (DFW10, first building topped out March 2026) at Calpine's Thad Hill Energy Center. No online date disclosed."
     },
     {
       "slug": "datavolt-oxagon-ai-factory-neom",
@@ -763,6 +1519,60 @@
       "analystNotes": "Two campuses (Navalmoral de la Mata and Valdecaballeros) of up to 1 GW IT each, recorded as one combined 2 GW row matching the partners' joint announcement. Public–private with the regional government; no construction, tenant, capex or timeline confirmed — aspirational scale."
     },
     {
+      "slug": "fir-hills-stock-farm-road-3gw-ai-data-center-jeollanam-do",
+      "name": "Fir Hills / Stock Farm Road 3GW AI data center, Jeollanam-do",
+      "description": null,
+      "owner": {
+        "name": "Fir Hills Inc (Stock Farm Road) with Jeollanam-do provincial government",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "RUMORED",
+      "location": {
+        "city": "Jeollanam-do (site not finalized in cited reports)",
+        "stateRegion": "South Jeolla Province",
+        "country": "South Korea",
+        "latitude": 34.81,
+        "longitude": 126.46
+      },
+      "timeline": {
+        "announcementDate": "2025-02-16T00:00:00.000Z",
+        "expectedOpeningDate": "2028-01-01T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 3000,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 35000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:20.560Z",
+      "isDemoData": false,
+      "analystNotes": "Claimed 3GW / ~$35bn (KRW 50tn) campus by Brian Koo's Stock Farm Road vehicle Fir Hills, in partnership with Jeollanam-do provincial government; construction targeted from winter 2025, completion 2028. DCD framing ('claims') reflects skepticism; as of 2026 the project remains in pre-construction/structuring. Sometimes reported alongside a Jeonju (North Jeolla) proposal — cited sources place this project in Jeollanam-do. 3GW is planned capacity, basis not broken out. Status RUMORED on review: DCD frames the project as a claim and no construction is documented."
+    },
+    {
       "slug": "firmus-dayone-batam-ai-factory",
       "name": "Firmus–DayOne Batam AI Factory",
       "description": null,
@@ -925,6 +1735,60 @@
       "analystNotes": "National AI factory with NVIDIA, TSMC and Taiwan's NSTC; phased 20→60→100 MW due to grid constraints, full deployment targeted 2026. Phase-1 energization not independently confirmed."
     },
     {
+      "slug": "galaxy-helios-dickens-county",
+      "name": "Galaxy Helios (Dickens County)",
+      "description": null,
+      "owner": {
+        "name": "Galaxy Digital",
+        "ticker": "GLXY"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "PARTIALLY_OPERATIONAL",
+      "location": {
+        "city": "Dickens",
+        "stateRegion": "Texas (Dickens County)",
+        "country": "United States",
+        "latitude": 33.622,
+        "longitude": -100.837
+      },
+      "timeline": {
+        "announcementDate": "2025-03-01T00:00:00.000Z",
+        "expectedOpeningDate": "2027-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": 133,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 2,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:34.057Z",
+      "isDemoData": false,
+      "analystNotes": "Former bitcoin mine on 2,200+ acres; gross vs IT explicitly distinguished by Galaxy ('approximately 200 megawatts of gross power — 133 MW of critical IT load'). 15-year CoreWeave lease 'expected to generate more than $1 billion in average annual revenue' — lease revenue, not capex, hence capexUsd null. Phase I rent commenced Q2 2026. First CoreWeave lease announced March 2025 (month precision)."
+    },
+    {
       "slug": "google-ai-hub-visakhapatnam",
       "name": "Google AI Hub Visakhapatnam",
       "description": null,
@@ -1031,6 +1895,60 @@
       "lastVerifiedAt": "2026-07-28T16:17:51.368Z",
       "isDemoData": false,
       "analystNotes": "Google's second Iowa campus at Alliant Energy's Big Cedar Industrial Center; first building projected complete 2026, four more in later phases. $7B is statewide over two years, so no campus-level capex is recorded. No MW disclosed."
+    },
+    {
+      "slug": "google-cerrillos-santiago",
+      "name": "Google Cerrillos (Santiago)",
+      "description": null,
+      "owner": {
+        "name": "Google (Inversiones y Servicios Dataluna)",
+        "ticker": "GOOGL"
+      },
+      "projectType": "AI_FACTORY",
+      "status": "PAUSED",
+      "location": {
+        "city": "Cerrillos, Santiago",
+        "stateRegion": "Región Metropolitana",
+        "country": "Chile",
+        "latitude": -33.485,
+        "longitude": -70.709
+      },
+      "timeline": {
+        "announcementDate": "2024-09-17T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 3,
+        "primarySourceCount": 0,
+        "metricCount": 0
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:29.389Z",
+      "isDemoData": false,
+      "analystNotes": "Cautionary status entry: 2020-permitted ~US$200M (reported) project abandoned in original form after Chile's Second Environmental Court partially revoked its permit over aquifer/water use (Feb 2024); Google committed to restart permitting 'from scratch' with air cooling and 24/7 carbon-free energy. No new approval as of mid-2026. Google's operational Chilean site remains Quilicura."
     },
     {
       "slug": "google-stillwater",
@@ -1249,6 +2167,168 @@
       "analystNotes": "Announced at the US–Saudi investment forum; described as xAI's largest datacenter outside the US, for Grok training. Exact site, timeline and phasing undisclosed, so no coordinates are recorded. No construction documented as of July 2026."
     },
     {
+      "slug": "hut-8-river-bend-for-fluidstack",
+      "name": "Hut 8 River Bend (for Fluidstack)",
+      "description": null,
+      "owner": {
+        "name": "Hut 8",
+        "ticker": "HUT"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "West Feliciana Parish (near St. Francisville)",
+        "stateRegion": "Louisiana",
+        "country": "United States",
+        "latitude": 30.78,
+        "longitude": -91.377
+      },
+      "timeline": {
+        "announcementDate": "2025-12-17T00:00:00.000Z",
+        "expectedOpeningDate": "2027-06-28T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 245,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 10000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 2,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:37.385Z",
+      "isDemoData": false,
+      "analystNotes": "$7.0B is lease contract value (revenue, not capex); the $10B figure is LED's stated Phase I project investment. 'Google, a subsidiary of Alphabet Inc., is providing a financial backstop'; Fluidstack holds 'a Right of First Offer (ROFO) for up to an additional 1,000 MW of IT capacity.' Entergy providing '330 MW of utility capacity for the campus.' Initial data hall 'scheduled for completion and commissioning in Q2 2027.' Financed partly via $3.25B bond sale. Hut 8's GPU vertical operates as Highrise AI."
+    },
+    {
+      "slug": "iren-childress-horizon-for-microsoft",
+      "name": "IREN Childress (Horizon, for Microsoft)",
+      "description": null,
+      "owner": {
+        "name": "IREN",
+        "ticker": "IREN"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Childress",
+        "stateRegion": "Texas (Childress County)",
+        "country": "United States",
+        "latitude": 34.426,
+        "longitude": -100.204
+      },
+      "timeline": {
+        "announcementDate": "2025-11-03T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 750,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA GB300",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 2,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:35.090Z",
+      "isDemoData": false,
+      "analystNotes": "'750 MW campus located in Childress, Texas.' $9.7B is contract value (cloud services revenue), not capex — capexUsd null; hardware funded partly via '$5.8 billion' Dell purchase agreement and a 20% Microsoft prepayment. Site began as grid-connected bitcoin campus (345kV). Horizon 1 (first GB300 cluster) handover targeted Q3 2026."
+    },
+    {
+      "slug": "iren-sweetwater",
+      "name": "IREN Sweetwater",
+      "description": null,
+      "owner": {
+        "name": "IREN",
+        "ticker": "IREN"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Sweetwater",
+        "stateRegion": "Texas (Nolan/Fisher County)",
+        "country": "United States",
+        "latitude": 32.471,
+        "longitude": -100.406
+      },
+      "timeline": {
+        "announcementDate": "2025-03-17T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 2000,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 3,
+        "primarySourceCount": 3,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:31.760Z",
+      "isDemoData": false,
+      "analystNotes": "Energization is the high-voltage substation connection to ERCOT, not operating IT capacity: 'Power delivery at Sweetwater 1 is expected to ramp progressively in line with the phased construction and commissioning of data centers.' Sweetwater 2 (600MW, ~28 miles away) targeted late 2027; the two sites are to be fiber-linked into a single 2GW hub. Coordinates approximate (town of Sweetwater)."
+    },
+    {
       "slug": "isambard-ai-bristol",
       "name": "Isambard-AI (Bristol)",
       "description": null,
@@ -1355,6 +2435,60 @@
       "lastVerifiedAt": "2026-07-28T16:18:19.180Z",
       "isDemoData": false,
       "analystNotes": "Europe's first exascale system, inaugurated September 2025 and in operation; funded 50% EuroHPC JU, 50% German federal/NRW. Capex includes six years of operations. A ~18 MW power figure circulates from TOP500 data but no quotable source was captured, so no MW is recorded."
+    },
+    {
+      "slug": "kddi-osaka-sakai-data-center-former-sharp-sakai-plant",
+      "name": "KDDI Osaka Sakai Data Center (former Sharp Sakai plant)",
+      "description": null,
+      "owner": {
+        "name": "KDDI",
+        "ticker": "9433.T"
+      },
+      "projectType": "AI_FACTORY",
+      "status": "OPERATIONAL",
+      "location": {
+        "city": "Sakai, Osaka",
+        "stateRegion": "Osaka Prefecture",
+        "country": "Japan",
+        "latitude": 34.56,
+        "longitude": 135.44
+      },
+      "timeline": {
+        "announcementDate": null,
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": 48,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA GB200 NVL72",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:19.375Z",
+      "isDemoData": false,
+      "analystNotes": "Opened 2026-01-22 on part of Sharp's former Sakai LCD plant (KDDI bought its parcel for ~JPY10bn/US$68m in April 2025; GB200 NVL72 racks, direct liquid cooling, 100% renewable power). Distinct from SoftBank's separate 150MW project on the larger portion of the same Sharp Sakai site (already covered). 48MW is facility capacity as reported at launch; IT-vs-total basis not broken out."
     },
     {
       "slug": "lambda-kansas-city",
@@ -2467,6 +3601,60 @@
       "analystNotes": "OpenAI is the first customer of TCS's HyperVault data-center business: 100 MW initially, with plans to scale to 1 GW. Site undisclosed, so no coordinates are recorded. Part of Stargate per OpenAI."
     },
     {
+      "slug": "poolside-project-horizon-fort-stockton",
+      "name": "Poolside Project Horizon (Fort Stockton)",
+      "description": null,
+      "owner": {
+        "name": "Poolside",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Fort Stockton (Longfellow Ranch)",
+        "stateRegion": "Texas (Pecos County)",
+        "country": "United States",
+        "latitude": 30.894,
+        "longitude": -102.879
+      },
+      "timeline": {
+        "announcementDate": "2025-10-15T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 2000,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:31.198Z",
+      "isDemoData": false,
+      "analystNotes": "2GW campus on 568 acres of the Mitchell family's Longfellow Ranch, gas-rich Permian Basin site. CoreWeave was anchor tenant (15-yr lease, 250MW first phase expandable to 500MW, planned 40,000+ GB300 NVL72 GPUs) but the deal was mutually terminated in early 2026; Poolside approached other clouds incl. Google ('Google is no longer in talks with Poolside'). Power figure is planned gross site power, none operating."
+    },
+    {
       "slug": "project-rainier-new-carlisle",
       "name": "Project Rainier",
       "description": "AWS campus at New Carlisle, Indiana built for Anthropic training workloads on Trainium.",
@@ -2524,6 +3712,114 @@
       "lastVerifiedAt": "2026-07-26T18:02:32.532Z",
       "isDemoData": false,
       "analystNotes": "Reported at roughly 1 GW or more of IT power. IT load and site power are different quantities and the sources are not always explicit about which is meant."
+    },
+    {
+      "slug": "prometheus-hyperscale-evanston",
+      "name": "Prometheus Hyperscale Evanston",
+      "description": null,
+      "owner": {
+        "name": "Prometheus Hyperscale",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "PLANNING",
+      "location": {
+        "city": "Evanston (12 miles east)",
+        "stateRegion": "Wyoming (Uinta County)",
+        "country": "United States",
+        "latitude": 41.26,
+        "longitude": -110.71
+      },
+      "timeline": {
+        "announcementDate": null,
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1250,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 0,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:32.386Z",
+      "isDemoData": false,
+      "analystNotes": "506-acre site on founder Trenton Thornock's family ranch; unanimous Uinta County conditional-use approval June 2026. 'Prometheus says construction will begin within six months of final permitting and take four to five years.' Mostly natural-gas powered, closed-loop water-glycol cooling. Capex null: reported $30B covers two Wyoming projects (Evanston plus a proposed Casper-area site), not this campus alone. Former BP CEO Bernard Looney leads the buildout. Some reports cite expansion potential to 5GW."
+    },
+    {
+      "slug": "qts-lancium-hall-county",
+      "name": "QTS–Lancium Hall County",
+      "description": null,
+      "owner": {
+        "name": "QTS Data Centers",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Turkey",
+        "stateRegion": "Texas (Hall County, Panhandle)",
+        "country": "United States",
+        "latitude": 34.393,
+        "longitude": -100.896
+      },
+      "timeline": {
+        "announcementDate": "2026-07-13T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1000,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 10000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:32.934Z",
+      "isDemoData": false,
+      "analystNotes": "Up to 11 QTS-built buildings on 465 acres at Lancium's Clean Campus; 'The site is supported by a 1GW grid connection.' On-site solar plus battery storage, closed-loop cooling; up to 7,000 peak construction jobs, ~350 permanent. No construction start or opening dates announced. Separate from Blackstone/QTS's $25B Pennsylvania commitment and the abandoned 2,100-acre Virginia Digital Gateway."
     },
     {
       "slug": "reliance-jamnagar-ai-campus",
@@ -2632,6 +3928,114 @@
       "lastVerifiedAt": "2026-07-28T16:18:02.547Z",
       "isDemoData": false,
       "analystNotes": "Groundbreaking Aug 2025; AWS anchor tenant. First phase 41 MW by Nov 2027, expanding to 103 MW by Feb 2029; basis unstated. The $5.88B figure is AWS's Korea-wide investment, so no site capex is recorded. SKT's July 2026 15 GW-by-2035 regional plan is aspirational and not recorded."
+    },
+    {
+      "slug": "sakura-internet-ishikari-gpu-data-center-expansion",
+      "name": "Sakura Internet Ishikari GPU data center expansion",
+      "description": null,
+      "owner": {
+        "name": "Sakura Internet",
+        "ticker": "3778.T"
+      },
+      "projectType": "GPU_CLUSTER",
+      "status": "PARTIALLY_OPERATIONAL",
+      "location": {
+        "city": "Ishikari, Hokkaido",
+        "stateRegion": "Hokkaido",
+        "country": "Japan",
+        "latitude": 43.17,
+        "longitude": 141.31
+      },
+      "timeline": {
+        "announcementDate": "2024-11-12T00:00:00.000Z",
+        "expectedOpeningDate": "2027-01-01T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": 2000,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA H100 (B200/Blackwell expansion underway)",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 3,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:19.936Z",
+      "isDemoData": false,
+      "analystNotes": "~2,000 H100s operational at Ishikari (NVIDIA PR: expanding 'from 2,000 to nearly 4,000 NVIDIA Hopper GPUs'); HGX B200 planned toward ~10,800 total GPUs. Company added ~1,100 Blackwell GPUs in a container DC at Ishikari announced 2026-02-24 (company announcement). Backed by ~JPY50.1bn METI subsidy for national GenAI compute; site targeted fully renewable by 2027. gpuCount reflects confirmed installed H100 base, not targets."
+    },
+    {
+      "slug": "scala-ai-city-phase-1",
+      "name": "Scala AI City (Phase 1)",
+      "description": null,
+      "owner": {
+        "name": "Scala Data Centers",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Eldorado do Sul",
+        "stateRegion": "Rio Grande do Sul",
+        "country": "Brazil",
+        "latitude": -30.084,
+        "longitude": -51.619
+      },
+      "timeline": {
+        "announcementDate": "2024-09-11T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 54,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 500000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 3,
+        "primarySourceCount": 2,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:26.245Z",
+      "isDemoData": false,
+      "analystNotes": "Aspirational full build is 4.75GW ('4.750MW distribuídos em mais de 7 milhões de metros quadrados') — among the largest DC ambitions in the Americas; MME granted a 5GW grid-reserve authorization, one of Brazil's largest ever. Only the 54MW/US$500M Phase 1 is committed; construction started after Eldorado do Sul enabling law was sanctioned. 100% renewable, PUE <=1.2 claimed, Malbec subsea-cable connectivity."
     },
     {
       "slug": "softbank-france-ai-program-hauts-de-france",
@@ -3510,6 +4914,60 @@
       "analystNotes": "One of the five Stargate sites announced 2025-09-23. 902 MW across four buildings per local reporting of the approved plan; Vantage's own words are 'close to a gigawatt of AI capacity' (IT). Site draw reported at 1.3 GW with later phases potentially to 3.5 GW. Groundbreaking Dec 2025, completion scheduled 2028."
     },
     {
+      "slug": "telus-sovereign-ai-factory-rimouski",
+      "name": "TELUS Sovereign AI Factory (Rimouski)",
+      "description": null,
+      "owner": {
+        "name": "TELUS (with NVIDIA and HPE)",
+        "ticker": "T.TO"
+      },
+      "projectType": "SOVEREIGN_AI",
+      "status": "PARTIALLY_OPERATIONAL",
+      "location": {
+        "city": "Rimouski",
+        "stateRegion": "Quebec",
+        "country": "Canada",
+        "latitude": 48.449,
+        "longitude": -68.523
+      },
+      "timeline": {
+        "announcementDate": "2025-04-15T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA Hopper/Blackwell (HPE systems)",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 4,
+        "primarySourceCount": 1,
+        "metricCount": 0
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:25.137Z",
+      "isDemoData": false,
+      "analystNotes": "Rimouski, QC facility operational Sept 2025 (NVIDIA Cloud Partner, HPE-built). May 2026: B.C. cluster announced — Kamloops expansion plus two Vancouver Westbank sites (M3 Mount Pleasant end-2026; 150 West Georgia 2029), >150MW/>60,000 GPUs by 2032 is a plan, not built. Quebec context: Hydro-Québec has restricted new >5MW data-centre allocations and proposed roughly doubling their rate (~13c/kWh) effective H2 2026 — a headwind for new Quebec builds. Power and GPU figures omitted on review: the Rimouski facility MW is undisclosed, and the >150 MW / 60,000-GPU figures are the 2032 British Columbia expansion plan, not built capacity."
+    },
+    {
       "slug": "terawulf-justified-anthropic-lease",
       "name": "TeraWulf Justified (Anthropic lease)",
       "description": null,
@@ -3672,6 +5130,168 @@
       "analystNotes": "Cortex 1 operational since 2024 at ~130 MW launch draw with 50,000 H100s shown; 500 MW is the stated full site-power target for the Cortex 2.0 expansion (reported mid-2026 completion). Larger 2026 GPU-count claims circulate only in weak sources and are not recorded."
     },
     {
+      "slug": "ubilink-ai-supercomputing-center-foxlink-ubitus-shinfox-nvidia-cloud-partner",
+      "name": "Ubilink.AI supercomputing center (Foxlink/Ubitus/Shinfox, NVIDIA cloud partner)",
+      "description": null,
+      "owner": {
+        "name": "Ubilink (JV of Foxlink, Ubitus, Shinfox Energy)",
+        "ticker": null
+      },
+      "projectType": "GPU_CLUSTER",
+      "status": "OPERATIONAL",
+      "location": {
+        "city": "Taipei (exact district not disclosed in cited sources)",
+        "stateRegion": "Taipei",
+        "country": "Taiwan",
+        "latitude": 25.06,
+        "longitude": 121.61
+      },
+      "timeline": {
+        "announcementDate": "2024-11-08T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": 1024,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA H100",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:21.200Z",
+      "isDemoData": false,
+      "analystNotes": "Billed as Taiwan's largest commercial AI supercomputing facility at launch (Nov 2024): 128 ASUS-built NVIDIA HGX H100 servers / 1,024 GPUs, 45.82 PFLOPS (TOP500 #31, Green500 #44), PUE 1.2, renewable-energy options via Shinfox. Partners state expansion toward ~10,240 H100/B100/B200 GPUs — plan, not installed. Distinct from the already-covered Foxconn/NVIDIA Kaohsiung AI factory. Caveat: coverage is company-announcement and Taiwanese trade press; limited Western trade-press verification, flagged per provenance rules."
+    },
+    {
+      "slug": "volcano-cloud-taihang-computing-centre-phase-ii-bytedance",
+      "name": "Volcano Cloud Taihang Computing Centre Phase II (ByteDance)",
+      "description": null,
+      "owner": {
+        "name": "ByteDance (Volcano Engine)",
+        "ticker": null
+      },
+      "projectType": "DATA_CENTER",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Datong (Guangling County)",
+        "stateRegion": "Shanxi",
+        "country": "China",
+        "latitude": 39.76,
+        "longitude": 114.28
+      },
+      "timeline": {
+        "announcementDate": "2025-01-15T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 614000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:16.903Z",
+      "isDemoData": false,
+      "analystNotes": "4.5bn yuan (US$614m) campus in Guangling County Economic Development Zone Big Data Park, eastern Datong; 205,013 sqm, six two-storey DC buildings plus one six-storey integrated facility. SCMP reports 15,604 12kW server cabinets plus 510 network cabinets (implies ~187MW IT load, not stated as such — powerMw left null). Supports Doubao AI workloads; Datong ranked third nationally on CAICT computing-power index."
+    },
+    {
+      "slug": "wonder-valley-ai-data-centre-industrial-park-phase-1",
+      "name": "Wonder Valley AI Data Centre Industrial Park (Phase 1)",
+      "description": null,
+      "owner": {
+        "name": "O'Leary Ventures",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Greenview Industrial Gateway (south of Grande Prairie)",
+        "stateRegion": "Alberta",
+        "country": "Canada",
+        "latitude": 54.92,
+        "longitude": -118.75
+      },
+      "timeline": {
+        "announcementDate": "2024-12-09T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1400,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 2000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 3,
+        "primarySourceCount": 2,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:23.043Z",
+      "isDemoData": false,
+      "analystNotes": "Aspirational: developer pitches 7.5GW over 5-10 years and 'over $70 billion' lifetime investment, but as of Dec 2025 land purchase was not finalized, no new provincial permits filed, and construction is not expected before late 2028 (The Logic). 2026 earmarked for environmental/AUC permitting. Only Phase 1 (1.4GW, ~US$2B) recorded here; treat all capacity as unbuilt ambition. Recorded at the Phase 1 figure only; treat as unbuilt ambition per The Logic reporting."
+    },
+    {
       "slug": "ytl-green-data-center-park",
       "name": "YTL Green Data Center Park",
       "description": null,
@@ -3724,6 +5344,168 @@
       "lastVerifiedAt": "2026-07-28T16:18:05.144Z",
       "isDemoData": false,
       "analystNotes": "1,640-acre campus ~30 km from Singapore; 500 MW planned park capacity paired with a co-located 500 MW solar plant. Malaysia's first NVIDIA GB200 NVL72 AI datacenter (YTL AI Cloud) operational since Oct 2025; full park capacity not energized."
+    },
+    {
+      "slug": "yiwu-county-government-backed-ai-data-center-complex",
+      "name": "Yiwu County government-backed AI data center complex",
+      "description": null,
+      "owner": {
+        "name": "Yiwu County (Hami, Xinjiang) government-backed developers",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Yiwu County, Hami",
+        "stateRegion": "Xinjiang",
+        "country": "China",
+        "latitude": 43.26,
+        "longitude": 94.7
+      },
+      "timeline": {
+        "announcementDate": "2025-07-08T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": null,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": "NVIDIA H100/H200 (planned per filings; sourcing unclear under export controls)",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 0
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:18.514Z",
+      "isDemoData": false,
+      "analystNotes": "AGGREGATE CAVEAT: the >115,000 Nvidia H100/H200 figure covers 39 data center projects approved in Q4 2024 across Xinjiang and Qinghai, per Bloomberg's review of filings — not one site. Bloomberg reports roughly 70% of planned compute is concentrated in this single government-backed complex near Yiwu (implying ~80k chips), powered by wind, solar and coal with free-electricity incentives. Chip sourcing path unverified; construction/tenders underway on 7 of 39 projects as of mid-2025."
+    },
+    {
+      "slug": "z-ai-zhipu-1gw-ai-computing-centre",
+      "name": "Z.ai (Zhipu) 1GW AI computing centre",
+      "description": null,
+      "owner": {
+        "name": "Z.ai (formerly Zhipu AI)",
+        "ticker": null
+      },
+      "projectType": "AI_FACTORY",
+      "status": "PARTIALLY_OPERATIONAL",
+      "location": {
+        "city": null,
+        "stateRegion": null,
+        "country": "China",
+        "latitude": null,
+        "longitude": null
+      },
+      "timeline": {
+        "announcementDate": "2026-07-20T00:00:00.000Z",
+        "expectedOpeningDate": null,
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1000,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": "Chinese domestic accelerators (vendor not named; Huawei Ascend implied)",
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:17.996Z",
+      "isDemoData": false,
+      "analystNotes": "Facility in partial operation as of July 2026; 1GW figure is company-stated design capacity, IT-vs-site basis not specified. Site location not disclosed in Bloomberg/SCMP reporting — coordinates are Z.ai's Beijing HQ, not the DC. Z.ai has been on the US entity list since Jan 2025; also runs multiple 10,000+ chip clusters. GLM-5.2 reportedly trained entirely on Huawei Ascend. Coordinates omitted: the site location is undisclosed."
+    },
+    {
+      "slug": "estruxture-cal-3",
+      "name": "eStruxture CAL-3",
+      "description": null,
+      "owner": {
+        "name": "eStruxture Data Centers",
+        "ticker": null
+      },
+      "projectType": "COLOCATION",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Rocky View County (Calgary area)",
+        "stateRegion": "Alberta",
+        "country": "Canada",
+        "latitude": 51.2,
+        "longitude": -114
+      },
+      "timeline": {
+        "announcementDate": "2024-10-29T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 90,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 540000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 3,
+        "primarySourceCount": 2,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-29T00:18:23.774Z",
+      "isDemoData": false,
+      "analystNotes": "Tier III design, up to 125kW/rack densities. CoreWeave signed as Phase 1 anchor tenant May 14, 2026 — its second Canadian site. eStruxture frames CAL-3 as part of 'more than C$1 billion' Alberta investment; capex here is the CA$750M (US$540M) CAL-3 figure."
     },
     {
       "slug": "xai-colossus-1",
