@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState, useTransition } from "react";
 
-import { ConfidenceMeter, StatusBadge } from "@/components/status-badge";
+import { StatusBadge } from "@/components/status-badge";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { EmptyState } from "@/components/ui/misc";
@@ -25,6 +25,14 @@ import {
 import type { NumericLike } from "@/lib/format";
 import { buildQuery, nextSort } from "@/lib/url-state";
 import { cn } from "@/lib/utils";
+import {
+  CREDIBILITY_META,
+  POWER_BASIS_META,
+  POWER_READINESS_META,
+  type CredibilityState,
+  type PowerBasis,
+  type PowerReadiness,
+} from "@/lib/credibility";
 
 export type TableRow = {
   id: string;
@@ -45,6 +53,12 @@ export type TableRow = {
   lastVerifiedAt: Date | null;
   confidenceScore: number | null;
   isDemoData: boolean;
+  // Derived in lib/services/projects from the row's own evidence — see
+  // lib/credibility. Present on every row, so the table never has to fall back
+  // to "not scored".
+  credibility: CredibilityState;
+  powerReadiness: PowerReadiness;
+  powerBasis: PowerBasis;
   ownerCompany: {
     id: string;
     name: string;
@@ -65,7 +79,8 @@ type ColumnKey =
   | "gpuModel"
   | "opening"
   | "verified"
-  | "confidence";
+  | "credibility"
+  | "powerEvidence";
 
 type Column = {
   key: ColumnKey;
@@ -88,7 +103,10 @@ const COLUMNS: Column[] = [
   { key: "gpuModel", label: "GPU model", sort: null },
   { key: "opening", label: "Expected opening", sort: "expectedOpeningDate" },
   { key: "verified", label: "Last verified", sort: "lastVerifiedAt" },
-  { key: "confidence", label: "Confidence", sort: "confidenceScore" },
+  // Sorting is by the stored legacy score, which is null on researched rows;
+  // the displayed value is derived, so the column is not sortable.
+  { key: "credibility", label: "Credibility", sort: null },
+  { key: "powerEvidence", label: "Power evidence", sort: null },
 ];
 
 export function ProjectsTable({
@@ -452,6 +470,19 @@ export function ProjectsTable({
                                 >
                                   {formatPowerScaled(power)}
                                 </span>
+                                {power !== null ? (
+                                  <span
+                                    className="ml-1.5 font-mono text-[10px] text-fg-muted"
+                                    title={`${
+                                      isConfirmedPower
+                                        ? "Energized capacity"
+                                        : "Announced target, not energized"
+                                    } · ${POWER_BASIS_META[row.powerBasis].label}`}
+                                  >
+                                    {isConfirmedPower ? "E" : "A"}
+                                    {POWER_BASIS_META[row.powerBasis].short}
+                                  </span>
+                                ) : null}
                               </Td>
                             );
                           case "gpus":
@@ -502,10 +533,18 @@ export function ProjectsTable({
                                 </span>
                               </Td>
                             );
-                          case "confidence":
+                          case "credibility":
                             return (
-                              <Td key={c.key}>
-                                <ConfidenceMeter score={row.confidenceScore} />
+                              <Td key={c.key} className="whitespace-nowrap">
+                                <Badge tone={CREDIBILITY_META[row.credibility].tone}>
+                                  {CREDIBILITY_META[row.credibility].label}
+                                </Badge>
+                              </Td>
+                            );
+                          case "powerEvidence":
+                            return (
+                              <Td key={c.key} className="whitespace-nowrap text-fg-dim">
+                                {POWER_READINESS_META[row.powerReadiness].label}
                               </Td>
                             );
                           default:

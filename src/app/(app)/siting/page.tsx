@@ -78,7 +78,7 @@ export default async function SitingPage() {
         <StatTile
           label="Expiring in 12 months"
           value={formatCount(summary.expiringWithin12Months)}
-          hint="Capacity due to be released"
+          hint="Potentially relieved by expiry"
           accent="green"
         />
       </section>
@@ -93,10 +93,12 @@ export default async function SitingPage() {
           larger number. This page reports the megawatts.
           {baseRate.adoptionRatePct !== null ? (
             <>
-              {" "}Of the {baseRate.decided} restrictions that reached a decision,{" "}
-              <span className="text-fg">{baseRate.adoptionRatePct}%</span> were
-              adopted ({baseRate.rejected} rejected, {baseRate.pending} still
-              pending).
+              {" "}Among the {baseRate.decided} <em>tracked</em> restrictions that
+              reached a decision,{" "}
+              <span className="text-fg">{baseRate.adoptionRatePct}%</span> were adopted
+              ({baseRate.rejected} rejected, {baseRate.pending} still pending). This is
+              the tracker&apos;s sample, not the universe of siting decisions — measures
+              that never attracted coverage are not in it.
             </>
           ) : null}
         </p>
@@ -150,7 +152,7 @@ export default async function SitingPage() {
 
         <Panel className="lg:col-span-2">
           <PanelHeader>
-            <PanelTitle>Expiry calendar — capacity due to be released</PanelTitle>
+            <PanelTitle>Expiry calendar — capacity potentially relieved</PanelTitle>
             <span className="text-[11px] text-fg-muted">Next 24 months</span>
           </PanelHeader>
           <PanelBody className="p-0">

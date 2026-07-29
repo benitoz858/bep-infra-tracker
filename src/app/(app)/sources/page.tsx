@@ -13,7 +13,11 @@ import { formatDate, formatRelative } from "@/lib/format";
 import { can, getSessionUser } from "@/lib/permissions";
 import { listProjectsMissingSources, listRecentSources } from "@/lib/services/sources";
 
-export const metadata: Metadata = { title: "Source inbox" };
+export const metadata: Metadata = {
+  title: "Evidence library",
+  description:
+    "Every source cited in the tracker, with its publisher, reliability and the claims it supports.",
+};
 
 export default async function SourcesPage() {
   const user = await getSessionUser();
@@ -26,8 +30,8 @@ export default async function SourcesPage() {
   return (
     <>
       <PageHeader
-        title="Source inbox"
-        subtitle="Paste a URL, record what it says, and turn its claims into cited metrics. Nothing is auto-extracted — every figure is entered by the analyst who read the source."
+        title="Evidence library"
+        subtitle="Every source behind the figures, with its publisher, reliability and the claims it supports. Nothing is auto-extracted — each figure is entered by the analyst who read the source, so a claim can always be traced back to a sentence."
         actions={
           can(user?.role, "record:create") ? (
             <Button asChild variant="primary" size="sm">

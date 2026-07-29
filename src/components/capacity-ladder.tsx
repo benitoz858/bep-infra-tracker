@@ -48,7 +48,8 @@ export function CapacityLadder({
     {
       label: "Credible pipeline",
       mw: views.crediblePipelineMw,
-      meaning: "Announced, less rumoured and paused capacity nobody has committed to build.",
+      meaning:
+        "Announced, less rumoured and paused. Still a pipeline measure, not a commitment.",
       tone: "cyan",
       href: "/projects?status=ANNOUNCED,PLANNING,PERMITTING,UNDER_CONSTRUCTION,PARTIALLY_OPERATIONAL,OPERATIONAL,DELAYED",
     },

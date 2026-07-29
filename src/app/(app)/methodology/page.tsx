@@ -90,7 +90,8 @@ export default function MethodologyPage() {
                       {NON_PIPELINE_STATUSES.map((s) => PROJECT_STATUS_META[s].label.toLowerCase()).join(
                         ", ",
                       )}
-                      . Capacity nobody has committed to building.
+                      . Still a pipeline measure — not a commitment and not operating
+                      capacity.
                     </Td>
                   </Tr>
                   <Tr>

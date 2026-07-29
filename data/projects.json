@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-29T09:22:13.727Z",
+    "generatedAt": "2026-07-29T22:03:06.998Z",
     "count": 103,
     "disclaimer": "Figures combine confirmed disclosures with analyst estimates. Check confidence and sources per project before use. Rows with isDemoData=true are illustrative seed data and must not be used in analysis.",
     "demoRowCount": 0
@@ -8,7 +8,7 @@
   "projects": [
     {
       "slug": "aws-madison-county-mississippi",
-      "name": "AWS Madison County (Mississippi)",
+      "name": "AWS Madison County",
       "description": null,
       "owner": {
         "name": "Amazon Web Services",
@@ -105,7 +105,7 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 2,
+        "sourceCount": 1,
         "primarySourceCount": 0,
         "metricCount": 1
       },
@@ -116,7 +116,7 @@
     },
     {
       "slug": "aws-richmond-county-north-carolina",
-      "name": "AWS Richmond County (North Carolina)",
+      "name": "AWS Richmond County",
       "description": null,
       "owner": {
         "name": "Amazon Web Services",
@@ -170,7 +170,7 @@
     },
     {
       "slug": "aws-salem-township-susquehanna",
-      "name": "AWS Salem Township (Susquehanna)",
+      "name": "AWS Salem Township",
       "description": null,
       "owner": {
         "name": "Amazon Web Services",
@@ -332,7 +332,7 @@
     },
     {
       "slug": "aligned-project-caprock-hale-county",
-      "name": "Aligned Project Caprock (Hale County)",
+      "name": "Aligned Project Caprock",
       "description": null,
       "owner": {
         "name": "Aligned Data Centers",
@@ -375,8 +375,8 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 2,
-        "primarySourceCount": 2,
+        "sourceCount": 1,
+        "primarySourceCount": 1,
         "metricCount": 1
       },
       "confidenceScore": null,
@@ -386,7 +386,7 @@
     },
     {
       "slug": "applied-digital-polaris-forge-1-ellendale",
-      "name": "Applied Digital Polaris Forge 1 (Ellendale)",
+      "name": "Applied Digital Polaris Forge 1",
       "description": null,
       "owner": {
         "name": "Applied Digital",
@@ -429,8 +429,8 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 2,
-        "primarySourceCount": 2,
+        "sourceCount": 1,
+        "primarySourceCount": 1,
         "metricCount": 1
       },
       "confidenceScore": null,
@@ -440,7 +440,7 @@
     },
     {
       "slug": "bell-ai-fabric-kamloops-cluster-with-groq",
-      "name": "Bell AI Fabric (Kamloops cluster, with Groq)",
+      "name": "Bell AI Fabric — Kamloops",
       "description": null,
       "owner": {
         "name": "Bell Canada",
@@ -483,8 +483,8 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 3,
-        "primarySourceCount": 2,
+        "sourceCount": 2,
+        "primarySourceCount": 1,
         "metricCount": 1
       },
       "confidenceScore": null,
@@ -494,7 +494,7 @@
     },
     {
       "slug": "bytedance-johor-sedenak-tech-park",
-      "name": "ByteDance Johor (Sedenak Tech Park)",
+      "name": "ByteDance Johor",
       "description": null,
       "owner": {
         "name": "ByteDance",
@@ -548,7 +548,7 @@
     },
     {
       "slug": "bytedance-pecem-ai-datacenter-campus-omnia-casa-dos-ventos",
-      "name": "ByteDance Pecém AI datacenter campus (Omnia / Casa dos Ventos)",
+      "name": "ByteDance Pecém Campus",
       "description": null,
       "owner": {
         "name": "ByteDance",
@@ -591,7 +591,7 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 3,
+        "sourceCount": 2,
         "primarySourceCount": 0,
         "metricCount": 1
       },
@@ -602,7 +602,7 @@
     },
     {
       "slug": "campus-ia-fouju-ile-de-france",
-      "name": "Campus IA (Fouju, Île-de-France)",
+      "name": "Campus IA Fouju",
       "description": null,
       "owner": {
         "name": "MGX",
@@ -656,7 +656,7 @@
     },
     {
       "slug": "cassava-ai-factory-cape-town",
-      "name": "Cassava AI Factory (Cape Town)",
+      "name": "Cassava Cape Town",
       "description": null,
       "owner": {
         "name": "Cassava Technologies",
@@ -764,10 +764,10 @@
     },
     {
       "slug": "china-telecom-shaoguan-ai-data-center-alibaba-zhenwu-10-000-chip-cluster",
-      "name": "China Telecom Shaoguan AI data center (Alibaba Zhenwu 10,000-chip cluster)",
+      "name": "China Telecom Shaoguan",
       "description": null,
       "owner": {
-        "name": "China Telecom (chips/cluster by Alibaba T-Head)",
+        "name": "China Telecom",
         "ticker": "0728.HK"
       },
       "projectType": "GPU_CLUSTER",
@@ -818,7 +818,7 @@
     },
     {
       "slug": "cipher-black-pearl-for-aws",
-      "name": "Cipher Black Pearl (for AWS)",
+      "name": "Cipher Black Pearl",
       "description": null,
       "owner": {
         "name": "Cipher Mining",
@@ -861,8 +861,8 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 3,
-        "primarySourceCount": 2,
+        "sourceCount": 2,
+        "primarySourceCount": 1,
         "metricCount": 1
       },
       "confidenceScore": null,
@@ -915,7 +915,7 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 3,
+        "sourceCount": 2,
         "primarySourceCount": 0,
         "metricCount": 2
       },
@@ -969,7 +969,7 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 3,
+        "sourceCount": 2,
         "primarySourceCount": 0,
         "metricCount": 2
       },
@@ -1023,8 +1023,8 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 2,
-        "primarySourceCount": 2,
+        "sourceCount": 1,
+        "primarySourceCount": 1,
         "metricCount": 2
       },
       "confidenceScore": null,
@@ -1034,7 +1034,7 @@
     },
     {
       "slug": "core-scientific-denton-coreweave",
-      "name": "Core Scientific Denton (CoreWeave)",
+      "name": "Core Scientific Denton",
       "description": null,
       "owner": {
         "name": "Core Scientific",
@@ -1088,7 +1088,7 @@
     },
     {
       "slug": "coreweave-cambridge-cohere-anchor",
-      "name": "CoreWeave Cambridge (Cohere anchor)",
+      "name": "CoreWeave Cambridge",
       "description": null,
       "owner": {
         "name": "CoreWeave",
@@ -1196,7 +1196,7 @@
     },
     {
       "slug": "crusoe-goodnight-armstrong-county",
-      "name": "Crusoe Goodnight (Armstrong County)",
+      "name": "Crusoe Goodnight",
       "description": null,
       "owner": {
         "name": "Crusoe Energy",
@@ -1293,8 +1293,8 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 2,
-        "primarySourceCount": 2,
+        "sourceCount": 1,
+        "primarySourceCount": 1,
         "metricCount": 1
       },
       "confidenceScore": null,
@@ -1303,62 +1303,8 @@
       "analystNotes": "CyrusOne's largest single announced US AI campus; brings Constellation/Calpine-contracted CyrusOne capacity in Texas to 'a total of over 1100 MW under contract' including the earlier 400MW Whitney/Bosque County campus (DFW10, first building topped out March 2026) at Calpine's Thad Hill Energy Center. No online date disclosed."
     },
     {
-      "slug": "datavolt-oxagon-ai-factory-neom",
-      "name": "DataVolt Oxagon AI Factory (NEOM)",
-      "description": null,
-      "owner": {
-        "name": "DataVolt",
-        "ticker": null
-      },
-      "projectType": "AI_FACTORY",
-      "status": "ANNOUNCED",
-      "location": {
-        "city": "Oxagon",
-        "stateRegion": "Tabuk Province",
-        "country": "Saudi Arabia",
-        "latitude": 27.9,
-        "longitude": 35.3
-      },
-      "timeline": {
-        "announcementDate": "2025-02-10T00:00:00.000Z",
-        "expectedOpeningDate": "2028-12-31T00:00:00.000Z",
-        "actualOpeningDate": null
-      },
-      "power": {
-        "estimatedMw": 1500,
-        "confirmedMw": null,
-        "source": null,
-        "utilityProvider": null
-      },
-      "compute": {
-        "estimatedGpuCount": null,
-        "confirmedGpuCount": null,
-        "gpuModel": null,
-        "computePlatform": null
-      },
-      "capex": {
-        "estimatedUsd": 5000000000,
-        "confirmedUsd": null
-      },
-      "building": {
-        "squareFeet": null,
-        "coolingTechnology": null
-      },
-      "tags": [],
-      "suppliers": [],
-      "evidence": {
-        "sourceCount": 2,
-        "primarySourceCount": 1,
-        "metricCount": 2
-      },
-      "confidenceScore": null,
-      "lastVerifiedAt": "2026-07-28T16:18:10.743Z",
-      "isDemoData": false,
-      "analystNotes": "1.5 GW total campus target, basis unstated; capex of $5B covers phase one only, with the first ~300 MW targeted for 2028. NEOM megaprojects have a documented history of rescoping and no construction on this campus is documented as of mid-2026 — treat scale as aspirational."
-    },
-    {
       "slug": "deutsche-telekom-industrial-ai-cloud-munich",
-      "name": "Deutsche Telekom Industrial AI Cloud (Munich)",
+      "name": "DT Industrial AI Cloud",
       "description": null,
       "owner": {
         "name": "Deutsche Telekom",
@@ -1411,8 +1357,62 @@
       "analystNotes": "Opened February 2026 in a renovated Munich Tucherpark datacenter; ~€1B privately financed with NVIDIA. GPU count is DT's stated 'up to 10,000' ceiling (1,000+ DGX B200 systems). Facility MW not disclosed. Anchor customers reported include Mercedes-Benz, Siemens and BMW."
     },
     {
+      "slug": "datavolt-oxagon-ai-factory-neom",
+      "name": "DataVolt Oxagon",
+      "description": null,
+      "owner": {
+        "name": "DataVolt",
+        "ticker": null
+      },
+      "projectType": "AI_FACTORY",
+      "status": "ANNOUNCED",
+      "location": {
+        "city": "Oxagon",
+        "stateRegion": "Tabuk Province",
+        "country": "Saudi Arabia",
+        "latitude": 27.9,
+        "longitude": 35.3
+      },
+      "timeline": {
+        "announcementDate": "2025-02-10T00:00:00.000Z",
+        "expectedOpeningDate": "2028-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1500,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 5000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:10.743Z",
+      "isDemoData": false,
+      "analystNotes": "1.5 GW total campus target, basis unstated; capex of $5B covers phase one only, with the first ~300 MW targeted for 2028. NEOM megaprojects have a documented history of rescoping and no construction on this campus is documented as of mid-2026 — treat scale as aspirational."
+    },
+    {
       "slug": "ecocloud-g42-olkaria-geothermal-campus",
-      "name": "EcoCloud–G42 Olkaria Geothermal Campus",
+      "name": "EcoCloud Olkaria",
       "description": null,
       "owner": {
         "name": "EcoCloud",
@@ -1466,7 +1466,7 @@
     },
     {
       "slug": "edged-merlin-extremadura-campuses",
-      "name": "Edged–Merlin Extremadura Campuses",
+      "name": "Edged–Merlin Extremadura",
       "description": null,
       "owner": {
         "name": "Merlin Properties",
@@ -1520,10 +1520,10 @@
     },
     {
       "slug": "fir-hills-stock-farm-road-3gw-ai-data-center-jeollanam-do",
-      "name": "Fir Hills / Stock Farm Road 3GW AI data center, Jeollanam-do",
+      "name": "Fir Hills Jeollanam-do",
       "description": null,
       "owner": {
-        "name": "Fir Hills Inc (Stock Farm Road) with Jeollanam-do provincial government",
+        "name": "Fir Hills",
         "ticker": null
       },
       "projectType": "HYPERSCALE_CAMPUS",
@@ -1574,7 +1574,7 @@
     },
     {
       "slug": "firmus-dayone-batam-ai-factory",
-      "name": "Firmus–DayOne Batam AI Factory",
+      "name": "Firmus Batam AI Factory",
       "description": null,
       "owner": {
         "name": "Firmus Technologies",
@@ -1736,7 +1736,7 @@
     },
     {
       "slug": "galaxy-helios-dickens-county",
-      "name": "Galaxy Helios (Dickens County)",
+      "name": "Galaxy Helios",
       "description": null,
       "owner": {
         "name": "Galaxy Digital",
@@ -1779,68 +1779,14 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 2,
-        "primarySourceCount": 2,
+        "sourceCount": 1,
+        "primarySourceCount": 1,
         "metricCount": 1
       },
       "confidenceScore": null,
       "lastVerifiedAt": "2026-07-29T00:18:34.057Z",
       "isDemoData": false,
       "analystNotes": "Former bitcoin mine on 2,200+ acres; gross vs IT explicitly distinguished by Galaxy ('approximately 200 megawatts of gross power — 133 MW of critical IT load'). 15-year CoreWeave lease 'expected to generate more than $1 billion in average annual revenue' — lease revenue, not capex, hence capexUsd null. Phase I rent commenced Q2 2026. First CoreWeave lease announced March 2025 (month precision)."
-    },
-    {
-      "slug": "google-ai-hub-visakhapatnam",
-      "name": "Google AI Hub Visakhapatnam",
-      "description": null,
-      "owner": {
-        "name": "Google",
-        "ticker": "GOOGL"
-      },
-      "projectType": "HYPERSCALE_CAMPUS",
-      "status": "UNDER_CONSTRUCTION",
-      "location": {
-        "city": "Visakhapatnam",
-        "stateRegion": "Andhra Pradesh",
-        "country": "India",
-        "latitude": 17.47,
-        "longitude": 82.93
-      },
-      "timeline": {
-        "announcementDate": "2025-10-14T00:00:00.000Z",
-        "expectedOpeningDate": "2028-12-31T00:00:00.000Z",
-        "actualOpeningDate": null
-      },
-      "power": {
-        "estimatedMw": 1000,
-        "confirmedMw": null,
-        "source": null,
-        "utilityProvider": null
-      },
-      "compute": {
-        "estimatedGpuCount": null,
-        "confirmedGpuCount": null,
-        "gpuModel": null,
-        "computePlatform": null
-      },
-      "capex": {
-        "estimatedUsd": 15000000000,
-        "confirmedUsd": null
-      },
-      "building": {
-        "squareFeet": null,
-        "coolingTechnology": null
-      },
-      "tags": [],
-      "suppliers": [],
-      "evidence": {
-        "sourceCount": 2,
-        "primarySourceCount": 1,
-        "metricCount": 2
-      },
-      "confidenceScore": null,
-      "lastVerifiedAt": "2026-07-28T16:18:03.021Z",
-      "isDemoData": false,
-      "analystNotes": "Google's largest AI hub outside the US; $15B over 2026–2030 includes subsea cable gateway and clean energy. Foundation laid April 2026. 1 GW is 'compute capacity' with basis unstated. Partners AdaniConneX and Nxtra."
     },
     {
       "slug": "google-cedar-rapids",
@@ -1898,11 +1844,11 @@
     },
     {
       "slug": "google-cerrillos-santiago",
-      "name": "Google Cerrillos (Santiago)",
+      "name": "Google Cerrillos",
       "description": null,
       "owner": {
         "name": "Google (Inversiones y Servicios Dataluna)",
-        "ticker": "GOOGL"
+        "ticker": null
       },
       "projectType": "AI_FACTORY",
       "status": "PAUSED",
@@ -1941,7 +1887,7 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 3,
+        "sourceCount": 2,
         "primarySourceCount": 0,
         "metricCount": 0
       },
@@ -2005,6 +1951,60 @@
       "analystNotes": "New AI-focused campus on ~400 acres, phase one targeted 2027. The $9B figure is statewide (also expands the existing Pryor campus), so no campus-level capex is recorded. No MW disclosed."
     },
     {
+      "slug": "google-ai-hub-visakhapatnam",
+      "name": "Google Visakhapatnam",
+      "description": null,
+      "owner": {
+        "name": "Google",
+        "ticker": "GOOGL"
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Visakhapatnam",
+        "stateRegion": "Andhra Pradesh",
+        "country": "India",
+        "latitude": 17.47,
+        "longitude": 82.93
+      },
+      "timeline": {
+        "announcementDate": "2025-10-14T00:00:00.000Z",
+        "expectedOpeningDate": "2028-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 1000,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": 15000000000,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 2
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:03.021Z",
+      "isDemoData": false,
+      "analystNotes": "Google's largest AI hub outside the US; $15B over 2026–2030 includes subsea cable gateway and clean energy. Foundation laid April 2026. 1 GW is 'compute capacity' with basis unstated. Partners AdaniConneX and Nxtra."
+    },
+    {
       "slug": "google-west-memphis",
       "name": "Google West Memphis",
       "description": null,
@@ -2060,7 +2060,7 @@
     },
     {
       "slug": "humain-ai-factories-phase-1-riyadh-dammam",
-      "name": "HUMAIN AI Factories Phase 1 (Riyadh & Dammam)",
+      "name": "HUMAIN AI Factories Phase 1",
       "description": null,
       "owner": {
         "name": "HUMAIN",
@@ -2114,7 +2114,7 @@
     },
     {
       "slug": "humain-xai-data-center-saudi-arabia",
-      "name": "HUMAIN–xAI Data Center (Saudi Arabia)",
+      "name": "HUMAIN–xAI Data Center",
       "description": null,
       "owner": {
         "name": "HUMAIN",
@@ -2168,7 +2168,7 @@
     },
     {
       "slug": "hut-8-river-bend-for-fluidstack",
-      "name": "Hut 8 River Bend (for Fluidstack)",
+      "name": "Hut 8 River Bend",
       "description": null,
       "owner": {
         "name": "Hut 8",
@@ -2222,7 +2222,7 @@
     },
     {
       "slug": "iren-childress-horizon-for-microsoft",
-      "name": "IREN Childress (Horizon, for Microsoft)",
+      "name": "IREN Childress",
       "description": null,
       "owner": {
         "name": "IREN",
@@ -2265,8 +2265,8 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 2,
-        "primarySourceCount": 2,
+        "sourceCount": 1,
+        "primarySourceCount": 1,
         "metricCount": 1
       },
       "confidenceScore": null,
@@ -2330,7 +2330,7 @@
     },
     {
       "slug": "isambard-ai-bristol",
-      "name": "Isambard-AI (Bristol)",
+      "name": "Isambard-AI",
       "description": null,
       "owner": {
         "name": "University of Bristol",
@@ -2384,7 +2384,7 @@
     },
     {
       "slug": "jupiter-julich",
-      "name": "JUPITER (Jülich)",
+      "name": "JUPITER",
       "description": null,
       "owner": {
         "name": "Forschungszentrum Jülich",
@@ -2438,7 +2438,7 @@
     },
     {
       "slug": "kddi-osaka-sakai-data-center-former-sharp-sakai-plant",
-      "name": "KDDI Osaka Sakai Data Center (former Sharp Sakai plant)",
+      "name": "KDDI Osaka Sakai",
       "description": null,
       "owner": {
         "name": "KDDI",
@@ -2489,6 +2489,60 @@
       "lastVerifiedAt": "2026-07-29T00:18:19.375Z",
       "isDemoData": false,
       "analystNotes": "Opened 2026-01-22 on part of Sharp's former Sakai LCD plant (KDDI bought its parcel for ~JPY10bn/US$68m in April 2025; GB200 NVL72 racks, direct liquid cooling, 100% renewable power). Distinct from SoftBank's separate 150MW project on the larger portion of the same Sharp Sakai site (already covered). 48MW is facility capacity as reported at launch; IT-vs-total basis not broken out."
+    },
+    {
+      "slug": "microsoft-khazna-uae-expansion",
+      "name": "Khazna UAE Expansion",
+      "description": null,
+      "owner": {
+        "name": "Khazna Data Centers",
+        "ticker": null
+      },
+      "projectType": "HYPERSCALE_CAMPUS",
+      "status": "UNDER_CONSTRUCTION",
+      "location": {
+        "city": "Abu Dhabi",
+        "stateRegion": "Abu Dhabi",
+        "country": "United Arab Emirates",
+        "latitude": 24.4539,
+        "longitude": 54.3773
+      },
+      "timeline": {
+        "announcementDate": "2025-11-05T00:00:00.000Z",
+        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
+        "actualOpeningDate": null
+      },
+      "power": {
+        "estimatedMw": 200,
+        "confirmedMw": null,
+        "source": null,
+        "utilityProvider": null
+      },
+      "compute": {
+        "estimatedGpuCount": null,
+        "confirmedGpuCount": null,
+        "gpuModel": null,
+        "computePlatform": null
+      },
+      "capex": {
+        "estimatedUsd": null,
+        "confirmedUsd": null
+      },
+      "building": {
+        "squareFeet": null,
+        "coolingTechnology": null
+      },
+      "tags": [],
+      "suppliers": [],
+      "evidence": {
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 1
+      },
+      "confidenceScore": null,
+      "lastVerifiedAt": "2026-07-28T16:18:11.985Z",
+      "isDemoData": false,
+      "analystNotes": "Part of Microsoft's $15.2B UAE commitment through 2029 (country-wide figure, so no capex recorded here). Khazna groundbreakings in Abu Dhabi support under-construction status; specific sites for the full 200 MW not disclosed. Distinct from Stargate UAE."
     },
     {
       "slug": "lambda-kansas-city",
@@ -2654,7 +2708,7 @@
     },
     {
       "slug": "meta-lebanon-indiana",
-      "name": "Meta Lebanon (Indiana)",
+      "name": "Meta Lebanon",
       "description": null,
       "owner": {
         "name": "Meta",
@@ -2883,7 +2937,7 @@
     },
     {
       "slug": "microsoft-india-south-central-hyderabad",
-      "name": "Microsoft India South Central (Hyderabad)",
+      "name": "Microsoft Hyderabad",
       "description": null,
       "owner": {
         "name": "Microsoft",
@@ -2988,60 +3042,6 @@
       "lastVerifiedAt": "2026-07-28T16:17:50.094Z",
       "isDemoData": false,
       "analystNotes": "Reeves County, West Texas. ~2 GW served by a co-located behind-the-meter natural gas facility; 'multibillion-dollar' investment over five to seven years, no specific capex stated. Basis (IT vs site) not stated. Distinct from the Fairwater sites."
-    },
-    {
-      "slug": "microsoft-khazna-uae-expansion",
-      "name": "Microsoft–Khazna UAE Expansion",
-      "description": null,
-      "owner": {
-        "name": "Khazna Data Centers",
-        "ticker": null
-      },
-      "projectType": "HYPERSCALE_CAMPUS",
-      "status": "UNDER_CONSTRUCTION",
-      "location": {
-        "city": "Abu Dhabi",
-        "stateRegion": "Abu Dhabi",
-        "country": "United Arab Emirates",
-        "latitude": 24.4539,
-        "longitude": 54.3773
-      },
-      "timeline": {
-        "announcementDate": "2025-11-05T00:00:00.000Z",
-        "expectedOpeningDate": "2026-12-31T00:00:00.000Z",
-        "actualOpeningDate": null
-      },
-      "power": {
-        "estimatedMw": 200,
-        "confirmedMw": null,
-        "source": null,
-        "utilityProvider": null
-      },
-      "compute": {
-        "estimatedGpuCount": null,
-        "confirmedGpuCount": null,
-        "gpuModel": null,
-        "computePlatform": null
-      },
-      "capex": {
-        "estimatedUsd": null,
-        "confirmedUsd": null
-      },
-      "building": {
-        "squareFeet": null,
-        "coolingTechnology": null
-      },
-      "tags": [],
-      "suppliers": [],
-      "evidence": {
-        "sourceCount": 2,
-        "primarySourceCount": 1,
-        "metricCount": 1
-      },
-      "confidenceScore": null,
-      "lastVerifiedAt": "2026-07-28T16:18:11.985Z",
-      "isDemoData": false,
-      "analystNotes": "Part of Microsoft's $15.2B UAE commitment through 2029 (country-wide figure, so no capex recorded here). Khazna groundbreakings in Abu Dhabi support under-construction status; specific sites for the full 200 MW not disclosed. Distinct from Stargate UAE."
     },
     {
       "slug": "naver-gak-sejong-ai-factory",
@@ -3170,7 +3170,7 @@
     },
     {
       "slug": "nebius-highridge-pennsylvania",
-      "name": "Nebius Highridge (Pennsylvania)",
+      "name": "Nebius Highridge",
       "description": null,
       "owner": {
         "name": "Nebius Group",
@@ -3386,7 +3386,7 @@
     },
     {
       "slug": "nscale-barstow-texas-for-microsoft",
-      "name": "Nscale Barstow (Texas, for Microsoft)",
+      "name": "Nscale Barstow",
       "description": null,
       "owner": {
         "name": "Nscale",
@@ -3440,7 +3440,7 @@
     },
     {
       "slug": "nscale-loughton-for-microsoft",
-      "name": "Nscale Loughton (for Microsoft)",
+      "name": "Nscale Loughton",
       "description": null,
       "owner": {
         "name": "Nscale",
@@ -3494,7 +3494,7 @@
     },
     {
       "slug": "ooredoo-sovereign-ai-cloud-doha",
-      "name": "Ooredoo Sovereign AI Cloud (Doha)",
+      "name": "Ooredoo Sovereign AI Cloud",
       "description": null,
       "owner": {
         "name": "Ooredoo",
@@ -3548,7 +3548,7 @@
     },
     {
       "slug": "openai-tata-hypervault-india",
-      "name": "OpenAI–Tata HyperVault (India)",
+      "name": "OpenAI–Tata HyperVault",
       "description": null,
       "owner": {
         "name": "Tata Group",
@@ -3602,7 +3602,7 @@
     },
     {
       "slug": "poolside-project-horizon-fort-stockton",
-      "name": "Poolside Project Horizon (Fort Stockton)",
+      "name": "Poolside Project Horizon",
       "description": null,
       "owner": {
         "name": "Poolside",
@@ -3877,7 +3877,7 @@
     },
     {
       "slug": "sk-telecom-aws-ulsan-ai-data-center",
-      "name": "SK Telecom–AWS Ulsan AI Data Center",
+      "name": "SK Telecom Ulsan",
       "description": null,
       "owner": {
         "name": "SK Telecom",
@@ -3931,7 +3931,7 @@
     },
     {
       "slug": "sakura-internet-ishikari-gpu-data-center-expansion",
-      "name": "Sakura Internet Ishikari GPU data center expansion",
+      "name": "Sakura Internet Ishikari",
       "description": null,
       "owner": {
         "name": "Sakura Internet",
@@ -4028,8 +4028,8 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 3,
-        "primarySourceCount": 2,
+        "sourceCount": 2,
+        "primarySourceCount": 1,
         "metricCount": 2
       },
       "confidenceScore": null,
@@ -4039,7 +4039,7 @@
     },
     {
       "slug": "softbank-france-ai-program-hauts-de-france",
-      "name": "SoftBank France AI Program (Hauts-de-France)",
+      "name": "SoftBank France Program",
       "description": null,
       "owner": {
         "name": "SoftBank",
@@ -4093,7 +4093,7 @@
     },
     {
       "slug": "softbank-sakai-ai-data-center",
-      "name": "SoftBank Sakai AI Data Center",
+      "name": "SoftBank Sakai",
       "description": null,
       "owner": {
         "name": "SoftBank",
@@ -4210,7 +4210,7 @@
     },
     {
       "slug": "stargate-argentina-patagonia",
-      "name": "Stargate Argentina (Patagonia)",
+      "name": "Stargate Argentina",
       "description": null,
       "owner": {
         "name": "Sur Energy",
@@ -4311,7 +4311,7 @@
           "role": "TENANT"
         },
         {
-          "name": "SoftBank Group",
+          "name": "SoftBank",
           "role": "INVESTOR"
         }
       ],
@@ -4327,7 +4327,7 @@
     },
     {
       "slug": "stargate-korea-sk-jeollanam-do",
-      "name": "Stargate Korea — SK (Jeollanam-do)",
+      "name": "Stargate Korea — Jeollanam-do",
       "description": null,
       "owner": {
         "name": "SK Group",
@@ -4381,7 +4381,7 @@
     },
     {
       "slug": "stargate-korea-samsung-pohang",
-      "name": "Stargate Korea — Samsung (Pohang)",
+      "name": "Stargate Korea — Pohang",
       "description": null,
       "owner": {
         "name": "Samsung Group",
@@ -4482,7 +4482,7 @@
           "role": "TENANT"
         },
         {
-          "name": "SoftBank Group",
+          "name": "SoftBank",
           "role": "INVESTOR"
         }
       ],
@@ -4498,7 +4498,7 @@
     },
     {
       "slug": "stargate-michigan-saline-township",
-      "name": "Stargate Michigan (Saline Township)",
+      "name": "Stargate Michigan",
       "description": null,
       "owner": {
         "name": "Related Digital",
@@ -4599,7 +4599,7 @@
           "role": "TENANT"
         },
         {
-          "name": "SoftBank Group",
+          "name": "SoftBank",
           "role": "INVESTOR"
         }
       ],
@@ -4615,7 +4615,7 @@
     },
     {
       "slug": "stargate-norway-kvandal-narvik",
-      "name": "Stargate Norway (Kvandal, Narvik)",
+      "name": "Stargate Norway",
       "description": null,
       "owner": {
         "name": "Nscale",
@@ -4791,7 +4791,7 @@
           "role": "NETWORKING_SUPPLIER"
         },
         {
-          "name": "SoftBank Group",
+          "name": "SoftBank",
           "role": "INVESTOR"
         }
       ],
@@ -4807,7 +4807,7 @@
     },
     {
       "slug": "stargate-uk-cobalt-park-north-tyneside",
-      "name": "Stargate UK (Cobalt Park, North Tyneside)",
+      "name": "Stargate UK",
       "description": null,
       "owner": {
         "name": "Nscale",
@@ -4861,7 +4861,7 @@
     },
     {
       "slug": "stargate-wisconsin-vantage-lighthouse",
-      "name": "Stargate Wisconsin (Vantage Lighthouse)",
+      "name": "Stargate Wisconsin",
       "description": null,
       "owner": {
         "name": "Vantage Data Centers",
@@ -4918,7 +4918,7 @@
       "name": "TELUS Sovereign AI Factory (Rimouski)",
       "description": null,
       "owner": {
-        "name": "TELUS (with NVIDIA and HPE)",
+        "name": "TELUS",
         "ticker": "T.TO"
       },
       "projectType": "SOVEREIGN_AI",
@@ -4958,7 +4958,7 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 4,
+        "sourceCount": 3,
         "primarySourceCount": 1,
         "metricCount": 0
       },
@@ -4969,7 +4969,7 @@
     },
     {
       "slug": "terawulf-justified-anthropic-lease",
-      "name": "TeraWulf Justified (Anthropic lease)",
+      "name": "TeraWulf Justified",
       "description": null,
       "owner": {
         "name": "TeraWulf",
@@ -5023,7 +5023,7 @@
     },
     {
       "slug": "terawulf-lake-mariner-fluidstack-anthropic",
-      "name": "TeraWulf Lake Mariner (Fluidstack/Anthropic)",
+      "name": "TeraWulf Lake Mariner",
       "description": null,
       "owner": {
         "name": "TeraWulf",
@@ -5077,7 +5077,7 @@
     },
     {
       "slug": "tesla-cortex-giga-texas",
-      "name": "Tesla Cortex (Giga Texas)",
+      "name": "Tesla Cortex",
       "description": null,
       "owner": {
         "name": "Tesla",
@@ -5131,10 +5131,10 @@
     },
     {
       "slug": "ubilink-ai-supercomputing-center-foxlink-ubitus-shinfox-nvidia-cloud-partner",
-      "name": "Ubilink.AI supercomputing center (Foxlink/Ubitus/Shinfox, NVIDIA cloud partner)",
+      "name": "Ubilink.AI Supercomputing Center",
       "description": null,
       "owner": {
-        "name": "Ubilink (JV of Foxlink, Ubitus, Shinfox Energy)",
+        "name": "Ubilink",
         "ticker": null
       },
       "projectType": "GPU_CLUSTER",
@@ -5185,10 +5185,10 @@
     },
     {
       "slug": "volcano-cloud-taihang-computing-centre-phase-ii-bytedance",
-      "name": "Volcano Cloud Taihang Computing Centre Phase II (ByteDance)",
+      "name": "Volcano Cloud Taihang Phase II",
       "description": null,
       "owner": {
-        "name": "ByteDance (Volcano Engine)",
+        "name": "ByteDance",
         "ticker": null
       },
       "projectType": "DATA_CENTER",
@@ -5239,7 +5239,7 @@
     },
     {
       "slug": "wonder-valley-ai-data-centre-industrial-park-phase-1",
-      "name": "Wonder Valley AI Data Centre Industrial Park (Phase 1)",
+      "name": "Wonder Valley Phase 1",
       "description": null,
       "owner": {
         "name": "O'Leary Ventures",
@@ -5282,8 +5282,8 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 3,
-        "primarySourceCount": 2,
+        "sourceCount": 2,
+        "primarySourceCount": 1,
         "metricCount": 2
       },
       "confidenceScore": null,
@@ -5347,10 +5347,10 @@
     },
     {
       "slug": "yiwu-county-government-backed-ai-data-center-complex",
-      "name": "Yiwu County government-backed AI data center complex",
+      "name": "Yiwu County AI Complex",
       "description": null,
       "owner": {
-        "name": "Yiwu County (Hami, Xinjiang) government-backed developers",
+        "name": "Yiwu County (Hami)",
         "ticker": null
       },
       "projectType": "HYPERSCALE_CAMPUS",
@@ -5401,10 +5401,10 @@
     },
     {
       "slug": "z-ai-zhipu-1gw-ai-computing-centre",
-      "name": "Z.ai (Zhipu) 1GW AI computing centre",
+      "name": "Z.ai Computing Centre",
       "description": null,
       "owner": {
-        "name": "Z.ai (formerly Zhipu AI)",
+        "name": "Z.ai",
         "ticker": null
       },
       "projectType": "AI_FACTORY",
@@ -5617,7 +5617,7 @@
     },
     {
       "slug": "xai-macrohardrr-southaven",
-      "name": "xAI MACROHARDRR (Southaven)",
+      "name": "xAI MACROHARDRR",
       "description": null,
       "owner": {
         "name": "xAI",

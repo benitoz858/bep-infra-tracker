@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { CredibilityPanel } from "@/components/credibility-panel";
+import { ProjectBrief } from "@/components/projects/project-brief";
 import { PageHeader } from "@/components/page-header";
 import {
   ConfidenceBreakdown,
@@ -37,7 +38,11 @@ import { can, getSessionUser } from "@/lib/permissions";
 import { NotFoundError } from "@/lib/services/errors";
 import { getProjectBySlug, getRelatedProjects } from "@/lib/services/projects";
 import { decimalToString } from "@/lib/serialize";
-import { assessCredibility, assessPowerReadiness } from "@/lib/credibility";
+import {
+  assessCredibility,
+  assessPowerReadiness,
+  powerBasisFrom,
+} from "@/lib/credibility";
 
 export async function generateMetadata({
   params,
@@ -216,6 +221,33 @@ export default async function ProjectDetailPage({
           </p>
         </div>
       ) : null}
+
+      <div className="mb-4">
+        <ProjectBrief
+          status={PROJECT_STATUS_META[project.status].label}
+          powerMw={
+            toNumber(project.confirmedPowerMw) ?? toNumber(project.estimatedPowerMw)
+          }
+          isConfirmedPower={project.confirmedPowerMw !== null}
+          powerBasis={powerBasisFrom(
+            project.metrics.find((m) => m.metricType === "POWER_MW")?.methodology ?? null,
+          )}
+          gpuCount={project.confirmedGpuCount ?? project.estimatedGpuCount}
+          gpuModel={project.gpuModel}
+          capexUsd={
+            toNumber(project.confirmedCapexUsd) ?? toNumber(project.estimatedCapexUsd)
+          }
+          expectedOpening={project.actualOpeningDate ?? project.expectedOpeningDate}
+          ownerName={project.ownerCompany?.name ?? null}
+          tenantNames={project.companies
+            .filter((c) => c.role === "TENANT")
+            .map((c) => c.company.name)}
+          utilityProvider={project.utilityProvider}
+          powerSource={project.powerSource}
+          coolingTechnology={project.coolingTechnology}
+          analystNotes={project.analystNotes}
+        />
+      </div>
 
       <div className="mb-4">
         <CredibilityPanel assessment={assessment} powerReadiness={powerReadiness} />

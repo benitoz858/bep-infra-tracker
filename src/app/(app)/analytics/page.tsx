@@ -77,13 +77,17 @@ export default async function AnalyticsPage() {
           </span>
           every total on this page mixes confirmed disclosures with analyst estimates,
           using the best available figure per project. Cancelled projects are excluded
-          from capacity totals. Seeded demo projects are included, so treat absolute
-          levels as illustrative until the demo rows are cleared. Per-claim provenance
-          is on each project&apos;s{" "}
-          <Link href="/projects" className="underline">
-            evidence table
-          </Link>
-          .
+          from capacity totals. Most capacity here is announced rather than energized —
+          see the{" "}
+          <Link href="/dashboard" className="underline">
+            capacity ladder
+          </Link>{" "}
+          for the split and{" "}
+          <Link href="/methodology" className="underline">
+            methodology
+          </Link>{" "}
+          for what each view counts. Per-claim provenance is on each project&apos;s
+          evidence table.
         </p>
       </div>
 

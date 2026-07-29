@@ -127,8 +127,28 @@ model Company {
   website             String?
   headquartersCountry String?
   description         String?
-  createdAt           DateTime    @default(now())
-  updatedAt           DateTime    @updatedAt
+
+  /// The entity this one rolls up to for equity-exposure purposes.
+  ///
+  /// Research sources name whichever vehicle signed the paperwork — "Inversiones
+  /// y Servicios Dataluna" rather than Google, "Volcano Engine" rather than
+  /// ByteDance. Those belong in the graph, but they must not each become a
+  /// separate public-company identity in the index, or company counts, ticker
+  /// attribution and exposure rollups all inflate.
+  parentCompanyId String?
+  /// Set when this row is a project-specific or local legal vehicle rather than
+  /// the operating group a reader would recognise. Kept visible on the project
+  /// page; excluded from the company index by default.
+  isLegalVehicle  Boolean @default(false)
+  /// Other names the same entity appears under in sources, for search and to
+  /// stop the seeder re-creating a duplicate.
+  aliases         String[] @default([])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  parentCompany Company?  @relation("CompanyHierarchy", fields: [parentCompanyId], references: [id], onDelete: SetNull)
+  subsidiaries  Company[] @relation("CompanyHierarchy")
 
   ownedProjects Project[]        @relation("ProjectOwner")
   projectLinks  ProjectCompany[]
@@ -136,6 +156,7 @@ model Company {
   @@index([companyType])
   @@index([ticker])
   @@index([name])
+  @@index([parentCompanyId])
 }
 
 // ---------------------------------------------------------------------------

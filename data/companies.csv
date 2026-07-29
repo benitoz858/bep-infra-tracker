@@ -3,41 +3,39 @@ airtrunk,AirTrunk,COLOCATION_PROVIDER,,,,1,0,
 aligned-data-centers,Aligned Data Centers,COLOCATION_PROVIDER,,,,1,0,
 amazon-web-services,Amazon Web Services,HYPERSCALER,AMZN,,United States,5,0,
 anthropic,Anthropic,NEOCLOUD,,,United States,0,1,
-applied-digital,Applied Digital,OTHER,APLD,,,1,0,
-bell-canada,Bell Canada,OTHER,BCE,,,1,0,
+applied-digital,Applied Digital,COLOCATION_PROVIDER,APLD,,,1,0,Bitcoin-hosting developer converted to AI datacenter landlord; leases capacity to CoreWeave.
+bell-canada,Bell Canada,UTILITY,BCE,,,1,0,Telecom operator building a sovereign AI inference network with Groq.
 brookfield,Brookfield,REAL_ESTATE,BN,,Canada,0,1,
-bytedance,ByteDance,HYPERSCALER,,,,2,0,
-bytedance-volcano-engine,ByteDance (Volcano Engine),HYPERSCALER,,,,1,0,
+bytedance,ByteDance,HYPERSCALER,,,,3,0,
 cassava-technologies,Cassava Technologies,NEOCLOUD,,,,1,0,
-china-telecom,China Telecom,OTHER,0728.HK,,,1,0,
-china-telecom-chips-cluster-by-alibaba-t-head,China Telecom (chips/cluster by Alibaba T-Head),OTHER,0728.HK,,,1,0,
-cipher-mining,Cipher Mining,OTHER,CIFR,,,1,0,
+china-telecom,China Telecom,UTILITY,0728.HK,,,2,0,State-owned Chinese telecom operator and the country's largest AI datacenter operator.
+cipher-mining,Cipher Mining,COLOCATION_PROVIDER,CIFR,,,1,0,Bitcoin miner converting sites to AI datacenter capacity; AWS and Fluidstack are tenants.
 cisco,Cisco,NETWORKING_VENDOR,CSCO,,United States,0,1,
 cloudhq,CloudHQ,COLOCATION_PROVIDER,,,,2,0,
 compass-datacenters,Compass Datacenters,COLOCATION_PROVIDER,,,,1,0,
-core-scientific,Core Scientific,OTHER,CORZ,,,1,0,
+core-scientific,Core Scientific,COLOCATION_PROVIDER,CORZ,,,1,0,Bitcoin-hosting operator providing HPC capacity to CoreWeave.
 coreweave,CoreWeave,NEOCLOUD,CRWV,,,2,0,
 crusoe-energy,Crusoe Energy,NEOCLOUD,,,United States,2,0,
 cyrusone,CyrusOne,COLOCATION_PROVIDER,,,,1,0,
 datavolt,DataVolt,COLOCATION_PROVIDER,,,,1,0,
-deutsche-telekom,Deutsche Telekom,OTHER,,,,1,0,
-ecocloud,EcoCloud,OTHER,,,,1,0,
-fir-hills-inc-stock-farm-road-with-jeollanam-do-provincial-government,Fir Hills Inc (Stock Farm Road) with Jeollanam-do provincial government,OTHER,,,,1,0,
+deutsche-telekom,Deutsche Telekom,UTILITY,,,,1,0,Telecom operator; runs the NVIDIA-partnered Industrial AI Cloud in Munich.
+ecocloud,EcoCloud,COLOCATION_PROVIDER,,,,1,0,Kenyan developer of the geothermal-powered Olkaria campus with G42.
+fir-hills,Fir Hills,REAL_ESTATE,,,,1,0,Investment vehicle proposing a multi-gigawatt Korean AI campus.
 firmus-technologies,Firmus Technologies,NEOCLOUD,,,,1,0,
 fluidstack,Fluidstack,NEOCLOUD,,,,1,0,
 forschungszentrum-julich,Forschungszentrum Jülich,GOVERNMENT,,,,1,0,
-foxconn,Foxconn,OTHER,,,,1,0,
-g42,G42,OTHER,,,United Arab Emirates,1,0,
-galaxy-digital,Galaxy Digital,OTHER,GLXY,,,1,0,
+foxconn,Foxconn,SERVER_VENDOR,,,,1,0,Contract manufacturer; builds AI server systems and Taiwan's national AI factory with NVIDIA.
+g42,G42,NEOCLOUD,,,United Arab Emirates,1,0,Abu Dhabi AI group; parent of Khazna and partner to Microsoft and OpenAI.
+galaxy-digital,Galaxy Digital,COLOCATION_PROVIDER,GLXY,,,1,0,Digital-asset firm converting its Helios bitcoin campus to leased AI datacenter capacity.
 google,Google,HYPERSCALER,GOOGL,,,4,0,
-google-inversiones-y-servicios-dataluna,Google (Inversiones y Servicios Dataluna),HYPERSCALER,GOOGL,,,1,0,
+google-inversiones-y-servicios-dataluna,Google (Inversiones y Servicios Dataluna),HYPERSCALER,,,,1,0,
 humain,HUMAIN,GOVERNMENT,,,,2,0,
-hut-8,Hut 8,OTHER,HUT,,,1,0,
-iren,IREN,OTHER,IREN,,,2,0,
-kddi,KDDI,OTHER,9433.T,,,1,0,
+hut-8,Hut 8,COLOCATION_PROVIDER,HUT,,,1,0,Bitcoin miner converted to AI datacenter landlord; Fluidstack tenant with a Google backstop.
+iren,IREN,COLOCATION_PROVIDER,IREN,,,2,0,Bitcoin miner pivoted to AI datacenters and GPU cloud; Microsoft is an anchor customer.
+kddi,KDDI,UTILITY,9433.T,,,1,0,Japanese telecom operator; operates the Osaka Sakai AI datacenter.
 khazna-data-centers,Khazna Data Centers,COLOCATION_PROVIDER,,,,1,0,
 lambda,Lambda,NEOCLOUD,,,,1,0,
-mgx,MGX,OTHER,,,,1,0,
+mgx,MGX,REAL_ESTATE,,,,1,0,Abu Dhabi AI-infrastructure investment vehicle.
 merlin-properties,Merlin Properties,COLOCATION_PROVIDER,,,,1,0,
 meta,Meta,HYPERSCALER,META,,United States,4,0,
 microsoft,Microsoft,HYPERSCALER,MSFT,,United States,4,0,
@@ -48,33 +46,32 @@ nexus-core-systems,Nexus Core Systems,NEOCLOUD,,,,1,0,
 nscale,Nscale,NEOCLOUD,,,,4,0,
 o-leary-ventures,O'Leary Ventures,COLOCATION_PROVIDER,,,,1,0,
 oklo,Oklo,POWER_VENDOR,OKLO,,United States,0,1,
-ooredoo,Ooredoo,OTHER,,,,1,0,
+ooredoo,Ooredoo,UTILITY,,,,1,0,Qatari telecom operator running a sovereign AI cloud with NVIDIA.
 openai,OpenAI,NEOCLOUD,,,United States,0,6,
 oracle,Oracle,HYPERSCALER,ORCL,,United States,4,3,
-poolside,Poolside,OTHER,,,,1,0,
+poolside,Poolside,NEOCLOUD,,,,1,0,AI lab self-building datacenter capacity.
 prometheus-hyperscale,Prometheus Hyperscale,COLOCATION_PROVIDER,,,,1,0,
 qts-data-centers,QTS Data Centers,COLOCATION_PROVIDER,,,,1,0,
 related-digital,Related Digital,COLOCATION_PROVIDER,,,,1,0,
-reliance-industries,Reliance Industries,OTHER,,,,1,0,
-sk-group,SK Group,OTHER,,,,1,0,
-sk-telecom,SK Telecom,OTHER,SKM,,,1,0,
+reliance-industries,Reliance Industries,REAL_ESTATE,,,,1,0,Indian conglomerate developing gigawatt-scale AI capacity at Jamnagar.
+sk-group,SK Group,SERVER_VENDOR,,,,1,0,Korean conglomerate; SK hynix supplies HBM and it partners on Stargate Korea.
+sk-telecom,SK Telecom,UTILITY,SKM,,,1,0,Korean telecom operator; AWS is the anchor tenant at its Ulsan AI datacenter.
 sakura-internet,Sakura Internet,NEOCLOUD,3778.T,,,1,0,
-samsung-group,Samsung Group,OTHER,,,,1,0,
+samsung-group,Samsung Group,SERVER_VENDOR,,,,1,0,Korean conglomerate; memory supplier and Stargate Korea partner.
 scala-data-centers,Scala Data Centers,COLOCATION_PROVIDER,,,,1,0,
-softbank,SoftBank,OTHER,9984.T,,,2,0,
-softbank-group,SoftBank Group,OTHER,9984.T,,Japan,0,4,
-sur-energy,Sur Energy,OTHER,,,,1,0,
-telus-with-nvidia-and-hpe,TELUS (with NVIDIA and HPE),OTHER,T.TO,,,1,0,
-tata-group,Tata Group,OTHER,,,,1,0,
-terawulf,TeraWulf,OTHER,WULF,,,2,0,
+softbank,SoftBank,REAL_ESTATE,9984.T,,,2,4,Investment group building AI datacenter capacity in Japan and France; OpenAI partner.
+sur-energy,Sur Energy,POWER_VENDOR,,,,1,0,Argentine energy developer; OpenAI's counterparty on the Patagonia letter of intent.
+telus,TELUS,UTILITY,T.TO,,,1,0,Telecom operator running sovereign AI factories with NVIDIA and HPE.
+tata-group,Tata Group,COLOCATION_PROVIDER,,,,1,0,Indian conglomerate; TCS HyperVault supplies AI datacenter capacity to OpenAI.
+terawulf,TeraWulf,COLOCATION_PROVIDER,WULF,,,2,0,Bitcoin miner converted to AI datacenter landlord; Anthropic and Fluidstack are tenants.
 terrapower,TerraPower,POWER_VENDOR,,,United States,0,1,
-tesla,Tesla,OTHER,TSLA,,,1,0,
-ubilink-jv-of-foxlink-ubitus-shinfox-energy,"Ubilink (JV of Foxlink, Ubitus, Shinfox Energy)",NEOCLOUD,,,,1,0,
+tesla,Tesla,NEOCLOUD,TSLA,,,1,0,Builds in-house AI training capacity (Cortex) for FSD and Optimus.
+ubilink,Ubilink,NEOCLOUD,,,,1,0,Taiwanese AI supercomputing joint venture and NVIDIA cloud partner.
 university-of-bristol,University of Bristol,GOVERNMENT,,,,1,0,
 vantage-data-centers,Vantage Data Centers,COLOCATION_PROVIDER,,,United States,2,0,
 vistra,Vistra,POWER_VENDOR,VST,,United States,0,1,
 ytl-power-international,YTL Power International,COLOCATION_PROVIDER,,,,1,0,
-yiwu-county-hami-xinjiang-government-backed-developers,"Yiwu County (Hami, Xinjiang) government-backed developers",GOVERNMENT,,,,1,0,
-z-ai-formerly-zhipu-ai,Z.ai (formerly Zhipu AI),OTHER,,,,1,0,
+yiwu-county-hami,Yiwu County (Hami),GOVERNMENT,,,,1,0,
+z-ai,Z.ai,NEOCLOUD,,,,1,0,Chinese AI lab (formerly Zhipu) operating compute on domestic accelerators.
 estruxture-data-centers,eStruxture Data Centers,COLOCATION_PROVIDER,,,,1,0,
 xai,xAI,NEOCLOUD,,,United States,3,0,

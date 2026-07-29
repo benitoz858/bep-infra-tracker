@@ -304,3 +304,32 @@ export function assessPowerReadiness(input: {
   if (/basis:\s*(it load|site power|generation)/i.test(basis)) return "BASIS_STATED";
   return "BASIS_UNCLEAR";
 }
+
+/**
+ * Which quantity a megawatt figure actually describes.
+ *
+ * The single most common way capacity comparisons go wrong: gross site power,
+ * critical IT load and on-site generation are all reported as "megawatts", and
+ * two projects can differ by a factor of two on definition alone. Parsed from
+ * the basis the researcher recorded on the power claim, so the table can never
+ * show a figure detached from its meaning.
+ */
+export type PowerBasis = "IT_LOAD" | "SITE_POWER" | "GENERATION" | "UNCLEAR" | "NONE";
+
+export const POWER_BASIS_META: Record<PowerBasis, { short: string; label: string }> = {
+  IT_LOAD: { short: "IT", label: "Critical IT load" },
+  SITE_POWER: { short: "Site", label: "Gross site power" },
+  GENERATION: { short: "Gen", label: "On-site generation" },
+  UNCLEAR: { short: "?", label: "Basis not stated by the source" },
+  NONE: { short: "—", label: "No capacity figure disclosed" },
+};
+
+export function powerBasisFrom(methodology: string | null | undefined): PowerBasis {
+  if (!methodology) return "NONE";
+  const m = /basis:\s*([a-z ]+)/i.exec(methodology);
+  const basis = (m?.[1] ?? "").trim().toLowerCase();
+  if (basis.startsWith("it load")) return "IT_LOAD";
+  if (basis.startsWith("site power")) return "SITE_POWER";
+  if (basis.startsWith("generation")) return "GENERATION";
+  return "UNCLEAR";
+}

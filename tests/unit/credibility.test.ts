@@ -4,6 +4,7 @@ import {
   STALE_AFTER_DAYS,
   assessCredibility,
   assessPowerReadiness,
+  powerBasisFrom,
 } from "@/lib/credibility";
 import type { CredibilityInput } from "@/lib/credibility";
 
@@ -205,5 +206,23 @@ describe("assessPowerReadiness", () => {
     expect(assessPowerReadiness({ confirmedPowerMw: 0, estimatedPowerMw: null })).toBe(
       "CONFIRMED_OPERATING",
     );
+  });
+});
+
+describe("powerBasisFrom", () => {
+  it("reads the basis the researcher recorded", () => {
+    expect(powerBasisFrom("Basis: IT load. Announced target.")).toBe("IT_LOAD");
+    expect(powerBasisFrom("Basis: site power. Approved supply plan.")).toBe("SITE_POWER");
+    expect(powerBasisFrom("Basis: generation. On-site turbines.")).toBe("GENERATION");
+  });
+
+  it("says unclear rather than assuming when the source did not distinguish", () => {
+    expect(powerBasisFrom("Basis: unclear. Announced target.")).toBe("UNCLEAR");
+    expect(powerBasisFrom("Some other methodology text")).toBe("UNCLEAR");
+  });
+
+  it("distinguishes no methodology at all from an unclear one", () => {
+    expect(powerBasisFrom(null)).toBe("NONE");
+    expect(powerBasisFrom("")).toBe("NONE");
   });
 });

@@ -1,6 +1,14 @@
 import type { Prisma } from "@/generated/prisma/client";
 import { prisma } from "@/lib/db";
-import { slugify } from "@/lib/format";
+import {
+  assessCredibility,
+  assessPowerReadiness,
+  powerBasisFrom,
+  type CredibilityState,
+  type PowerBasis,
+  type PowerReadiness,
+} from "@/lib/credibility";
+import { slugify, toNumber } from "@/lib/format";
 import { PROJECT_DECIMAL_FIELDS, serializeDecimalFields } from "@/lib/serialize";
 import { ConflictError, DataQualityError, NotFoundError } from "@/lib/services/errors";
 import { findDuplicateProjects, uniqueProjectSlug } from "@/lib/services/duplicates";
@@ -152,8 +160,16 @@ export const PROJECT_ROW_SELECT = {
   isDemoData: true,
   createdAt: true,
   updatedAt: true,
+  analystNotes: true,
   ownerCompany: { select: { id: true, name: true, slug: true, ticker: true } },
   _count: { select: { sources: true } },
+  // The table shows a categorical credibility assessment, which is derived from
+  // evidence rather than stored. These two projections are what lib/credibility
+  // needs; both are small (a handful of rows per project).
+  sources: { select: { sourceType: true, isPrimarySource: true } },
+  metrics: {
+    select: { metricType: true, confidenceLevel: true, methodology: true },
+  },
 } satisfies Prisma.ProjectSelect;
 
 type ProjectRowRaw = Prisma.ProjectGetPayload<{ select: typeof PROJECT_ROW_SELECT }>;
@@ -164,7 +180,42 @@ export type ProjectRow = Omit<
   (typeof PROJECT_DECIMAL_FIELDS)[number]
 > & {
   [K in (typeof PROJECT_DECIMAL_FIELDS)[number]]: string | null;
+} & {
+  /**
+   * Derived, never stored. The table used to render the legacy numeric
+   * `confidenceScore`, which was null on every researched project and showed
+   * "Not scored" beside project pages reading "High confidence" — the database
+   * contradicting itself. Both surfaces now read this.
+   */
+  credibility: CredibilityState;
+  powerReadiness: PowerReadiness;
+  /** Which quantity the power figure describes, where a source said. */
+  powerBasis: PowerBasis;
 };
+
+/** Adds the derived assessment fields to a raw row. */
+function withAssessment(row: ProjectRowRaw & Record<string, unknown>) {
+  const powerMethodology =
+    row.metrics.find((m) => m.metricType === "POWER_MW")?.methodology ?? null;
+
+  return {
+    credibility: assessCredibility({
+      status: row.status,
+      lastVerifiedAt: row.lastVerifiedAt,
+      sources: row.sources,
+      claims: row.metrics,
+      confirmedPowerMw: toNumber(row.confirmedPowerMw),
+      estimatedPowerMw: toNumber(row.estimatedPowerMw),
+      analystNotes: row.analystNotes,
+    }).state,
+    powerReadiness: assessPowerReadiness({
+      confirmedPowerMw: toNumber(row.confirmedPowerMw),
+      estimatedPowerMw: toNumber(row.estimatedPowerMw),
+      powerMethodology,
+    }),
+    powerBasis: powerBasisFrom(powerMethodology),
+  };
+}
 
 export async function listProjects(query: ProjectQuery): Promise<{
   rows: ProjectRow[];
@@ -187,7 +238,10 @@ export async function listProjects(query: ProjectQuery): Promise<{
   ]);
 
   return {
-    rows: rawRows.map((r) => serializeDecimalFields(r, PROJECT_DECIMAL_FIELDS)),
+    rows: rawRows.map((r) => ({
+      ...serializeDecimalFields(r, PROJECT_DECIMAL_FIELDS),
+      ...withAssessment(r),
+    })),
     total,
     page: query.page,
     perPage: query.perPage,
@@ -287,7 +341,10 @@ export async function getRelatedProjects(project: {
     take: 6,
   });
 
-  return rows.map((r) => serializeDecimalFields(r, PROJECT_DECIMAL_FIELDS));
+  return rows.map((r) => ({
+    ...serializeDecimalFields(r, PROJECT_DECIMAL_FIELDS),
+    ...withAssessment(r),
+  }));
 }
 
 /** Distinct values for the filter dropdowns. */
