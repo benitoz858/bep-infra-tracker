@@ -1,0 +1,62 @@
+{
+  "submissions": [
+    {
+      "url": "https://bethesdamagazine.com/2026/07/28/county-council-unanimously-approves-data-center-moratorium/",
+      "title": "County Council unanimously approves 18-month data center moratorium",
+      "publisher": "Bethesda Magazine",
+      "publicationDate": "2026-07-28",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Montgomery County Council voted unanimously to approve an 18-month data center moratorium; no new permits can be issued during that period.",
+      "note": "SITING RESTRICTION: Montgomery County, MD Council passed an 18-month moratorium in a final unanimous vote on Jul 28 2026, barring new data center permits countywide. Builds on County Executive Elrich's June 2026 executive order that already halted the permitting department from accepting/processing data center applications. No currently tracked project sits in Montgomery County, MD, so this isn't linked to a project row — flag for siting-restriction linkage if one is added later.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/nvidia-weighs-250-billion-guarantee-so-openai-can-lease-softbanks-10-gigawatt-ohio-campus",
+      "title": "Nvidia weighs $250 billion guarantee so OpenAI can lease SoftBank's 10-gigawatt Ohio campus",
+      "publisher": "Tom's Hardware",
+      "publicationDate": "2026-07-27",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Nvidia weighs $250 billion guarantee so OpenAI can lease SoftBank's 10-gigawatt Ohio campus",
+      "suggestedProjectName": "PORTS Technology Campus (Piketon, Pike County, Ohio)",
+      "note": "SUGGESTED NEW PROJECT — not currently tracked (distinct from tracked 'Stargate Lordstown', which is in NE Ohio; this site is in Pike County, southern Ohio). SB Energy/SoftBank is building a 10 GW data center plus ~10 GW of on-site gas generation at the former DOE Portsmouth uranium-enrichment site. DOE/Commerce partnership announced Mar 20 2026, with SB Energy citing $33B for the power plant plus $4.2B for AEP Ohio grid upgrades (site-power basis, not IT load; project gained federal FAST-41 permitting status Jun 16 2026 at a cited $67.2B total). Fresh news (WSJ, reported ~Jul 27 2026): Nvidia is reportedly negotiating a roughly $250B financing guarantee so OpenAI can lease the campus as a Stargate site, which could push all-in cost including chips past $500B. Terms are unsettled and the deal could still collapse — treat as reported/unconfirmed, not a done deal. Likely the same 'Midwest' site referenced in OpenAI/Oracle/SoftBank's prior five-new-Stargate-sites announcement.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 10000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "10 GW data center target stated by DOE/SB Energy at the Mar 2026 groundbreaking; site power/generation basis, not yet built or energized"
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 37200000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "SB Energy-stated initial investment ($33B power plant + $4.2B AEP Ohio grid upgrades) per the DOE/Commerce partnership announcement; excludes the separately reported $250B Nvidia financing guarantee and chip costs"
+        }
+      ]
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory",
+      "title": "SK Group and NVIDIA Expand Strategic Partnership Across AI Factories and Next-Generation Memory",
+      "publisher": "NVIDIA Newsroom",
+      "publicationDate": "2026-07-24",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "SK Telecom is building a 2-gigawatt NVIDIA Vera Rubin DSX AI Factory in Korea to serve global compute demand.",
+      "suggestedProjectName": "SK Telecom Vera Rubin AI Factory (Korea)",
+      "note": "SUGGESTED NEW PROJECT, distinct from the tracked 'SK Telecom–AWS Ulsan AI Data Center.' Announced Jul 24 2026 as part of a $500B+ SK Group–Nvidia letter of intent spanning AI factories and next-gen HBM4 memory (with SK hynix). SK Telecom will build a 2 GW AI factory — described by SK as the largest in Korea — on Nvidia's Vera Rubin DSX platform, built in phases starting 2027. Exact site/location was not disclosed in the announcement or follow-on coverage (left blank on purpose); it may turn out to be a new phase of the Ulsan site or a wholly separate location — flag for reviewer to confirm before merging into Ulsan or creating a new row. No capex figure disclosed for this specific facility (the $500B+ figure spans the whole SK–Nvidia partnership, not this one site).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 2000,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Stated directly by NVIDIA/SK Group joint announcement: '2-gigawatt NVIDIA Vera Rubin DSX AI Factory'"
+        }
+      ]
+    }
+  ]
+}
