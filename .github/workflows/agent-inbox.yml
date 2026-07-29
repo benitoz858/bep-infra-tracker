@@ -1,0 +1,25 @@
+name: Agent inbox
+
+# Forwards findings from the daily cloud research agent into the tracker's
+# review queue. The agent pushes research/inbox/*.json to an agent/** branch
+# (its sandbox cannot always POST to the API directly); this runner can, and
+# does. Everything still lands as a PENDING candidate for human review —
+# this pipeline moves proposals, never live data.
+on:
+  push:
+    branches: ["agent/**"]
+    paths: ["research/inbox/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  forward:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: { node-version: 22 }
+      - run: node scripts/post-inbox.mjs
