@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  BookOpen,
   Building2,
   Database,
   Globe2,
@@ -31,6 +32,7 @@ const NAV = [
   { href: "/verification", label: "Verification", icon: ShieldCheck },
   // Public and unguarded: contributing is the point, so it sits in the main nav
   // rather than being reachable only from the footer.
+  { href: "/methodology", label: "Methodology", icon: BookOpen },
   { href: "/submit", label: "Submit a source", icon: Send },
   { href: "/ingest", label: "Agent inbox", icon: Bot, requires: "record:create" },
   { href: "/import", label: "Import", icon: Upload, requires: "data:import" },

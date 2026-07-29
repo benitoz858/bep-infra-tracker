@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { CredibilityPanel } from "@/components/credibility-panel";
 import { PageHeader } from "@/components/page-header";
 import {
   ConfidenceBreakdown,
@@ -30,11 +31,13 @@ import {
   formatRelative,
   formatUsdExact,
   NOT_DISCLOSED,
+  toNumber,
 } from "@/lib/format";
 import { can, getSessionUser } from "@/lib/permissions";
 import { NotFoundError } from "@/lib/services/errors";
 import { getProjectBySlug, getRelatedProjects } from "@/lib/services/projects";
 import { decimalToString } from "@/lib/serialize";
+import { assessCredibility, assessPowerReadiness } from "@/lib/credibility";
 
 export async function generateMetadata({
   params,
@@ -123,6 +126,29 @@ export default async function ProjectDetailPage({
     source: m.source,
   }));
 
+  // Credibility and power readiness are derived here rather than stored: they
+  // are a reading of the evidence currently on the page, so they must change
+  // the moment a source or claim does.
+  const assessment = assessCredibility({
+    status: project.status,
+    lastVerifiedAt: project.lastVerifiedAt,
+    sources: project.sources.map((s) => ({
+      sourceType: s.sourceType,
+      isPrimarySource: s.isPrimarySource,
+    })),
+    claims: project.metrics.map((m) => ({ confidenceLevel: m.confidenceLevel })),
+    confirmedPowerMw: toNumber(project.confirmedPowerMw),
+    estimatedPowerMw: toNumber(project.estimatedPowerMw),
+    analystNotes: project.analystNotes,
+  });
+
+  const powerReadiness = assessPowerReadiness({
+    confirmedPowerMw: toNumber(project.confirmedPowerMw),
+    estimatedPowerMw: toNumber(project.estimatedPowerMw),
+    powerMethodology:
+      project.metrics.find((m) => m.metricType === "POWER_MW")?.methodology ?? null,
+  });
+
   const owners = project.companies.filter(
     (c) => c.role === "OWNER" || c.role === "OPERATOR",
   );
@@ -190,6 +216,10 @@ export default async function ProjectDetailPage({
           </p>
         </div>
       ) : null}
+
+      <div className="mb-4">
+        <CredibilityPanel assessment={assessment} powerReadiness={powerReadiness} />
+      </div>
 
       <div className="grid gap-4 lg:grid-cols-3">
         {/* ---- Summary + key metrics ---- */}

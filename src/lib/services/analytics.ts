@@ -280,3 +280,55 @@ export async function getRecentlyUpdatedProjects(limit = 8) {
     take: limit,
   });
 }
+
+// ---------------------------------------------------------------------------
+// Capacity ladder, coverage and funnel
+// ---------------------------------------------------------------------------
+
+/**
+ * Every capacity view the product publishes, derived in one place.
+ *
+ * The rows are fetched once and handed to the pure functions in lib/capacity,
+ * so the dashboard, the analytics page and the exports cannot disagree about
+ * what "announced" means. The dataset is small enough (hundreds, not millions)
+ * that pulling three columns is cheaper than six aggregate round trips.
+ */
+export async function getCapacityLadder() {
+  const { capacityViews, confidenceWeightedMw, coverage, pipelineFunnel } = await import(
+    "@/lib/capacity"
+  );
+
+  const rows = await prisma.project.findMany({
+    select: {
+      status: true,
+      estimatedPowerMw: true,
+      confirmedPowerMw: true,
+      // The confidence attached to the project's power figure, used only for
+      // the explicitly modelled weighted view.
+      metrics: {
+        where: { metricType: "POWER_MW" },
+        select: { confidenceLevel: true },
+        orderBy: { createdAt: "desc" },
+        take: 1,
+      },
+    },
+  });
+
+  const plain = rows.map((r) => ({
+    status: r.status,
+    estimatedPowerMw: toNumber(r.estimatedPowerMw),
+    confirmedPowerMw: toNumber(r.confirmedPowerMw),
+  }));
+
+  const weighted = rows.map((r, i) => ({
+    ...plain[i],
+    confidence: r.metrics[0]?.confidenceLevel ?? null,
+  }));
+
+  return {
+    views: capacityViews(plain),
+    coverage: coverage(plain),
+    confidenceWeightedMw: confidenceWeightedMw(weighted),
+    funnel: pipelineFunnel(plain),
+  };
+}

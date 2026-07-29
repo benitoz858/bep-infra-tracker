@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { BarList } from "@/components/bar-list";
+import { CapacityLadder } from "@/components/capacity-ladder";
+import { PipelineFunnel } from "@/components/pipeline-funnel";
 import { PageHeader } from "@/components/page-header";
 import { ProjectMiniList } from "@/components/project-mini-list";
 import { Button } from "@/components/ui/button";
@@ -16,6 +18,7 @@ import {
 } from "@/lib/format";
 import { can, getSessionUser } from "@/lib/permissions";
 import {
+  getCapacityLadder,
   getDashboardSummary,
   getPowerByCountry,
   getPowerByOwner,
@@ -28,8 +31,9 @@ export const metadata: Metadata = { title: "Dashboard" };
 
 export default async function DashboardPage() {
   const user = await getSessionUser();
-  const [summary, statuses, byCountry, byOwner, recent, updated] = await Promise.all([
+  const [summary, ladder, statuses, byCountry, byOwner, recent, updated] = await Promise.all([
     getDashboardSummary(),
+    getCapacityLadder(),
     getStatusBreakdown(),
     getPowerByCountry(10),
     getPowerByOwner(10),
@@ -86,24 +90,21 @@ export default async function DashboardPage() {
         </div>
       ) : null}
 
-      <section className="mb-5 grid grid-cols-2 gap-3 lg:grid-cols-6">
+      <div className="mb-5 grid gap-4 lg:grid-cols-[1.15fr_1fr]">
+        <CapacityLadder
+          views={ladder.views}
+          coverage={ladder.coverage}
+          confidenceWeightedMw={ladder.confidenceWeightedMw}
+        />
+        <PipelineFunnel stages={ladder.funnel} />
+      </div>
+
+      <section className="mb-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
         <StatTile
           label="Projects tracked"
           value={formatCount(summary.totalProjects)}
-          hint={`${summary.liveProjects} live`}
+          hint={`${summary.liveProjects} live · ${summary.countriesCovered} countries`}
           accent="plain"
-        />
-        <StatTile
-          label="Announced power"
-          value={formatPowerScaled(summary.announcedPowerMw)}
-          hint="Best figure per project"
-          accent="cyan"
-        />
-        <StatTile
-          label="Confirmed power"
-          value={formatPowerScaled(summary.confirmedPowerMw)}
-          hint={`${confirmedShare}% of announced`}
-          accent="green"
         />
         <StatTile
           label="Accelerators"
@@ -114,7 +115,7 @@ export default async function DashboardPage() {
         <StatTile
           label="Announced capex"
           value={formatUsdCompact(summary.announcedCapexUsd)}
-          hint={`${summary.countriesCovered} countries`}
+          hint="Where disclosed"
           accent="amber"
         />
         <StatTile

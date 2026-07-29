@@ -115,11 +115,21 @@ export default async function CompanyDetailPage({
         />
       </section>
 
-      <p className="mb-4 text-[11px] leading-relaxed text-fg-muted">
-        Exposure counts each project once per relationship category and excludes
-        cancelled projects. A company that both owns and supplies a site is not
-        double-counted in the total.
-      </p>
+      <div className="mb-4 rounded border border-line bg-panel-2/40 px-3 py-2.5">
+        <p className="text-[11px] leading-relaxed text-fg-muted">
+          <span className="text-fg-dim">Association is not economic attribution.</span>{" "}
+          These categories are deliberately never summed. A GPU vendor named on a
+          one-gigawatt project does not own one gigawatt of it, and a utility serving a
+          campus does not own the campus. Each figure counts the capacity of projects the
+          company is linked to <em>in that role</em>, deduplicated by project and excluding
+          cancelled ones — it is a measure of involvement, not of revenue, assets or
+          contracted value. Contract terms are recorded only where a source discloses them.{" "}
+          <Link href="/methodology" className="text-cyan hover:underline">
+            Methodology
+          </Link>
+          .
+        </p>
+      </div>
 
       <div className="grid gap-4 lg:grid-cols-3">
         <Panel className="lg:col-span-2">
