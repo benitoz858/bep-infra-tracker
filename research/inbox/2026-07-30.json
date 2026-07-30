@@ -1,0 +1,81 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.montgomerycountymd.gov/news/council-approves-18-month-data-center-moratorium-places-limitations-data-center-development",
+      "title": "Council Approves 18-Month Data Center Moratorium and Places Limitations on Data Center Development",
+      "publisher": "Montgomery County, MD",
+      "publicationDate": "2026-07-28",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "Expedited Bill 19-26 temporarily prohibits the Department of Permitting Services from issuing permits for data centers for 18 months.",
+      "note": "SITING RESTRICTION: Montgomery County Council voted 11-0 on 2026-07-28 to pass an 18-month moratorium (Expedited Bill 19-26) on new permits for data centers demanding at least 25 MW/month, plus a companion zoning text amendment defining and restricting large data centers countywide. No currently tracked project sits in Montgomery County, MD, so no projectId is linked. CAVEAT: WebFetch (direct source retrieval) was non-functional for this entire research run — see submitter's summary. This excerpt is reconstructed from consistent secondary reporting (Bisnow, Bethesda Magazine, MoCoShow, Food & Water Watch) rather than an independently fetched copy of the county's own press release text. Please confirm exact wording against the primary source before promoting confidence.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+      "title": "Building AI infrastructure with the Effingham County community",
+      "publisher": "OpenAI",
+      "publicationDate": "2026-07-22",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "OpenAI's data center campus, known as Project Camellia, represents a $20 billion capital investment drawing up to 3.2 gigawatts of power.",
+      "suggestedProjectName": "OpenAI Project Camellia — Effingham County, Georgia",
+      "note": "New project, not currently tracked. 'Project Camellia': ~$20B capital investment, up to 3.2 GW of electricity delivered in phases from 2028-2032, sited in the Savannah Gateway Industrial Hub (developer: The Broe Group) in Effingham County, ~45 min NW of Savannah. 400 long-term jobs cited, plus a 50% property-tax abatement for 15 years and $80M in community benefits. Coverage does not clearly distinguish IT load from site/grid power draw for the 3.2 GW figure — treat as site power pending confirmation. CAVEAT: WebFetch to openai.com itself returned 403 this session (tool-wide outage, not specific to this URL — see summary). Figures and quote are reconstructed from consistent secondary reporting (Georgia Public Broadcasting, WTOC, CBS Atlanta, The Current) that cites OpenAI's own announcement, not fetched directly from openai.com. Recommend the reviewer fetch the source directly to confirm exact wording and the IT-load/site-power basis before promoting past MEDIUM.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 20000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "$20B capital investment figure attributed to OpenAI's own announcement, repeated consistently across GPB, WTOC, CBS Atlanta and The Current; not independently verified against openai.com directly this run."
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 3200,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Up to 3.2 GW of electricity delivered in phases 2028-2032, per multiple outlets citing OpenAI's announcement; IT-load vs. site-power basis unconfirmed."
+        }
+      ]
+    },
+    {
+      "url": "https://ballotpedia.org/Monterey_Park,_California,_Measure_NDC,_Prohibit_Data_Centers_Measure_(June_2026)",
+      "title": "Monterey Park, California, Measure NDC, Prohibit Data Centers Measure (June 2026)",
+      "publisher": "Ballotpedia (citing LA County Registrar-Recorder official results)",
+      "publicationDate": "2026-06-02",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "Monterey Park voters approved Measure NDC by a margin of 10,321 votes to 1,362 votes, or 88.34%.",
+      "note": "SITING RESTRICTION: Monterey Park, CA voters passed Measure NDC in the June 2, 2026 special election (certified by the LA County Registrar in early July 2026) — a permanent, voter-enacted General Plan amendment banning data centers citywide. Multiple outlets describe this as the first US data-center ban enacted directly by ballot measure, as distinct from a city council vote (cf. the many council-passed moratoriums already in the tracker's siting record). No tracked project sits in Monterey Park. Publication date given is the election date since the exact certification date could not be pinned down this run; the certification itself is what pushed this into national coverage in the last few weeks. CAVEAT: WebFetch outage this session — quote is drawn from secondary reporting (Ballotpedia, Fox Business, Data Center Knowledge) rather than an independently fetched certified canvass document.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://urbanmilwaukee.com/2026/07/20/oracles-credit-rating-cut-amid-data-center-legal-battle-with-wi-regulators/",
+      "title": "Oracle's Credit Rating Cut Amid Data Center Legal Battle with WI Regulators",
+      "publisher": "Urban Milwaukee",
+      "publicationDate": "2026-07-20",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "S&P downgraded Oracle's credit rating amid its fight with Wisconsin regulators over a data center financial security requirement.",
+      "note": "Status update on tracked project 'Stargate Wisconsin' (slug: stargate-wisconsin-vantage-lighthouse — the Vantage/Oracle/OpenAI 'Lighthouse' campus in Port Washington, WI). Oracle sued the Wisconsin PSC in Ozaukee County Circuit Court (~2026-06-23) over a financial-security/letter-of-credit requirement for data center developers below an investment-grade credit threshold, which Oracle says could cost it over $100M/year; the PSC has since declined to reconsider (~mid-July), and S&P downgraded Oracle's credit rating (~2026-07-20), raising the stakes on that same requirement. This is a utility-interconnection/financial-assurance dispute bearing directly on a tracked project's cost and completion risk, and is not currently reflected anywhere in the tracker's notes for this project. CAVEAT: WebFetch outage this session — reconstructed from secondary reporting (Urban Milwaukee, Wisconsin Watch, WPR, ENR), not fetched directly from the PSC docket or Oracle's court filing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://datacentrereview.com/2026/07/nscales-2bn-essex-data-centre-hit-by-grid-delays/",
+      "title": "Nscale's £2bn Essex data centre hit by grid delays",
+      "publisher": "Data Centre Review",
+      "publicationDate": "2026-07-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "National Grid told Nscale the 90 MW connection needed for its Loughton site will not be ready in time for the planned opening.",
+      "note": "Status update on tracked project 'Nscale Loughton' (slug: nscale-loughton-for-microsoft, currently ANNOUNCED). National Grid has told Nscale its 90 MW grid connection for the Loughton/Essex site (serving a Microsoft Azure GB300 deployment) will not arrive in time for the already-delayed 2027 opening; Nscale is reportedly in talks with Bloom Energy over solid-oxide fuel cells as interim/alternative power while it waits on the permanent grid connection. This is a credible delay/de-risking signal not yet reflected in the tracker's record for this project. Dated ~2026-07-13, at the outer edge of the intended 72-hour window but new information regardless. CAVEAT: WebFetch outage this session — reconstructed from secondary reporting (Data Centre Review, City AM, TheNextWeb, Construction Review Online), not independently fetched.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.techtimes.com/articles/320526/20260715/xai-ran-59-unpermitted-gas-turbines-black-communities-doj-now-shields-them.htm",
+      "title": "xAI Ran 59 Unpermitted Gas Turbines in Black Communities, DOJ Now Shields Them",
+      "publisher": "Tech Times",
+      "publicationDate": "2026-07-15",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The Department of Justice intervened in the NAACP's Clean Air Act lawsuit against xAI, invoking national security to shield the turbines.",
+      "note": "Status update on tracked project 'xAI Colossus 2' (slug: xai-colossus-2-memphis, UNDER_CONSTRUCTION; tracker currently records power source as 'on-site generation' with no permitting caveat and a 52 confidence score). Since an April 2026 NAACP/SELC/Earthjustice Clean Air Act suit alleging unpermitted natural gas turbines at the Southaven, MS portion of the site, the DOJ has intervened citing national security; the core legal question is whether the turbines are temporary 'mobile' equipment (no permit required) or permanent 'stationary' sources (permit required). Reported turbine counts are NOT reconciled across sources/dates (27 in April, 33 by May, 'nearly 59' in this July article) — flagging the discrepancy rather than picking one number; no numeric claim submitted for this reason. This bears directly on the project's power-source risk. CAVEAT: WebFetch outage this session — built from secondary/NGO reporting (NAACP, Earthjustice, Tech Times, Mississippi Today, Turbomachinery Magazine), not fetched directly from any court filing.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
