@@ -1,0 +1,91 @@
+{
+  "submissions": [
+    {
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-New-Strategic-Venture-with-BlackRock-to-Develop-Data-Center-in-El-Paso/default.aspx",
+      "title": "Meta Announces New Strategic Venture with BlackRock to Develop Data Center in El Paso",
+      "publisher": "Meta Platforms, Inc.",
+      "publicationDate": "2026-07-28",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "BlackRock funds will own about 80% of the venture, delivering 1 gigawatt of compute capacity for Meta",
+      "suggestedProjectName": "Meta El Paso Data Center (BlackRock JV)",
+      "note": "New $14B JV (BlackRock funds ~80%, Meta ~20%) to develop/own an existing under-construction El Paso, TX campus; Meta contributes ~$2.3B in land/partially-built assets, BlackRock ~$4.9B cash. 1 GW is stated IT/compute capacity (not site power draw), completion targeted 2028, Meta sole occupant. This is an ownership/financing restructuring of a campus that may already be tracked under Meta's name in El Paso -- check for an existing project before creating a new one. Caveat: WebFetch to the primary press release returned an error in this session (tool outage, not a site block), so this excerpt is reconstructed from consistent press coverage (CNBC, Forbes, Bloomberg, PRNewswire) rather than independently re-verified verbatim against the release -- please confirm wording against the source link before promoting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 14000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Total JV development cost as reported across multiple outlets citing the company announcement; not independently confirmed verbatim this session"
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "1 GW compute/IT capacity stated for the completed campus per company announcement coverage"
+        }
+      ]
+    },
+    {
+      "url": "https://www.datacenterknowledge.com/deals/core-scientific-doubles-ai-capacity-to-1-1-gw-in-14b-amd-deal",
+      "title": "Core Scientific Doubles AI Capacity to 1.1 GW in $14B AMD Deal",
+      "publisher": "Data Center Knowledge",
+      "publicationDate": "2026-07-28",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "15-year infrastructure agreement with AMD covering 530 MW across five campuses",
+      "suggestedProjectName": "Core Scientific AI Campuses (AMD deal, 530 MW / 5 sites)",
+      "note": "Core Scientific signed a 15-year deal with AMD across five campuses, doubling its leased AI capacity to ~1.1 GW total; AMD also holds an option to reserve up to 2 GW more (a reservation right, not a firm commitment). IMPORTANT: the widely-reported '$14B' figure is base contracted lease revenue over 15 years, NOT capex -- per tracker policy this is deliberately not submitted as a CAPEX_USD claim. 530 MW is the disclosed IT power commitment for this deal. Likely a new entry for the tracker (Core Scientific is pivoting from bitcoin mining to AI hosting) -- verify it isn't already tracked under a different framing (e.g. as bitcoin-mining-to-AI conversion capacity).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 530,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Capacity commitment across 5 campuses per company deal disclosure, as covered in press"
+        }
+      ]
+    },
+    {
+      "url": "https://www.montgomerycountymd.gov/news/council-approves-18-month-data-center-moratorium-places-limitations-data-center-development",
+      "title": "Council Approves 18-Month Data Center Moratorium and Places Limitations on Data Center Development",
+      "publisher": "Montgomery County, MD (County Council)",
+      "publicationDate": "2026-07-28",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "block any data centers larger than 25 megawatts from being built in the county",
+      "note": "SITING RESTRICTION: Montgomery County Council (MD) unanimously passed Expedited Bill 19-26 on 2026-07-28 (lead sponsor Evan Glass): an 18-month moratorium barring the Dept. of Permitting Services from issuing data-center permits, plus a zoning-text amendment defining/capping non-conforming data centers at 25 MW aggregate monthly electricity demand. It was a compromise between a 6-month moratorium (Glass) and a 2-year pause (Jawando/Mink). This is a jurisdiction-wide restriction, not linked to a specific tracked project -- a reviewer should attach it to any tracked/prospective projects sited in Montgomery County, MD. Caveat: WebFetch to the county's own press release returned an error this session (tool outage); excerpt reconstructed from corroborating coverage (Food & Water Watch, The Banner, WTOP) -- verify wording against the primary link before promoting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 25,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Zoning threshold (aggregate monthly electricity demand) defining a regulated data center, per the approved ordinance as reported"
+        }
+      ]
+    },
+    {
+      "url": "http://www.goskagit.com/news/local_news/la-conner-town-council-approves-temporary-moratorium-on-data-centers/article_0ba68af7-5ea4-43c0-bfe7-245756b5993c.html",
+      "title": "La Conner Town Council approves temporary moratorium on data centers",
+      "publisher": "goskagit.com (Skagit Valley Herald)",
+      "publicationDate": "2026-07-28",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "placed a temporary moratorium on accepting data center permit applications ... in effect for at least six months",
+      "note": "SITING RESTRICTION: La Conner, WA (small town, Skagit County) Town Council adopted a preemptive 6-month moratorium on data center permit applications -- no project is currently proposed or pending; the stated concern is proximity to a large water source data centers would depend on. Mirrors Skagit County's unincorporated-area moratorium adopted 2026-06-01. Low individual materiality but part of a growing WA state cluster (Pasco, Seattle, Skagit County) worth tracking as a pattern of preemptive local bans even absent a filed project.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://democrats-energycommerce.house.gov/media/press-releases/pallone-demands-answers-spacexai-about-its-data-center-threats-tennessee",
+      "title": "Pallone Demands Answers from SpaceX/xAI About Its Data Center Threats to Tennessee & Mississippi Communities",
+      "publisher": "House Committee on Energy and Commerce, Democrats (Rep. Frank Pallone)",
+      "publicationDate": "2026-07-29",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "demanding a tour of his company's xAI data centers and power plants in and around Memphis",
+      "suggestedProjectName": "xAI Colossus / Colossus 2 (Memphis area)",
+      "note": "Congressional oversight letter from House E&C ranking member Pallone to Elon Musk (SpaceX/xAI), sent 2026-07-29, demanding a facility tour, a full inventory of gas turbines powering Colossus 1 (Shelby County, TN) and Colossus 2 (DeSoto County/Southaven, MS), emissions and permitting records, and communications with state/local/federal officials -- citing unpermitted turbine fleets and Clean Air Act concerns at both sites. This is a regulatory-risk status update on a project very likely already tracked (xAI Colossus), not a change to any MW/capex figure -- flag for reviewer attention rather than a claims update. No numeric claims submitted here since the letter's content is a request for information, not a disclosed figure.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
