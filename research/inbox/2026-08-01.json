@@ -1,0 +1,75 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.montgomerycountymd.gov/news/council-approves-18-month-data-center-moratorium-places-limitations-data-center-development",
+      "title": "Council Approves 18-Month Data Center Moratorium and Places Limitations on Data Center Development",
+      "publisher": "Montgomery County, MD (Montgomery County Council)",
+      "publicationDate": "2026-07-28",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "which has or is projected to have an aggregate monthly electricity demand of at least 25 megawatts (MW)",
+      "suggestedProjectName": "",
+      "note": "SITING RESTRICTION: Montgomery County Council unanimously passed an 18-month moratorium (Expedited Bill 19-26) barring the Department of Permitting Services from issuing new data center permits, plus a companion zoning text amendment defining 'large load data center' at an aggregate monthly demand of 25 MW+ and barring such facilities from most of the county's zones outright. Passed July 28, 2026. County's own primary source page could not be directly fetched in this run (tool returned 403 on multiple domains, likely bot-blocking rather than a content issue); excerpt was reconstructed from search-engine synthesis of the bill's stated definition and corroborated verbatim-looking phrasing across secondary coverage (Bethesda Magazine, Bisnow, Food & Water Watch, The Banner). Recommend a human confirm exact bill text before treating the excerpt as verbatim.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.energy.gov/articles/energy-department-announces-partnership-expand-reliable-affordable-energy-access-and-power",
+      "title": "Energy Department Announces Partnership to Expand Reliable, Affordable Energy Access and Power America's AI Future in Western Kentucky",
+      "publisher": "U.S. Department of Energy",
+      "publicationDate": "2026-07-29",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "up to 1.8 gigawatts of utility capacity and over 1.2 GW of compute capacity",
+      "suggestedProjectName": "DOE Paducah AI Data Center Campus (Brookfield / NextEra)",
+      "note": "New project, not yet tracked. DOE announced a partnership with Brookfield Asset Management, NextEra Energy, and three Kentucky electric cooperatives (Big Rivers Electric, Jackson Purchase Energy, Paducah Power System) to redevelop part of the former Paducah Gaseous Diffusion Plant (Western KY) into a hyperscale AI campus. Stated figures distinguish compute/IT load (over 1.2 GW), utility-delivered capacity (up to 1.8 GW), and dedicated on-site generation (up to 4.6 GW) -- these are three different bases, not interchangeable. Investment stated as 'more than $100 billion, all of it private'; no anchor tenant named as of announcement. Target construction completion 2032. Direct fetch of energy.gov was blocked (403) in this run; excerpt reconstructed from search-engine synthesis of the DOE release, corroborated by PR Newswire/NextEra Energy's own newsroom republication of the same release -- reviewer should verify exact wording against the primary link.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1200,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "DOE announcement states compute capacity of 'over 1.2 GW'; figure relayed via secondary reporting, primary text not independently confirmed by the submitting agent in this run"
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 100000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "DOE announcement states investment of 'more than $100 billion, all of it private'; figure relayed via secondary reporting, primary text not independently confirmed by the submitting agent in this run"
+        }
+      ]
+    },
+    {
+      "url": "https://www.actionnews5.com/2026/07/31/xai-announces-fourth-data-center-turbines-be-removed-southaven-site/",
+      "title": "xAI announces fourth data center; turbines to be removed from Southaven site",
+      "publisher": "Action News 5 (WMC Memphis)",
+      "publicationDate": "2026-07-31",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "feature the same 220,000 GB300s with 800-gigabit NICs as Macro-harder",
+      "suggestedProjectName": "xAI Minihard (fourth Memphis-area data center)",
+      "note": "New project, not yet tracked. Elon Musk confirmed via X (relayed by local Memphis news, not yet an xAI press release) a fourth Memphis-area data center, called 'Minihard,' to be built adjacent to the existing Colossus 2 and Macrohard/Southaven sites along Tulane Road. GPU spec (220,000 GB300s) is a company self-report via social media, not independently verified, and no power or capex figures were disclosed. Direct fetch of the article was blocked (403) in this run; excerpt reconstructed from search-engine synthesis -- reviewer should verify exact wording and confirm whether xAI has since made a formal announcement before promoting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "GPU_COUNT",
+          "numericValue": 220000,
+          "unit": "GPUs",
+          "confidenceLevel": "LOW",
+          "methodology": "Self-reported by xAI/Musk via X as matching the Macrohard/Southaven site configuration; unverified third-party, relayed through secondary news coverage only"
+        }
+      ]
+    },
+    {
+      "url": "https://techcrunch.com/2026/07/31/spacex-wont-remove-all-of-xais-unpermitted-turbines-for-another-year/",
+      "title": "SpaceX won't remove all of xAI's unpermitted turbines for another year",
+      "publisher": "TechCrunch",
+      "publicationDate": "2026-07-31",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "operating 69 gas turbines to power the Colossus data centers",
+      "suggestedProjectName": "",
+      "note": "Status update on tracked project xai-macrohardrr-southaven (xAI/SpaceX Southaven, Mississippi site -- power source is on-site gas turbines per existing tracker notes). SpaceX/xAI stated it will begin removing the 69 currently-operating unpermitted temporary gas turbines at the Stanton Road (Southaven) site in August 2026, replacing them with a permanent 1.2 GW plant (41 turbines); full removal of the temporary units is not expected complete until July 2027. This follows an active NAACP/Southern Environmental Law Center lawsuit over the turbines' lack of air permits, in which DOJ has intervened on xAI's side. Not tagging as SITING RESTRICTION since this is the company's remediation timeline, not a new restriction being imposed -- but materially updates the project's power/compliance status and is worth reviewer attention given the litigation context. Direct fetch of the article was blocked (403) in this run; excerpt reconstructed from search-engine synthesis, corroborated across independent outlets (Yahoo, WJTV, Engadget, Qz) converging on the same '69 turbines' / 'July 2027' figures -- reviewer should verify exact source wording before promoting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
