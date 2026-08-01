@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-01T08:40:14.293Z",
+    "generatedAt": "2026-08-01T17:25:17.283Z",
     "count": 103,
     "disclaimer": "Figures combine confirmed disclosures with analyst estimates. Check confidence and sources per project before use. Rows with isDemoData=true are illustrative seed data and must not be used in analysis.",
     "demoRowCount": 0
@@ -645,14 +645,14 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 2,
-        "primarySourceCount": 1,
+        "sourceCount": 3,
+        "primarySourceCount": 2,
         "metricCount": 1
       },
       "confidenceScore": null,
-      "lastVerifiedAt": "2026-07-28T16:18:15.996Z",
+      "lastVerifiedAt": "2026-08-01T17:24:21.378Z",
       "isDemoData": false,
-      "analystNotes": "UAE-backed JV of MGX, Bpifrance, Mistral AI and NVIDIA, announced at Choose France 2025; site fixed at ZAC des Bordes, Fouju. Public inquiry under way per the prefecture (hence PERMITTING); construction planned from H2 2026, operations by 2028. Reported ~€8.5B initial investment not captured from a primary source, so no capex recorded."
+      "analystNotes": "UAE-backed JV of MGX, Bpifrance, Mistral AI and NVIDIA, announced at Choose France 2025; site fixed at ZAC des Bordes, Fouju. Public inquiry under way per the prefecture (hence PERMITTING); construction planned from H2 2026, operations by 2028. Reported ~€8.5B initial investment not captured from a primary source, so no capex recorded.\n\nUPDATE 2026-08-01: a French Senate question record (May 2026) confirms the 1.4 GW target and the public inquiry (open 30 April–30 May 2026), and states that only 700 MW has so far been contracted with grid operator RTE — half the headline figure. MGX holds a majority of the capital."
     },
     {
       "slug": "cassava-ai-factory-cape-town",
@@ -2459,8 +2459,8 @@
         "actualOpeningDate": null
       },
       "power": {
-        "estimatedMw": null,
-        "confirmedMw": 48,
+        "estimatedMw": 48,
+        "confirmedMw": null,
         "source": null,
         "utilityProvider": null
       },
@@ -2486,9 +2486,9 @@
         "metricCount": 1
       },
       "confidenceScore": null,
-      "lastVerifiedAt": "2026-07-29T00:18:19.375Z",
+      "lastVerifiedAt": "2026-08-01T17:24:14.983Z",
       "isDemoData": false,
-      "analystNotes": "Opened 2026-01-22 on part of Sharp's former Sakai LCD plant (KDDI bought its parcel for ~JPY10bn/US$68m in April 2025; GB200 NVL72 racks, direct liquid cooling, 100% renewable power). Distinct from SoftBank's separate 150MW project on the larger portion of the same Sharp Sakai site (already covered). 48MW is facility capacity as reported at launch; IT-vs-total basis not broken out."
+      "analystNotes": "Opened 2026-01-22 on part of Sharp's former Sakai LCD plant (KDDI bought its parcel for ~JPY10bn/US$68m in April 2025; GB200 NVL72 racks, direct liquid cooling, 100% renewable power). Distinct from SoftBank's separate 150MW project on the larger portion of the same Sharp Sakai site (already covered). 48MW is facility capacity as reported at launch; IT-vs-total basis not broken out.\n\nCORRECTION 2026-08-01: operations since 2026-01-22 are primary-sourced (KDDI), but the 48 MW figure appears only in trade press and describes facility capacity, not critical IT load. Reclassified from confirmed operating to an estimate accordingly."
     },
     {
       "slug": "microsoft-khazna-uae-expansion",
@@ -2687,7 +2687,7 @@
         "computePlatform": null
       },
       "capex": {
-        "estimatedUsd": 27000000000,
+        "estimatedUsd": 50000000000,
         "confirmedUsd": null
       },
       "building": {
@@ -2697,14 +2697,14 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 1,
-        "primarySourceCount": 0,
-        "metricCount": 3
+        "sourceCount": 2,
+        "primarySourceCount": 1,
+        "metricCount": 4
       },
       "confidenceScore": 58,
-      "lastVerifiedAt": "2026-07-26T18:02:27.368Z",
+      "lastVerifiedAt": "2026-08-01T17:24:16.651Z",
       "isDemoData": false,
-      "analystNotes": "5 GW is a full-build target across many phases, not near-term capacity. Treated as an estimate; no phase is confirmed energised in the sources reviewed."
+      "analystNotes": "5 GW is a full-build target across many phases, not near-term capacity. Treated as an estimate; no phase is confirmed energised in the sources reviewed.\n\nUPDATE 2026-08-01: Meta's July 13, 2026 announcement formally expanded Hyperion to 5 GW and more than $50B (from 2 GW/~$27B). Committed phase: 2 GW by 2030; full build reported ~2032. Nothing is operating yet — Epoch projects 1,676 MW IT by Q1 2028."
     },
     {
       "slug": "meta-lebanon-indiana",
@@ -2769,7 +2769,7 @@
         "ticker": "META"
       },
       "projectType": "HYPERSCALE_CAMPUS",
-      "status": "UNDER_CONSTRUCTION",
+      "status": "PARTIALLY_OPERATIONAL",
       "location": {
         "city": "New Albany",
         "stateRegion": "Ohio",
@@ -2818,14 +2818,14 @@
         }
       ],
       "evidence": {
-        "sourceCount": 1,
+        "sourceCount": 2,
         "primarySourceCount": 0,
-        "metricCount": 1
+        "metricCount": 2
       },
       "confidenceScore": 60,
-      "lastVerifiedAt": "2026-07-26T18:02:30.104Z",
+      "lastVerifiedAt": "2026-08-01T17:24:17.295Z",
       "isDemoData": false,
-      "analystNotes": "Nuclear agreements with TerraPower, Oklo and Vistra are power-purchase commitments, not on-site reactors delivering today."
+      "analystNotes": "Nuclear agreements with TerraPower, Oklo and Vistra are power-purchase commitments, not on-site reactors delivering today.\n\nUPDATE 2026-08-01: Epoch lists Prometheus operational at an estimated 631 MW IT (854 MW projected by Q4 2026) against the ~1 GW announced cluster scale. Status moved to partially operational; the 1 GW figure remains the announced nameplate. Not operator-confirmed capacity, so nothing enters the confirmed column."
     },
     {
       "slug": "microsoft-fairwater-atlanta",
@@ -2836,7 +2836,7 @@
         "ticker": "MSFT"
       },
       "projectType": "AI_FACTORY",
-      "status": "OPERATIONAL",
+      "status": "PARTIALLY_OPERATIONAL",
       "location": {
         "city": "Atlanta",
         "stateRegion": "Georgia",
@@ -2850,7 +2850,7 @@
         "actualOpeningDate": null
       },
       "power": {
-        "estimatedMw": 350,
+        "estimatedMw": 636,
         "confirmedMw": null,
         "source": "Grid",
         "utilityProvider": null
@@ -2872,14 +2872,14 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 1,
+        "sourceCount": 2,
         "primarySourceCount": 0,
         "metricCount": 1
       },
       "confidenceScore": 58,
-      "lastVerifiedAt": "2026-07-26T18:02:31.863Z",
+      "lastVerifiedAt": "2026-08-01T17:24:17.943Z",
       "isDemoData": false,
-      "analystNotes": "Paired with the Wisconsin site; the two are reported to operate as a single distributed training fabric."
+      "analystNotes": "Paired with the Wisconsin site; the two are reported to operate as a single distributed training fabric.\n\nUPDATE 2026-08-01: the 350 MW figure was the building-1 floor at the November 2025 launch. Epoch now estimates 636 MW IT with buildings 3 and 4 operational by June 2026. Microsoft's own materials still state no megawatt figure, so this is an analyst estimate, not confirmed capacity."
     },
     {
       "slug": "microsoft-fairwater-wisconsin",
@@ -2890,7 +2890,7 @@
         "ticker": "MSFT"
       },
       "projectType": "AI_FACTORY",
-      "status": "OPERATIONAL",
+      "status": "PARTIALLY_OPERATIONAL",
       "location": {
         "city": "Mount Pleasant",
         "stateRegion": "Wisconsin",
@@ -2904,7 +2904,7 @@
         "actualOpeningDate": null
       },
       "power": {
-        "estimatedMw": 350,
+        "estimatedMw": 369,
         "confirmedMw": null,
         "source": "Grid",
         "utilityProvider": null
@@ -2926,14 +2926,14 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 1,
-        "primarySourceCount": 0,
+        "sourceCount": 2,
+        "primarySourceCount": 1,
         "metricCount": 1
       },
       "confidenceScore": 62,
-      "lastVerifiedAt": "2026-07-26T18:02:31.204Z",
+      "lastVerifiedAt": "2026-08-01T17:24:18.663Z",
       "isDemoData": false,
-      "analystNotes": "Closed-loop liquid cooling, reported to eliminate operational water consumption. Reported as exceeding 350 MW and scaling further, so 350 MW is a floor rather than a point estimate."
+      "analystNotes": "Closed-loop liquid cooling, reported to eliminate operational water consumption. Reported as exceeding 350 MW and scaling further, so 350 MW is a floor rather than a point estimate.\n\nUPDATE 2026-08-01: Microsoft announced completion of the first Mount Pleasant facility on 2026-06-23 ('now fully operational'). Epoch estimates 369 MW IT currently, projecting 2,263 MW by Q2 2028 with the second facility (2028); Microsoft has separately proposed two further Mount Pleasant campuses (~$13.3B, ~2 GW). No operator megawatt figure exists, so the capacity stays an estimate."
     },
     {
       "slug": "microsoft-india-south-central-hyderabad",
@@ -3066,7 +3066,7 @@
         "actualOpeningDate": null
       },
       "power": {
-        "estimatedMw": 200,
+        "estimatedMw": 55,
         "confirmedMw": null,
         "source": "Grid",
         "utilityProvider": null
@@ -3110,9 +3110,9 @@
         "metricCount": 5
       },
       "confidenceScore": 72,
-      "lastVerifiedAt": "2026-07-26T17:59:06.539Z",
+      "lastVerifiedAt": "2026-08-01T17:24:20.258Z",
       "isDemoData": false,
-      "analystNotes": "NAVER states a long-term ambition to reach 1 GW of NVIDIA AI infrastructure. That is an intent, not a committed build, and is deliberately NOT counted in the capacity figures — only the announced 200 MW by 2028 is. Funding split: Brookfield up to $9B as exclusive capital partner, NVIDIA $1B, NAVER the remainder."
+      "analystNotes": "NAVER states a long-term ambition to reach 1 GW of NVIDIA AI infrastructure. That is an intent, not a committed build, and is deliberately NOT counted in the capacity figures — only the announced 200 MW by 2028 is. Funding split: Brookfield up to $9B as exclusive capital partner, NVIDIA $1B, NAVER the remainder.\n\nCORRECTION 2026-08-01: the NVIDIA/NAVER/Brookfield announcement (2026-07-24) is explicit that the DSX buildout expands 'from 55 megawatts to 200 megawatts by 2028'. The row previously carried the 2028 target as if current; it now records 55 MW, with 200 MW by 2028 and a stated 1 GW long-term intent held as targets."
     },
     {
       "slug": "nebius-bethune",
@@ -3609,7 +3609,7 @@
         "ticker": null
       },
       "projectType": "HYPERSCALE_CAMPUS",
-      "status": "ANNOUNCED",
+      "status": "PAUSED",
       "location": {
         "city": "Fort Stockton (Longfellow Ranch)",
         "stateRegion": "Texas (Pecos County)",
@@ -3650,9 +3650,9 @@
         "metricCount": 1
       },
       "confidenceScore": null,
-      "lastVerifiedAt": "2026-07-29T00:18:31.198Z",
+      "lastVerifiedAt": "2026-08-01T17:24:15.541Z",
       "isDemoData": false,
-      "analystNotes": "2GW campus on 568 acres of the Mitchell family's Longfellow Ranch, gas-rich Permian Basin site. CoreWeave was anchor tenant (15-yr lease, 250MW first phase expandable to 500MW, planned 40,000+ GB300 NVL72 GPUs) but the deal was mutually terminated in early 2026; Poolside approached other clouds incl. Google ('Google is no longer in talks with Poolside'). Power figure is planned gross site power, none operating."
+      "analystNotes": "2GW campus on 568 acres of the Mitchell family's Longfellow Ranch, gas-rich Permian Basin site. CoreWeave was anchor tenant (15-yr lease, 250MW first phase expandable to 500MW, planned 40,000+ GB300 NVL72 GPUs) but the deal was mutually terminated in early 2026; Poolside approached other clouds incl. Google ('Google is no longer in talks with Poolside'). Power figure is planned gross site power, none operating.\n\nCORRECTION 2026-08-01: the CoreWeave anchor lease was terminated in late March 2026 after Poolside's ~$2B raise failed to close; the site sits idle. A scaled-down ~400 MW revival with Google was mooted and those talks have gone quiet. The 2 GW figure remains the announced campus plan only; PAUSED removes it from the credible pipeline."
     },
     {
       "slug": "project-rainier-new-carlisle",
@@ -3677,15 +3677,15 @@
         "actualOpeningDate": null
       },
       "power": {
-        "estimatedMw": 1000,
+        "estimatedMw": 910,
         "confirmedMw": null,
         "source": "Grid",
         "utilityProvider": null
       },
       "compute": {
-        "estimatedGpuCount": null,
+        "estimatedGpuCount": 1045000,
         "confirmedGpuCount": null,
-        "gpuModel": "AWS Trainium",
+        "gpuModel": "AWS Trainium2",
         "computePlatform": null
       },
       "capex": {
@@ -3704,14 +3704,14 @@
         }
       ],
       "evidence": {
-        "sourceCount": 1,
-        "primarySourceCount": 0,
+        "sourceCount": 3,
+        "primarySourceCount": 1,
         "metricCount": 1
       },
       "confidenceScore": 60,
-      "lastVerifiedAt": "2026-07-26T18:02:32.532Z",
+      "lastVerifiedAt": "2026-08-01T17:24:19.386Z",
       "isDemoData": false,
-      "analystNotes": "Reported at roughly 1 GW or more of IT power. IT load and site power are different quantities and the sources are not always explicit about which is meant."
+      "analystNotes": "Reported at roughly 1 GW or more of IT power. IT load and site power are different quantities and the sources are not always explicit about which is meant.\n\nUPDATE 2026-08-01: the prior 1,000 MW figure did not distinguish IT load from site power. Epoch estimates 910 MW IT operating (1,925 MW projected by Q1 2028); Amazon's own materials state 'more than 1 million Trainium2 chips' by end-2025, with Epoch estimating 1,045k. CNBC reports the full ~30-building site will draw more than 2.2 GW at completion."
     },
     {
       "slug": "prometheus-hyperscale-evanston",
@@ -4169,7 +4169,7 @@
       },
       "power": {
         "estimatedMw": 1200,
-        "confirmedMw": 300,
+        "confirmedMw": 200,
         "source": "Grid + on-site gas turbines",
         "utilityProvider": null
       },
@@ -4199,14 +4199,14 @@
         }
       ],
       "evidence": {
-        "sourceCount": 2,
+        "sourceCount": 3,
         "primarySourceCount": 0,
-        "metricCount": 3
+        "metricCount": 4
       },
       "confidenceScore": 64,
-      "lastVerifiedAt": "2026-07-27T01:02:10.763Z",
+      "lastVerifiedAt": "2026-08-01T17:24:13.517Z",
       "isDemoData": false,
-      "analystNotes": "Gas turbines rated up to ~300 MW are reported on site, bridging the gap while grid capacity is built."
+      "analystNotes": "Gas turbines rated up to ~300 MW are reported on site, bridging the gap while grid capacity is built.\n\nCORRECTION 2026-08-01: the previous 300 MW confirmed figure was Epoch's April total-facility-power estimate, which Epoch itself revised. Oracle stated 'In Abilene, 200MW is already operational' (April 2026) — that operator statement is what the confirmed column now carries. Epoch's live directory estimates 421 MW IT across Buildings 1–4 (May 2026), projecting 843 MW / all eight buildings by ~November 2026; recorded as a separate estimate. OpenAI capped the site at 1.2 GW in March 2026."
     },
     {
       "slug": "stargate-argentina-patagonia",
@@ -4543,12 +4543,12 @@
       "evidence": {
         "sourceCount": 2,
         "primarySourceCount": 1,
-        "metricCount": 2
+        "metricCount": 3
       },
       "confidenceScore": null,
-      "lastVerifiedAt": "2026-07-28T16:17:43.646Z",
+      "lastVerifiedAt": "2026-08-01T17:24:20.895Z",
       "isDemoData": false,
-      "analystNotes": "Developed by Related Digital for OpenAI/Oracle; DTE Energy supply plan approved at 1.4 GW (site power). The companies' own announcement says 'more than a gigawatt' of capacity. Groundbreaking held 2026-06-01. Capex ~$16B per press reports, not confirmed by the companies."
+      "analystNotes": "Developed by Related Digital for OpenAI/Oracle; DTE Energy supply plan approved at 1.4 GW (site power). The companies' own announcement says 'more than a gigawatt' of capacity. Groundbreaking held 2026-06-01. Capex ~$16B per press reports, not confirmed by the companies.\n\nUPDATE 2026-08-01: capex was previously withheld because reports conflicted ($7B at announcement vs $16B later). Multiple outlets (CNBC at groundbreaking, Tom's Hardware, Manchester Mirror) now consistently report ~$16B; recorded at MEDIUM confidence. The $7B origin figure is retained here for the record."
     },
     {
       "slug": "stargate-milam-county",
@@ -5530,8 +5530,8 @@
         "actualOpeningDate": null
       },
       "power": {
-        "estimatedMw": null,
-        "confirmedMw": 300,
+        "estimatedMw": 300,
+        "confirmedMw": null,
         "source": null,
         "utilityProvider": null
       },
@@ -5557,9 +5557,9 @@
         "metricCount": 2
       },
       "confidenceScore": null,
-      "lastVerifiedAt": "2026-07-28T16:17:54.488Z",
+      "lastVerifiedAt": "2026-08-01T17:24:14.430Z",
       "isDemoData": false,
-      "analystNotes": "Original Colossus at the former Electrolux plant, operational since 2024. 300 MW is facility power consumption for the completed Phase 2 buildout, not on-site generation (the site separately has ~150 MW of Megapack buffering and gas turbines). 2026 reporting says Colossus 1 now serves inference while training moved to Colossus 2."
+      "analystNotes": "Original Colossus at the former Electrolux plant, operational since 2024. 300 MW is facility power consumption for the completed Phase 2 buildout, not on-site generation (the site separately has ~150 MW of Megapack buffering and gas turbines). 2026 reporting says Colossus 1 now serves inference while training moved to Colossus 2.\n\nCORRECTION 2026-08-01: the 300 MW previously shown as confirmed was Tom's Hardware's Phase 1+2 consumption target, wrongly attributed to a Musk statement that covered only the GPU count. Documented power: 150 MW grid interconnection energized May 2025 (MLGW/TVA), a further 150 MW approved February 2026 (energization unconfirmed), and ~247 MW of permitted on-site gas generation. The 230,000-GPU figure is primary (Musk, July 2025) and stands. Recent reporting has Colossus 1 shifted to inference duty."
     },
     {
       "slug": "xai-colossus-2-memphis",
@@ -5590,7 +5590,7 @@
         "utilityProvider": null
       },
       "compute": {
-        "estimatedGpuCount": 555000,
+        "estimatedGpuCount": 440000,
         "confirmedGpuCount": null,
         "gpuModel": "NVIDIA GB200/GB300",
         "computePlatform": null
@@ -5606,14 +5606,14 @@
       "tags": [],
       "suppliers": [],
       "evidence": {
-        "sourceCount": 1,
+        "sourceCount": 2,
         "primarySourceCount": 0,
         "metricCount": 2
       },
       "confidenceScore": 52,
-      "lastVerifiedAt": "2026-07-26T18:02:28.321Z",
+      "lastVerifiedAt": "2026-08-01T17:24:15.941Z",
       "isDemoData": false,
-      "analystNotes": "On-site generation is the defining feature: the site sidesteps the interconnection queue, which is why its timeline is faster than grid-dependent peers."
+      "analystNotes": "On-site generation is the defining feature: the site sidesteps the interconnection queue, which is why its timeline is faster than grid-dependent peers.\n\nCORRECTION 2026-08-01: the 2 GW figure is Musk's claimed total site capacity after the third-building purchase (Dec 2025), not current capacity — Epoch estimates 946 MW IT operating (Aug 2026), projecting 1,531 MW by Q1 2027. The prior 555k GPU figure was an Introl estimate; Musk's own statement was 550k GB200/GB300s as a first batch, and Epoch estimates ~440k Blackwell chips installed, which is now recorded."
     },
     {
       "slug": "xai-macrohardrr-southaven",
