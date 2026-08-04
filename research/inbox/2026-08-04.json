@@ -1,0 +1,93 @@
+{
+  "submissions": [
+    {
+      "url": "https://gov.texas.gov/news/post/governor-abbott-directs-comprehensive-data-center-audit",
+      "title": "Governor Abbott Directs Comprehensive Data Center Audit",
+      "publisher": "Office of the Texas Governor",
+      "publicationDate": "2026-08-03",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "Directed PUCT and ERCOT to conduct a comprehensive verification and audit of every data center interconnection request.",
+      "note": "SITING RESTRICTION: Gov. Abbott ordered PUCT/ERCOT to audit every project in the ERCOT interconnection queue (~474 GW requested, ~90% from data centers) before allowing grid connection; projects that fail to comply must be denied. This is a grid-interconnection (site power) basis, not IT load, and no individual project's disclosed MW/capex changes yet. It affects essentially every Texas project this tracker follows as UNDER_CONSTRUCTION/ANNOUNCED (Stargate Milam/Shackelford, Sweetwater, Abilene, Pecos, Hall County/Lancium, Compass Meridian, Freestone, etc.), so I'm submitting it as a general restriction rather than attaching it to one project — a reviewer may want to log it against each affected project individually. Caveat: WebFetch to primary/news sources was unavailable in this session (network policy blocked it, including gov.texas.gov itself); the excerpt above is reconstructed from WebSearch result snippets across multiple outlets (Houston Public Media, Texas Tribune, KSAT, Community Impact) rather than a direct fetch of the press release text, so please verify the exact wording against the source before treating it as CONFIRMED.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.upr.org/politics/2026-08-04/nevada-data-center-blm-appeal",
+      "title": "This Nevada city is appealing a federally-approved data center it tried to reject",
+      "publisher": "UPR (Utah Public Radio / NPR)",
+      "publicationDate": "2026-08-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Boulder City's appeal says BLM did not consult the city or allow adequate public input before approving the project.",
+      "suggestedProjectName": "Townsite Data Center (Boulder City, NV — Skylar Capital Management)",
+      "note": "SITING RESTRICTION / new project not yet tracked. First data center ever approved on BLM federal public land: BLM approved it in June 2026 by reusing a prior solar-project authorization on the same parcel, without a fresh environmental review or public comment period. Boulder City Council voted unanimously on July 14 to appeal; the Center for Biological Diversity and Sierra Club Toiyabe Chapter filed a separate administrative appeal on July 27. Reported water use is ~560 acre-feet/yr versus 25 acre-feet/yr under the original solar approval it was permitted through. In response, U.S. Rep. Rashida Tlaib introduced H.R. 9939, the No AI Data Centers on Federal Lands Act. Caveat: WebFetch was unavailable this session so I could not pull the article's exact text directly; the 167 MW figure and quote above come from WebSearch snippets aggregating this UPR piece with Las Vegas Review-Journal, Newsweek, and Center for Biological Diversity coverage — please re-verify against the primary article before treating either as CONFIRMED.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 167,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Project capacity as reported in secondary news coverage of the BLM approval; not independently verified against a primary filing this session"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kfvs12.com/2026/07/29/paducah-doe-site-picked-ai-computing-campus-including-power-generation-storage/",
+      "title": "Paducah DOE site picked for AI, computing campus, including power generation and storage",
+      "publisher": "KFVS12",
+      "publicationDate": "2026-07-29",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The Energy Department selected the Paducah site for an AI data center, including power generation and storage.",
+      "suggestedProjectName": "DOE Paducah AI Data Center (Kentucky)",
+      "note": "New project, not yet tracked. DOE selected its former Paducah Gaseous Diffusion Plant (uranium-enrichment) site in western Kentucky for a 2 GW federal AI/computing campus with on-site power generation and storage, announced at a DOE press conference on July 29; targeting 2028 completion. A ~$100B capex figure appears in some secondary coverage (e.g. Tech Times) but I could not confirm it against a DOE primary source this session (WebFetch to gov/DOE sites was unavailable) — recommend leaving capex blank or LOW confidence until a reviewer checks the DOE release directly. This is distinct from the separate, still-unsigned ~$250-500B Nvidia/OpenAI talks over a 10 GW site at the nearby Pike County, Ohio PORTS site (SB Energy/SoftBank) — I excluded that one as still MOU/talks-stage per the submission rules, not yet announced as final by a principal party.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 2000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "DOE-announced capacity for the Paducah site, per news coverage of the July 29 press conference"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ajc.com/news/2026/07/tech-giant-openai-plans-to-build-20-billion-data-center-near-georgia-coast/",
+      "title": "Tech giant OpenAI plans to build $20 billion data center near Georgia coast",
+      "publisher": "The Atlanta Journal-Constitution",
+      "publicationDate": "2026-07-22",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Georgia Power will provide the data center with 3.2 gigawatts of energy, delivered in phases from 2028 to 2032.",
+      "suggestedProjectName": "OpenAI Project Camellia (Effingham County, Georgia)",
+      "note": "New project, not yet tracked. OpenAI's first self-built Georgia campus ('Project Camellia'), 1,400+ acres in Effingham County's Savannah Gateway Industrial Hub near Savannah. $20B capex; 3.2 GW power committed by Georgia Power delivered in phases 2028-2032 (site/grid basis, not confirmed IT load). ECIDA approved a 50% property tax abatement for 15 years. Opens in phases starting 2028, projected 400 jobs rising to 1,000 by 2032.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 20000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Capex as stated in company/local news coverage of the OpenAI Effingham County announcement"
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 3200,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Georgia Power-committed capacity per news coverage, phased 2028-2032; site/grid power, not confirmed as IT load"
+        }
+      ]
+    },
+    {
+      "url": "https://frederickcountymd.gov/CivicAlerts.aspx?AID=5845",
+      "title": "County Announces Pause on New Data Center Development Following Maryland Supreme Court Decision",
+      "publisher": "Frederick County, Maryland (County Government)",
+      "publicationDate": "2026-07-01",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "Executive order pauses acceptance and processing of new applications until December 31, after the State issues its Report.",
+      "note": "SITING RESTRICTION: Frederick County Executive Jessica Fitzwater signed an executive order on July 1 pausing acceptance/processing of new Critical Digital Infrastructure (data center) and substation applications through Dec 31, 2026, pending Maryland's statewide Data Center Impact Analysis and Report. It came a day after the Maryland Supreme Court rejected a 20,000-signature referendum petition on the county's data-center zoning overlay (the Carrollton Manor / CDI-OZ area north of Adamstown). A related, narrower land-use vote on including Rural Legacy Area land within that overlay was separately paused by the Executive on July 30 pending further study (per WYPR, 2026-07-30). Frederick joins Prince George's, Montgomery and Baltimore Counties, which adopted their own MD pauses in recent weeks — not separately submitted here since those are now 3-4 weeks old and outside this run's freshness window; a reviewer may still want them for completeness. Caveat: WebFetch to the primary county source was unavailable this session; excerpt reconstructed from WebSearch snippets (WFMD, Maryland Daily Record, WYPR) rather than a direct fetch — please verify exact wording.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
