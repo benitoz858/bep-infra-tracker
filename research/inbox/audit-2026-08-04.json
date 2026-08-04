@@ -1,0 +1,44 @@
+{
+  "submissions": [
+    {
+      "url": "https://openai.com/index/stargate-sb-energy-partnership/",
+      "title": "OpenAI and SB Energy Announce Strategic Partnership to Accelerate Stargate Data Center Development",
+      "publisher": "OpenAI",
+      "publicationDate": "2026-01-09",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "SB Energy will build and operate OpenAI's 1.2 gigawatt data center site in Milam County, Texas that was announced in September.",
+      "projectId": "stargate-milam-county",
+      "note": "AUDIT: tracker currently records no power figure for Milam County (power.estimatedMw and confirmedMw both null). That blank was correct at the time the row was last cited, since the original 'five new Stargate sites' OpenAI announcement (openai.com/index/five-new-stargate-sites/) only gives a COMBINED figure for Lordstown + Milam ('can scale to 1.5 gigawatts over the next 18 months'), with no per-site breakout. However, OpenAI's own later Jan 9 2026 SB Energy partnership release names Milam County specifically at 1.2 GW. Recommend adding estimatedMw=1200 (basis: unclear — stated as OpenAI's own target, not confirmed as IT load or site power) rather than continuing to leave the field blank, since a real per-site figure is now disclosed by the same primary source. Independently corroborated by DataCenterDynamics, whose headline cites the same 1.2GW figure for this site. Do NOT change Lordstown or Doña Ana County, which still have no per-site figure disclosed anywhere found.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1200,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "OpenAI's own Jan 2026 SB Energy partnership announcement states Milam County specifically as its '1.2 gigawatt data center site.' Basis (IT load vs site power) not specified in the release, hence MEDIUM not HIGH. Note: this session's WebFetch tool was blocked by a session-wide egress policy denial (confirmed via the proxy status log — every outbound host including control domains returned 403), so this quote was verified via search-engine content indexing and cross-corroborated by DataCenterDynamics rather than a direct page fetch. Recommend a direct re-fetch of the URL before committing."
+        }
+      ]
+    },
+    {
+      "url": "https://www.chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center",
+      "title": "Chevron Signs 20-Year Power Agreement with Microsoft for West Texas Data Center",
+      "publisher": "Chevron",
+      "publicationDate": "2026-06-22",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Kilby is expected to deliver approximately 2.67 gigawatts of capacity for the Microsoft data center in Reeves County.",
+      "projectId": "microsoft-pecos",
+      "note": "AUDIT: tracker's power.source for Microsoft Pecos is currently 'basis unstated' at estimatedMw=2000, citing only Microsoft's own blog post (~2GW datacenter-capacity target). On the same day (2026-06-22) Chevron announced its Energy Forge One subsidiary, 'Project Kilby,' will build a co-located behind-the-meter gas plant for this same site rated at ~2.67 GW — a distinct, larger site/generation-power figure, not Microsoft's own IT/datacenter-capacity number. Recommend recording the Chevron/Kilby 2.67GW as a separate POWER_MW entry with basis=generation, kept clearly distinct from Microsoft's own ~2GW datacenter-capacity figure already on file, so the row doesn't drift into conflating site generation with Microsoft's stated capacity (the exact error class this audit is designed to catch). Chevron's FID is expected 'by the end of 2026' and first power is targeted for 2028 — this is a target, not current generation.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 2670,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Basis: generation (behind-the-meter gas plant, Chevron/Energy Forge One 'Project Kilby'), distinct from Microsoft's own ~2GW datacenter-capacity figure already on file for this project. FID expected by Chevron 'by the end of 2026,' first power targeted 2028 — a future target, not current output. This session's WebFetch tool was blocked by a session-wide egress policy denial (confirmed via the proxy status log across all outbound hosts), so this figure was not independently re-fetched from chevron.com directly — it is corroborated via search-indexed secondary coverage (DataCenterDynamics, Data Centre Magazine) matching the same figure and date. Recommend a direct re-fetch of the primary URL before committing; confidence held at MEDIUM rather than HIGH pending that check."
+        }
+      ]
+    }
+  ]
+}
