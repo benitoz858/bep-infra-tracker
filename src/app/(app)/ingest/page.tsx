@@ -5,6 +5,7 @@ import {
   CandidateReview,
   type ProposedClaimView,
 } from "@/components/ingest/candidate-review";
+import { ExpireStaleButton } from "@/components/ingest/expire-stale-button";
 import { PageHeader } from "@/components/page-header";
 import { Badge } from "@/components/ui/badge";
 import { Panel, PanelBody, PanelHeader, PanelTitle } from "@/components/ui/card";
@@ -13,7 +14,11 @@ import { StatTile } from "@/components/ui/stat-tile";
 import { prisma } from "@/lib/db";
 import { formatCount, formatRelative } from "@/lib/format";
 import { can, getSessionUser } from "@/lib/permissions";
-import { getIngestionStats, listCandidates } from "@/lib/services/ingestion";
+import {
+  WATCHER_EXPIRY_DAYS,
+  getIngestionStats,
+  listCandidates,
+} from "@/lib/services/ingestion";
 
 export const metadata: Metadata = { title: "Agent inbox" };
 
@@ -40,14 +45,20 @@ export default async function IngestPage() {
         subtitle="Automated watchers stage what they find here. Nothing on this page has touched the database — a candidate becomes evidence only when you accept it, and machine-proposed claims are capped at Low confidence no matter what the extractor thought."
       />
 
-      <section className="mb-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
+      <section className="mb-3 grid grid-cols-2 gap-3 lg:grid-cols-4">
         <StatTile
           label="Awaiting review"
           value={formatCount(stats.pending)}
+          hint={`${formatCount(stats.pendingFromPeople)} from people or agents · ${formatCount(stats.pending - stats.pendingFromPeople)} from watchers`}
           accent={stats.pending > 0 ? "amber" : "green"}
         />
         <StatTile label="Accepted" value={formatCount(stats.accepted)} accent="green" />
-        <StatTile label="Rejected" value={formatCount(stats.rejected)} accent="plain" />
+        <StatTile
+          label="Rejected"
+          value={formatCount(stats.rejected)}
+          hint={stats.expired > 0 ? `plus ${formatCount(stats.expired)} auto-expired` : undefined}
+          accent="plain"
+        />
         <StatTile
           label="Failed runs"
           value={formatCount(failedRuns.length)}
@@ -55,6 +66,16 @@ export default async function IngestPage() {
           accent={failedRuns.length > 0 ? "red" : "green"}
         />
       </section>
+
+      <div className="mb-5 flex flex-wrap items-center justify-between gap-2">
+        <p className="text-[11px] leading-relaxed text-fg-muted">
+          Submissions from people and agents come first, then watcher items ranked by how
+          much they would change the database — each card shows why it ranked where it did.
+          Watcher items unreviewed after {WATCHER_EXPIRY_DAYS} days expire automatically on
+          the next scheduled run; expiry is a record, not a rejection.
+        </p>
+        <ExpireStaleButton eligible={stats.expirable} days={WATCHER_EXPIRY_DAYS} />
+      </div>
 
       {failedRuns.length > 0 ? (
         <div className="mb-5 rounded-lg border border-[#5a1a1a] bg-[#2b0e0e] px-4 py-3">
@@ -89,6 +110,7 @@ export default async function IngestPage() {
               <CandidateReview
                 key={c.id}
                 projects={projects}
+                triageReasons={c.triage.reasons}
                 candidate={{
                   id: c.id,
                   url: c.url,

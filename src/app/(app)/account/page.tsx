@@ -18,6 +18,9 @@ const STATUS_TONE = {
   ACCEPTED: "operational",
   REJECTED: "risk",
   DUPLICATE: "inert",
+  // Unreachable for this page's rows — public submissions never auto-expire —
+  // but the exhaustiveness is what proves that promise at compile time.
+  EXPIRED: "inert",
 } as const;
 
 export default async function AccountPage() {

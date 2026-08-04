@@ -5,6 +5,7 @@ import { ConflictError, NotFoundError, ServiceError } from "@/lib/services/error
 import { createSourceWithClaims, normalizeUrl } from "@/lib/services/sources";
 import type { ProposedClaim, WatchedItem, Watcher } from "@/lib/ingest/types";
 import { getExtractor } from "@/lib/ingest/extract";
+import { triage } from "@/lib/ingest/triage";
 
 /**
  * Agent ingestion.
@@ -215,41 +216,107 @@ export async function runWatcher(
 // Review
 // ---------------------------------------------------------------------------
 
-export async function listCandidates(status: "PENDING" | "ACCEPTED" | "REJECTED" | "DUPLICATE" = "PENDING") {
-  return prisma.ingestionCandidate.findMany({
+export async function listCandidates(
+  status: "PENDING" | "ACCEPTED" | "REJECTED" | "DUPLICATE" | "EXPIRED" = "PENDING",
+) {
+  const candidates = await prisma.ingestionCandidate.findMany({
     where: { status },
-    // People before scrapers. Someone who typed an explanation is waiting for a
-    // reply and will notice how long it takes; a watcher will not.
-    orderBy: [{ origin: "desc" }, { matchScore: "desc" }, { createdAt: "desc" }],
-    take: 200,
+    orderBy: [{ createdAt: "desc" }],
+    take: 300,
     include: {
       run: { select: { watcher: true } },
       suggestedProject: { select: { id: true, name: true, slug: true, country: true } },
     },
   });
+
+  const withTriage = candidates.map((c) => ({
+    ...c,
+    triage: triage({
+      origin: c.origin,
+      sourceType: c.sourceType,
+      matchScore: c.matchScore,
+      suggestedProjectName: c.suggestedProject?.name ?? null,
+      proposedClaimCount: Array.isArray(c.proposedClaims)
+        ? (c.proposedClaims as unknown[]).length
+        : 0,
+      submitterNote: c.submitterNote,
+      title: c.title,
+      excerpt: c.excerpt,
+    }),
+  }));
+
+  // People before scrapers — someone who typed an explanation is waiting for a
+  // reply and will notice how long it takes; a watcher will not. Within a
+  // tier, the items most likely to change the database come first; the
+  // reviewer sees the reasons, not the rank.
+  return withTriage.sort((a, b) => {
+    if (a.origin !== b.origin) return a.origin === "PUBLIC_SUBMISSION" ? -1 : 1;
+    if (a.triage.rank !== b.triage.rank) return b.triage.rank - a.triage.rank;
+    return b.createdAt.getTime() - a.createdAt.getTime();
+  });
+}
+
+/**
+ * Watcher items nobody touched within this window age out of the queue. Long
+ * enough that a normal review cadence never races it; short enough that the
+ * queue reflects what a human might actually still act on. Public submissions
+ * are exempt no matter how old — a person's proposal waits for a person's
+ * answer.
+ */
+export const WATCHER_EXPIRY_DAYS = 30;
+
+export async function countExpirable(now = new Date()): Promise<number> {
+  const cutoff = new Date(now.getTime() - WATCHER_EXPIRY_DAYS * 86_400_000);
+  return prisma.ingestionCandidate.count({
+    where: { status: "PENDING", origin: "WATCHER", createdAt: { lt: cutoff } },
+  });
+}
+
+/**
+ * Expire stale watcher candidates. Expiry is a record, not a verdict: the row
+ * keeps its EXPIRED status and note (reviewedById stays null — no human said
+ * no), and the URL stays deduplicated so the feed cannot re-propose it.
+ */
+export async function expireStaleCandidates(now = new Date()): Promise<number> {
+  const cutoff = new Date(now.getTime() - WATCHER_EXPIRY_DAYS * 86_400_000);
+  const result = await prisma.ingestionCandidate.updateMany({
+    where: { status: "PENDING", origin: "WATCHER", createdAt: { lt: cutoff } },
+    data: {
+      status: "EXPIRED",
+      reviewedAt: now,
+      reviewNote: `Auto-expired: unreviewed for ${WATCHER_EXPIRY_DAYS} days. Aged out, not rejected — resubmit via /submit if it still matters.`,
+    },
+  });
+  return result.count;
 }
 
 export async function getIngestionStats() {
-  const [pending, accepted, rejected, runs] = await Promise.all([
-    prisma.ingestionCandidate.count({ where: { status: "PENDING" } }),
-    prisma.ingestionCandidate.count({ where: { status: "ACCEPTED" } }),
-    prisma.ingestionCandidate.count({ where: { status: "REJECTED" } }),
-    prisma.ingestionRun.findMany({
-      orderBy: { startedAt: "desc" },
-      take: 10,
-      select: {
-        id: true,
-        watcher: true,
-        status: true,
-        startedAt: true,
-        finishedAt: true,
-        itemsSeen: true,
-        itemsNew: true,
-        error: true,
-      },
-    }),
-  ]);
-  return { pending, accepted, rejected, runs };
+  const [pending, pendingFromPeople, expirable, accepted, rejected, expired, runs] =
+    await Promise.all([
+      prisma.ingestionCandidate.count({ where: { status: "PENDING" } }),
+      prisma.ingestionCandidate.count({
+        where: { status: "PENDING", origin: "PUBLIC_SUBMISSION" },
+      }),
+      countExpirable(),
+      prisma.ingestionCandidate.count({ where: { status: "ACCEPTED" } }),
+      prisma.ingestionCandidate.count({ where: { status: "REJECTED" } }),
+      prisma.ingestionCandidate.count({ where: { status: "EXPIRED" } }),
+      prisma.ingestionRun.findMany({
+        orderBy: { startedAt: "desc" },
+        take: 10,
+        select: {
+          id: true,
+          watcher: true,
+          status: true,
+          startedAt: true,
+          finishedAt: true,
+          itemsSeen: true,
+          itemsNew: true,
+          error: true,
+        },
+      }),
+    ]);
+  return { pending, pendingFromPeople, expirable, accepted, rejected, expired, runs };
 }
 
 /**

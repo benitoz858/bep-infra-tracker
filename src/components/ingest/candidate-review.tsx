@@ -49,9 +49,15 @@ function claimValue(claim: ProposedClaimView): string {
 export function CandidateReview({
   candidate,
   projects,
+  triageReasons = [],
 }: {
   candidate: CandidateView;
   projects: { id: string; name: string; country: string }[];
+  /**
+   * Why the queue put this item where it did — shown in full so the ordering
+   * is inspectable rather than an opaque priority number.
+   */
+  triageReasons?: string[];
 }) {
   const router = useRouter();
   const [, startTransition] = useTransition();
@@ -153,6 +159,21 @@ export function CandidateReview({
               </>
             )}
           </p>
+          {triageReasons.length > 0 ? (
+            <p className="mt-1.5 flex flex-wrap items-center gap-1">
+              <span className="text-[10px] uppercase tracking-wide text-fg-muted">
+                Ranked here because
+              </span>
+              {triageReasons.map((reason) => (
+                <span
+                  key={reason}
+                  className="rounded border border-line-2 bg-panel-2 px-1.5 py-0.5 text-[10px] text-fg-dim"
+                >
+                  {reason}
+                </span>
+              ))}
+            </p>
+          ) : null}
         </div>
         <div className="flex shrink-0 items-center gap-1.5">
           {candidate.origin === "PUBLIC_SUBMISSION" ? (

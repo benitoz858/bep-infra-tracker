@@ -13,7 +13,11 @@ import "dotenv/config";
 
 import { prisma } from "../src/lib/db";
 import { WATCHERS, getWatcher } from "../src/lib/ingest/watchers";
-import { runWatcher } from "../src/lib/services/ingestion";
+import {
+  WATCHER_EXPIRY_DAYS,
+  expireStaleCandidates,
+  runWatcher,
+} from "../src/lib/services/ingestion";
 
 function arg(name: string): string | undefined {
   const index = process.argv.indexOf(`--${name}`);
@@ -69,6 +73,14 @@ async function main() {
       totalNew += summary.itemsNew;
       console.log(`${summary.itemsSeen} seen, ${summary.itemsNew} new`);
     }
+  }
+
+  // Old watcher items age out on the same schedule that brings new ones in,
+  // so the queue converges on what a human might actually still act on.
+  // Public submissions never expire.
+  const expired = await expireStaleCandidates();
+  if (expired > 0) {
+    console.log(`\n${expired} watcher candidate(s) unreviewed for ${WATCHER_EXPIRY_DAYS}+ days expired.`);
   }
 
   const pending = await prisma.ingestionCandidate.count({ where: { status: "PENDING" } });

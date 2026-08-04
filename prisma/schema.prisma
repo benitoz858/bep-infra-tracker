@@ -424,6 +424,11 @@ enum IngestionStatus {
   REJECTED
   /// Superseded because the same URL was already cited on the target project.
   DUPLICATE
+  /// A watcher item nobody reviewed within the expiry window. Distinct from
+  /// REJECTED — nobody looked at it and said no; it aged out. The URL stays
+  /// deduplicated so the feed cannot re-propose it. Only WATCHER-origin
+  /// candidates expire: a person's submission waits for a person's answer.
+  EXPIRED
 }
 
 /// Who proposed a candidate. Both kinds land in the same queue and neither can
