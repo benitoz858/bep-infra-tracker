@@ -1,0 +1,24 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.lpm.org/news/2026-08-04/louisville-metro-council-advances-data-center-moratorium",
+      "title": "Louisville Metro Council advances data center moratorium",
+      "publisher": "Louisville Public Media",
+      "publicationDate": "2026-08-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Planning and Zoning Committee voted 7-1 Tuesday to advance a proposed moratorium on hyperscale data centers to the full council",
+      "note": "SITING RESTRICTION: Louisville (Jefferson County, KY) Metro Council's Planning & Zoning Committee voted 7-1 on Aug 4, 2026 to advance a proposed ~6-month moratorium that would bar new hyperscale data centers above roughly 500,000 sq ft, part of a broader regulation package pushed by Mayor Craig Greenberg's administration; heads to the full Metro Council next. Jurisdiction-wide restriction, not tied to one specific tracked project, so left unlinked per the no-inferred-links rule. VERIFICATION CAVEAT: this session's WebFetch tool and general outbound HTTPS (beyond github.com and the search backend) were blocked by the sandbox's network policy, so I could not open the source article directly. The excerpt above is reconstructed from search-engine result summaries, not a verbatim copy-paste of the article text — please re-check exact wording (vote count, moratorium length, sq-ft threshold) against the source before treating it as CONFIRMED.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.14news.com/2026/08/04/posey-co-commissioners-vote-no-proposed-data-center-near-boberg-hoenert-rd/",
+      "title": "Posey Co. commissioners to vote no on Boberg Rd. data center amid resident pushback",
+      "publisher": "14 News (WFIE, Evansville)",
+      "publicationDate": "2026-08-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Commissioners voted no on the proposed data center in the area of Boberg and Hoenert roads amid resident pushback",
+      "note": "SITING RESTRICTION: Posey County, Indiana commissioners rejected a proposed data center site near Boberg/Hoenert Roads at an Aug 4, 2026 meeting in Mount Vernon after residents packed the room and demanded a two-year study freeze over water and noise concerns; commissioners had earlier disclosed signing an NDA with an unnamed developer. Developer identity, MW and capex figures are not disclosed in coverage — left blank rather than guessed. Not linked to a tracked project (site/developer not publicly named). VERIFICATION CAVEAT: same as above — WebFetch and general outbound HTTPS were blocked in this session, so this excerpt is reconstructed from search-result summaries rather than a verbatim pull of the article; please confirm exact wording against the source.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
