@@ -1,0 +1,69 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/04/3338166/0/en/Cipher-Digital-Provides-Second-Quarter-2026-Business-Update.html",
+      "title": "Cipher Digital Provides Second Quarter 2026 Business Update",
+      "publisher": "GlobeNewswire (Cipher Digital Inc.)",
+      "publicationDate": "2026-08-04",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "We are proud to have delivered our first HPC data center capacity ahead of schedule and announce that rent has commenced at the site",
+      "suggestedProjectName": "Cipher Black Pearl",
+      "note": "STATUS CHANGE on tracked project (Cipher Black Pearl, Wink TX / Winkler County, currently UNDER_CONSTRUCTION). Q2 2026 business update (Aug 4) says initial Black Pearl HPC capacity was delivered to the AWS hyperscale tenant roughly two months ahead of the original schedule, and rent has commenced -- first energization/revenue milestone for this site. CEO Tyler Page quoted. No specific MW figure disclosed for this initial delivered tranche, so no numeric claim attached; project's known totals (300 MW gross / 216 MW critical IT) are already on file. Could not verify exact wording via a direct source fetch this run (tool access issue) -- please confirm phrasing against the source before promoting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/05/3339168/0/en/TeraWulf-Reports-Second-Quarter-2026-Results.html",
+      "title": "TeraWulf Reports Second Quarter 2026 Results",
+      "publisher": "GlobeNewswire (TeraWulf Inc.)",
+      "publicationDate": "2026-08-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "102 MW of revenue-generating critical IT capacity online at Lake Mariner, with an additional 336 MW under construction",
+      "suggestedProjectName": "TeraWulf Lake Mariner",
+      "note": "STATUS CHANGE on tracked project (TeraWulf Lake Mariner, Barker NY, UNDER_CONSTRUCTION; confirmedMw currently blank on file). Q2 2026 earnings (Aug 5) discloses 102 MW of revenue-generating critical IT capacity now online -- up from 81 MW at Jun 30 2026 after CB-3 delivered in early July -- with 336 MW more under construction, tracking toward the ~360 MW total already on file. First hard confirmed-operational-capacity figure for this site. Could not verify exact wording via a direct source fetch this run (tool access issue) -- please confirm phrasing against the source before promoting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 102,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Company-stated revenue-generating critical IT capacity online, from TeraWulf's own Q2 2026 earnings release (Aug 5, 2026)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.lpm.org/news/2026-08-04/louisville-metro-council-advances-data-center-moratorium",
+      "title": "Louisville Metro Council advances data center moratorium",
+      "publisher": "Louisville Public Media (LPM)",
+      "publicationDate": "2026-08-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Planning and Zoning Committee voted 7-1 to approve a 180-day moratorium on new hyperscale data centers",
+      "note": "SITING RESTRICTION: Louisville / Jefferson County, KY. Metro Council's Planning & Zoning Committee voted 7-1 on Aug 4, 2026 to advance a 180-day (6-month) moratorium barring city planners from approving new hyperscale data center construction until comprehensive regulations are adopted. Full 26-member Metro Council final vote expected roughly Aug 11-13, 2026 -- not yet enacted. Jurisdiction-wide restriction, not tied to one specific project, so projectId/suggestedProjectName are omitted on purpose. Could not verify exact wording via a direct source fetch this run (tool access issue) -- please confirm phrasing against the source before promoting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.keranews.org/news/2026-08-05/denton-moves-toward-data-center-moratorium-city-council-weighs-stricter-development-rules",
+      "title": "Denton moves toward data center moratorium; City Council weighs stricter development rules",
+      "publisher": "KERA News",
+      "publicationDate": "2026-08-05",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "A council majority -- 4-3 -- gave staff direction Tuesday to proceed with a possible moratorium on data centers",
+      "note": "SITING RESTRICTION: Denton, TX. City Council voted 4-3 on Aug 4, 2026 to direct staff toward a possible data center moratorium plus development-code amendments; council was to set the first public-hearing date at its Aug 18 meeting (some reporting suggests a hearing tentatively eyed for Sept 22, second hearing Oct 27, adoption Dec 2 -- unconfirmed, treat as provisional). Not yet an enacted restriction. Jurisdiction-wide, no specific project tied, so projectId/suggestedProjectName are omitted on purpose. Could not verify exact wording via a direct source fetch this run (tool access issue) -- please confirm phrasing against the source before promoting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.lpm.org/news/2026-08-04/jeffersonville-approves-1-year-data-center-moratorium",
+      "title": "Jeffersonville approves 1-year data center moratorium",
+      "publisher": "Louisville Public Media (LPM)",
+      "publicationDate": "2026-08-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Jeffersonville City Council passed a one-year data center moratorium this week",
+      "note": "SITING RESTRICTION: Jeffersonville, IN (Clark County). City Council passed a one-year moratorium on new data center development on Aug 4, 2026 (reported vote 8-0), extending an initially-proposed 6-month pause to a full year on Councilmember Jackie Snelling's motion; intent is to give staff time to rewrite the zoning code covering data centers / 'internet server facilities.' Jurisdiction-wide, no specific project tied, so projectId/suggestedProjectName are omitted on purpose. Could not verify exact wording via a direct source fetch this run (tool access issue) -- please confirm phrasing against the source before promoting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
