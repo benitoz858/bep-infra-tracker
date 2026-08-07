@@ -1,0 +1,53 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.texastribune.org/2026/08/03/texas-data-center-project-audit-greg-abbott/",
+      "title": "New Texas data center projects frozen until state audits them",
+      "publisher": "The Texas Tribune",
+      "publicationDate": "2026-08-03",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "New Texas data center projects frozen until state audits them",
+      "note": "SITING RESTRICTION: Gov. Greg Abbott directed the Public Utility Commission of Texas and ERCOT on Aug 3, 2026 to audit every data center project in the ERCOT interconnection queue before it may proceed; ERCOT has paused its 'Batch Zero' review as a result. Multiple secondary outlets (Utility Dive headline: 'Facing an estimated 474 GW of interconnection requests, Texas hits pause on data centers'; K&L Gates client alert dated 8/4/26) put the paused queue at roughly 474 GW of requests, ~90% attributed to data centers -- this 474 GW figure could not be independently confirmed against primary-source text this session because direct fetch of external article bodies (WebFetch/curl) was blocked by this session's network egress policy; treat as LOW confidence pending human verification. This is a statewide, not project-specific, restriction. Many tracked Texas UNDER_CONSTRUCTION/ANNOUNCED projects sit in the ERCOT interconnection queue and could be affected, e.g. Cipher Black Pearl, IREN Childress, IREN Sweetwater, Meta El Paso, Aligned Project Caprock, Fluidstack Abernathy, Crusoe Goodnight, Abilene Clean Campus (Crusoe), Stargate Milam County, Stargate Shackelford County, CyrusOne Freestone, Microsoft Pecos, Nscale Barstow, QTS-Lancium Hall County. Not attaching to any single project -- a human should determine per-project applicability based on each project's interconnection queue status.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 474000,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Secondary press reports (Utility Dive, K&L Gates) state ERCOT's paused interconnection queue totals approximately 474 GW (~90% data centers); this is a statewide queue-wide backlog figure, not a single-project capacity figure, and was not independently verified against a primary ERCOT/PUC document this session."
+        }
+      ]
+    },
+    {
+      "url": "https://www.lpm.org/news/2026-08-04/louisville-metro-council-advances-data-center-moratorium",
+      "title": "Louisville Metro Council advances data center moratorium",
+      "publisher": "Louisville Public Media (LPM)",
+      "publicationDate": "2026-08-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Louisville Metro Council advances data center moratorium",
+      "note": "SITING RESTRICTION: Louisville (Jefferson County), Kentucky's Metro Council Planning and Zoning Committee voted to advance a data center moratorium proposal to the full Metro Council on Aug 4, 2026; reporting indicates a final council vote is expected around Aug 13, 2026. Vote tally and moratorium duration mentioned in secondary summaries were not independently confirmed against article body text this session (network egress restricted) so are omitted here. No tracked BEP project currently sits in Jefferson County, KY -- the nearest tracked Kentucky project is TeraWulf Justified in Hawesville (Hancock County), a different jurisdiction not directly affected. Flagging as a new local moratorium action for the siting-restrictions dataset; not linked to an existing project.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.keranews.org/news/2026-08-05/denton-moves-toward-data-center-moratorium-city-council-weighs-stricter-development-rules",
+      "title": "Denton moves toward data center moratorium; City Council weighs stricter development rules",
+      "publisher": "KERA News",
+      "publicationDate": "2026-08-05",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Denton moves toward data center moratorium; City Council weighs stricter development rules",
+      "note": "SITING RESTRICTION: Denton, Texas City Council is moving toward a data center moratorium; per reporting the council is set to vote on scheduling a public hearing on the moratorium/development-code changes at its Aug 18, 2026 meeting -- a preliminary procedural step, not a moratorium in effect yet. The tracked project 'Core Scientific Denton' (status PARTIALLY_OPERATIONAL) sits within this jurisdiction. A maintainer should assess whether a prospective moratorium (typically targeting new applications) has any bearing on that project's status or expansion plans. Not auto-linking to the project since the moratorium's scope and effective date are not yet finalized -- flagging per CONTRIBUTING.md guidance against inferring project links from location alone.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://cbs12.com/news/local/palm-beach-county-zoning-leaders-back-data-center-moratorium-weighs-tougher-regulations-pause-application-aug-6-2026",
+      "title": "Palm Beach County zoning leaders back data center moratorium, weighs tougher regulations",
+      "publisher": "CBS12 / WPEC",
+      "publicationDate": "2026-08-06",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Palm Beach County zoning leaders back data center moratorium, weighs tougher regulations",
+      "note": "SITING RESTRICTION: Palm Beach County, Florida's Zoning Commission recommended a moratorium on new large-scale data center applications on Aug 6, 2026; per reporting the recommendation advances to a further public hearing before the Board of County Commissioners for final consideration (reported timeline: September 2026). Moratorium duration (reported elsewhere as one year) was not independently confirmed against this article's body text this session (network egress restricted), so is omitted here. No tracked BEP project is currently located in Palm Beach County -- flagging as a new jurisdiction entering the national data-center-moratorium wave, not linked to an existing project.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
