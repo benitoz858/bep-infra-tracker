@@ -1,0 +1,122 @@
+{
+  "submissions": [
+    {
+      "url": "https://gov.texas.gov/news/post/governor-abbott-directs-comprehensive-data-center-audit",
+      "title": "Governor Abbott Directs Comprehensive Data Center Audit",
+      "publisher": "Office of the Texas Governor",
+      "publicationDate": "2026-08-03",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "Any project that fails to comply with the requirements set forth by the PUC and ERCOT... must be denied connection to the Texas grid.",
+      "note": "SITING RESTRICTION: Gov. Abbott directed PUCT and ERCOT on Aug 3, 2026 to conduct a 'comprehensive verification and audit' of all data center projects in the ERCOT large-load interconnection queue (~474 GW of requests, ~90% attributed to data centers), pausing new interconnection approvals until developers disclose tax incentives, power/water use, and ownership. Statewide, not tied to one project, but directly relevant to numerous tracked UNDER_CONSTRUCTION/ANNOUNCED Texas projects (e.g. Cipher Black Pearl, Crusoe Goodnight, Fluidstack Abernathy, IREN Childress, IREN Sweetwater, Meta El Paso, Nscale Barstow, QTS-Lancium Hall County, Stargate Milam County, Stargate Shackelford County, Abilene Clean Campus). Corroborated by Texas Tribune, Utility Dive, E&E News, National Law Review. Reviewer should judge whether/how to attach to individual project timelines.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 474000,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Total ERCOT large-load interconnection queue cited in the Governor's letter; ~90% attributed to data centers per secondary coverage, not a single-project figure."
+        }
+      ]
+    },
+    {
+      "url": "https://www.wdrb.com/news/louisville-committee-advances-6-month-data-center-moratorium-to-metro-council/article_6055ba02-6ba5-4902-b9a8-9ad21136b846.html",
+      "title": "Louisville committee advances 6-month data center moratorium to Metro Council",
+      "publisher": "WDRB",
+      "publicationDate": "2026-08-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Planning and Zoning Committee voted 7-1 Tuesday to move the proposal forward to the full council for approval.",
+      "note": "SITING RESTRICTION: Louisville Metro Council's Planning & Zoning Committee voted 7-1 on Aug 4, 2026 to advance a 180-day moratorium on new hyperscale data centers (barring facilities over 500,000 sq ft, restricting others to industrial zoning), backed by Mayor Craig Greenberg. Full Metro Council vote scheduled for Aug 13, 2026 -- not yet enacted as of this submission. Not tied to a specific tracked project. Corroborated by LPM, Kentucky Lantern, LouisvilleKY.gov council statements.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://investors.terawulf.com/news-events/press-releases/detail/144/terawulf-reports-second-quarter-2026-results",
+      "title": "TeraWulf Reports Second Quarter 2026 Results",
+      "publisher": "TeraWulf Inc.",
+      "publicationDate": "2026-08-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Completed delivery of CB-3 in early July, increasing revenue-generating capacity to 102 MW.",
+      "note": "Status update for tracked project 'TeraWulf Lake Mariner' (slug: terawulf-lake-mariner-fluidstack-anthropic, currently UNDER_CONSTRUCTION). CB-3 delivery in early July 2026 brought revenue-generating critical IT capacity to 102 MW and satisfied conditions activating $600M of Google's credit support for Fluidstack's lease obligations at the site -- a credit/financing milestone, not new construction capex. IT load basis (revenue-generating critical IT capacity), not site/gross power. No projectId supplied -- tracker API/project list was unreachable from this run's sandbox (network egress to tracker.bepresearch.com blocked); reviewer should match by name/slug.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 102,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Stated in TeraWulf Q2 2026 earnings release as revenue-generating critical IT capacity at Lake Mariner following CB-3 delivery; company primary source but not independently re-fetched this run due to sandbox network restrictions."
+        }
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326001480/dp240991_ex9901.htm",
+      "title": "Cipher Digital Provides Second Quarter 2026 Business Update (8-K Exhibit 99.1)",
+      "publisher": "Cipher Mining Inc. (SEC EDGAR)",
+      "publicationDate": "2026-08-04",
+      "sourceType": "SEC_FILING",
+      "excerpt": "Cipher began delivering Black Pearl capacity to its hyperscale tenant roughly two months ahead of the original schedule.",
+      "note": "Status update for tracked project 'Cipher Black Pearl' (slug: cipher-black-pearl-for-aws, currently UNDER_CONSTRUCTION, 300MW gross site power already on file). Q2 2026 business update (SEC 8-K filed ~Aug 4, 2026) states initial Black Pearl capacity delivery to AWS began ahead of schedule and rent has commenced under the 15-year lease -- a construction/delivery-timeline milestone, moving the project toward partially-operational status. Excerpt is reconstructed from secondary-source summaries of the filing (Cipher Q2 earnings coverage); the primary SEC document itself could not be directly fetched in this run due to sandbox network egress restrictions -- reviewer should verify exact filing language before upgrading confidence. No projectId supplied for the same reason (tracker API unreachable this run); match by name/slug.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://kentuckylantern.com/2026/07/29/hyperscale-data-center-natural-gas-fired-project-planned-for-paducahs-former-nuclear-plant/",
+      "title": "Hyperscale data center, natural gas-fired project planned for Paducah's former nuclear plant",
+      "publisher": "Kentucky Lantern",
+      "publicationDate": "2026-07-29",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Targeting more than 1.2 GW of compute capacity and dedicated on-site power generation built specifically for the project.",
+      "note": "New project, not currently tracked: Brookfield and NextEra Energy announced (~Jul 29, 2026) a data center campus at DOE's former Paducah Gaseous Diffusion Plant site, McCracken County, Kentucky -- Brookfield to develop/operate, NextEra to build dedicated on-site generation (reported up to 2 GW gas + 2.6 GW battery storage) supporting up to 1.8 GW of utility-delivered capacity by 2032; initial operations targeted 2028. Total investment reported at roughly $100B over time -- flagged LOW confidence as this is a multi-phase, multi-source estimate, not a single stated capex figure from a primary filing. Announcement is ~10 days old at time of this submission (outside the usual 24-72h window) but the project does not appear in the current 103-project tracked list, so flagging as a coverage gap.",
+      "submitterName": "BEP daily research agent (automated)",
+      "suggestedProjectName": "Brookfield-NextEra Paducah AI Campus",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1200,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Initial targeted compute capacity as reported in company statements relayed by multiple trade/local outlets; primary company release not independently fetched this run."
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 100000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Roughly $100B total investment 'over time' cited across secondary coverage; likely a multi-phase lifetime ambition figure rather than committed capex, analogous to other campuses in this tracker -- reviewer should treat as directional only."
+        }
+      ]
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/galaxy-expands-data-center-footprint-with-acquisition-of-500-acre-campus-in-mcgregor-texas-302836014.html",
+      "title": "Galaxy Expands Data Center Footprint with Acquisition of 500 Acre Campus in McGregor, Texas",
+      "publisher": "Galaxy Digital (PR Newswire)",
+      "publicationDate": "2026-07-28",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Expected to reach 74 MW in its first phase before expanding into a multi-hundred-megawatt campus.",
+      "note": "New project, not currently tracked (distinct from the already-tracked 'Galaxy Helios' project). Galaxy Digital acquired 500 acres in McGregor, Texas (~90 miles north of Austin) for a second Texas AI/HPC campus, internally called 'Project Merlin' during city council review. First phase ~74 MW targeted to begin receiving power in 2028, privately funded substation, with potential expansion toward 500 MW as transmission is upgraded (initial phase kept under ERCOT's 75 MW large-load threshold). Directly relevant to the new Aug 3, 2026 statewide ERCOT interconnection audit/pause (see separate submission) since this is a new ERCOT-queue Texas project. No confirmed capex disclosed -- left blank per policy.",
+      "submitterName": "BEP daily research agent (automated)",
+      "suggestedProjectName": "Galaxy Digital Project Merlin (McGregor, TX)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 74,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Initial phase capacity as stated in Galaxy's own press release/local coverage of the McGregor site acquisition."
+        }
+      ]
+    },
+    {
+      "url": "https://oregoncapitalchronicle.com/2026/08/04/democratic-lawmakers-propose-three-year-moratorium-on-new-large-data-centers-in-oregon/",
+      "title": "Democratic lawmakers propose three-year moratorium on new large data centers in Oregon",
+      "publisher": "Oregon Capital Chronicle",
+      "publicationDate": "2026-08-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Four ... lawmakers ... propose a three-year moratorium on new data centers in the state.",
+      "note": "SITING RESTRICTION: Four Oregon Democratic state legislators (Sens. Golden, Neron Misslin; Reps. Munoz, Chaichi) announced Aug 4, 2026 intent to introduce a bill for a three-year moratorium on new large data centers, to be filed in the 2027 legislative session (starts January). This is a proposal only -- not yet introduced as a bill or voted on. Related/earlier context: Oregon Legislature already passed a one-year pause on a data center tax incentive program (Mar 2026), and Hillsboro City Council passed a 120-day local moratorium. Not tied to a specific tracked project.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
