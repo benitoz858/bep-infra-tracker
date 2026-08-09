@@ -1,0 +1,74 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001083301/000108330126000162/a_wulfearningsreleaseq22026.htm",
+      "title": "TeraWulf Reports Second Quarter 2026 Results",
+      "publisher": "TeraWulf Inc. (SEC Form 8-K exhibit)",
+      "publicationDate": "2026-08-05",
+      "sourceType": "SEC_FILING",
+      "excerpt": "completed delivery of CB-3 in early July, increasing revenue-generating capacity to 102 MW",
+      "suggestedProjectName": "TeraWulf Lake Mariner",
+      "note": "TRACKED PROJECT UPDATE — matches existing project slug 'terawulf-lake-mariner-fluidstack-anthropic' (currently estimatedMw=360, no confirmedMw recorded). Q2 2026 earnings confirm 102 MW of critical IT capacity is now revenue-generating (up from 81 MW at Q2 close) after CB-3 delivery, which also satisfied conditions for $600M of Google's credit support behind Fluidstack's lease. This is IT load, not site power draw; 360 MW remains the full Fluidstack lease target. An additional 336 MW (CB-4/CB-5) is under construction, phased through 2027. Note: primary source could not be re-fetched directly this run (sandbox network policy blocked outbound HTTPS to arbitrary domains including SEC.gov) — quote is as returned by search synthesis and should be spot-checked against the filing before treating as verbatim.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 102,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Stated as revenue-generating critical IT capacity in TeraWulf's Q2 2026 earnings release (8-K) after CB-3 delivery"
+        }
+      ]
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/05/26/3301045/0/en/TeraWulf-Expands-Infrastructure-Platform-with-Acquisition-of-1-GW-Eastern-Kentucky-HPC-Campus.html",
+      "title": "TeraWulf Expands Infrastructure Platform with Acquisition of 1+ GW Eastern Kentucky HPC Campus",
+      "publisher": "GlobeNewswire (TeraWulf Inc.)",
+      "publicationDate": "2026-05-26",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Delivery of the initial 500 megawatts is expected to ramp beginning in the second half of 2028",
+      "suggestedProjectName": "TeraWulf Muskie Data Campus",
+      "note": "NEW PROJECT — not currently in tracker. TeraWulf's second Kentucky HPC campus (alongside the tracked 'TeraWulf Justified' site in Hancock County), on ~285 owned/controlled acres within the 1,000-acre EastPark Industrial Park near Grayson/Ashland, Greenup County. Kentucky Power (AEP) is building a 345kV substation off the 765kV transmission network to support the full site. Planned in two 500 MW phases: H2 2028 and H2 2030 (site power / utility-delivered capacity, not stated as IT load). Flagging now rather than at the May announcement because TeraWulf's Aug 5, 2026 Q2 earnings call (and Aug 6 follow-up reporting, e.g. WEKU/West Virginia Public Broadcasting) disclosed the company is evaluating doubling Muskie to as much as 2 GW — that expansion figure is a stated intent, not a firm commitment, so it is left out of the claims below; only the originally announced 1+ GW / phased 500+500 MW figures are submitted as claims. Primary source could not be re-fetched directly this run due to sandbox network restrictions — quote should be spot-checked against the release.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Stated as '1+ GW' total planned campus capacity in TeraWulf's acquisition announcement"
+        }
+      ]
+    },
+    {
+      "url": "https://www.keranews.org/news/2026-08-05/denton-moves-toward-data-center-moratorium-city-council-weighs-stricter-development-rules",
+      "title": "Denton moves toward data center moratorium; City Council weighs stricter development rules",
+      "publisher": "KERA News",
+      "publicationDate": "2026-08-05",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "A council majority — 4-3 — gave staff direction Tuesday to proceed with a possible moratorium",
+      "note": "SITING RESTRICTION: Denton, TX city council voted 4-3 (Tue Aug 4, 2026) directing staff to draft both a possible data center moratorium and stricter development-code amendments. Nothing enacted yet — this is a direction-to-staff vote. First public hearing tentatively Sept 22, 2026, second Oct 27, final adoption targeted Dec 2, 2026. Tracked project 'Core Scientific Denton' (slug core-scientific-denton-coreweave, PARTIALLY_OPERATIONAL, ~260MW IT) sits on a city land lease approved in 2024 and would predate any moratorium per other reporting on the same council session, so no status change expected there — flagging because the jurisdiction hosts a tracked project and the timeline is worth watching. Denton follows Lewisville, Irving and San Marcos, TX in taking this step. Quote should be spot-checked against the article — primary/direct source re-fetch was unavailable this run due to sandbox network restrictions.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.lakemchenryscanner.com/2026/08/08/project-of-unprecedented-scale-lake-county-residents-file-lawsuit-to-block-472-acre-data-center-campus-in-grayslake/",
+      "title": "'Project of unprecedented scale': Lake County residents file lawsuit to block 472-acre data center campus in Grayslake",
+      "publisher": "Lake & McHenry County Scanner",
+      "publicationDate": "2026-08-08",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "electrical demand of approximately 1.55 gigawatts of power supplied by ComEd",
+      "suggestedProjectName": "T5 @ Chicago IV (Grayslake)",
+      "note": "SITING RESTRICTION: Not currently tracked — proposing as a new project given scale ($18B, 472 acres, 10M+ sq ft across 18 buildings, developer T5 Data Centers / Alter Asset Management, village of Grayslake, Lake County, IL). On July 31, 2026 the Preservation of Community Well-Being Collective and nine residents sued in Lake County Circuit Court to void the village's approvals, alleging the project was publicly disclosed only under the code name 'T5@Chicago IV' until the final agenda, plus Illinois Open Meetings Act violations. T5 separately suspended its wetland-fill permit application in late July amid the lawsuit threat. No construction has started; approvals are contested. The ~1.55 GW electrical-demand figure is reported by news citing project filings, not a developer-confirmed figure — treat as an estimate. Quote should be spot-checked — primary source (court filing / village docket) could not be fetched directly this run due to sandbox network restrictions.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1550,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Reported by news article citing project filings as electrical demand; not directly confirmed by developer"
+        }
+      ]
+    }
+  ]
+}
