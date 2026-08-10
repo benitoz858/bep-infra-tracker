@@ -1,0 +1,124 @@
+{
+  "submissions": [
+    {
+      "url": "https://winbuzzer.com/2026/01/09/openai-and-softbank-commit-1-billion-to-sb-energy-launching-1-2-gw-stargate-site-in-texas-xcxwbn/",
+      "title": "OpenAI and SoftBank Commit $1 Billion to SB Energy, Launching 1.2 GW Stargate Site in Texas",
+      "publisher": "WinBuzzer",
+      "publicationDate": "2026-01-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "OpenAI and SoftBank Commit $1 Billion to SB Energy, Launching 1.2 GW Stargate Site in Texas",
+      "projectId": "stargate-milam-county",
+      "note": "AUDIT: tracker currently shows Stargate Milam County with power blank (site named by OpenAI, no capacity recorded). Jan 2026 reporting on SoftBank/SB Energy's $1B commitment discloses a 1.2 GW campus target -- recommend recording as an ANNOUNCED-target ESTIMATE only, explicitly basis: site power / full-build target. Epoch AI's independent site-by-site tracker separately estimates near-term capacity at only ~0.3 GW initially, so do NOT record 1.2GW as IT load or as anything close to current state.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1200,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Announced full-campus target (SoftBank/SB Energy $1B commitment, Jan 2026), not an operator statement of current or near-term IT load. Basis: site power / full-build target, IT-vs-site unclear. Epoch AI's independent estimate puts near-term capacity at ~0.3 GW initially -- a large gap that argues for LOW confidence and against treating 1.2GW as anything but a target."
+        }
+      ]
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/22/chevron-cvx-microsoft-msft-natural-gas-data-center.html",
+      "title": "Chevron to fuel massive Microsoft data center in Texas using natural gas",
+      "publisher": "CNBC",
+      "publicationDate": "2026-06-22",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "expected to consume nearly 2.7 gigawatts of electricity, equivalent to the power needed to run about 2 million homes",
+      "projectId": "microsoft-pecos",
+      "note": "AUDIT: tracker records Microsoft Pecos at 2000 MW (estimate, basis unstated), sourced to Microsoft's own 'approximately 2 gigawatts' blog language. Same-day reporting on Chevron's 'Project Kilby' 20-year gas-plant PPA describes a larger 2.67 GW figure, and CNBC's own phrasing describes this generation capacity as what the data center will 'consume' -- a site/generation-vs-IT-load conflation risk. Recommend a note distinguishing Microsoft's ~2GW datacenter figure from Chevron's 2.67GW gas-plant supply deal so the estimatedMw field isn't later overwritten with the larger generation number.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 2670,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Basis: generation / gas-plant supply capacity (Chevron Project Kilby, 20-year PPA), not IT load. Reported separately from Microsoft's own ~2GW datacenter capacity figure; multiple outlets conflate the two. Recorded as context only, to prevent future conflation -- not a proposed replacement for the existing 2000MW estimate."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/oracle-and-openai-scrap-planned-600mw-abilene-expansion",
+      "title": "Oracle and OpenAI's Abilene expansion saga detailed: 600MW expansion gets scrapped, as larger 4.5GW agreement remains on track",
+      "publisher": "Tom's Hardware",
+      "publicationDate": "2026-03-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Oracle and OpenAI's Abilene expansion saga detailed: 600MW expansion gets scrapped, as larger 4.5GW agreement remains on track",
+      "projectId": "stargate-abilene-texas",
+      "note": "AUDIT: Stargate Abilene carries the tracker's oldest confirmed_power_mw figure (200 MW, sourced to an Oracle statement from April 2026) -- one of only 3 confirmed rows in the whole database, so it gets extra scrutiny every week. Since April, Oracle/OpenAI scrapped a planned 600MW expansion beyond the 1.2GW cap (March 2026) after financing issues and a multi-day winter cooling outage; a separate 4.5GW multi-site Oracle-OpenAI deal reportedly remains on track. None of this is reflected in analystNotes. Recommend: (a) timestamp the 200MW confirmed figure as 'as of April 2026' rather than presenting it as today's state -- Epoch's independent tracking now estimates ~421MW IT operating; (b) add the expansion-cancellation/cooling-outage context to analystNotes so readers understand the 1.2GW estimate carries real execution risk.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://spectrumnews1.com/oh/dayton/news/2026/02/24/lordstown-ohio-data-center-lawsuit",
+      "title": "Lordstown continues navigating lawsuit from data center developer",
+      "publisher": "Spectrum News 1",
+      "publicationDate": "2026-02-24",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "$3.6 billion, 1.65 million-square-foot data center on 133 acres on the former GM site",
+      "projectId": "stargate-lordstown-ohio",
+      "note": "AUDIT: tracker records Stargate Lordstown with power/capex/square-footage all blank ('site confirmed by OpenAI; no per-site capacity published'). A lawsuit filed by the site's developer (Bristolville 25 LLC, suing the village for a writ of mandamus to process permits) discloses concrete project figures: $3.6B capex, 133 acres, 1.65M sq ft. Also worth noting: Lordstown Village Council imposed a Jan-Jul 4 2026 moratorium on AI data center permitting, with an explicit carve-out for the unrelated SoftBank/Foxconn AI-manufacturing tenancy at the same former-GM site -- the tracker's single Lordstown row may be conflating the Bristolville-developed data center with the separate SoftBank/Foxconn manufacturing operation. Recommend recording the $3.6B capex figure and clarifying in analystNotes which entity/use is which.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 3600000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Figure disclosed via the developer's own court filing (writ of mandamus lawsuit against Lordstown Village), reported by Spectrum News 1 and corroborated by WKBN. Describes the data center project the developer is trying to get permitted, not construction already underway."
+        }
+      ]
+    },
+    {
+      "url": "https://www.abqjournal.com/news/judge-project-jupiter-lawsuit-to-proceed/3007891",
+      "title": "Project Jupiter lawsuit to proceed in Doña Ana County, judge orders review of data center incentives",
+      "publisher": "Albuquerque Journal",
+      "publicationDate": "2026-03-24",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "judge orders review of the commission's approval of $165 billion in industrial revenue bonds",
+      "projectId": "stargate-dona-ana-county",
+      "note": "AUDIT: tracker's Stargate Dona Ana County row (power/capex deliberately blank -- correct, since no capacity has been disclosed) is missing a material development: an ongoing lawsuit (New Mexico Environmental Law Center v. Dona Ana County) over $165B in industrial revenue bonds/incentives for the project ('Project Jupiter'), plus a separate finding that the developers missed January and April 2026 job-hire reporting deadlines required under the incentive agreement. This doesn't change any numeric field (still correctly blank) but is exactly the kind of execution/compliance risk that belongs in analystNotes for a project still carrying UNDER_CONSTRUCTION status. Caution: do not record any 'first gigawatt of Nvidia systems' language seen in some coverage as MW power -- it describes planned chip deployment, not disclosed site capacity.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.agbi.com/tech/2026/08/neom-to-start-constructing-oxagon-ai-data-centre-in-months/",
+      "title": "Neom to start building Oxagon AI data centre 'in months'",
+      "publisher": "AGBI",
+      "publicationDate": "2026-08-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "We expect to break ground in the next two to three months and get on with these AI factories.",
+      "projectId": "datavolt-oxagon-ai-factory-neom",
+      "note": "AUDIT: analystNotes currently state 'no construction on this campus is documented as of mid-2026.' DataVolt CEO Rajit Nanda told AGBI (Aug 2026; exact publication day not independently confirmed, recommend verifying) that groundbreaking is expected within two to three months. This is a developer statement of intent, not confirmed construction, but it supersedes the 'no construction documented' framing and should be reflected. No change recommended to the existing 1500MW/$5B announced-target figures.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.nationalobserver.com/2026/04/20/news/kevin-oleary-pins-water-licence-70-billion-data-centre-project-small-alberta",
+      "title": "Kevin O'Leary pins water licence for $70-billion data centre project on a small Alberta municipality",
+      "publisher": "Canada's National Observer",
+      "publicationDate": "2026-04-20",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "First Nation in court to challenge proposed Wonder Valley AI data centre project in northern Alberta",
+      "projectId": "wonder-valley-ai-data-centre-industrial-park-phase-1",
+      "note": "AUDIT: analystNotes cite The Logic's Dec 2025 skeptical framing but miss two subsequent 2026 developments: (1) April 2026 -- Alberta exempted the project from a full provincial Environmental Impact Assessment 'due to its proposed use of standard power and water systems,' while confirming other permits (air/land/water technical assessments, AUC) are still required; (2) Sturgeon Lake Cree Nation is pursuing a judicial review (arguments heard June 2026) of a Water Act licence granted for the project, after the Environmental Appeals Board dismissed an earlier appeal (April 17 2026 decision). Neither confirms nor further discredits the project's near-term credibility -- recommend adding both as analystNotes context given the project's already-skeptical framing.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://ingrams.com/article/lambda-plans-to-open-kcmo-ai-factory-in-early-2026/",
+      "title": "Lambda Plans to Open KCMO AI Factory in Early 2026",
+      "publisher": "Ingram's",
+      "publicationDate": "2025-11-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "expected to launch in early 2026 with 24MW of capacity, and the potential to scale up to more than 100MW",
+      "projectId": "lambda-kansas-city",
+      "note": "AUDIT: tracker records expectedOpeningDate as 2026-06-30, but both the cited PRNewswire release and independent Ingram's coverage describe the launch target as 'early 2026,' which conventionally means Q1 (Jan-Mar), not end of Q2. Recommend tightening expectedOpeningDate toward Q1 2026 (e.g. 2026-03-31) unless a more specific date is found, and separately noting that as of today (2026-08-10) no source confirms the facility has actually launched/energized -- it may already be running behind even its own stated target.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    }
+  ]
+}
