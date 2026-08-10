@@ -1,0 +1,44 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/05/3339168/0/en/TeraWulf-Reports-Second-Quarter-2026-Results.html",
+      "title": "TeraWulf Reports Second Quarter 2026 Results",
+      "publisher": "TeraWulf Inc.",
+      "publicationDate": "2026-08-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "81 MW of critical IT capacity was operating at Lake Mariner as of June 30, 2026, increasing to 102 MW in early July",
+      "projectId": "terawulf-lake-mariner-fluidstack-anthropic",
+      "note": "Operational progress update, not a new project. IT-load basis (critical IT capacity, not site/generation power). CB-3 delivery brought Lake Mariner to ~102 MW live, up from 81 MW at Q1 close, against the tracked 360 MW target; also triggered $600M of Google credit support for Fluidstack's lease obligations per Q2 2026 earnings coverage. CAVEAT: this session's network egress blocked direct fetch of the primary press release (and of tracker.bepresearch.com itself) -- excerpt is reconstructed from secondary financial-press summaries (TipRanks/GuruFocus/BigGo) of the release rather than confirmed against the source verbatim. Recommend a human spot-check the exact wording before promoting past LOW/MEDIUM confidence. projectId used is the tracker slug, not a verified database id, since the live API/id lookup was also unreachable this session.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 102,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Critical IT capacity operating at Lake Mariner after CB-3 delivery in early July 2026, as stated in TeraWulf's Q2 2026 results release per secondary financial-press coverage"
+        }
+      ]
+    },
+    {
+      "url": "https://www.lpm.org/news/2026-08-04/louisville-metro-council-advances-data-center-moratorium",
+      "title": "Louisville Metro Council advances data center moratorium",
+      "publisher": "Louisville Public Media (LPM)",
+      "publicationDate": "2026-08-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Planning and Zoning Committee voted 7-1 to send a data center moratorium proposal to the full 26-member council",
+      "note": "SITING RESTRICTION: Louisville Metro Council's Planning & Zoning Committee approved a proposed 6-month (some coverage says 180-day) moratorium on new data center development on Aug 4, 2026, sending it to the full 26-member council; full-council vote expected the week of Aug 10-13, 2026. Not linked to a tracked project -- no tracked BEP project sits in Jefferson County/Louisville (the nearest tracked project, TeraWulf Justified, is in Hancock County, KY, a different jurisdiction), so linking would be an unsupported inference per the data philosophy. CAVEAT: WebFetch/curl were blocked for this source in this session; excerpt reconstructed from search-engine summary of the article rather than a direct fetch -- please verify wording against the source URL. Also worth tracking: the full council's final vote (expected ~Aug 13, 2026) was not yet available at research time.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://wjno.iheart.com/featured/florida-news/content/2026-08-07-palm-beach-county-zoning-commission-approves-ai-data-center-moratorium/",
+      "title": "Palm Beach County Zoning Commission Approves AI Data Center Moratorium",
+      "publisher": "iHeartRadio (WJNO)",
+      "publicationDate": "2026-08-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Zoning Commission is unanimously recommending a one-year moratorium on large-scale data centers using 50 megawatts or more",
+      "note": "SITING RESTRICTION: Palm Beach County's Zoning Commission unanimously recommended a one-year moratorium on new large-scale data center applications (threshold: facilities expected to draw >=50 MW), to allow the county to draft new rules on noise, water use, electrical demand and siting. Recommendation advances to another public hearing before final consideration by the Board of County Commissioners, expected in September 2026. Applications submitted before July 7, 2026 continue moving through review under existing rules. No tracked BEP project is located in Palm Beach County, so no projectId was attached. CAVEAT: WebFetch/curl were blocked for this source in this session; excerpt reconstructed from a search-engine summary of coverage (cbs12.com/wjno.iheart.com carried near-identical reporting) rather than a direct fetch -- please verify exact wording against the source URL before promoting confidence.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
