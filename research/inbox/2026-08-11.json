@@ -1,0 +1,66 @@
+{
+  "submissions": [
+    {
+      "url": "https://gov.texas.gov/news/post/governor-abbott-directs-comprehensive-data-center-audit",
+      "title": "Governor Abbott Directs Comprehensive Data Center Audit",
+      "publisher": "Office of the Texas Governor",
+      "publicationDate": "2026-08-03",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "a comprehensive verification and audit of all data center applicants before any additional data centers are approved to move forward",
+      "suggestedProjectName": "Texas statewide (ERCOT/PUCT) — data center interconnection pause",
+      "note": "SITING RESTRICTION: On 2026-08-03 Gov. Greg Abbott directed PUCT and ERCOT to audit all data center projects in the interconnection queue before approving further grid connections, citing incomplete developer compliance with a PUC water/power usage survey. ERCOT responded same-day with Market Notice M-A080326-01, suspending the Batch Zero Large Load classification notices that were due 2026-08-07, and will seek a 'good cause exception' at PUCT's 2026-08-20 open meeting. ERCOT's interconnection queue totals ~474 GW (~90% data centers, >5x ERCOT's record peak demand). BloombergNEF estimates up to 49.8 GW (~20% of the total US data center pipeline) could see delays, at a potential cost of up to $15B (per PowerMag's summary of the BNEF note — not independently verified, flagged LOW confidence). This is a statewide restriction, not a single-project event, but it sits directly upstream of numerous tracked ERCOT-territory projects (e.g. Stargate Milam County, Stargate Shackelford County, IREN Childress, IREN Sweetwater, Fluidstack Abernathy, Crusoe Goodnight, Compass Meridian, Aligned Project Caprock, Nscale Barstow, Meta El Paso) whose interconnection timelines could slip pending audit outcomes. Primary source (ERCOT Market Notice) also available: https://www.ercot.com/services/comm/mkt_notices/M-A080326-01. WebFetch/direct API access was unavailable to this agent run (network egress blocked to external domains), so the quote above is reconstructed from consistent wording across multiple secondary reports (Troutman Pepper, Akin Gump, Texas Tribune) rather than a direct fetch of the governor's letter — recommend a human confirm exact wording against the primary source before treating as HIGH confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 49800,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "BloombergNEF estimate of at-risk Texas data center interconnection load pending the audit, as reported secondhand by PowerMag; not confirmed against the BNEF note itself"
+        }
+      ]
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/05/3339168/0/en/TeraWulf-Reports-Second-Quarter-2026-Results.html",
+      "title": "TeraWulf Reports Second Quarter 2026 Results",
+      "publisher": "GlobeNewswire / TeraWulf Inc.",
+      "publicationDate": "2026-08-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "increasing revenue-generating capacity to 102 MW and satisfying the applicable conditions for $600 million of Google's credit support",
+      "suggestedProjectName": "TeraWulf Lake Mariner",
+      "note": "Status update for tracked project TeraWulf Lake Mariner (currently listed with ~360 MW estimated total build and no confirmed MW). TeraWulf's Q2 2026 results (2026-08-05) disclose 102 MW of critical IT capacity now operating at Lake Mariner (up from 81 MW at 6/30/26) following delivery of the CB-3 building in early July 2026 — this also satisfied the conditions for $600M of Google's credit support behind Fluidstack's lease obligations to become effective. This is confirmed operating IT capacity, distinct from the ~360 MW full-buildout figure already on file. Note: this agent's network access to the primary press release was via search-engine summary only (WebFetch blocked to external domains this run); recommend a human confirm the exact press-release wording before upgrading confidence beyond what's stated here.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 102,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Company-stated critical IT capacity operating at Lake Mariner as of early July 2026 (post CB-3 delivery), per Q2 2026 earnings release; confidence set to MEDIUM rather than HIGH because this agent could not directly fetch/confirm the primary document text"
+        }
+      ]
+    },
+    {
+      "url": "https://www.wfyi.org/wfyi-news/2026-08-10/indy-council-advances-pause-on-data-centers-sends-to-commission-for-final-approval",
+      "title": "Indy council advances pause on data centers, sends to commission for final approval",
+      "publisher": "WFYI",
+      "publicationDate": "2026-08-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "voted 23-1 ... to prevent tech companies from building any new data centers through the end of 2027",
+      "suggestedProjectName": "Indianapolis, Indiana (Marion County) — data center moratorium",
+      "note": "SITING RESTRICTION: Indianapolis City-County Council voted 23-1 on 2026-08-10 to approve a moratorium blocking new data center approvals through the end of 2027. It now goes to the Metropolitan Development Commission for final approval, possibly as early as 2026-08-19. Per reporting, the pause would NOT affect three already-approved projects that drew the most local opposition (DC Blox in Warren Township, Metrobloks in Martindale-Brightwood, Sabey in Decatur Township) — none of these appear to be in the tracker's current project list. No currently tracked BEP project is directly sited in Marion County/Indianapolis as far as this agent could determine; flagged as a new restriction jurisdiction to watch for future siting decisions nearby.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.lpm.org/news/2026-08-04/louisville-metro-council-advances-data-center-moratorium",
+      "title": "Louisville Metro Council advances data center moratorium",
+      "publisher": "Louisville Public Media (LPM)",
+      "publicationDate": "2026-08-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Planning and Zoning Committee voted 7-1 to send a data center moratorium proposal to the full council",
+      "suggestedProjectName": "Louisville / Jefferson County, Kentucky — data center moratorium",
+      "note": "SITING RESTRICTION: Louisville Metro Council's Planning & Zoning Committee voted 7-1 on 2026-08-04 to advance a proposed 6-month moratorium on new data center approvals to the full 26-member Metro Council, which would pause new approvals while the city revises zoning rules for the industry. Full council vote was expected around 2026-08-13 and had not occurred as of this submission (2026-08-11) — a human reviewer following up after that date should check whether it passed. No tracked BEP project is currently sited in Louisville/Jefferson County as far as this agent could determine; flagged as a developing restriction to watch.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
