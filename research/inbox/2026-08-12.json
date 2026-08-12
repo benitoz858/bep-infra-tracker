@@ -1,0 +1,84 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.cnbc.com/2026/08/11/riot-platforms-signs-anthropic-deal-as-miners-shift-to-ai-infrastructure-.html",
+      "title": "Riot Platforms strikes deal with Anthropic as bitcoin miners shift focus to AI infrastructure",
+      "publisher": "CNBC",
+      "publicationDate": "2026-08-11",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Riot's Rockdale, Texas, campus will supply 191 megawatts of IT capacity under the terms of the 20-year lease",
+      "suggestedProjectName": "Riot Platforms Rockdale (Anthropic)",
+      "note": "NEW PROJECT, not currently tracked. Anthropic signed a 20-year lease (through June 2048, two 5-year extension options) for 191 MW critical IT capacity at Riot Platforms' Rockdale, TX bitcoin-mining-to-AI conversion campus, staged to 96 MW by Dec 2027 and full 191 MW by June 2028. Reported deal value ~$9.1B (up to $16.1B with extensions) is contracted lease revenue over the term, not construction capex - capex not disclosed. This is Anthropic's third major compute deal in three months (after AMD and Fluidstack/TeraWulf). VERIFICATION CAVEAT: this run's sandbox blocked all outbound WebFetch/curl to external domains, so this excerpt is transcribed from a search-engine summary of the article rather than a direct fetch of the page - please confirm exact wording against the source URL before treating as CONFIRMED.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 191,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "191 MW critical IT capacity stated as the full build-out of a 20-year lease between Anthropic and Riot Platforms at its Rockdale, TX campus"
+        }
+      ]
+    },
+    {
+      "url": "https://www.accessnewswire.com/newsroom/en/oil-gas-and-energy/correction-from-source-fermi-announces-binding-lease-agreement-with-tensorwave-1205913",
+      "title": "Fermi Announces Binding Lease Agreement with TensorWave",
+      "publisher": "AccessNewswire / Fermi America",
+      "publicationDate": "2026-08-10",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "a data center supplied by 222 megawatts of power at Project Matador",
+      "suggestedProjectName": "Fermi America Project Matador (TensorWave)",
+      "note": "NEW PROJECT, not currently tracked. Fermi's first binding customer lease at Project Matador, its energy-and-compute campus in Carson County, TX (near Amarillo): 15-year lease with TensorWave (AMD Instinct GPUs) for 222 MW critical IT capacity, ~$6.5B contracted revenue over the term (not capex - capex not disclosed in this release). Non-binding options could expand the partnership past 650 MW across two more buildings; expansion not yet committed. Delivery expected in stages from H2 2027; lease is subject to project financing/guarantee conditions. Local coverage (NewsChannel 10 / ABC7 Amarillo) frames this as Fermi's first customer after months of financing, leadership and environmental controversy at the site - worth watching for follow-up. VERIFICATION CAVEAT: sandbox network restrictions blocked WebFetch to the primary release this run; excerpt is drawn from a search-engine summary, not a direct page fetch - please confirm wording against the source before treating as CONFIRMED.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 222,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "222 MW critical IT capacity stated in Fermi's binding lease announcement with TensorWave at Project Matador"
+        }
+      ]
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/04/3338166/0/en/Cipher-Digital-Provides-Second-Quarter-2026-Business-Update.html",
+      "title": "Cipher Digital Provides Second Quarter 2026 Business Update",
+      "publisher": "GlobeNewswire / Cipher Digital Inc.",
+      "publicationDate": "2026-08-04",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "signed a 15-year triple-net lease with Amazon Data Services for 216 MW of critical IT load",
+      "suggestedProjectName": "Cipher Black Pearl",
+      "note": "TRACKED PROJECT UPDATE - matches existing project slug cipher-black-pearl-for-aws (Cipher Black Pearl, Wink/Winkler County TX, currently UNDER_CONSTRUCTION, 300MW estimated). Cipher's Q2 2026 update states it began delivering Black Pearl HPC capacity to Amazon Data Services in early August 2026, about two months ahead of schedule, under a 15-year triple-net lease for 216 MW of critical IT load guaranteed by Amazon.com on rent and opex. The tracker's current analyst note for this project describes AWS as tenant at a separate 'Stingray' site (70MW) and lists Black Pearl's 300MW as gross site power from its earlier bitcoin-mining phase - a reviewer should check whether this 216MW Black Pearl/AWS figure is a distinct, larger deal or clarifies/supersedes the existing Stingray note, since it isn't reflected in the current power/analyst-notes fields. omitted projectId because this run could not reach the live API to resolve the DB id (see summary). VERIFICATION CAVEAT: WebFetch to the release was blocked this run; excerpt is from a search-engine summary of the release, not a direct fetch - please confirm exact wording before treating as CONFIRMED.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 216,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "216 MW critical IT load stated in Cipher Digital's Q2 2026 earnings release for the Amazon Data Services lease at Black Pearl"
+        }
+      ]
+    },
+    {
+      "url": "https://www.wfyi.org/wfyi-news/2026-08-10/indy-council-advances-pause-on-data-centers-sends-to-commission-for-final-approval",
+      "title": "Indy council advances pause on data centers, sends to commission for final approval",
+      "publisher": "WFYI (Indianapolis)",
+      "publicationDate": "2026-08-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "voted 23-1 to prevent tech companies from building any new data centers through the end of 2027",
+      "note": "SITING RESTRICTION: Indianapolis City-County Council passed a moratorium 23-1 on Aug 10, 2026, halting new data center permitting citywide through Dec 31, 2027, so a committee can study campus size, building height, sound levels and environmental impacts. Sent to the Metropolitan Development Commission, which could give final approval as soon as Aug 19, 2026 - that vote hasn't happened yet and is worth a follow-up check. Citywide restriction, not tied to a single tracked site; omitted projectId. VERIFICATION CAVEAT: WebFetch to the source was blocked this run; excerpt is from a search-engine summary, not a direct fetch - please confirm wording before treating as CONFIRMED.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.lpm.org/news/2026-08-04/louisville-metro-council-advances-data-center-moratorium",
+      "title": "Louisville Metro Council advances data center moratorium",
+      "publisher": "Louisville Public Media (LPM)",
+      "publicationDate": "2026-08-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "council's Planning and Zoning Committee voted 7-1 Tuesday afternoon to move the proposal forward to the full council",
+      "note": "SITING RESTRICTION (pending, not yet final): Louisville Metro Council's Planning & Zoning Committee voted 7-1 on Aug 4, 2026 to advance a proposed 6-month moratorium on new data center approvals, after the measure had stalled in committee for nearly a year. Full Metro Council is scheduled to vote at its Aug 13, 2026 meeting - outcome unknown as of this run, worth a follow-up check after that date. A separate administration proposal would additionally ban hyperscale data centers larger than 500,000 sq ft; final public hearing on that was Aug 10, 2026. No tracked project directly named; omitted projectId. VERIFICATION CAVEAT: WebFetch to the source was blocked this run; excerpt is from a search-engine summary, not a direct fetch - please confirm wording before treating as CONFIRMED.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
