@@ -1,0 +1,132 @@
+{
+  "submissions": [
+    {
+      "url": "https://lailluminator.com/2026/08/13/meta-data-center-private/",
+      "title": "Meta can keep its data center details private, PSC decides",
+      "publisher": "Louisiana Illuminator",
+      "publicationDate": "2026-08-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Commission voted 3-1 to overrule the judge's order requiring Meta to disclose job projections and electricity needs for Hyperion.",
+      "note": "Tracked project: Meta Hyperion (slug meta-hyperion-louisiana), status UNDER_CONSTRUCTION. Louisiana PSC voted 3-1 on Aug 12, 2026 (Republicans Coussan, Francis, Skrmetta vs. Democrat Lewis; Democrat Campbell absent) to overrule an administrative judge's July 10 order that would have forced Meta to disclose the methodology behind its publicized job-count and electricity-need figures for Hyperion, tied to Meta's request for Entergy to build 7 additional gas plants (5.2 GW) for the campus. This is a transparency/ratepayer-cost regulatory ruling, not a construction restriction, so no SITING RESTRICTION prefix. projectId omitted: I could not reach the live tracker API from this sandbox (network egress blocked) to look up the numeric project id, only the local nightly data/projects.json snapshot which exposes slugs, not ids — please match by slug/name. CAVEAT: both WebFetch and curl were blocked by this sandbox's network egress policy for every external domain tested (including this source), so the excerpt above is reconstructed from search-engine result text, not independently verified verbatim against the live page. Multiple independent outlets (WBRZ, KPLC, Fox8, WWNO/WRKF/KRVS, Louisiana Illuminator) reported the same 3-1 vote and commissioner names, so the substance is well-corroborated even though the exact wording is not.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://fortworthreport.org/2026/08/12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote/",
+      "title": "Data center moratorium takes first steps after Fort Worth City Council's unanimous vote",
+      "publisher": "Fort Worth Report",
+      "publicationDate": "2026-08-12",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Fort Worth City Council voted unanimously to begin the legal process for a proposed 90-day moratorium on new data center development.",
+      "note": "SITING RESTRICTION: Fort Worth City Council voted unanimously on Aug 11, 2026 to begin the legal process toward a 90-day moratorium on new data center construction. This is only the first procedural step — if ultimately adopted, the moratorium would take effect Feb 16, 2027 after required public hearings and a report from the city's Data Center & Infrastructure Committee; zoning applications filed before then stay outside it. Draft staff rules would also bar cryptocurrency mining data centers and confine the use to industrially zoned land. Not tied to any single tracked project — a general municipal policy; no projectId. CAVEAT: WebFetch/curl were blocked by this sandbox's network egress policy for every external domain tested, so the excerpt is reconstructed from search-engine snippets, not independently verified verbatim against the source page.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.wgbh.org/news/local/2026-08-11/court-orders-pause-lowell-data-center-expansion",
+      "title": "Court orders pause on Lowell data center expansion",
+      "publisher": "GBH News",
+      "publicationDate": "2026-08-11",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Judge C. William Barrett granted residents' request to pause installation of four new diesel generators during the ongoing legal challenge.",
+      "note": "SITING RESTRICTION: Massachusetts Superior Court Judge C. William Barrett paused (order reported Aug 10-11, 2026) the Markley Group's plan to add four diesel generators at its 352,000-sq-ft Lowell, MA data center, pending a resident-led lawsuit alleging MassDEP failed to properly weigh air-quality and environmental-justice impacts before permitting. This facility does not appear to match any of the 103 projects in the current tracker snapshot — flagging as a standalone restriction; a reviewer may want to consider adding the Markley Group Lowell facility as a project if it's in scope for this tracker. No projectId given. CAVEAT: WebFetch/curl were blocked by this sandbox's network egress policy for every external domain tested, so the excerpt is reconstructed from search-engine snippets, not independently verified verbatim against the source page.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/05/3339168/0/en/TeraWulf-Reports-Second-Quarter-2026-Results.html",
+      "title": "TeraWulf Reports Second Quarter 2026 Results",
+      "publisher": "GlobeNewswire (TeraWulf Inc.)",
+      "publicationDate": "2026-08-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Completed delivery of CB-3 in early July, increasing revenue-generating critical IT capacity at Lake Mariner to 102 MW.",
+      "note": "Tracked project: TeraWulf Lake Mariner (slug terawulf-lake-mariner-fluidstack-anthropic), status UNDER_CONSTRUCTION, currently tracked confirmedMw=360. Per TeraWulf's Q2 2026 earnings release (primary source), revenue-generating IT capacity at Lake Mariner rose from 81 MW (end of Q1) to 102 MW after CB-3 was delivered in early July 2026; this also satisfied conditions for $600M of Google's credit support for Fluidstack's lease to become effective. An additional 336 MW (CB-4, CB-5) remains under construction, phased delivery through 2H2026 and early 2027. Basis is IT critical-load capacity, not site power draw or the 401 MW Anthropic/Justified figure (that's the separate TeraWulf Justified project already tracked). projectId omitted — no live API access from this sandbox to look up the numeric id; match by slug. CAVEAT: WebFetch/curl were blocked by this sandbox's network egress policy for every external domain tested, so the excerpt is reconstructed from search-engine snippets of the release, not independently verified verbatim against the primary document.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 102,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Stated directly in TeraWulf's Q2 2026 earnings release as revenue-generating critical IT capacity online at Lake Mariner following CB-3 delivery"
+        }
+      ]
+    },
+    {
+      "url": "https://www.texastribune.org/2026/08/03/texas-data-center-project-audit-greg-abbott/",
+      "title": "New Texas data center projects frozen until state audits them",
+      "publisher": "The Texas Tribune",
+      "publicationDate": "2026-08-03",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Abbott ordered a pause on approving new data center projects seeking to connect to the state's power grid until regulators finish an audit.",
+      "note": "SITING RESTRICTION: Gov. Greg Abbott (Aug 3, 2026) directed the PUC and ERCOT to pause approval of new data center grid-interconnection requests pending a 'comprehensive verification and audit' covering water use, tax breaks, cooling technology and ownership for all proposed Texas data centers. Statewide policy, not tied to one project — per your own rule against inferring project links from location, I'm leaving projectId blank rather than attaching this to any single row, even though a large share of this tracker's Texas UNDER_CONSTRUCTION/ANNOUNCED projects (Abilene Clean Campus, Aligned Caprock, Cipher Black Pearl, Crusoe Goodnight, CyrusOne Freestone, Fluidstack Abernathy, IREN Sweetwater/Childress, Microsoft Pecos, Nscale Barstow, QTS-Lancium Hall County, Stargate Milam/Shackelford, TeraWulf Justified, xAI sites, etc.) sit in the state this order covers. FLAGGING DESPITE AGE: this is from Aug 3 (10 days old), outside the usual 24-72h freshness window for this daily run — including it because of its unusually large blast radius across the tracked Texas portfolio, in case an earlier run missed it; the API's URL-based dedup will mark it 'known' harmlessly if already queued. CAVEAT: WebFetch/curl were blocked by this sandbox's network egress policy for every external domain tested, so the excerpt is reconstructed from search-engine snippets, not independently verified verbatim against the source page.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.governor.ny.gov/executive-order/no-62-establishing-temporary-moratorium-data-centers-new-york-while-state-develops",
+      "title": "No. 62: Establishing a Temporary Moratorium on Data Centers in New York While the State Develops Higher Standards for Data Center Development and Benefits Blueprint to Support Localities",
+      "publisher": "Office of Governor Kathy Hochul, New York State",
+      "publicationDate": "2026-07-14",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "Immediately pausing discretionary state environmental permits for any data center capable of using 50 megawatts of electricity or more.",
+      "note": "SITING RESTRICTION: Gov. Hochul's Executive Order 62 (signed July 14, 2026) immediately paused new NYS DEC discretionary environmental permits for data centers able to use 50 MW or more, pending a Generic Environmental Impact Statement Hochul says will take roughly a year; exempts manufacturing/medical/education/research facilities and any DEC application already deemed complete before July 14. Described as the first statewide data center permitting moratorium in the US. The only New York project in this tracker is TeraWulf Lake Mariner (Barker, NY), already UNDER_CONSTRUCTION and likely grandfathered under the pre-July-14 carve-out, but a reviewer should confirm rather than assume — leaving projectId blank. FLAGGING DESPITE AGE: signed July 14 (about a month before this run), outside the usual 24-72h freshness window — including it given it's the first-of-its-kind statewide restriction in the country, in case an earlier daily run missed it; dedup will mark it 'known' harmlessly if already queued. CAVEAT: WebFetch/curl were blocked by this sandbox's network egress policy for every external domain tested, so the excerpt is reconstructed from search-engine snippets, not independently verified verbatim against the executive order text itself.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+      "title": "Building AI infrastructure with the Effingham County community",
+      "publisher": "OpenAI",
+      "publicationDate": "2026-07-22",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Georgia Power will provide the data center with 3.2 gigawatts of energy, delivered in phases from 2028 to 2032.",
+      "suggestedProjectName": "OpenAI Project Camellia (Effingham County, Georgia)",
+      "note": "New project, not present in the current 103-project tracker snapshot: OpenAI's 'Project Camellia,' a four-building campus at the Savannah Gateway Industrial Hub (~2,600 acres) near Rincon, Effingham County, GA, reported at roughly $20B. Georgia Power to deliver 3.2 GW in phases 2028-2032 — this is site/grid power, not IT load; IT capacity was not disclosed in the release, so leave that field blank rather than assuming it equals site power. OpenAI states it is funding all infrastructure/electric-service costs itself (no ratepayer subsidy claimed) plus $80M in community benefits and receives a 50% property-tax abatement for 15 years. FLAGGING DESPITE AGE: announced July 22, 2026 (about 3 weeks before this run) and clears the >=100MW/>=$1B bar easily, yet doesn't appear in today's live snapshot — flagging in case a prior daily run missed it; dedup will mark it 'known' harmlessly if it's already queued. CAVEAT: WebFetch/curl were blocked by this sandbox's network egress policy for every external domain tested, so the excerpt is reconstructed from search-engine snippets, not independently verified verbatim against the primary OpenAI post.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 3200,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Stated directly by OpenAI: Georgia Power will deliver 3.2 GW to the campus in phases 2028-2032 (site/grid power basis, not IT load)"
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 20000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Widely reported by news outlets covering OpenAI's announcement as a $20 billion project; not a figure seen stated verbatim by OpenAI itself in the material reviewed, so treated as an estimate rather than confirmed"
+        }
+      ]
+    },
+    {
+      "url": "https://www.energy.gov/articles/energy-department-announces-partnership-expand-reliable-affordable-energy-access-and-power",
+      "title": "Energy Department Announces Partnership to Expand Reliable, Affordable Energy Access and Power America's AI Future in Western Kentucky",
+      "publisher": "U.S. Department of Energy",
+      "publicationDate": "2026-07-29",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "NextEra Energy plans to develop two gigawatts of new grid-connected natural gas-fired generation to support a new 1.8 GW campus.",
+      "suggestedProjectName": "Paducah DOE Site AI Campus (Brookfield / NextEra Energy)",
+      "note": "New project, not present in the current 103-project tracker snapshot: DOE partnership with Brookfield (developer/operator) and NextEra Energy (dedicated power) to build a data center campus on ~785 leased acres of DOE's Paducah, KY former gaseous-diffusion site, alongside Big Rivers Electric, Jackson Purchase Energy Cooperative and Paducah Power System. NextEra to add 2 GW of new gas-fired generation plus up to 2.6 GW of battery storage to support a 1.8 GW AI/HPC campus; DOE and NextEra describe more than $100B of announced private investment; construction targeted for completion in 2031. This is site power/generation, not IT load — IT capacity wasn't disclosed. FLAGGING DESPITE AGE: announced July 29, 2026 (about 2 weeks before this run) and clears the >=100MW/>=$1B bar by a wide margin, yet is absent from today's live snapshot — flagging in case a prior run missed it; dedup will mark it 'known' harmlessly if already queued. CAVEAT: WebFetch/curl were blocked by this sandbox's network egress policy for every external domain tested, so the excerpt is reconstructed from search-engine snippets, not independently verified verbatim against the primary DOE release.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1800,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Stated by DOE/NextEra as the AI/HPC campus's target capacity, backed by 2 GW of new gas generation plus up to 2.6 GW of battery storage (site power basis)"
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 100000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "DOE and multiple outlets describe it as 'more than $100 billion' of announced private investment; treated as an approximate rounded figure rather than a single stated exact number"
+        }
+      ]
+    }
+  ]
+}
