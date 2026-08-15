@@ -1,0 +1,128 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/05/3339168/0/en/terawulf-reports-second-quarter-2026-results.html",
+      "title": "TeraWulf Reports Second Quarter 2026 Results",
+      "publisher": "TeraWulf Inc.",
+      "publicationDate": "2026-08-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "102 MW of revenue-generating critical IT capacity online at Lake Mariner, with an additional 336 MW under construction",
+      "note": "Update to the tracked project 'TeraWulf Lake Mariner' (currently listed with 360 MW estimated, no confirmed figure). Q2 2026 earnings give the first confirmed live IT-load figure: 102 MW online and revenue-generating under the Fluidstack lease, plus 336 MW under construction across CB-4/CB-5 (delivery of CB-4 said to unlock $600M of Google's credit support for Fluidstack's obligations). Basis is critical IT load, not site/generation power. LIMITATION: the live tracker API (tracker.bepresearch.com) and WebFetch to external sites were both blocked by this session's network egress policy, so this excerpt is reconstructed from a search-engine summary of the release rather than a direct fetch of the primary URL — please confirm exact wording against the release or TeraWulf's 10-Q before treating it as verbatim.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 102,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Company Q2 2026 earnings release states 102 MW of revenue-generating critical IT capacity online at Lake Mariner; wording not independently re-verified against primary source this session"
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 336,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Same release states 336 MW under construction across CB-4/CB-5 at Lake Mariner"
+        }
+      ]
+    },
+    {
+      "url": "https://www.texastribune.org/2026/08/14/texas-data-center-approval-pause-ercot-power-grid/",
+      "title": "Texas will audit up to 300 projects, mostly data centers, after Gov. Greg Abbott's order",
+      "publisher": "The Texas Tribune",
+      "publicationDate": "2026-08-14",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "about 250 to 300 projects, most of which are data centers",
+      "note": "SITING RESTRICTION: Following Gov. Abbott's Aug 3, 2026 directive to PUCT/ERCOT to audit all data center projects in the interconnection queue before any new ones are approved ('Any project that fails to comply...must be denied connection to the Texas grid'), this Aug 14 follow-up reports the audit's scope: roughly 250-300 projects, most of them data centers, statewide. This is a state-level connection pause, not a local moratorium, and could affect grid-dependent phases of several Texas projects already tracked here (Stargate Milam County, Stargate Wisconsin, Stargate Shackelford County, Abilene Clean Campus, Aligned Caprock, Cipher Black Pearl, Crusoe Goodnight, Fluidstack Abernathy, IREN Childress/Sweetwater, QTS-Lancium Hall County, CyrusOne Freestone) to the extent they still need new/expanded ERCOT interconnection — none of those project entries currently reflect this. Not yet in tracker as a restriction. LIMITATION: WebFetch to external sites was blocked this session; quote reconstructed from search summary, verify against the source before use.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://fortworthreport.org/2026/08/12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote/",
+      "title": "Data center moratorium takes first steps after Fort Worth City Council's unanimous vote",
+      "publisher": "Fort Worth Report",
+      "publicationDate": "2026-08-12",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Fort Worth City Council unanimously approved the first move toward implementing a 90-day moratorium on the construction of data centers",
+      "note": "SITING RESTRICTION: Fort Worth City Council voted unanimously (~Aug 11, 2026) to begin a 90-day moratorium on new data center construction, intended to take effect early next year while the city studies development regulations and resource impact. Not yet in tracker. LIMITATION: WebFetch to external sites was blocked this session; quote reconstructed from search summary, verify against the source before use.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.lpm.org/news/2026-08-13/louisville-metro-council-approves-data-center-moratorium-as-new-proposal-sparks-controversy",
+      "title": "Louisville Metro Council approves data center moratorium as new proposal sparks controversy",
+      "publisher": "Louisville Public Media",
+      "publicationDate": "2026-08-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "voted 24 to 1 Thursday night to approve a moratorium on new data center construction in Louisville",
+      "note": "SITING RESTRICTION: Louisville Metro Council passed a moratorium on new data center approvals, 24-1, blocking city planners from approving new proposals for six months or until comprehensive zoning rules are adopted. Not yet in tracker. LIMITATION: WebFetch to external sites was blocked this session; quote reconstructed from search summary, verify against the source before use.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://news.azpm.org/p/azpmnews/2026/8/13/230837-pima-county-staff-will-develop-moratorium-for-data-centers/",
+      "title": "Pima County staff will develop moratorium for data centers",
+      "publisher": "Arizona Public Media (AZPM)",
+      "publicationDate": "2026-08-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The vote on the moratorium was 3-2 in favor of the proposal",
+      "note": "SITING RESTRICTION: Pima County Board of Supervisors voted 3-2 to direct staff to draft a four-month moratorium freezing new data center permits/processes in unincorporated Pima County, pending a zoning code text amendment. Not yet in tracker. LIMITATION: WebFetch to external sites was blocked this session; quote reconstructed from search summary, verify against the source before use.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+      "title": "Building AI infrastructure with the Effingham County community",
+      "publisher": "OpenAI",
+      "publicationDate": "2026-07-22",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "a 25-year agreement with Georgia Power for 3.2 gigawatts of power, delivered in phases between 2028 and 2032",
+      "suggestedProjectName": "OpenAI Project Camellia (Effingham County, Georgia)",
+      "note": "New project, not currently in the tracker. 'Project Camellia': ~1,400-acre AI data center campus at the Savannah Gateway Industrial Hub, Effingham County, GA. Power basis is a 25-year, 3.2 GW site-power agreement with Georgia Power (Southern Co.), phased 2028-2032 — this is contracted grid capacity, not a confirmed IT-load figure; flag power_mw_basis accordingly if entered. Capex reported as $20B+ initial, $30B+ for full build-out (company/press estimate, not itemized — treat as estimated, not confirmed). Announced ~July 22, 2026, so outside the usual 24-72h window, but flagged because a project of this scale has no tracker entry at all. LIMITATION: WebFetch to openai.com was blocked this session; excerpt reconstructed from search summary, verify exact wording and date against the primary URL before use.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 3200,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "25-year Georgia Power agreement for 3.2 GW delivered in phases 2028-2032; this is site/grid power, not a stated IT-load figure"
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 20000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Reported minimum initial capital investment from company/press coverage; full build-out reported at $30B+"
+        }
+      ]
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/meta-plans-917bn-gigawatt-scale-data-center-in-alberta-canada/",
+      "title": "Meta plans $9.17bn gigawatt-scale data center in Alberta, Canada",
+      "publisher": "Data Center Dynamics",
+      "publicationDate": "2026-07-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "expecting to invest CA$13 billion (US$9.17bn) in the project, which could be scaled up to 1.8GW of capacity",
+      "suggestedProjectName": "Meta Sturgeon County (Alberta, Canada)",
+      "note": "New project, not currently in the tracker (only Wonder Valley and eStruxture CAL-3 are tracked in Alberta). Meta's first Canadian data center, in Sturgeon County near Edmonton, announced July 6-9 2026 alongside Alberta Premier Danielle Smith. Initial phase reported around 1 GW, CA$13B (~US$9.17B) investment, scalable to 1.8 GW; power basis (site power vs. confirmed IT load) is not clearly distinguished in this secondary coverage — check Meta's own datacenters.atmeta.com post before entering a figure. Outside the usual 24-72h window but flagged as a tracker gap given the scale. LIMITATION: WebFetch to external sites was blocked this session; excerpt reconstructed from search summary, verify against the primary Meta announcement before use.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Press reports an initial ~1GW capacity scalable to 1.8GW; basis (site vs IT load) not stated in secondary coverage"
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 9170000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Company-stated CA$13B (~US$9.17B) investment figure as reported by Data Center Dynamics"
+        }
+      ]
+    }
+  ]
+}
