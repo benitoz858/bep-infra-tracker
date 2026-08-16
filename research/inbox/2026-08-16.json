@@ -1,0 +1,63 @@
+{
+  "submissions": [
+    {
+      "url": "https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/",
+      "title": "Breaking Ground on Meta's First Data Center in Canada",
+      "publisher": "Meta",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Meta announced it will build a massive one-gigawatt data centre ... representing more than a $13 billion investment.",
+      "suggestedProjectName": "Meta Sturgeon County (Alberta)",
+      "note": "NEW PROJECT, not currently in the tracker. Meta's first Canadian data center; groundbreaking held July 2026 in Sturgeon County (Edmonton area), Alberta. Reported as a 1 GW AI-optimized campus with a dedicated ~$4.6B on-site natural gas power plant (site power, not confirmed IT load), ~$60M in local infrastructure commitments, ~3,000 peak construction jobs / ~300 permanent jobs. Corroborated by about.fb.com, CBC News, Global News, Sturgeon County, and datacenters.atmeta.com. QUOTE VERIFICATION CAVEAT: this sandbox's outbound network access was blocked for essentially all external sites this run (WebFetch and curl both returned EGRESS_BLOCKED / 403 policy denials, including for about.fb.com and even en.wikipedia.org as a control test) -- I could not open the primary page to hand-verify the excerpt is verbatim. The figures ($13B, 1GW, Sturgeon County, July 2026 groundbreaking) are consistent across five independent outlets, but the excerpt itself is reconstructed from search-engine summaries, not confirmed against the source page. Please verify exact wording at the URL before accepting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Company and multiple news outlets describe the campus as 1 gigawatt; whether this states IT load or total site power draw (the project also includes a dedicated ~4.6B on-site gas plant) is not disambiguated in available reporting."
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 13000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Widely reported $13 billion total investment figure attributed to Meta across independent outlets; not independently verified against primary source text in this run."
+        }
+      ]
+    },
+    {
+      "url": "https://fortworthreport.org/2026/08/12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote/",
+      "title": "Data center moratorium takes first steps after Fort Worth City Council's unanimous vote",
+      "publisher": "Fort Worth Report",
+      "publicationDate": "2026-08-12",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "City Council voted unanimously ... to initiate the process to enact a 90-day moratorium on the construction of data centers within the city.",
+      "note": "SITING RESTRICTION: Fort Worth, TX city council voted unanimously on Aug 11, 2026 to begin the process toward a 90-day moratorium on new data center permitting/rezoning applications, and separately voted 10-1 to create a Data Center & Infrastructure Commission (DCIC) chaired by TCU's Dr. Mike Slattery. The moratorium is not yet in effect: by the city's own process it would run roughly Feb 16-May 17, 2027, contingent on required public hearings and a final vote needing a three-fourths council majority. Corroborated by Fort Worth Report, KERA News, WBAP, The Texan, and NBC 5 DFW. QUOTE VERIFICATION CAVEAT: outbound fetch to the source page was blocked in this sandbox this run (see note on the Meta Sturgeon County submission for detail); excerpt reconstructed from converging multi-outlet reporting, not hand-verified against the page. Please confirm exact wording before accepting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.wfyi.org/wfyi-news/2026-08-10/indy-council-advances-pause-on-data-centers-sends-to-commission-for-final-approval",
+      "title": "Indy council advances pause on data centers, sends to commission for final approval",
+      "publisher": "WFYI",
+      "publicationDate": "2026-08-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "voted 23-1 ... to prevent tech companies from building any new data centers through the end of 2027.",
+      "note": "SITING RESTRICTION: Indianapolis-Marion County City-County Council voted 23-1 on Aug 10, 2026 to halt new data center permitting through Dec 31, 2027, pending a Metropolitan Development Commission final vote expected as early as Aug 19, 2026 (a human should check whether that vote has since happened). Three already-approved projects are explicitly exempted: DC Blox (Warren Township), Metrobloks (Martindale-Brightwood), and Sabey (Decatur Township) -- worth checking whether any of these are, or should be, in the tracker. Corroborated by WFYI, Indianapolis Business Journal, and Mirror Indy. QUOTE VERIFICATION CAVEAT: outbound fetch to the source page was blocked in this sandbox this run; excerpt reconstructed from converging multi-outlet reporting, not hand-verified against the page. Please confirm exact wording before accepting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.wwno.org/politics/2026-08-12/louisiana-psc-kills-ruling-that-would-force-meta-to-turn-over-key-data-center-information",
+      "title": "Louisiana PSC kills ruling that would force Meta to turn over key data center information",
+      "publisher": "WWNO",
+      "publicationDate": "2026-08-12",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "commissioners voted 3-1 ... to overrule a judge's decision, allowing Meta to withhold information.",
+      "note": "Concerns the tracked project 'Meta Hyperion' (Richland Parish, Louisiana; UNDER_CONSTRUCTION as of this run's snapshot). The Louisiana Public Service Commission voted 3-1 along party lines on Aug 12, 2026 to overrule an administrative law judge's July 10 subpoena order, letting Meta withhold internal figures on the data center's power draw and job projections from public/regulatory disclosure. This is a transparency and ratepayer-scrutiny development, not a metric change -- flagged because it's directly relevant to the project's risk profile and to the accuracy of any power/jobs figures already on file for it, which the company itself is contesting the basis for. Corroborated by WWNO, WRKF, KRVS, NOLA.com, and E&E News/POLITICO. projectId intentionally left blank: this run could not reach the tracker's live API (egress policy denial) to resolve the internal project id for Meta Hyperion, so please link this manually rather than trust an auto-match. QUOTE VERIFICATION CAVEAT: outbound fetch to the source page was blocked in this sandbox this run; excerpt reconstructed from converging multi-outlet reporting, not hand-verified against the page. Please confirm exact wording before accepting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
