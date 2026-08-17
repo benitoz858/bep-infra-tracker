@@ -1,0 +1,132 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.kshb.com/news/local-news/data-centers/northland-ai-data-center-withdraws-bond-application-with-port-kc",
+      "title": "Northland AI data center withdraws bond application with Port KC",
+      "publisher": "KSHB",
+      "publicationDate": "2026-06-05",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Project Blitz has been withdrawn",
+      "projectId": "lambda-kansas-city",
+      "note": "AUDIT: tracker records status=UNDER_CONSTRUCTION, expectedOpening=2026-06-30 (unqualified). Source says the project's Port KC bond application was withdrawn (~June 2026, exact date approximate — this session could not WebFetch the article to confirm) after utility Evergy could not deliver full power supply by the planned June 1, 2026 energization date (full supply not expected until late summer 2026); separately, Missouri Independent (2026-06-12) reports the project's partners are in arbitration over alleged cost overruns, delays, and financing/management failures. This is materially worse than a routine delay. Recommend downgrading confidence in status=UNDER_CONSTRUCTION and expectedOpening=2026-06-30, and re-verifying whether the project is stalled or being restructured rather than simply late.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-abilene",
+      "title": "OpenAI Stargate Abilene — Epoch AI Data Centers directory",
+      "publisher": "Epoch AI",
+      "publicationDate": "2026-08-02",
+      "sourceType": "INDUSTRY_REPORT",
+      "excerpt": "supported by 421 MW of IT power",
+      "projectId": "stargate-abilene-texas",
+      "note": "AUDIT: tracker's confirmedMw=200 (Oracle's own operator statement, April 2026: 'In Abilene, 200MW is already operational') remains the most defensible confirmed figure and should NOT be overwritten. However Epoch AI's live directory now shows an estimated 421 MW IT power as of ~2026-08-02 (up from the 300 MW total-facility-power estimate that was already superseded on 2026-08-01). This is an analyst/satellite-derived estimate, not an operator statement. Recommend adding this as a LOW-confidence supplementary metrics.csv row rather than touching the confirmed column, pending a fresh Oracle/OpenAI statement. WebFetch to epoch.ai was blocked by this session's network policy; figure corroborated via WebSearch indexing of the live page only.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 421,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Epoch AI satellite-derived directory estimate as of ~2026-08-02. Analyst estimate, not operator-confirmed — do not use to overwrite the existing operator-confirmed 200MW figure (Oracle, April 2026). Basis: IT power."
+        }
+      ]
+    },
+    {
+      "url": "https://dcmag.fr/le-prefet-de-seine-et-marne-a-valide-le-projet-campus-ia-de-fouju-14-gw-et-50-milliards-e/",
+      "title": "Le préfet de Seine-et-Marne a validé le projet Campus IA de Fouju (1,4 GW et 50 milliards €)",
+      "publisher": "DCMag",
+      "publicationDate": "2026-07-29",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Le préfet de Seine-et-Marne a validé le projet Campus IA de Fouju",
+      "projectId": "campus-ia-fouju-ile-de-france",
+      "note": "AUDIT: tracker status=PERMITTING (public inquiry pending). Source says: by decree n° 2026-07/DCSE/BPE/E dated 2026-07-29, the prefect of Seine-et-Marne formally authorized the Campus IA project (Campus AI + RTE) following the inquiry commission's favorable report (early July 2026). First-phase construction is now scheduled to start September 2026, service entry targeted 2028, later phases 2030-2033 and 2034-2038. Recommend moving status off PERMITTING now that the decision has been published. Primary corroboration: Préfecture de Seine-et-Marne decisions page, https://www.seine-et-marne.gouv.fr/Publications/Enquetes-publiques/FOUJU-PROJET-CAMPUS-IA/DECISIONS (WebFetch to both seine-et-marne.gouv.fr and dcmag.fr was blocked this session; corroborated via WebSearch snippets citing both, plus next.ink). Note a coalition of environmental associations has announced legal proceedings against the authorization, so 'approved' does not mean litigation risk is closed — worth a caveat in the note field.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://es.benzinga.com/news/spain/stocks/merlin-licencia-centro-datos-1-4-gw-100826",
+      "title": "Merlin espera la licencia para arrancar su mayor centro de datos de 1,4 GW",
+      "publisher": "Benzinga España",
+      "publicationDate": "2026-08-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "su mayor centro de datos de 1,4 GW",
+      "projectId": "edged-merlin-extremadura-campuses",
+      "note": "AUDIT: tracker records status=ANNOUNCED, estimatedMw=2000 (both campuses combined), capex=null, expectedOpening=null, 'no construction, tenant, capex or timeline confirmed.' Source says the Navalmoral de la Mata sub-site ALONE is now designed for up to 1.4GW IT capacity (initial 200MW phase + later 1.2GW expansion) — Merlin CEO Ismael Clemente says construction on the first 20MW/€400M phase could start end-September 2026 pending a building license, with operation ~2.5 years after construction starts (~early 2029). Corroborating: Cope.es 2026-06-22 (https://www.cope.es/emisoras/extremadura/caceres-provincia/caceres/noticias/merlin-pone-fecha-centro-datos-navalmoral-obras-arrancar-septiembre-20260622_3388748.html) and El Economista 2026-06 (https://www.eleconomista.es/energia/noticias/13981368/06/26/el-centro-de-datos-de-navalmoral-estaria-en-funcionamiento-en-dos-anos-y-medio-si-las-obras-arrancan-en-septiembre.html). Also, Junta de Extremadura published Navalmoral's integrated environmental authorization application for public consultation on 2026-05-22 (govt filing) — real permitting activity, not pure pre-announcement. Valdecaballeros (the second campus) shows no comparable update, still aspirational. Recommend splitting the combined row's basis or adding a Navalmoral-specific capex/timeline; do not simply raise the combined estimatedMw without checking whether Valdecaballeros is still ~1GW or also revised. WebFetch to all cited Spanish outlets was blocked this session; corroborated via WebSearch across 3+ independent Spanish outlets.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1400,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Navalmoral de la Mata sub-site alone (one of the two Edged-Merlin Extremadura campuses) now reported at up to 1.4GW IT capacity design (200MW initial + 1.2GW expansion), per Spanish trade press citing Merlin. This is a single-site figure, not the combined-campus total. Still a design target pending construction license — not confirmed/operating."
+        }
+      ]
+    },
+    {
+      "url": "https://baxtel.com/news/sb-energy-to-build-and-operate-openai-s-1-2gw-stargate-data-center-in-milam-county-texas",
+      "title": "SB Energy to Build and Operate OpenAI's 1.2GW Stargate Data Center in Milam County, Texas",
+      "publisher": "Baxtel",
+      "publicationDate": "2026-01-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "SB Energy to Build and Operate OpenAI's 1.2GW Stargate Data Center in Milam County, Texas",
+      "projectId": "stargate-milam-county",
+      "note": "AUDIT: tracker deliberately leaves power blank ('Site confirmed by OpenAI; no per-site capacity published'). Source says a 1.2GW figure has been publicly disclosed since 2026-01-09 (OpenAI/SoftBank/SB Energy partnership announcement, https://openai.com/index/stargate-sb-energy-partnership/ and https://www.prnewswire.com/news-releases/openai-and-softbank-group-partner-with-sb-energy-to-build-and-operate-next-generation-ai-data-centers-to-advance-stargate-302657541.html) and is still being cited by DataCenterDynamics as of late July 2026. This has been silently blank in the tracker for 7+ months despite public disclosure. Recommend adding estimatedMw=1200 — basis (IT load vs site power) is not explicit in the release ('build and operate' infrastructure framing), so flag for basis clarification before treating as confirmed. WebFetch to openai.com, prnewswire.com, and baxtel.com was blocked this session; quote corroborated via WebSearch title-indexing of the Baxtel article, itself reporting the primary OpenAI/PRNewswire release.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1200,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "OpenAI/SoftBank/SB Energy's own Jan 2026 partnership announcement names a 1.2GW figure for the Milam County site ('build and operate' infrastructure framing). IT-load vs site-power basis not explicitly broken out in available reporting; primary-source text not directly fetched this session (network-blocked), hence MEDIUM not HIGH."
+        }
+      ]
+    },
+    {
+      "url": "https://www.thenationalnews.com/business/2025/10/16/g42-unit-khazna-targets-full-build-out-of-1gw-stargate-uae-project-in-three-years/",
+      "title": "Stargate UAE progress: Abu Dhabi's huge AI campus begins to take shape",
+      "publisher": "The National",
+      "publicationDate": "2025-10-16",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Khazna targets full build-out of 1GW Stargate UAE project in three years",
+      "projectId": "stargate-uae-abu-dhabi",
+      "note": "AUDIT: tracker's expectedOpeningDate=2026-12-31 implies the full 1GW cluster is online by end of 2026. Source says Khazna (G42) targets full 1GW build-out over three years from ~Oct 2025 (i.e. ~2028); only the first 200MW phase is targeted for Q3 2026 completion, corroborated by G42's own construction-update press release (https://www.prnewswire.com/news-releases/g42-provides-update-on-construction-of-stargate-uae-ai-infrastructure-cluster-302586430.html, ~Dec 2025). Recommend correcting expectedOpeningDate to reflect the phase-1 (200MW, ~Q3 2026) vs full-cluster (~2028) distinction, rather than implying the full 1GW is due by 2026-12-31. WebFetch to thenationalnews.com, prnewswire.com and g42.ai was blocked this session; corroborated via WebSearch across multiple outlets including the G42 press release title/lede.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://vision2030.ai/analysis/humain-data-centers-riyadh-dammam-status/",
+      "title": "HUMAIN Data Centers Riyadh & Dammam: Open Yet?",
+      "publisher": "vision2030.ai",
+      "publicationDate": "2026-07-31",
+      "sourceType": "INDUSTRY_REPORT",
+      "excerpt": "no announcement, filing or credible report confirms either site is operational",
+      "projectId": "humain-ai-factories-phase-1-riyadh-dammam",
+      "note": "AUDIT: tracker's expectedOpeningDate=2026-06-30 (matching HUMAIN's own Q2 2026 go-live target) has now lapsed by ~7 weeks with status still UNDER_CONSTRUCTION. Source (analysis aggregating DataCenterDynamics ~2026-06-18 and Enterprise AM ~2026-07-24 trade-press enquiries) says HUMAIN has twice declined to confirm delivery status when directly asked. Recommend flagging expectedOpeningDate as stale/unconfirmed rather than carrying the lapsed 2026-06-30 date at face value — no evidence found for either an OPERATIONAL status change or a confirmedMw figure yet. WebFetch to vision2030.ai and the underlying DCD/Enterprise AM articles was blocked this session; corroborated via WebSearch only.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/oracle-to-deploy-up-to-245gw-of-bloom-fuel-cells-at-new-mexico-data-center/",
+      "title": "Oracle to deploy up to 2.45GW of Bloom fuel cells at New Mexico data center",
+      "publisher": "DataCenterDynamics",
+      "publicationDate": "2026-04-27",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Oracle to deploy up to 2.45GW of Bloom fuel cells at New Mexico data center",
+      "projectId": "stargate-dona-ana-county",
+      "note": "AUDIT: tracker deliberately leaves power blank for this site ('no per-site capacity was published, so power is left blank rather than guessed') — that remains CORRECT for IT load, which is still genuinely undisclosed; do not fill IT load from this source. But a GENERATION-capacity figure now exists and is missing from the record: Oracle/BorderPlex/Bloom Energy announced 2026-04-27 (primary source: https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/) that up to 2.45GW of Bloom solid-oxide fuel cells will be the site's sole power source, operating as a single behind-the-meter microgrid, replacing a prior gas-turbine plan. Recommend recording this explicitly as a GENERATION-basis metric, clearly labeled and separate from IT load, specifically to avoid the site-power-vs-IT-load conflation this audit targets — 2.45GW must never become this project's headline 'power' figure without the generation caveat attached. WebFetch to oracle.com and datacenterdynamics.com was blocked this session; corroborated via WebSearch across DCD, American Public Power Association, and Oracle's own newsroom URL/title.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 2450,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Oracle/BorderPlex/Bloom Energy's own April 2026 announcement: up to 2.45GW of Bloom fuel-cell GENERATION capacity (behind-the-meter microgrid) for the whole Project Jupiter campus, replacing a prior gas-turbine plan. Explicitly NOT an IT-load figure — IT load remains undisclosed. Primary-source text not directly fetched this session (network-blocked), hence MEDIUM not HIGH despite being a company announcement per underlying reporting."
+        }
+      ]
+    }
+  ]
+}
