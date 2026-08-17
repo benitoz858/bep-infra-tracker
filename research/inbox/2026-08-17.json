@@ -1,0 +1,106 @@
+{
+  "submissions": [
+    {
+      "url": "https://news.microsoft.com/source/asia/features/microsofts-newest-india-datacenter-region-goes-live-to-power-the-countrys-ai-economy-and-enable-frontier-firms/",
+      "title": "Microsoft's newest India datacenter region goes live to power the country's AI economy and enable Frontier Firms",
+      "publisher": "Microsoft",
+      "publicationDate": "2026-08-06",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Microsoft officially opened its India South Central cloud region in Hyderabad, its largest data center hub in the country.",
+      "suggestedProjectName": "Microsoft Hyderabad",
+      "note": "STATUS CHANGE: tracked project 'Microsoft Hyderabad' (slug microsoft-india-south-central-hyderabad, currently UNDER_CONSTRUCTION) appears to have gone live/opened Aug 6 2026 per Microsoft's own announcement, ahead of the 'going live mid-2026' language already on file. No MW figure surfaced in this search. projectId omitted: this session's live API access to tracker.bepresearch.com was blocked by network egress policy (confirmed via proxy status as a 403 policy denial, not transient), so I could not pull real project IDs and am matching by name/slug instead for the reviewer to link. Excerpt is a close paraphrase from search-engine synthesis of the source, not independently fetched verbatim (WebFetch/curl were also blocked network-wide this session) — please confirm exact wording against the source URL before promoting.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://investors.terawulf.com/news-events/press-releases/detail/144/terawulf-reports-second-quarter-2026-results",
+      "title": "TeraWulf Reports Second Quarter 2026 Results",
+      "publisher": "TeraWulf Inc.",
+      "publicationDate": "2026-08-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Finishing CB-3 in early July lifted Lake Mariner's revenue-generating IT capacity to 102 MW, triggering $600 million of Google credit support.",
+      "suggestedProjectName": "TeraWulf Lake Mariner",
+      "note": "STATUS UPDATE: tracked project 'TeraWulf Lake Mariner' (slug terawulf-lake-mariner-fluidstack-anthropic, UNDER_CONSTRUCTION, estimatedMw 360) — Q2 2026 earnings release states 102 MW of the contracted ~360 MW Fluidstack lease is now energized/revenue-generating (CB-3 complete), with CB-4 in commissioning and CB-5 targeted early 2027. IT-load basis per company release. projectId omitted for the same network-access reason as the Microsoft Hyderabad finding above; reviewer should link by slug. Excerpt is a close paraphrase from search aggregation, not independently verified verbatim this session.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 102, "unit": "MW", "confidenceLevel": "MEDIUM", "methodology": "Company Q2 2026 earnings release states 102 MW of revenue-generating critical IT capacity operating at Lake Mariner following CB-3 completion in early July 2026; not independently verified verbatim this session."}
+      ]
+    },
+    {
+      "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+      "title": "Building AI infrastructure with the Effingham County community",
+      "publisher": "OpenAI",
+      "publicationDate": "2026-07-22",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Project Camellia is a 3.2-gigawatt AI data center campus in Effingham County, Georgia, representing at least $20 billion in investment.",
+      "suggestedProjectName": "OpenAI Project Camellia (Effingham County, Georgia)",
+      "note": "NEW PROJECT: not found in the current tracked list (checked by name/keyword against the 2026-08-17 data snapshot). OpenAI's first self-designed-and-built data center; 4 buildings on ~101 acres within the Savannah Gateway Industrial Hub, power delivered by Georgia Power in phases 2028-2032. Basis for the 3.2 GW figure (IT load vs. site/delivered power) not specified in the company summary I could access — flagged MEDIUM for that reason. Excerpt is a close paraphrase from search aggregation, not independently fetched verbatim this session (WebFetch was network-blocked for this session, including openai.com).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 3200, "unit": "MW", "confidenceLevel": "MEDIUM", "methodology": "OpenAI states 3.2 GW campus capacity; IT-load vs. site-power basis not specified in available summary."},
+        {"metricType": "CAPEX_USD", "numericValue": 20000000000, "unit": "USD", "confidenceLevel": "MEDIUM", "methodology": "OpenAI states 'at least $20 billion' in private investment for the campus."}
+      ]
+    },
+    {
+      "url": "https://fortworthreport.org/2026/08/12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote/",
+      "title": "Data center moratorium takes first steps after Fort Worth City Council's unanimous vote",
+      "publisher": "Fort Worth Report",
+      "publicationDate": "2026-08-12",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Fort Worth City Council unanimously approved the first step toward a 90-day moratorium on new data center construction.",
+      "suggestedProjectName": "Fort Worth, TX — proposed 90-day data center moratorium",
+      "note": "SITING RESTRICTION: Fort Worth City Council took its first procedural vote (Aug 11 2026, unanimous) toward a 90-day moratorium on new data center construction/permitting; a full council vote and public hearings are still required before it takes effect (targeted ~Feb 16 2027 per reporting). This is citywide policy, not tied to one project, so per the 'no inferring links from location strings' rule I did not guess a project link — a human should decide which Fort Worth-area projects, if any, this affects. Excerpt is a close paraphrase from search aggregation, not independently fetched verbatim this session.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.lpm.org/news/2026-08-13/louisville-metro-council-approves-data-center-moratorium-as-new-proposal-sparks-controversy",
+      "title": "Louisville Metro Council approves data center moratorium as new proposal sparks controversy",
+      "publisher": "Louisville Public Media (LPM)",
+      "publicationDate": "2026-08-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Louisville Metro Council approved a six-month moratorium on new data center proposals by a vote of 24 to 1.",
+      "suggestedProjectName": "Louisville, KY (Jefferson County) — six-month data center moratorium",
+      "note": "SITING RESTRICTION: Louisville Metro Council passed a 6-month moratorium (24-1) on new data center proposals on Aug 13 2026, blocking approvals until Metro Council adopts comprehensive zoning rules; an amendment also closed a loophole that would have let existing buildings be rezoned for data center use. Citywide policy, not linked to a specific tracked project per the 'no inferring links from location strings' rule. Excerpt is a close paraphrase from search aggregation, not independently fetched verbatim this session.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/amazon-files-to-develop-two-new-data-center-campuses-in-texas/",
+      "title": "Amazon files to develop two new data center campuses in Texas",
+      "publisher": "Data Center Dynamics",
+      "publicationDate": "2026-06-25",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Amazon Data Services filed four project registrations for 'Project Eagle,' each building listed at an estimated construction cost of $300 million.",
+      "suggestedProjectName": "AWS Project Eagle (Wharton County, Texas)",
+      "note": "NEW PROJECT: not found in the current tracked list. AWS/Amazon Data Services filed state (TDLR) registrations on 2026-06-25 for a 4-building, ~$1.2B campus ('Project Eagle') on Eaglewood Road near Boling, Wharton County TX (~2,700 acres; would be the largest DC campus in Texas if fully built). Multiple outlets since report the filing was expanded to 10 buildings (E-K added) at the same ~$300M/building basis (~$3.0B total), but I could not confirm an exact filing date for that expansion this session — flagging for the reviewer to verify and possibly file as a follow-up claim. No MW figure disclosed in what I could find. Excerpt is a close paraphrase from search aggregation, not independently fetched verbatim this session (WebFetch to the TDLR filing itself was also network-blocked).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "CAPEX_USD", "numericValue": 1200000000, "unit": "USD", "confidenceLevel": "MEDIUM", "methodology": "State permit filings (TDLR, June 25 2026) for the original 4 buildings cite an estimated construction cost of $300M per building (~$1.2B total); not independently verified verbatim this session."}
+      ]
+    },
+    {
+      "url": "https://asia.nikkei.com/business/construction/mitsubishi-estate-embarks-on-9bn-data-center-building-spree-in-japan",
+      "title": "Mitsubishi Estate embarks on $9bn data center building spree in Japan",
+      "publisher": "Nikkei Asia",
+      "publicationDate": "2026-07-11",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Mitsubishi Estate plans to invest about $9.3 billion to build roughly 2,500 megawatts of data center capacity across Japan.",
+      "suggestedProjectName": "Mitsubishi Estate Japan data center program (~10 facilities, Kanto/Kansai)",
+      "note": "NEW PROJECT/PROGRAM, not found in the current tracked list: Mitsubishi Estate president Atsushi Nakajima told Nikkei (2026-07-11) the company will invest ~1.5 trillion yen (~$9.3B) to build ~10 facilities totaling ~2,500 MW across Japan's Kanto and Kansai regions; land and power infrastructure already secured for ~5 facilities (~1,000 MW). This is a multi-site company-level program rather than one campus — may be better modeled as several individual projects once site-level details are public; flagging as a single program-level candidate for the reviewer to split as appropriate. Excerpt is a close paraphrase from search aggregation, not independently fetched verbatim this session.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 2500, "unit": "MW", "confidenceLevel": "MEDIUM", "methodology": "Company president stated ~2,500 MW target capacity across ~10 facilities to Nikkei; basis (IT load vs. site power) unclear."},
+        {"metricType": "CAPEX_USD", "numericValue": 9300000000, "unit": "USD", "confidenceLevel": "MEDIUM", "methodology": "Company president stated ~1.5 trillion yen (~$9.3B) total investment to Nikkei."}
+      ]
+    },
+    {
+      "url": "https://datacentrereview.com/2026/07/nscales-2bn-essex-data-centre-hit-by-grid-delays/",
+      "title": "Nscale's £2bn Essex data centre hit by grid delays",
+      "publisher": "Data Centre Review",
+      "publicationDate": "2026-07-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Nscale's 90 MW grid connection for its Loughton site will not be ready in time for the facility's planned opening.",
+      "suggestedProjectName": "Nscale Loughton",
+      "note": "DELAY: tracked project 'Nscale Loughton' (slug nscale-loughton-for-microsoft, ANNOUNCED, estimatedMw 90) — reporting says the site's 90 MW grid connection will slip past its planned opening, prompting talks with Bloom Energy about solid-oxide fuel cells as interim power while it waits for the permanent grid connection. Dated mid-July 2026, close to the project's last-verified date (2026-07-28), so there is some chance this was already factored in — flagging for reviewer to check for overlap before treating as fully new. projectId omitted (network-blocked this session, see other findings); reviewer should link by slug. Excerpt is a close paraphrase from search aggregation, not independently fetched verbatim this session.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
