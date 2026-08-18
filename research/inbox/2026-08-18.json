@@ -1,0 +1,112 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/05/3339168/0/en/TeraWulf-Reports-Second-Quarter-2026-Results.html",
+      "title": "TeraWulf Reports Second Quarter 2026 Results",
+      "publisher": "GlobeNewswire (TeraWulf Inc. press release)",
+      "publicationDate": "2026-08-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "completed delivery of CB-3 in early July, increasing revenue-generating critical IT capacity at Lake Mariner to 102 MW",
+      "suggestedProjectName": "TeraWulf Lake Mariner",
+      "note": "STATUS CHANGE for tracked project 'TeraWulf Lake Mariner' (slug terawulf-lake-mariner-fluidstack-anthropic; currently UNDER_CONSTRUCTION, confirmedMw blank, estimatedMw 360). Q2 2026 earnings confirm 102 MW of critical IT capacity is now revenue-generating (CB-3 delivered), with 336 MW (CB-4/CB-5) still under construction; CB-4's first data hall entered commissioning, phased delivery through H2 2026, CB-5 targeted early 2027. Delivery also satisfied conditions for $600M of Google's credit support for the Fluidstack lease to become effective. IT-load basis. Suggest reviewer set confirmedMw=102 rather than change status outright. CAVEAT: WebFetch to the primary release was unavailable this run (network policy blocked all outbound fetches) — excerpt is reconstructed from search-result summaries, not a verbatim pull. Verify exact release wording before publishing.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 102,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Company Q2 2026 earnings release states 102 MW of critical IT capacity now revenue-generating at Lake Mariner after CB-3 delivery. Confidence held at LOW pending verbatim verification (WebFetch unavailable this run)."
+        }
+      ]
+    },
+    {
+      "url": "https://fortworthreport.org/2026/08/12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote/",
+      "title": "Data center moratorium takes first steps after Fort Worth City Council's unanimous vote",
+      "publisher": "Fort Worth Report",
+      "publicationDate": "2026-08-12",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "City Council voted unanimously to begin the process for a 90-day moratorium on new data center construction",
+      "note": "SITING RESTRICTION: Fort Worth, TX City Council voted unanimously on Aug 11, 2026 to start the legal process toward a 90-day construction moratorium on data centers (earliest possible effective date Feb 16, 2027) and created a Data Center & Infrastructure Commission chaired by TCU's Dr. Mike Slattery. Council also passed (10-1) an ordinance requiring new data-center applicants to show PUCT/ERCOT grid-connection approval before filing. No specific tracked project named in coverage found. CAVEAT: WebFetch to the primary article was unavailable this run (network policy blocked all outbound fetches) — excerpt paraphrased from search-result snippets across multiple outlets (KERA, DCD, Fort Worth Report, Community Impact). Verify exact wording before publishing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.inquirer.com/real-estate/commercial/kop-data-center-developer-lawsuit-brian-oneill-upper-merion-20260813.html",
+      "title": "The King of Prussia data center complex is rejected by Upper Merion Township officials",
+      "publisher": "The Philadelphia Inquirer",
+      "publicationDate": "2026-08-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Board of Supervisors unanimously rejected the nearly 5-million-square-foot data center campus proposed across five properties",
+      "suggestedProjectName": "MLP Ventures / Brian O'Neill King of Prussia data center campus (Upper Merion Township, PA)",
+      "note": "SITING RESTRICTION: Upper Merion Township, PA (King of Prussia area, Montgomery County) Board of Supervisors voted 5-0 on Aug 13, 2026 to deny all 5 proposed data-center sites (~4.6-5M sq ft combined, developer Brian O'Neill / MLP Ventures) after a brief judicial injunction against the township was vacated the same week. Developer may appeal; had estimated ~$55.4M/yr in local tax revenue from the project. Not previously tracked as a project. CAVEAT: WebFetch to the primary article was unavailable this run (network policy blocked all outbound fetches) — excerpt is a close paraphrase from search-result snippets (Inquirer, WHYY, FOX29, NBC10), not a verbatim pull. Verify exact wording before publishing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+      "title": "Building AI infrastructure with the Effingham County community",
+      "publisher": "OpenAI",
+      "publicationDate": "2026-07-22",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Project Camellia, a 3.2-gigawatt data center campus in Effingham County, Georgia, representing at least $20 billion in private investment",
+      "suggestedProjectName": "OpenAI Project Camellia (Effingham County, GA)",
+      "note": "NEW PROJECT, not currently tracked. Site power basis: 3.2 GW campus across ~1,400 acres / 4 buildings at the Savannah Gateway Industrial Hub. Georgia Power signed a 25-year agreement delivering power in phases 2028-2032; OpenAI states it will cover all infrastructure/electric service costs (no ratepayer subsidy) and committed $80M to a community benefits fund. $20B+ described as private investment (capex), not lease revenue. Projected launch 2028. Older than the usual 24-72h window (~4 weeks) but not yet in the tracker's 103 projects, so flagging in case it was missed. CAVEAT: WebFetch to openai.com was unavailable this run (network policy blocked all outbound fetches) — excerpt reconstructed from search-result snippets of the company post and syndicated coverage (MLQ News, CBS Atlanta, The Current). Verify verbatim wording against the OpenAI post before publishing.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 3200,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Company states a 3.2 GW campus; basis (site power vs IT load) not confirmed by agent from available snippets — verify."
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 20000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Company/local coverage states 'at least $20 billion' in private investment; treat as a floor estimate pending primary-source verification."
+        }
+      ]
+    },
+    {
+      "url": "https://www.courtlistener.com/docket/73188848/national-association-for-the-advancement-of-colored-people-v-xai-corp/",
+      "title": "National Association for the Advancement of Colored People v. X.AI Corp., 3:26-cv-00074 (N.D. Miss.)",
+      "publisher": "CourtListener (federal docket)",
+      "publicationDate": "2026-08-18",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "installed and operated 27 gas turbines ... without an air permit or regard for the health and safety of people living nearby",
+      "note": "STATUS/RISK UPDATE for tracked project (slugs xai-colossus-2-memphis and/or xai-macrohardrr-southaven): the court has set a preliminary-injunction hearing for Aug 24, 2026 on NAACP/SELC's suit over 27 unpermitted gas turbines (operated by xAI affiliate MZX Tech in Southaven, MS) that power Colossus 2. If granted, the injunction could force xAI to stop using the unpermitted turbines during litigation, a real pause risk for the site. DOJ has moved to intervene and dismiss, citing Grok's use in military/national-security applications. No ruling yet as of this run (hearing has not occurred). Forward-looking event, not a completed status change -- flagging for the review queue's awareness, not a figure update. CAVEAT: WebFetch to the docket/primary filings was unavailable this run (network policy blocked all outbound fetches); hearing date sourced from secondary reporting referencing the docket (tech-insider.org, Steve Vladeck's newsletter) rather than pulled directly from PACER/CourtListener. Confirm the hearing date directly before publishing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://investors.corescientific.com/news-events/press-releases/detail/138/core-scientific-and-amd-announce-infrastructure-partnership",
+      "title": "Core Scientific and AMD Announce Infrastructure Partnership",
+      "publisher": "Core Scientific, Inc. (investor press release)",
+      "publicationDate": "2026-07-28",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "15-year infrastructure agreement covering 530 MW across five campuses, doubling Core Scientific's leased AI data center capacity to approximately 1.1 GW",
+      "note": "Touches tracked project 'Core Scientific Denton (CoreWeave)' (slug core-scientific-denton-coreweave, currently PARTIALLY_OPERATIONAL) but is a company-wide leasing deal spanning 5 campuses (only some identified in coverage found), beginning 2027, ~$14B implied and covered in an SEC 8-K. Do NOT attribute the full 530 MW / 1.1 GW to the Denton project alone -- a human should determine which specific campuses this covers before updating any single project's figures. No claims submitted for this reason. CAVEAT: WebFetch was unavailable this run (network policy blocked all outbound fetches); figures come from search-result summaries of the 8-K and press coverage (Data Center Knowledge, CoinDesk, The Block), not a direct read of the filing (sec.gov/Archives/edgar/data/0001839341/000183934126000012/amdpr.htm). Verify against the primary 8-K before publishing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/meta-plans-917bn-gigawatt-scale-data-center-in-alberta-canada/",
+      "title": "Meta plans $9.17bn gigawatt-scale data center in Alberta, Canada",
+      "publisher": "Data Center Dynamics",
+      "publicationDate": "2026-07-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Meta's first Canadian data center, a one-gigawatt, roughly 2.9-million-square-foot AI facility in Sturgeon County, Alberta",
+      "suggestedProjectName": "Meta Sturgeon County (Alberta, first Canadian data center)",
+      "note": "NEW PROJECT, not currently tracked (distinct from existing Alberta entries eStruxture Cal-3 and Wonder Valley). Announced ~Jul 6-9, 2026 alongside Alberta Premier Danielle Smith; ~300 jobs. Investment figures vary by outlet ($9.17B-$9.24B per DCD/Construction Review/PGJ vs $13B per Globe and Mail) -- treat as an unconfirmed range pending a primary Meta source; no Meta press release was located in the search results used, only secondary coverage. Oldest item in this batch (~6 weeks); flagging in case it is still not captured. CAVEAT: WebFetch was unavailable this run (network policy blocked all outbound fetches). Verify the capex figure and current site status against a primary Meta or Alberta government source before publishing.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Multiple secondary outlets describe a 'one-gigawatt' campus; basis (site power vs IT load) is not stated in the sources found."
+        }
+      ]
+    }
+  ]
+}
