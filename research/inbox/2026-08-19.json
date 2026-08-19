@@ -1,0 +1,71 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001083301/000108330126000162/a_wulfearningsreleaseq22026.htm",
+      "title": "TeraWulf Reports Second Quarter 2026 Results",
+      "publisher": "TeraWulf Inc.",
+      "publicationDate": "2026-08-05",
+      "sourceType": "SEC_FILING",
+      "excerpt": "completed delivery of CB-3 in early July, increasing revenue-generating capacity to 102 MW",
+      "suggestedProjectName": "TeraWulf Lake Mariner",
+      "note": "STATUS CHANGE on tracked project TeraWulf Lake Mariner (slug: terawulf-lake-mariner-fluidstack-anthropic; currently UNDER_CONSTRUCTION, estimatedMw=360, confirmedMw blank). Q2 2026 8-K states 102 MW of critical IT capacity at Lake Mariner is now revenue-generating (CB-3 complete in early July 2026), which also satisfied the condition for $600M of Google's credit support backing Fluidstack's lease obligations there. A further 336 MW is under construction across CB-4/CB-5: first CB-4 data hall entering commissioning with phased delivery/rent commencement expected H2 2026; CB-5 phased delivery targeted early 2027. Basis is critical IT load per the filing, not site/gross power. Suggest recording confirmedMw=102 (IT, HIGH confidence, primary/SEC) and updating status notes with the 336 MW under-construction figure and CB-4/CB-5 timeline.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 102,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Stated directly in TeraWulf's Q2 2026 SEC 8-K earnings release as revenue-generating critical IT capacity online at Lake Mariner as of the filing date"
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 336,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Stated in the same 8-K as additional critical IT capacity under construction across buildings CB-4 and CB-5 at Lake Mariner"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+      "title": "OpenAI joins PORTS-Pike project",
+      "publisher": "OpenAI",
+      "publicationDate": "2026-08-17",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "entered into an agreement to secure approximately 8 gigawatts-IT at the PORTS-Pike Technology Campus in Pike County, Ohio",
+      "suggestedProjectName": "PORTS-Pike Technology Campus (OpenAI / SB Energy)",
+      "note": "NEW project candidate, not currently tracked — checked against today's local project snapshot (data/projects.json, generated 2026-08-19): the only existing Ohio entries are Meta Prometheus (New Albany) and Stargate Lordstown, both different sites in different counties. This is a 20-year OpenAI lease at the former Portsmouth/Piketon uranium-enrichment site near Piketon, Pike County, Ohio, developed by SB Energy (SoftBank subsidiary) with NVIDIA as exclusive chip supplier and the U.S. Department of Energy involved on the federal-land side. OpenAI's own release states ~8 GW-IT capacity secured under the lease, against a reported ~10 GW of total on-site generation — IT load and generation/site power are explicitly different bases here, do not conflate. Multiple outlets (Axios, WSJ via Yahoo, DCD) additionally report NVIDIA committed $1.5B in equity to SB Energy and guaranteed up to $105B in SB Energy's conditional lease/power-payment obligations — that $105B figure is a financing guarantee, NOT capex or contract revenue, and is deliberately omitted from the claims below per the no-lease-revenue-as-capex rule; a human should decide if/how to record it. Construction reported as a ~6-year buildout to 2032, first operations targeted 2028.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 8000,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "OpenAI's own announcement states the company secured approximately 8 gigawatts-IT of capacity under the PORTS-Pike lease"
+        }
+      ]
+    },
+    {
+      "url": "https://fortworthreport.org/2026/08/12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote/",
+      "title": "Data center moratorium takes first steps after Fort Worth City Council's unanimous vote",
+      "publisher": "Fort Worth Report",
+      "publicationDate": "2026-08-12",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "voted unanimously ... to initiate the process to enact a 90-day moratorium on data centers",
+      "note": "SITING RESTRICTION: Fort Worth, TX City Council voted unanimously on Aug 11, 2026 to begin the formal process toward a 90-day moratorium on new data center construction citywide, prompted by public concern over water/energy impacts. This is only the first procedural step — multiple outlets report the earliest possible effective date is Feb 16, 2027, and zoning applications filed before that date would fall outside the moratorium. No project in this dataset's current snapshot is sited within Fort Worth city limits, so this is general/new siting-restriction signal rather than an update to a specific tracked project. CAVEAT: this agent's network egress could not reach fortworthreport.org (or any news domain) directly this run — only the search layer was reachable — so the excerpt above is reconstructed from search-result summaries of the article rather than fetched and quoted verbatim from the source. Recommend a human confirm the exact wording against the source URL before treating the excerpt as a verified direct quote; confidence kept LOW/MEDIUM accordingly.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.lpm.org/news/2026-08-13/louisville-metro-council-approves-data-center-moratorium-as-new-proposal-sparks-controversy",
+      "title": "Louisville Metro Council approves data center moratorium as new proposal sparks controversy",
+      "publisher": "Louisville Public Media (LPM)",
+      "publicationDate": "2026-08-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "passed ... on a 24 to 1 vote ... new data center proposals for six months",
+      "note": "SITING RESTRICTION: Louisville Metro Council (Louisville, KY) passed a moratorium on new data center construction/approvals on a 24-1 vote on Aug 13, 2026, running six months or until the Council adopts comprehensive zoning rules for data centers, whichever comes first. Reported as following a wave of public comment and a recent proposal to convert a 350,000 sq ft warehouse in southwest Louisville into a data center. No project in this dataset's current snapshot is sited in Louisville/Jefferson County, KY (the nearest tracked project is TeraWulf Justified in Hawesville, KY, a different county) — flagging as general/new siting-restriction signal. CAVEAT: same network limitation as the Fort Worth finding above — this agent could not WebFetch lpm.org directly this run, so the excerpt is reconstructed from search-result summaries rather than an independently fetched verbatim quote. Recommend verifying exact wording against the source before citing it as a direct quote; confidence kept LOW/MEDIUM.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
