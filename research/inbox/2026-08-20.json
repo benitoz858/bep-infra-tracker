@@ -1,0 +1,54 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.wfyi.org/wfyi-news/2026-08-19/new-data-centers-temporarily-banned-in-marion-county",
+      "title": "New data centers temporarily banned in Marion County",
+      "publisher": "WFYI",
+      "publicationDate": "2026-08-19",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "a moratorium ending no later than December 31, 2027, on the permitting or allowance of any and all data centers",
+      "note": "SITING RESTRICTION: The Indianapolis Metropolitan Development Commission gave final 6-0 approval on 2026-08-19 to Proposal No. 238, 2026 (Metropolitan and Economic Development Committee), a moratorium on permitting new data centers anywhere within Marion County (Indianapolis), Indiana, running through no later than Dec 31, 2027, while the city convenes a committee to study campus size, building height, sound levels and environmental impacts. The City-County Council had already passed the underlying ordinance 23-1 on 2026-08-10 (previously surfaced only as 'advances'/pending); this MDC vote is the final regulatory step that puts the moratorium into effect countywide. No tracked project in this database currently sites in Marion County, so this is a jurisdiction-wide restriction rather than a project-linked one. CAVEAT: this run's sandbox could not reach WebFetch/general web egress (network policy blocked it), so this excerpt is reconstructed from search-engine summaries of the article and the linked ordinance text rather than a direct verbatim read of the source page — please verify exact wording against the WFYI article and the ordinance (Proposal No. 238, 2026) before treating the quote as citation-grade.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm",
+      "title": "NVIDIA Corp — Form 8-K (Aug 17, 2026): residual value guaranties for PORTS-Pike / Portsmouth Site, Pike County, Ohio",
+      "publisher": "NVIDIA Corporation (SEC EDGAR)",
+      "publicationDate": "2026-08-17",
+      "sourceType": "SEC_FILING",
+      "excerpt": "NVIDIA's aggregate payment obligation is cumulatively capped at $105 billion for its initial commitment",
+      "suggestedProjectName": "OpenAI PORTS-Pike / Portsmouth Site (Pike County, Ohio)",
+      "note": "This 8-K supplements the OpenAI PORTS-Pike/Portsmouth Site data center campus (Pike County, Ohio — former Portsmouth Gaseous Diffusion Plant), which was already submitted 2026-08-19 via OpenAI's own announcement (openai.com) but without concrete capacity/financing figures. Per NVIDIA's filing: SB Energy is building and will own/lease the campus to OpenAI under a 20-year lease; NVIDIA has entered residual-value guaranties on leases covering approximately 4.25 GW of IT load (initial commitment), with NVIDIA able to extend credit support to roughly 3.8 GW more at its discretion (~8 GW total planned). NVIDIA's payment obligations are capped in aggregate at $105B and only begin once ready-for-service conditions are met, expected starting 2028. This $105B figure is a residual-value/credit guarantee cap, NOT capex or a cash commitment — deliberately not submitted as a CAPEX_USD claim to avoid conflating the two, per this tracker's own capex-vs-guarantee distinction. Several outlets initially cited a ~$250B figure before the SEC filing clarified the actual cap is $105B; use the SEC filing as the authoritative number. 4.25 GW here is IT load, not site power or generation. CAVEAT: WebFetch/general web egress was blocked in this run's sandbox, so quote and figures are reconstructed from search-engine summaries of the filing rather than a direct read of the primary document — please verify against the SEC filing text before citing.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 4250,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "NVIDIA's 8-K states its residual-value guaranties cover leases for approximately 4.25 GW of IT load in aggregate at the Portsmouth Site as its initial commitment."
+        }
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001878848/000114036126032638/ef20080141_ex99-1.htm",
+      "title": "IREN Delivers Horizon 1 to Microsoft and Achieves NVIDIA Exemplar Cloud Status on GB300 NVL72",
+      "publisher": "IREN Limited (SEC EDGAR 8-K exhibit)",
+      "publicationDate": "2026-08-13",
+      "sourceType": "SEC_FILING",
+      "excerpt": "Horizon 1 is the first of four 50MW (IT load) direct-to-chip liquid cooled AI Cloud deployments",
+      "note": "Status/metric update for tracked project 'IREN Childress' (slug: iren-childress-horizon-for-microsoft; currently UNDER_CONSTRUCTION, estimated 750 MW IT). On 2026-08-13, IREN announced Horizon 1 — the first of four planned 50MW (IT load) direct-to-chip liquid-cooled blocks at the Childress, TX campus — was delivered to and accepted by Microsoft under the existing five-year, $9.7B cloud services contract (announced Nov 2025), and that IREN achieved NVIDIA 'Exemplar Cloud' certification on the GB300 NVL72 deployment there. This confirms/completes the project's existing analyst note ('Horizon 1 handover targeted Q3 2026'). Figure is IT load for this one block, not the full 750 MW campus estimate and not site power draw. Three more 50MW blocks are slated for delivery later in 2026 per the release. CAVEAT: WebFetch/general web egress was blocked in this run's sandbox; excerpt reconstructed from search-engine summaries of the SEC exhibit/press release rather than a direct verbatim read — please verify wording against the source before citing.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 50,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "IREN's press release states Horizon 1 is the first of four 50MW (IT load) deployments at Childress; this block is now delivered to and accepted by Microsoft."
+        }
+      ]
+    }
+  ]
+}
