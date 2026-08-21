@@ -1,0 +1,65 @@
+{
+  "submissions": [
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+      "title": "NVIDIA Guarantees SB Energy's PORTS-Pike Technology Campus in Ohio to Exclusively Host NVIDIA AI Compute",
+      "publisher": "NVIDIA Newsroom",
+      "publicationDate": "2026-08-17",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Nvidia agreed to guarantee up to $105 billion in conditional lease and power payment obligations to SB Energy",
+      "suggestedProjectName": "OpenAI–SB Energy PORTS-Pike (Pike County, Ohio)",
+      "note": "NEW PROJECT. OpenAI signed a 20-year lease with SB Energy (SoftBank-backed) for capacity at the former Portsmouth Gaseous Diffusion Plant site (PORTS-Pike) in Pike County, Ohio. SB Energy/SoftBank plan >=10 GW of new power generation yielding 8 IT-GW of AI factory capacity; initial deployment is 4.25 IT-GW committed to OpenAI, with NVIDIA holding an option on the remaining 3.75 IT-GW. First 800 MW targeted online 2028 using existing AEP infrastructure; full buildout through 2032. NVIDIA is also investing $1.5B directly in SB Energy and is the exclusive compute vendor. IMPORTANT: the $105B figure is a lease/power-payment guarantee (per an SEC filing), NOT capex — deliberately omitted as a CAPEX_USD claim per project data rules. Distinct site from the already-tracked Stargate Lordstown, Ohio (Trumbull County) project — no overlap. SOURCING CAVEAT: this automated run's sandbox blocked direct WebFetch/curl access to nvidianews.nvidia.com and all other outlet URLs cited below; every excerpt in today's batch was reconstructed from search-engine result snippets/summaries across multiple converging outlets (CNBC, Axios, Reuters/Nikkei Asia, Bloomberg Law) rather than a directly-fetched, independently verified page. Recommend the human reviewer open the source link to confirm exact wording before promoting any figure past LOW/MEDIUM confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 8000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Company-stated total planned IT-GW capacity across all phases (site power basis, generation-backed); only 800 MW of this is targeted online by 2028, remainder phased through 2032 and partly optional (NVIDIA holds option on 3.75 GW)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-signs-executive-order-on-data-center-developmen",
+      "title": "Governor Shapiro Signs Executive Order on Data Center Development in PA",
+      "publisher": "Commonwealth of Pennsylvania (Governor's Office)",
+      "publicationDate": "2026-08-18",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "prohibits any state agency from signing a nondisclosure agreement related to a data center project",
+      "note": "SITING RESTRICTION: Governor Shapiro signed Executive Order 2026-05 (Aug 18, 2026), a statewide policy applying to all Commonwealth agencies, not a single project. It directs DEP to evaluate data center permit applications only where the developer has made a legally binding commitment to the Governor's 'Responsible Infrastructure Development' (GRID) requirements AND received local approval; removes AI data center proposals from the state's Fast Track permitting process; and bars state NDAs on data center projects. Context per PA officials: of ~100 pending PA data center proposals, only 5 have obtained permits, and most are described as speculative/under-financed. No specific tracked PA project is directly named in coverage reviewed. SOURCING CAVEAT: same as noted on the Ohio submission above — direct WebFetch to pa.gov was blocked in this run's sandbox; excerpt reconstructed from converging news summaries (Inquirer, WHYY, Bloomberg Law, The Hill) rather than the primary EO text itself. Recommend reviewer pull the PDF (linked from the pa.gov press room) to confirm exact operative language.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://lailluminator.com/2026/08/13/meta-data-center-private/",
+      "title": "Meta can keep its data center details private, PSC decides",
+      "publisher": "Louisiana Illuminator",
+      "publicationDate": "2026-08-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "commissioners voted 3-1 to overrule the judge's order requiring Meta to disclose its job and power-need calculations",
+      "projectId": "meta-hyperion-louisiana",
+      "note": "Regulatory/transparency development on tracked project Meta Hyperion (Richland Parish, LA). On Aug 12, 2026 the Louisiana Public Service Commission voted 3-1 along party lines (Coussan, Francis, Skrmetta vs. Lewis; Campbell absent) to overrule its own administrative law judge, who had ordered Meta to disclose how it calculated the job and power-demand figures underlying Entergy's turbine-build applications for Hyperion. Petitioners were the Alliance for Affordable Energy, Union of Concerned Scientists, and Sierra Club; Meta cited trade-secret protection. This does NOT change Hyperion's tracked MW/capex figures (already recorded: 5,000 MW / $50B target, UNDER_CONSTRUCTION) — it is an oversight/disclosure ruling, logged here because it affects how future power-need claims for this project can be independently verified. SOURCING CAVEAT: WebFetch to lailluminator.com was blocked in this run's sandbox; excerpt reconstructed from search-engine summary, not independently re-read on the source page — recommend reviewer confirm exact wording.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://fortworthreport.org/2026/08/12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote/",
+      "title": "Data center moratorium takes first steps after Fort Worth City Council's unanimous vote",
+      "publisher": "Fort Worth Report",
+      "publicationDate": "2026-08-12",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "council voted unanimously to begin the process for a 90-day moratorium on new data center construction",
+      "note": "SITING RESTRICTION: Fort Worth (TX) City Council voted unanimously on Aug 11, 2026 to begin the formal process toward a 90-day construction moratorium on new data centers, to allow the city to evaluate development regulations and impacts on resources/quality of life. This is a first procedural step, not yet an enacted moratorium — reporting points to a possible effective date around Feb 16, 2027, with zoning applications filed before then reportedly exempted. Not tied to a specific tracked project. SOURCING CAVEAT: WebFetch to fortworthreport.org was blocked in this run's sandbox; excerpt reconstructed from search-engine summary rather than the article itself.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.lpm.org/news/2026-08-13/louisville-metro-council-approves-data-center-moratorium-as-new-proposal-sparks-controversy",
+      "title": "Louisville Metro Council approves data center moratorium as new proposal sparks controversy",
+      "publisher": "Louisville Public Media (LPM)",
+      "publicationDate": "2026-08-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "passed on a 24 to 1 vote, preventing new data center proposals from being approved for six months",
+      "note": "SITING RESTRICTION: Louisville Metro Council (Jefferson County, KY) passed a 6-month moratorium on approving new data center proposals, 24-1, on Aug 13, 2026 (or until comprehensive zoning rules are adopted). A companion framework under discussion would ban hyperscale data centers over 500,000 sq ft in Jefferson County outright and impose buffer/setback and utility-rate-protection requirements on smaller facilities reusing existing buildings. Prompted partly by a developer's plan to convert a 350,000-sq-ft warehouse into a data center. Not tied to a specific tracked project. SOURCING CAVEAT: WebFetch to lpm.org was blocked in this run's sandbox; excerpt reconstructed from search-engine summary rather than the article itself.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
