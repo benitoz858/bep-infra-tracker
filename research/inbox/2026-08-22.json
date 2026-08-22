@@ -1,0 +1,73 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/13/3344413/0/en/iren-delivers-horizon-1-to-microsoft-and-achieves-nvidia-exemplar-cloud-status-on-gb300-nvl72.html",
+      "title": "IREN Delivers Horizon 1 to Microsoft and Achieves NVIDIA Exemplar Cloud Status on GB300 NVL72",
+      "publisher": "IREN Limited (GlobeNewswire)",
+      "publicationDate": "2026-08-13",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Horizon 1, the first of four 50MW direct-to-chip liquid-cooled AI Cloud deployments, has been delivered to and accepted by Microsoft.",
+      "note": "Status change on tracked project 'IREN Childress' (data/ export slug: iren-childress-horizon-for-microsoft, UNDER_CONSTRUCTION; that snapshot's 2026-07-29 note said Horizon 1 handover was only 'targeted' for Q3 2026 — this is the actual delivery/acceptance). Figure is IT load (direct-to-chip liquid-cooled), not site power. Three more Horizon deployments remain for 2026. I could not attach a projectId: the live tracker API (tracker.bepresearch.com) was unreachable this run (network egress policy denial), so I only have the nightly data/ export's slug, not a confirmed database id — please match by name/slug. Also: this excerpt was reconstructed from search-engine result summaries, not fetched from the primary URL (WebFetch was blocked for all external domains this session) — please verify exact wording against the source before raising confidence above MEDIUM.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 50,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Company states Horizon 1 is a 50MW IT-load direct-to-chip liquid-cooled deployment, delivered/accepted by Microsoft; read via secondary search summary, not verified verbatim against the primary release."
+        }
+      ]
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/05/3339168/0/en/TeraWulf-Reports-Second-Quarter-2026-Results.html",
+      "title": "TeraWulf Reports Second Quarter 2026 Results",
+      "publisher": "TeraWulf Inc. (GlobeNewswire)",
+      "publicationDate": "2026-08-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Delivery of CB-3 in early July 2026 increased revenue-generating critical IT capacity to 102 MW, triggering $600 million of Google's credit support.",
+      "note": "Status change on tracked project 'TeraWulf Lake Mariner' (data/ export slug: terawulf-lake-mariner-fluidstack-anthropic, UNDER_CONSTRUCTION; that snapshot, last verified 2026-07-28, only carried the 360 MW total planned figure with no online/critical-IT milestone). This is critical IT load already generating revenue, not the full 360 MW build-out; also confirms $600M of Google's credit backstop for Fluidstack's lease became effective on this trigger. I could not attach a projectId — same network caveat as the IREN finding below/above: the live API was unreachable, so please match by name/slug rather than trust an id from me. Excerpt reconstructed from search-engine summaries of the earnings release, not fetched directly (WebFetch blocked this session) — verify exact wording before raising confidence above MEDIUM.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 102,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Company Q2 2026 earnings release states CB-3 delivery brought revenue-generating critical IT capacity to 102 MW; read via secondary summary, not verified verbatim against the primary release."
+        }
+      ]
+    },
+    {
+      "url": "https://www.lpm.org/news/2026-08-13/louisville-metro-council-approves-data-center-moratorium-as-new-proposal-sparks-controversy",
+      "title": "Louisville Metro Council approves data center moratorium as new proposal sparks controversy",
+      "publisher": "Louisville Public Media (LPM)",
+      "publicationDate": "2026-08-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The moratorium, which passed on a 24 to 1 vote, will prevent city planners from approving new data center proposals for six months.",
+      "note": "SITING RESTRICTION: Louisville Metro Council (Jefferson County, KY) passed a six-month moratorium on new data center approvals, 24-1 on 2026-08-13, lasting until Metro Council adopts comprehensive zoning rules (a separate proposal would additionally ban hyperscale centers over 500,000 sq ft in the county). No tracked BEP project sits in Jefferson County/Louisville per the current export, so no projectId is attached. Excerpt reconstructed from a search-engine summary of the article, not fetched directly (WebFetch blocked this session) — verify exact wording before use.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://fortworthreport.org/2026/08/12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote/",
+      "title": "Data center moratorium takes first steps after Fort Worth City Council's unanimous vote",
+      "publisher": "Fort Worth Report",
+      "publicationDate": "2026-08-12",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Fort Worth City Council voted unanimously to initiate the process to enact a 90-day moratorium on the construction of data centers.",
+      "note": "SITING RESTRICTION (preliminary): Fort Worth City Council (TX) voted unanimously on 2026-08-11 to begin the process toward a 90-day data-center construction moratorium; if finalized after required public hearings, the pause would take effect around 2027-02-16, and zoning applications filed before then would fall outside it. This is a procedural first step, not yet an enacted ban. No tracked BEP project sits in Fort Worth per the current export. Excerpt reconstructed from a search-engine summary, not fetched directly (WebFetch blocked this session) — verify exact wording before use.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.kshb.com/news/local-news/missouri/jackson-county/independence-guard-alliance-files-lawsuit-to-halt-construction-of-independence-data-center",
+      "title": "Bly Road residents file 52-page lawsuit to stop Independence AI data center project",
+      "publisher": "KSHB Kansas City",
+      "publicationDate": "2026-08-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The 400-acre, hyperscale data center is owned by Nebius and broke ground this past May in Little Blue Valley near Bly Road.",
+      "suggestedProjectName": "Nebius Independence",
+      "note": "New project, not currently tracked: Nebius's ~400-acre hyperscale AI data center in Independence, Missouri (Jackson County), broke ground May 2026 near Bly Road/Highway 78. On 2026-08-13 the citizen-led Independence GUARD Alliance and four property owners sued the City of Independence and developer ADC Holdings LLC, alleging Sunshine Law (open-meetings) violations, a 2022 rezoning to industrial without notifying nearby homeowners, and $150M+ in tax-abated bonds giving Nebius utility discounts; the suit seeks a temporary restraining order. No MW/GPU/capex figures were disclosed in coverage found, so power/compute/capex are left blank rather than guessed. Excerpt reconstructed from a search-engine summary, not fetched directly (WebFetch blocked this session) — verify exact wording before use.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
