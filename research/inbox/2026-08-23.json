@@ -1,0 +1,140 @@
+{
+  "submissions": [
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+      "title": "NVIDIA Guarantees SB Energy's PORTS-Pike Technology Campus in Ohio to Exclusively Host NVIDIA AI Compute",
+      "publisher": "NVIDIA",
+      "publicationDate": "2026-08-17",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "NVIDIA will invest $1.5 billion in SB Energy to secure initial 4.25 IT-GW, with an option for the remaining 3.75 IT-GW",
+      "suggestedProjectName": "PORTS-Pike Technology Campus",
+      "note": "NEW PROJECT. Former Portsmouth Gaseous Diffusion Plant site, Pike County, Ohio. SB Energy (SoftBank) builds/owns/operates under a 20-year lease to OpenAI (the customer); NVIDIA guarantees the AI compute exclusivity and invests $1.5B directly in SB Energy. Total new on-site power generation is ~10GW (9.2GW new gas generation per some accounts) yielding 8 IT-GW of AI factory capacity -- SITE POWER vs IT LOAD, please distinguish when entering. NVIDIA separately commits up to $105B in credit support/financing for land-power-shell buildout of the INITIAL 4.25 IT-GW tranche only (a financing commitment, not spent/confirmed capex; the remaining 3.75 IT-GW is an option, not committed). A further $4.2B in new AEP Ohio grid infrastructure was also announced. Cross-confirmed across NVIDIA IR, a SoftBank SEC 6-K filing, and trade press (Datacenter Dynamics, ENR, WSJ via Techmeme, CNBC, UPI). CAVEAT: WebFetch to the primary NVIDIA/SEC pages was blocked by this sandbox's network policy (egress denial, confirmed via proxy status, not specific to this domain) -- the excerpt above is reconstructed from consistent secondary reporting of the release, not independently re-read verbatim by the agent. Reviewer should confirm exact press-release wording before treating the excerpt as a literal quote.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 10000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "~10 GW of new on-site power generation stated in company announcement (site/generation power, not IT load)"
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 8000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "8 IT-GW 'AI factory capacity' stated as the compute/IT load NVIDIA and SB Energy will deliver"
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 105000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "NVIDIA credit-support/financing commitment for land, power and shell buildout of the initial 4.25 IT-GW tranche -- a financing commitment, not confirmed spent capex"
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 1500000000,
+          "unit": "USD",
+          "confidenceLevel": "HIGH",
+          "methodology": "NVIDIA direct equity investment in SB Energy, stated as a specific dollar figure in the company announcement"
+        }
+      ]
+    },
+    {
+      "url": "https://www.wrkf.org/2026-08-12/louisiana-psc-kills-ruling-that-would-force-meta-to-turn-over-key-data-center-information",
+      "title": "Louisiana PSC kills ruling that would force Meta to turn over key data center information",
+      "publisher": "WRKF (NPR Louisiana)",
+      "publicationDate": "2026-08-12",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The commissioners voted 3-1 on Wednesday, in favor of overruling the judge, allowing Meta to withhold the information.",
+      "note": "SITING RESTRICTION / transparency development for tracked project 'Meta Hyperion' (slug meta-hyperion-louisiana, currently UNDER_CONSTRUCTION, ~5GW/$50B estimated). On Aug 12, 2026 the Louisiana PSC voted 3-1 along party lines to overrule an administrative law judge's July 10 subpoena order that would have forced Meta to disclose the methodology behind its stated job-creation and power-demand projections for Hyperion -- figures Entergy used to justify new gas-turbine applications for the site. Advocacy groups (Alliance for Affordable Energy, Sierra Club, Union of Concerned Scientists) sought the subpoena; Meta cited trade-secret protection. The PSC will still weigh Entergy's underlying turbine application in December 2026. Does not change any tracked MW/capex figure directly, but is a material regulatory-transparency development worth a note on the project page. projectId intentionally left blank: this environment's data/projects.json export exposes only each project's 'slug' (meta-hyperion-louisiana), not the database id the live API's projectId field requires -- please attach to the 'Meta Hyperion' project by name/slug.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-data-center-louisiana-new-jobs",
+      "title": "Amazon to invest $18 billion in Louisiana for new data centers",
+      "publisher": "Amazon (About Amazon)",
+      "publicationDate": "2026-08-18",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Amazon is adding $6 billion to its Northwest Louisiana data center project, bringing total investment to $18 billion",
+      "suggestedProjectName": "AWS Shreveport (Resilient Technology Park)",
+      "note": "NEW PROJECT. Third AWS data center campus in the Shreveport/Bossier, Louisiana area (Caddo-Bossier parishes), at Resilient Technology Park. Raises AWS's total committed Northwest Louisiana investment from $12B (announced Feb 2026) to $18B with this third campus -- CHECK FOR AN EXISTING 'AWS Shreveport'/Caddo-Bossier project first, since the earlier $12B commitment may already be tracked under a different name; this submission should update rather than duplicate if so. ~210 direct new jobs from this increment; ~750 direct jobs total across all three campuses per Louisiana Economic Development estimate. No power/MW figure disclosed in the announcement -- leave MW blank, do not infer. $18B is a company-stated CUMULATIVE regional investment across three campuses, not a confirmed per-site capex figure. CAVEAT: direct WebFetch to aboutamazon.com was blocked by this sandbox's network policy; figures are cross-confirmed across WBRZ, Yahoo Finance, Shreveport-Bossier Journal and Construction Review Online reporting on the same release, not independently re-read verbatim.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 18000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Total cumulative regional investment across three Shreveport-area campuses, as stated in company announcement (not per-site)"
+        }
+      ]
+    },
+    {
+      "url": "https://www.utilitydive.com/news/ercot-texas-puc-data-center-audit/828472/",
+      "title": "ERCOT aims to complete Texas governor's data center audit by December",
+      "publisher": "Utility Dive",
+      "publicationDate": "2026-08-20",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The audit and verification of data centers ordered by Gov. Greg Abbott will involve about 250 to 300 projects",
+      "note": "SITING RESTRICTION update -- statewide, not tied to a single project. Extends Gov. Abbott's Aug 3, 2026 order halting new data-center grid interconnections in ERCOT territory pending an audit. At the Aug 20, 2026 PUCT open meeting, ERCOT laid out scope (~250-300 projects, mostly data centers, drawn from the interconnection queue) and timeline: RFIs Aug-Sep, information gathering/cure period Oct-Nov, Batch Zero Eligibility Verification Report + Community Impact Review Report due Dec 10, PUCT discussion at its Dec 17 meeting. This is a de facto statewide moratorium on new large-load grid connections in ERCOT, affecting the entire TX interconnection queue -- including tracked TX projects (e.g. Stargate Milam County, Stargate Shackelford County, Aligned Project Caprock, Compass Meridian, Fluidstack Abernathy, CoreWeave Lancaster). No single projectId attached since this is a jurisdiction-wide restriction; reviewer may want to flag it against multiple TX projects' timelines. CAVEAT: WebFetch to utilitydive.com was blocked by this sandbox's network policy; excerpt reconstructed from search-engine summarization of the article, not independently re-read verbatim.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.lakemchenryscanner.com/2026/08/08/project-of-unprecedented-scale-lake-county-residents-file-lawsuit-to-block-472-acre-data-center-campus-in-grayslake/",
+      "title": "'Project of unprecedented scale': Lake County residents file lawsuit to block 472-acre data center campus in Grayslake",
+      "publisher": "Lake & McHenry County Scanner",
+      "publicationDate": "2026-08-08",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "an electrical demand of approximately 1.55 gigawatts of power supplied by ComEd, with associated diesel backup generation",
+      "suggestedProjectName": "T5 @ Chicago IV (Grayslake, IL)",
+      "note": "SITING RESTRICTION + likely NEW PROJECT not currently tracked. T5 @ Chicago IV, approved by the Grayslake, IL Village Board between Sept 2024 and May 2025: up to 472 acres, 10M+ sq ft of buildings, ~1.55 GW electrical demand from ComEd plus diesel backup generation. Sits within the broader $750M, 641-acre 'Cornerstone' mixed-use development -- that $750M figure is for the whole mixed-use development, NOT data-center-specific capex; do not enter it as this project's capex. On July 31, 2026 a group (Preservation of Community Well-Being Collective) and nine Lake County residents sued in circuit court to block the project, alleging Open Meetings Act violations and that data centers are not explicitly permitted under village zoning. On Aug 20, 2026 Grayslake announced then cancelled a public special session on the project, citing social media threats -- a live, escalating local fight worth watching. 1.55 GW is a site electrical demand figure (interconnection scale), not a confirmed IT load. CAVEAT: WebFetch to this source was blocked by this sandbox's network policy; excerpt reconstructed from search-engine summarization, not independently re-read verbatim.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1550,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Electrical demand figure from village-approved project scope as reported (ComEd interconnection/site power, not a confirmed IT load)"
+        }
+      ]
+    },
+    {
+      "url": "https://newjerseymonitor.com/2026/08/20/nj-data-center-bans-courts/",
+      "title": "Data center fight moves to NJ courts, with developers blaming local bans on 'public hysteria'",
+      "publisher": "New Jersey Monitor",
+      "publicationDate": "2026-08-20",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Monroe Township in Gloucester County is facing a $300 million lawsuit from Hexa Builders LLC",
+      "note": "SITING RESTRICTION: a developer-litigation wave against local AI data center bans in New Jersey, all filed/active in recent weeks as of Aug 20, 2026. Monroe Township (Gloucester County) sued for $300M by Hexa Builders LLC over a zoning-rule change that blocked a proposed data center. Montgomery Township sued by E. Khan Development (also seeking $300M) over an ordinance banning data centers and detention centers, with a related federal suit arguing data centers are 'a medium of expression' protected by free speech. Andover Township sued by National Land Developers over a ban that replaced prior operating standards, targeting a ~100-acre former airport site. No construction is underway at any of these; this is a notable pattern of developers challenging local moratoriums/bans in court rather than only lobbying against them. The $300M figures are DAMAGES SOUGHT in litigation, not capex -- not submitted as claims for that reason. No single tracked project applies. CAVEAT: WebFetch to newjerseymonitor.com was blocked by this sandbox's network policy; excerpt reconstructed from search-engine summarization, not independently re-read verbatim.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.lpm.org/news/2026-08-13/louisville-metro-council-approves-data-center-moratorium-as-new-proposal-sparks-controversy",
+      "title": "Louisville Metro Council approves data center moratorium as new proposal sparks controversy",
+      "publisher": "Louisville Public Media",
+      "publicationDate": "2026-08-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The moratorium passed on a 24 to 1 vote and will prevent city planners from approving new data center proposals for six months",
+      "note": "SITING RESTRICTION: Louisville Metro Council (Kentucky) passed a six-month moratorium on new data center construction approvals on Aug 13, 2026, on a 24-1 vote, lasting until Metro Council adopts comprehensive zoning rules or six months elapse, whichever comes first. Followed packed public protests (group 'No Data Center 502') calling for a full-year moratorium instead. No single tracked project named in the restriction; applies jurisdiction-wide to new proposals in Louisville Metro. CAVEAT: WebFetch to lpm.org was blocked by this sandbox's network policy; excerpt reconstructed from search-engine summarization of the article, not independently re-read verbatim.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://thetexan.news/texas-local-news/fort-worth-city-council-begins-process-to-enact-90-day-data-center-moratorium/article_a2a6100b-9576-4370-8679-12dbf7569b9d.html",
+      "title": "Fort Worth City Council Begins Process to Enact 90-Day Data Center Moratorium",
+      "publisher": "The Texan",
+      "publicationDate": "2026-08-11",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "a 90-day moratorium is set to begin on February 16, 2027, which may be extended for a further 90 days",
+      "note": "SITING RESTRICTION: Fort Worth, Texas City Council voted unanimously on Aug 11, 2026 to begin the legal process for a 90-day moratorium on new data center development, citing water use, noise, and community-impact concerns. IMPORTANT: this is a PROCEDURAL vote, not yet the moratorium itself -- per the article, the moratorium's earliest possible start is Feb 16, 2027, with a further 90-day extension possible after that; zoning applications filed before the moratorium takes effect are unaffected. Under Texas law the city cannot pass another moratorium for two years after this one lapses. No single tracked project named; applies jurisdiction-wide. CAVEAT: WebFetch to thetexan.news was blocked by this sandbox's network policy; excerpt reconstructed from search-engine summarization of the article, not independently re-read verbatim.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
