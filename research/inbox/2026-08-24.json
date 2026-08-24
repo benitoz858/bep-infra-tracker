@@ -1,0 +1,133 @@
+{
+  "submissions": [
+    {
+      "url": "https://mlq.ai/news/xai-ran-59-unpermitted-gas-turbines-at-colossus-2-double-what-it-disclosed/",
+      "title": "xAI Ran 59 Unpermitted Gas Turbines at Colossus 2, Double What It Disclosed",
+      "publisher": "MLQ News",
+      "publicationDate": "2026-07-15",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "xAI Ran 59 Unpermitted Gas Turbines at Colossus 2, Double What It Disclosed",
+      "suggestedProjectName": "xAI Colossus 2 (existing tracked project — could not confirm DB id, API unreachable)",
+      "note": "SITING RESTRICTION: legal/regulatory risk update for tracked project 'xAI Colossus 2' (Memphis/Southaven). NAACP v. xAI Corp / MZX Tech (N.D. Miss.), a Clean Air Act suit over unpermitted gas turbines powering this site, has a federal court evidentiary hearing on the NAACP's preliminary-injunction motion scheduled for TODAY, Aug 24, 2026 (per Earthjustice's case tracking page and contemporaneous coverage of the docket) — outcome not yet public as of this submission and could not be confirmed via available search. DOJ intervened in June 2026 seeking dismissal on national-security grounds; Mississippi's Permit Board separately approved 41 of the turbines in March 2026, leaving the remaining ~18 (or 59 total per this source, which conflicts with other counts — figures are inconsistent across coverage and should be verified) unpermitted. A shutdown order would directly affect this project's operational status. Recommend flagging for a follow-up check once the hearing outcome is reported.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://x.com/VantageDC/status/1999489920600088785",
+      "title": "Vantage Data Centers: Frontier campus groundbreaking, Shackelford County, Texas",
+      "publisher": "Vantage Data Centers (company X/Twitter account)",
+      "publicationDate": "2026-08-19",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Part of Oracle and OpenAI's Stargate expansion, the 1.4GW campus will lead to advancements in AI",
+      "suggestedProjectName": "Stargate Shackelford County (existing tracked project — could not confirm DB id, API unreachable)",
+      "note": "Status update for tracked project 'Stargate Shackelford County' (owner Vantage Data Centers, currently UNDER_CONSTRUCTION): company held a groundbreaking ceremony for the 'Frontier' campus this week, confirming construction is physically underway. Scale per company and trade press: 1.4GW, ~$25B investment, 1,200 acres, 10 buildings / 3.7M sq ft, first building targeted for delivery H2 2026, 5,000+ construction/operations jobs. Basis for the 1.4GW figure (IT load vs. site power) is not stated in the source. Publication date is an estimate (week of Aug 17-21, 2026) — could not confirm the exact date; full-article fetch was blocked by sandbox network egress restrictions, so this excerpt is drawn from the company's own social post rather than a fetched article body.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1400,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Company states '1.4GW campus' in its own announcement; basis (IT load vs. site power) not specified."
+        }
+      ]
+    },
+    {
+      "url": "https://lailluminator.com/2026/08/13/meta-data-center-private/",
+      "title": "Meta can keep its data center details private, PSC decides",
+      "publisher": "Louisiana Illuminator",
+      "publicationDate": "2026-08-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "We have found a way at this commission to find every exception to our rules when it favors Entergy and Meta",
+      "suggestedProjectName": "Meta Hyperion (existing tracked project — could not confirm DB id, API unreachable)",
+      "note": "SITING RESTRICTION (regulatory transparency): On Aug 12, 2026 the Louisiana Public Service Commission voted 3-1 along party lines (Republicans Coussan, Francis, Skrmetta overruling; Democrat Lewis dissenting, quoted here; Democrat Campbell absent) to overrule an administrative law judge's order that would have required Meta to produce backing documentation for its publicized investment, jobs, and electricity-demand figures for tracked project 'Meta Hyperion' (Richland Parish, LA). Net effect: Meta's investment/jobs/MW claims for this project remain self-reported and unverified by the regulator; existing tracker figures for Hyperion should stay at LOW/unconfirmed confidence pending any future disclosure requirement. No new numeric claim to add — this changes the evidentiary basis for existing figures, not the figures themselves.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.texastribune.org/2026/08/14/texas-data-center-approval-pause-ercot-power-grid/",
+      "title": "Texas will audit up to 300 projects, mostly data centers, after Gov. Greg Abbott's order",
+      "publisher": "The Texas Tribune",
+      "publicationDate": "2026-08-14",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Texas will audit up to 300 projects, mostly data centers, after Gov. Greg Abbott's order",
+      "note": "SITING RESTRICTION (statewide, no single project — reviewer may want a standalone restriction record rather than a per-project one): Gov. Abbott directed the PUC and ERCOT on Aug 3, 2026 to audit every data center project in ERCOT's interconnection queue (~250-300 projects, reportedly accounting for >200GW of requested future demand — more than twice ERCOT's peak-demand record) before any can connect to the grid; ERCOT says the audit will take 'several months.' This is a de facto statewide pause on new Texas data-center grid connections and is directly relevant to most of this tracker's ~20+ Texas-sited projects (Stargate Shackelford/Milam/Wisconsin/Doña Ana County, Meta El Paso, Crusoe Goodnight, IREN Childress/Sweetwater, Cipher Black Pearl, Aligned Caprock, and others). Governor's quote (gov.texas.gov): projects that fail to comply 'must be denied connection to the Texas grid.'",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.houstonchronicle.com/business/real-estate/article/amazon-data-center-houston-wharton-aws-project-22358969.php",
+      "title": "Inside Amazon's nearly 3,000-acre data center project outside of Houston",
+      "publisher": "Houston Chronicle",
+      "publicationDate": "2026-08-15",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Inside Amazon's nearly 3,000-acre data center project outside of Houston",
+      "suggestedProjectName": "AWS Project Eagle (Wharton County, Texas)",
+      "note": "New AWS/Amazon project, not currently in the tracker. 'Project Eagle': up to 10-building campus on ~3,000 acres near Boling, Wharton County, TX, ~60 miles SE of Houston. Total investment reported as ~$10B across multiple outlets (an initial-phase permit was filed at ~$1.2B per usdatacenterprojects.com, so treat $10B as an aggregate/eventual figure, not a confirmed capex disclosure). Peak power reported as 'up to 75 MW' — this looks low for a $10B/10-building campus and may reflect only an early construction-phase load rather than eventual IT or site capacity; flagging for reviewer verification rather than treating as final. The project is also subject to Gov. Abbott's statewide ERCOT/PUCT interconnection audit (see companion siting-restriction submission) and has not secured a grid connection as of mid-Aug 2026. Publication date is an estimate; exact date not confirmed (network egress to fetch full article was blocked).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 10000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Aggregate project cost as reported across multiple news outlets citing county officials/permit filings; not a company-disclosed figure."
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 75,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "'Up to 75 MW at peak' as reported by Houston Chronicle and other outlets; basis (IT load vs. site power) unclear, and the figure may be incomplete for the project's eventual scale."
+        }
+      ]
+    },
+    {
+      "url": "https://mlq.ai/news/openai-unveils-32gw-project-camellia-data-center-campus-in-effingham-county-georgia/",
+      "title": "OpenAI Unveils 3.2GW 'Project Camellia' Data Center Campus in Effingham County, Georgia",
+      "publisher": "MLQ News",
+      "publicationDate": "2026-07-22",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "OpenAI Unveils 3.2GW 'Project Camellia' Data Center Campus in Effingham County, Georgia",
+      "suggestedProjectName": "OpenAI Project Camellia (Effingham County, Georgia)",
+      "note": "New OpenAI project, not currently in the tracker. 3.2GW campus (4 buildings, Savannah Gateway Industrial Hub, ~2,600 acres) near Rincon, GA; Georgia Power to deliver power in phases from 2028 to 2032. Cost reported as ~$20B initially, with an OpenAI VP quoted (per CBS Atlanta) estimating >$30B at full build-out — treat as a range, not a single confirmed capex figure. OpenAI states it will fund all infrastructure/electric-service costs itself (no ratepayer subsidy claimed) and receives a 50% property-tax abatement for 15 years. Primary source is OpenAI's own announcement at openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/ — not independently fetched due to sandboxed network access, so the excerpt above is drawn from secondary trade-press coverage instead; figures are corroborated across multiple outlets (DCD, CBS Atlanta, Effingham Herald, county government site).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 3200,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "3.2GW figure as reported in secondary coverage of the company's own announcement; phased delivery 2028-2032; basis (site power vs. IT load) not independently confirmed."
+        }
+      ]
+    },
+    {
+      "url": "https://www.ctvnews.ca/business/article/meta-to-build-13-billion-alberta-data-centre-its-first-in-canada/",
+      "title": "Meta to build $13 billion Alberta data centre, its first in Canada",
+      "publisher": "CTV News",
+      "publicationDate": "2026-07-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Meta to build $13 billion Alberta data centre, its first in Canada",
+      "suggestedProjectName": "Meta Sturgeon County (Alberta, Canada)",
+      "note": "New Meta project, not currently in the tracker (distinct from the already-tracked 'Wonder Valley Phase 1' in Alberta, which is owned by O'Leary Ventures, not Meta). Meta's first Canadian data center: Sturgeon County, Alberta; 1GW initial capacity, scalable to 1.8GW; C$13B (~US$9.17B at reporting-date FX) total investment; ~3,000 peak construction workers, 300+ permanent jobs. Meta says it will fully fund new generation/grid infrastructure and match consumption with 100% clean/renewable energy, but has also partnered with Pembina Pipeline to build a new gas-fired 'Greenlight Electricity Centre' in Sturgeon County (in service late 2030) as the actual generation source — worth flagging for the power-source/siting field, since the renewable-matching claim and the underlying gas-fired generation are two different things.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Company-stated 1GW initial capacity, scalable to 1.8GW, per secondary coverage of Meta's announcement; basis not fully specified."
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 9170000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "C$13B converted to USD (~$9.17B) as reported by outlets; not independently verified against a primary USD figure from Meta."
+        }
+      ]
+    }
+  ]
+}
