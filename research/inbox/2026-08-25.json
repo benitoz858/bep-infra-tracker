@@ -1,0 +1,82 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/13/3344413/0/en/iren-delivers-horizon-1-to-microsoft-and-achieves-nvidia-exemplar-cloud-status-on-gb300-nvl72.html",
+      "title": "IREN Delivers Horizon 1 to Microsoft and Achieves NVIDIA Exemplar Cloud Status on GB300 NVL72",
+      "publisher": "IREN Limited",
+      "publicationDate": "2026-08-13",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "first 50MW (IT load) direct-to-chip liquid cooled AI Cloud deployment",
+      "projectId": "iren-childress-horizon-for-microsoft",
+      "note": "First confirmed IT-load capacity at Childress: Horizon 1 (50MW IT load) delivered to and accepted by Microsoft under the $9.7B/5-year cloud contract (announced Nov 2025). Project record currently shows only a 750MW estimate with no confirmedMw. IREN is targeting 480MW gross AI Cloud capacity by end of 2026 and 1.2GW in 2027 (Horizons 2-4 still to come).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 50, "unit": "MW", "confidenceLevel": "HIGH", "methodology": "Stated directly in IREN press release as IT load capacity of the delivered/accepted Horizon 1 deployment"}
+      ]
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/05/3339168/0/en/terawulf-reports-second-quarter-2026-results.html",
+      "title": "TeraWulf Reports Second Quarter 2026 Results",
+      "publisher": "TeraWulf Inc.",
+      "publicationDate": "2026-08-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "completed delivery of CB-3 in early July, increasing revenue-generating capacity to 102 MW",
+      "projectId": "terawulf-lake-mariner-fluidstack-anthropic",
+      "note": "Lake Mariner reached 102MW revenue-generating critical IT capacity after CB-3 delivery (up from 81MW as of June 30, 2026), satisfying the condition for Google's $600M credit support backing Fluidstack's lease obligations to become effective. First confirmed MW figure for this project (record currently shows 360MW estimate only, no confirmedMw). IT-load/revenue-generating basis, not site power.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 102, "unit": "MW", "confidenceLevel": "HIGH", "methodology": "Stated directly in TeraWulf Q2 2026 earnings release as revenue-generating critical IT capacity at Lake Mariner"}
+      ]
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/05/3339168/0/en/terawulf-reports-second-quarter-2026-results.html",
+      "title": "TeraWulf Reports Second Quarter 2026 Results",
+      "publisher": "TeraWulf Inc.",
+      "publicationDate": "2026-08-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "sell the Company's entire 50.1% interest in the Abernathy Joint Venture for aggregate cash consideration of approximately $530 million",
+      "projectId": "fluidstack-abernathy",
+      "note": "Ownership change on a tracked UNDER_CONSTRUCTION project: TeraWulf agreed to sell its full 50.1% stake in the Abernathy JV to Fluidstack for ~$530M cash, making Fluidstack the sole owner. This is divestiture proceeds, not project capex or a power/compute figure -- flagging for the ownership/operator field rather than a capex claim.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+      "title": "NVIDIA Guarantees SB Energy's PORTS-Pike Technology Campus in Ohio to Exclusively Host NVIDIA AI Compute",
+      "publisher": "NVIDIA",
+      "publicationDate": "2026-08-17",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "guarantee up to $105 billion in conditional lease and power payment obligations to SB Energy",
+      "suggestedProjectName": "SB Energy PORTS-Pike Technology Campus (OpenAI/Nvidia, Pike County OH)",
+      "note": "New, not-yet-tracked project: 8GW AI campus in Pike County, Ohio, developed/owned by SB Energy under a 20-year lease to OpenAI; Nvidia is the exclusive compute provider and separately invested $1.5B in SB Energy. Also disclosed via Nvidia SEC 8-K filing same week. Distinct from the already-tracked Stargate Lordstown, Ohio project (Related Digital/Oracle, Trumbull County -- different site and operator). Compute expected to start coming online in 2028; the $105B figure is a financing guarantee (lease + power payment backstop), not confirmed capex -- do not record as capex.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 8000, "unit": "MW", "confidenceLevel": "HIGH", "methodology": "8GW dedicated AI computing capacity stated directly in the Nvidia/SB Energy joint announcement"}
+      ]
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/zerra-dc-files-plans-for-large-data-center-campus-in-queensland-australia/",
+      "title": "Zerra DC files plans for large data center campus in Queensland, Australia",
+      "publisher": "DatacenterDynamics",
+      "publicationDate": "2026-08-24",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "proposing four 360MW data centre buildings delivered across four stages",
+      "suggestedProjectName": "Zerra DC Western Downs Digital Park",
+      "note": "New, not-yet-tracked project: development application (filed, not yet approved) for a 1.44GW, four-building AI campus near Dalby, Western Downs, Queensland. Singapore-based Zerra DC estimates AU$31B (~US$22.2B) at full build-out. Site power basis (four 360MW buildings per filing); pre-construction stage, no regulatory approval yet.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 1440, "unit": "MW", "confidenceLevel": "MEDIUM", "methodology": "Sum of four 360MW buildings stated in the development application as reported by DCD; not yet confirmed by regulatory approval"},
+        {"metricType": "CAPEX_USD", "numericValue": 22190000000, "unit": "USD", "confidenceLevel": "LOW", "methodology": "Developer's full-build-out estimate of AU$31B converted to USD as reported by DCD; unconfirmed against a filing"}
+      ]
+    },
+    {
+      "url": "https://www.timesfreepress.com/news/2026/aug/20/tva-to-charge-data-centers-more-for-power-under/",
+      "title": "TVA to charge data centers more for power under separate rate",
+      "publisher": "Chattanooga Times Free Press",
+      "publicationDate": "2026-08-20",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "new or expanding data center loads above 5 megawatts fall under a Capacity Commitment Charge",
+      "note": "SITING RESTRICTION: TVA's Board approved a new wholesale data-center rate class effective Oct 1, 2026. New/expanding data center loads above 5MW face a Capacity Commitment Charge (reported at roughly $1.5M/MW, paid over 3-5 years); existing data-center customers are moved out of the manufacturing rate class, raising their bills roughly 10% phased over 3 fiscal years. This is a utility connection/tariff rule change, not tied to one project -- relevant to any tracked project served by TVA (TN and adjoining parts of MS/AL/GA/KY/VA/NC).",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
