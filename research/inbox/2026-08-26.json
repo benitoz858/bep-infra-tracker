@@ -1,0 +1,47 @@
+{
+  "submissions": [
+    {
+      "url": "https://investors.terawulf.com/news-events/press-releases/detail/145/kentucky-psc-approves-482-mw-power-agreement-for-terawulfs-justified-data-campus",
+      "title": "Kentucky PSC Approves 482 MW Power Agreement for TeraWulf's Justified Data Campus",
+      "publisher": "TeraWulf Inc.",
+      "publicationDate": "2026-08-21",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Kentucky Public Service Commission approved a 482 MW Retail Electric Service Agreement for TeraWulf's Justified Data Campus",
+      "projectId": "terawulf-justified-anthropic-lease",
+      "note": "New confirmed power figure and first capex estimate for the Hancock County (Hawesville) campus: KY PSC approved a 482 MW Retail Electric Service Agreement (Big Rivers Electric Corp. / Kenergy Corp.) on the Aug 21, 2026 order, above the 401 MW critical-IT figure currently on record (which is the Anthropic lease's contracted IT load, not the site's full electrical service agreement — distinguishing site power vs. IT load here). TeraWulf separately estimated site development plus initial data hall investment at $4.0-4.5B; no capex is currently recorded for this project. Could not confirm this exact press release's date directly (WebFetch to primary sources was unavailable in this run; date inferred from secondary syndication and search summary of the PSC order) -- reviewer should verify the release date and exact RESA terms before promoting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 482, "unit": "MW", "confidenceLevel": "MEDIUM", "methodology": "Kentucky PSC order approving a Retail Electric Service Agreement for the full campus, per company press release and syndicated coverage; not independently verified against the PSC docket in this run."},
+        {"metricType": "CAPEX_USD", "numericValue": 4500000000, "unit": "USD", "confidenceLevel": "LOW", "methodology": "Company-stated estimate range of $4.0-4.5B for site development and initial data hall investment; upper bound recorded, treat as a range not a point estimate."}
+      ]
+    },
+    {
+      "url": "https://www.iowapublicradio.org/ipr-news/2026-08-21/salix-data-center-moratorium-fails",
+      "title": "Northwest Iowa town votes against a data center moratorium",
+      "publisher": "Iowa Public Radio",
+      "publicationDate": "2026-08-21",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Salix City Council voted 3-2 against a one-year moratorium on data centers",
+      "suggestedProjectName": "Google / MidAmerican Energy Salix Data Center",
+      "note": "SITING RESTRICTION: not currently tracked. Salix, Iowa (Woodbury County, near Sioux City) annexed ~900 acres in April 2026 for a potential data center; MidAmerican Energy is the initiating utility partner and Google was identified in early August 2026 as the prospective customer. On Aug 21, 2026 the city council voted 3-2 to reject a proposed one-year moratorium, clearing the path for the project to keep moving locally -- no MW, capex, or formal site agreement has been disclosed yet, so this is a siting-status signal (zoning/moratorium vote), not a confirmed project. Worth tracking as RUMORED/PLANNING given Google's involvement is still informal per reporting.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/07/14/3326722/0/en/pure-dc-launches-one-of-europe-s-largest-ever-ai-infrastructure-projects-phase-1-110mw-of-an-over-7-5-billion-550mw-ai-campus-in-sein%C3%A4joki-begins-fully-leased-with-planning-power-a.html",
+      "title": "Pure DC Launches One of Europe's Largest Ever AI Infrastructure Projects: Phase 1 (110MW) of an over EUR7.5 Billion, 550MW AI Campus in Seinajoki",
+      "publisher": "Pure Data Centres Group",
+      "publicationDate": "2026-07-14",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Phase 1 (110MW) of an over EUR7.5 Billion, 550MW AI Campus in Seinajoki, begins fully leased",
+      "suggestedProjectName": "Pure DC Seinajoki AI Campus",
+      "note": "New project, not currently tracked (Finland currently has only Nebius Lappeenranta on record). Phase 1: 110 MW IT capacity, over EUR1.5B (~US$1.7B) investment, already fully leased with substation live and planning/power secured; Microsoft named as a customer. Full campus target: over 550 MW, over EUR7.5B (~US$8.6B), 'subject to the necessary permissions and contracting' -- treat the full-campus figures as an unconfirmed ceiling, Phase 1 as the near-term committed scope. Flagging despite the ~6-week-old publication date (outside the usual 24-72h window) because it does not appear to have been surfaced in prior daily runs and clears the >=100MW/>=$1B bar by a wide margin.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 110, "unit": "MW", "confidenceLevel": "HIGH", "methodology": "Stated directly in company press release as Phase 1 IT capacity, already fully leased."},
+        {"metricType": "CAPEX_USD", "numericValue": 1700000000, "unit": "USD", "confidenceLevel": "MEDIUM", "methodology": "Company release states 'investment of over EUR1.5 billion' for Phase 1; converted to USD at an approximate rate, treat as approximate."},
+        {"metricType": "POWER_MW", "numericValue": 550, "unit": "MW", "confidenceLevel": "LOW", "methodology": "Company-stated full-campus scale target, described as subject to future permissions and contracting -- not a committed figure."},
+        {"metricType": "CAPEX_USD", "numericValue": 8600000000, "unit": "USD", "confidenceLevel": "LOW", "methodology": "Company-stated full-campus investment ceiling ('over EUR7.5 billion'), converted to USD at an approximate rate -- not a committed figure."}
+      ]
+    }
+  ]
+}
