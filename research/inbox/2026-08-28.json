@@ -1,0 +1,89 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/13/3344413/0/en/iren-delivers-horizon-1-to-microsoft-and-achieves-nvidia-exemplar-cloud-status-on-gb300-nvl72.html",
+      "title": "IREN Delivers Horizon 1 to Microsoft and Achieves NVIDIA Exemplar Cloud Status on GB300 NVL72",
+      "publisher": "GlobeNewswire (IREN Limited company release)",
+      "publicationDate": "2026-08-13",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Horizon 1 is the first of four 50MW (IT load) direct-to-chip liquid cooled AI Cloud deployments",
+      "projectId": "iren-childress-horizon-for-microsoft",
+      "note": "First CONFIRMED power figure for this tracked project. Tracker currently shows only a 750MW estimate with confirmedMw blank. IREN's Horizon 1 (50MW IT load) was delivered to and accepted by Microsoft Aug 13, 2026 — first of four such 50MW deployments due in 2026 (200MW total) under the existing $9.7B/5yr cloud contract (contract value = revenue, not capex; do not conflate). Also achieved NVIDIA 'Exemplar Cloud' status on GB300 NVL72. NOTE ON SOURCING: this session's sandbox has no outbound web-fetch access this run (egress blocked to all external domains including the tracker API itself), so this excerpt was reconstructed from search-engine result synthesis of the primary release rather than a direct fetch — please open the source link to confirm exact wording before promoting confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 50,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Company release states Horizon 1 is a 50MW (IT load) deployment, delivered to and accepted by Microsoft"
+        }
+      ]
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+      "title": "NVIDIA Guarantees SB Energy's PORTS-Pike Technology Campus in Ohio to Exclusively Host NVIDIA AI Compute",
+      "publisher": "NVIDIA Newsroom",
+      "publicationDate": "2026-08-17",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "NVIDIA entered into guarantees to secure approximately 4.25 gigawatts (GW) at SB Energy's PORTS-Pike Technology Campus",
+      "suggestedProjectName": "OpenAI PORTS-Pike (Piketon, Ohio)",
+      "note": "NEW PROJECT — not currently tracked. Distinct from the already-tracked 'Stargate Lordstown' (slug stargate-lordstown-ohio), which is a separate Oracle-owned site in Trumbull County, NE Ohio. This is SB Energy's (SoftBank subsidiary) PORTS-Pike Technology Campus near Piketon, Pike County — a former uranium-enrichment site. OpenAI is the 20-year tenant for up to ~8GW of an eventual ~10GW campus; NVIDIA will exclusively supply AI compute. Phase 1 is ~4.25GW, first power targeted FY2029, full buildout ~2032. IMPORTANT: the widely-reported '$105 billion' figure is a CONTINGENT RESIDUAL-VALUE GUARANTEE cap (NVIDIA credit support if OpenAI defaults/insolvency events occur) — it is NOT capex and should not be entered as capexUsd. No confirmed capex figure found. SOURCING CAVEAT: this session's sandbox had no outbound web-fetch access this run, so the excerpt was reconstructed from search-result synthesis of the primary release, not a direct fetch — confirm exact wording at the source link before promoting confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 4250,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "NVIDIA press release states its guarantee secures approximately 4.25 GW at PORTS-Pike (phase 1 of an eventual ~10GW site)"
+        }
+      ]
+    },
+    {
+      "url": "https://www.texastribune.org/2026/08/03/texas-data-center-project-audit-greg-abbott/",
+      "title": "New Texas data center projects frozen until state audits them",
+      "publisher": "The Texas Tribune",
+      "publicationDate": "2026-08-03",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "directing the PUCT and ERCOT to conduct a 'comprehensive verification and audit of all data centers advancing through ERCOT's interconnection process'",
+      "note": "SITING RESTRICTION: statewide, not tied to a single project. Gov. Abbott (Aug 3, 2026 letter to PUCT/ERCOT) ordered a freeze: no new data center may advance in ERCOT's interconnection queue until PUCT/ERCOT complete an audit of ~250-300 queued projects (energy, water use, tax breaks, ownership, community-impact disclosures). ERCOT says the audit will take 'several months' (reporting points to ~Dec 2026). Any project failing to comply is denied grid connection. This plausibly touches many tracked Texas projects still awaiting interconnection: IREN Childress/Sweetwater, Fluidstack Abernathy, Cipher Black Pearl, Crusoe Goodnight/Abilene Clean Campus, Aligned Caprock, Stargate Milam County/Shackelford County, Microsoft Pecos, QTS-Lancium Hall County, CyrusOne Freestone. Per Texas Tribune follow-up (Aug 14), the audit's practical scope/enforcement mechanism remained vague even as officials touted it — flagging for reviewer judgment on whether/how to reflect per-project status; this does not appear to halt construction already underway with an existing interconnection agreement, but that distinction needs per-project confirmation. SOURCING CAVEAT: reconstructed from search-result synthesis, not a direct fetch this run (sandboxed network) — confirm exact wording at the source link.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.wfaa.com/article/news/local/tarrant-county/fort-worth-data-center-moratorium-commission-approved-what-it-means/287-5cafd956-8e4a-41f6-97f0-31c0f5da410f",
+      "title": "Fort Worth City Council approves 90-day pause on new data center projects",
+      "publisher": "WFAA",
+      "publicationDate": "2026-08-12",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Fort Worth City Council voted unanimously to initiate a proposed 90-day moratorium on new data center construction",
+      "note": "SITING RESTRICTION: Fort Worth, TX. City Council voted unanimously (overnight session, Aug 11) to begin the formal process toward a 90-day moratorium on new data center construction, after a marathon hearing with heavy public opposition over water and noise. Per Fort Worth Report, if the moratorium is formally adopted following required hearings and committee reports, the 90-day pause would take effect around Feb 16, 2027 — i.e. this is procedural groundwork, NOT yet an enacted ban. No specific tracked project named in coverage; worth checking whether any tracked project sits within Fort Worth city limits. SOURCING CAVEAT: reconstructed from search-result synthesis, not a direct fetch this run (sandboxed network) — confirm exact wording at the source link.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.wral.com/news/local/durham-county-approves-data-center-moratorium-august-2026/",
+      "title": "Durham County adopts 9-month pause on data centers",
+      "publisher": "WRAL",
+      "publicationDate": "2026-08-26",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Durham County commissioners voted 4-1 to adopt a nine-month moratorium on new large-scale data centers",
+      "note": "SITING RESTRICTION: Durham County, NC. Commissioners voted 4-1 (Aug 25) for a nine-month moratorium on new large-scale data center development, aligning with the City of Durham's existing pause (through May 2027). Exempts facilities under 100,000 sq ft that use closed-loop cooling and no diesel backup generators. No tracked project appears to be sited in Durham County currently; logging as a new regional restriction data point for the siting-restrictions dataset. SOURCING CAVEAT: reconstructed from search-result synthesis, not a direct fetch this run (sandboxed network) — confirm exact wording at the source link.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://lailluminator.com/2026/08/13/meta-data-center-private/",
+      "title": "Meta can keep its data center details private, PSC decides",
+      "publisher": "Louisiana Illuminator",
+      "publicationDate": "2026-08-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The Louisiana Public Service Commission voted 3-1 to overrule its administrative judge's order requiring Meta to disclose",
+      "projectId": "meta-hyperion-louisiana",
+      "note": "Regulatory update on tracked Meta Hyperion project — not a new construction/siting restriction, the reverse: the PSC BLOCKED disclosure. Commission voted 3-1 along party lines (Aug 12) to overturn its administrative law judge's July 10 subpoena order, letting Meta keep confidential the methodology behind the power-need and job-creation figures Entergy cited in its applications to build new gas turbines for Hyperion. Practical effect: none of the publicly cited MW/jobs figures for Hyperion have been independently verified through discovery, and now likely won't be. Tracker should continue treating Hyperion's power figures as company-stated estimates (as the existing analyst notes already do), not confirmed. SOURCING CAVEAT: reconstructed from search-result synthesis, not a direct fetch this run (sandboxed network) — confirm exact wording at the source link.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
