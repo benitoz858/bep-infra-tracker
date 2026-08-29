@@ -1,0 +1,99 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-08-06/microsoft-opens-fourth-data-center-region-in-india-for-azure",
+      "title": "Microsoft Opens Fourth Data Center Region in India for Azure",
+      "publisher": "Bloomberg",
+      "publicationDate": "2026-08-06",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Microsoft said its new data center region in Hyderabad, its fourth in India, is now live for Azure customers.",
+      "suggestedProjectName": "Microsoft Hyderabad",
+      "note": "STATUS CHANGE: matches existing tracked project 'Microsoft Hyderabad' (slug microsoft-india-south-central-hyderabad), currently UNDER_CONSTRUCTION with no MW disclosed and a mid-2026 target. Aug 6 2026 coverage says the Hyderabad region (Microsoft's 4th in India, three availability zones) is now live/launched for Azure -- status is likely OPERATIONAL or PARTIALLY_OPERATIONAL, not UNDER_CONSTRUCTION. IT load vs. site power basis is not stated in coverage. Omitting projectId: this run could not reach the tracker API (see below) so no true DB id was available, only the slug from the local data/projects.json snapshot -- please match by slug/name. CAVEAT: this run's network egress policy blocked WebFetch and direct HTTPS access to essentially all external domains (confirmed on tracker.bepresearch.com, nvidianews.nvidia.com, openai.com, investors.terawulf.com, en.wikipedia.org), so no primary-source page could be independently fetched and confirmed -- only WebSearch's own summaries were available. The excerpt above is reconstructed from a WebSearch snippet, not copied verbatim from the article. Please verify exact wording and the resulting status against the source before promoting confidence.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.wlrn.org/government-politics/2026-08-27/palm-beach-county-artificial-intelligence-data-centers",
+      "title": "Palm Beach County commissioners put a halt on massive artificial intelligence data centers",
+      "publisher": "WLRN Public Media",
+      "publicationDate": "2026-08-27",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Commissioners voted unanimously Thursday to pursue a one-year moratorium on new hyperscale AI data centers, pending further study.",
+      "note": "SITING RESTRICTION: Palm Beach County, FL commission voted unanimously on Aug 26 2026 (first reading only) for a one-year moratorium on new hyperscale AI data center construction, giving staff time to draft permanent regulations. Prompted by backlash over the commission's earlier rejection of 'Project Tango', a proposed expansion near the Arden community and Saddle View Elementary School (Project Tango is not in the current tracked-project list). A second, final vote is required and is tentatively scheduled for late September 2026 -- this is NOT yet enacted law. CAVEAT: this run's network egress policy blocked WebFetch and direct HTTPS access to essentially all external domains (confirmed on tracker.bepresearch.com and several other sites), so the source article could not be independently fetched -- the excerpt is reconstructed from a WebSearch snippet rather than copied verbatim. Please verify exact wording before promoting confidence.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/sbeoainvidia-portsrelease.htm",
+      "title": "NVIDIA, OpenAI and SB Energy -- credit support on land, power, and shell for PORTS-Pike Technology Campus",
+      "publisher": "U.S. Securities and Exchange Commission (Nvidia 8-K exhibit)",
+      "publicationDate": "2026-08-17",
+      "sourceType": "SEC_FILING",
+      "excerpt": "Nvidia will guarantee up to $105 billion in residual value tied to an initial 4.25 gigawatts of IT capacity.",
+      "suggestedProjectName": "PORTS-Pike Technology Campus (Pike County, Ohio)",
+      "note": "New project, not currently tracked (no Ohio project besides the already-tracked 'Stargate Lordstown' under Oracle). SB Energy will build and own the site; OpenAI is the 20-year tenant. IMPORTANT: the $105B figure is a residual-value financing GUARANTEE from Nvidia (credit support), not capex and not a cash investment -- Nvidia separately invests $1.5B directly in SB Energy. Do not record $105B as CAPEX_USD. Initial phase is 4.25 GW of IT capacity with an option for 3.75 GW more (8 GW total, i.e. IT load, not generation); first capacity phases expected 2028. SB Energy/SoftBank also state a separate $4.2B+ regional grid-infrastructure investment. CAVEAT: this run's network egress policy blocked WebFetch and direct HTTPS access to essentially all external domains including sec.gov itself, so the filing could not be independently fetched and confirmed -- the excerpt is reconstructed from secondary press coverage of the filing, not copied verbatim from the filing text. Please verify against the actual filing before promoting confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 4250,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Initial IT capacity figure (4.25 GW) as reported by multiple outlets citing the Aug 17 2026 Nvidia SEC filing; not independently fetched/verified against the filing this run."
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+      "title": "Building AI infrastructure with the Effingham County community",
+      "publisher": "OpenAI",
+      "publicationDate": "2026-07-22",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "OpenAI will invest $20 billion in Project Camellia, backed by a 3.2 gigawatt power agreement with Georgia Power.",
+      "suggestedProjectName": "OpenAI Project Camellia (Effingham County, Georgia)",
+      "note": "New project, not currently tracked. Savannah Gateway Industrial Hub site near Rincon, GA; 2,600 acres, four buildings. Georgia Power to deliver 3.2 GW of site power in phases from 2028-2032 (this is site power per the deal structure, not a confirmed IT load figure). OpenAI states it is paying all infrastructure and electric-service costs itself so local ratepayers are not subsidizing the project. CAVEAT: this run's network egress policy blocked WebFetch and direct HTTPS access to essentially all external domains including openai.com itself, so the post could not be independently fetched and confirmed -- the excerpt is reconstructed from secondary coverage of OpenAI's own announcement, not copied verbatim. Please verify exact wording against the source before promoting confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 3200,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "3.2 GW power agreement with Georgia Power as widely reported from OpenAI's own announcement; not independently fetched this run."
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 20000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "$20B investment figure as stated in OpenAI's announcement per secondary coverage; not independently fetched this run."
+        }
+      ]
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/06/16/3312788/0/en/edgemode-and-the-spanish-city-of-mora-sign-memorandum-of-understanding-to-advance-300-mw-dc-malpica-data-center-campus.html",
+      "title": "EdgeMode and the Spanish City of Mora Sign Memorandum of Understanding to Advance 300 MW \"DC Malpica\" Data Center Campus",
+      "publisher": "GlobeNewswire (EdgeMode press release)",
+      "publicationDate": "2026-06-16",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "DC Malpica contemplates an estimated 3 billion euro investment for two data centers with a combined 300 MW capacity.",
+      "suggestedProjectName": "EdgeMode DC Malpica (Mora, Spain)",
+      "note": "New project, not currently tracked. MOU-stage between EdgeMode, BlackBerry AIF and the Mora town council (Toledo province, Castilla-La Mancha, Spain), part of EdgeMode's wider 1.5GW five-site Spanish portfolio. Included despite MOU stage because it is announced by the principal developer itself (EdgeMode). Two 150,000 sqm buildings, 300 MW combined IT capacity, ~EUR3B (~$3.4B) estimated investment since presented to the regional government -- no firm financial close or permits confirmed as of this writing; LOWEST confidence of this batch. CAVEAT: this run's network egress policy blocked WebFetch and direct HTTPS access to essentially all external domains, so the release could not be independently fetched -- the excerpt is reconstructed from secondary coverage, not copied verbatim. Please verify wording before promoting confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 300,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "300 MW combined capacity as stated in EdgeMode's own MOU announcement per secondary coverage; not independently fetched this run."
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 3400000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "~EUR3B (~$3.4B at reporting-time conversion) estimated investment as reported from EdgeMode/Mora's presentation to the Castilla-La Mancha regional government; currency-converted estimate, not independently fetched this run."
+        }
+      ]
+    }
+  ]
+}
