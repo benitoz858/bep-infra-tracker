@@ -1,0 +1,95 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.prometheushyperscale.com/news/prometheus-hyperscale-and-istmo-energy-partner-to-develop-data-center-campus-in-west-texas",
+      "title": "Prometheus Hyperscale and Istmo Energy Partner to Develop Data Center Campus in West Texas",
+      "publisher": "Prometheus Hyperscale",
+      "publicationDate": "2026-08-20",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "The Pecos Project and partnership with Istmo Energy adds 2.5GW to our existing project pipeline",
+      "suggestedProjectName": "Prometheus Hyperscale Pecos Campus (Reeves County, Texas)",
+      "note": "New project, not currently tracked. Prometheus Hyperscale and Istmo Energy announced Aug 20 2026 a behind-the-meter data center campus in Reeves County (Pecos), TX: Phase 1 at 1.5GW with a defined path to 2.5GW total, powered by on-site gas generation plus Istmo's co-located fractionation facility (dual-fuel gas + methane), explicitly designed to avoid ERCOT grid interconnection queues. This is generation/site power capacity as announced, NOT a confirmed IT load figure -- no GPU count or capex was found in available coverage. First power targeted 2027 via modular deployment. Context: Texas issued a statewide pause on new data center grid-interconnection approvals in Aug 2026 (already flagged in a prior agent run) -- this project's behind-the-meter design is presented by the company as insulating it from that constraint, which is itself worth a human look. CAVEAT: this run's network egress policy blocked both Bash curl and WebFetch for every external domain tested (tracker.bepresearch.com, gov.texas.gov, wndu.com, prometheushyperscale.com), so this excerpt is reconstructed from a WebSearch result snippet showing a directly-quoted company statement, not independently fetched verbatim from the source page. Please verify exact wording and capacity figures before promoting confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 2500,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "2.5GW total pipeline addition (1.5GW Phase 1, path to 2.5GW) as stated in Prometheus Hyperscale's own press release per WebSearch snippet; not independently fetched this run."
+        }
+      ]
+    },
+    {
+      "url": "https://www.henrycountyva.gov/m/newsflash/home/detail/148",
+      "title": "Board Adopts Stringent Data Center Regulations",
+      "publisher": "Henry County, Virginia (county government)",
+      "publicationDate": "2026-08-25",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "the minimum setback is 500 feet",
+      "note": "SITING RESTRICTION: Henry County, VA Board of Supervisors adopted a new Data Center (D-C) zoning district on Aug 25 2026 (covered Aug 26-28 by WDBJ7/WSLS). A data center would only be permitted with a special use permit from the Board of Zoning Appeals; no property is currently zoned D-C, so this does not itself approve or block any specific site. Reported provisions: 500 ft setback where the adjoining property is zoned industrial, 1,000 ft otherwise; 50 dBA max exterior noise; plus water-use, cooling, electrical-infrastructure, screening, lighting, emergency-response and decommissioning requirements. Not linked to any tracked project -- no tracked project is sited in Henry County, VA. CAVEAT: this run's network egress policy blocked WebFetch/curl for every external domain tested, including the county's own site, so the excerpt above is reconstructed from secondary local-news coverage (WDBJ7, WSLS) of the county's announcement, not fetched verbatim from henrycountyva.gov. Please verify the exact ordinance text and setback figures before promoting confidence.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://floodlightnews.org/new-jersey-data-center-federal-violation/",
+      "title": "One of East Coast's largest data centers accused of 'violating federal law'",
+      "publisher": "Floodlight",
+      "publicationDate": "2026-08-28",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "has issued no permits, nor are any permit applications under review for power generators at the DataOne facility",
+      "suggestedProjectName": "DataOne Vineland (New Jersey)",
+      "note": "New project, not currently tracked. DataOne's Vineland, NJ campus reportedly provides AI compute to Microsoft under a $17B deal with Nebius. A thermal-drone survey by reporters found 45 of the site's 62 gas generators running simultaneously on Aug 18 2026 (up from 25 in a late-June observation); the quote above is the New Jersey Department of Environmental Protection's on-record statement that no permits have been issued or are under review for those generators -- i.e. an alleged federal/state permitting violation at an operating site, not a new siting restriction being imposed. Flagging because enforcement action or a forced shutdown of generation capacity could materially affect this site's operational status. Generator/IT-load MW figures not disclosed in available coverage -- only a unit count (62 generators, 45 running). CAVEAT: this run's network egress policy blocked WebFetch/curl for every external domain tested, so the excerpt is reconstructed from a WebSearch snippet showing the NJDEP statement in quotation marks, not independently fetched verbatim from floodlightnews.org. Please verify exact wording and current permit/enforcement status before promoting confidence.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.wdtv.com/2026/08/27/west-virginia-data-center-lands-reported-45-billion-ai-agreement-morrisey-says/",
+      "title": "West Virginia data center lands reported $45 billion AI investment, Morrisey says",
+      "publisher": "WDTV",
+      "publicationDate": "2026-08-27",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The reported $45 billion agreement for computing capacity at Nscale's West Virginia campus is an extraordinary vote of confidence in our state",
+      "suggestedProjectName": "Nscale Monarch Compute Campus (Mason County, West Virginia)",
+      "note": "New project, not currently tracked (distinct from the already-tracked Nscale Barstow, TX and Nscale Loughton, UK projects). Bloomberg/CNBC reported Aug 26 2026, citing sources, that Anthropic agreed to a 6-year, ~$45B compute-capacity deal for roughly 460MW at Nscale's Monarch Compute Campus in Mason County, WV -- a 2,250-acre site Nscale acquired in March 2026 with reported potential for up to 8GW, first 2GW phase targeted online H1 2028, planned to use Nvidia's next-generation Vera Rubin GPUs. WV Governor Morrisey's quote above (given in reaction to the reports) is the most directly attributable statement found; as of this writing neither Anthropic nor Nscale had issued an official press release confirming deal terms, per the cited coverage. IMPORTANT: this is a compute-capacity purchase / contracted lease-type revenue for Nscale, NOT Nscale's own capex -- do not record $45B as CAPEX_USD. CAVEAT: this run's network egress policy blocked WebFetch/curl for every external domain tested, so the excerpt is reconstructed from a WebSearch snippet showing a directly-quoted statement, not independently fetched verbatim. Please verify exact wording and deal terms (460MW figure, 6-year term) against a primary source before promoting confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 460,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "460MW figure as widely reported across multiple outlets (Bloomberg, CNBC, TechCrunch) citing sources on the Anthropic-Nscale deal; not independently fetched/verified this run."
+        }
+      ]
+    },
+    {
+      "url": "https://kesq.com/news/2026/08/25/coachella-city-council-passes-permanent-ban-on-data-centers/",
+      "title": "Coachella City Council passes permanent ban on data centers",
+      "publisher": "KESQ",
+      "publicationDate": "2026-08-25",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The ordinance bans data centers in every zoning district in the city",
+      "note": "SITING RESTRICTION: Coachella, CA (Riverside County) City Council passed the final reading of Ordinance No. 1231 on Aug 25 2026, permanently banning data centers in every zoning district citywide, effective ~30 days after the vote (roughly Sept 24 2026). Reported as the first city in the Coachella Valley/Riverside County to enact a permanent ban; other coverage mentions Perris and Desert Hot Springs as having earlier restrictions, not independently confirmed this run. Exempts small accessory server rooms 'incidental, subordinate and specifically related to a permitted principal use,' plus government/school/telecom IT systems already permitted under existing code. No tracked project is sited in Coachella. CAVEAT: this run's network egress policy blocked WebFetch/curl for every external domain tested, so the excerpt is reconstructed from a WebSearch snippet, not independently fetched verbatim. Please verify exact ordinance wording and effective date before promoting confidence.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://kesq.com/news/2026/08/26/palm-springs-city-council-approves-temporary-data-center-moratorium/",
+      "title": "Palm Springs City Council approves temporary data center moratorium",
+      "publisher": "KESQ",
+      "publicationDate": "2026-08-26",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "the 45-day pause giving the city more time to study the potential impacts of data centers",
+      "note": "SITING RESTRICTION: Palm Springs, CA City Council approved a 45-day temporary moratorium on new data center projects on Aug 26 2026, one day after neighboring Coachella's permanent ban, to give staff time to study impacts and evaluate whether additional zoning regulations are needed. This is a temporary study pause, not (yet) a permanent restriction -- a follow-up decision is expected after the 45-day window closes. No tracked project is sited in Palm Springs. CAVEAT: this run's network egress policy blocked WebFetch/curl for every external domain tested, so the excerpt is reconstructed from a WebSearch snippet, not independently fetched verbatim. Please verify exact wording and the moratorium's expiration date before promoting confidence.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.wndu.com/2026/08/28/elkhart-city-council-passes-one-year-moratorium-data-centers-battery-storage-facilities/",
+      "title": "Elkhart City Council passes one-year moratorium on data centers, battery storage facilities",
+      "publisher": "WNDU",
+      "publicationDate": "2026-08-28",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The Elkhart City Council voted 9-0 ... to approve a moratorium for data centers and battery storage facility projects",
+      "note": "SITING RESTRICTION: City of Elkhart, IN City Council voted 9-0 on Aug 27 2026 (reported Aug 28) to approve a one-year moratorium on new data center and battery-storage-facility applications, running through December 2027; the city will not accept new applications during the pause while it studies electrical capacity, water use, public safety, traffic, noise and environmental impacts. This is a city-level action, distinct from any separate Elkhart County process. No tracked project is sited in Elkhart. CAVEAT: this run's network egress policy blocked WebFetch/curl for every external domain tested, so the excerpt is reconstructed from a WebSearch snippet, not independently fetched verbatim. Please verify exact wording, vote date and moratorium end date before promoting confidence.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
