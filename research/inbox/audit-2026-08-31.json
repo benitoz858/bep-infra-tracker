@@ -1,0 +1,84 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.bristol.ac.uk/research/centres/bristol-supercomputing/articles/2025/lifting-the-lid-on-isambard-ai.html",
+      "title": "Lifting the lid on Isambard-AI",
+      "publisher": "University of Bristol",
+      "publicationDate": "",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Isambard-AI utilises Direct Liquid Cooling, which provides efficient management of the 5 MW facility.",
+      "projectId": "isambard-ai-bristol",
+      "note": "AUDIT: confirmedMw=5 is recorded as CONFIRMED IT load ('stated by the operator, hence recorded as confirmed'), but the cited source only describes a '5 MW facility' — total facility/grid power, with no explicit IT-load carve-out (contrast Galaxy Helios, where the operator explicitly splits gross vs. critical-IT). Independent coverage (not fetched this session — WebFetch was network-blocked for the whole audit; corroborated only via WebSearch snippets, e.g. a report that NGED completed 'a new 5 MW connection to Bristol's distribution network') supports this being a grid-connection/facility figure, not a stated IT-load number. Mitigating factor: reported PUE ~1.06-1.1 (direct liquid cooling) means true IT load is probably ~4.5-4.7MW, close to 5MW, so the number is likely not far off — this is a basis/label issue, not necessarily a wrong figure. Recommend softening the methodology note from 'stated by the operator, hence recorded as confirmed [IT load]' to 'operator-stated facility/site power; no explicit IT-load figure published' and considering MEDIUM rather than CONFIRMED for this metric. Please re-verify by fetching the two Bristol URLs directly, since this session could not.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 5,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Basis: facility/site power (grid connection), not an explicit IT-load statement. Source describes 'the 5 MW facility' without distinguishing IT load from total draw; reported PUE ~1.06-1.1 implies true IT load is likely ~4.5-4.7MW."
+        }
+      ]
+    },
+    {
+      "url": "https://www.chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center",
+      "title": "Chevron Signs 20-Year Power Agreement with Microsoft for West Texas Data Center",
+      "publisher": "Chevron",
+      "publicationDate": "2026-06-22",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Project Kilby will operate 100 percent behind the meter, with no utility involvement and no ERCOT interconnection.",
+      "projectId": "microsoft-pecos",
+      "note": "AUDIT: tracker's analystNotes currently say the IT-vs-site basis for the 2000MW estimatedMw is 'not stated.' This newly-identified primary source (Chevron's own release on the co-located 'Project Kilby' gas plant, dedicated to the Pecos campus) confirms the power is a dedicated off-grid generation facility serving the datacenter directly, i.e. site/generation power, not a stated IT-load figure. Some trade coverage describes the underlying plant's generation capacity as up to 2.67GW (a margin above the ~2GW datacenter draw Microsoft itself cites) — consistent with generation vs. IT-load headroom, not a contradiction. Recommend updating the basis note from 'not stated' to 'site/generation power — dedicated behind-the-meter natural gas plant (Chevron 'Project Kilby'), not IT load.' Not independently fetched this session (WebFetch network-blocked); corroborated via WebSearch only — recommend direct-fetch confirmation before committing.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 2000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Basis: site/generation power. Chevron's co-located 'Project Kilby' natural-gas plant (up to 2.67GW generation, per trade coverage) will power the Pecos campus entirely behind-the-meter, off the public grid — this is generation/site power, not a stated IT-load figure."
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/stargate-sb-energy-partnership/",
+      "title": "OpenAI and SoftBank Group Partner with SB Energy",
+      "publisher": "OpenAI",
+      "publicationDate": "2026-01-09",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "OpenAI has selected SB Energy to build and operate its previously-announced 1.2 GW data center site in Milam County.",
+      "projectId": "stargate-milam-county",
+      "note": "AUDIT: tracker's power fields are currently blank for this site, correctly reflecting the original Sept 2025 five-site OpenAI announcement, which disclosed no per-site capacity. This later OpenAI announcement (Jan 9, 2026, naming SB Energy as builder/operator) now discloses 1.2 GW specifically for Milam County. Recommend adding estimatedMw=1200 with this as a new cited source alongside the original Sept 2025 announcement. IT-vs-site basis is not confirmed from the excerpt available this session (WebFetch was network-blocked; only WebSearch snippets were available) — please confirm basis directly from the source before committing.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1200,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "OpenAI's own Jan 9, 2026 announcement discloses the Milam County site's capacity as 1.2 GW, selecting SB Energy (SoftBank) to build and operate it. Basis (IT load vs. site power) not explicitly confirmed from the excerpt available this session — flag for confirmation on next audit."
+        }
+      ]
+    },
+    {
+      "url": "https://www.seine-et-marne.gouv.fr/Publications/Enquetes-publiques/FOUJU-PROJET-CAMPUS-IA/DECISIONS",
+      "title": "FOUJU — PROJET CAMPUS IA — Décisions",
+      "publisher": "Préfecture de Seine-et-Marne",
+      "publicationDate": "2026-07-29",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "Décret n° 2026-07/DCSE/BPE/E du 29 juillet 2026 autorisant Campus IA et RTE à construire le centre de données.",
+      "projectId": "campus-ia-fouju-ile-de-france",
+      "note": "AUDIT: tracker status is still PERMITTING (last verified 2026-08-01, when the public inquiry was noted as open through 30 May 2026). WebSearch indicates (not independently fetched this session — WebFetch was network-blocked for the entire audit) that the Préfecture de Seine-et-Marne issued a decree on 2026-07-29 authorizing the Campus IA/RTE project, with first-phase construction reportedly planned to start September 2026. Also per WebSearch: a local opposition group ('Stop IA à Fouju') has filed a legal challenge (recours) against the authorization, so approval is not yet unchallenged. Recommend updating status from PERMITTING to reflect the July 29 authorization (e.g. APPROVED / pre-construction), while noting the pending legal challenge as a risk. The 1.4GW estimatedMw figure itself remains correctly framed as the long-term target (existing analystNotes already note only 700MW is RTE-contracted so far) — no change to the power figure recommended, only the lifecycle status. Please verify the decree text directly once WebFetch access is restored before committing a status change.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1400,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "1.4GW remains the long-term multi-phase target per the French Senate question record; the 2026-07-29 permitting decree authorizes the project's construction but does not itself confirm a change to the contracted-capacity figure (RTE contract reported at 700MW as of the prior audit)."
+        }
+      ]
+    }
+  ]
+}
