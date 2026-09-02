@@ -1,0 +1,88 @@
+{
+  "submissions": [
+    {
+      "url": "https://data-volt.com/media/breaking-news/humain-partners-datavolt-develop-100mw-of-a-360mw-ai-datacenter-in-neom/",
+      "title": "HUMAIN Partners with DataVolt to Jointly Develop 100MW of a 360MW AI Data Center Project in NEOM",
+      "publisher": "DataVolt",
+      "publicationDate": "2026-08-31",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Construction is underway, 100MW is moving forward. We are building with the speed and scale that the next era of AI demands",
+      "suggestedProjectName": "DataVolt Oxagon",
+      "note": "STATUS CHANGE candidate for the tracked project 'DataVolt Oxagon' (Tabuk Province, Saudi Arabia; currently ANNOUNCED in the tracker). HUMAIN CEO Tareq Amin confirmed construction has started on the first 100MW phase of the planned 360MW first stage (of a 1.5GW total campus at NEOM's Oxagon), targeted operational 2028. No projectId included because live API access was unavailable this run (see report) -- please match by name/location. IT-vs-site power basis not stated in the release.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 100,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Stated directly by HUMAIN CEO in company/partner announcement as the first phase now under construction."
+        }
+      ]
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/31/3353118/0/en/hcwc-announces-host-digital-secures-1-25-billion-15-year-ai-data-center-lease.html",
+      "title": "HCWC Announces Host Digital Secures $1.25 Billion, 15-Year AI Data Center Lease",
+      "publisher": "GlobeNewswire (Healthy Choice Wellness Corp. / Host Digital Infrastructure LLC)",
+      "publicationDate": "2026-08-31",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "43 MW take-or-pay lease at its existing northeast Oklahoma facility, approximately $1.25 billion in base contracted revenue over the 15-year term",
+      "suggestedProjectName": "Host Digital Northeast Oklahoma (Tulsa)",
+      "note": "New project candidate, not currently tracked. Host Digital Infrastructure LLC (subsidiary of Healthy Choice Wellness Corp., NYSE American: HCWC) signed a 15-year take-or-pay lease for 43 MW of critical IT load at its existing, already-energized Tulsa, Oklahoma facility (5555 S 129th E Ave) with an unnamed 'world's largest privately held cloud infrastructure company,' backstopped by an investment-grade tech company (widely reported to be Google-adjacent per sector coverage, not confirmed in this release). This is LEASE REVENUE, not capex -- $1.25B base / up to $3.2B with renewals is contracted rent, so no CAPEX_USD claim is included. Delivery expected H1 2027. Quote reconstructed from search-engine snippets of the release; live web-fetch access was unavailable this run (see report) -- please verify exact wording against the GlobeNewswire URL before treating the excerpt as verbatim.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 43,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Critical IT load figure stated directly in the company's lease announcement."
+        }
+      ]
+    },
+    {
+      "url": "https://www.azfamily.com/2026/08/31/ag-mayes-calls-statewide-pause-new-data-center-construction/",
+      "title": "AG Mayes calls for statewide pause on new data center construction",
+      "publisher": "AZFamily (KTVK/KPHO)",
+      "publicationDate": "2026-08-31",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The only sane thing to do is to pause the approval of new data centers, Mayes said in a statement.",
+      "note": "SITING RESTRICTION: Arizona Attorney General Kris Mayes is asking the legislature and Gov. Katie Hobbs to pass a law pausing approval of new (especially hyperscale) data centers statewide, citing rising electricity bills and a ~30% federal cut to Arizona's Colorado River water allocation. This is a call for future legislation, not an enacted restriction -- no bill exists yet, so no project should be marked as blocked based on this alone. Not linked to a specific tracked project; flagging for the siting-restrictions review.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.kbsi23.com/news/perryville-revises-data-center-regulations-after-public-concerns/",
+      "title": "Perryville revises data center regulations after public concerns",
+      "publisher": "KBSI FOX23 News (Cape Girardeau)",
+      "publicationDate": "2026-08-25",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "requiring a closed-loop cooling system capped at 50,000 gallons per day",
+      "note": "SITING RESTRICTION: Perryville, Missouri's Board of Aldermen was set to consider a third revision of the city's data center ordinance on Sept. 1, 2026 (its first version passed Feb. 2026, a second version followed). The draft under consideration adds a 500-foot setback from homes/childcare/developmental-disability work centers, a public-hearing requirement before licensing, a water-use cap generally at 50,000 gallons/day (30-day average), mandatory closed-loop cooling, a groundwater-well and once-through-cooling ban, and required environmental/noise impact assessments. I could not confirm the Sept. 1 vote outcome in available coverage as of this report (today is Sept. 2) -- worth a follow-up look to see whether it was adopted. No live data center project is currently sited/proposed in Perryville per this coverage (city says one company inquired, nothing submitted).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.mantecabulletin.com/news/local-news/legislature-approves-mcnerney-to-ensure-data-centers-pay-their-fair-share-of-energy-costs/",
+      "title": "Legislature approves McNerney bill to ensure data centers pay their fair share of energy costs",
+      "publisher": "Manteca Bulletin",
+      "publicationDate": "2026-09-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "SB 1168 will ensure large energy users pay their fair share.",
+      "note": "SITING RESTRICTION (utility connection rule): California's SB 1168 (Sen. Jerry McNerney) passed the Assembly unanimously and the Senate 38-0 on Sept. 1, 2026, and now heads to Gov. Newsom's desk (not yet signed as of this report). It directs the CPUC to set rate structures ensuring data centers pay their proportionate share of transmission/distribution and load-growth costs rather than spreading them across all ratepayers. Statewide policy, not tied to one project -- flagging for the siting-restrictions review.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.azfamily.com/2026/08/27/pinal-county-board-rejects-massive-data-center-project/",
+      "title": "Pinal County board rejects massive data center project",
+      "publisher": "AZFamily (KTVK/KPHO)",
+      "publicationDate": "2026-08-27",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Pinal County officials blocked the path forward for Vermaland's La Osa Energy Center on Aug. 26 in a 4-1 vote.",
+      "note": "SITING RESTRICTION: Pinal County (AZ) Board of Supervisors voted 4-1 on Aug. 26, 2026 to reject rezoning for Vermaland's La Osa Energy Center near Eloy -- among the largest data center proposals ever floated in Arizona (11 buildings, a 500MW on-site gas plant, up to 1GW total demand). Rejection stood even after developers offered an 80% scale-back, self-imposed water-use limits, and a commitment to cover all energy infrastructure costs. Cited by Arizona's AG (see companion finding on the statewide pause call) as an example of local pushback. Not a currently tracked project -- flagging as a new, now-blocked proposal rather than proposing a project row, since it was killed at rezoning.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
