@@ -1,0 +1,87 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.abqjournal.com/news/nm-supreme-court-leaves-project-jupiter-permit-on-hold/3113794",
+      "title": "NM Supreme Court keeps Project Jupiter permit on hold",
+      "publisher": "Albuquerque Journal",
+      "publicationDate": "2026-09-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Supreme Court unanimously denied a bid by Project Jupiter's developers to partially reopen air quality permit proceedings",
+      "suggestedProjectName": "Stargate Doña Ana County",
+      "note": "STATUS UPDATE on tracked project 'Stargate Doña Ana County' (Oracle/Doña Ana County NM, aka 'Project Jupiter' locally) — the NM Supreme Court on Tue Sept 1 denied the developer's bid to partially lift its Aug 23 stay, keeping the on-site microgrid/fuel-cell air permit hearing (was set for Sept 14) paused; a separate emergency well-water authorization also remains stayed. This agent could not reach the tracker API this run (outbound network to tracker.bepresearch.com is blocked in this sandbox), so no internal projectId is available — please match by name. The excerpt is reconstructed from a search-engine summary of the article, not a direct fetch of the page (WebFetch was also blocked this run) — verify exact wording against the URL before recording as CONFIRMED.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.pressdemocrat.com/2026/09/02/let-them-go-someplace-else-eureka-council-enacts-45-day-ban-on-data-centers/",
+      "title": "'Let them go someplace else': Eureka council enacts 45-day ban on data centers",
+      "publisher": "The Press Democrat",
+      "publicationDate": "2026-09-02",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Eureka City Council unanimously approved a 45-day moratorium on new data centers within city limits",
+      "note": "SITING RESTRICTION: Eureka, CA (Humboldt County) city council voted unanimously on Sept 2 for a 45-day moratorium on siting new data centers in the city's inland and coastal zones, while staff drafts permanent zoning standards (water/power/size limits) expected before the window closes in early October. Not tied to any specific tracked project — no facility is currently proposed in Eureka in this dataset. Excerpt reconstructed from a search-engine summary, not a direct page fetch (WebFetch blocked this run) — verify wording against the URL.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.kpbs.org/news/environment/2026/09/01/judge-preparing-to-halt-massive-imperial-county-data-center-order-environmental-review",
+      "title": "Judge preparing to halt massive Imperial County data center, order environmental review",
+      "publisher": "KPBS Public Media",
+      "publicationDate": "2026-09-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "judge tentatively ordered Imperial County to set aside approvals for the 330 MW data center",
+      "suggestedProjectName": "Imperial Valley Computer Manufacturing (Imperial County, CA)",
+      "note": "SITING RESTRICTION + new project candidate: Imperial County Superior Court (Judge L. Brooks Anderholt) tentatively ruled Sept 1 that Imperial County must set aside approvals for Imperial Valley Computer Manufacturing LLC's ~950,000 sq ft, 330 MW data center near Aten/Clark roads and prepare a full CEQA Environmental Impact Report — the county had relied on a 2017 review that didn't cover this project. Site power figure (330 MW load + 330 MW substation + 330 MW backup gas generation) is from the project description in coverage, not a primary filing I could fetch directly. Not currently tracked. Excerpt reconstructed from a search-engine summary (WebFetch blocked this run) — verify against the URL before treating as CONFIRMED.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 330,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Site IT/facility load as described in news coverage of county project filings; not independently verified against the primary filing"
+        }
+      ]
+    },
+    {
+      "url": "https://nevadacurrent.com/2026/09/01/judge-halts-data-center-construction-on-public-land/",
+      "title": "Judge halts data center construction on public land",
+      "publisher": "Nevada Current",
+      "publicationDate": "2026-09-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Interior Board of Land Appeals ruled the BLM's approval likely violated the National Environmental Policy Act",
+      "suggestedProjectName": "Townsite Data Center (Boulder City, NV)",
+      "note": "SITING RESTRICTION + new project candidate: the U.S. Interior Board of Land Appeals stayed BLM's approval of the ~88.5-acre 'Townsite Data Center' (developer Townsite Solar 2 LLC) near Boulder City/Eldorado Valley, NV on Tue Sept 1, after Boulder City, Center for Biological Diversity and Sierra Club appealed — BLM had approved the conversion from a permitted solar+battery project to a data center using the old solar project's environmental analysis. Briefing schedule due by Sept 21. Not currently tracked; no power/capex figures found. Excerpt reconstructed from a search-engine summary (WebFetch blocked this run) — verify against the URL before treating as CONFIRMED.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://capcity.news/community/county-community/2026/09/01/vantage-data-center-gets-zone-change-ok-from-laramie-county-tuesday/",
+      "title": "Vantage data center gets zone change OK from Laramie County Tuesday",
+      "publisher": "Cap City News (Cheyenne, WY)",
+      "publicationDate": "2026-09-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Vantage Data Center said the project could grow to a $20 billion investment",
+      "suggestedProjectName": "Vantage Project Latigo (Laramie County, WY)",
+      "note": "New project: Laramie County, WY commissioners approved a Planned Unit Development zone change on Tue Sept 1 for Vantage Data Centers' 'Project Latigo', an 1,835-acre campus ~12 miles south of Cheyenne. Company says the project could grow to $20B investment / up to 2,000 jobs, first phase with on-site natural gas generation and closed-loop cooling; construction targeted to start 2027, phase one complete 2030. Not the same as the already-tracked 'Prometheus Hyperscale Evanston' WY project — different site and developer. $20B figure is a company-stated potential ceiling, not confirmed capex or a signed contract value. Excerpt reconstructed from a search-engine summary (WebFetch blocked this run) — verify against the URL.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 20000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Company-stated potential investment ceiling for the full build-out, as quoted in local news coverage — not a confirmed or committed capex figure"
+        }
+      ]
+    },
+    {
+      "url": "https://www.lakemchenryscanner.com/2026/09/01/grayslake-issues-first-permit-for-construction-to-begin-on-mega-data-center-campus-as-lawsuit-seeks-to-block-development/",
+      "title": "Grayslake issues first permit for construction to begin on mega data center campus as lawsuit seeks to block development",
+      "publisher": "Lake & McHenry County Scanner",
+      "publicationDate": "2026-09-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Grayslake granted a building permit for the first component of the data center campus",
+      "suggestedProjectName": "T5@Chicago IV (Grayslake, IL)",
+      "note": "New project: Village of Grayslake, IL issued its first construction permit (~800,000 sq ft building) for T5 Data Centers' up-to-472-acre / up to 10.1M sq ft 'T5@Chicago IV' campus in the Cornerstone business park, even as a resident lawsuit seeks to void the 2024-2025 approvals and development agreement. Not currently tracked. No confirmed MW/capex found; local coverage cites a projected $1.4B in property-tax revenue over 20 years — that is tax revenue, not capex, and should not be entered as such. Excerpt reconstructed from a search-engine summary (WebFetch blocked this run) — verify against the URL.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
