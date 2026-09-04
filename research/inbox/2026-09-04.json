@@ -1,0 +1,54 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.tribtoday.com/news/local-news/2026/09/newton-falls-enacts-1-year-moratorium-on-data-centers/",
+      "title": "Newton Falls enacts 1-year moratorium on data centers",
+      "publisher": "Tribune Chronicle",
+      "publicationDate": "2026-09-03",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Newton Falls enacts 1-year moratorium on data centers",
+      "note": "SITING RESTRICTION: Newton Falls Village Council (Trumbull County, Ohio) voted 4-0 on an emergency reading enacting a 12-month moratorium on data center permits, effective immediately, so staff can study zoning, infrastructure, and utility impacts before any project can apply. Councilman Brian Kropp framed it as preparation rather than opposition: 'This legislation is not to oppose data centers but to help our village to be prepared if someone wants to get a permit to build or bring a data center here.' Not an outright ban. Note for reviewer: Trumbull County also hosts the tracked Stargate Lordstown project in a different municipality (Lordstown) — per CONTRIBUTING.md this agent is not linking them by location inference; please confirm manually whether this moratorium has any bearing on that site.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://sjvsun.com/uncategorized/fresno-takes-steps-to-ban-data-centers-for-10-years/",
+      "title": "Fresno takes steps to ban data centers for 10 years",
+      "publisher": "San Joaquin Valley Sun (SJV Sun)",
+      "publicationDate": "2026-09-02",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Fresno takes steps to ban data centers for 10 years",
+      "note": "SITING RESTRICTION: Fresno, CA City Council voted unanimously (Thursday session, covered 2026-09-02) to direct city staff to return with a text amendment banning new data center construction citywide for 10 years, becoming permanent after that unless a future council votes otherwise; applies to current city land and any future annexations. Councilmember Nick Richardson (sponsor) and Mayor Jerry Dyer (co-sponsor) cited water use, electricity/grid impact, land consumption, and low job creation per acre. This is a council directive to draft an ordinance, not a final enacted ban — the actual text-amendment vote is the next milestone to watch.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.statesboroherald.com/local/county-commission-by-4-3-vote-with-chairs-tiebreaker-kills-proposal-for-data-center-ban/",
+      "title": "County commission, by 4-3 vote with chair's tiebreaker, kills proposal for data center ban",
+      "publisher": "Statesboro Herald",
+      "publicationDate": "2026-09-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "County commission, by 4-3 vote with chair's tiebreaker, kills proposal for data center ban",
+      "note": "SITING RESTRICTION update: Bulloch County, GA commissioners voted 4-3 on Tuesday, Sept 1, 2026 (Chairman David Bennett breaking a 3-3 tie) to reject a proposed outright ban on data centers in unincorporated county land. Bennett: 'I don't think that this community needs a largescale, \"Meta,\" data center' but 'I'm not going to ignore the fact that by doing an outright ban we'd put ourselves in a potential for legal jeopardy.' Critically, this does NOT lift the county's existing moratorium, which runs through Dec 31, 2026 and continues to block all new data center applications county-wide — only the permanent-ban proposal failed. Commissioners also voted to form a 21-person working group to study regulation options ahead of the moratorium's expiry.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/quasar-launches-a-300-mw-data-center-campus-in-durango-mexico/",
+      "title": "Cuasar Capital plans 300MW data center campus in Durango, Mexico",
+      "publisher": "DatacenterDynamics (DCD)",
+      "publicationDate": "2026-09-03",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Cuasar Capital plans 300MW data center campus in Durango, Mexico",
+      "suggestedProjectName": "Cuasar Durango Campus (DC Norte Uno)",
+      "note": "New project, not yet tracked. Cuasar Capital (part of Spain's EOSOL group) and KA URBE IT announced a two-facility campus in Durango, Mexico on a Phoenix–Querétaro connectivity corridor site: DC Norte Uno at 300MW total site power capacity, of which 250MW is dedicated IT load, Tier III, on a 20-hectare parcel; a second, smaller DC Norte Dos facility adds 7.74MW for edge/industrial loads. Durango state government has separately cited a combined ~$3.4B letter-of-intent figure covering two Cuasar facilities in the state — that capex figure is not confirmed as applying specifically to this 300MW campus, so left blank here rather than guessed.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 300,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "300MW total site power capacity for DC Norte Uno as stated in DCD's report of company/state announcement; 250MW of that is dedicated IT load per the same report."
+        }
+      ]
+    }
+  ]
+}
