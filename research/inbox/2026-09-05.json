@@ -1,0 +1,98 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.saudigulfprojects.com/2026/08/humain-and-datavolt-begin-100mw-ai-data-center-development-at-oxagon-neom/",
+      "title": "HUMAIN and DataVolt Begin 100MW AI Data Center Development at Oxagon, NEOM",
+      "publisher": "SaudiGulf Projects",
+      "publicationDate": "2026-08-31",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "HUMAIN and DataVolt Begin 100MW AI Data Center Development at Oxagon, NEOM",
+      "note": "STATUS CHANGE, lead item. Tracked project 'DataVolt Oxagon' (data export slug: datavolt-oxagon-ai-factory-neom) is currently ANNOUNCED, with the tracker's own analyst notes stating 'no construction on this campus is documented as of mid-2026.' Multiple outlets (AGBI, w.media, this source) now report HUMAIN and DataVolt broke ground around 2026-08-31 on the first 100MW phase of the planned 360MW (of a longer-term 1.5GW) Oxagon campus. Recommend moving status to UNDER_CONSTRUCTION. IT-load basis: 100MW is the phase now under development, not the full 360MW or 1.5GW target figures already on file. No projectId supplied: this session's network egress policy blocks tracker.bepresearch.com (both direct curl and WebFetch returned EGRESS_BLOCKED/connection-refused), so the agent could not look up the internal project id — please attach to the project via the slug above rather than by suggestedProjectName.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 100,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "News reports (AGBI, w.media, SaudiGulf Projects) of groundbreaking on the first 100MW phase of HUMAIN/DataVolt's 360MW Oxagon facility, attributed to company statements"
+        }
+      ]
+    },
+    {
+      "url": "https://www.arkansasonline.com/news/2026/aug/31/google-to-pay-entergy-arkansas-526-million-for/",
+      "title": "Google to pay Entergy Arkansas $526 million for solar facility to feed West Memphis data center",
+      "publisher": "Arkansas Democrat-Gazette",
+      "publicationDate": "2026-08-31",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Google to pay Entergy Arkansas $526 million for solar facility to feed West Memphis data center",
+      "note": "Tracked project 'Google West Memphis' (slug: google-west-memphis). New power-infrastructure detail: Google is paying Entergy Arkansas $526M upfront (roughly one-third of a $1.6B facility) to build 'Cypress Solar,' a 600MW solar field plus 350MW battery-storage facility that feeds the grid supplying the West Memphis data center. This is GENERATION/grid-supply capacity, not confirmed site IT load -- the tracker currently has no MW disclosed for this project at all. The $526M is Google's contribution to third-party generation infrastructure, distinct from the data center's own construction capex (currently on file as an estimated $4B through 2027) -- do not sum them. No projectId supplied: see network-access note in the companion DataVolt Oxagon submission from this same batch (tracker.bepresearch.com is blocked by this session's egress policy).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 526000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "News report citing Arkansas utility/PSC-related documents: Google's stated upfront payment toward the $1.6B Cypress Solar facility"
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 600,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "News report: nameplate capacity of the Cypress Solar field feeding the grid that supplies the West Memphis site (generation basis, not confirmed site IT load)"
+        }
+      ]
+    },
+    {
+      "url": "https://www.actionnews5.com/2026/09/02/docs-reveal-plans-6-utility-rate-hike-help-fund-googles-data-center-project-west-memphis/",
+      "title": "Docs reveal plans for $6 utility rate hike to help fund Google's data center project in West Memphis",
+      "publisher": "Action News 5 (WMC Memphis)",
+      "publicationDate": "2026-09-02",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Docs reveal plans for $6 utility rate hike to help fund Google's data center project in West Memphis",
+      "note": "SITING RESTRICTION: utility cost-allocation dispute tied to tracked project 'Google West Memphis' (slug: google-west-memphis). Leaked Entergy/Arkansas PSC documents show residential ratepayers funding roughly two-thirds of the solar/battery buildout backing the data center via a near-$6/month bill increase. Separately and same week, a federal judge on 2026-09-02 rejected Entergy's bid to block the Arkansas Democrat-Gazette from publishing the underlying contract documents (companion coverage: https://www.cnbc.com/2026/09/02/google-data-center-arkansas-entergy-court.html -- not submitted as its own candidate to avoid a near-duplicate URL, but worth a human read alongside this one). Illustrates the ratepayer cost-shifting and contract-confidentiality fights increasingly attached to hyperscaler power deals; relevant to the tracker's utility-connection-rules category even though nothing here changes the project's own MW/capex figures. No projectId supplied -- see network-access note in the DataVolt Oxagon submission from this batch.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://capcity.news/community/county-community/2026/09/01/vantage-data-center-gets-zone-change-ok-from-laramie-county-tuesday/",
+      "title": "Vantage data center gets zone change OK from Laramie County Tuesday",
+      "publisher": "Cap City News (Cheyenne, WY)",
+      "publicationDate": "2026-09-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "an investment of up to $20 billion when it's completed",
+      "note": "NEW PROJECT candidate -- checked against the current data/projects.json export (103 projects) and found no existing Wyoming/Laramie County entry, so this looks untracked. Laramie County commissioners approved a zone change (Land Use to Planned Unit Development) on 2026-09-01 for Vantage Data Centers' 'Project Latigo,' a proposed data center on ~1,835 acres about 12 miles south of Cheyenne, WY. Reported: 480MW initial build with potential to scale toward ~1GW, investment up to $20B (initial phase estimated $4.8-9.6B), on-site natural gas generation, closed-loop cooling, construction targeted to start 2027. Early-stage (zoning approval only, no groundbreaking yet) but crosses the >=$1B / >=100MW threshold. IT-load vs. site-power basis not yet disclosed by the company. CAVEAT: this session's WebFetch tool returned EGRESS_BLOCKED for essentially every external domain tried (including this one), so the excerpt above is reconstructed from search-engine synthesis of the article rather than independently verified against the live page text -- please confirm exact wording at the source link before treating it as a verbatim quote, and downgrade/adjust the claims below if the article phrases the figures differently.",
+      "suggestedProjectName": "Vantage Project Latigo (Laramie County, Wyoming)",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 20000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Local news paraphrase of a county-hearing statement (developer representative) on full-buildout investment; not a primary filing, and wording unverified against source text (see caveat in note)"
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 480,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Local news report of the initially approved capacity; campus described as scalable toward roughly 1GW over time"
+        }
+      ]
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-09-04/thailand-puts-49-data-centers-on-hold-over-resource-strain",
+      "title": "Thailand Puts 49 Data Centers on Hold Over Resource Strain",
+      "publisher": "Bloomberg",
+      "publicationDate": "2026-09-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Thailand Puts 49 Data Centers on Hold Over Resource Strain",
+      "note": "SITING RESTRICTION, country-level, not tied to a single tracked project. Thailand's National Economic and Social Development Council (NESDC) asked 49 data-center projects nationwide to voluntarily pause construction amid public concern over power and resource strain, pending new industry regulations the government says are expected within about a month; NESDC secretary-general Danucha Pichayanan is reported (per AFP, via Bloomberg/SCMP/w.media coverage) as saying the state has no legal authority to force a halt -- this is a request for cooperation, not a binding moratorium, and the review queue should record that distinction rather than 'ban.' Context: Thailand approved 88 AI/data-center projects worth ~886B baht (~US$27B) in H1 2026, already surpassing all of 2025, so this is a sudden brake on a fast-growing pipeline. CAVEAT: WebFetch returned EGRESS_BLOCKED for bloomberg.com (and every other outlet tried) this session, so the excerpt is the verbatim article headline as returned by search rather than a body-text quote -- please verify the body text at the link.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
