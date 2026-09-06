@@ -1,0 +1,65 @@
+{
+  "submissions": [
+    {
+      "url": "https://sourcenm.com/2026/09/01/nm-supreme-court-denies-project-jupiter-developers-request-to-partially-resume-air-quality-case/",
+      "title": "NM Supreme Court denies Project Jupiter developer's request to partially resume air quality case",
+      "publisher": "Source New Mexico",
+      "publicationDate": "2026-09-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The New Mexico Supreme Court on Tuesday unanimously denied a bid by Project Jupiter's developers to partially reopen proceedings",
+      "suggestedProjectName": "Project Jupiter (Oracle/OpenAI data center campus, Santa Teresa / Dona Ana County, NM)",
+      "note": "SITING RESTRICTION: NM Supreme Court left its Aug. 23 stay in place, unanimously denying developer Yucca Growth Infrastructure LLC's bid to partially resume the air quality permit case for this Oracle/OpenAI-linked data center campus under construction near Santa Teresa. The Sept. 14 permit hearing in Sunland Park stays paused, as does a related emergency well-water authorization from the Office of the State Engineer. This is very likely an EXISTING TRACKED PROJECT given its size (Oracle/OpenAI, under construction) -- could not confirm against the tracked list or find its projectId this run because tracker.bepresearch.com API access (GET /api/projects) was blocked by the research sandbox's network policy. Please match to the existing entry manually rather than creating a duplicate; if this project is not yet tracked, please add it, as it appears to be one of the larger NM builds. Lead finding for this run.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://winchestersun.com/2026/09/02/winchester-enacts-one-year-data-center-moratorium-amid-regional-wave-ofrestrictions/",
+      "title": "Winchester enacts one-year data center moratorium amid regional wave of restrictions",
+      "publisher": "Winchester Sun",
+      "publicationDate": "2026-09-02",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The Winchester Board of Commissioners on Tuesday night approved a one-year moratorium on data centers",
+      "note": "SITING RESTRICTION: Winchester, KY (Clark County) Board of Commissioners voted unanimously to pause new data center development for one year, citing the lack of specific zoning rules and unresolved questions about utility rate and environmental impacts. Not tied to a specific proposed facility per the article, so no project link suggested -- this is a jurisdiction-wide restriction. Part of a broader wave of central/eastern Kentucky county and city moratoriums this summer (Rowan County also passed a two-year moratorium in August, per multiple KY outlets, but I could not pin an exact vote date for that one this run and am omitting it pending confirmation).",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-09-03/nscale-backs-robot-firm-figure-alongside-3-5-billion-cloud-deal",
+      "title": "Nscale Backs Robot Firm Figure Alongside $3.5 Billion Cloud Deal",
+      "publisher": "Bloomberg",
+      "publicationDate": "2026-09-03",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Nscale struck a deal to supply at least $3.5 billion worth of AI cloud computing capacity to Figure",
+      "suggestedProjectName": "Nscale AI campus for Figure compute deal (Barstow, TX)",
+      "note": "New compute/infrastructure commitment: Nscale (AI cloud provider) signed a deal to supply Figure (humanoid-robotics startup) with at least $3.5B of AI compute, with an 'intent to scale' beyond $6B, plus an undisclosed equity investment in Figure. Site is Barstow, Texas (Ward County) -- distinct from the more famous Barstow, California. Uses Nvidia's Vera Rubin platform, up to ~100,000 GPUs, first deployment targeted H2 2027. This is a contract/compute-commitment value, not necessarily traditional site capex -- flag accordingly. Confidence kept LOW because I could not verify the figure against Nscale's own primary announcement directly this run (WebFetch to nscale.com was blocked in the sandbox).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 3500000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Compute/cloud-capacity contract value as reported by Bloomberg citing the Nscale-Figure announcement; not independently confirmed against the primary company release this run (direct fetch to nscale.com was blocked in the research sandbox)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.foxla.com/news/california-lawmakers-pass-slew-data-center-bills-final-night-session",
+      "title": "California lawmakers pass slew of data center bills on final night of session",
+      "publisher": "FOX 11 Los Angeles",
+      "publicationDate": "2026-08-31",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "SB 1168 requires the California PUC to ensure data centers pay a reasonable share of their costs",
+      "note": "SITING RESTRICTION: California's Assembly concurred in Senate amendments to SB 1168 on Aug. 30, 2026 (Ayes 38, Noes 0), sending the bill to Gov. Newsom's desk. SB 1168 directs the CPUC to develop rate structures so data centers bear a reasonable share of transmission/distribution costs, rather than passing them to residential ratepayers. NOT YET LAW -- awaiting the Governor's signature; please track signature status separately rather than recording this as an enacted restriction yet.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.walb.com/2026/08/31/dougherty-county-extends-data-center-moratorium-another-180-days/",
+      "title": "Moratorium for Dougherty County data centers extended for another 180 days",
+      "publisher": "WALB",
+      "publicationDate": "2026-08-31",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Dougherty County commissioners voted unanimously to extend the county's moratorium on data centers for another 180 days",
+      "note": "SITING RESTRICTION: Dougherty County, GA commissioners unanimously extended the county's existing data center moratorium (first enacted via a 45-day resolution on July 20, 2026) for another 180 days, at a special meeting Aug. 31. County officials confirmed there is no cap on how many times the moratorium can be renewed. This is an EXTENSION of a restriction that may already be in the tracker from this summer -- please treat as an update to the existing restriction record (new expiration date) rather than a new entry, if one already exists.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
