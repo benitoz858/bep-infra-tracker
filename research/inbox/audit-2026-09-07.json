@@ -1,0 +1,24 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.neom.com/en-us/newsroom/HUMAIN-and-DataVolt-to-develop-AI-data-center-in-NEOM",
+      "title": "HUMAIN partners with DataVolt to jointly develop 100MW of a 360MW AI data center project in NEOM",
+      "publisher": "NEOM",
+      "publicationDate": "2026-08-31",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "HUMAIN partners with DataVolt to jointly develop 100MW of a 360MW AI data center project in NEOM",
+      "projectId": "datavolt-oxagon-ai-factory-neom",
+      "note": "AUDIT: tracker currently records this project as status ANNOUNCED with power as a 1,500 MW estimate (whole-campus target) and analyst notes describing a '~300 MW' first phase targeted for 2028. NEOM's Aug 31, 2026 release (echoed by AGBI, ITP.net, Construction Review, SaudiGulf Projects) states HUMAIN and DataVolt have now broken ground: construction is underway on a 360 MW first phase of the wider 1.5 GW Oxagon campus, with HUMAIN developing a 100 MW increment inside it and the first 100 MW targeted live in 2028. Recommended correction: (1) move status from ANNOUNCED to UNDER_CONSTRUCTION now that groundbreaking is confirmed by a primary source; (2) update the first-phase figure from '~300 MW' to 360 MW. The 1.5 GW campus total remains a future target, not current capacity, and should stay in the estimated column. IT-load-vs-site-power basis is still not stated by DataVolt/NEOM/HUMAIN in any source reviewed -- flag as unclear, not IT load.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 360,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "NEOM/HUMAIN joint announcement, Aug 31 2026: construction begun on a 360 MW first phase of the 1.5 GW Oxagon campus (DataVolt), with HUMAIN developing a 100 MW increment within it; first 100 MW targeted live 2028. Basis: unclear -- IT load vs. site power not stated by the announcing parties."
+        }
+      ]
+    }
+  ]
+}
