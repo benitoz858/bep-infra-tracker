@@ -1,0 +1,133 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-hypervault-establish-large-scale-ai-data-center-campus-telangana",
+      "title": "TCS' HyperVault to establish large-scale AI data center campus in Telangana",
+      "publisher": "Tata Consultancy Services",
+      "publicationDate": "2026-09-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "HyperVault unit and partners have committed 700 billion rupees ($7.4 billion) to set up a large-scale AI data center campus",
+      "suggestedProjectName": "OpenAI–Tata HyperVault",
+      "note": "Tracked project: OpenAI–Tata HyperVault (slug openai-tata-hypervault-india, currently ANNOUNCED, site previously undisclosed). This is the first public disclosure of the site — Hyderabad, Telangana, 264 acres — and the first investment figure (700B rupees / ~$7.4B) for the campus OpenAI committed to as first customer in Feb 2026 (100MW initial, scaling to up to 1GW). IT-load basis: company describes 'up to one gigawatt' campus capacity, phased to customer demand, not a day-one commitment. Could not independently verify the exact wording of the TCS release via fetch (sandbox network policy blocks outbound fetches to arbitrary domains, including tracker.bepresearch.com itself — see report); excerpt is reconstructed from consistent wire-service phrasing (Bloomberg, ground.news, thenextweb) rather than a direct scrape of the TCS page. Please verify wording against the source before treating the quote as literal.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 7400000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Company states 700 billion rupees (~$7.4B, at reported conversion) committed by HyperVault and partners for the campus; not yet independently verified against the primary release text"
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Company states campus is designed for 'up to one gigawatt' capacity, delivered in phases tied to customer demand rather than confirmed day-one capacity"
+        }
+      ]
+    },
+    {
+      "url": "https://www.arkansasonline.com/news/2026/aug/31/google-to-pay-entergy-arkansas-526-million-for/",
+      "title": "Google to pay Entergy Arkansas $526 million for solar facility to feed West Memphis data center",
+      "publisher": "Arkansas Democrat-Gazette",
+      "publicationDate": "2026-08-31",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Google will pay Entergy Arkansas $526 million up front to build Cypress Solar, about one-third of the $1.6 billion",
+      "suggestedProjectName": "Google West Memphis",
+      "note": "SITING RESTRICTION / COST DISCLOSURE relevant to tracked project Google West Memphis (Crittenden County, AR, status UNDER_CONSTRUCTION per current snapshot — verify against live tracker since I could not reach the API directly). FOIA-obtained Arkansas PSC filings, published after Entergy's contract with Google was approved by the commission in December, show Google's actual cash contribution to the Cypress Solar + battery facility ($526M of the $1.6B total, plus a further $190M for transmission upgrades) — smaller than Google's earlier public framing of funding the facility. Entergy then sued the Arkansas Democrat-Gazette and Arkansas Times over the disclosure; a federal judge (Lee Rudofsky) denied Entergy's request for a restraining order against the papers in early September 2026. Distinguish: this is a utility/ratepayer cost-allocation dispute about who funds site power, not a change to the project's own IT load or capex.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 526000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Newspaper reporting on Arkansas PSC filings obtained via state FOIA request; figure is Google's direct payment toward Cypress Solar construction (site power infrastructure), not the data center's own construction capex"
+        }
+      ]
+    },
+    {
+      "url": "https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html",
+      "title": "Nvidia backing $105 billion in financing for OpenAI data center in Ohio",
+      "publisher": "CNBC",
+      "publicationDate": "2026-08-17",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Nvidia has agreed to spend as much as $105 billion to support a massive new data center campus in Ohio",
+      "suggestedProjectName": "OpenAI / SB Energy PORTS-Pike Technology Campus (Pike County, Ohio)",
+      "note": "NEW PROJECT, not currently in the tracker (checked against today's data/projects.json snapshot — no Pike County or PORTS entry). Former Portsmouth Gaseous Diffusion Plant site in Pike County, Ohio. OpenAI's own announcement (OpenAI Newsroom, https://x.com/OpenAINewsroom/status/2089364481478721572, Aug 17 2026) states it has agreed to secure approximately 8 gigawatts of IT capacity at the campus via a 20-year lease with SB Energy, developed with NVIDIA and the U.S. Department of Energy; first 800MW targeted online by 2028, full buildout over ~6 years with ~35,000 construction jobs. NVIDIA's $105B figure (this source) is financing/backing, not a confirmed total project capex number — leave capex blank pending a harder figure. SB Energy states it will bear the full cost of grid upgrades/transmission itself so the cost isn't shifted to Ohio ratepayers, which is directly comparable to the Texas/NJ cost-allocation items in this batch. This is a separate site from the already-tracked Stargate Lordstown, OH project.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 8000,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "OpenAI's own announcement states it has secured approximately 8 gigawatts of IT capacity at the campus"
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 105000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "NVIDIA financing/backing commitment as reported by CNBC and Bloomberg; not confirmed as the project's total construction capex"
+        }
+      ]
+    },
+    {
+      "url": "https://www.utilitydive.com/news/texas-hits-pause-data-center-interconnections/827046/",
+      "title": "Facing an estimated 474 GW of interconnection requests, Texas hits pause on data centers",
+      "publisher": "Utility Dive",
+      "publicationDate": "2026-08-05",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Interconnection queue requests total about 474 GW, which is more than five times Texas' record peak electricity demand for ERCOT",
+      "note": "SITING RESTRICTION, statewide (Texas): Gov. Abbott directed the PUC and ERCOT (Aug 3, 2026 letter) to audit ~300 large-load interconnection requests — data centers are ~90% of the roughly 474 GW queued, versus ERCOT's own record peak demand — before any further projects proceed; noncompliant projects are to be denied grid access. ERCOT is targeting completion of the audit by Dec 10, 2026, tied to the Batch Zero interconnection study process. This affects most of the tracker's Texas UNDER_CONSTRUCTION/ANNOUNCED entries awaiting or expanding grid connections (e.g. Stargate Milam County, Stargate Shackelford County, CyrusOne Freestone, Fluidstack Abernathy, Crusoe Goodnight, Abilene Clean Campus, IREN Childress, IREN Sweetwater, Microsoft Pecos, QTS–Lancium Hall County, Nscale Barstow, Cipher Black Pearl) — any reported delay on these going forward likely traces back to this freeze. Flagging even though the directive is now ~5 weeks old in case an earlier daily run has not already captured it; the Dec 10 audit deadline is the concrete date worth tracking going forward.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1168",
+      "title": "SB 1168: Data centers: rate structures",
+      "publisher": "California Legislative Information (state legislature)",
+      "publicationDate": "2026-08-31",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "requires the commission to assess opportunities for rate structures to ensure data centers pay their reasonable share of costs",
+      "note": "SITING RESTRICTION (statewide, California, cost-allocation): SB 1168 passed both legislative chambers on Aug 31, 2026 (Senate 38-0, Assembly unanimous) and was awaiting the Governor's signature as of this run — not yet law. Would direct the CPUC to build rate structures so data centers pay their proportionate share of transmission/distribution and load-driven procurement costs rather than spreading them to residential ratepayers. No specific project named; relevant to future California siting economics generally (state expects 2.3GW of new data center demand by 2030 per the bill's own framing). Worth a follow-up once signed or vetoed.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.nj.gov/governor/news/2026/20260827a.shtml",
+      "title": "Governor Sherrill Delivers All Four Pillars of Data Center Plan, Puts Power Back in the Hands of Communities",
+      "publisher": "Office of the Governor, State of New Jersey",
+      "publicationDate": "2026-08-27",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "signed legislation requiring data center owners and operators to submit semi-annual water and energy usage reports to the BPU",
+      "note": "SITING RESTRICTION (statewide, New Jersey, transparency mandate): Gov. Sherrill signed S3379/A4096 into law (P.L.2026, c.75) on Aug 27, 2026, requiring data centers to self-report water and electricity usage biannually to the NJ Board of Public Utilities, as part of a broader four-part data center policy package. Note this is a disclosure requirement, not a siting ban or moratorium — critics (Sierra Club, Jersey Vindicator) argue it is weaker than the roughly 37-38 individual municipal outright bans already enacted statewide (see companion New Jersey finding below). No specific project named.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.roi-nj.com/2026/08/25/industry/energy-utilities/north-brunswick-east-brunswick-and-stafford-township-ban-data-centers/",
+      "title": "North Brunswick, East Brunswick, and Stafford Township ban data centers",
+      "publisher": "ROI-NJ",
+      "publicationDate": "2026-08-25",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "became the latest municipalities in New Jersey to ban data centers, with all three towns acting the same night",
+      "note": "SITING RESTRICTION (municipal, New Jersey): North Brunswick, East Brunswick, and Stafford Township each passed outright data-center bans the night of Aug 25, 2026 — the 35th–37th New Jersey municipalities to do so, per the Climate Revolution Action Network's count. Jackson Township joined shortly after (~Aug 31, per WOBM/Magic 98.3 coverage) as roughly the 38th. None of the four map to a currently-tracked project; flagging for the siting-restriction dataset given the pace of NJ municipal bans (up from single digits earlier this year).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://fortworthreport.org/2026/08/12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote/",
+      "title": "Data center moratorium takes first steps after Fort Worth City Council's unanimous vote",
+      "publisher": "Fort Worth Report",
+      "publicationDate": "2026-08-12",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "council voted unanimously to initiate the process to enact a 90-day moratorium on the construction of data centers",
+      "note": "SITING RESTRICTION (municipal, Fort Worth, TX — process step, not yet in effect): City Council voted unanimously on Aug 11, 2026 to begin a 90-day data-center construction moratorium process, and 10-1 to create a Data Center & Infrastructure Commission (DCIC) to report back around Nov 3, 2026. Council also passed an ordinance requiring new data-center applicants to demonstrate their grid connection is already approved by the PUC and ERCOT — which compounds the statewide ERCOT interconnection freeze flagged separately above. Per reporting, the moratorium itself would not begin until Feb 16, 2027 (possible 90-day extension to Aug 15, 2027), so this is procedural groundwork rather than an enacted ban; worth re-checking closer to that start date.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
