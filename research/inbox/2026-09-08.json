@@ -1,0 +1,56 @@
+{
+  "submissions": [
+    {
+      "url": "https://sourcenm.com/2026/09/01/nm-supreme-court-denies-project-jupiter-developers-request-to-partially-resume-air-quality-case/",
+      "title": "New Mexico's top court denies Project Jupiter request to partially resume air quality case",
+      "publisher": "Source New Mexico",
+      "publicationDate": "2026-09-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Supreme Court temporarily halted a scheduled air quality permit hearing for Project Jupiter's proposed gas-fired power system",
+      "suggestedProjectName": "Stargate Doña Ana County (a.k.a. \"Project Jupiter\") — tracked slug stargate-dona-ana-county",
+      "note": "TRACKED PROJECT STATUS CHANGE / LEGAL DELAY: this is our existing 'Stargate Doña Ana County' project (Oracle/OpenAI/SoftBank, UNDER_CONSTRUCTION), locally known as 'Project Jupiter.' The NM Supreme Court, in orders around Aug 31–Sept 1 2026, paused (1) the scheduled air-quality permit hearing for the project's proposed natural-gas-fired power system and (2) the State Engineer's approval letting a well supply water for construction — after emergency petitions from New Energy Economy and the Center for Biological Diversity alleging due-process violations. A hearing had been set for Sept 14; NM Environment Department has until Nov 23 2026 for a final air-permit decision. This is a regulatory/legal delay, not a cancellation — status should likely stay UNDER_CONSTRUCTION but a note on the legal challenge seems warranted. CAVEAT: WebFetch (used to verify quotes against primary text) was blocked by this session's network egress policy for every external domain tried, tracker.bepresearch.com included, so this excerpt is reconstructed from search-engine summaries of the article rather than a verified verbatim pull — please confirm exact wording against the source URL before citing it directly.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/09/08/3357498/0/en/iren-s-2gw-sweetwater-hub-included-as-base-load-in-ercot-batch-zero.html",
+      "title": "IREN's 2GW Sweetwater Hub Included as Base Load in ERCOT Batch Zero",
+      "publisher": "IREN Limited (GlobeNewswire)",
+      "publicationDate": "2026-09-08",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "IREN's 2GW Sweetwater Hub has been conditionally included in ERCOT's Batch Zero process as Base Load",
+      "suggestedProjectName": "IREN Sweetwater — tracked slug iren-sweetwater",
+      "note": "TRACKED PROJECT STATUS CHANGE: today's company release for our existing 'IREN Sweetwater' project (UNDER_CONSTRUCTION, estimatedMw already 2000 = Sweetwater 1 1400MW + Sweetwater 2 600MW, so no MW change). The new fact is an ERCOT interconnection milestone: conditional inclusion of the combined hub as Base Load in ERCOT's 'Batch Zero' large-load interconnection process, a meaningful step toward grid connection given Texas's ongoing large-load interconnection backlog/audit. Worth a note on the project rather than a metric change. CAVEAT: same WebFetch-unavailable limitation as the other findings this run — excerpt is a close paraphrase of the release's headline/lede via search summary, not a verbatim primary-text pull; please verify wording against the GlobeNewswire URL.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.pressdemocrat.com/2026/09/03/mendocino-county-adopts-temporary-data-center-moratorium/",
+      "title": "Mendocino County adopts temporary data center moratorium",
+      "publisher": "The Press Democrat",
+      "publicationDate": "2026-09-03",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Supervisors voted 5-0 to adopt an urgency ordinance barring any new data center in the unincorporated county",
+      "note": "SITING RESTRICTION: Mendocino County, California's Board of Supervisors voted 5-0 at its Sept 1 2026 meeting to adopt a 45-day urgency ordinance (effective immediately, runs to Oct 16 2026) barring approval of any new data center countywide. Rationale: existing county code has no data-center definition/regulation, so one could otherwise be approved via a routine building permit. A public hearing on Oct 6 2026 will consider extending the ban up to two years while permanent rules are drafted. This is a pre-emptive, countywide restriction — no specific project is targeted, and no BEP-tracked project is currently sited in Mendocino County, so there's nothing to link this to; flagging for the siting-restrictions dataset generally. CAVEAT: WebFetch was unavailable this run to verify the excerpt verbatim against the article; treat as a close paraphrase from search summaries pending confirmation.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://communityimpact.com/prosper-celina/development/prosper-commission-recommends-denial-of-580-million-data-center/",
+      "title": "Prosper commission recommends denial of $580M data center",
+      "publisher": "Community Impact",
+      "publicationDate": "2026-09-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Planning and Zoning Commission voted 7-0 to recommend denial of the $580 million project",
+      "suggestedProjectName": "Project Tomahawk (Prosper, Texas — developer White Rose Partners)",
+      "note": "SITING RESTRICTION, new/untracked project: Prosper, TX Planning & Zoning Commission voted 7-0 on Sept 1 2026 to recommend denial of 'Project Tomahawk,' a proposed ~$580M, ~225,000 sq ft data center on ~37-39 acres near FM 1385 and Parvin Road (adjacent to the Brazos Electric Parvin Substation), developer White Rose Partners. This is only a recommendation to the Town Council, not a final decision — the Council vote was scheduled for TODAY, Sept 8 2026; the outcome was not yet available via search as of this research run, so please verify the actual council decision before treating this as a confirmed denial. No power (MW) figure was disclosed in coverage found. The $580M capex figure is the reported project cost per local news, not a company-disclosed capex breakdown, hence LOW confidence. CAVEAT: WebFetch was unavailable this run to verify the excerpt verbatim; treat as a close paraphrase pending confirmation.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 580000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Reported project cost per local news coverage of the zoning application; not a company-disclosed capex breakdown"
+        }
+      ]
+    }
+  ]
+}
