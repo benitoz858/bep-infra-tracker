@@ -1,0 +1,44 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.wfae.org/2026-09-08/charlotte-could-extend-data-center-moratorium",
+      "title": "Charlotte could extend data center moratorium by nine months",
+      "publisher": "WFAE 90.7 (Charlotte's NPR News Source)",
+      "publicationDate": "2026-09-08",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "staff may ask the full council for an additional nine months to work on issues such as air pollution monitoring",
+      "note": "SITING RESTRICTION: Charlotte's Transportation & Development committee voted Sept. 8, 2026 to advance a nine-month extension of the city's existing 150-day data center moratorium (which otherwise expires in early November) to the full council for a Sept. 14 vote. Stated purpose is to finish air-pollution-monitoring and noise-level rules before new data center permits resume; city-wide, not tied to a single project. Caveat: this run's sandbox blocked direct article fetches (WebFetch/curl egress to non-API domains was denied), so the excerpt is reconstructed from a search-engine summary of the article rather than confirmed verbatim against the page — please check wording against the source before citing it as a direct quote.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://fox17.com/news/local/gallatin-city-council-advances-12-month-data-center-moratorium-for-vote-next-week",
+      "title": "Gallatin city council advances 12-month data center moratorium for vote next week",
+      "publisher": "FOX17 Nashville (WZTV)",
+      "publicationDate": "2026-09-08",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Gallatin City Councilors are expected to vote on a 12-month data center moratorium",
+      "note": "SITING RESTRICTION: Gallatin, TN city council unanimously advanced a 12-month moratorium on new data center development on Sept. 8, 2026 (following a 5-2 Planning Commission recommendation), setting up a formal council vote the following week. Cited concerns: noise, odors, and strain on water/electric utilities near the city's existing large Meta campus; Gallatin currently has no restrictions on data centers beyond general zoning-location rules. City-wide restriction, not tied to a single tracked project. Caveat: this run's sandbox blocked direct article fetches (only WebSearch snippets were reachable), so the excerpt is a close paraphrase, not a confirmed-verbatim quote — please verify wording against the source.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.bangordailynews.com/2026/09/08/down-east/downeast-government/eastport-maine-underwater-data-center-federal-review-public-input/",
+      "title": "Eastport will hear petitions to ban an AI data center",
+      "publisher": "Bangor Daily News",
+      "publicationDate": "2026-09-08",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "a ban on any data center bigger than 25,000 square feet",
+      "note": "SITING RESTRICTION: Eastport, ME holds a public hearing Sept. 9, 2026 on two citizen-initiated ordinances prompted by DeepGreen Western Passage SPV LLC's FERC preliminary-permit application (filed for a 48-month study period) for a tidal-powered underwater AI data center off Eastport's Kendall Head area in the Western Passage. One ordinance is an outright ban on any data center over 25,000 sq ft; the other requires a citizen referendum for large developments and adds zoning rules. Eastport's city council previously passed a 180-day temporary ban. Not proposed as a new project here — the underlying proposal is still at the FERC preliminary-permit/exploratory stage with no disclosed MW or capex figures, and the finding is about the restriction rather than the project. Caveat: this run's sandbox blocked direct article fetches, so the excerpt is a close paraphrase from a search summary, not confirmed verbatim — please check wording against the source.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.counton2.com/news/local-news/mount-pleasant-set-to-discuss-adding-restrictions-on-data-centers/",
+      "title": "Mount Pleasant to discuss adding restrictions on data centers",
+      "publisher": "WCBD News 2 (Charleston, SC)",
+      "publicationDate": "2026-09-08",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Large-scale, what they call hyperscale data centers, are not going to be coming to Mount Pleasant, and this moratorium will make sure that doesn't happen.",
+      "note": "SITING RESTRICTION: Mount Pleasant, SC town council held first reading Sept. 8, 2026 of an ordinance imposing a 120-day moratorium on data-center-related zoning requests, following the Planning Commission's Aug. 31 recommendation. Purpose: study environmental, noise and water impacts and refine the town's data-center definition while excluding small existing business data facilities from the pause; the town currently has no zoning rules that specifically restrict data centers. Quote attributed to Mayor Will Haynie and reported near-identically across multiple Charleston-area outlets covering the same council session, so publisher attribution for the exact wording is uncertain. Caveat: this run's sandbox blocked direct article fetches, so please confirm the quote's exact source outlet before citing.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
