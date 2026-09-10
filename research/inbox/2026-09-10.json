@@ -1,0 +1,81 @@
+{
+  "submissions": [
+    {
+      "url": "https://oregoncapitalchronicle.com/2026/09/08/gov-kotek-pauses-data-centers-on-state-land-capitol-demonstrators-want-her-to-go-further/",
+      "title": "Gov. Kotek pauses data centers on state land. Capitol demonstrators want her to go further.",
+      "publisher": "Oregon Capital Chronicle",
+      "publicationDate": "2026-09-08",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "halts easements, rights-of-way, leases, rentals, land-use permits and sales or transfers of state property through July 1, 2027",
+      "note": "SITING RESTRICTION: Oregon Gov. Tina Kotek issued an executive order (announced Sept 8, 2026) directing state agencies to immediately pause new/unapproved land transactions -- easements, rights-of-way, leases, rentals, land-use permits, sales/transfers -- for data center projects on state-owned property, in effect through July 1, 2027 unless the Governor's Office or Legislature acts sooner. Follows Kotek's August block of a 32-acre state land sale in Salem for a proposed Verrus data center. An Oregon Data Center Advisory Committee is due to deliver policy recommendations by end of 2026. Statewide restriction, not tied to one tracked project -- affects any future project seeking Oregon state land. Checked against agent/daily branches back to 2026-08-25; not previously submitted. Caveat: this run's sandbox blocked all direct page fetches (WebFetch and curl egress denied for every domain including the tracker API itself, confirmed via the agent-proxy status endpoint), so this excerpt is built from WebSearch's extracted text rather than a directly fetched page -- please verify exact wording against the source before citing as verbatim.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem",
+      "title": "NVIDIA Expands AI Infrastructure Capacity in Partnership With Australia's Data Center Ecosystem",
+      "publisher": "NVIDIA",
+      "publicationDate": "2026-09-10",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "supporting the nation's growing demand for AI compute -- with up to a 2-gigawatt buildout by 2027",
+      "suggestedProjectName": "NVIDIA Australia AI Infrastructure Partnership (Firmus, Sharon AI, IREN, Megaport, ResetData, CDC, NEXTDC, AirTrunk)",
+      "note": "New capacity commitment, not a single-site announcement: NVIDIA announced a partnership with eight Australian data center/cloud operators (Firmus, Sharon AI, IREN, Megaport, ResetData, CDC, NEXTDC, AirTrunk) to expand land, power and shell capacity for NVIDIA DSX AI factories, targeting up to 2 GW buildout by 2027 -- roughly doubling Australia's current ~1.6 GW compute base per coverage. Per-site MW splits not disclosed. One partner, AirTrunk, already has a tracked project (AirTrunk SYD3, UNDER_CONSTRUCTION) and IREN has tracked US projects (Childress, Sweetwater); this Australia-wide commitment is separate from those specific campuses. Reviewer may prefer a standalone entry for this ecosystem announcement rather than attaching the aggregate 2GW figure to any single tracked project. Checked against agent/daily branches back to 2026-08-25; not previously submitted (announcement is dated today). Caveat: sandbox blocked all direct page fetches this run (see Oregon finding note for detail); excerpt is a trimmed contiguous substring of the press-release lead sentence as returned by WebSearch, not independently re-verified against the live page -- please confirm wording before citing as verbatim.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 2000,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "NVIDIA press release states 'up to a 2-gigawatt buildout by 2027' across the 8-partner ecosystem; this is an aggregate multi-site target, not one campus's confirmed capacity"
+        }
+      ]
+    },
+    {
+      "url": "https://www.courtnewsohio.gov/cases/2026/SCO/0901/261035.asp",
+      "title": "Trenton Must Place Data-Center-Ban Amendment on Special Election Ballot",
+      "publisher": "Court News Ohio (Supreme Court of Ohio)",
+      "publicationDate": "2026-09-01",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "prohibit construction of new data centers requiring more than 25 megawatts of electricity inside Trenton's boundaries",
+      "note": "SITING RESTRICTION: The Ohio Supreme Court ruled Sept 1, 2026 that Trenton (Butler County, OH) must let residents vote on a citizen-initiated charter amendment banning data centers requiring more than 25 MW, after city council had rejected the petition by demanding a higher signature threshold than state law requires. Trenton City Council complied via emergency ordinance Sept 3, 2026, setting a Nov 3, 2026 special election. If approved by voters, no new data center over 25 MW could be built within city limits. Not currently tied to a tracked project, but directly relevant to any developer with interests in Trenton/Butler County, Ohio. Checked against agent/daily branches back to 2026-08-25; not previously submitted. Caveat: sandbox blocked all direct page fetches this run (see Oregon finding note); excerpt reflects WebSearch's extracted characterization of the ballot amendment's text, not a page independently re-verified -- please confirm exact wording against the court filing/amendment text before citing as verbatim.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.planningportal.nsw.gov.au/major-projects/project/35036",
+      "title": "Goodman Group gets green light for 135MW data center in northern Sydney, Australia",
+      "publisher": "NSW Department of Planning, Housing and Infrastructure (via DatacenterDynamics coverage)",
+      "publicationDate": "2026-09-02",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "approval to build and operate a 135MW data centre at Macquarie Park",
+      "suggestedProjectName": "Goodman Project Apollo (Macquarie Park, Sydney)",
+      "note": "New data center approval: NSW Department of Planning, Housing and Infrastructure approved Goodman Group's State Significant Development application on Sept 2, 2026 for a 135MW data center ('Project Apollo') at 4-10 Talavera Road, Macquarie Park, Sydney -- AUD 1.365B (~$900M USD) project, 8 data halls across 4 levels, ~400 construction jobs / 60 operational jobs per the Department's assessment. Tenant undisclosed (Goodman is a developer/REIT, not confirmed as AI-specific), but meets the size threshold for a notable new build. Not currently in the tracker. Checked against agent/daily branches back to 2026-08-25; not previously submitted. Caveat: sandbox blocked all direct page fetches this run (see Oregon finding note); figures reflect WebSearch's extraction from DCD/other coverage of the planning approval, not the planning portal page independently re-verified -- please confirm before citing as verbatim.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 135,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Approved development application states 135MW capacity per news coverage of the government filing; site power vs IT load basis not specified in coverage reviewed, so not marked HIGH"
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 900000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Coverage states AUD 1.365 billion project cost; converted to USD at an approximate exchange rate, not the primary source's own currency -- treat as a rough estimate only"
+        }
+      ]
+    },
+    {
+      "url": "https://www.staradvertiser.com/2026/09/09/hawaii-news/hawaii-county-proposal-to-ban-ai-data-centers-deferred-until-october/",
+      "title": "Hawaii County proposal to ban AI data centers deferred until October",
+      "publisher": "Honolulu Star-Advertiser",
+      "publicationDate": "2026-09-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "prohibit all dedicated data centers regardless of size for at least 10 years",
+      "note": "SITING RESTRICTION (status update, not yet enacted): The Windward Planning Commission on Hawaii Island voted 4-0 on Sept 3, 2026 to defer action until its Oct 1 meeting on Bill 170 (introduced by Council member Heather Kimball), which would amend county zoning to ban AI data centers. The quoted language is from a commissioner's stated position, not the bill text itself. No restriction has been enacted yet -- flagging as a restriction-in-progress to watch; next decision point is Oct 1, 2026. Checked against agent/daily branches back to 2026-08-25; not previously submitted. Caveat: sandbox blocked all direct page fetches this run (see Oregon finding note); please confirm exact quote attribution and bill text against the source before citing as verbatim.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
