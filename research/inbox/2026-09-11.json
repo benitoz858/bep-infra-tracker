@@ -1,0 +1,43 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.dailyherald.com/20260909/news/lake-county-approves-8-month-moratorium-on-data-center-applications-development/",
+      "title": "Lake County approves 8-month moratorium on data center applications, development",
+      "publisher": "Daily Herald",
+      "publicationDate": "2026-09-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "an eight-month moratorium on data center development in unincorporated Lake County, IL, with the pause running through May 2027",
+      "note": "SITING RESTRICTION: Lake County (IL) Board voted unanimously to impose an 8-month moratorium on new data center applications/development in unincorporated Lake County, running through May 2027, to give staff time to study impacts and draft regulations. No project in the tracker sits in unincorporated Lake County, so no projectId is linked here — flag as a new candidate restriction. VERIFICATION CAVEAT: this session's sandbox blocked outbound WebFetch/curl to the source, so the excerpt is drawn from a search-engine summary of the article rather than a direct read of the primary text — please confirm exact wording against the link before treating it as verbatim.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://lookouteugene-springfield.com/story/business-development/2026/09/08/data-center-not-permitted-under-zoning-of-former-hynix-factory-city-says/",
+      "title": "Data center not permitted under zoning of former Hynix factory, city says",
+      "publisher": "Lookout Eugene-Springfield",
+      "publicationDate": "2026-09-08",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "the City Council could not have intended the 'Information Technology Services' use to encompass the large modern data centers",
+      "note": "SITING RESTRICTION: City of Eugene, OR planning director Alissa Hunter ruled that a data center is not an allowed use under the E-1 'Campus Employment' zoning at the former Hyundai/Hynix plant (1830 Willow Creek Circle), rejecting a zone-verification request filed on behalf of an undisclosed prospective buyer. Blocks a proposed (unannounced-client) data center at that site; the ruling can be appealed to the Oregon Land Use Board of Appeals. No tracked project matches this location, so no projectId is linked. VERIFICATION CAVEAT: sandbox network policy blocked WebFetch of the source; the quote is drawn from press coverage of the city's letter, not a direct read of the letter itself — please verify wording before treating it as verbatim.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.wnep.com/article/news/local/wayne-county/clinton-township-supervisors-vote-no-to-20-building-data-center-campus/523-109afa91-f493-4163-9a00-1f58633e9dbd",
+      "title": "Clinton Township Supervisors vote 'NO' to 20-building data center campus",
+      "publisher": "WNEP",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Clinton Township supervisors unanimously rejected [Linde Corp's] proposed 20-building data center campus after an engineer found the plan environmentally unsound",
+      "note": "SITING RESTRICTION: Clinton Township (Wayne County, PA) supervisors voted unanimously against Linde Corp's proposed 20-building, ~682-acre data center campus, after an engineer's review found the application non-compliant with Pennsylvania's Subdivision and Land Development Ordinance (SALDO); a revised resubmission remains possible within 15 days. Reported in industry roundups covering the week of Sept 8-10, 2026 — this session could not independently pin down the exact vote date (left blank rather than guessed), and some coverage spells the developer 'Lindy Corporation' vs. 'Linde Corp' — please confirm both before publishing. No tracked project matches this location, so no projectId is linked. VERIFICATION CAVEAT: sandbox network policy blocked WebFetch of the source; the excerpt is drawn from a search-engine summary of press coverage, not a direct read.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.wboi.org/government/2026-09-09/fort-wayne-city-councilwoman-introduces-ordinances-to-rein-in-future-data-center-development",
+      "title": "Fort Wayne city councilwoman introduces ordinances to rein in future data center development",
+      "publisher": "WBOI (NPR)",
+      "publicationDate": "2026-09-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "a 365-day moratorium on city actions that could support future data center development",
+      "note": "SITING RESTRICTION (PROPOSED, NOT YET ENACTED): Fort Wayne, IN councilwoman Rohli Booker introduced two ordinances on Sept 9, 2026: a 365-day moratorium on Council/city actions (rezonings, annexations, tax abatements, contracts) that would support new data center development, plus a 9-member advisory commission to study resource-intensive developments; report due back within a year. Council has not yet voted as of this writing. The existing, already-operating Google Fort Wayne Data Center is explicitly carved out and unaffected. No tracked project record needs updating from this alone; flagging as a restriction-in-progress worth watching for a future vote. VERIFICATION CAVEAT: sandbox network policy blocked WebFetch of the source; excerpt is from a search-engine summary of press coverage, not a direct read of the ordinance text.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
