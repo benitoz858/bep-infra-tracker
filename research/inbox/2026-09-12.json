@@ -1,0 +1,119 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/09/08/3357498/0/en/iren-s-2gw-sweetwater-hub-included-as-base-load-in-ercot-batch-zero.html",
+      "title": "IREN's 2GW Sweetwater Hub Included as Base Load in ERCOT Batch Zero",
+      "publisher": "IREN Limited (via GlobeNewswire)",
+      "publicationDate": "2026-09-08",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "IREN's 2GW Sweetwater Hub Included as Base Load in ERCOT Batch Zero",
+      "suggestedProjectName": "IREN Sweetwater",
+      "note": "STATUS UPDATE on tracked project 'IREN Sweetwater' (matched by name only — the live tracker API was unreachable this run due to an outbound network policy block, so no projectId could be confirmed; please attach to the existing record). ERCOT conditionally granted Base Load status in its Batch Zero interconnection process for the 2GW Sweetwater Hub (Sweetwater 1: 1,400MW + Sweetwater 2: 600MW). This is a grid-interconnection milestone, not new IT capacity delivered — the high-voltage substation was already energized earlier in 2026 per company statements; ~300MW of data center capacity construction continues with delivery targeted Q4 2027. Quote is the release headline as reproduced by the wire service; full release body could not be fetched directly this run (WebFetch/curl were blocked for all external domains in this session, not just this one — flagging for maintainer attention).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1400,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Company release states Sweetwater 1 gross capacity as 1,400MW; consistent across multiple wire pickups but not independently verified against the primary document this run due to network restrictions"
+        }
+      ]
+    },
+    {
+      "url": "https://www.lakecountyil.gov/CivicAlerts.aspx?AID=4784",
+      "title": "Lake County Board Approves Moratorium on Data Centers in Unincorporated Lake County",
+      "publisher": "Lake County, Illinois (county government)",
+      "publicationDate": "2026-09-09",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "an eight-month moratorium on applications to develop and operate data centers in unincorporated Lake County",
+      "note": "SITING RESTRICTION: Lake County, IL board approved an 8-month moratorium (running to ~May 11, 2027, extendable up to 4 more months) on new data center applications/development in unincorporated county land, to give staff time to write zoning and impact rules. County states it has not received any data center proposals for unincorporated land to date, so no specific project or MW-at-risk figure is affected yet.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.kpbs.org/news/environment/2026/09/09/court-overturns-approval-of-imperial-county-data-center-orders-environmental-review",
+      "title": "Court overturns approval of Imperial County data center, orders environmental review",
+      "publisher": "KPBS",
+      "publicationDate": "2026-09-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "the county prejudicially abused its discretion by approving the lot merger without first completing the CEQA review required for the whole project",
+      "suggestedProjectName": "Imperial Valley Data Center",
+      "note": "SITING RESTRICTION: Imperial County (CA) Superior Court (Judge Brooks Anderholt) ruled the county's piecemeal approval of the ~1M sq ft Imperial Valley Data Center violated the California Environmental Quality Act by not reviewing the project as a whole; the ruling forces the county's approval process to restart from scratch. Case brought by the Sierra Club. Not currently in the tracker; suggest adding as a new project with a legal-hold/paused status pending the county's response. The ~330MW figure in the optional claim below comes from a secondary trade-press headline, not the ruling itself.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 330,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Figure cited in a Data Center Knowledge headline covering the ruling; not confirmed against a primary filing this run"
+        }
+      ]
+    },
+    {
+      "url": "https://www.chronicleonline.com/news/local/levy-county-approves-moratorium-on-data-centers/article_177dad48-7ddc-55b8-a945-cedb2a3a0013.html",
+      "title": "Levy County approves moratorium on data centers",
+      "publisher": "Chronicle Online (Citrus County Chronicle)",
+      "publicationDate": "2026-09-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "halting the submission, acceptance, processing, review and approval of applications for data centers, large-scale data centers, large load customer facilities",
+      "note": "SITING RESTRICTION: Levy County, FL commissioners approved Ordinance 2026-05 at their Sept. 8 meeting — a moratorium on new data center and large-load-customer-facility applications in unincorporated county land, effective Oct. 1 (or on state filing, if later) through Sept. 30, 2027, while staff studies siting rules. No specific tracked project is currently blocked by it. Note: some secondary outlets describe this as a 3-year pause, but the ordinance as reported to run one year — worth a human double-check against the actual ordinance text.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://cardinalnews.org/2026/09/10/christiansburg-ups-requirements-for-any-future-data-center/",
+      "title": "Christiansburg ups requirements for any future data center",
+      "publisher": "Cardinal News",
+      "publicationDate": "2026-09-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "the town council voted 6-0 to add a conditional use permit provision for any data center request",
+      "note": "SITING RESTRICTION: Christiansburg, VA Town Council voted 6-0 on Sept. 8 to require a conditional use permit for any future data center proposal, ending the prior by-right status data centers held in general industrial zones. No specific project is currently pending in the town per the report; this raises the review bar for future siting there.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://nebraska.tv/news/local/kearney-city-council-approves-project-horizon-data-center",
+      "title": "Kearney City Council approves Project Horizon data center",
+      "publisher": "Nebraska.TV (KSNB/KHGI)",
+      "publicationDate": "2026-09-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "expand an existing cryptocurrency data center into a 368-megawatt facility",
+      "suggestedProjectName": "Project Horizon (Kearney, Nebraska)",
+      "note": "New project: Kearney, NE City Council unanimously approved Project Horizon (MARA Holdings site, developed with Starwood Digital Ventures) to convert/expand an existing ~100MW bitcoin-mining facility into a 368MW AI/HPC data center, alongside new local rules on water use, noise, conditional-use permits and public impact studies. Council adopted this after ~3 hours of discussion; peak MW not expected until roughly 2029-31 per reporting. Basis (IT load vs. gross site power) is not explicitly stated in the sources reviewed — treat the 368MW figure as 'total electrical demand' per the regulation, not confirmed IT load.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 368,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Total electrical demand figure cited by multiple local outlets covering the city council approval; basis not stated in the reporting reviewed"
+        }
+      ]
+    },
+    {
+      "url": "https://www.azfamily.com/2026/09/08/pinal-county-rejects-data-center-despite-developers-concessions/",
+      "title": "Pinal County rejects data center despite developer's concessions",
+      "publisher": "AZFamily (KTVK/KPHO)",
+      "publicationDate": "2026-09-08",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "When 90% of the people are against it, I'm going to vote the will of the people",
+      "note": "SITING RESTRICTION: Pinal County, AZ Board of Supervisors voted 4-1 on Aug. 26 to reject Vermaland's La Osa Energy Center — a proposed ~3,300-acre, 59-building data-center-and-gas-generation campus near Eloy described as the largest data center development proposed in the state — even after the developer scaled the plan back to 11 buildings and one power plant. Vote itself is slightly outside the usual 24-72h window (this article recapping it published Sept. 8), but flagged given the project's scale and that it was not previously in the tracker. Not adding as a tracked project since it was rejected before reaching construction/announced status; recording for the siting-restriction record.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://lookouteugene-springfield.com/story/business-development/2026/09/08/data-center-not-permitted-under-zoning-of-former-hynix-factory-city-says/",
+      "title": "Data center not permitted under zoning of former Hynix factory, city says",
+      "publisher": "Lookout Eugene-Springfield",
+      "publicationDate": "2026-09-08",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "councilors did not add data centers as an allowed use in any zone created in 2014",
+      "note": "SITING RESTRICTION: City of Eugene, OR planning director determined (letter dated Sept. 8) that a data center is not a permitted use under the E-1 'employment' zoning at the former Hynix/Hyundai semiconductor site (1830 Willow Creek Circle), in response to an attorney's inquiry on behalf of an unnamed prospective tenant. Decision is appealable to the Oregon Land Use Board of Appeals. No project was ever formally announced at this site, so nothing is added to the project list — recorded as a siting-restriction precedent only. Quote wording is a close paraphrase from search-engine summarization of the source, not verified verbatim against the article (WebFetch was unavailable this run) — please spot-check before citing.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
