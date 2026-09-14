@@ -1,0 +1,103 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/13/3344413/0/en/iren-delivers-horizon-1-to-microsoft-and-achieves-nvidia-exemplar-cloud-status-on-gb300-nvl72.html",
+      "title": "IREN Delivers Horizon 1 to Microsoft and Achieves NVIDIA Exemplar Cloud Status on GB300 NVL72",
+      "publisher": "IREN Limited",
+      "publicationDate": "2026-08-13",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Horizon 1 has been delivered to and accepted by Microsoft, the first of four 50MW direct-to-chip liquid cooled AI Cloud deployments",
+      "suggestedProjectName": "IREN Childress (tracked project, slug: iren-childress-horizon-for-microsoft — DB id could not be resolved: tracker API was unreachable from this sandbox this run)",
+      "note": "STATUS CHANGE: tracker's analystNotes for this project say Horizon 1 handover was only 'targeted Q3 2026' as of the last snapshot (lastVerifiedAt 2026-07-29). This primary company release confirms the first 50MW IT-load block was actually delivered to and accepted by Microsoft on 2026-08-13, on schedule, plus NVIDIA 'Exemplar Cloud' certification on GB300 NVL72. This is IT load, distinct from the project's tracked 750MW site-power estimate. Reviewer should match to the existing IREN Childress project by slug rather than create a new one.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 50,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Company press release states Horizon 1 is the first of four 50MW (IT load) direct-to-chip liquid cooled deployments; this first block is now delivered and accepted."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-hypervault-establish-large-scale-ai-data-center-campus-telangana",
+      "title": "TCS' HyperVault to Establish Large-Scale AI Data Center Campus in Telangana",
+      "publisher": "Tata Consultancy Services",
+      "publicationDate": "2026-09-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "HyperVault unit and partners have committed 700 billion rupees ($7.4 billion) to set up a large-scale AI data center campus",
+      "suggestedProjectName": "OpenAI–Tata HyperVault (tracked project, slug: openai-tata-hypervault-india — DB id could not be resolved: tracker API was unreachable from this sandbox this run)",
+      "note": "The tracker's record for this project has no disclosed site, no capex, and only a 100MW estimate (site was previously undisclosed per analystNotes). This TCS press release names the site for the first time — Hyderabad, Telangana, on 264 acres — states a capex commitment of up to 700 billion rupees (~$7.4B), and confirms the campus is designed to scale to 'up to one gigawatt.' OpenAI remains the first named customer at an initial 100MW per the tracker's existing record. This is capex + site commitment, not IT load; treat the 1GW figure as ultimate design capacity, not a near-term confirmed figure.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 7400000000,
+          "unit": "USD",
+          "confidenceLevel": "HIGH",
+          "methodology": "Company press release states a commitment of up to 700 billion rupees, translated in the release to approximately $7.4 billion."
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Press release states the campus is designed for 'up to one gigawatt' of eventual capacity; this is a design target, not a confirmed near-term buildout figure."
+        }
+      ]
+    },
+    {
+      "url": "http://paenvironmentdaily.blogspot.com/2026/08/pjm-formally-submits-ferc-proposal-on.html",
+      "title": "PJM Formally Submits FERC Proposal On Connecting Data Centers That Bring And Don't Bring Their Own Power Supplies",
+      "publisher": "PA Environment Digest Blog (reporting PJM's FERC filing)",
+      "publicationDate": "2026-08-13",
+      "sourceType": "UTILITY_FILING",
+      "excerpt": "new Large Loads that have not brought their own new capacity... starting in June 2027",
+      "note": "SITING RESTRICTION: PJM Interconnection (the grid operator covering 13 mid-Atlantic/Midwest states) formally filed with FERC on 2026-08-13 the most restrictive large-load interconnection framework in the country: new loads of 50MW+ entering service after June 1, 2027 must either bring their own new generation capacity or accept a new curtailment-first status (Interim Resource Adequacy Service) ahead of residential load during grid emergencies. This is a systemic utility-connection rule, not tied to one site, so I'm deliberately leaving projectId/suggestedProjectName blank rather than guessing which of the many PJM-territory tracked projects (e.g. TeraWulf Lake Mariner, several Stargate/Meta sites) it should attach to — a reviewer should decide whether and how to link it. I could not directly verify the original FERC docket text (outbound fetches to ferc.gov and most other domains were blocked from this sandbox this run); this excerpt is reconstructed from secondary reporting that closely paraphrases the filing, not a verbatim pull from the docket itself, so treat with appropriate caution.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.koreatimes.co.kr/business/tech-science/20260913/sk-chairman-says-ulsan-ai-data-center-expansion-nearing-900-megawatts",
+      "title": "SK chairman says Ulsan AI data center expansion nearing 900 megawatts",
+      "publisher": "The Korea Times",
+      "publicationDate": "2026-09-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "the planned expansion of its AI data center in Ulsan was nearing 900 megawatts",
+      "suggestedProjectName": "SK Telecom Ulsan (tracked project, slug: sk-telecom-aws-ulsan-ai-data-center — DB id could not be resolved: tracker API was unreachable from this sandbox this run)",
+      "note": "The tracker currently records this project at only 103MW (estimated). SK Group chairman Chey Tae-won told press on 2026-09-13 that the Ulsan AI data center expansion (built with AWS) is 'nearing 900 megawatts,' an order-of-magnitude revision, and said talks with additional global tech companies for the site were progressing quickly. This is a verbal statement from the chairman as reported by Korea Times, not a company filing or press release, so it should be treated as directional rather than a confirmed figure — SK Telecom's own July 2026 plan (already noted in the tracker as 'aspirational, not recorded') targeted 1GW at this site and 2GW+ regionally, so this is consistent with that trajectory finally being restated at the top of the company.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 900,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "SK Group chairman's public remark to press, as reported by Korea Times; not yet a company filing or press release with a stated basis."
+        }
+      ]
+    },
+    {
+      "url": "https://sfist.com/2026/09/11/sf-supervisor-plans-moratorium-on-new-data-centers-with-permanent-ban-to-follow/",
+      "title": "SF Supervisor Plans Moratorium on New Data Centers, With Permanent Ban to Follow",
+      "publisher": "SFist",
+      "publicationDate": "2026-09-11",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "an 'urgent' ordinance to impose a 45-day freeze on data centers in the city",
+      "note": "SITING RESTRICTION: San Francisco Supervisor Shamann Walton, joined by Supervisors Chan, Fielder and Chen, is introducing an ordinance for a 45-day moratorium on new data center construction citywide, with a vote at the Board of Supervisors scheduled for 2026-09-15, and stated plans to pursue a permanent ban afterward. Coverage says the freeze could be extended up to 22 months and 15 days if the Planning Commission finds the city's existing ~15 regional data center campuses pose a threat to residents. The Bayview NOVVA data center (currently the only site publicly named as directly affected, having brought an initial 9MW phase online this summer toward a planned 36MW total) is not currently a tracked project in this database as far as I can tell from the current snapshot, so no projectId is suggested. This is a proposed ordinance awaiting a vote, not yet enacted as of this writing.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://hoodline.com/2026/09/orange-county-weighs-yearlong-pause-on-ai-data-centers-over-water-fears/",
+      "title": "Orange County Weighs Yearlong Pause on AI Data Centers Over Water Fears",
+      "publisher": "Hoodline",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "a moratorium of at least one year on new data center applications",
+      "note": "SITING RESTRICTION: Orange County, Florida Vice Mayor/Commissioner Kelly Martinez Semrad is asking the county commission to adopt a moratorium of at least one year on new AI data center applications, citing water (up to 5 million gallons/day per facility cited) and power concerns amid a projected 96 million gallons/day groundwater shortfall by 2045; the county currently has no zoning language specific to data centers (they are implicitly allowed under industrial zoning). Commissioners are scheduled to take this up on 2026-09-15. I could not pin down this article's exact publication date with confidence (search tooling suggested roughly 2026-09-12/13, but I couldn't verify precisely since outbound fetches to hoodline.com were blocked from this sandbox this run) so I've left publicationDate blank rather than guess — please check the byline on the linked page.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
