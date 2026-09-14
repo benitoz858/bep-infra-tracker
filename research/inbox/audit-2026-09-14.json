@@ -1,0 +1,80 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/softbanks-sb-energy-to-build-and-operate-openais-12gw-stargate-data-center-in-milam-county-texas/",
+      "title": "SoftBank's SB Energy to build and operate OpenAI's 1.2GW Stargate data center in Milam County, Texas",
+      "publisher": "DataCenterDynamics",
+      "publicationDate": "2026-01-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "SoftBank's SB Energy to build and operate OpenAI's 1.2GW Stargate data center in Milam County, Texas",
+      "projectId": "stargate-milam-county",
+      "note": "AUDIT: tracker records operator=Oracle for Milam County. Per OpenAI's own 5-site Stargate announcement and the Jan 2026 OpenAI/SoftBank $1B SB Energy partnership announcement, Milam County is a SoftBank-led site built/operated with SB Energy (SoftBank's renewable-energy subsidiary), while Oracle's three sites are Shackelford County, Doña Ana County, and an undisclosed Midwest site. Recommend correcting operator field from Oracle to SoftBank / SB Energy. Also see companion primary source https://openai.com/index/stargate-sb-energy-partnership/ (not independently fetched this session — outbound access to openai.com was blocked by sandbox egress policy).",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.wkbn.com/news/local-news/lordstown-news/lordstown-named-as-site-of-openais-expansion-of-ai-infrastructure/",
+      "title": "Lordstown, Ohio named as site of OpenAI's expansion of Stargate AI infrastructure",
+      "publisher": "WKBN (Youngstown/Lordstown local news)",
+      "publicationDate": "2025-09-24",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "SoftBank has broken ground on an advanced data center design",
+      "projectId": "stargate-lordstown-ohio",
+      "note": "AUDIT: tracker records operator=Oracle for Lordstown, Ohio. Per OpenAI's original 5-site Stargate announcement (Sept 2025), Lordstown and Milam County are the two SoftBank-led sites (Oracle leads Shackelford County, Doña Ana County, and an undisclosed Midwest site); SoftBank separately bought the former Foxconn/Lordstown Assembly plant to convert into an AI data-center/equipment site. Recommend correcting operator field from Oracle to SoftBank. Primary source https://openai.com/index/five-new-stargate-sites/ not independently fetched this session — outbound access to openai.com was blocked by sandbox egress policy; this finding rests on secondary corroboration (WKBN, DCD, Data Centre Magazine, Construction Dive all consistently attribute Lordstown + Milam to SoftBank).",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.thenationalnews.com/business/2025/12/05/stargate-uaes-first-phase-to-be-completed-in-third-quarter-of-2026/",
+      "title": "Stargate UAE's first phase to be completed in third quarter of 2026",
+      "publisher": "The National",
+      "publicationDate": "2025-12-05",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Stargate UAE's first phase, delivering 200 megawatts of the 1-gigawatt AI infrastructure, is due for completion",
+      "projectId": "stargate-uae-abu-dhabi",
+      "note": "AUDIT: tracker's expected_opening_date (2026-12-31) reads as if it applies to the full 1000MW estimated figure, but sources consistently state only Phase 1 (200MW, ~20% of the 1GW cluster) is targeted for Q3 2026; full 1GW buildout is separately reported to take about three years from groundbreaking (~2028), per G42/Khazna statements. This is exactly the 'target vs current' conflation pattern the audit is hunting for, applied to a timeline field rather than a power figure. Recommend either recording a phased estimate (200MW by Q3 2026 / 1000MW full-build) or moving expected_opening_date to reflect full-1GW completion so it isn't read as the date the recorded 1000MW is reached. G42 primary source (g42.ai) not independently fetched this session — outbound access blocked by sandbox egress policy.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 200,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "News report (The National, citing G42/Khazna) states Phase 1 delivers 200MW of the 1GW cluster by Q3 2026. Basis: unclear (IT vs site) from this source. Not fetched directly from G42 primary source this session (sandbox egress blocked), so capped at MEDIUM despite operator-adjacent sourcing."
+        }
+      ]
+    },
+    {
+      "url": "https://dcmag.fr/le-prefet-de-seine-et-marne-a-valide-le-projet-campus-ia-de-fouju-14-gw-et-50-milliards-e/",
+      "title": "Le préfet de Seine-et-Marne a validé le projet Campus IA de Fouju (1,4 GW et 50 milliards €)",
+      "publisher": "DCMag (Data Center Magazine FR)",
+      "publicationDate": "2026-07-30",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Le préfet de Seine-et-Marne a validé le projet Campus IA de Fouju (1,4 GW et 50 milliards €)",
+      "projectId": "campus-ia-fouju-ile-de-france",
+      "note": "AUDIT: tracker status is PERMITTING, but four prefectoral decrees dated 2026-07-29 (n° 2026-07/DCSE/BPE/E authorizing the campus + n° 2026-31/32/33 authorizing SPV1/SPV2/SPV4 to operate DC1/DC2/DC4) formally approved the project — the public inquiry the tracker's PERMITTING status refers to has concluded. A legal challenge ('recours') has since been filed by opposition associations, and first-phase construction was reported targeted for September 2026 (i.e. now). Recommend updating status to reflect the permit having been granted (e.g. 'PERMITTED / under legal challenge') rather than still-pending PERMITTING, and flagging litigation risk in the analyst note. The existing 700MW-contracted-vs-1400MW-target split from the prior audit is unaffected and needs no change. Primary government source (seine-et-marne.gouv.fr/.../DECISIONS) and the Senate record were not independently fetched this session — outbound access blocked by sandbox egress policy; this finding rests on secondary corroboration (DCMag, Next.ink, JSS, an Instagram post quoting the four arrêtés by number, all consistent on the 2026-07-29 decree dates and the legal challenge).",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.neom.com/en-us/newsroom/HUMAIN-and-DataVolt-to-develop-AI-data-center-in-NEOM",
+      "title": "HUMAIN partners with DataVolt to jointly develop 100MW of a 360MW AI data center project in NEOM",
+      "publisher": "NEOM",
+      "publicationDate": "2026-08-31",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "HUMAIN partners with DataVolt to jointly develop 100MW of a 360MW AI data center project in NEOM",
+      "projectId": "datavolt-oxagon-ai-factory-neom",
+      "note": "AUDIT: tracker status is ANNOUNCED with the analyst note stating 'no construction documented' and 'first ~300MW targeted for 2028'. HUMAIN and DataVolt broke ground on Oxagon's first phase around 2026-08-31 (multiple outlets: AGBI, SaudiGulf Projects, DataVolt's own site), described as a 360MW first phase within the wider 1.5GW campus target, of which 100MW is the initial HUMAIN/DataVolt joint tranche (targeted ready 2028). Recommend updating status to UNDER_CONSTRUCTION and refining the '~300MW phase one' estimate to the now-disclosed 360MW figure. The 1500MW estimated_power_mw figure and $5B phase-one capex remain correctly labeled as targets, not current capacity — no change needed there. Not independently fetched from neom.com this session — outbound access blocked by sandbox egress policy; confidence capped at MEDIUM despite this being a company-primary headline recovered via search indexing.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 360,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "NEOM company announcement: groundbreaking (~2026-08-31) on a 360MW first phase of the wider 1.5GW Oxagon campus target, of which 100MW is the initial HUMAIN/DataVolt joint tranche. Basis: site/gross power, construction-phase target, not yet operating. Page not fetched directly this session (sandbox egress blocked) — confidence capped at MEDIUM."
+        }
+      ]
+    }
+  ]
+}
