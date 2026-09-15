@@ -1,0 +1,112 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/13/3344413/0/en/iren-delivers-horizon-1-to-microsoft-and-achieves-nvidia-exemplar-cloud-status-on-gb300-nvl72.html",
+      "title": "IREN Delivers Horizon 1 to Microsoft and Achieves NVIDIA Exemplar Cloud Status on GB300 NVL72",
+      "publisher": "IREN Limited",
+      "publicationDate": "2026-08-13",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Delivering Horizon 1 demonstrates the strength of our vertically integrated model and our ability to execute complex AI infrastructure projects at speed and scale",
+      "note": "Concerns the existing tracked project 'IREN Childress' (slug iren-childress-horizon-for-microsoft; currently UNDER_CONSTRUCTION, 750MW estimated site power). Confirms Horizon 1 -- the first of four ~50MW IT-load, direct-to-chip liquid-cooled buildings under IREN's 5-year/$9.7B Microsoft cloud deal -- was delivered and formally accepted by Microsoft on 2026-08-13, clearing IREN to begin invoicing. Horizons 2-4 (also ~50MW IT-load each) were still scheduled for delivery later in 2026 as of this release. This is IT load, distinct from the 750MW site-power estimate already on file; may support a status note or move toward PARTIALLY_OPERATIONAL on review.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 50,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Company press release states Horizon 1 is the first of four 50MW IT-load buildings; machine-extracted, confidence capped per house policy despite primary sourcing"
+        }
+      ]
+    },
+    {
+      "url": "https://investors.cipherdigital.com/news-releases/news-release-details/cipher-digital-provides-second-quarter-2026-business-update",
+      "title": "Cipher Digital Provides Second Quarter 2026 Business Update",
+      "publisher": "Cipher Digital Inc.",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Data halls are expected to reach 'rack-ready' status in phases between September 2026 and February 2027",
+      "note": "Concerns the existing tracked project 'Cipher Black Pearl' (slug cipher-black-pearl-for-aws; currently UNDER_CONSTRUCTION, 300MW gross estimated, capex blank). Adds phase-level granularity to the 15-year AWS lease: Data Hall 1 targeted for ~35MW IT-load rack-ready status around 2026-09-30, with initial rent commencement 2026-10-01 and the remaining phases rolling through Feb 2027. IT-load figures here are distinct from the already-tracked 300MW gross/216MW critical-IT-load basis -- do not overwrite, treat as an additional phased breakdown. Could not independently fetch the underlying SEC 8-K text in this research run (sandbox blocked sec.gov and investor-relations domains), so this rests on secondary financial-media reporting of the filing/business update; confidence held LOW pending reviewer verification against the primary filing.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 35,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "IT-load rack-ready target for Data Hall 1 phase, per secondary reporting of Cipher's Q2 2026 business update / SEC 8-K; primary filing not independently fetched"
+        }
+      ]
+    },
+    {
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-data-center-moratorium-ai-artificial-intelligence/",
+      "title": "San Francisco supervisor seeks moratorium on new data centers",
+      "publisher": "CBS News San Francisco",
+      "publicationDate": "2026-09-14",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "We don't know what impacts any of these data centers have, regardless of the footprint, regardless of the size",
+      "note": "SITING RESTRICTION: SF Supervisors Shamann Walton, Connie Chan, Jackie Fielder and Chyanne Chen introduced an urgency ordinance for a 45-day interim zoning moratorium on new data center land-use permits citywide, with a Board of Supervisors vote scheduled 2026-09-15. Requires a 4/5 vote; could be extended to roughly 22 months pending a Planning Commission impact study. Directly motivated by the NOVVA facility at 400 Paul Ave in Bayview (~36MW planned build-out, first ~9MW live since summer 2026) -- NOVVA is not currently a tracked project in this database, and no tracked project is sited in San Francisco. Reviewer may want to add NOVVA as a project so this restriction can attach explicitly per the siting-restriction rule (restrictions attach to projects, never inferred from location).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://oaklandside.org/2026/09/11/data-center-temporary-moratorium-oakland-carroll-fife/",
+      "title": "Data center moratorium sought by Oakland Councilmember Carroll Fife",
+      "publisher": "The Oaklandside",
+      "publicationDate": "2026-09-11",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "There need to be some protections, because we don't have any legislation on the books right now",
+      "note": "SITING RESTRICTION: Oakland Councilmember Carroll Fife introduced urgency legislation on 2026-09-11 for an immediate 45-day moratorium on land-use approvals and entitlements for new data centers citywide, alongside a planned permanent amendment to Oakland Planning Code Title 17; a hearing before the Life Enrichment Committee is set for 2026-09-22. Prompted largely by opposition to a proposed Behring Companies downtown AI facility, which Fife says is smaller than the 'mega-facility' residents fear. No tracked project in this database is sited in Oakland; the Behring proposal isn't yet tracked and may be worth adding once its scale/MW is confirmed.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.hayward-ca.gov/discover/news/aug26/hayward-council-consider-move-ban-data-centers-its-sept-15-meeting",
+      "title": "Hayward Council to consider move to ban data centers at its Sept. 15 meeting",
+      "publisher": "City of Hayward",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "directing staff to begin the process of amending the Hayward zoning code to prohibit development of new data centers",
+      "note": "SITING RESTRICTION: Hayward Mayor Mark Salinas, Mayor Pro Tem George Syrop and Councilmember Angela Andrews referred a proposal to the City Council (vote scheduled 2026-09-15) directing staff to draft a zoning amendment that would ban new data center development citywide, plus a process to monitor/report impacts of data centers already approved or operating. Follows an April 2026 municipal code change requiring Major Conditional Use Permit approval (public hearing + Council vote) for any new data center application. No tracked project in this database is sited in Hayward; local coverage names the ~76.6MW STACK SVY03A facility as a driver of the backlash -- may be worth adding as a tracked project. Could not confirm the exact publication day of this city release in this research run (URL indicates August 2026; publicationDate left blank rather than guessed).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://firmus.co/newsroom/firmus-surpasses-900-mw-contracted-capacity-adds-openai-as-anchor-customer-and-expands-into-malaysia",
+      "title": "Firmus surpasses 900 MW contracted capacity, adds OpenAI as anchor customer and expands into Malaysia",
+      "publisher": "Firmus Technologies",
+      "publicationDate": "2026-09-08",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Firmus surpasses 900 MW contracted capacity, adds OpenAI as anchor customer and expands into Malaysia",
+      "suggestedProjectName": "Firmus Malaysia AI Factories (OpenAI anchor)",
+      "note": "NEW project candidate, distinct from the already-tracked 'Firmus Batam AI Factory' (Indonesia, ANNOUNCED). On 2026-09-08 OpenAI signed a multi-year deal to become anchor customer at two new Firmus AI Factory sites in Malaysia (NVIDIA Vera Rubin-based, part of Firmus's NVIDIA DSX platform buildout). OpenAI's specific contracted MW was not disclosed by either party -- the 900MW figure in the headline is Firmus's total contracted capacity across ALL customers and sites (AU/SG/ID/MY combined), not this deal alone. Left the MW claim blank rather than guess; do not attribute 900MW to the Malaysia sites.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.arabnews.com/business/egypt-moves-to-build-1bn-ai-data-centre-with-nvidia-tech-3001048",
+      "title": "Egypt moves to build $1bn AI data centre with Nvidia tech",
+      "publisher": "Arab News",
+      "publicationDate": "2026-09-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "aiming for a 200-megawatt facility worth $1 billion, using Nvidia technology",
+      "suggestedProjectName": "Egypt Nvidia AI Data Centre (Vodafone / Elsewedy / Cassava)",
+      "note": "NEW project candidate. Announced 2026-09-09 by Egypt's Minister of Communications & IT Raafat Hindi: a $1B, 200MW full-build target AI data center using Nvidia technology, built by a consortium of Vodafone Business, Elsewedy Electric and Cassava Technologies (Nvidia's African partner), framed partly as a US-vs-Huawei competition play in Africa. Initial phase reported separately as ~20MW/$200M over an initial three-year build -- record 200MW/$1B as the full-build target only, matching this tracker's convention for phased announcements, not near-term capacity. This is a government-minister announcement carried only by secondary press so far; no company (Nvidia/Vodafone/Elsewedy/Cassava) primary statement was found in this research run.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 200,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Full-build target figure stated by government minister at announcement, via secondary press coverage"
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 1000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Full-build target investment figure stated by government minister at announcement, via secondary press coverage"
+        }
+      ]
+    }
+  ]
+}
