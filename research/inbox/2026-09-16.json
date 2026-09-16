@@ -1,0 +1,24 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.wbtv.com/2026/09/15/statesville-unanimously-approves-180-day-moratorium-data-centers-what-we-know/",
+      "title": "Statesville unanimously approves 180-day moratorium on data centers: What we know",
+      "publisher": "WBTV",
+      "publicationDate": "2026-09-15",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Statesville City Council unanimously approved a 180-day moratorium on the acceptance, processing and approval of new data center applications.",
+      "note": "SITING RESTRICTION: City of Statesville, NC (Iredell County) council unanimously approved second reading of a 180-day moratorium on new data-center development applications, effective 2026-09-14 through roughly March 2027, to study environmental/infrastructure impacts. Does not affect previously approved data centers. No project currently tracked in Statesville/Iredell County, so no projectId/suggestedProjectName is proposed. Caveat: this agent's sandbox had WebFetch/curl blocked for this and the city's own page (statesvillenc.net) by network egress policy, so the excerpt is a close paraphrase reconstructed from search-engine summaries of multiple corroborating outlets (WBTV, QC News, Iredell Free News), not a directly-fetched verbatim quote -- please verify wording against the primary article or council minutes before publishing as a quote.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.dailyherald.com/20260915/technology/elgin-council-seeks-one-year-moratorium-on-data-center-development/",
+      "title": "Elgin council seeks 1-year moratorium on data center development",
+      "publisher": "Daily Herald",
+      "publicationDate": "2026-09-15",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Elgin City Council gave unanimous preliminary approval to a proposed one-year moratorium on new data center development.",
+      "note": "SITING RESTRICTION: Elgin, IL city council gave unanimous preliminary (committee-of-the-whole) approval to a proposed one-year moratorium on data-center development around 2026-09-08/09; final council vote was still pending as of this 2026-09-15 report. Flag for a follow-up check once the final vote happens -- this is not yet a final adoption. No project currently tracked in Elgin/Kane County, IL, so no projectId/suggestedProjectName is proposed. Caveat: WebFetch/curl to the primary article were blocked by this agent's sandbox network policy, so the excerpt is a close paraphrase reconstructed from a search-engine summary rather than a directly-fetched verbatim quote -- please verify exact wording before publishing as a quote.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
