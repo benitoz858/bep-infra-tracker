@@ -12,7 +12,10 @@ import { NotFoundError } from "@/lib/services/errors";
 import { getProjectBySlug } from "@/lib/services/projects";
 import { decimalToString } from "@/lib/serialize";
 
-export const metadata: Metadata = { title: "Edit project" };
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+  title: "Edit project",
+};
 
 /** `<input type="date">` needs a bare YYYY-MM-DD, in UTC to avoid a day shift. */
 function dateInput(value: Date | null): string {

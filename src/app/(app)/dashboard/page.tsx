@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { publicPageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 
 import { BarList } from "@/components/bar-list";
@@ -27,7 +28,11 @@ import {
   getStatusBreakdown,
 } from "@/lib/services/analytics";
 
-export const metadata: Metadata = { title: "Dashboard" };
+export const metadata: Metadata = publicPageMetadata(
+  "/dashboard",
+  "Dashboard",
+  "Global AI infrastructure projects, announced and confirmed capacity, project status and supporting evidence.",
+);
 
 export default async function DashboardPage() {
   const user = await getSessionUser();

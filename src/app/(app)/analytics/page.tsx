@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { publicPageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 
 import {
@@ -28,7 +29,11 @@ import {
   getSupplierExposure,
 } from "@/lib/services/companies";
 
-export const metadata: Metadata = { title: "Analytics" };
+export const metadata: Metadata = publicPageMetadata(
+  "/analytics",
+  "Analytics",
+  "Compare tracked AI infrastructure capacity by geography, company and project status; distinguish announced from confirmed figures.",
+);
 
 export default async function AnalyticsPage() {
   await getSessionUser();

@@ -36,6 +36,7 @@ import {
 } from "@/lib/format";
 import { can, getSessionUser } from "@/lib/permissions";
 import { NotFoundError } from "@/lib/services/errors";
+import { publicPageMetadata } from "@/lib/page-metadata";
 import { getProjectBySlug, getRelatedProjects } from "@/lib/services/projects";
 import { decimalToString } from "@/lib/serialize";
 import {
@@ -52,9 +53,13 @@ export async function generateMetadata({
   const { slug } = await params;
   try {
     const project = await getProjectBySlug(slug);
-    return { title: project.name };
+    return publicPageMetadata(
+      `/projects/${encodeURIComponent(slug)}`,
+      project.name,
+      `Sources, capacity claims, project status and verification history for ${project.name}. Announced capacity is distinguished from confirmed capacity.`,
+    );
   } catch {
-    return { title: "Project not found" };
+    return { title: "Project not found", robots: { index: false, follow: false } };
   }
 }
 

@@ -14,23 +14,21 @@ const BASE = "https://tracker.bepresearch.com";
  * discoverable today, without a redeploy.
  */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const now = new Date();
-
-  const staticPages: MetadataRoute.Sitemap = (
-    [
-      { url: BASE, changeFrequency: "daily", priority: 1 },
-      { url: `${BASE}/dashboard`, changeFrequency: "daily", priority: 0.9 },
-      { url: `${BASE}/projects`, changeFrequency: "daily", priority: 0.9 },
-      { url: `${BASE}/siting`, changeFrequency: "weekly", priority: 0.8 },
-      { url: `${BASE}/submit`, changeFrequency: "monthly", priority: 0.8 },
-      { url: `${BASE}/methodology`, changeFrequency: "monthly", priority: 0.7 },
-      { url: `${BASE}/analytics`, changeFrequency: "daily", priority: 0.7 },
-      { url: `${BASE}/map`, changeFrequency: "weekly", priority: 0.6 },
-      { url: `${BASE}/companies`, changeFrequency: "weekly", priority: 0.6 },
-      { url: `${BASE}/sources`, changeFrequency: "daily", priority: 0.5 },
-      { url: `${BASE}/verification`, changeFrequency: "daily", priority: 0.5 },
-    ] as const
-  ).map((page) => ({ ...page, lastModified: now }));
+  const staticPages: MetadataRoute.Sitemap = [
+    // The root redirects to /dashboard; list its canonical destination only.
+    { url: `${BASE}/dashboard`, changeFrequency: "daily", priority: 0.9 },
+    { url: `${BASE}/projects`, changeFrequency: "daily", priority: 0.9 },
+    { url: `${BASE}/siting`, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE}/submit`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/methodology`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/analytics`, changeFrequency: "daily", priority: 0.7 },
+    { url: `${BASE}/map`, changeFrequency: "weekly", priority: 0.6 },
+    { url: `${BASE}/companies`, changeFrequency: "weekly", priority: 0.6 },
+    { url: `${BASE}/sources`, changeFrequency: "daily", priority: 0.5 },
+    { url: `${BASE}/verification`, changeFrequency: "daily", priority: 0.5 },
+  ];
+  // Static pages have no reliable modification timestamp. Request time is
+  // not a content update; only database records below carry lastModified.
 
   // A sitemap that 500s is worse than a thin one: search engines back off the
   // whole file. If the database is unreachable, still serve the static pages.

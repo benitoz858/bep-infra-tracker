@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { publicPageMetadata } from "@/lib/page-metadata";
 import { Suspense } from "react";
 
 import { PageHeader } from "@/components/page-header";
@@ -9,7 +10,11 @@ import { getSessionUser } from "@/lib/permissions";
 import { getFilterFacets, listProjectsForMap } from "@/lib/services/projects";
 import { projectQuerySchema } from "@/lib/validations/project";
 
-export const metadata: Metadata = { title: "Global map" };
+export const metadata: Metadata = publicPageMetadata(
+  "/map",
+  "Global map",
+  "Explore AI infrastructure projects geographically, with filters for project status, capacity and company.",
+);
 
 export default async function MapPage({
   searchParams,

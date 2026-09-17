@@ -11,7 +11,10 @@ import { formatDate } from "@/lib/format";
 import { getSessionUser } from "@/lib/permissions";
 import { listMySubmissions } from "@/lib/services/submissions";
 
-export const metadata: Metadata = { title: "Your account" };
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+  title: "Your account",
+};
 
 const STATUS_TONE = {
   PENDING: "construction",

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { publicPageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 
 import { PageHeader } from "@/components/page-header";
@@ -10,14 +11,18 @@ import {
   ENERGIZED_STATUSES,
   NON_PIPELINE_STATUSES,
 } from "@/lib/capacity";
-import { CREDIBILITY_META, POWER_READINESS_META, STALE_AFTER_DAYS } from "@/lib/credibility";
+import {
+  CREDIBILITY_META,
+  POWER_READINESS_META,
+  STALE_AFTER_DAYS,
+} from "@/lib/credibility";
 import { PROJECT_STATUS_META } from "@/lib/domain";
 
-export const metadata: Metadata = {
-  title: "Methodology",
-  description:
-    "How the tracker defines announced, credible, under-construction and confirmed capacity; how credibility is assessed; and what the figures do not tell you.",
-};
+export const metadata: Metadata = publicPageMetadata(
+  "/methodology",
+  "Methodology",
+  "How the tracker defines announced, credible, under-construction and confirmed capacity; how credibility is assessed; and what the figures do not tell you.",
+);
 
 /**
  * The methodology page reads its constants from the same modules the

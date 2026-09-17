@@ -20,7 +20,10 @@ import {
   listCandidates,
 } from "@/lib/services/ingestion";
 
-export const metadata: Metadata = { title: "Agent inbox" };
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+  title: "Agent inbox",
+};
 
 export default async function IngestPage() {
   const user = await getSessionUser();
