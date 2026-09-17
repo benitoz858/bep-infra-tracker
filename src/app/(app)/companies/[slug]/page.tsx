@@ -21,6 +21,7 @@ import {
 import { getSessionUser } from "@/lib/permissions";
 import { getCompanyBySlug } from "@/lib/services/companies";
 import { NotFoundError } from "@/lib/services/errors";
+import { publicPageMetadata } from "@/lib/page-metadata";
 
 export async function generateMetadata({
   params,
@@ -30,9 +31,13 @@ export async function generateMetadata({
   const { slug } = await params;
   try {
     const { company } = await getCompanyBySlug(slug);
-    return { title: company.name };
+    return publicPageMetadata(
+      `/companies/${encodeURIComponent(slug)}`,
+      company.name,
+      `AI infrastructure projects associated with ${company.name}, including ownership, operations, suppliers and cited sources.`,
+    );
   } catch {
-    return { title: "Company not found" };
+    return { title: "Company not found", robots: { index: false, follow: false } };
   }
 }
 

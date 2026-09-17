@@ -6,7 +6,10 @@ import { SourceInboxForm } from "@/components/sources/source-inbox-form";
 import { prisma } from "@/lib/db";
 import { can, getSessionUser } from "@/lib/permissions";
 
-export const metadata: Metadata = { title: "Add source" };
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+  title: "Add source",
+};
 
 export default async function NewSourcePage({
   searchParams,

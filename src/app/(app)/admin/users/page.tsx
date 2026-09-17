@@ -9,7 +9,10 @@ import { formatCount } from "@/lib/format";
 import { can, getSessionUser } from "@/lib/permissions";
 import { getRoleCounts, listUsers } from "@/lib/services/users";
 
-export const metadata: Metadata = { title: "Users" };
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+  title: "Users",
+};
 
 export default async function UsersPage() {
   const user = await getSessionUser();

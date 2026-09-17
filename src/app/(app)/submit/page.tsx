@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
+import { publicPageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 
 import { PageHeader } from "@/components/page-header";
 import { SubmitForm } from "@/components/submit-form";
 import { prisma } from "@/lib/db";
 
-export const metadata: Metadata = {
-  title: "Submit a source",
-  description:
-    "Propose a source and the figures it supports. No account needed — every submission is reviewed by a human before it reaches the published data.",
-};
+export const metadata: Metadata = publicPageMetadata(
+  "/submit",
+  "Submit a source",
+  "Propose a source and the figures it supports. No account needed \u2014 every submission is reviewed by a human before it reaches the published data.",
+);
 
 export default async function SubmitPage() {
   const projects = await prisma.project.findMany({

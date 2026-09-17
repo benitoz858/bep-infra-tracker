@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { publicPageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 import { Suspense } from "react";
 
@@ -12,7 +13,11 @@ import { getSessionUser } from "@/lib/permissions";
 import { getFilterFacets, listProjects } from "@/lib/services/projects";
 import { projectQuerySchema } from "@/lib/validations/project";
 
-export const metadata: Metadata = { title: "Projects" };
+export const metadata: Metadata = publicPageMetadata(
+  "/projects",
+  "Projects",
+  "Explore AI data center and compute projects by status, location, capacity and source-backed claims.",
+);
 
 export default async function ProjectsPage({
   searchParams,

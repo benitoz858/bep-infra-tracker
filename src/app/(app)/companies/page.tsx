@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { publicPageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 
 import { PageHeader } from "@/components/page-header";
@@ -14,7 +15,11 @@ import { listCompanies } from "@/lib/services/companies";
 import { companyQuerySchema } from "@/lib/validations/company";
 import { CompaniesFilters } from "@/components/companies/companies-filters";
 
-export const metadata: Metadata = { title: "Companies" };
+export const metadata: Metadata = publicPageMetadata(
+  "/companies",
+  "Companies",
+  "Explore owners, operators, suppliers and investors associated with tracked AI infrastructure projects.",
+);
 
 export default async function CompaniesPage({
   searchParams,

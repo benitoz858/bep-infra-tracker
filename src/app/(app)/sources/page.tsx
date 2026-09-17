@@ -1,5 +1,6 @@
 import { ExternalLink } from "lucide-react";
 import type { Metadata } from "next";
+import { publicPageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 
 import { PageHeader } from "@/components/page-header";
@@ -13,11 +14,11 @@ import { formatDate, formatRelative } from "@/lib/format";
 import { can, getSessionUser } from "@/lib/permissions";
 import { listProjectsMissingSources, listRecentSources } from "@/lib/services/sources";
 
-export const metadata: Metadata = {
-  title: "Evidence library",
-  description:
-    "Every source cited in the tracker, with its publisher, reliability and the claims it supports.",
-};
+export const metadata: Metadata = publicPageMetadata(
+  "/sources",
+  "Evidence library",
+  "Every source cited in the tracker, with its publisher, reliability and the claims it supports.",
+);
 
 export default async function SourcesPage() {
   const user = await getSessionUser();

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { publicPageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 
 import { BarList } from "@/components/bar-list";
@@ -27,7 +28,11 @@ import {
   listRestrictions,
 } from "@/lib/services/siting";
 
-export const metadata: Metadata = { title: "Siting risk" };
+export const metadata: Metadata = publicPageMetadata(
+  "/siting",
+  "Siting risk",
+  "Explore location, power and infrastructure constraints for tracked AI projects, with evidence and uncertainty.",
+);
 
 export default async function SitingPage() {
   await getSessionUser();

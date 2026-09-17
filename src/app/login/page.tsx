@@ -6,7 +6,10 @@ import { BrandLockup } from "@/components/brand";
 import { LoginForm } from "@/components/login-form";
 import { getSessionUser } from "@/lib/permissions";
 
-export const metadata: Metadata = { title: "Sign in" };
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+  title: "Sign in",
+};
 
 export default async function LoginPage({
   searchParams,

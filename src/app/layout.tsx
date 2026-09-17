@@ -26,7 +26,8 @@ export const metadata: Metadata = {
   // Open project: indexable. The tracker is public and being found is the point.
   robots: { index: true, follow: true },
   metadataBase: new URL("https://tracker.bepresearch.com"),
-  alternates: { canonical: "/" },
+  // Canonicals belong to individual public pages; a root default would mark
+  // every project and company as a duplicate of the homepage.
   openGraph: {
     title: "BEP AI Infrastructure Tracker",
     description:

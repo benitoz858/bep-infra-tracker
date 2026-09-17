@@ -7,6 +7,7 @@ import { RegisterForm } from "@/components/register-form";
 import { getSessionUser } from "@/lib/permissions";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: false },
   title: "Create an account",
   description:
     "Optional. An account attributes your submissions so you can follow what happened to them — contributing does not require one.",

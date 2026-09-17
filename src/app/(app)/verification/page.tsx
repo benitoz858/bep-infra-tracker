@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { publicPageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 
 import { PageHeader } from "@/components/page-header";
@@ -20,7 +21,11 @@ import {
   type ReviewReason,
 } from "@/lib/services/verification";
 
-export const metadata: Metadata = { title: "Verification queue" };
+export const metadata: Metadata = publicPageMetadata(
+  "/verification",
+  "Verification queue",
+  "Review which AI infrastructure records need stronger sources, updated evidence or verification.",
+);
 
 /** Reasons that mean the record's evidence is thin, rather than merely stale. */
 const EVIDENCE_REASONS: ReviewReason[] = [

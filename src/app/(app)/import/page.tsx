@@ -6,7 +6,10 @@ import { PageHeader } from "@/components/page-header";
 import { Button } from "@/components/ui/button";
 import { can, getSessionUser } from "@/lib/permissions";
 
-export const metadata: Metadata = { title: "Import" };
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+  title: "Import",
+};
 
 export default async function ImportPage() {
   const user = await getSessionUser();

@@ -6,7 +6,10 @@ import { EMPTY_PROJECT, ProjectForm } from "@/components/projects/project-form";
 import { can, getSessionUser } from "@/lib/permissions";
 import { getCompanyOptions } from "@/lib/services/companies";
 
-export const metadata: Metadata = { title: "Add project" };
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+  title: "Add project",
+};
 
 export default async function NewProjectPage() {
   const user = await getSessionUser();
