@@ -1,0 +1,114 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/04/3338166/0/en/Cipher-Digital-Provides-Second-Quarter-2026-Business-Update.html",
+      "title": "Cipher Digital Provides Second Quarter 2026 Business Update",
+      "publisher": "GlobeNewswire (Cipher Digital Inc. press release)",
+      "publicationDate": "2026-08-04",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Initial Black Pearl capacity was delivered in August 2026, about two months ahead of the prior contractual schedule.",
+      "projectId": "cipher-black-pearl-for-aws",
+      "note": "STATUS UPDATE (tracked project, currently UNDER_CONSTRUCTION): at AWS's request, Cipher accelerated delivery and Black Pearl's initial IT capacity began generating rent in Aug 2026, ~2 months early -- Cipher's first hyperscale HPC rent revenue. Site power vs IT load: tracker already records 300MW gross; company disclosures put the AWS lease's critical IT load at 216MW, which is new granularity worth adding. Consider whether this warrants a status bump toward PARTIALLY_OPERATIONAL. SOURCING CAVEAT: I could not reach the primary press release or SEC 8-K directly -- this sandbox's outbound web-fetch tool was blocked for every external domain I tried (including this one), so the excerpt above is reconstructed from secondary aggregation, not copy-pasted from the live page. Please re-open the source link and confirm exact wording before raising this above LOW confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 216,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Critical IT load of the AWS lease at Black Pearl, per Cipher's Q2 2026 business update as aggregated by secondary sources; not independently re-verified against primary text"
+        }
+      ]
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/05/3339168/0/en/TeraWulf-Reports-Second-Quarter-2026-Results.html",
+      "title": "TeraWulf Reports Second Quarter 2026 Results",
+      "publisher": "GlobeNewswire (TeraWulf Inc. press release)",
+      "publicationDate": "2026-08-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Completion of CB-3 increased revenue-generating critical IT capacity at Lake Mariner to 102 megawatts.",
+      "projectId": "terawulf-lake-mariner-fluidstack-anthropic",
+      "note": "STATUS UPDATE (tracked project, currently UNDER_CONSTRUCTION with only a 360MW estimated build target and no operational figure recorded): CB-3 delivered, taking revenue-generating critical IT capacity to 102MW (from 81MW at Q1 2026), triggering $600M of Google's credit backstop for Fluidstack's lease. CB-4's first data hall is now in commissioning with rent commencement targeted 2H 2026; CB-5 targeted early 2027. This looks like the first confirmed operational capacity at this site -- worth a status review (PARTIALLY_OPERATIONAL?). SOURCING CAVEAT: same as above -- WebFetch to the primary release/8-K was blocked in this sandbox for every domain tested, so the excerpt is reconstructed from secondary aggregation. Please verify exact wording against the source before raising confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 102,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Revenue-generating critical IT capacity at Lake Mariner after CB-3 delivery, per TeraWulf's Q2 2026 earnings release as aggregated by secondary sources; not independently re-verified against primary text"
+        }
+      ]
+    },
+    {
+      "url": "https://en.sedaily.com/technology/2026/09/15/kt-cloud-to-add-1-gigawatt-of-ai-data-centers-within-five",
+      "title": "KT Cloud to Add 1 Gigawatt of AI Data Centers Within Five Years",
+      "publisher": "Seoul Economic Daily",
+      "publicationDate": "2026-09-15",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "KT Cloud plans to supply more than 1 gigawatt of AI data center infrastructure across 20-plus sites by 2031.",
+      "suggestedProjectName": "KT Cloud AI Data Center Network (South Korea, multi-site)",
+      "note": "NEW PROGRAM, not on tracker: KT Cloud (KT Corp's cloud unit) announced at its own KT Cloud Summit 2026 (Seoul, Sept 15) a roadmap to build 1GW of AI data center capacity across 20+ sites in the Seoul metro area and other regions by 2031, with 200MW confirmed by 2029. This is a company-stated program covering many future sites rather than one discrete project -- flag for the team to decide whether to track as a program-level entry or wait for individual site announcements (none named yet). Announced directly by the principal company, not MOU-stage vapor. SOURCING CAVEAT: WebFetch to primary/company sources was blocked in this sandbox; excerpt reconstructed from secondary business-press aggregation -- verify before promoting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Total planned AI data center capacity by 2031 across 20+ sites, per company's own summit announcement as aggregated by secondary press; not independently re-verified"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kaxe.org/local-news/2026-09-15/bemidji-adopts-1-year-moratorium-on-data-center-development",
+      "title": "Bemidji adopts 1-year moratorium on data center development",
+      "publisher": "KAXE",
+      "publicationDate": "2026-09-15",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Bemidji Planning Board voted 6-1 to prohibit new data center developments larger than 10,000 square feet.",
+      "note": "SITING RESTRICTION: Bemidji / Beltrami County, Minnesota adopted a 1-year moratorium (Planning Board vote 6-1, Sept 14, 2026) on new data center developments over 10,000 sq ft, also covering crypto-mining facilities of any size. No tracked project currently sits in this jurisdiction -- flagging as a new prohibition zone for the siting-restrictions map. Corroborated by KAXE, Blandin on Broadband, and the Bemidji Pioneer. SOURCING CAVEAT: WebFetch to the source was blocked in this sandbox; excerpt reconstructed from secondary aggregation of multiple outlets' reporting on the same vote -- verify exact wording before promoting.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.kalw.org/bay-area-news/2026-09-16/richmond-approves-pause-on-developing-new-data-centers",
+      "title": "Richmond approves pause on developing new data centers",
+      "publisher": "KALW",
+      "publicationDate": "2026-09-16",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Richmond City Council passed a 45-day moratorium on new data center development in a 6-1 vote.",
+      "note": "SITING RESTRICTION: Richmond, CA (Bay Area) approved a 45-day data center moratorium Sept 16, 2026 -- the third Bay Area city after Oakley and Gilroy. City staff say there are no pending data center applications in Richmond currently, so no immediate MW-at-risk change, but it adds to a fast-growing wave of California local moratoriums this month. Related and possibly worth a follow-up next cycle: San Francisco's Board of Supervisors weighed its own 45-day freeze on Sept 15 (needs a 4/5 supermajority under Govt Code 65858); I could not confirm the outcome of that vote -- see end-of-run notes. SOURCING CAVEAT: WebFetch to the source was blocked in this sandbox; excerpt reconstructed from secondary aggregation -- verify before promoting.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/openai-stargates-milam-texas-freebird-data-center-to-span-548950-sq-ft-in-first-phase/",
+      "title": "OpenAI Stargate's Milam, Texas, 'Freebird' data center to span 548,950 sq ft in first phase",
+      "publisher": "Data Center Dynamics (citing a Texas Dept. of Licensing & Regulation filing)",
+      "publicationDate": "2026-07-27",
+      "sourceType": "PERMIT",
+      "excerpt": "The filing lists the project's estimated cost at $470 million, with completion targeted for October 15.",
+      "projectId": "stargate-milam-county",
+      "note": "STATUS UPDATE (tracked project, currently blank on power and capex): a Texas DLR filing for 'Freebird' phase 1 gives a $470M first-phase construction cost (this is a permit-filed construction cost, not necessarily total campus capex -- broader reporting puts total campus investment at $1.8-3B, unconfirmed) and describes SB Energy's Milam site as a 1.2GW facility overall. IT load vs site power basis unclear from this filing; treat the 1.2GW as site/generation-scale, not confirmed IT load. This is 7 weeks old (published July 27) but fills fields the tracker currently has blank, so still flagging it. SOURCING CAVEAT: WebFetch was blocked in this sandbox; excerpt reconstructed from secondary aggregation of the filing, not read directly -- verify before promoting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 470000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "First-phase construction cost stated in a Texas Dept. of Licensing & Regulation filing, per secondary reporting; not independently re-verified against the filing itself"
+        }
+      ]
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/entergy-to-build-12bn-500kv-transmission-line-to-serve-meta-mega-data-center-in-louisiana/",
+      "title": "Entergy to build $1.2bn 500kV transmission line to serve Meta mega data center in Louisiana",
+      "publisher": "Data Center Dynamics (citing LPSC docket U-37812)",
+      "sourceType": "UTILITY_FILING",
+      "excerpt": "Entergy Louisiana estimates the Babel-Webre 500kV line at $1.238 billion, in service by August 2029.",
+      "projectId": "meta-hyperion-louisiana",
+      "note": "REGULATORY/POWER-DELIVERY UPDATE (tracked project): Entergy's Babel-Webre 500kV transmission line (LPSC docket U-37812, filed Dec 2025) is explicitly driven by Hyperion's load and is now before an LPSC hearing scheduled for September 2026 (this month), with a decision targeted Q4 2026. IMPORTANT: the $1.238B figure is Entergy's own transmission-infrastructure capex, NOT Meta/Hyperion project capex -- do not merge into the project's $50B capex figure. Flagging because the hearing timing is current and it materially affects Hyperion's power-delivery timeline. Publication date of the DCD article is approximate (July 2026, exact day not confirmed) -- please verify. SOURCING CAVEAT: WebFetch was blocked in this sandbox for both the DCD article and the LPSC docket page; excerpt reconstructed from secondary aggregation -- verify wording and exact date before promoting.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
