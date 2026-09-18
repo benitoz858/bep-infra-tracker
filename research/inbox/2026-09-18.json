@@ -1,0 +1,89 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/09/08/3357498/0/en/iren-s-2gw-sweetwater-hub-included-as-base-load-in-ercot-batch-zero.html",
+      "title": "IREN's 2GW Sweetwater Hub Included as Base Load in ERCOT Batch Zero",
+      "publisher": "IREN Limited (GlobeNewswire)",
+      "publicationDate": "2026-09-08",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "IREN's 2GW Sweetwater Hub Included as Base Load in ERCOT Batch Zero",
+      "suggestedProjectName": "IREN Sweetwater",
+      "note": "Status update for the already-tracked project 'IREN Sweetwater' (UNDER_CONSTRUCTION, ~2,000MW). Company release confirms the site splits into Sweetwater 1 (1,400MW) and Sweetwater 2 (600MW), both conditionally classified as ERCOT Batch Zero base load — a grid-interconnection milestone, not a final interconnection agreement. Release also states the Sweetwater 1 high-voltage substation was energized earlier in 2026 and 300MW (gross) of construction continues toward Q4 2027 delivery. NOTE: live tracker API and WebFetch were both unreachable this run (network egress blocked), so this could not be matched to a database project ID — please match by name.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 1400, "unit": "MW", "confidenceLevel": "HIGH", "methodology": "Company release states Sweetwater 1 is 1,400MW, conditionally classified ERCOT Batch Zero base load"},
+        {"metricType": "POWER_MW", "numericValue": 600, "unit": "MW", "confidenceLevel": "HIGH", "methodology": "Company release states Sweetwater 2 is 600MW, conditionally classified ERCOT Batch Zero base load"}
+      ]
+    },
+    {
+      "url": "https://patch.com/virginia/ashburn/loudoun-supervisors-advance-12-month-pause-new-data-center-applications-report",
+      "title": "Loudoun Supervisors Advance 12-Month Pause On New Data Center Applications: Report",
+      "publisher": "Patch (Ashburn, VA)",
+      "publicationDate": "2026-09-16",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Loudoun Supervisors Advance 12-Month Pause On New Data Center Applications",
+      "note": "SITING RESTRICTION: Loudoun County, VA — the highest-concentration data center market in the US (Data Center Alley) — voted 7-1-1 on Sept 16, 2026 to direct staff to draft a resolution pausing new data center and substation applications for 12 months. Not yet final: Board expected to take a final vote in October 2026. Affects future filings only, not projects already under review or construction in-county.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.rappnews.com/land-use/prince-william-planning-commission-recommends-ending-by-right-data-centers-downsizing-data-center-district-e4724774",
+      "title": "Data center turnabout in Prince William as planners recommend ending by-right development",
+      "publisher": "InsideNoVa / Rappahannock News",
+      "publicationDate": "2026-09-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "recommend shrinking the data center opportunity zone overlay district from about 9,700 acres to 3,500 acres",
+      "note": "SITING RESTRICTION: Prince William County, VA Planning Commission voted 5-2 on Sept 9, 2026 to recommend eliminating by-right data center development (requiring Special Use Permits instead) and shrinking the county's Data Center Opportunity Zone Overlay District from ~9,700 to ~3,500 acres. Board of County Supervisors public hearing was scheduled for Sept 22, 2026 — outcome not yet known as of this report.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://eastbayinsiders.substack.com/p/hayward-sets-stage-for-data-center",
+      "title": "Hayward Sets Stage for Data Center Moratorium",
+      "publisher": "East Bay Insiders",
+      "publicationDate": "2026-09-16",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Council directed staff to return in late October with a moratorium on new data-center development",
+      "note": "SITING RESTRICTION: Hayward, CA City Council (Sept 15, 2026 meeting) directed staff to draft a moratorium on new data center development, after public backlash over a 76.6MW facility (310,000 sq ft, 28 diesel backup generators) that was approved by the Planning Commission in 2025 via a zoning loophole with no Council vote. The city has separately already changed its rules so any future data center over 50MW must go before the elected Council. Moratorium itself not yet enacted; staff to return in late October 2026.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.kaxe.org/local-news/2026-09-15/bemidji-adopts-1-year-moratorium-on-data-center-development",
+      "title": "Bemidji adopts 1-year moratorium on data center development",
+      "publisher": "KAXE (Northern Community Radio)",
+      "publicationDate": "2026-09-15",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "voted 6-1 to prohibit new developments of data centers greater than 10,000 square feet",
+      "note": "SITING RESTRICTION: Bemidji, MN Planning Board/Council voted 6-1 on Sept 14, 2026 (adopted, not merely proposed) to prohibit new data center development exceeding 10,000 sq ft within city limits, effective for one year.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.wboi.org/government/2026-09-09/fort-wayne-city-councilwoman-introduces-ordinances-to-rein-in-future-data-center-development",
+      "title": "Fort Wayne city councilwoman introduces ordinances to rein in future data center development",
+      "publisher": "WBOI (NPR — Northeast Indiana)",
+      "publicationDate": "2026-09-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "introduced legislation to pause council actions on data centers for one year and create a nine-member study commission",
+      "note": "SITING RESTRICTION: Fort Wayne, IN Councilwoman Rohli Booker introduced ordinances (unanimous support for introduction, Sept 2026) for a one-year pause on council actions (annexations, property purchases, contracts, tax abatements) tied to data center development, plus a nine-member advisory commission. Explicitly does not affect the existing operational Google data center in the city. Not yet passed — introduction only.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://oregoncapitalchronicle.com/2026/09/08/gov-kotek-pauses-data-centers-on-state-land-capitol-demonstrators-want-her-to-go-further/",
+      "title": "Gov. Kotek pauses data centers on state land. Capitol demonstrators want her to go further.",
+      "publisher": "Oregon Capital Chronicle",
+      "publicationDate": "2026-09-08",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "immediately pause unapproved requests for easements, rights-of-way, leases, rentals, land-use permits and sales... for data center projects",
+      "note": "SITING RESTRICTION: Oregon Gov. Tina Kotek announced (Sept 8, 2026) a roughly one-year pause (until July 1, 2027, or until further statewide action) on state approvals for data centers on state-owned land/buildings — easements, rights-of-way, leases, land-use permits, and property sales/transfers. She also terminated a pending 32-acre state land sale tied to a proposed $5B data center project. Governor's office states Oregon 'currently lacks authority to enact a statewide moratorium' — this action is limited to state-owned land, not a blanket ban.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://localnewsmatters.org/2026/09/15/san-francisco-supervisors-seek-45-day-pause-on-new-data-centers-as-ai-fuels-concerns/",
+      "title": "San Francisco supervisors seek 45-day pause on new data centers as AI fuels concerns",
+      "publisher": "Local News Matters (Bay City News)",
+      "publicationDate": "2026-09-15",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "introduced a 45-day suspension on new data centers on September 15",
+      "note": "SITING RESTRICTION (early stage — flag for awareness, not yet enacted): SF Supervisor Shamann Walton introduced a 45-day moratorium ordinance on new data centers on Sept 15, 2026 (co-sponsored by Fielder, Chen, Chan), targeting Bayview-area projects. If passed and the Planning Commission finds the city's 15 existing data center campuses pose a risk, the pause could extend up to 22 months 15 days. This is an introduction only — no Board vote yet.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
