@@ -1,0 +1,34 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.wane.com/top-stories/fort-wayne-city-council-considers-365-day-data-center-moratorium/",
+      "title": "Fort Wayne City Council considers 365-day data center moratorium",
+      "publisher": "WANE 15",
+      "publicationDate": "2026-09-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Fort Wayne City Council considers 365-day data center moratorium",
+      "note": "SITING RESTRICTION: Fort Wayne, IN councilwoman Rohli Booker introduced an ordinance (Sept 8-9, 2026) for a 365-day moratorium on council actions that support new data center development — annexations, property purchases, contracts, and tax abatements — while the city drafts a comprehensive data-center development standard. The existing Google data center under construction in the city is explicitly carved out and unaffected. Council vote on the ordinance is pending as of this report. Procedural restriction (blocks council support actions, not permits directly); no MW-at-risk figure disclosed. No tracked project is located in Fort Wayne, so no projectId is attached.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.wcjb.com/2026/09/15/alachua-planning-board-passes-12-month-moratorium-data-centers/",
+      "title": "Alachua planning board passes 12-month moratorium on data centers",
+      "publisher": "WCJB TV20",
+      "publicationDate": "2026-09-15",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Alachua planning board passes 12-month moratorium on data centers",
+      "note": "SITING RESTRICTION: The Alachua, FL Planning and Zoning Commission voted Tuesday, Sept 15, 2026 to approve a 12-month moratorium on new data center applications/permits, pausing review while the city studies impacts and drafts siting regulations; the recommendation proceeds to the City Commission next. No MW-at-risk figure disclosed — this is a jurisdiction-wide pause on applications, not a rejection of a specific project. No tracked project is located in Alachua County, so no projectId is attached.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://352today.com/news/257752-marion-county-pauses-large-commercial-data-centers-for-a-year-with-a-50-megawatt-cutoff-on-who-still-gets-through/",
+      "title": "Marion County pauses large commercial data centers for a year with a 50-megawatt cutoff on who still gets through",
+      "publisher": "352today",
+      "publicationDate": "2026-09-15",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Marion County pauses large commercial data centers for a year with a 50-megawatt cutoff on who still gets through",
+      "note": "SITING RESTRICTION: The Marion County, FL Board of County Commissioners voted 5-0 on Sept 15, 2026 to adopt a 12-month moratorium (effective date to new land-development rules, whichever comes first) on new rezonings, special-use permits, site plans, and building permits for large commercial data centers with an anticipated peak electric demand of 50 MW or more (covers AI/crypto compute facilities; standard business, school, and hospital IT is explicitly exempt). A county staff workshop on follow-on land-development code options (sizing/siting rules, possibly a permanent ban) is scheduled for Sept 21, 2026. No tracked project is located in Marion County, so no projectId is attached.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
