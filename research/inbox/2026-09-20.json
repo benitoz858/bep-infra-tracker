@@ -1,0 +1,75 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.abc.net.au/news/2026-09-16/queensland-data-centre-anthropic-dalby/107160640",
+      "title": "AI giant Anthropic signs agreement for $32b Queensland data centre",
+      "publisher": "ABC News (Australia)",
+      "publicationDate": "2026-09-16",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "1.44 gigawatts of IT capacity across four 360 megawatt buildings",
+      "suggestedProjectName": "Anthropic – Western Downs Digital Park (Dalby, Queensland)",
+      "note": "NEW PROJECT: Anthropic's first Australian data center lease, announced by Queensland Premier David Crisafulli, at developer Zerra DC's Western Downs Digital Park near Dalby. Figure is developer-stated IT capacity (1.44 GW across four 360MW buildings), not site/generation power — no primary Anthropic capacity figure yet. Investment cited as A$31.9–32bn (Australian dollars, not USD — no CAPEX_USD claim attached to avoid currency confusion). First data hall targeted for 2027, lease subject to Foreign Investment Review Board approval. Not currently in the tracker.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1440,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Developer (Zerra DC) and Queensland Premier's office state 1.44 GW IT capacity across four 360 MW buildings; not yet confirmed by an Anthropic primary-source statement"
+        }
+      ]
+    },
+    {
+      "url": "https://datacenters.atmeta.com/2026/09/kuna-we-are-online/",
+      "title": "Kuna, we are online!",
+      "publisher": "Meta Data Centers",
+      "publicationDate": "2026-09-03",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Meta's Kuna Data Center is officially serving traffic ... now online in Idaho, representing an overall investment of $1.2 billion",
+      "suggestedProjectName": "Meta Kuna (Idaho)",
+      "note": "NEW PROJECT / STATUS: Meta's own blog confirms its Kuna, Idaho campus is now OPERATIONAL (serving traffic) as of early Sept 2026. This project does not appear to be in the tracker at all. $1.2B capex is Meta's own confirmed figure. No site/IT MW disclosed in the post — a separate mention of 645MW of Meta-backed new renewable energy in Ada County is a power-supply commitment, not a confirmed load figure, so left blank rather than conflated. Publication is 17 days old (outside the usual 24-72h window) but the project's absence from the tracker looked like a gap worth flagging.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 1200000000,
+          "unit": "USD",
+          "confidenceLevel": "HIGH",
+          "methodology": "Meta states 'representing an overall investment of $1.2 billion' directly in its own announcement"
+        }
+      ]
+    },
+    {
+      "url": "https://kentuckylantern.com/2026/09/10/a-kentucky-county-becomes-first-in-state-to-permanently-ban-data-center-construction/",
+      "title": "A Kentucky county becomes first in state to permanently ban data center construction",
+      "publisher": "Kentucky Lantern",
+      "publicationDate": "2026-09-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "We believe that the future of Woodford County's economy is not industry and data centers. The future is farming.",
+      "note": "SITING RESTRICTION: Woodford County, KY Fiscal Court unanimously voted (Sept 8, 2026) to permanently ban data center construction countywide (alongside landfills and large battery storage), becoming the first Kentucky county with an outright ban rather than a moratorium — passed with no specific developer proposal pending, per Judge-Executive James Kay. No tracked project is located in Woodford County. Flagging this one specifically: it does not appear in any of the daily inbox files from 2026-09-09 through 2026-09-19 that I could check in this repo's history, so it looks like a genuine gap rather than a duplicate, despite being ~10 days old.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.fox19.com/2026/09/19/wilmington-data-center-opponents-lose-bid-november-ballot-measure/",
+      "title": "Ohio Supreme Court rejects Wilmington data center lawsuit initiative",
+      "publisher": "FOX19 NOW (WXIX, Cincinnati)",
+      "publicationDate": "2026-09-19",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "a proposed $4 billion Amazon Web Services data center in Wilmington, Ohio",
+      "suggestedProjectName": "AWS Wilmington (Clinton County, Ohio)",
+      "note": "SITING RESTRICTION: The Ohio Supreme Court ruled Sept 18, 2026 that the Clinton County Board of Elections properly rejected a citizen-led ballot initiative that would have let residents sue over the proposed ~$4B AWS data center in Wilmington — the majority held the initiative's private-right-of-action provision exceeded municipal authority, so it will not appear on the Nov. 3 ballot (one justice dissented). Not final: a separate suit over the city's earlier 'emergency' rezoning for the project is still pending. The AWS Wilmington project is not in the tracker. CAVEAT: outbound WebFetch to the primary court release (courtnewsohio.gov) and to this news article was blocked by this environment's network policy during this run, so the quote/vote breakdown are as relayed via search-engine summarization rather than a directly verified verbatim read — please double-check the source page before treating any figure here as CONFIRMED.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.wvpe.org/wvpe-news/2026-09-19/michigan-city-data-center-moratorium-delay-draws-frustration-during-council-meeting",
+      "title": "Michigan City data center moratorium delay draws frustration during council meeting",
+      "publisher": "WVPE Public Radio",
+      "publicationDate": "2026-09-19",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "tabled a proposed moratorium ordinance, by a vote of eight-to-one",
+      "note": "SITING RESTRICTION (non-outcome): Michigan City, IN council tabled — did not adopt — a proposed moratorium on data-center permits and tax abatements, 8-1, directing staff toward a resolution/zoning-ordinance approach instead. The draft moratorium would have explicitly exempted projects already underway, e.g. Google's data center at the former Federal Mogul site; neither that Google project nor this policy action is in the tracker. Same network-access caveat as the Ohio Supreme Court item above: WebFetch to the source was blocked in this run, so the quote is as relayed via search summarization.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
