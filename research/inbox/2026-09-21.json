@@ -1,0 +1,63 @@
+{
+  "submissions": [
+    {
+      "url": "https://sourcenm.com/2026/09/17/new-mexico-supreme-court-rejects-2-project-jupiter-challenges-allows-permitting-process-to-resume/",
+      "title": "New Mexico Supreme Court rejects 2 Project Jupiter challenges, allows permitting process to resume",
+      "publisher": "Source New Mexico",
+      "publicationDate": "2026-09-17",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "lifted stays that had paused an air quality permit application and blocked water pumping for the construction site",
+      "note": "Status update for tracked UNDER_CONSTRUCTION project 'Stargate Doña Ana County' / Project Jupiter (slug: stargate-dona-ana-county, Oracle/OpenAI, Santa Teresa NM). On 2026-09-17 the NM Supreme Court unanimously denied due-process petitions from New Energy Economy and the Center for Biological Diversity and lifted the stays it had placed in late August, clearing the air-quality permit hearing and the site's emergency water-well authorization to proceed — i.e. litigation that had paused permitting/water access is now resolved in the project's favor. Separately, Oracle's own delivery tracker reportedly shows ~75% of campus capacity delivered as of September 2026 (not independently verified here — worth a follow-up check). projectId left blank: the tracker API/DB was unreachable from this sandbox (network egress block, see report), so I could not confirm the internal cuid; please match by slug. CAVEAT: excerpt reconstructed from search-engine snippets of the article, not a direct fetch of the page — please verify wording against the source.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-hypervault-establish-large-scale-ai-data-center-campus-telangana",
+      "title": "TCS' HyperVault to establish large-scale AI data center campus in Telangana",
+      "publisher": "Tata Consultancy Services",
+      "publicationDate": "2026-09-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "committed 700 billion rupees, about $7.4 billion, to an AI data centre campus... with a capacity of up to one gigawatt",
+      "note": "Likely the same project as the tracked ANNOUNCED project 'OpenAI–Tata HyperVault' (slug: openai-tata-hypervault-india) — TCS's HyperVault unit disclosed a specific capex figure ($7.4B / ₹700B), a 264-acre site in Hyderabad's Future City district, Telangana, and a target of up to 1 GW site capacity, with OpenAI as first customer at 100 MW. This is new capex and location detail not previously in the tracker record for this project. projectId left blank since I could not confirm the internal DB id (tracker API was unreachable from this sandbox); reviewer should match by slug. CAVEAT: excerpt reconstructed from search-engine snippets of the TCS press release, not a direct fetch — please verify wording against the primary source before treating as CONFIRMED/HIGH.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 7400000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Company-stated commitment of 700 billion rupees (~$7.4B) for the full campus buildout; reported via press coverage of the TCS/HyperVault announcement, not independently fetched from the primary source in this run."
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Company-stated target site capacity ('up to one gigawatt') for full build-out, not yet built or confirmed operational; phased delivery starting at 100 MW for OpenAI."
+        }
+      ]
+    },
+    {
+      "url": "https://hoodline.com/2026/09/la-county-freezes-giant-ai-data-centers-as-solis-pushes-permanent-ban/",
+      "title": "LA County Bans New Mega Data Centers Temporarily",
+      "publisher": "Hoodline",
+      "publicationDate": "2026-09-17",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "a temporary ban that officials say will hold until a permanent ordinance is written, vetted, and brought before the Board of Supervisors",
+      "note": "SITING RESTRICTION: Los Angeles County Department of Regional Planning (Director Amy Bodek) issued a moratorium on new hyperscale data centers across all unincorporated county zones, effective 2026-09-17, announced by Board Chair Hilda Solis. It follows a Solis motion the Board approved unanimously in April 2026 directing staff to study data center impacts; Solis says she plans further action to amend the zoning code toward a permanent ban. No tracked project currently sits in unincorporated LA County per the current snapshot, so this is flagged as a new restriction record rather than linked to an existing project. CAVEAT: outbound network access to the source domain was blocked in this run's sandbox, so the excerpt is reconstructed from search-engine snippets rather than a direct fetch of the article text — please verify wording against the source (also see the county's own CEQA notice at https://ceqanet.lci.ca.gov/2026030446 as a more primary reference).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://coloradosun.com/2026/09/17/colorado-springs-data-center-final-vote-delay/",
+      "title": "Colorado Springs data center vote delayed after raucous hearing",
+      "publisher": "The Colorado Sun",
+      "publicationDate": "2026-09-17",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "voted 7-2 to postpone the final decision until the April 13, 2027, council meeting",
+      "note": "SITING RESTRICTION: Colorado Springs City Council voted 7-2 on 2026-09-17, after a contentious all-day hearing, to postpone its final decision on 'Project Taurus' — developer Raeden's proposal to retrofit the former Intel chip fab near Garden of the Gods into a data center drawing up to 50 MW — to April 13, 2027. Not a currently tracked project (site is a proposed retrofit, not yet under construction); flagged as a new siting-restriction/delay event, suggestedProjectName omitted since the 50 MW scale is below this tracker's typical new-project threshold and the project remains unapproved. CAVEAT: outbound network access to the source domain was blocked in this run's sandbox, so the excerpt is reconstructed from search-engine snippets rather than a direct fetch of the article text — please verify wording against the source.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
