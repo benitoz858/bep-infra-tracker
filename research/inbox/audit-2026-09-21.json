@@ -1,0 +1,90 @@
+{
+  "submissions": [
+    {
+      "url": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-abilene",
+      "title": "OpenAI Stargate Abilene — Epoch AI Data Centers directory",
+      "publisher": "Epoch AI",
+      "publicationDate": "2026-05-23",
+      "sourceType": "INDUSTRY_REPORT",
+      "excerpt": "In Abilene, 200MW is already operational",
+      "projectId": "stargate-abilene-texas",
+      "note": "AUDIT: metrics table carries a POWER_MW row at numeric_value=300, confidence_level=CONFIRMED, whose own methodology text reads '200 MW operator-confirmed operating (Oracle, April 2026)' — the value contradicts its own methodology and the already-corrected project.power.confirmedMw=200. This is a stale pre-correction row (the project record's 2026-08-01 correction note already fixed confirmedMw to 200, but metrics.csv was never resynced). Recommend correcting the CONFIRMED row to 200 MW (Basis: IT load, operator statement) and, if Epoch's ~300MW/0.3GW gross-facility estimate is worth keeping, filing it separately at LOW confidence (Basis: site/gross power, not operator-stated) rather than merged into the CONFIRMED IT-load figure.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 200, "unit": "MW", "confidenceLevel": "HIGH", "methodology": "Operator statement (Oracle, Apr 2026), cited by Epoch AI directory: 'In Abilene, 200MW is already operational.' Basis: IT load."},
+        {"metricType": "POWER_MW", "numericValue": 300, "unit": "MW", "confidenceLevel": "LOW", "methodology": "Epoch AI analyst estimate of total/gross facility power (~0.3GW), not an operator statement. Basis: site/gross power, scope unclear — should not carry CONFIRMED confidence."}
+      ]
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/05/01/3286213/0/en/iren-announces-successful-energization-of-sweetwater-1.html",
+      "title": "IREN Announces Successful Energization of Sweetwater 1",
+      "publisher": "IREN",
+      "publicationDate": "2026-05-01",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "successful energization of its 1.4GW Sweetwater 1 data center site in Texas",
+      "projectId": "iren-sweetwater",
+      "note": "AUDIT: the tracker's HIGH-confidence 2,000 MW POWER_MW row is labeled 'Basis: IT load,' but its own methodology note in the same field explains energization is only the high-voltage substation connection to ERCOT ('Power delivery... expected to ramp progressively in line with phased construction and commissioning'), and the cited release itself describes 1.4GW of site/grid energization for Sweetwater 1 — no IT capacity is confirmed operating yet. The Basis label directly contradicts the row's own text. Recommend correcting Basis to site/grid interconnection power (aggregate target: Sweetwater 1 1.4GW + Sweetwater 2 0.6GW), not IT load, and not energized/operating capacity.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 2000, "unit": "MW", "confidenceLevel": "MEDIUM", "methodology": "Basis: site/grid interconnection power (aggregate target across Sweetwater 1 + Sweetwater 2). Not IT load; not yet energized as operating IT capacity — energization to date is substation/grid connection only."}
+      ]
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2025/05/13/3080314/0/en/HUMAIN-and-NVIDIA-Announce-Strategic-Partnership-to-Build-AI-Factories-of-the-Future-in-Saudi-Arabia.html",
+      "title": "HUMAIN and NVIDIA Announce Strategic Partnership to Build AI Factories of the Future in Saudi Arabia",
+      "publisher": "HUMAIN",
+      "publicationDate": "2025-05-13",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "a major investment to build AI factories in the Kingdom of Saudi Arabia with a projected capacity of up to 500 megawatts",
+      "projectId": "humain-ai-factories-phase-1-riyadh-dammam",
+      "note": "AUDIT: the tracker's HIGH-confidence 200 MW POWER_MW row cites this exact release as its source, but the release's own captured text states a program-wide 'projected capacity of up to 500 megawatts' — an aspirational target, not 200 MW, and not specific to the two launch sites. The tracker's own methodology text admits '200 MW... basis unstated' — no source in the record actually supports the 100MW-per-site/200MW-combined figure, so this is a citation mismatch (HIGH confidence resting on a source that doesn't state the claimed number). Recommend downgrading the 200 MW row's confidence until a source explicitly stating the 100MW-per-site figure is found, and recording the 500 MW program-wide figure separately, clearly labeled as an aspirational/projected target, not current or per-site capacity.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 500, "unit": "MW", "confidenceLevel": "MEDIUM", "methodology": "Basis: unclear (program-wide, not per-site). Source explicitly frames this as a 'projected capacity' target for HUMAIN's NVIDIA-partnered buildout, not current or energized capacity."}
+      ]
+    },
+    {
+      "url": "https://group.softbank/en/news/press/20260531_0",
+      "title": "SoftBank Group to Build 5 GW of AI Data Center Capacity in France",
+      "publisher": "SoftBank",
+      "publicationDate": "2026-05-31",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "initial €45 billion investment to deliver 3.1 GW of AI data center capacity",
+      "projectId": "softbank-france-ai-program-hauts-de-france",
+      "note": "AUDIT: this project record is scoped to the three named Hauts-de-France sites (Loon-Plage/Dunkirk, Bosquel, Bouchain), but its headline power.estimatedMw=5000 and capex.estimatedUsd=$87B are SoftBank's national, up-to, conditional program ceiling, not the firm commitment to these sites. SoftBank's own release states the firm, region-specific figure is 3.1 GW for an initial €45B investment; scaling to 5GW/€75-87B is conditional on phase-1 success and may include sites beyond Hauts-de-France. The project's analystNotes already acknowledge the 3.1GW/€45B phase-1 split in prose, but the structured power/capex fields still carry the larger national-ceiling numbers as if they were this project's own figures. Recommend recording 3,100 MW / ~$48-49B (USD equivalent of €45B) as the primary figures for this project, keeping 5,000 MW/$87B only as a clearly-labeled national-program-ceiling reference, not this project's capacity.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 3100, "unit": "MW", "confidenceLevel": "HIGH", "methodology": "Basis: unclear (source says 'AI data center capacity,' not explicitly IT load or site power). Firm first-phase commitment per SoftBank's own press release, specific to the Hauts-de-France sites, targeted by 2031 — not yet under construction."},
+        {"metricType": "CAPEX_USD", "numericValue": 48000000000, "unit": "USD", "confidenceLevel": "MEDIUM", "methodology": "USD-equivalent of the stated firm €45 billion first-phase investment (approximate FX conversion); distinct from the conditional up-to-€75B/$87B national ceiling currently recorded as this project's capex."}
+      ]
+    },
+    {
+      "url": "https://epoch.ai/data/ai-data-centers/directory/colossus-2",
+      "title": "Colossus 2 — Epoch AI Data Centers directory",
+      "publisher": "Epoch AI",
+      "publicationDate": "2026-08-01",
+      "sourceType": "INDUSTRY_REPORT",
+      "excerpt": "1,112k H100-equivalents of compute, supported by 946 MW of IT power",
+      "projectId": "xai-colossus-2-memphis",
+      "note": "AUDIT: the metrics table still carries a GPU_COUNT row at 555,000 (LOW confidence, NextBigFuture 'full build' estimate), but the project record's own analystNotes document a 2026-08-01 correction: 'The prior 555k GPU figure was an Introl estimate... Epoch estimates ~440k Blackwell chips installed, which is now recorded' — and project.compute.estimatedGpuCount is indeed already 440,000. The metrics.csv row was never resynced to match, leaving a stale figure wherever metrics are surfaced directly. Recommend correcting/retiring the 555,000 metrics row in favor of the already-corrected 440,000 estimate.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {"metricType": "GPU_COUNT", "numericValue": 440000, "unit": "GPUs", "confidenceLevel": "MEDIUM", "methodology": "Epoch AI directory installed-chip estimate (analyst estimate, not an xAI operator statement); supersedes the stale 555,000 NextBigFuture full-build projection still present in the metrics table."}
+      ]
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/lambda-doubles-down-on-midwest-expansion-to-build-ai-factory-in-kansas-city-mo-302597320.html",
+      "title": "Lambda Doubles Down on Midwest Expansion, To Build AI Factory in Kansas City, MO",
+      "publisher": "Lambda",
+      "publicationDate": "2025-10-28",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "expected to launch in early 2026 with 24MW of capacity, and the potential to scale up to more than 100MW",
+      "projectId": "lambda-kansas-city",
+      "note": "AUDIT: the tracker's expectedOpeningDate (2026-06-30) is later than, and doesn't match, the cited source's own 'early 2026' framing (conventionally Q1), and both dates are now overdue as of 2026-09-21 with no source found confirming energization/launch since. Recommend correcting expectedOpeningDate to align with the source's 'early 2026' language and adding an explicit delay note since no operational confirmation exists past the original target. Status correctly remains UNDER_CONSTRUCTION (no target-as-current conflation present) and the 24MW figure is correctly captioned as a launch target, not energized capacity — no change needed there.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 24, "unit": "MW", "confidenceLevel": "MEDIUM", "methodology": "Basis: unclear (site/IT split not stated). Source frames this as a launch-time target ('expected to launch... with 24MW'), not confirmed/energized capacity; scale-to-100MW+ language is an explicit future goal, correctly not recorded as current."}
+      ]
+    }
+  ]
+}
