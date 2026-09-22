@@ -55,5 +55,15 @@ jobs:
         run: npm ci
 
       - if: steps.guard.outputs.configured == 'true'
-        name: Read-only production migration diagnosis
-        run: npx prisma migrate status
+        name: Apply production migrations
+        # The generated client can reference enum values/tables the deployed
+        # database does not have yet. Stop before staging if migration fails.
+        run: npm run db:deploy
+
+      - if: steps.guard.outputs.configured == 'true'
+        name: Run watchers
+        run: |
+          ARGS=""
+          if [ -n "${{ inputs.watcher }}" ]; then ARGS="$ARGS --watcher ${{ inputs.watcher }}"; fi
+          if [ -n "${{ inputs.since }}" ]; then ARGS="$ARGS --since ${{ inputs.since }}"; fi
+          npm run ingest -- $ARGS

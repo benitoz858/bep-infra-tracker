@@ -336,7 +336,8 @@ npm run ingest -- --since 2026-01-01 --limit 20
 
 A scheduled workflow (`.github/workflows/ingest.yml`) runs this daily once the
 `DATABASE_URL` secret is set; until then it exits early rather than failing
-every morning.
+every morning. Before running watchers, it applies committed migrations with
+`npm run db:deploy`; a migration failure stops the run before any staging.
 
 **The rule the design turns on: an agent proposes, a human commits.** A crawler
 writing straight into `confirmedPowerMw` would move the dashboard totals on
@@ -381,6 +382,11 @@ npm run db:seed:admin:production   # create/update the admin user — and nothin
 npm run cf:build                   # build for Workers (swaps in the workerd Prisma client)
 npm run cf:deploy                  # build + deploy
 ```
+
+The automated Deploy workflow applies committed migrations after its build and
+before deploying the Worker, using the same `DATABASE_URL` secret as Ingest.
+Migrations must remain compatible with the running Worker until the new code
+is deployed; destructive changes need a separate staged rollout.
 
 Secrets live in Cloudflare, not in `wrangler.jsonc` (which is committed):
 
