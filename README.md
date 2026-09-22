@@ -334,10 +334,11 @@ npm run ingest -- --watcher rss:aws-news
 npm run ingest -- --since 2026-01-01 --limit 20
 ```
 
-A scheduled workflow (`.github/workflows/ingest.yml`) runs this daily once the
-`DATABASE_URL` secret is set; until then it exits early rather than failing
-every morning. Before running watchers, it applies committed migrations with
-`npm run db:deploy`; a migration failure stops the run before any staging.
+A scheduled workflow (`.github/workflows/ingest.yml`) runs this daily using the
+production `DATABASE_URL` secret. A missing secret fails the run visibly rather
+than reporting success without ingestion. Before running watchers, it applies
+committed migrations with `npm run db:deploy`; a migration failure stops the run
+before any staging.
 
 **The rule the design turns on: an agent proposes, a human commits.** A crawler
 writing straight into `confirmedPowerMw` would move the dashboard totals on
