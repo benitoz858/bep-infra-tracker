@@ -7,9 +7,13 @@ vi.mock("@/lib/db", async () => {
   return { prisma: testDb };
 });
 
-const { acceptCandidate, matchProject, rejectCandidate, runWatcher } = await import(
-  "@/lib/services/ingestion"
-);
+const {
+  acceptCandidate,
+  expireStaleCandidates,
+  matchProject,
+  rejectCandidate,
+  runWatcher,
+} = await import("@/lib/services/ingestion");
 
 let slugCounter = 0;
 
@@ -152,6 +156,105 @@ describe("ingestion", () => {
       // A watcher that silently stops looks identical to a quiet week.
       expect(run.status).toBe("FAILED");
       expect(run.error).toMatch(/unreachable/);
+    });
+  });
+
+  describe("expiry", () => {
+    it("retains an expired watcher proposal and keeps its URL deduplicated", async () => {
+      const now = new Date("2026-09-22T12:00:00Z");
+      const watcher = stubWatcher([
+        {
+          url: "https://example.com/expired",
+          title: "Older proposal",
+          text: "300 megawatts.",
+        },
+      ]);
+      await runWatcher(watcher, { extractorKey: "heuristic" });
+      const original = await testDb.ingestionCandidate.update({
+        where: { url: "https://example.com/expired" },
+        data: { createdAt: new Date("2026-08-22T12:00:00Z") },
+      });
+
+      // Exercise the real enum write: the missing production migration stayed
+      // hidden until at least one proposal was old enough to expire.
+      await expect(expireStaleCandidates(now)).resolves.toBe(1);
+      const expired = await testDb.ingestionCandidate.findUniqueOrThrow({
+        where: { id: original.id },
+      });
+      expect(expired).toEqual({
+        ...original,
+        status: "EXPIRED",
+        reviewedAt: now,
+        reviewNote: expect.stringMatching(/auto-expired/i),
+        updatedAt: expect.any(Date),
+      });
+      expect(expired.reviewedById).toBeNull();
+
+      const repeated = await runWatcher(watcher, { extractorKey: "heuristic" });
+      expect(repeated.failed).toBe(false);
+      expect(repeated.itemsNew).toBe(0);
+      await expect(testDb.ingestionCandidate.count()).resolves.toBe(1);
+      await expect(
+        expireStaleCandidates(new Date("2026-09-23T12:00:00Z")),
+      ).resolves.toBe(0);
+      await expect(
+        testDb.ingestionCandidate.findUniqueOrThrow({ where: { id: original.id } }),
+      ).resolves.toEqual(expired);
+      await expect(testDb.source.count()).resolves.toBe(0);
+      await expect(testDb.projectMetric.count()).resolves.toBe(0);
+    });
+
+    it("preserves public submissions, reviewed proposals and proposals at or within 30 days", async () => {
+      const now = new Date("2026-09-22T12:00:00Z");
+      const keys = [
+        "public",
+        "accepted",
+        "rejected",
+        "duplicate",
+        "recent",
+        "boundary",
+      ];
+      await runWatcher(
+        stubWatcher(
+          keys.map((key) => ({ url: `https://example.com/${key}`, title: key })),
+        ),
+      );
+      await testDb.ingestionCandidate.updateMany({
+        data: { createdAt: new Date("2026-08-01T12:00:00Z") },
+      });
+      await testDb.ingestionCandidate.update({
+        where: { url: "https://example.com/public" },
+        data: {
+          origin: "PUBLIC_SUBMISSION",
+          submitterNote: "Please review this proposal.",
+        },
+      });
+      for (const status of ["ACCEPTED", "REJECTED", "DUPLICATE"] as const) {
+        await testDb.ingestionCandidate.update({
+          where: { url: `https://example.com/${status.toLowerCase()}` },
+          data: {
+            status,
+            reviewedAt: new Date("2026-08-02T12:00:00Z"),
+            reviewNote: "Existing review must survive queue maintenance.",
+          },
+        });
+      }
+      await testDb.ingestionCandidate.update({
+        where: { url: "https://example.com/recent" },
+        data: { createdAt: new Date("2026-09-21T12:00:00Z") },
+      });
+      await testDb.ingestionCandidate.update({
+        where: { url: "https://example.com/boundary" },
+        data: { createdAt: new Date("2026-08-23T12:00:00Z") },
+      });
+      const before = await testDb.ingestionCandidate.findMany({
+        orderBy: { id: "asc" },
+      });
+
+      await expect(expireStaleCandidates(now)).resolves.toBe(0);
+      await expect(
+        testDb.ingestionCandidate.findMany({ orderBy: { id: "asc" } }),
+      ).resolves.toEqual(before);
     });
   });
 

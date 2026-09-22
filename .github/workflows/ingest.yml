@@ -55,6 +55,12 @@ jobs:
         run: npm ci
 
       - if: steps.guard.outputs.configured == 'true'
+        name: Apply production migrations
+        # The generated client can reference enum values/tables the deployed
+        # database does not have yet. Stop before staging if migration fails.
+        run: npm run db:deploy
+
+      - if: steps.guard.outputs.configured == 'true'
         name: Run watchers
         run: |
           ARGS=""
