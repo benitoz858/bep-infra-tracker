@@ -55,9 +55,5 @@ jobs:
         run: npm ci
 
       - if: steps.guard.outputs.configured == 'true'
-        name: Run watchers
-        run: |
-          ARGS=""
-          if [ -n "${{ inputs.watcher }}" ]; then ARGS="$ARGS --watcher ${{ inputs.watcher }}"; fi
-          if [ -n "${{ inputs.since }}" ]; then ARGS="$ARGS --since ${{ inputs.since }}"; fi
-          npm run ingest -- $ARGS
+        name: Read-only production migration diagnosis
+        run: npx prisma migrate status
