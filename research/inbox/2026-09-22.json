@@ -1,0 +1,77 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/09/21/3365358/0/en/new-era-energy-digital-secures-20-year-207-mw-ppa-with-vistra.html",
+      "title": "New Era Energy & Digital Secures 20-Year, 207 MW PPA with Vistra",
+      "publisher": "GlobeNewswire (New Era Energy & Digital company release)",
+      "publicationDate": "2026-09-21",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "TCDC PowerCo signed a 20-year power purchase agreement with Vistra's Luminant for 200 to 207 MW of power.",
+      "suggestedProjectName": "Texas Critical Data Center (TCDC) - Ector County, TX",
+      "note": "New Vistra PPA locks in 200-207 MW of site power for TCDC Phase 1, sourced from Vistra's adjacent 1,180 MW Odessa gas plant; firm power expected Q3 2027. This is delivered site power, not a confirmed IT-load figure. Check whether TCDC (parent: New Era Energy & Digital, NASDAQ:NUAI) is already tracked and needs a power-source/status update rather than a new entry. Also disclosed alongside the PPA: a development framework giving Vistra a 5% non-voting interest in the powered portion once delivery begins.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 207, "unit": "MW", "confidenceLevel": "MEDIUM", "methodology": "Upper bound of 200-207 MW PPA capacity as reported from company press release/8-K; not verified against the primary filing's exact text this run (WebFetch to the source was blocked in the agent's sandbox)."}
+      ]
+    },
+    {
+      "url": "https://www.saskatchewan.ca/government/news-and-media/2026/september/14/single-largest-private-sector-capital-investment-in-history-of-canada-through-bell-ais-saskatchewan",
+      "title": "Single Largest Private Sector Capital Investment in History of Canada Through Bell AI's Saskatchewan Expansion",
+      "publisher": "Government of Saskatchewan",
+      "publicationDate": "2026-09-14",
+      "sourceType": "OTHER",
+      "excerpt": "This investment is looking to quadruple the capacity of the data centre from 300 megawatts to 1.2 gigawatts.",
+      "suggestedProjectName": "Bell AI Fabric - Saskatchewan (Regina area)",
+      "note": "Bell's Saskatchewan AI campus (previously ~300 MW) is being expanded to 1.2 GW under the province's 'Bring Your Own Power' program, per a joint government/Bell announcement Sept 14. Total capital investment 'could exceed $50B at full buildout' per the release, but that figure explicitly bundles data-center infrastructure, tenant compute, and power generation - not a clean capex number. Site power basis (partner-developed gas generation, not grid draw). If the earlier 300 MW phase is already tracked, this should be a capacity/status update, not a new project. First stage targeted online H1 2027.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 1200, "unit": "MW", "confidenceLevel": "MEDIUM", "methodology": "Target site capacity after expansion (quadrupled from 300 MW), stated in Government of Saskatchewan press release."},
+        {"metricType": "CAPEX_USD", "numericValue": 50000000000, "unit": "USD", "confidenceLevel": "LOW", "methodology": "'Could exceed $50 billion' at full buildout per government release; explicitly includes tenant compute and power generation alongside data-center infrastructure, so it overstates pure data-center capex."}
+      ]
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/09/10/3359602/0/en/aligned-data-centers-and-shippingport-community-mark-revitalization-of-legacy-energy-site-with-groundbreaking-of-2-gw-project-phoenix-campus.html",
+      "title": "Aligned Data Centers and Shippingport Community Mark Revitalization of Legacy Energy Site with Groundbreaking of 2 GW \"Project Phoenix\" Campus",
+      "publisher": "GlobeNewswire (Aligned Data Centers company release)",
+      "publicationDate": "2026-09-10",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Aligned broke ground on the 2 GW Project Phoenix campus, anchoring an estimated $10 billion in regional economic investment.",
+      "suggestedProjectName": "Project Phoenix - Shippingport, PA (Aligned Data Centers)",
+      "note": "New three-facility, 2 GW campus broke ground Sept 10 on the former Shippingport, PA coal-plant site (660 acres), with Frontier Group of Companies. Uses dedicated onsite gas generation rather than grid draw; expected to deliver excess power back to PJM once complete. The $10B figure is described as regional economic investment, not confirmed data-center capex - leave capex blank pending a harder figure. Likely not yet tracked (new project).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 2000, "unit": "MW", "confidenceLevel": "MEDIUM", "methodology": "Stated campus capacity (2 GW) in company press release; site power basis per source."}
+      ]
+    },
+    {
+      "url": "https://www.wmnf.org/manatee-county-approves-a-moratorium-on-data-centers/",
+      "title": "Manatee County approves a moratorium on data centers",
+      "publisher": "WMNF 88.5 FM",
+      "publicationDate": "2026-09-15",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Commissioners unanimously enacted a 12-month moratorium, halting new data center applications while officials study the impacts.",
+      "note": "SITING RESTRICTION: Manatee County, FL commissioners unanimously passed a 12-month moratorium (~Sept 15) on new data-center applications, to allow a zoning/infrastructure/environmental study. County-wide restriction, not tied to a single named project in the source, so no projectId/suggestedProjectName is supplied - a human should check whether any tracked project has a pending Manatee County application affected by this.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.chronicleonline.com/news/local/levy-county-approves-moratorium-on-data-centers/article_177dad48-7ddc-55b8-a945-cedb2a3a0013.html",
+      "title": "Levy County approves moratorium on data centers",
+      "publisher": "Citrus County Chronicle",
+      "publicationDate": "2026-09-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Ordinance 2026-05 halts acceptance and review of data center applications in Levy County through September 30, 2027.",
+      "note": "SITING RESTRICTION: Levy County, FL Board of County Commissioners passed Ordinance 2026-05 at its Sept 8 meeting, freezing submission/review/approval of data-center and large-load-customer-facility applications from Oct 1, 2026 through Sept 30, 2027 while staff draft siting rules. County-wide, not linked to a specific tracked project in the source.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.wusf.org/politics-issues/2026-09-16/orange-county-plans-a-moratorium-on-ai-data-centers",
+      "title": "Orange County plans a moratorium on AI data centers",
+      "publisher": "WUSF",
+      "publicationDate": "2026-09-16",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Vice Mayor Martinez Semrad proposed a one-year AI data center moratorium citing a 96-million-gallon-per-day groundwater shortfall by 2045.",
+      "note": "SITING RESTRICTION - PROPOSED, NOT YET ENACTED: Orange County, FL (Orlando area) commissioners expressed support on Sept 15 for a one-year moratorium on new AI data-center applications over a projected groundwater shortfall, but postponed the formal vote to early December 2026. Flagging for visibility only - confirm enactment before treating this as a passed restriction.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
