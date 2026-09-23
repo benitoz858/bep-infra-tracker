@@ -1,0 +1,84 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.yourobserver.com/news/2026/sep/22/manatee-ordinance-data-center-moratorium/",
+      "title": "Manatee County issues one-year ban on data centers",
+      "publisher": "Your Observer",
+      "publicationDate": "2026-09-22",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "commissioners unanimously enacted a 12-month moratorium ... for one year, starting Sept. 22",
+      "note": "SITING RESTRICTION: Manatee County, Florida commissioners unanimously approved a 12-month moratorium (effective 2026-09-22) barring building permits, site plans, rezones, and comprehensive-plan amendments for data centers and other large-load/high-utility-demand facilities countywide, while officials study grid, water and wastewater impacts. Not yet linked to any tracked project in this database (jurisdiction-level ordinance, not project-specific). Caveat: this sandbox could not fetch the source page directly (network egress to news domains is blocked here), so the excerpt is reconstructed from search-result text rather than confirmed against the full article verbatim — please verify wording before accepting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.salemreporter.com/2026/09/22/city-attorney-salem-data-center-moratorium-means-verrus-cant-build-until-it-expires/",
+      "title": "City attorney: Salem data center moratorium means Verrus can't build until it expires",
+      "publisher": "Salem Reporter",
+      "publicationDate": "2026-09-22",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "a 120-day moratorium on data center development ... prohibited from approving any data center development regardless of size",
+      "note": "SITING RESTRICTION: Salem, Oregon city council gave final approval to a 120-day moratorium on all data center development (expiring ~2027-01-19, extendable), while a new city Data Center Task Force studies regulation. The moratorium was prompted by, and directly blocks, a proposed $5.1B AI data center from California developer Verrus at the Mill Creek Corporate Center — that Verrus project is not currently tracked in this database and may be worth adding separately (unverified: I have not independently confirmed the $5.1B figure against a primary Verrus source). No tracked project in this database is sited in Salem, OR, so no projectId is supplied. Caveat: source page could not be fetched directly in this sandbox (network egress blocked); excerpt reconstructed from search snippets — please verify wording before accepting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://calexicochronicle.com/2026/09/18/calexico-enacts-permanent-data-center-ban/",
+      "title": "Calexico Enacts Permanent Data Center Ban",
+      "publisher": "Calexico Chronicle",
+      "publicationDate": "2026-09-18",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "passed in a 3-0 unanimous decision ... to permanently prohibit the establishment of data centers citywide",
+      "note": "SITING RESTRICTION: Calexico, California city council voted 3-0 on 2026-09-16 to permanently ban new data centers citywide (adds Article XII to Municipal Code Ch. 17.11; ordinance takes effect 30 days after adoption). Reported as the third California city to enact a full ban, after Monterey Park (June 2026) and Coachella. No tracked project in this database is sited in Calexico, so no projectId is supplied — flagging for the siting/restrictions side of the tracker. Caveat: source page could not be fetched directly in this sandbox (network egress blocked to news domains); excerpt reconstructed from search snippets — please verify exact wording before accepting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.saskatchewan.ca/government/news-and-media/2026/september/14/single-largest-private-sector-capital-investment-in-history-of-canada-through-bell-ais-saskatchewan",
+      "title": "Single Largest Private Sector Capital Investment in History of Canada Through Bell AI's Saskatchewan Expansion",
+      "publisher": "Government of Saskatchewan",
+      "publicationDate": "2026-09-14",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "adding up to 900 megawatts of capacity for a total of 1.2 gigawatts",
+      "note": "NEW PROJECT candidate, not currently in this database: Bell (BCE/Bell AI Fabric) announced plans to quadruple its Sherwood AI data-centre campus near Regina, Saskatchewan from ~300 MW under construction to a 1.2 GW target, with total capital investment reported up to $52.5B (currency as stated in coverage — likely CAD, not independently confirmed here, so no CAPEX claim is submitted; treat the dollar figure as unverified pending currency/basis check). Announced jointly by Bell and the Government of Saskatchewan/Canada at the Canada Investment Summit; the expansion itself is a non-binding MOU with phased buildout contingent on customer commitments and permits — flagging per this project's own MOU-stage caveat, but included because it was announced by the principal company (Bell), not third-party speculation. Basis (IT load vs. site power) not stated in coverage. Suggested name: \"Bell AI Fabric — Sherwood (Regina)\" to distinguish from the already-tracked \"Bell AI Fabric — Kamloops\" project. Caveat: source page could not be fetched directly in this sandbox (network egress blocked); figures reconstructed from consistent search-result reporting across multiple outlets (CBC, Globe and Mail, Government of Canada) but not verified verbatim against the primary release — please confirm wording and currency before accepting.",
+      "suggestedProjectName": "Bell AI Fabric — Sherwood (Regina)",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1200,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Bell's own stated full-build target for the expanded Sherwood campus (300 MW under construction + up to 900 MW additional), announced by the principal company; MOU stage, non-binding, phased over multiple years."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-hypervault-establish-large-scale-ai-data-center-campus-telangana",
+      "title": "TCS' HyperVault to establish large-scale AI data center campus in Telangana",
+      "publisher": "Tata Consultancy Services",
+      "publicationDate": "2026-09-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "up to 700 billion rupees (~$7.4 billion) to build a 1 gigawatt AI data center campus",
+      "note": "Update to tracked project \"OpenAI–Tata HyperVault\" (slug: openai-tata-hypervault-india), currently blank on capex in this database. TCS's own HyperVault unit announced up to ₹700B (~$7.4B, INR/USD conversion as reported, not independently re-verified here) to build the full 1 GW Hyderabad/Telangana campus (264 acres), of which OpenAI is the first customer at an initial 100 MW (already reflected in the tracker). This is total campus capex for the 1 GW full build, not specific to OpenAI's 100 MW initial tranche — basis should be recorded as the full-campus target, not per-tenant. I could not resolve this project's internal database ID from this sandbox (no live API access), so projectId is omitted; please match to slug openai-tata-hypervault-india. Caveat: source page could not be fetched directly in this sandbox (network egress blocked); figures reconstructed from consistent search-result reporting (Bloomberg, Reuters-syndicated coverage) of TCS's own release, not verified verbatim against the primary page — please confirm wording before accepting.",
+      "suggestedProjectName": "OpenAI–Tata HyperVault",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 7400000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "TCS HyperVault's own press release states up to ₹700 billion (~$7.4B at reported conversion) for the full 1 GW campus build, per company announcement."
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Company-stated full-build target for the Telangana campus; phased development, no interim MW beyond OpenAI's already-tracked 100 MW confirmed yet."
+        }
+      ]
+    }
+  ]
+}
