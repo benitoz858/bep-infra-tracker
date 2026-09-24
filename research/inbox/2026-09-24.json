@@ -1,0 +1,91 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.yourobserver.com/news/2026/sep/22/manatee-ordinance-data-center-moratorium/",
+      "title": "Manatee County issues one-year ban on data centers",
+      "publisher": "Your Observer",
+      "publicationDate": "2026-09-22",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Commissioners voted unanimously to impose a 12-month moratorium on data centers",
+      "note": "SITING RESTRICTION: Manatee County, FL adopted Ordinance 26-42, a 12-month moratorium on data center/large-load-customer permit applications (building permits, site plans, rezones, comprehensive plan amendments) in unincorporated county land, effective Sept 22, 2026. No tracked project is currently sited in Manatee County; flagging as a jurisdiction-level restriction relevant to future siting risk in the region. Caveat: WebFetch (direct source-page verification) was blocked in this environment this run, so the excerpt is taken from a search-engine summary rather than a page fetch I performed myself — please verify wording against the linked article before citing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.tucsonsentinel.com/local/report/092226_data_moratorium/pima-county-supervisors-impose-120-day-moratorium-data-center-projects/",
+      "title": "Pima County supervisors impose 120-day moratorium on data center projects",
+      "publisher": "Tucson Sentinel",
+      "publicationDate": "2026-09-22",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "the county shall not accept nor process applications for building permits or site improvements",
+      "note": "SITING RESTRICTION: Pima County, AZ Board of Supervisors approved a 120-day moratorium on new data center development (3-2 vote) to allow staff to draft new zoning rules, targeted for completion by Dec. 10, 2026; extension possible after 120 days. Cited drivers: recent extreme heat and long-term drought. At least one active proposal near Sahuarita, Pima County is reportedly affected, but I could not confirm it is a project already in the tracker. Caveat: WebFetch was blocked this run, so this excerpt is from a search summary, not a page fetch I performed — verify wording against the source before citing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.utilitydive.com/news/house-passes-ratepayer-protection-bill-data-centers/830658/",
+      "title": "House passes ratepayer protection bill to limit data center cost shifts",
+      "publisher": "Utility Dive",
+      "publicationDate": "2026-09-16",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The House passed the Ratepayer Protection Act, 417-3, on Sept. 16",
+      "note": "SITING RESTRICTION: The U.S. House passed the bipartisan Ratepayer Protection Act 417-3 on Sept 16, 2026, which would require large energy loads (data centers >100 MW) to bear the cost of new grid/generation infrastructure needed to serve them rather than shifting it to existing ratepayers, and directs states to 'consider' adopting related cost-allocation standards. Now before the Senate — not yet law. National in scope, not tied to one tracked project; relevant context for every US project's interconnection economics. Caveat: WebFetch was blocked this run; excerpt drawn from search summary of multiple outlets (Utility Dive, NBC News, Energy & Commerce Committee) reporting the same 417-3 figure, not a page fetch I performed — verify before citing.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.kpbs.org/news/environment/2026/09/16/imperial-valley-utility-adopts-new-pricing-rules-putting-data-centers-first-for-power-cuts",
+      "title": "Imperial Valley utility adopts new pricing rules, putting data centers first for power cuts",
+      "publisher": "KPBS Public Media",
+      "publicationDate": "2026-09-16",
+      "sourceType": "UTILITY_FILING",
+      "excerpt": "Our water was never meant for special interests or unchecked development",
+      "note": "SITING RESTRICTION: Imperial Irrigation District (CA) adopted new large-load pricing rules requiring major energy users, including data centers, to fund their own infrastructure upgrades, pay a minimum monthly charge, and accept first-priority curtailment during power shortages. Attributed by IID as partly a response to data centers destabilizing Virginia's grid in 2024. Not tied to a specific tracked project (no tracked project currently sited in Imperial County, CA per the snapshot I could check), but material for any future Imperial Valley siting. Caveat: WebFetch was blocked this run; excerpt (the Board Chair quote) comes from a search summary, not a page fetch I performed — verify against source before citing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.wcjb.com/2026/09/15/alachua-planning-board-passes-12-month-moratorium-data-centers/",
+      "title": "Alachua planning board passes 12-month moratorium on data centers",
+      "publisher": "WCJB",
+      "publicationDate": "2026-09-15",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "the Alachua Planning and Zoning Commission passed a motion ... for a 12-month moratorium",
+      "note": "SITING RESTRICTION: Alachua County, FL's Planning and Zoning Commission passed a motion for a 12-month moratorium on data centers on Sept 15, 2026, to allow time to study impacts and draft regulations. Note this is a planning-commission-level recommendation, not confirmed as final County Commission adoption in the sources I found — a reviewer should check whether the full Board of County Commissioners has since ratified it. No tracked project currently sited in Alachua County. Caveat: WebFetch was blocked this run; excerpt is from a search summary, not a page fetch I performed.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://news.microsoft.com/source/asia/features/microsofts-newest-india-datacenter-region-goes-live-to-power-the-countrys-ai-economy-and-enable-frontier-firms/",
+      "title": "Microsoft's newest India datacenter region goes live to power the country's AI economy and enable Frontier Firms",
+      "publisher": "Microsoft (Source Asia)",
+      "publicationDate": "2026-08-06",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "three Availability Zones ... each with independent power, cooling and networking infrastructure",
+      "note": "STATUS CHANGE (tracked project, likely 'Microsoft Hyderabad' / slug microsoft-hyderabad-india in the current snapshot, status shown as UNDER_CONSTRUCTION as of last verification 2026-07-28): Microsoft announced general availability of its India South Central (Hyderabad) cloud region on Aug 6, 2026 — three Availability Zones, PUE 1.1, described as air-cooled/zero-water for cooling, Microsoft's fourth India region. This is IT-service go-live language from Microsoft's own announcement, not an explicit site-wide 'construction complete' statement, so a reviewer should judge whether OPERATIONAL or PARTIALLY_OPERATIONAL fits. Flagging despite being ~7 weeks old (outside the ideal 24-72h window) because it is a material, primary-sourced status change that does not appear to have been captured yet. Caveat: WebFetch was blocked this run so I could not fetch the Microsoft page directly; excerpt is from a search-engine summary of the announcement — verify wording against the source link before citing, and treat any MW/capex figures skeptically since none were confirmed to me directly.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://constructionreviewonline.com/terawulf-brings-102-mw-online-at-lake-mariner-as-336-mw-ai-data-center-expansion-continues/",
+      "title": "TeraWulf Brings 102 MW Online at Lake Mariner as 336 MW AI Data Center Expansion Continues",
+      "publisher": "Construction Review Online",
+      "publicationDate": "2026-08-05",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "operational capacity from 81 MW at the end of the second quarter to 102 MW",
+      "note": "STATUS/METRIC UPDATE (tracked project 'TeraWulf Lake Mariner', slug terawulf-lake-mariner-fluidstack-anthropic, currently shows estimatedMw=360 with no confirmed/energized figure, last verified 2026-07-28): TeraWulf's Q2 2026 results (reported Aug 5, 2026) state 102 MW of revenue-generating critical IT capacity online at Lake Mariner (up from 81 MW at Q2 close, after CB-3 delivery in early July), with 336 MW more (CB-4, CB-5) under construction — CB-4 (168 MW) targeted for energization in H2 2026, CB-5 phased delivery from early 2027. CB-3 delivery reportedly triggered Google's ~$600M credit support for Fluidstack's lease obligations becoming effective. This is company-reported (near-primary) data the current tracker entry lacks a confirmed/energized breakdown for. Caveat: WebFetch to TeraWulf's own investor press release was blocked this run, so I'm citing a secondary article paraphrasing the earnings release rather than the primary filing — a reviewer should pull the original TeraWulf Q2 2026 press release (investors.terawulf.com) or 10-Q to confirm exact wording before marking any claim HIGH confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 102,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "TeraWulf Q2 2026 earnings report states 102 MW revenue-generating critical IT capacity online at Lake Mariner as of early July 2026 (company-reported, not independently verified against primary filing this run)"
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 336,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "TeraWulf Q2 2026 earnings report states 336 MW additional capacity (CB-4 + CB-5) under construction at Lake Mariner (company-reported, not independently verified against primary filing this run)"
+        }
+      ]
+    }
+  ]
+}
