@@ -1,0 +1,86 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.benzinga.com/markets/tech/26/09/61991512/elon-musk-says-spacexais-colossus-2-could-run-more-than-1-2-million-nvidia-gb200-and-gb300-chips-by-year-end-if-we-get-lucky",
+      "title": "Elon Musk Says SpaceXAI's Colossus 2 Could Run More Than 1.2 Million Nvidia GB200 And GB300 Chips By Year End 'If We Get Lucky'",
+      "publisher": "Benzinga",
+      "publicationDate": "2026-09-25",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "If we get lucky, yet another 220k GB300 by late December",
+      "suggestedProjectName": "xAI Colossus 2 (tracker slug: xai-colossus-2-memphis)",
+      "note": "STATUS UPDATE on tracked project xAI Colossus 2 (slug xai-colossus-2-memphis; omitted projectId because this sandbox could not reach the live API today to look up the real DB id — see below). Musk (via X, reported Sept 25 2026) states Colossus 2 currently runs 110k GB200 + 440k GB300 chips (=550k, IT count basis, not MW), with three more 220k-GB300 waves targeted (next week, November, December) that would bring Colossus 2 alone to ~1.21M chips and the Memphis site (with Colossus 1's 230k) to ~1.44M by year-end. The tracker's current estimatedGpuCount is 440,000 (Epoch Aug 2026 estimate) — this is a material jump if confirmed. Self-reported by the company's own CEO, not yet filing-confirmed, so treat as an estimate pending independent verification. NETWORK CAVEAT: this session's outbound HTTP fetch (WebFetch/curl) was blocked entirely by the sandbox's egress policy — I could not open the source article to confirm the quote verbatim; it is reconstructed from web-search-engine snippets that were internally consistent across independent queries. Also could not reach tracker.bepresearch.com/api/projects, so project matching above used the nightly data/projects.json snapshot instead of live IDs. Please verify the quote against the source link before raising confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "GPU_COUNT",
+          "numericValue": 550000,
+          "unit": "chips",
+          "confidenceLevel": "LOW",
+          "methodology": "Musk's Sept 25 2026 X post as reported: current install at Colossus 2 stated as 110k GB200 + 440k GB300"
+        },
+        {
+          "metricType": "GPU_COUNT",
+          "numericValue": 1210000,
+          "unit": "chips",
+          "confidenceLevel": "LOW",
+          "methodology": "Musk's stated year-end target for Colossus 2 alone if three planned 220k-GB300 waves land on schedule; explicitly caveated by Musk as contingent ('if we get lucky')"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npr.org/2026/09/17/nx-s1-5954414/residents-file-lawsuit-challenging-noise-pollution-from-elon-musks-data-center",
+      "title": "Residents file lawsuit challenging noise pollution from Elon Musk's data center",
+      "publisher": "NPR",
+      "publicationDate": "2026-09-17",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "about 60 gas turbines",
+      "suggestedProjectName": "xAI Colossus 2 (tracker slug: xai-colossus-2-memphis)",
+      "note": "SITING RESTRICTION-adjacent legal development on tracked project xAI Colossus 2 (slug xai-colossus-2-memphis; projectId omitted, live API unreachable today). Nearby residents filed a lawsuit (reported ~Sept 17, 2026 — 8 days old, slightly outside the ideal 24-72h window but not previously seen in this queue as far as I can tell) over 24/7 noise from roughly 60 on-site gas turbines, some adapted from jet-engine designs, that have run for over a year; xAI reportedly promised in July 2026 to replace them with quieter permanent turbines within a year. Article also reports Musk floating a 10x capacity expansion at the site 'fed mostly by the power plant' — worth watching for a future capacity claim. NETWORK CAVEAT: could not WebFetch the NPR article this session (egress blocked); quote reconstructed from search-engine snippets, not independently confirmed against the primary source — please verify before acting on it.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.newschannel10.com/2026/09/23/construction-underway-six-building-claude-data-center/",
+      "title": "Construction underway on six-building Claude data center",
+      "publisher": "NewsChannel10 (KFDA)",
+      "publicationDate": "2026-09-23",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "the campus will include six buildings",
+      "suggestedProjectName": "Crusoe Goodnight (tracker slug: crusoe-goodnight-armstrong-county)",
+      "note": "STATUS UPDATE on tracked project Crusoe Goodnight (slug crusoe-goodnight-armstrong-county; projectId omitted, live API unreachable today). Crusoe's own senior director of development, Jeremy Bachrach, is quoted confirming the campus at six buildings, at a Crusoe/Google community open house in Armstrong County (~Sept 21, 2026). This is narrower than the tracker's current analyst note, which cites third-party trackers estimating ~7 buildings / ~1,030 MW / ~3.4M sq ft full build — worth reconciling against this more recent company-sourced figure. Reporting also cites roughly 7,500 workers currently on site. NETWORK CAVEAT: could not WebFetch this article this session (egress blocked); quote reconstructed from search-engine snippets, not independently confirmed — please verify before acting on it.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://tucson.com/news/local/government-politics/article_51ccaeb6-3675-42d9-adbd-df918d777514.html",
+      "title": "Pima County narrowly passes 120-day data center moratorium",
+      "publisher": "Tucson.com / Arizona Daily Star",
+      "publicationDate": "2026-09-23",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "This moratorium shall apply to future development of new data centers where permits have not been issued for site improvements...",
+      "note": "SITING RESTRICTION: Pima County, Arizona Board of Supervisors voted 3-2 (Tuesday, Sept 22, 2026) to adopt a 120-day moratorium on new data center development in unincorporated county areas, to allow time to draft new zoning rules and study public health impacts. The resolution as quoted in reporting also states data centers produce 'imminent negative public health impacts.' Projects that already have permits filed for site improvements (grading, paving, flood control, building construction) are exempt from the pause. I checked the nightly data/projects.json snapshot (103 projects) and did not find any tracked project sited in unincorporated Pima County, AZ, so this is not linked to an existing project. NETWORK CAVEAT: could not WebFetch the source pages this session (egress blocked); the resolution-text quote is reconstructed from search-engine snippets of Tucson.com/AZ Luminaria/KJZZ coverage, not independently confirmed against the primary resolution document — please verify before acting on it.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://insideclimatenews.org/news/22092026/georgia-residents-sue-over-openai-data-center/",
+      "title": "Georgia Residents Sue Over OpenAI Data Center",
+      "publisher": "Inside Climate News",
+      "publicationDate": "2026-09-22",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "A $20 billion data center campus announced in July near Rincon, Georgia, is now facing its second lawsuit from Effingham County residents and environmental advocates.",
+      "suggestedProjectName": "OpenAI Project Gateway — Rincon, Georgia (Effingham County)",
+      "note": "NEW PROJECT candidate, not found in the nightly data/projects.json snapshot (103 tracked projects, checked by name/location): a roughly $20B OpenAI data center campus (~4.4M sq ft reported) announced July 2026 near Rincon, Effingham County, Georgia — referred to in county records as 'Project Gateway' before OpenAI was publicly named as the tenant. SITING RESTRICTION-adjacent: the project is now facing its second lawsuit. This one (filed ~Sept 19-21, 2026, per The Current/Georgia Recorder/Inside Climate News) is from the Southern Environmental Law Center and the group One Hundred Miles, alleging the Effingham County Industrial Development Authority failed to properly notice the public ahead of its July approval vote (the item was reportedly listed on the meeting agenda only as 'Project Gateway,' without naming OpenAI or the tax break). A separate, earlier lawsuit from three Effingham County residents challenges the underlying zoning change. The $20B capex figure is press-reported and consistent across multiple outlets, but I could not trace it to a company or government filing today — LOW confidence. NETWORK CAVEAT: could not WebFetch the source articles this session (egress blocked); quote reconstructed from search-engine snippets that were verbatim-consistent across independent queries, not independently confirmed against the primary article — please verify before acting on it.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 20000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Press-reported project cost ('$20 billion data center campus'), not traced to a company or government filing"
+        }
+      ]
+    }
+  ]
+}
