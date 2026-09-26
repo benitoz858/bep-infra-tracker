@@ -1,0 +1,87 @@
+{
+  "submissions": [
+    {
+      "url": "https://investors.terawulf.com/news-events/press-releases/detail/144/terawulf-reports-second-quarter-2026-results",
+      "title": "TeraWulf Reports Second Quarter 2026 Results",
+      "publisher": "TeraWulf Inc. (investor relations)",
+      "publicationDate": "2026-08-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Lake Mariner had 81 MW of revenue-generating critical IT capacity as of June 30, 2026, reaching 102 MW after CB-3 delivery in early July",
+      "suggestedProjectName": "TeraWulf Lake Mariner (Fluidstack/Anthropic)",
+      "note": "Matches tracked project 'TeraWulf Lake Mariner' (slug: terawulf-lake-mariner-fluidstack-anthropic, currently UNDER_CONSTRUCTION, estimatedMw=360, confirmedMw=null in the data/ snapshot). This is a confirmed-IT-load (critical IT, not site/generation power) milestone: 102 MW is now revenue-generating after the CB-3 building was delivered in early July 2026, with 336 MW across CB-4/CB-5 still under construction (implying the site's footprint has grown past the 360 MW currently on file). Delivery of CB-3 also triggered $600M of Google's credit support for Fluidstack's lease obligations (financing detail, not capex). CAVEAT: outbound WebFetch was blocked in this session's network policy, so this excerpt is reconstructed from a search-engine summary of the TeraWulf press release rather than a verbatim copy-paste off the page -- please confirm exact wording against the source link before citing it. submitterName below is automated; methodology and figure should be human-checked against the linked release.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 102,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Stated in TeraWulf's Q2 2026 earnings release as critical IT capacity delivered/revenue-generating as of early July 2026 after CB-3 completion"
+        }
+      ]
+    },
+    {
+      "url": "https://www.wptv.com/news/palm-beach-county/palm-beach-county-commissioners-unanimously-approve-moratorium-on-new-hyperscale-ai-data-centers",
+      "title": "Palm Beach County commissioners unanimously approve moratorium on new hyperscale AI data centers",
+      "publisher": "WPTV NewsChannel 5 (West Palm Beach)",
+      "publicationDate": "2026-09-24",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Commissioners voted 6-0 Thursday to pause new applications for large data centers for up to a year",
+      "note": "SITING RESTRICTION: Palm Beach County, FL Board of County Commissioners voted 6-0 on 2026-09-24 for an up-to-one-year moratorium on new applications for large/hyperscale AI data centers, to allow time to draft rules on noise, water use, electricity demand and setbacks from homes. A smaller, already-approved project (\"Project Tango\") is reportedly unaffected. Not linked to any specific tracked project per se -- it is a county-wide policy change affecting future siting, so leave unlinked unless a reviewer wants it tied to a specific pending Palm Beach County proposal. Multiple independent local outlets (WPTV, WFLX, CBS12, The Real Deal) corroborate the 6-0 tally and one-year duration. CAVEAT: WebFetch was blocked this session; excerpt is reconstructed from a search-engine summary, not a verbatim page read -- verify exact wording before citing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://woodburynewsnet.org/8110/business/woodbury-approves-data-center-moratorium-after-questions-about-water-power/",
+      "title": "Woodbury Approves Data Center Moratorium After Questions About Water, Power",
+      "publisher": "Woodbury News Net",
+      "publicationDate": "2026-09-24",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "All four City Council members and Mayor Anne Burt voted to temporarily prevent data centers... from expanding in the city",
+      "note": "SITING RESTRICTION: Woodbury, MN city council voted unanimously (5-0, all four council members plus mayor) on 2026-09-23 for a one-year moratorium on new data centers and expansions of existing high-volume infrastructure, to study water use, electricity demand, noise and zoning impacts. Notably pre-emptive: the city says it has no active data center proposals or developer conversations at present. Not linked to a specific tracked project. CAVEAT: WebFetch blocked this session; excerpt reconstructed from search summary, not verbatim -- verify against source before citing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://thebusinessjournal.com/tulare-county-data-center-moratorium/",
+      "title": "Tulare County extends data center moratorium to 2027, formally opposes development",
+      "publisher": "The Business Journal (Fresno/Central Valley)",
+      "publicationDate": "2026-09-23",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Board voted 5-0 to extend a moratorium on new data center projects in unincorporated areas for another 10 months and 15 days",
+      "note": "SITING RESTRICTION: Tulare County, CA Board of Supervisors voted 5-0 on 2026-09-22/23 to extend the county's existing moratorium on new data center development in unincorporated areas by 10 months 15 days (into 2027), following organized opposition (163+ resident emails) to a proposed data center at the county fairgrounds. In a separate 3-2 vote the board also adopted a position formally opposing data center development countywide, with an exception noted for enterprise-scale facilities -- flagging this second vote for a human to confirm scope/wording since it's less clear-cut than the moratorium extension. Not linked to a specific tracked project. CAVEAT: WebFetch blocked this session; excerpt reconstructed from search summary -- verify against source before citing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.enr.com/articles/62766-27b-meta-data-center-pushes-louisiana-toward-massive-power-expansion",
+      "title": "$27B Meta Data Center Pushes Louisiana Toward Massive Power Expansion",
+      "publisher": "Engineering News-Record",
+      "publicationDate": "2026-09-14",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Babel-Webre 500 kV transmission line is estimated to have an in-service date of August 2029, with an LPSC hearing scheduled for September 2026",
+      "suggestedProjectName": "Meta Hyperion (Louisiana)",
+      "note": "Matches tracked project 'Meta Hyperion' (slug: meta-hyperion-louisiana, UNDER_CONSTRUCTION, capex already on file at $50B/5GW per an Aug 2026 update -- this finding does NOT change the capex/power figures already recorded). New information is the utility/siting angle: the Babel-Webre 500kV transmission line needed to support Hyperion's full build has a Louisiana Public Service Commission hearing in September 2026, with a targeted LPSC decision in Q4 2026, and an estimated in-service date of August 2029 -- years after Meta's stated 2030 committed-phase target, a potential grid-buildout bottleneck/delay risk worth a reviewer's attention. CAVEAT: WebFetch blocked this session; excerpt reconstructed from search summary -- verify against source before citing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.newschannel10.com/2026/09/23/construction-underway-six-building-claude-data-center/?outputType=amp",
+      "title": "Construction underway on six-building Claude (Goodnight Campus) data center",
+      "publisher": "NewsChannel 10 (KFDA, Amarillo)",
+      "publicationDate": "2026-09-23",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Google and Crusoe hosted an open house for Armstrong County residents on September 23, 2026",
+      "suggestedProjectName": "Crusoe Goodnight Campus (Armstrong County, TX)",
+      "note": "Matches tracked project 'Crusoe Goodnight' (slug: crusoe-goodnight-armstrong-county, UNDER_CONSTRUCTION, estimatedMw=933 already on file -- this does not change that figure). New/confirmed: Google and Crusoe held a public open house for Armstrong County residents on 2026-09-23; per a separate Construction Review Online report, two more buildings (Buildings 3 and 4, ~$500M estimated construction cost each per Texas Dept. of Licensing and Regulation filings) have been filed at the site, with one reportedly completed this month and the other targeted for completion by end of Q1 2027 -- a visible construction/permitting progress update for a reviewer to weigh, not a change to the tracked MW estimate. CAVEAT: WebFetch blocked this session; excerpt reconstructed from search summary -- verify against source before citing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://businessjournaldaily.com/preparation-work-begins-on-lordstown-data-center/",
+      "title": "Preparation Work Begins on Lordstown Data Center",
+      "publisher": "Business Journal Daily (Youngstown, OH)",
+      "publicationDate": "2026-09-19",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Lordstown site, together with a second site in Milam County, Texas, will together be able to scale to 1.5 gigawatts over the next 18 months",
+      "suggestedProjectName": "Stargate Lordstown (Ohio)",
+      "note": "Matches tracked project 'Stargate Lordstown' (slug: stargate-lordstown-ohio, UNDER_CONSTRUCTION, no power/capex figure currently on file). New: visible site prep (parking lot/solar array removal) began at the former Lordstown Assembly plant this month, and a combined 1.5 GW target is cited across Lordstown + the already-tracked Stargate Milam County site over the next 18 months -- flagging as LOW confidence/estimate since the 1.5 GW spans two separate tracked projects and should not be entered as a single-project figure without a split; leaving that judgment call to a human reviewer rather than guessing an allocation. CAVEAT: WebFetch blocked this session; excerpt reconstructed from search summary -- verify against source before citing.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
