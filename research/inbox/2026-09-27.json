@@ -1,0 +1,103 @@
+{
+  "submissions": [
+    {
+      "url": "https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits",
+      "title": "Governor Abbott Directs TCEQ To Halt Data Center Permits",
+      "publisher": "Office of the Texas Governor",
+      "publicationDate": "2026-09-21",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "I have instructed TCEQ to pause the issuance of all permits related to data center projects.",
+      "note": "SITING RESTRICTION: Gov. Abbott directed TCEQ to halt issuance of new data center environmental permits statewide until ERCOT, PUCT and TWDB complete audits of grid and water impacts (due back to the Governor's office Oct 19, 2026). Does not appear to revoke permits already issued, but blocks new/expansion permitting. Potentially affects most Texas-based tracked projects awaiting further permits (multiple Stargate sites, Cipher Black Pearl, Fluidstack Abernathy, Crusoe Goodnight, IREN Childress/Sweetwater, QTS-Lancium Hall County, CyrusOne Freestone, Aligned Caprock, Compass Meridian, Nscale Barstow, Microsoft Pecos). LIMITATION: this research session's outbound network access to tracker.bepresearch.com (both the live API and the submission endpoint) and to WebFetch on external sources was blocked by environment egress policy, so this could not be cross-checked against exact project IDs or fetched verbatim; the tracked-project list above was matched by name/slug against this repo's nightly data/projects.json export (generated 2026-09-27) rather than a live API call, and the quote above could not be verified against the primary page directly.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.utilitydive.com/news/texas-puc-adopts-data-center-interconnection-rules/830899/",
+      "title": "Texas PUC adopts softened rules on data center interconnection",
+      "publisher": "Utility Dive",
+      "publicationDate": "2026-09-18",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "the adopted rule settled on a flat $100,000 study fee for all large load customers, eliminating the non-refundable fee structure",
+      "note": "SITING RESTRICTION: PUCT adopted its final large-load (>=75 MW at a single ERCOT site) interconnection rule under SB6. The final rule softened the draft proposal, replacing a flat $50,000/MW non-refundable interconnection fee with a $100,000 flat study fee plus size-tiered study charges. Statewide effect on future ERCOT interconnections, including tracked projects still awaiting grid connection studies. LIMITATION: could not verify against the primary PUCT order/docket text directly — WebFetch to external sources (including this article and PUCT's own site) was blocked by this session's network egress policy; relying on the search-tool's summary of this trade-press article. Recommend a human confirm the exact fee structure against the PUCT order before treating this as settled.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 75,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Threshold at which PUCT's new large-load interconnection rule applies, per trade-press reporting on the adopted order"
+        }
+      ]
+    },
+    {
+      "url": "https://www.actionnews5.com/2026/09/25/city-leaders-break-down-revised-data-center-moratorium-ahead-final-vote/",
+      "title": "City leaders break down revised data center moratorium ahead of final vote",
+      "publisher": "Action News 5 (WMC Memphis)",
+      "publicationDate": "2026-09-25",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "would not reach xAI's existing Colossus footprint",
+      "suggestedProjectName": "xAI Colossus 2",
+      "note": "SITING RESTRICTION: Memphis City Council continues working a revised 12-month moratorium on new data center zoning/building permits within city limits (first reading passed Aug 18, 2026; final vote still pending as of this article). Reporting indicates the measure exempts existing lawfully-operating data centers from the freeze, so xAI's existing Colossus/Colossus 2 campus footprint (tracked project, matched by slug xai-colossus-2-memphis) would not itself be shut down, but new expansion or new competing sites within Memphis city limits could be blocked. Does not cover xAI MACROHARDRR (Southaven, MS), a different jurisdiction. LIMITATION: live tracker API was unreachable this session (network egress blocked), so projectId could not be resolved directly — matched by name against the nightly data/projects.json export instead; please attach to the existing tracked project rather than creating a new one. Quote could not be verified against the original article text since WebFetch was also blocked; treat as a close paraphrase pending human confirmation.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://x.com/gdb/status/2027241615992225930",
+      "title": "First steel beams went up today at our Stargate site in Milam County, Texas",
+      "publisher": "Greg Brockman (OpenAI President), via X",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "First steel beams went up today at our Stargate site in Milam County, Texas.",
+      "suggestedProjectName": "Stargate Milam County",
+      "note": "Tracked project status update: first steel beams erected at the Stargate Milam County ('Freebird') site, an early construction milestone, confirmed directly by OpenAI's president. Separately, trade press (DataCenterDynamics) reports a Texas Dept. of Licensing & Regulation filing for the first building at this site disclosing an estimated cost of $470M, 548,950 sq ft across four data halls, and a targeted completion date of Oct 15, 2026 — this figure is Phase-1 building cost only, not total project capex (the site is seeded at 1.2 GW and reported as scalable to 1.5 GW). Tracker currently lists the owner as Oracle; this reporting describes the site as built/operated by SB Energy (a SoftBank subsidiary) with OpenAI as investor/offtaker — worth a reviewer checking whether the owner field should be updated or a co-developer added. LIMITATION: exact publication date of the X post is unknown (left blank rather than guessed) and could not be confirmed via WebFetch (blocked this session); projectId not resolved because the live tracker API was unreachable — matched via slug stargate-milam-county in the nightly data/projects.json export.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 470000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Estimated cost for the Phase 1 'Freebird' building only (not total project capex), per a Texas Dept. of Licensing & Regulation filing as reported by DataCenterDynamics; not independently fetched/verified this session"
+        }
+      ]
+    },
+    {
+      "url": "https://www.wbrc.com/2026/09/24/applied-digital-confirms-32-billion-data-center-campus-brookwood/",
+      "title": "Applied Digital confirms $3.2 billion data center campus in Brookwood",
+      "publisher": "WBRC (Gray Media)",
+      "publicationDate": "2026-09-24",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "an investment of more than $3.2 billion from the company and its tenant",
+      "suggestedProjectName": "Applied Digital Delta Forge 2 (Brookwood, Alabama)",
+      "note": "NEW PROJECT: Applied Digital confirmed its fifth AI Factory campus, 'Delta Forge 2', in Brookwood, Tuscaloosa County, Alabama — reported combined company+tenant investment of $3.2B, roughly 1.26M sq ft across 160 acres of a ~1,300-acre site, construction planned to start Oct 1, 2026, completion targeted Dec 31, 2028. Trade press also reports a previously-disclosed 210 MW critical-IT-load lease at this site with an unnamed US hyperscale tenant (tenant identity and MW figure per company statements relayed in secondary coverage, not confirmed against a primary company release here). Tuscaloosa County reportedly approved incentives including $270M in community-benefit payments over 20 years. LIMITATION: WebFetch to verify the underlying company release directly was blocked this session; relying on secondary local-news and trade-press summaries.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 3200000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Combined company + tenant investment figure as stated in Applied Digital's confirmation, reported by local news"
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 210,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Previously disclosed critical IT load lease at this site with an unnamed hyperscale tenant, per company statements relayed in trade press"
+        }
+      ]
+    },
+    {
+      "url": "https://www.21alivenews.com/2026/09/23/vote-fort-wayne-data-center-moratorium-held-3-weeks/",
+      "title": "Vote on Fort Wayne data center moratorium held for 3 weeks",
+      "publisher": "21Alive (WPTA)",
+      "publicationDate": "2026-09-23",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "councilmembers indicating they wanted more time to review the changes before a final vote",
+      "note": "SITING RESTRICTION: Fort Wayne, Indiana City Council held its vote on a proposed one-year data center moratorium for three weeks following multiple last-minute amendments; council scheduled to take the matter up again in October. No tracked project currently exists in this dataset for Fort Wayne/Allen County, IN — flagging as a new-market restriction signal rather than a status change on an existing project. LIMITATION: WebFetch to verify the article text directly was blocked this session; quote relies on the search tool's summary of the article.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
