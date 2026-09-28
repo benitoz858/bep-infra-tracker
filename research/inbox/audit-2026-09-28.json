@@ -1,0 +1,44 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/09/08/3357498/0/en/iren-s-2gw-sweetwater-hub-included-as-base-load-in-ercot-batch-zero.html",
+      "title": "IREN's 2GW Sweetwater Hub Included as Base Load in ERCOT Batch Zero",
+      "publisher": "IREN (GlobeNewswire)",
+      "publicationDate": "2026-09-08",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "construction of 300MW (gross) of data center capacity continues with delivery targeted for Q4 2027",
+      "projectId": "iren-sweetwater",
+      "note": "AUDIT: tracker's 2000 MW row for IREN Sweetwater carries methodology 'Basis: IT load', but this Sept 8 2026 IREN release frames the '2GW Sweetwater Hub' as an ERCOT Batch Zero base-load grid/interconnection classification (site/grid power), not IT load, and states only 300MW gross of data center capacity is actually under construction (delivery Q4 2027). Recommend correcting the 2000 MW metric's basis to site/grid power and recording 300MW gross-under-construction as a separate, lower-confidence data point. Verified via WebSearch corroboration only — this session's WebFetch/curl access to source pages was blocked by network egress policy, so the exact quote above could not be confirmed via direct page fetch; please re-verify the excerpt against the live page before committing.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 2000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "IREN's own Sept 8 2026 release frames the 2GW Sweetwater Hub as ERCOT Batch Zero base-load (grid/interconnection) capacity. Basis: site/grid power, not IT load as currently recorded. Only 300MW gross of data center capacity is currently under construction, targeted for Q4 2027 delivery."
+        }
+      ]
+    },
+    {
+      "url": "https://www.neom.com/en-us/newsroom/HUMAIN-and-DataVolt-to-develop-AI-data-center-in-NEOM",
+      "title": "HUMAIN and DataVolt to develop AI data center in NEOM",
+      "publisher": "NEOM",
+      "publicationDate": "2026-08-31",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Construction is underway, with the first 100MW of capacity expected to become available in 2028.",
+      "projectId": "datavolt-oxagon-ai-factory-neom",
+      "note": "AUDIT: tracker's analystNotes state 'no construction on this campus is documented as of mid-2026 — treat scale as aspirational' with a ~300MW first phase. This is superseded by NEOM's own Aug 31 2026 newsroom post: ground has broken, the first phase is 360MW total (100MW currently under development, available 2028), and a new named partner, HUMAIN (a PIF company), is now involved alongside DataVolt but is missing from the tracker's owner/suppliers fields. The 1.5GW full-build target itself is unchanged and remains correctly a future target, not current capacity. Verified via WebSearch corroboration only — WebFetch/curl to source pages was blocked by network egress policy this session; please re-verify the excerpt against the live NEOM page before committing.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 360,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "NEOM primary announcement (Aug 31 2026): first phase capacity is 360MW total, with the first 100MW currently under development and expected available in 2028. Basis: unclear (not specified as IT load or site power in source). Supersedes the tracker's prior 'no construction documented' note."
+        }
+      ]
+    }
+  ]
+}
