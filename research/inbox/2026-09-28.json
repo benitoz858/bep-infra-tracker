@@ -1,0 +1,66 @@
+{
+  "submissions": [
+    {
+      "url": "https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits",
+      "title": "Governor Abbott Directs TCEQ To Halt Data Center Permits",
+      "publisher": "Office of the Texas Governor",
+      "publicationDate": "2026-09-21",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "Until they do, TCEQ will issue no permits sought by data center projects.",
+      "note": "SITING RESTRICTION: On 2026-09-21 Gov. Abbott directed TCEQ to halt issuance of all air/water/waste permits for infrastructure supporting data centers statewide, until ERCOT (audit due Dec 2026) and TWDB grid/water audits complete; TCEQ owes the governor's office a compliance update by 2026-10-19. This broadens an earlier, narrower interconnection-focused directive from early August 2026 -- check whether that earlier action is already recorded as a restriction here before adding a duplicate. Secondary legal-analysis coverage (Foley & Lardner, Sidley, Troutman Pepper) reports TCEQ records show pending permit applications tied specifically to Crusoe's 'Longhorn' data center (Abilene) and 'Goodnight' data center, plus IREN's Childress Data Center -- all three appear to match projects already tracked here (slugs: abilene-clean-campus-crusoe, crusoe-goodnight-armstrong-county, iren-childress-horizon-for-microsoft respectively). This is a statewide policy action, not a single-project filing, so no projectId is set -- a reviewer should decide how (or whether) to attach ProjectRestriction rows to the named projects. LIMITATION: network access to WebFetch the primary gov.texas.gov page directly was blocked in this run's sandbox; the quote above is reconstructed from search-engine result snippets of that same page and from law-firm summaries quoting it verbatim, not from a direct fetch -- please verify exact wording before treating it as fully confirmed.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "suggestedProjectName": "Nscale Loughton",
+      "url": "https://bricks-bytes.com/blog/nscale-loughton-grid-delay-uk-data-center-power/",
+      "title": "Nscale Has £2bn, Microsoft and Nvidia. It Still Can't Get 90 Megawatts.",
+      "publisher": "Bricks & Bytes",
+      "publicationDate": "2026-09-25",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "the 90 MW connection needed for its Loughton, Essex facility isn't feasible within the original timeline",
+      "note": "STATUS CHANGE on tracked project 'Nscale Loughton' (slug: nscale-loughton-for-microsoft, currently ANNOUNCED, Microsoft as anchor tenant). The Guardian first reported on 2026-09-24, citing UK Power Networks (UKPN), that the 90 MW grid connection this site needs will not be available on the original 2027 timeline and may slip into the early-to-mid 2030s -- a multi-year delay for a site the UK government previously called its 'largest sovereign AI datacentre.' Nscale is reportedly exploring on-site generation (including talks with Bloom Energy fuel cells) to bridge the gap. projectId omitted because live API access to fetch the project's id was blocked in this run's sandbox (see report); please match by slug/name instead of creating a new project. LIMITATION: could not WebFetch the Guardian article directly (no canonical theguardian.com URL surfaced in search, and direct fetch is blocked this run) -- citing this secondary outlet instead; excerpt is reconstructed from search-result snippets of the reporting chain, not verified against the Guardian's original text. Recommend a human confirm exact wording and consider citing the Guardian piece directly if accessible.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 90,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Grid connection capacity UKPN told Nscale is not deliverable until the early-to-mid 2030s, per secondary reporting citing UKPN; site power basis (not IT load), not independently verified against a primary UKPN or Nscale statement this run."
+        }
+      ]
+    },
+    {
+      "suggestedProjectName": "Zerra DC Western Downs Digital Park (Anthropic lease, Dalby)",
+      "url": "https://www.abc.net.au/news/2026-09-16/queensland-data-centre-anthropic-dalby/107160640",
+      "title": "AI giant Anthropic signs agreement for $32b Queensland data centre",
+      "publisher": "ABC News (Australia)",
+      "publicationDate": "2026-09-16",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "four 360-megawatt data centre buildings to be built in stages over four to six years",
+      "note": "NEW PROJECT candidate, not found in the current tracked-project export (checked by owner name and location keywords). Anthropic has agreed to lease the first stage of a data centre campus -- Western Downs Digital Park, developed by Singapore-based Zerra DC -- near Dalby, Queensland, Australia, confirmed in state parliament on 2026-09-16. This is Anthropic's first Australian/Southern Hemisphere compute footprint. Figures are inconsistent across outlets and should be treated carefully: the site's core buildout is widely reported as 4 x 360 MW = 1,440 MW (site power, over 4-6 years), with some outlets citing a possible future expansion to 2,160 MW (6 x 360 MW) -- that expansion figure is speculative, not yet an approved plan, so left out of claims. Total campus capex is reported as roughly A$32B by most outlets, but at least one outlet describes Anthropic's own 'first stage' lease specifically as an A$14.5B (~US$10.4B) commitment -- it is NOT clear whether that is a sub-component of the A$32B figure or a different total, so no capex claim is submitted; left for a reviewer to resolve against a primary filing. Power source is notable and may itself be restriction-relevant: reporting says the site will run on coal and gas as a bridge until renewables are built, after Queensland's premier secured a carve-out from the federal renewables-only rule for data centres. Anthropic's own specific committed MW (vs. the whole campus) is not disclosed anywhere found. LIMITATION: WebFetch to the primary ABC News article was blocked in this run's sandbox; the quote above is reconstructed from search-result snippets referencing the site's development application, not verified against the article's exact text.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1440,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Development-application capacity for 4 buildings x 360 MW each, consistently reported across multiple outlets (site power basis, staged over 4-6 years); not confirmed against a primary company/government filing this run."
+        }
+      ]
+    },
+    {
+      "url": "https://azluminaria.org/2026/09/23/pima-county-supervisors-approve-data-center-moratorium/",
+      "title": "Pima County supervisors approve data center moratorium",
+      "publisher": "AZ Luminaria",
+      "publicationDate": "2026-09-23",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "voted 3-2 to impose a 120-day moratorium on approving new data center projects in unincorporated Pima County",
+      "note": "SITING RESTRICTION: Pima County (Tucson area), Arizona Board of Supervisors voted 3-2 on or around 2026-09-22/23 to impose a 120-day moratorium on new data center approvals in unincorporated Pima County, to allow staff to draft a new zoning code; possibility of extension after 120 days. No tracked project in this database is located in Pima County/Tucson, so this is submitted as a general restriction with no projectId. The board resolution reportedly cites public-health concerns tied to energy demand, air pollution, water use during drought, noise, and waste heat. LIMITATION: WebFetch to the primary article was blocked this run; the quoted resolution language circulating in coverage was not independently verified against the county's own resolution text -- treat the excerpt as reconstructed from search snippets, not a confirmed direct quote, until a human checks the source.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
