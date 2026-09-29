@@ -1,0 +1,65 @@
+{
+  "submissions": [
+    {
+      "url": "https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits",
+      "title": "Governor Abbott Directs TCEQ To Halt Data Center Permits",
+      "publisher": "Office of the Texas Governor",
+      "publicationDate": "2026-09-21",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "Data centers must pay their own way, protect our grid and water, and complete the ERCOT and TWDB audits.",
+      "note": "SITING RESTRICTION: Gov. Abbott directed TCEQ to halt issuance of ALL permits sought by data center projects statewide (air, water, on-site generation), effective immediately, pending an ERCOT/Texas Water Development Board audit of 400+ facilities' energy and water use (due mid-Dec 2026; TCEQ must report compliance to the Governor's office by Oct 19, 2026). Explicitly applies even to fully behind-the-meter/'islanded' sites that don't draw ERCOT grid power. This is a policy action, not a per-project figure, but it touches most of the tracker's ~20 Texas UNDER_CONSTRUCTION/ANNOUNCED projects (e.g. Stargate Abilene/Milam County/Shackelford County, Crusoe Goodnight/Abilene/Abernathy, IREN Sweetwater, Cipher Black Pearl, Compass Meridian, Aligned Caprock, CyrusOne Freestone, QTS-Lancium Hall County). Submitted as a general restriction rather than tagged to one project since it is statewide; a reviewer may want to log it once and cross-link affected campuses. Secondary corroboration: Texas Tribune, CNBC, and law-firm client alerts (Bracewell, Foley & Lardner, Troutman Pepper) all confirm the same Sept. 21 order.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://dep.nj.gov/newsrel/26_0044/",
+      "title": "Sherrill Administration Issues Record $1 Million Fine to DataOne Data Center in Vineland for Building and Operating 62 Power Generators Without DEP Permits",
+      "publisher": "New Jersey Department of Environmental Protection",
+      "publicationDate": "2026-09-22",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "Sherrill Administration Issues Record $1 Million Fine to DataOne Data Center in Vineland for Building and Operating 62 Power Generators Without DEP Permits",
+      "note": "SITING RESTRICTION: NJDEP's largest-ever data center enforcement action in the state - a $1.07M fine (Administrative Order and Notice of Civil Penalty Assessment) against DataOne, owner/operator/builder of the Vineland, NJ site tracked here as 'Nebius Vineland' (nebius-vineland; Nebius Group runs the facility's internal infrastructure in service of Microsoft's AI platform per reporting). Violation: 62 unpermitted 1,982-kW natural-gas reciprocating generators (~123 MW nameplate) installed and run without a preconstruction permit or operating certificate, discovered via a July 29, 2026 DEP inspection following Floodlight/Guardian drone-imagery reporting. NJDEP is letting the generators keep running for 45 more days while DataOne pursues permits or completes its stated transition to Bloom Energy fuel cells. Distinct from the tracker's existing IT-load figure (300 MW estimated design capacity) - these generators are a temporary power source, not IT load. NOTE ON PROJECT MATCH: the tracker API (tracker.bepresearch.com) was unreachable from this session (network egress blocked), so this was matched to project slug 'nebius-vineland' via the repo's data/projects.json nightly snapshot rather than a numeric project ID - please confirm the match manually.",
+      "suggestedProjectName": "Nebius Vineland",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 123,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Derived: 62 generators x 1,982 kW nameplate capacity, as stated in NJDEP's Administrative Order; this is unpermitted backup/temporary generation capacity, not a claim about IT load or confirmed site power basis"
+        }
+      ],
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-developing-data-center-campus-in-armstrong-county-texas",
+      "title": "Crusoe Developing Data Center Campus in Armstrong County, Texas",
+      "publisher": "Crusoe Energy",
+      "publicationDate": "2026-09-28",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "the campus has a direct connection to Serena's adjacent Goodnight 1 (265.5 MW) wind farm, which is operational",
+      "note": "Crusoe's own Sept. 28, 2026 press release is, as far as this research found, the first primary-source (Crusoe-side) confirmation that Google is the customer at this site - the tracker's existing record (crusoe-goodnight-armstrong-county) currently shows primarySourceCount=0 and only infers the Google tenancy from Google's broader November 2025 '$40B Texas' announcement. The release also specifies direct interconnection to the adjacent Goodnight 1 wind farm (265.5 MW, operational) and Goodnight 2 (265.5 MW, under construction) - this is generation/power-source detail, not IT load or confirmed site capacity, and should not be conflated with the existing 933 MW gas-plant-permit estimate on file. Release states construction has been ongoing since June 2025 with 5,500+ workers on site; no new capex or IT-load MW figure was disclosed for the data center itself. NOTE ON PROJECT MATCH: tracker API was unreachable this session; matched via slug 'crusoe-goodnight-armstrong-county' from the repo's data/projects.json nightly snapshot, not a numeric project ID - please confirm manually.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://news.azpm.org/p/azpmnews/2026/9/23/231316-board-of-supervisors-approves-temporary-data-center-moratorium/",
+      "title": "Board of Supervisors approves temporary data center moratorium",
+      "publisher": "AZPM News",
+      "publicationDate": "2026-09-23",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Pima County passes 120-day moratorium on future data center projects",
+      "note": "SITING RESTRICTION: Pima County (Tucson, AZ) Board of Supervisors voted 3-2 on Sept. 22, 2026 to bar new data center permit applications for 120 days in unincorporated Pima County, so staff can rewrite zoning code specific to data centers (draft due Dec. 15, 2026). The county resolution states data centers pose 'imminent negative public health impacts' tied to energy demand, air pollution, water use, noise and waste heat. No project in the tracker is currently attached to Pima County; local reporting (gvnews.com) ties the push to a proposed project near Sahuarita, but that project's identity/status was not independently confirmed by this research. Flagging as general siting-restriction context rather than a per-project claim.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.detroitnews.com/story/news/local/wayne-county/2026/09/25/wayne-county-executive-warren-evans-vetoes-van-buren-twp-data-center-tax-break/91943250007/",
+      "title": "Wayne Co. exec vetoes Van Buren Twp.'s $125M data center tax break",
+      "publisher": "The Detroit News",
+      "publicationDate": "2026-09-25",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Wayne Co. exec vetoes Van Buren Twp.'s $125M data center tax break",
+      "note": "SITING RESTRICTION + new project: Wayne County Executive Warren Evans vetoed the $125M tax-incentive package and community benefits agreement that Van Buren Township, MI officials had approved in May 2026 for Google's data center, publicly known as 'Project Cannoli' - a planned ~282-acre campus east of Haggerty Road/north of I-94. Evans, per the Detroit News and Crain's Detroit Business: 'Wayne County should establish its own timetable for protecting the public interest. It should not allow a private corporation to create urgency and then use that urgency to force a decision.' He cited a rushed ~2-week review window Google requested and unresolved concerns over water/energy use, environmental impact and job creation. IMPORTANT CAVEATS: Google's identity as the developer was established via public records/investigative local reporting (Michigan Public, WWMT), not a Google company announcement - treat any capacity figures as unconfirmed and low-confidence. Local reporting cites a target of roughly 1 GW and 2-3.6 million gallons/day water use, but these are township/permit-filing-level figures, not company-stated, so no numeric claim is submitted here - left for a human reviewer to source directly if this becomes a tracked project. The veto does not necessarily kill the project (the county commission could override or renegotiate); status is unresolved as of Sept. 29, 2026.",
+      "suggestedProjectName": "Google Project Cannoli (Van Buren Township, Wayne County, MI)",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
