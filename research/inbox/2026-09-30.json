@@ -1,0 +1,74 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.fox7austin.com/news/texas-pausing-permits-all-data-centers",
+      "title": "Gov. Abbott orders pause for all data centers until ERCOT audit is finished",
+      "publisher": "FOX 7 Austin",
+      "publicationDate": "2026-09-21",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "halt all permits sought by data centers until the Electric Reliability Council of Texas (ERCOT) completes its audit",
+      "note": "SITING RESTRICTION: Texas Gov. Abbott directed TCEQ to pause issuance of all data center permits statewide, including fully islanded/behind-the-meter sites, pending audits by ERCOT and the Texas Water Development Board (ERCOT audit due ~Dec 2026; TCEQ must report back by Oct 19). This is a state-level halt, not a single-project action — it potentially touches every Texas project still needing state environmental permits, including the tracked Stargate sites (Abilene, Milam County, Shackelford County, Doña Ana County), Meta El Paso, Microsoft Pecos, and Abilene Clean Campus (Crusoe). Deliberately not linked to one project record; a reviewer should decide which of the ~15 tracked TX projects to annotate, since project-level impact (already-issued permits vs. pending applications) varies by site.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.whitecase.com/insight-alert/puct-sets-financial-commitments-data-center-interconnection-governor-pauses-permit",
+      "title": "PUCT sets financial commitments for data center interconnection as governor pauses permit approvals",
+      "publisher": "White & Case",
+      "publicationDate": "2026-09-22",
+      "sourceType": "INDUSTRY_REPORT",
+      "excerpt": "requiring developers to post $50,000 per MW of requested capacity prior to interconnection studies",
+      "note": "SITING RESTRICTION: The Texas PUCT finalized its Senate Bill 6 rule standardizing interconnection requirements for all large loads >=75 MW at a single site in ERCOT, including upfront capital contributions/financial security of $50,000 per MW before interconnection studies begin. Statewide effect on every ERCOT-connected AI datacenter seeking new or expanded service — raises upfront capital cost and could slow queue-stage Texas projects. Announced the same week as the TCEQ permit pause (separate finding, same URL family of law-firm alerts). Not linked to a single project; broad regulatory change.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001899123/000121390026096425/ea030402101ex99-1.htm",
+      "title": "Bitdeer Technologies Group acquires additional land in Milam County, Texas (Form 6-K)",
+      "publisher": "Bitdeer Technologies Group (SEC Form 6-K)",
+      "publicationDate": "2026-09-01",
+      "sourceType": "SEC_FILING",
+      "excerpt": "currently feature approximately 563 MW of interconnected grid capacity ... expected to scale to 742 MW",
+      "suggestedProjectName": "Bitdeer Milam County (Rockdale expansion)",
+      "note": "New site, not yet tracked: Bitdeer acquired ~200 acres adjacent to its existing Rockdale, Milam County, TX facility for ~$100M cash (SEC 6-K dated 2026-09-01), for AI/HPC infrastructure. Combined Milam County sites currently have ~563 MW of interconnected grid capacity, with plans to scale to 742 MW. This is a distinct owner/site from the already-tracked 'Stargate Milam County' (OpenAI/Oracle) in the same county — do not merge. Power basis is interconnected grid capacity (site power), not confirmed IT load. The $100M figure is land acquisition cost only, not total project capex — leave capex blank pending a fuller disclosure.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 563,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Company SEC Form 6-K: current interconnected grid capacity across combined Milam County sites (site power, not IT load)"
+        }
+      ]
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/metas-12bn-data-center-in-kuna-idaho-goes-live/",
+      "title": "Meta's $1.2bn data center in Kuna, Idaho, goes live",
+      "publisher": "Data Center Dynamics",
+      "publicationDate": "2026-09-02",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "now online in Idaho, representing an overall investment of $1.2 billion",
+      "suggestedProjectName": "Meta Kuna Data Center",
+      "note": "New project, not yet tracked: Meta's first Idaho data center (28th in the US) began serving traffic. $1.2B is Meta's own stated total investment, per VP of data center development Gary Demasi's on-record statement quoted in press. Closed-loop liquid cooling, ~750,000 sq ft, minimal water use most of the year. No MW figure disclosed in sources reviewed — leave power blank rather than estimate.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 1200000000,
+          "unit": "USD",
+          "confidenceLevel": "HIGH",
+          "methodology": "Company statement (Meta VP Gary Demasi, on record via press): 'overall investment of $1.2 billion'"
+        }
+      ]
+    },
+    {
+      "url": "https://mattoon.illinois.gov/city-news/city-council-passes-data-center-moratorium/",
+      "title": "City Council Passes Data Center Moratorium",
+      "publisher": "City of Mattoon, Illinois",
+      "publicationDate": "2026-09-03",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "moratorium applies to any new data center developments larger than 21,780 square feet",
+      "note": "SITING RESTRICTION: Mattoon, IL city council unanimously passed a one-year, annually-renewable moratorium on new data center development over 21,780 sq ft (~0.5 acre), covering the city plus up to 1.5 miles beyond city limits within its zoning jurisdiction. Existing operations are exempt; new applications above the threshold will not be accepted while in effect. No tracked project is sited in Mattoon — new restriction entry, not linked to an existing project.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
