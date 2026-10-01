@@ -1,0 +1,55 @@
+{
+  "submissions": [
+    {
+      "url": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/",
+      "title": "Oracle sends force majeure notice on its New Mexico Stargate data center",
+      "publisher": "TechCrunch",
+      "publicationDate": "2026-09-24",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Project Jupiter remains on our planned schedule. We are fully committed to New Mexico and confident in our path forward.",
+      "suggestedProjectName": "Stargate Doña Ana County",
+      "note": "SITING RESTRICTION/DELAY: tracked project (slug stargate-dona-ana-county, status UNDER_CONSTRUCTION per data/ snapshot, no projectId available — see submitter note on verification method below). Oracle reportedly sent developer Blue Owl Capital a force majeure notice over the 1,400-acre, ~2.45GW 'Project Jupiter' campus, citing an Energy Transfer gas pipeline delay (pushed to ~Feb 1, 2027) and a pending Bloom Energy fuel-cell air-quality permit (state decision due ~Nov 23, 2026); multiple outlets (TechCrunch, DCD, Cryptopolitan, Breitbart, easternherald, mgrid.org) independently corroborate the notice and figures, though none could be fetched directly this run (WebFetch was blocked by network egress policy for the whole session, so this excerpt and the figures below are taken from WebSearch-returned snippets rather than a verified primary fetch — please re-check the exact wording against the source before confirming). Oracle's notice reportedly extends the contractual 2028 online deadline for payment purposes; Oracle still states the project is on schedule. The IT-load/site-power basis for the 2.45GW figure is not confirmed by direct fetch.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 2450,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Reported as the campus's designed capacity across several news summaries citing the project scope; not independently verified via primary-source fetch this run."
+        }
+      ]
+    },
+    {
+      "url": "https://www.gjsentinel.com/news/western_colorado/county-approves-1-year-moratorium-on-data-centers/article_42ed04ef-22bb-4b2e-ac52-779fa541e5a9.html",
+      "title": "County approves 1-year moratorium on data centers",
+      "publisher": "The Grand Junction Daily Sentinel",
+      "publicationDate": "2026-09-30",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Commissioners voted unanimously to impose a one year moratorium on data center applications for unincorporated Mesa County.",
+      "note": "SITING RESTRICTION: Mesa County, Colorado commissioners unanimously approved a 12-month moratorium on new data center land-use applications (unincorporated county only; does not cover public lands or incorporated cities) at their Sept. 29, 2026 meeting, effective immediately, while the county updates its land development code to address data centers for the first time. Commissioner Cody Davis called it 'a response to a lot of feedback we've received over the last several weeks'; water and power concerns from residents drove the vote. Coverage corroborated by KJCT8, KKCO11News, KDVR and Hoodline. Per the county, no data center projects are currently proposed there, so this is not linked to a tracked project. As with other findings this run, the exact article wording could not be confirmed by direct fetch (network egress to news sites was blocked all session) — please verify phrasing against the source link before confirming.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-09-30/15-billion-dollar-data-centre-proposed-for-wagga-wagga/107191146",
+      "title": "CDC Data Centres reveals plans for $15 billion facility near Wagga Wagga",
+      "publisher": "ABC News (Australia)",
+      "publicationDate": "2026-09-30",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Estimated development cost of AUD 15 billion and total power demand of up to 1.4GW.",
+      "suggestedProjectName": "CDC Wagga Wagga (Gregadoo) Campus",
+      "note": "New project, not currently tracked. CDC Data Centres (Infratil subsidiary) submitted a scoping report seeking SEARs for a combined planning proposal/State Significant Development Application: a four-building hyperscale campus at 216 Ashfords Road, Gregadoo, ~11km south of Wagga Wagga, NSW, on ~103.8 hectares. Each building ~47,275 sqm / 240MW, combined up to 1.4GW site power demand, AUD ~$15B estimated development cost (figure is AUD, NOT USD — do not store as USD without conversion). Site would connect to TransGrid's 330kV substation ~1.3km north; includes up to 384 diesel generators and 13MW rooftop solar for backup/offset. This is an early planning-stage filing (SEARs scoping, not yet approved), corroborated by DCD, Mingtiandi, w.media, The Tech Capital, Capital Brief and Kalkine — independent confirmation of exact figures via direct fetch was not possible this run due to a network egress block on WebFetch.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1400,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Stated as total site power demand for the four-building campus in CDC's planning scoping report, as reported by multiple outlets; MW basis appears to be site power, not confirmed IT load."
+        }
+      ]
+    }
+  ]
+}
