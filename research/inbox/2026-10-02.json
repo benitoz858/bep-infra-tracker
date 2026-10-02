@@ -1,0 +1,36 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0002070542/000121390026105865/ea030737801ex99-1.htm",
+      "title": "AIB Data Centers Announces Binding Agreement with Nebius for 50 MW of Critical IT Capacity",
+      "publisher": "AIB Data Centers Inc.",
+      "publicationDate": "2026-09-30",
+      "sourceType": "SEC_FILING",
+      "excerpt": "entered into a binding agreement with Nebius...for 50 MW of critical IT capacity at AIB's facility located in the southeastern United States",
+      "suggestedProjectName": "AIB Data Centers CLT1 (Nebius)",
+      "note": "New, untracked site/owner. AIB Data Centers Inc. (NYSE American: AIB) signed a binding 50MW critical-IT-load lease with Nebius (Nasdaq: NBIS) at its 'CLT1'/'CLT-01' facility, stated only as 'southeastern United States' in the primary source (not independently confirmed as Charlotte, NC despite the site code). Per AIB's Q2 2026 8-K, the same CLT-01 facility separately has a 65MW/15-yr electric service agreement for site power -- that is site power, not this IT-load figure; do not conflate the two bases. Data Hall 1 (25MW) is reported due around month 10 and Data Hall 2 (25MW) around month 14 of the lease term, with service originally slated to begin 2026-10-01. Recommend creating as a new project; no existing tracked entry matches this owner or site.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 50,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Company press release (filed as SEC Form 8-K Exhibit 99.1) states a binding agreement for 50 MW of critical IT capacity."
+        }
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001819989/000181998926000043/cifr-20260924.htm",
+      "title": "Cipher Digital Expands Barber Lake Lease Term to 20 Years, Increasing Contracted Revenue to Over $9 Billion",
+      "publisher": "Cipher Digital Inc.",
+      "publicationDate": "2026-09-25",
+      "sourceType": "SEC_FILING",
+      "excerpt": "Extending Barber Lake's contracted life from 10 to 20 years and adding approximately $5.2 billion of contracted revenue",
+      "suggestedProjectName": "Cipher Barber Lake",
+      "note": "Status update to a site that exists only as context inside the tracked 'Cipher Black Pearl' (Wink, TX) project notes, not as its own record -- Barber Lake is a distinct site in Colorado City, Texas. Cipher Digital Inc. (Nasdaq: CIFR), via subsidiary Cipher Barber Lake LLC, amended its Fluidstack lease (SEC Form 8-K, event date 2026-09-24) and added a second, unnamed 'leading AI lab' as tenant for a new back-end 10-year term, extending the site's total contracted life from 10 to 20 years. Total contracted revenue at the site rises from ~$3.8B to over $9B (~$5.2B incremental) -- this is lease/contract revenue, NOT construction capex, and should not be entered as capex per the tracker's own convention. Full IT capacity at the site was last recorded in Black Pearl's notes at 168MW to Fluidstack (plus a since-announced 39MW second phase per a Nov 2025 agreement); this announcement does not itself restate total MW, so no power claim is submitted here -- recommend the reviewer confirm current total MW and spin Barber Lake out as its own project record.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
