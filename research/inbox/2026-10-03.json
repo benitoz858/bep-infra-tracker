@@ -1,0 +1,23 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.wbrc.com/2026/10/01/alabama-data-center-law-takes-effect-oct-1-heres-what-it-means-your-power-bill/",
+      "title": "Alabama data center law takes effect Oct. 1: Here's what it means for your power bill",
+      "publisher": "WBRC",
+      "publicationDate": "2026-10-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "targets facilities that use at least 150 megawatts of electricity",
+      "note": "SITING RESTRICTION: Alabama SB 270 took effect Oct 1, 2026. It requires the Alabama PSC to ensure that electric contracts for data centers with loads of 150+ MW recover their full incremental grid cost from the operator rather than shifting it to other ratepayers, as a condition of contract approval. This is a statewide utility cost-allocation/large-load tariff rule, not tied to a single project, so no projectId is given — it is relevant context for any current or future Alabama Power / TVA-served AI campus above the 150 MW threshold. CAVEAT FOR REVIEWER: this sandbox's network egress to WebFetch/curl was blocked for essentially all external domains during this run (including the tracker API itself), so I could not directly open the enrolled bill text (alison.legislature.state.al.us/files/pdf/SearchableInstruments/2026RS/SB270-enr.pdf) or the WBRC article to confirm the excerpt is verbatim rather than a close paraphrase from secondary search summaries. Please verify the exact statutory wording and the 150 MW figure against the primary bill text before raising confidence above LOW.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 150,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Threshold as described in news coverage of SB 270; primary bill text not independently re-verified this run due to sandbox network restrictions"
+        }
+      ]
+    }
+  ]
+}
