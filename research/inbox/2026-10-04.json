@@ -1,0 +1,79 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.michigan.gov/mpsc/commission/news-releases/2026/10/01/mpsc-approves-dte-electric-google-data-center-and-contracts-protects-customers-from-project-cost",
+      "title": "MPSC approves DTE Electric energy contracts for Google data center, protects other customers from the project's costs",
+      "publisher": "Michigan Public Service Commission",
+      "publicationDate": "2026-10-01",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "MPSC approves DTE Electric energy contracts for Google data center, protects other customers from the project's costs",
+      "suggestedProjectName": "Google Van Buren Township (Project Cannoli)",
+      "note": "NEW PROJECT CANDIDATE. Not currently in the tracker. On Oct 1, 2026 the Michigan Public Service Commission (Docket U-22058) unanimously granted conditional approval of a 20-year special-contract package (a Primary Supply Agreement plus a Clean Capacity Accelerator Agreement) letting DTE Electric serve a 1 GW Google data center ('Project Cannoli') in Van Buren Township, Wayne County. Multiple outlets (Detroit News, Planet Detroit, EnerKnol) corroborate: Google must pay for DTE to develop up to 1,600 MW of new renewable generation plus 480 MW of battery storage, pay at least 80% of contracted electricity use, and DTE claims a $1.7B net benefit to other ratepayers over the contract term. This is the regulatory unlock (utility power contract), not a construction-progress milestone -- the site itself cleared township planning approval back in Feb 2026. Basis is SITE/GRID power (DTE-side generation + storage commitment), not confirmed IT load; no official MW-for-IT-load figure was found. CAVEAT: this run's sandbox blocked WebFetch/curl to all external sites (including the MPSC URL itself), so the excerpt above is the verbatim article headline pulled via search, not a sentence confirmed by directly opening the order -- please verify the underlying order text before treating any number here as confirmed.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Widely reported as Google's self-described '1 GW' data center; not confirmed by this agent against the primary MPSC order text due to network restrictions this run."
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1600,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "New renewable generation DTE is contracted to build for the project per secondary reporting of the Clean Capacity Accelerator Agreement; not independently verified against the order text."
+        }
+      ]
+    },
+    {
+      "url": "https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits",
+      "title": "Governor Abbott Directs TCEQ To Halt Data Center Permits",
+      "publisher": "Office of the Texas Governor",
+      "publicationDate": "2026-09-21",
+      "sourceType": "GOVERNMENT_FILING",
+      "note": "SITING RESTRICTION: Statewide, not a single project -- affects most Texas sites in this tracker (Stargate Milam, Stargate Shackelford, CyrusOne Freestone, QTS-Lancium Hall County, Fluidstack Abernathy, Aligned Caprock, Microsoft Pecos, IREN Sweetwater/Childress, xAI Memphis's TX-adjacent supply chain, etc.). Gov. Abbott ordered TCEQ on Sept 21, 2026 to halt all data-center environmental permit approvals until ERCOT completes a statewide interconnection-queue audit (TCEQ owes an update by Oct 19, 2026; ERCOT audit expected mid-December 2026). This is a freeze on new permits, not a ban on construction already permitted. NEWER DEVELOPMENT (why flagging today): on Sept 27 Abbott said he will ask the Legislature to let counties/cities decide whether data centers can be sited at all, and on Oct 1, 2026 Nueces County Commissioner Mike Pusley stated on the record that under current law the county has no authority to block data-center construction in unincorporated areas and only a tax-abatement negotiation gives it any leverage -- illustrating the local-control gap Abbott is now trying to legislate around. Flag for human judgment: the underlying freeze order is ~2 weeks old; include only if the agent's prior runs have not already logged it. CAVEAT: sandbox network policy blocked WebFetch/curl to gov.texas.gov and all news sources this run; quotes below are close paraphrases from secondary coverage (Texas Tribune, CNBC, Fox4/Fox7, law-firm client alerts), not independently verified against the primary order text.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/zone-frontier-inc-signs-long-term-ground-lease-with-purchase-option-for-more-than-4-000-acres-in-potter-county-texas-302892101.html",
+      "title": "Zone Frontier Inc. Signs Long-Term Ground Lease with Purchase Option for more than 4,000 Acres in Potter County, Texas",
+      "publisher": "PR Newswire (Zone Frontier Inc.)",
+      "publicationDate": "2026-09-29",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Zone Frontier Inc. Signs Long-Term Ground Lease with Purchase Option for more than 4,000 Acres in Potter County, Texas",
+      "suggestedProjectName": "Zone Frontier / HST Technologies Potter County Campus",
+      "note": "NEW PROJECT CANDIDATE. Zone Frontier Inc. (subsidiary), developing with HST Technologies Inc., signed a 30-year ground lease (plus two 10-year extensions) over ~4,077 acres surrounding Southwestern Public Service's 345kV Potter County substation near Amarillo, TX, also filed as an 8-K (filer CIK 0001956741). Initial campus capacity reported at 200 MW IT, with the site designed to scale beyond 500 MW; 200-800 of the leased acres are designated for data center buildings, 1,800+ acres reserved for on-site solar/battery generation. No capex figure disclosed -- leave capex blank. CAVEAT: sandbox network policy blocked WebFetch/curl to sec.gov and prnewswire.com this run, so I could not open the 8-K or press release directly; the figures above come from secondary trade coverage (W.Media, BlackRidge Research, StockTitan) that appears to quote the release, not from this agent's own read of the primary text. Please verify against the 8-K before treating MW figures as confirmed.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 200,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Initial IT capacity as reported in secondary coverage of the company's ground-lease press release; not independently verified by this agent against the primary release or 8-K."
+        }
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001819989/000181998926000043/cifr-20260924.htm",
+      "title": "Cipher Digital Inc. - Form 8-K (Barber Lake lease amendment)",
+      "publisher": "Cipher Digital Inc. (SEC Form 8-K)",
+      "publicationDate": "2026-09-24",
+      "sourceType": "SEC_FILING",
+      "note": "Status change on a site adjacent to a tracked project, not the tracked project itself. The tracker's existing 'Cipher Black Pearl' project (owner Cipher Mining, Wink/Winkler County TX) already has an analyst note referencing a separate Cipher-owned site, 'Barber Lake' (244MW gross / 168MW IT), in Colorado City, TX, leased to Fluidstack with a Google backstop -- but Barber Lake does not appear to have its own row in the tracker. On Sept 24, 2026 Cipher filed an 8-K: it extended the Fluidstack lease at Barber Lake from 10 to 20 years and signed a concurrent binding commitment for a second, consecutive 10-year lease with an unnamed 'leading AI lab' to run after the Fluidstack term, adding ~$5.2B of contracted revenue and taking total contracted revenue at the site from $3.8B to over $9B. Per this tracker's own rule, lease/contract revenue is NOT capex -- no capex claim submitted. Data halls are scheduled for phased delivery Q4 2026-Q1 2027. Suggest either adding Barber Lake as its own project linked to Cipher Mining, or folding this update into Black Pearl's analyst notes -- deferring that call to the human reviewer. CAVEAT: sandbox network policy blocked WebFetch/curl to sec.gov this run; the figures above are from secondary coverage (StockTwits, Finviz/Panabee, Benzinga) describing the filing, not this agent's own read of the 8-K text.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 168,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "IT load figure for Barber Lake as recorded in the tracker's own existing analyst note on the Black Pearl project; cross-referenced, not independently re-verified against a primary filing this run."
+        }
+      ]
+    }
+  ]
+}
