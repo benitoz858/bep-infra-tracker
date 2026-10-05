@@ -1,0 +1,78 @@
+{
+  "submissions": [
+    {
+      "url": "https://irisenergy.gcs-web.com/news-releases/news-release-details/iren-delivers-horizon-1-microsoft-and-achieves-nvidia-exemplar",
+      "title": "IREN Delivers Horizon 1 to Microsoft and Achieves NVIDIA Exemplar Cloud Status on GB300 NVL72",
+      "publisher": "IREN Limited",
+      "publicationDate": "2026-08-13",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Horizon 1 is the first of four 50MW (IT load) direct-to-chip liquid-cooled buildings delivered to Microsoft",
+      "suggestedProjectName": "IREN Childress (Horizon 1 handover)",
+      "note": "Tracked project: iren-childress-horizon-for-microsoft (status UNDER_CONSTRUCTION, 750MW estimated, last verified 2026-07-29). That record's analyst note said Horizon 1 handover was 'targeted Q3 2026' — this is the confirmation it happened: IREN's Aug 13, 2026 release says Horizon 1 (first 50MW IT-load GB300 NVL72 cluster) was delivered to and accepted by Microsoft, and the campus achieved NVIDIA Exemplar Cloud status. Basis: IT load for this one building, not full-campus power. CAUTION: this run's sandbox could not reach any external site except the search tool itself (WebFetch and curl were both blocked by egress policy, even for sec.gov/businesswire/prnewswire/the IREN IR domain), so this excerpt is reconstructed from secondary coverage (DataCenterDynamics, The Block) describing the release rather than fetched verbatim from the primary URL — please confirm exact wording before citing it as a quote.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 50,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "IT load of first delivered building (Horizon 1) per company press release, as relayed in secondary coverage; not independently fetched verbatim this run."
+        }
+      ]
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/crusoe-files-for-two-more-data-centers-at-goodnight-campus-in-armstrong-county-texas/",
+      "title": "Crusoe files for two more data centers at Goodnight campus in Armstrong County, Texas",
+      "publisher": "DataCenterDynamics",
+      "publicationDate": "2026-07-31",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Buildings 3 and 4, both with an estimated construction cost of $500 million",
+      "suggestedProjectName": "Crusoe Goodnight (Buildings 3 & 4 filing)",
+      "note": "Tracked project: crusoe-goodnight-armstrong-county (status UNDER_CONSTRUCTION, 933MW estimated, capexUsd currently blank). This filing gives a per-building capex figure not yet in the tracker: two new buildings (3 & 4), ~805,380 sq ft combined, each filed at an estimated $500M construction cost, per state permit records reported by DCD. Does not resolve full-campus capex (tracker notes a third-party ~$29B full-build estimate elsewhere) — treat as a partial, building-level figure only. CAUTION: same sourcing limitation as the IREN finding above — outbound fetch was blocked for every external domain this run, so the excerpt is a close paraphrase from DCD's reporting rather than a verbatim pull from the article; confirm exact wording at the source URL.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 1000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Sum of two filed buildings (Goodnight 3 & 4) at $500M construction cost each per Texas state permit filings; this is construction cost for these two buildings only, not full-campus capex."
+        }
+      ]
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas",
+      "title": "Amazon responds to data center backlash, says it no longer uses NDAs",
+      "publisher": "TechCrunch",
+      "publicationDate": "2026-10-03",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Amazon pledged more than $1 billion over five years for US communities that host its data centers",
+      "note": "Not tied to a single project — flagging as background relevant to the siting-restriction side of the tracker. Amazon said AWS has stopped requiring local officials to sign NDAs before green-lighting data center projects, and launched a 'Built Together' program pledging $1B+ over five years to host communities (community-college funding, energy-efficiency upgrades for schools/homes), plus a 'Data Center Commitment' not to raise local electricity bills and to publish annual energy/water-use figures. This is a genuine reversal: a Sept 28, 2026 PolitiFact piece on an Ohio legislative hearing had Amazon, Google and Meta declining to make the NDA-ending promise Microsoft made in March 2026. Multiple independent outlets (Semafor Oct 2, TechCrunch/Manila Times/Hoodline Oct 3) corroborate the date. CAUTION: outbound fetch was blocked for every external domain this run (confirmed against tracker.bepresearch.com, example.com, sec.gov, businesswire, prnewswire, github.com's main site, etc. — only the search tool and api.github.com worked), so this excerpt is paraphrased from secondary coverage, not pulled verbatim from the primary announcement; confirm exact wording before citing.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.wilx.com/2026/07/14/lansing-city-council-approves-182-day-moratorium-new-data-centers/",
+      "title": "Lansing City Council approves 182-day moratorium on new data centers",
+      "publisher": "WILX",
+      "publicationDate": "2026-07-14",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "a 182-day moratorium... begins on July 27 and will go until January 25, 2027",
+      "note": "SITING RESTRICTION: Lansing, Michigan city council passed a 182-day moratorium (7-1 vote) pausing new data center building permits and zoning applications, effective July 27, 2026 through January 25, 2027 — prompted after the 'Deep Green' data center proposal for downtown Lansing fell through in April 2026. Deep Green does not appear in the current 103-project tracker snapshot, so this is a general-purpose restriction not yet linked to any tracked project. Flagged with low confidence on novelty: this agent could not reach the live tracker API this run (egress blocked) and the exported data/ snapshot has no restrictions file, so there was no way to check whether this moratorium is already recorded — if it is, this submission should just 409 as a known duplicate. Not within the usual 24-72h freshness window (passed ~12 weeks ago); surfacing because it did not turn up as already-known and genuinely new items were scarce this cycle (see summary).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.ksat.com/news/local/2026/07/24/data-centers-draw-backlash-lawsuit-in-guadalupe-county-as-residents-raise-transparency-concerns/",
+      "title": "Data centers draw backlash, lawsuit in Guadalupe County as residents raise transparency concerns",
+      "publisher": "KSAT",
+      "publicationDate": "2026-07-24",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Palomino Alpha requesting a contract providing the data center 500,000 gallons of water a day",
+      "suggestedProjectName": "CloudBurst Texas (Guadalupe County, TX)",
+      "note": "SITING RESTRICTION / legal challenge, and two possibly-new projects. The Data Center Action Coalition and Guadalupe County, TX residents sued county commissioners (~July 20, 2026) alleging Texas Open Meetings Act and conflict-of-interest violations in approving tax abatements and development agreements for two data centers: 'CloudBurst Texas' (~$500M tax abatement, 700+ acres, approved April 2026) and 'Palomino Alpha' (reportedly seeking 500,000 gal/day from Crystal Clear Special Utility District; suit alleges the county judge's family owns 186 acres being sold to the project). Neither CloudBurst Texas nor Palomino Alpha appears in the current 103-project tracker snapshot — suggesting both as candidate new projects, with this lawsuit as the first siting-risk source on each. Same caveats as the other findings here: not within the usual 24-72h window, paraphrased excerpt (outbound fetch blocked this run, not pulled verbatim), and no local way to check for an existing restrictions record.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
