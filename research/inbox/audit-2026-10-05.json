@@ -1,0 +1,180 @@
+{
+  "submissions": [
+    {
+      "url": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-abilene",
+      "title": "OpenAI Stargate Abilene — Epoch AI Data Centers directory",
+      "publisher": "Epoch AI",
+      "publicationDate": "2026-05-23",
+      "sourceType": "INDUSTRY_REPORT",
+      "excerpt": "In Abilene, 200MW is already operational",
+      "projectId": "stargate-abilene-texas",
+      "note": "AUDIT: tracker has a CONFIRMED-confidence POWER_MW metric row at 300 MW, contradicting its own methodology text and confirmed_power_mw=200 — vs Oracle's own quote (via Epoch AI) stating 200MW is operational. Recommend correcting the orphaned 300 MW row to 200 MW (IT load) so it matches the project's own confirmed field; 300 MW appears to be a leftover pre-correction figure not cleaned up on 2026-08-01.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 200,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Operator-confirmed (Oracle quote via Epoch AI, Apr 2026). Basis: IT load. Supersedes stale duplicate 300 MW row."
+        }
+      ]
+    },
+    {
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure",
+      "title": "Crusoe Announces New 900 MW AI Factory Campus in Abilene, Texas to Support Microsoft AI Infrastructure",
+      "publisher": "Crusoe (Crusoe Energy / Crusoe AI)",
+      "publicationDate": "2026-03-27",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "By integrating 900 MW of new on-site power generation, we will continue building the industrial foundation for American AI",
+      "projectId": "abilene-clean-campus-crusoe",
+      "note": "AUDIT: tracker records 900 MW as one undifferentiated figure (LOW confidence) and frames Microsoft as only 'reported in talks' per a secondary DCD piece — vs Crusoe's own press release, which names Microsoft as the confirmed customer and states the 900 MW is ON-SITE POWER GENERATION, not IT load (two buildings at 336 MW each = 672 MW combined IT load). Recommend: (1) update tenant status from rumored to confirmed, (2) split the metric into ~672 MW IT load vs 900 MW site/generation power rather than one undifferentiated number — this is exactly the site-power/IT-load conflation error class, (3) raise confidence now that a primary source exists.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 900,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Crusoe's own 2026-03-27 press release. Basis: site power / on-site generation — NOT IT load. Critical IT capacity is separately reported as ~672 MW (2 buildings x 336 MW) in the same release; not submitted as a separate claim here because no standalone <25-word quote for that sub-figure was captured — flagging for the reviewer to pull from the same source."
+        }
+      ]
+    },
+    {
+      "url": "https://www.theregister.com/2026/04/28/oracle_new_mexico_power_fuel_cell_farm/",
+      "title": "Oracle taps fuel cells to power New Mexico AI data center microgrid",
+      "publisher": "The Register",
+      "publicationDate": "2026-04-28",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "up to 2.45 gigawatts of installed fuel cell capacity in a consolidated microgrid",
+      "projectId": "stargate-dona-ana-county",
+      "note": "AUDIT: tracker's only metric states 'no per-site capacity was published' (HIGH confidence) — vs Oracle/Bloom Energy's April 2026 disclosure (corroborated by NMED filings) of up to 2.45 GW of installed FUEL CELL (generation) capacity for this exact site. Recommend NOT changing the IT-load fields (genuinely still undisclosed) but correcting the blanket 'nothing published' claim and adding this as a separate, clearly-labeled generation/ceiling metric, distinct from IT load, to avoid future site-vs-IT conflation.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 2450,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Oracle/Bloom Energy disclosure reported by The Register, corroborated by NMED permit filings. Basis: generation (fuel cell microgrid capacity) — a ceiling/plan figure, NOT IT load and NOT current operating draw."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tikr.com/blog/musk-spacexs-colossus-2-capacity-poised-to-double-by-december-if-we-get-lucky",
+      "title": "Musk: SpaceX's Colossus 2 Capacity Poised to Double by December 'If We Get Lucky'",
+      "publisher": "TIKR",
+      "publicationDate": "2026-09-25",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Colossus 2 contains '110k GB200 and 440k GB300' chips",
+      "projectId": "xai-colossus-2-memphis",
+      "note": "AUDIT: tracker's estimated_gpu_count = 440,000 (framed as current installed count) — vs Elon Musk's Sept 25, 2026 statement that Colossus 2 currently contains 110,000 GB200 + 440,000 GB300 = 550,000 total chips installed. The tracker's 440,000 figure appears to capture only the GB300 portion, omitting the 110,000 GB200 chips. Recommend updating current GPU_COUNT to 550,000.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "GPU_COUNT",
+          "numericValue": 550000,
+          "unit": "GPUs",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Elon Musk statement, Sept 25 2026, reported by TIKR (secondary outlet relaying a primary-source quote). Basis: current installed compute, not a future target."
+        }
+      ]
+    },
+    {
+      "url": "https://aiweekly.co/alerts/musk-xais-colossus-2-aims-for-121m-nvidia-gpus-by-year-end",
+      "title": "Musk: xAI's Colossus 2 Aims for 1.21M Nvidia GPUs by Year-End",
+      "publisher": "AI Weekly",
+      "publicationDate": "2026-09-25",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "full schedule taking the Memphis cluster to 1.21 million GB200 and GB300 processors",
+      "projectId": "xai-colossus-2-memphis",
+      "note": "AUDIT (target-vs-current class): tracker has a 555,000 GPU_COUNT row (LOW confidence) labeled 'Reported approximate accelerator count at full build' — vs Musk's Sept 25 2026 statement that 555k (from a Dec 2025 statement) was only a first-batch figure, and the actual year-end 2026 full-build target is now 1.21 million chips. Recommend relabeling the 555k row's methodology as 'first-batch, Dec 2025' and adding a separate full-build-target row at 1,210,000, clearly marked as a year-end-2026 target, not current.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "GPU_COUNT",
+          "numericValue": 1210000,
+          "unit": "GPUs",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Musk statement, Sept 25 2026, reported by AI Weekly. Basis: stated full-build target for year-end 2026 — explicitly NOT current capacity."
+        }
+      ]
+    },
+    {
+      "url": "https://www.neom.com/en-us/newsroom/HUMAIN-and-DataVolt-to-develop-AI-data-center-in-NEOM",
+      "title": "HUMAIN partners with DataVolt to jointly develop 100MW of a 360MW AI data center project in NEOM",
+      "publisher": "NEOM",
+      "publicationDate": "2026-08-31",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "jointly develop 100MW of a 360MW AI data center project in NEOM",
+      "projectId": "datavolt-oxagon-ai-factory-neom",
+      "note": "AUDIT: tracker has status=ANNOUNCED with a '~300MW first phase targeted for 2028' note (per an earlier DCD article) and no mention of HUMAIN as co-developer — vs NEOM's Aug 31, 2026 announcement that HUMAIN and DataVolt broke ground and will jointly develop an initial 100MW within a (now) 360MW first phase. Recommend updating status to UNDER_CONSTRUCTION, adding HUMAIN as co-developer, and revising the near-term phase figure from 300MW to 100MW (within 360MW). Keep 1.5GW as the still-unconfirmed full-build target, not current capacity.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 100,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "NEOM company announcement, 2026-08-31. Basis: unclear (near-term construction tranche, not yet operating) — supersedes the earlier 300MW secondary-source figure."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kshb.com/news/local-news/data-centers/northland-ai-data-center-withdraws-bond-application-with-port-kc",
+      "title": "Northland AI data center withdraws bond application with Port KC",
+      "publisher": "KSHB 41 (Scripps)",
+      "publicationDate": "2026-07-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Project Blitz has been withdrawn",
+      "projectId": "lambda-kansas-city",
+      "note": "AUDIT: tracker shows status=UNDER_CONSTRUCTION with expected_opening_date=2026-06-30, now lapsed with no note of any problem — vs Port KC's own communications director confirming the project's tax-incentive bond application was withdrawn after community pushback over grid/energy concerns (following a March 2026 pause). No source found confirms the facility has actually opened as of Oct 2026. Recommend re-verifying current status before leaving UNDER_CONSTRUCTION unchallenged with a lapsed opening date — update expected_opening_date/actual_opening_date once a primary source clarifies whether this is a financing-only change or a broader delay. Publication date is approximate (exact date not captured by source).",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://businessjournaldaily.com/lordstown-data-center-to-be-operational-next-year/",
+      "title": "Lordstown data center to be operational next year",
+      "publisher": "The Business Journal (Youngstown/Warren)",
+      "publicationDate": "2025-09-24",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "One site is located in Lordstown, Ohio, where SoftBank has broken ground on an advanced data center design",
+      "projectId": "stargate-lordstown-ohio",
+      "note": "AUDIT: tracker lists owner=Oracle for this site — vs the Sept 2025 OpenAI/Oracle/SoftBank Stargate announcement, which splits the five new sites: Oracle develops Shackelford County TX, Doña Ana County NM, and an undisclosed Midwest site; Lordstown, OH and Milam County, TX are the two SoftBank-developed sites (OpenAI is the tenant across all). Recommend changing the owner/developer field from Oracle to SoftBank. The only disclosed capacity figure is a combined ~1.5GW target shared across Lordstown + Milam County within ~18 months of the Sept 2025 announcement — not a confirmed per-site or current figure, so no capacity change is proposed.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://vision2030.ai/analysis/humain-data-centers-riyadh-dammam-status/",
+      "title": "HUMAIN Data Centers Riyadh & Dammam: Open Yet?",
+      "publisher": "Vision2030.ai",
+      "publicationDate": "2026-08-01",
+      "sourceType": "OTHER",
+      "excerpt": "no announcement, filing or credible report confirms either site is operational",
+      "projectId": "humain-ai-factories-phase-1-riyadh-dammam",
+      "note": "AUDIT: tracker shows expected_opening_date=2026-06-30 with status=UNDER_CONSTRUCTION and no note that the date has passed without a confirmed launch — vs industry analysis (as of this audit, 2026-10-05) finding no primary confirmation either site is operational; HUMAIN has repeatedly declined to disclose progress, and a revised Q3 2026 company guidance has also now lapsed. Recommend keeping status=UNDER_CONSTRUCTION, leaving actual_opening_date blank (no evidence of opening), but flagging expected_opening_date as missed/delayed with an analyst note documenting the lack of disclosure and the lapsed revised guidance.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/humain-breaks-ground-two-data-centers-with-first-facilities-expected-to-go-live-in-q2-2026/",
+      "title": "Humain breaks ground two data centers with first facilities expected to go live in Q2 2026",
+      "publisher": "DataCenterDynamics",
+      "publicationDate": "2026-01-26",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "capacity of up to 100 megawatts each, according to CEO Tareq Amin",
+      "projectId": "humain-ai-factories-phase-1-riyadh-dammam",
+      "note": "AUDIT: tracker's 200 MW POWER_MW metric (HIGH confidence) cites the HUMAIN/NVIDIA partnership press release as its source — but that release's own excerpt only supports a 500 MW *projected* target and never mentions 100 or 200 MW. The actual support for '100 MW each / 200 MW combined' is this separate, uncited DataCenterDynamics article quoting CEO Tareq Amin. Recommend re-citing the 200 MW metric to this DCD article instead of the 500MW press release, and adding this source to the project's sources list.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 200,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "DataCenterDynamics quoting HUMAIN CEO Tareq Amin, Jan 2026: 'up to 100 megawatts each' (Riyadh + Dammam combined = 200MW). Basis: unclear (announced target at groundbreaking, not yet confirmed live). Corrects a mis-citation, not the figure itself."
+        }
+      ]
+    }
+  ]
+}
