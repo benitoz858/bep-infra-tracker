@@ -1,0 +1,34 @@
+{
+  "submissions": [
+    {
+      "url": "https://memphistn.gov/wp-content/uploads/2026/08/Data-Center-Temporary-Moratorium-Ordinance-v3.pdf",
+      "title": "Memphis Data Center Temporary Moratorium Ordinance (v3)",
+      "publisher": "City of Memphis",
+      "publicationDate": "2026-08-01",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "Shall not process, schedule, hear, approve, or issue any approval",
+      "note": "SITING RESTRICTION: Memphis City Council ordinance imposing a 12-month moratorium on new data-center zoning, site-plan, and building-permit approvals city-wide; third/final reading was on the council's agenda for 2026-10-06 (per the council's own meeting calendar, https://memphistn.gov/event/city-council-board-meeting-2/2026-10-06/, and Hoodline's 2026-10 preview 'Memphis Council Faces Final Vote on Data Center Pause as Rally Targets Musk'). Second reading passed unanimously 2026-09-01. The ordinance explicitly exempts xAI's existing Memphis facilities (tracked project xAI Colossus 2, status UNDER_CONSTRUCTION, within Memphis city limits) — it would only block NEW data-center approvals, not the tracked site. I could not confirm the outcome of the 2026-10-06 final vote in sources available to this search (coverage of that specific session had not yet been indexed) — please verify whether it passed before treating the moratorium as in force.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://thenevadaindependent.com/article/nevadas-electric-utility-is-suing-a-major-data-center-company-heres-why",
+      "title": "NV Energy sues Tract over cost allocation for Reno-area data center campuses",
+      "publisher": "The Nevada Independent",
+      "publicationDate": "2026-08-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Large-load customers should bear the costs required to serve their projects and should not shift those costs onto Nevada families",
+      "suggestedProjectName": "Tract Reno-area campuses (Washoe County, NV)",
+      "note": "SITING RESTRICTION / utility dispute: NV Energy sued data-center developer Tract (doing business locally as Fleet Data Centers) in Washoe County district court on 2026-08-07 over who pays for grid upgrades serving two planned Reno-area campuses, which press reports say 'could draw more than 2 GW' combined (site power, not IT load, and not confirmed by either party in terms I could verify directly) -- versus a separately reported standalone Tract/Fleet Reno project sized at 230 MW utility capacity / 200 MW critical IT load. CBS News and other outlets call this the first lawsuit by a major utility against a data-center developer over cost-shifting. No Nevada or Washoe County project currently exists in the tracker (I searched for 'Tract', 'Reno', 'Nevada', 'Washoe' in project names/owners/locations and found none), so this is a new-project candidate as well as a restriction/dispute record. This is dated five weeks before my search window and the agent has no way to confirm it hasn't already been reviewed and declined -- flagging as potentially already seen.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 2000,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Press paraphrase of utility's court filing describing combined draw of two planned campuses as 'more than 2 GW'; not a direct quote and not confirmed by Tract"
+        }
+      ]
+    }
+  ]
+}
