@@ -1,0 +1,94 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001083301/000162828026064757/muskieexpansionpr.htm",
+      "title": "TeraWulf Amends Agreement with Kentucky Power, Expands Muskie Data Campus to 1 GW",
+      "publisher": "TeraWulf Inc. (SEC Form 8-K)",
+      "publicationDate": "2026-10-05",
+      "sourceType": "SEC_FILING",
+      "excerpt": "increasing contracted power capacity at its Muskie Data Campus in eastern Kentucky from 500 megawatts to 1 gigawatt",
+      "suggestedProjectName": "TeraWulf Muskie Data Campus (Kentucky Power / EastPark Industrial Park)",
+      "note": "NEW PROJECT, not currently in the tracker — distinct from TeraWulf's two already-tracked Kentucky/NY sites (Justified Data Campus, Hawesville, and Lake Mariner, NY). TeraWulf signed an amended and restated electric service agreement with Kentucky Power (AEP) on Oct 5, 2026, raising contracted grid power at its Muskie Data Campus (EastPark Industrial Park, eastern Kentucky, ~285 acres) from 500 MW to 1 GW, and advancing Phase 2 (the second 500 MW) from 2030 to 2029, subject to Kentucky PSC approval. Phase 1 (500 MW) still targets ramp in 2028. This is contracted utility/site power capacity, not confirmed IT load, GPU count, or an announced tenant — basis should be recorded as site power, not IT load.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Contracted site power capacity stated directly in TeraWulf's amended electric service agreement with Kentucky Power, disclosed in an SEC Form 8-K press release."
+        }
+      ]
+    },
+    {
+      "url": "https://www.courthousenews.com/finland-orders-halt-to-work-on-googles-data-center-sites/",
+      "title": "Finland orders halt to work on Google's data centre sites",
+      "publisher": "Courthouse News Service (AFP wire)",
+      "publicationDate": "2026-10-06",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "ordered work on two of Google's data centre sites in the country halted until mandatory environmental impact assessments have been completed",
+      "suggestedProjectName": "Google AI Data Centers — Muhos & Kajaani, Finland",
+      "note": "SITING RESTRICTION: Finland's supervisory agency (LVV) ordered Google's operating company, Tuike Finland, to halt preparatory construction work at two planned data center sites in Muhos and Kajaani, pending completion of mandatory environmental impact assessments. The agency is investigating whether more than 300 hectares of forest were cleared, topsoil stripped, and site roads/ditches built without the required EIA. Tuike Finland must respond to the agency by Oct 14, 2026; the halt deadline is Oct 23, 2026, after which the agency may begin enforcement proceedings. Google spokesperson Sondre Ronander: 'We understand the concerns and have fallen short of our own high standards in this instance.' Not currently a tracked project (distinct from the already-tracked Nebius Lappeenranta site); part of Google's broader ~€13B ($15B) Finland digital-infrastructure investment announced in September 2026 — that figure is country-wide, not specific to these two sites, so no capex claim is attached here.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.sfchronicle.com/bayarea/article/santa-clara-data-centers-22460374.php",
+      "title": "S.F., Oakland vote to temporarily ban new data centers. Another city is taking a different path",
+      "publisher": "San Francisco Chronicle",
+      "publicationDate": "2026-10-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "S.F., Oakland vote to temporarily ban new data centers",
+      "note": "SITING RESTRICTION: San Francisco and Oakland both moved to pause new data center approvals (reporting describes 45-day moratoriums) while Santa Clara debates a different regulatory path, per SF Chronicle headline/reporting dated Oct 7, 2026. This follows earlier 2026 moratoriums in nearby Oakley, Richmond and Gilroy. Not tied to a specific tracked project — regional Bay Area siting policy. Flagging for a human to confirm the exact enacted ordinance text and effective dates directly from the SF Board of Supervisors / Oakland City Council records, since this environment's WebFetch tool could not reach the article or city records directly to pull the full text (only the search-indexed headline/snippet was available).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.bracewell.com/resources/governor-abbott-orders-tceq-to-pause-all-permit-issuance-for-data-center-projects/",
+      "title": "Governor Abbott Orders TCEQ to Pause All Permit Issuance for Data Center Projects",
+      "publisher": "Bracewell LLP",
+      "publicationDate": "2026-09-23",
+      "sourceType": "OTHER",
+      "excerpt": "TCEQ must report to the Governor's office on its compliance with the order by Monday, October 19, 2026",
+      "note": "SITING RESTRICTION: Texas Governor Greg Abbott directed TCEQ to stop issuing any environmental permits 'related to data center projects' statewide (order dated Sept 21, 2026), pending an ERCOT/PUC grid-reliability audit of all data centers in ERCOT's interconnection process, expected mid-December 2026. The pause applies even to behind-the-meter projects not interconnecting with ERCOT. TCEQ must report compliance to the Governor's office by Oct 19, 2026. This potentially affects numerous tracked Texas projects awaiting permits, including microsoft-pecos, stargate-milam-county, stargate-shackelford-county, cipher-black-pearl-for-aws, iren-sweetwater, crusoe-goodnight-armstrong-county, fluidstack-abernathy, and aligned-project-caprock-hale-county. This finding is a statewide policy action, not specific to one project, so no single projectId is attached — a human reviewer may want to log it as a general Texas restriction and/or flag the individual affected project pages. Secondary legal-analysis source used because this sandbox's network access could not reach the Governor's office or TCEQ directly to pull the primary order text.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.wwno.org/coastal-desk/2026-04-21/advocates-cite-lack-of-transparency-rising-costs-as-regulators-fast-track-second-meta-data-center",
+      "title": "Advocates cite lack of transparency, rising costs as regulators fast-track second Meta data center",
+      "publisher": "WWNO / Gulf States Newsroom",
+      "publicationDate": "2026-04-21",
+      "sourceType": "UTILITY_FILING",
+      "excerpt": "seeking approval for seven more totaling about 5.3 gigawatts of additional generation",
+      "projectId": "",
+      "suggestedProjectName": "",
+      "note": "Update to already-tracked project: Meta Hyperion, Richland Parish, Louisiana (tracker slug meta-hyperion-louisiana). Beyond the three Entergy Louisiana gas plants already approved in 2025, Entergy has applied to the Louisiana PSC for seven additional gas plants (~5.3 GW generation, application estimates >$16B for the plants alone, >$21B including related infrastructure) to serve the Hyperion expansion. In April 2026 the PSC voted 4-1 to let Entergy/Meta bypass competitive bidding and review the application on an expedited (<8 month) timeline; Sierra Club filed testimony in August 2026 urging rejection; outcome was still pending as of the most recent reporting found. This is utility GENERATION capacity, not the project's IT load or site power draw — deliberately not submitted as a POWER_MW claim on the project to avoid conflating generation with site/IT power, per the tracker's own basis distinction. A human should check the LPSC docket directly for whether a final vote has since occurred.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.weku.org/lexington-richmond/2026-07-30/lexington-planners-add-more-restrictions-for-data-centers-including-caps-on-size-capacity",
+      "title": "Lexington planners add more restrictions for data centers, including caps on size, capacity",
+      "publisher": "WEKU",
+      "publicationDate": "2026-07-30",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "capping data centers at 40,000 square feet... with a noise limit of 30 decibels",
+      "note": "SITING RESTRICTION: Lexington-Fayette (Kentucky) Urban County Planning Commission recommended zoning restrictions capping new data centers at 40,000 sq ft with a 30-decibel noise limit and greater setback from residential areas (one report also cites a 25 MW capacity cap). The city's data center moratorium (passed June 9, 2026) expires Oct 31, 2026 unless extended; a special council session for public input and a possible final vote was held Oct 6, 2026, but this sandbox could not confirm the outcome (search tools returned only pre-meeting coverage). No tracked project is sited in Lexington/Fayette County, KY currently. Flagging the Oct 6 outcome as worth a direct human check of Lexington city council records.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.selc.org/?p=41782",
+      "title": "NAACP Sues xAI for Illegal Pollution from Data Center Power Plant",
+      "publisher": "Southern Environmental Law Center",
+      "publicationDate": "2026-04-09",
+      "sourceType": "OTHER",
+      "excerpt": "seeks penalties up to $124,400 per day of violation",
+      "suggestedProjectName": "",
+      "note": "SITING RESTRICTION (older, flagging in case not yet logged): update to already-tracked project xai-macrohardrr-southaven. The NAACP, represented by SELC and Earthjustice, sued xAI/MZX Tech in the US District Court for the Northern District of Mississippi (filed ~April 2026) alleging the ~27-41 gas turbines (sources disagree on count) powering the Southaven site operated without a required Clean Air Act permit; separately SELC appealed the Mississippi Dept. of Environmental Quality's March 2026 decision to grant the air permit. This is dated April 2026, well outside the usual 24-72h window — including it because it directly bears on a tracked project's siting/permitting status and this sandbox could not confirm whether it was already captured; skip if the tracker already has it logged.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
