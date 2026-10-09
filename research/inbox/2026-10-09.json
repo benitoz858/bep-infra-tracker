@@ -1,0 +1,89 @@
+{
+  "submissions": [
+    {
+      "url": "https://memphistn.gov/wp-content/uploads/2026/08/Data-Center-Temporary-Moratorium-Ordinance-v3.pdf",
+      "title": "Memphis Data Center Temporary Moratorium Ordinance (draft, v3)",
+      "publisher": "City of Memphis",
+      "publicationDate": "2026-08-18",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "the pause shall remain in effect until the earlier of twelve (12) months following the effective date of this Ordinance",
+      "note": "SITING RESTRICTION: Memphis City Council voted 7-5 on 2026-10-06 to postpone its final vote on this year-long moratorium on NEW data-center approvals to 2026-10-20, after the meeting was disrupted by protests and a physical altercation (council member Yolanda Cooper-Sutton vs. sponsor J.B. Smiley Jr.). The draft ordinance would NOT apply retroactively to existing facilities — council chair Swearengen-Washington has stressed it is a pause, not a ban — but would block approval of new data centers in the city for 12 months or until comprehensive zoning rules are adopted, whichever comes first. This is squarely about future capacity, not any currently-tracked MW. Likely relevant to tracked projects 'xAI Colossus 2' and 'xAI MACROHARDRR' (xAI's Memphis-area footprint spans Tennessee/Mississippi) insofar as it could constrain any additional xAI/SpaceXAI buildout in the city, though neither existing site is named as exempted/covered in the ordinance text I could access. No numeric MW/CAPEX claim attached — the only hard figure is the 12-month pause duration quoted above. Sourced from the city's own posted ordinance PDF (primary); the Oct 6 vote and postponement itself is corroborated by multiple wire-syndicated local-TV reports (e.g. wsmv.com, kptv.com) and Newsweek, but I could not independently fetch those pages to re-verify exact wording (outbound fetch was blocked in this run) — recommend the reviewer open the ordinance link and a local report directly before citing the vote tally.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.kctv5.com/2026/10/06/independence-council-restricts-future-data-centers-after-nebius-backlash/",
+      "title": "Independence council restricts future data centers after Nebius backlash",
+      "publisher": "KCTV5 (Kansas City)",
+      "publicationDate": "2026-10-06",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Major data centers are defined as those with electrical loads greater than five megawatts",
+      "note": "SITING RESTRICTION: Independence, Missouri city council voted 6-0 on 2026-10-05 (reported 10-06) to amend its development ordinance so that any future 'major' data center (defined as >5 MW electrical load) now requires council approval, plus new setback-from-homes, generator-noise/testing-hours, and cooling-technology requirements. The new rules explicitly do NOT apply to the existing Nebius campus already under construction on ~400 acres at Highway 79 and Little Blue Parkway (that project is grandfathered). This follows a 6-month moratorium the same council passed 7-0 in July 2026 and sits atop ongoing local political fallout (a recall of a council member tied to the March 2026 Nebius tax-abatement vote). Note: this Nebius Independence, MO campus itself does not appear to be in the tracker yet — see companion submission below proposing it as a new project. Quote above is drawn from the cited news article as rendered by an automated web search/summarization tool; I could not independently re-fetch the page to confirm verbatim wording (outbound fetch was blocked in this run), so please confirm exact phrasing against the source before treating it as a direct quote.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://missionlocal.org/2026/10/sf-supervisors-pass-data-center-moratorium/",
+      "title": "SF supervisors pass data center moratorium",
+      "publisher": "Mission Local",
+      "publicationDate": "2026-10-06",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Until this happens, no data centers should be approved in San Francisco",
+      "note": "SITING RESTRICTION: San Francisco Board of Supervisors reportedly voted (unanimously, per multiple outlets) on 2026-10-06 to approve a 45-day interim zoning moratorium halting city approval of new data centers and expansions of existing ones (introduced by Supervisor Shamann Walton with co-sponsors Chan, Fielder and Chen). During the 45 days the Planning Department is to study energy/water/air-quality/land-use/community impacts; if significant impact is found, multiple outlets say the pause could be extended up to 22 months or converted into permanent controls. CAVEAT, flagged honestly: I could not independently fetch either the Board's legislative record or the news article (outbound fetch blocked in this run), so the '45-day' and '22-month' figures and the exact Oct 5 vs Oct 6 vote date rest on an automated search tool's reading of secondary sources that disagreed with each other on some details (one source described Oct 5 as only a 3-0 committee vote advancing the measure, not final passage). The quoted sentence above (Walton) is reasonably well-attested across sources but does not itself contain the 45-day figure. Recommend the reviewer verify against sf.gov's legislative record (File search for Walton's ordinance) before treating duration/vote-count as confirmed. No currently-tracked project is directly named.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/aligned-breaks-ground-on-gigawatt-scale-data-center-campus-in-pennsylvania/",
+      "title": "Aligned breaks ground on gigawatt-scale data center campus in Pennsylvania",
+      "publisher": "DatacenterDynamics",
+      "publicationDate": "2026-09-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "anchoring an estimated US$10 billion in regional economic investment",
+      "note": "NEW PROJECT (not currently in tracker — confirmed only 'Aligned Project Caprock' in Hale County, TX is tracked under Aligned Data Centers; this is a separate site). Aligned Data Centers broke ground ~2026-09-10 on 'Project Phoenix,' a 3-building, 2 GW campus in the Shippingport Industrial Park, Beaver County, Pennsylvania (~30 mi NW of Pittsburgh), on a site formerly home to the Bruce Mansfield coal plant (owned by Frontier Group of Companies). Power basis caveat: the 2 GW figure is Aligned's stated campus capacity target, NOT confirmed as IT load — the company says it will be served by dedicated onsite generation next to the neighboring former Shippingport Power Station (being rebuilt as a gas energy campus), with eventual excess sold back to PJM, and this is distinct from Frontier Group's own separate proposed 2.55 GW repowering of the same industrial park (do not double-count). CAPEX caveat: the '$10 billion' figure is described in coverage as 'regional economic investment' anchored by the project, which per CONTRIBUTING.md's rule may include broader economic impact rather than pure construction capex — treating it as LOW-confidence estimate, not confirmed capex. CEO Andrew Schaap is quoted saying the company supports PA Governor Shapiro's GRID standards and the Ratepayer Protection Pledge. I could not independently re-fetch the source to verify exact wording (outbound fetch blocked this run).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 2000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "2 GW stated as campus capacity target by Aligned at groundbreaking; basis (IT load vs. site/generation capacity) not specified by the company"
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 10000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Reported as 'estimated $10B in regional economic investment' anchored by the project — may include broader economic impact beyond construction capex, not stated as a confirmed build cost"
+        }
+      ]
+    },
+    {
+      "url": "https://www.independencemo.gov/community-faqs/nebius-data-center-faqs",
+      "title": "Nebius Data Center FAQs",
+      "publisher": "City of Independence, Missouri",
+      "publicationDate": "2026-07-05",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "equipped to support at least 800 megawatts of data center operations",
+      "note": "NEW PROJECT (not currently in tracker — checked all tracked 'Nebius' entries: Béthune/France, Highridge/PA, Lappeenranta/Finland, Vineland/NJ; none is this Missouri site). Nebius broke ground around mid-2026 on a ~400-acre campus (up to 4-10 buildings per city planning updates) in Independence, Missouri (Kansas City metro), described by trade press as Nebius's first gigawatt-scale US project. This is the same project exempted from Independence's new >5MW council-approval ordinance in the companion SITING RESTRICTION submission above. FIGURES CONFLICT ACROSS SOURCES — flagging per CONTRIBUTING.md rather than guessing: the city's own update cites 'at least 800 MW,' Nebius's own project materials reportedly say 'up to 1.2 GW,' and trade press describes a phased build (first 250 MW phase by Oct 2027, expanding toward ~1.1 GW by Dec 2029) powered by a new facility at the retired Blue Valley Power Plant site. Capex is deliberately left BLANK here, not guessed: city documents reportedly cite ~$6.6B for land/site plus '$10s of billions' for equipment, while one trade report cites a $150bn bond figure that looks implausible for a single project and is very likely a reporting error — none of this clears the bar for a confident capex entry. City council approved a Chapter 100 industrial tax incentive package for the project in March 2026 (5-2 vote). I could not independently re-fetch any of these pages to verify exact wording (outbound fetch blocked this run) — recommend the reviewer pull the city's own EASTGATE update PDF (independencemo.gov) directly to pin down the real power/capex figures before entering anything beyond the 800 MW estimate above.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 800,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "City planning-update figure ('equipped to support at least 800 MW'); conflicts with a separately reported Nebius company figure of up to 1.2 GW, so treated as an estimate pending primary-source confirmation"
+        }
+      ]
+    },
+    {
+      "url": "https://www.foxcarolina.com/2026/09/22/spartanburg-county-council-passes-data-center-moratorium-with-several-amendments/",
+      "title": "Spartanburg County Council passes data center moratorium with several amendments",
+      "publisher": "FOX Carolina",
+      "publicationDate": "2026-09-22",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The freeze only applies to facilities larger than 65 megawatts",
+      "note": "SITING RESTRICTION: Spartanburg County, SC council voted 5-1 around 2026-09-21 for a one-year freeze on new data centers above 65 MW; smaller projects remain allowed if sited in an established industrial park or former industrial site, cannot generate their own on-site electricity (except emergency backup), and are used mainly for data processing. Included for completeness/thoroughness even though it's slightly outside the ideal 24-72h window (~2.5 weeks old) and is single-sourced; no currently-tracked project is named in connection with it. Lowest-confidence item in this batch — I could not independently re-fetch the source to verify exact wording (outbound fetch blocked this run).",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
