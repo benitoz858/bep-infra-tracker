@@ -1,0 +1,55 @@
+{
+  "submissions": [
+    {
+      "url": "https://sfstandard.com/2026/10/06/data-center-moratorium-san-francisco/",
+      "title": "San Francisco Board of Supervisors passes 45-day data center moratorium",
+      "publisher": "The San Francisco Standard",
+      "publicationDate": "2026-10-06",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The San Francisco Board of Supervisors on Tuesday unanimously approved a 45-day moratorium on data centers",
+      "note": "SITING RESTRICTION: Board of Supervisors voted unanimously for a 45-day moratorium, effective immediately, pausing city approval of new data centers and expansions of existing facilities, while the Planning Department studies grid/water impacts and drafts long-term controls. A hearing in November could extend the pause to up to 22 months. Sponsored by Supervisor Shamann Walton (co-sponsors Chan, Fielder, Chen). No BEP-tracked project is currently sited in San Francisco, so no projectId attached -- flagging for the citywide restrictions record and in case of future siting there. Corroborated by missionlocal.org, sfist.com, nbcbayarea.com, kqed.org.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.ktvu.com/news/oakland-city-council-approves-45-day-moratorium-new-data-centers",
+      "title": "Oakland City Council approves 45-day moratorium on new data centers",
+      "publisher": "KTVU FOX 2 (Oakland/SF Bay Area)",
+      "publicationDate": "2026-10-06",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Oakland City Council approves 45-day moratorium on new data centers",
+      "note": "SITING RESTRICTION: Same week as San Francisco's parallel action, Oakland City Council passed (reported as 7-0, per localnewsmatters.org, on Councilmember Carroll Fife's proposal) an urgency measure pausing approvals related to data center development while the city studies effects on water supply, the electrical grid, and air quality and drafts regulations. No BEP-tracked project is currently sited in Oakland, so no projectId attached. Corroborated by nbcbayarea.com and sfist.com (which frames SF+Oakland as the first Bay Area cities to pass such moratoriums).",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://datacenterdynamics.com/en/news/anthropic-linked-366m-data-center-project-filed-for-in-cedar-creek-texas",
+      "title": "Anthropic-linked $366m data center project filed for in Cedar Creek, Texas",
+      "publisher": "DatacenterDynamics",
+      "publicationDate": "2026-10-08",
+      "sourceType": "PERMIT",
+      "excerpt": "710MW of site-rated redundant power using simple-cycle natural gas turbines that will support 490MW of IT capacity",
+      "suggestedProjectName": "Project Longhorn - Building One (Cedar Creek, Bastrop County, TX)",
+      "note": "NEW PROJECT. A $366M filing ('Project Longhorn - Building One') was submitted to the Texas Dept of Licensing and Regulation for a site on Earl Callahan Road, Cedar Creek, Bastrop County, TX (498,165 sq ft). Filing states 710MW of on-site gas-turbine site power supporting 490MW of IT load -- explicit site-vs-IT split, both figures from the state filing as reported by DCD, not independently verified by this agent (MEDIUM confidence, not HIGH, since sourced via press report of the filing rather than the filing document itself). IMPORTANT CAVEAT: the 'Anthropic-linked' tenant claim is UNCONFIRMED -- Austin Business Journal reports the developer is only 'in talks' with Anthropic PBC, and a separate report suggests some capacity may instead go to CoreWeave; neither company has confirmed. Per CONTRIBUTING.md guidance to skip MOU-stage vapor, recommend tracking this as a new project under its developer/filing identity (tenant TBD) rather than as an Anthropic project. Construction targeted to start 2026-11-30, complete 2028-01-31 per the filing. Notable context: this filing appears to proceed despite Gov. Abbott's Sept 21, 2026 order pausing new TCEQ environmental permits for TX data centers pending an ERCOT grid audit -- worth a human check on how this filing relates to that pause (see report summary).",
+      "claims": [
+        { "metricType": "POWER_MW", "numericValue": 710, "unit": "MW", "confidenceLevel": "MEDIUM", "methodology": "Site-rated power stated in TDLR filing, as reported by DatacenterDynamics" },
+        { "metricType": "POWER_MW", "numericValue": 490, "unit": "MW", "confidenceLevel": "MEDIUM", "methodology": "IT capacity stated in TDLR filing, as reported by DatacenterDynamics" },
+        { "metricType": "CAPEX_USD", "numericValue": 366000000, "unit": "USD", "confidenceLevel": "MEDIUM", "methodology": "Project cost stated in TDLR filing, as reported by DatacenterDynamics" }
+      ],
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://itbrief.co.uk/story/cx-tech-plans-gbp-16-5-billion-chapelcross-data-campus",
+      "title": "CX Tech plans £16.5 billion Chapelcross data campus",
+      "publisher": "IT Brief UK",
+      "publicationDate": "2026-10-09",
+      "sourceType": "PERMIT",
+      "excerpt": "a £16.5 billion technology campus at Chapelcross ... a 1GW data centre-led development on a former nuclear site",
+      "suggestedProjectName": "CX Tech Chapelcross Campus",
+      "note": "NEW PROJECT. CX Tech filed a Planning Permission in Principle application (ref 26/1649/PIP, validated 28 Sept 2026) with Dumfries and Galloway Council for an eight-building, ~1GW data-centre-led campus (~162,000 sqm floorspace, ~120MW per building) at the former Chapelcross nuclear power station site near Annan, Scotland. Developer-stated investment of £16.5bn (~$21.8B); phased construction proposed 2027-2035 if approved. Public comment period closes 2026-10-29; no planning decision yet (status: PLANNING/pending, not yet ANNOUNCED-confirmed in the sense of a committed build). Figures are developer-stated in the planning application itself (a primary filing), not yet independently confirmed or decided -- confidence set to MEDIUM pending the council's ruling. Local opposition flagged by Scottish Greens/Action to Protect Rural Scotland over grid strain; Scottish Government has signaled no hyperscale planning decisions before year-end, which may delay this. Corroborated by datacenterdynamics.com, itv.com, digit.fyi, datacentremagazine.com.",
+      "claims": [
+        { "metricType": "POWER_MW", "numericValue": 1000, "unit": "MW", "confidenceLevel": "MEDIUM", "methodology": "Developer-stated ~8 buildings x ~120MW in the planning application, per press coverage" },
+        { "metricType": "CAPEX_USD", "numericValue": 21830000000, "unit": "USD", "confidenceLevel": "MEDIUM", "methodology": "£16.5bn developer-stated investment, converted to USD by reporting outlets" }
+      ],
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
