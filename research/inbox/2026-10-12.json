@@ -1,0 +1,82 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.actionnews5.com/2026/10/06/data-center-moratorium-vote-ends-abruptly-amid-protests-fistfight/",
+      "title": "Data center moratorium vote ends abruptly amid protests, fistfight",
+      "publisher": "Action News 5 (WMC)",
+      "publicationDate": "2026-10-06",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "council voted 7-5 to postpone consideration of the moratorium and five related measures until October 20",
+      "suggestedProjectName": "xAI Colossus 2 (Memphis-area complex: also affects xAI Colossus 1 and xAI MACROHARDRR)",
+      "note": "SITING RESTRICTION: Memphis City Council postponed its vote on a proposed 12-month data center development moratorium (plus 5 related measures) to Oct 20, 2026, after the Oct 6 session ended in protests, chanting and a physical fight in the lobby. Concerns cited: xAI/SpaceXAI Colossus facilities' power and water use, air quality, noise. Directly concerns the Memphis/Southaven xAI Colossus 1, Colossus 2, and MACROHARDRR projects (all tracked). Could not attach a specific projectId: the live tracker API was unreachable from this research sandbox (outbound network policy blocked tracker.bepresearch.com), so matching was done against the repo's own data/projects.json snapshot (generated 2026-10-11) by name only. Maintainer should consider flagging on all three Memphis-area xAI entries. No moratorium is in effect yet; outcome depends on the Oct 20 vote.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://sfist.com/2026/10/07/san-francisco-oakland-pass-45-day-moratoriums-on-new-data-centers/",
+      "title": "San Francisco and Oakland Pass 45-Day Moratoriums on New Data Centers",
+      "publisher": "SFist",
+      "publicationDate": "2026-10-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "board of supervisors voted unanimously on Tuesday for a 45-day moratorium, effective at once",
+      "note": "SITING RESTRICTION: San Francisco's Board of Supervisors unanimously passed a 45-day moratorium (effective immediately) on new data center construction and on expansions of existing facilities, Oct 6, 2026; Oakland passed a similar measure the same week, reportedly the first Bay Area jurisdictions to do so. The Planning Department will study energy, water, air-quality, land-use and community impacts during the pause; one supervisor is quoted putting a possible extension at up to 220 days, another report says up to 22 months pending a Planning Commission hearing at the end of the 45 days — these two extension figures conflict across outlets and should be checked against the Board's legislative file. No tracked project is sited in San Francisco or Oakland, so this is not attached to an existing project; flagging as a new regional restriction and a notable precedent (AI's hometown city restricting data centers).",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://spectrumnews1.com/ky/louisville/news/2026/10/07/lexington-council-extends-data-center-ban",
+      "title": "Lexington council extends data center ban",
+      "publisher": "Spectrum News 1 (Kentucky)",
+      "publicationDate": "2026-10-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "council voted unanimously to extend a moratorium on new data center development until Oct. 2027",
+      "note": "SITING RESTRICTION: The Lexington-Fayette Urban County Council voted unanimously, after roughly three hours of public comment, to extend its data center development moratorium — originally set to expire Oct 31, 2026 — through October 2027. The same action advanced zoning language to bar large hyperscale data centers citywide and confine smaller ones to industrial zones, with reported limits of a ban on facilities over 50,000 sq ft, a 30-decibel noise cap, and a 25 MW energy cap (below the ~50 MW sought by at least one local developer). Planning staff were asked to create a dedicated 'exclusive use zone' category for minor data centers. No tracked project is sited in Lexington/Fayette County; flagging as a new/updated regional restriction.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000114036126032638/ef20080141_ex99-1.htm",
+      "title": "IREN Delivers Horizon 1 to Microsoft, Achieves NVIDIA Exemplar Cloud Status",
+      "publisher": "IREN Limited",
+      "publicationDate": "2026-08-13",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Horizon 1, the first of four 50MW IT-load deployments, has been delivered to and accepted by Microsoft",
+      "suggestedProjectName": "IREN Childress",
+      "note": "STATUS UPDATE for a tracked project (matched by name/slug 'iren-childress-horizon-for-microsoft' against the repo's data/projects.json snapshot dated 2026-10-11; could not confirm the live tracker's internal projectId because the API was unreachable from this sandbox — see end-of-run report). IREN's Aug 13, 2026 press release confirms Horizon 1 — the first of four planned 50MW IT-load, direct-to-chip liquid-cooled NVIDIA GB300 deployments at the Childress, TX campus — was delivered to and accepted by Microsoft, meeting the 'Q3 2026' handover target already recorded in the project's analyst notes (which were last verified 2026-07-29, before this event, so this postdates and is likely not yet reflected). Three more 50MW phases are due later in 2026, building to 200MW combined IT load at this campus under the Nov 2025, 5-year, $9.7B Microsoft cloud-services contract (that figure is contract/revenue value, not capex). Flagging despite the Aug 13 date being older than the usual 24-72h window because it appears to be new information relative to the tracker's last verification.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 50,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "IREN's own press release states Horizon 1 is a 50MW IT-load deployment, delivered to and accepted by Microsoft"
+        }
+      ]
+    },
+    {
+      "url": "https://www.nippon.com/en/news/yjj2026100101023/",
+      "title": "JERA to Build Large AI Data Center near Tokyo",
+      "publisher": "Jiji Press (Nippon.com)",
+      "publicationDate": "2026-10-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "a power capacity of up to 400,000 kilowatts, making it one of the biggest data centers in Japan",
+      "suggestedProjectName": "JERA-Dell-RHAELM Chiba AI Data Center",
+      "note": "NEW PROJECT: JERA, Dell, and RHAELM announced a non-binding memorandum of understanding (Oct 1, 2026) to build a behind-the-meter AI data center on land adjacent to JERA's Chiba thermal power station in Japan, with Apollo Global Management as RHAELM's strategic financial partner. Reported scope: up to 400 MW (400,000 kW) power capacity, investment of 'more than $15 billion' (~¥2.3 trillion) — both figures should be treated as estimates given the MOU stage (capex explicitly hedged as exceeding, not equal to, $15B). JERA provides land and power drawn directly from the adjacent plant (avoiding new transmission build), RHAELM develops/owns/operates/finances, Dell supplies rack-scale AI infrastructure. Phased operation targeted from 2028, full capacity ~2029. Per CONTRIBUTING.md guidance to skip MOU-stage announcements unless made by a principal company: included here because JERA, a principal developer/utility in the deal, is a direct party to the announcement, but confidence is kept LOW given the non-binding stage.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 400,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Reported as 'up to 400,000 kilowatts' for a non-binding MOU, per company statements relayed by Jiji Press"
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 15000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Reported as investment of 'more than $15 billion' for a non-binding MOU, per company statements relayed by Jiji Press"
+        }
+      ]
+    }
+  ]
+}
