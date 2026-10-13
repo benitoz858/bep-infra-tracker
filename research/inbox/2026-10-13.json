@@ -1,0 +1,54 @@
+{
+  "submissions": [
+    {
+      "url": "https://sfist.com/2026/10/07/san-francisco-oakland-pass-45-day-moratoriums-on-new-data-centers/",
+      "title": "San Francisco and Oakland Pass 45-Day Moratoriums on New Data Centers",
+      "publisher": "SFist",
+      "publicationDate": "2026-10-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "San Francisco and Oakland Pass 45-Day Moratoriums on New Data Centers",
+      "note": "SITING RESTRICTION: SF Board of Supervisors unanimously passed a 45-day moratorium on new data center approvals/expansions on Oct 6, 2026 (introduced by Sup. Shamann Walton: current rules rely on a 2001 Planning Code 'internet service exchange' definition that predates generative AI). Extendable up to 22 months pending a Planning Dept. study (energy, water, air quality, land use, community impact) due back in November. Oakland passed a parallel 45-day moratorium the same day. Two pending SF projects reportedly paused: NOVVA's Bayview expansion (400 Paul Avenue) and a 49.5 MW Dogpatch proposal — neither matches a project currently in the tracker by name, so this is filed as a jurisdiction-level restriction with no project attached; a human reviewer may want to check whether either site corresponds to an existing or new tracker entry. Corroborated by Bloomberg, SF Standard, KQED, Mission Local, and Local News Matters, all dated Oct 6-8, 2026. CAVEAT: WebFetch (page-fetch tool) was unavailable for this entire run due to an environment network block, so I could not independently pull the ordinance text or confirm wording beyond what WebSearch's secondary-source synthesis returned — recommend checking the SF Board of Supervisors Legistar file directly before treating any detail here as primary-verified.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://kvia.com/news/local-news/2026/10/09/hudspeth-county-confirms-15-billion-proposed-data-center/",
+      "title": "Hudspeth County confirms $15 billion proposed data center",
+      "publisher": "KVIA",
+      "publicationDate": "2026-10-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Hudspeth County confirms $15 billion proposed data center",
+      "suggestedProjectName": "Desert Haven Data Center (Kaufman & Company / ServerDomes Global)",
+      "note": "New project, not currently in tracker. Kaufman & Company and ServerDomes Global broke ground near Desert Haven, Hudspeth County, TX (~Oct 2026) on a reported geodesic-dome campus. County Judge Joanna MacKenzie said the company and property owner shared 'very little' information beforehand; ServerDomes' CEO has since apologized and scheduled a public meeting for Oct 27, 2026. Figures conflict across sources and none are company-primary: acreage is given as ~24,000 acres by most local outlets (KVIA, KTSM, Border Report, Hoodline, KFOX) but ServerDomes' own CEO has cited only ~2,000 acres; a 350 MW figure appears in KTSM reporting via a third-party aggregator with no stated IT-load-vs-site-power basis. I'm deliberately omitting a POWER_MW claim given that conflict — leave blank until a primary source (company statement, permit filing) resolves it. Texas counties have no zoning authority, so there is no permit/restriction angle here, just a community-notice controversy. CAVEAT: WebFetch was unavailable this entire run (environment network block), so this is reconstructed from WebSearch's secondary-source synthesis, not independently verified against original article text — recommend a human re-read the cited URL directly, especially to resolve the acreage and MW discrepancies, before raising any figure above LOW confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 15000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "$15B figure reported consistently by multiple local outlets (KVIA, KTSM, Border Report) but not yet confirmed via a company statement or filing; underlying acreage/scale figures conflict across the same sources."
+        }
+      ]
+    },
+    {
+      "url": "https://www.planetizen.com/news/2026/10/138555-one-nations-poorest-counties-receive-6-billion-data-center",
+      "title": "One of nation's poorest counties to receive $6 billion data center",
+      "publisher": "Planetizen",
+      "publicationDate": "2026-10-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "One of nation's poorest counties to receive $6 billion data center",
+      "suggestedProjectName": "Eagle Rock Big Woods Technology Park (Jefferson Davis County, MS)",
+      "note": "New project, not currently in tracker. Eagle Rock Partners is proposing a 3-building, ~2 million sq ft campus ('Big Woods Technology Park') on ~800 acres near Bassfield, Jefferson Davis County, MS. Power basis: on-site gas generation pending MS Dept. of Environmental Quality approval, not a grid draw — no MW figure has been disclosed by the developer and should stay blank rather than be estimated. Developer says it is not requesting tax abatements; projects ~200 permanent jobs and 1,000+ construction jobs; water use estimated at ~20,000 gal/day from the Catahoula Formation Aquifer via closed-loop cooling. At an Oct 5, 2026 county board meeting, residents presented a 950-signature petition requesting a temporary pause over water use and lack of public input before construction (reported as early as 2027) — this is active community opposition, not yet an enacted restriction; the county has no zoning, limiting the board's formal leverage. Worth a follow-up search in a few weeks to see whether this hardens into an ordinance (would then be a SITING RESTRICTION finding). Corroborated by Mississippi Today, Mississippi Free Press, and News From The States, all late Sept/early Oct 2026. CAVEAT: WebFetch was unavailable this entire run (environment network block); this finding is built from WebSearch's secondary-source synthesis rather than independently verified primary-source text — recommend a human re-read the cited coverage directly before raising confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 6000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "$6B figure attributed to the developer (Eagle Rock Partners) and reported consistently across three independent local outlets (Mississippi Today, Planetizen, Mississippi Free Press)."
+        }
+      ]
+    }
+  ]
+}
