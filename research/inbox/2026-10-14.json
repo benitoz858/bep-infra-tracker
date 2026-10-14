@@ -1,0 +1,89 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.theregister.com/on-prem/2026/10/02/power-approval-set-to-delay-oracles-wisconsin-ai-datacenter/5300832",
+      "title": "Power approval set to delay Oracle's Wisconsin AI datacenter",
+      "publisher": "The Register",
+      "publicationDate": "2026-10-02",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "a material risk that meaningful load is not available until mid-2028",
+      "suggestedProjectName": "Project Lighthouse (Oracle/Vantage, Port Washington, WI)",
+      "note": "STATUS CHANGE: Wisconsin PSC closed ATC's first transmission application without ruling on merits (~Sept 10, 2026); ATC refiled days later, restarting the statutory review this 1.3GW Oracle/Vantage/OpenAI campus needs to get grid power. Analyst note (Aterio, cited by Morgan Stanley) flags risk that full power slips to Oct 2028 vs Oracle's stated H2 2027 delivery guidance; Oracle maintains guidance is unchanged ('very much on track' per Sept earnings call). IT load vs site power: 1.3GW is the reported campus/site power figure, not a disclosed IT load. COULD NOT MATCH TO AN EXISTING PROJECT ID: tracker.bepresearch.com's API was unreachable this run (outbound network egress to it, and to generic domains, was blocked by this sandbox's policy) — please check for an existing tracked entry by name before creating a new one. QUOTE CAVEAT: WebFetch/curl were also blocked this run, so this excerpt is relayed via search-engine synthesis of outlets citing the same Morgan Stanley note, not independently confirmed against the primary article text — verify exact wording before relying on it.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 1300, "unit": "MW", "confidenceLevel": "LOW", "methodology": "Site/campus power capacity as widely reported by trade press (Register, Aterio, Morgan Stanley note); not a primary company-disclosed figure confirmed directly from Oracle or Vantage in this search"}
+      ]
+    },
+    {
+      "url": "https://newjerseymonitor.com/2026/10/01/nj-data-center-polluted-air-for-nearly-a-year-before-regulators-intervened/",
+      "title": "NJ data center polluted air for nearly a year before regulators intervened",
+      "publisher": "New Jersey Monitor",
+      "publicationDate": "2026-10-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "fined DataOne $1.07 million after finding 62 gas generators operating without air permits",
+      "suggestedProjectName": "DataOne (Nebius-operated, Microsoft is end customer), Vineland, NJ",
+      "note": "SITING RESTRICTION: New Jersey DEP issued what it calls its largest-ever fine against a data center ($1.07M, imposed ~Sept 22, 2026) after a Floodlight/Guardian investigation using a thermal drone found 62 unpermitted natural gas generators running at the Vineland, NJ site, reportedly for nearly a year before regulators intervened. DataOne has 45 days to obtain permits or stop using the generators (a compliance deadline, not an immediate shutdown — operation continues during that window). Ownership note: DataOne owns/operates the site; Nebius manages the servers/GPU clusters under a reported ~$17B arrangement; Microsoft is the end customer via its Nebius compute contract, not the owner/operator — some earlier secondary coverage describing this as a '$33B Microsoft-owned site' appears to conflate the Nebius deal value and the customer relationship; treat that $33B figure as unverified/likely incorrect. QUOTE CAVEAT: reconstructed from search-engine synthesis of this and related outlets (TechRadar, Floodlight), not independently fetched/confirmed against primary article text this run (WebFetch/curl were blocked) — verify before relying on it.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.bisnow.com/news/raleigh-durham/data-center-community-relations/raleigh-approves-6-month-pause-data-center-moratoriums-sweep-north-carolina",
+      "title": "Raleigh OKs 6-Month Data Center Pause As Moratoriums Sweep North Carolina",
+      "publisher": "Bisnow",
+      "publicationDate": "2026-10-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "data centers that are 10K SF or larger and use more than 5 megawatts of electricity",
+      "note": "SITING RESTRICTION: Raleigh, NC City Council voted 7-1 on Oct 6, 2026 to approve a 6-month moratorium (reported to run to ~April 2027) on new data center approvals above a 10,000 sq ft / 5 MW threshold, spending the first 2 months studying impacts and the next ~120 days drafting permanent zoning rules (noise/water/air/light). Councilmember Christina Jones cast the lone dissenting vote, arguing 6 months was too short; some residents pushed for a 32-month pause. The moratorium followed developer Beacon Partners withdrawing a ~100,000 sq ft project after local opposition. QUOTE CAVEAT: the 10K SF / 5MW threshold is cited by Bisnow to CBS reporting; not independently fetched/confirmed against the adopted ordinance text or primary article (WebFetch/curl blocked this run) — verify against the ordinance before relying on the exact thresholds.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.wmar2news.com/news/region/anne-arundel-county/anne-arundel-county-approves-moratorium-on-new-data-centers-through-2028",
+      "title": "Anne Arundel County approves moratorium on new data centers through 2028",
+      "publisher": "WMAR-2 News",
+      "publicationDate": "2026-10-05",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "voted 7-0 to approve an amended version of Bill 63-26, a moratorium through January 31, 2028",
+      "note": "SITING RESTRICTION: Anne Arundel County, MD Council voted 7-0 on Oct 5, 2026 to approve an amended Bill 63-26 — a moratorium on new privately-operated data center development running through Jan 31, 2028, or earlier if the county adopts permanent data-center legislation first. This replaces an earlier outright-ban version introduced by Councilmember Nathan Volke; projects already in development are generally allowed to continue. The bill also creates a work-study group to recommend permanent regulations (Councilmember Julie Hummer said the pause could lift early if that group reports sooner). QUOTE CAVEAT: reconstructed via search-engine synthesis of WMAR and The Banner coverage, not independently fetched this run (WebFetch/curl blocked) — verify exact bill language/dates before relying on it.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://spectrumnews1.com/ky/louisville/news/2026/10/07/lexington-council-extends-data-center-ban",
+      "title": "Lexington council extends data center ban",
+      "publisher": "Spectrum News 1",
+      "publicationDate": "2026-10-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "voted unanimously to extend a moratorium on new data center development until Oct. 2027",
+      "note": "SITING RESTRICTION: Lexington-Fayette Urban County (KY) Council voted unanimously around Oct 7, 2026 to extend its existing data-center moratorium (previously set to expire Oct 31, 2026) through October 2027, while it finalizes a permanent zoning amendment. NUMBERS CONFLICT BETWEEN SOURCES — flagging rather than resolving: July 2026 planning-commission coverage (WEKU/WUKY) describes a recommended cap of 40,000 sq ft (down from a staff-proposed 50,000 sq ft major/minor line) plus a 25 MW electricity cap, a 30dB 24-hr noise limit, and a buffer increase from 1,000 to 1,500 ft from homes/schools/daycares/health facilities; the Oct 7 Spectrum report instead describes the proposal as keeping the ban at 50,000 sq ft with the same 25 MW cap and 30dB noise limit. Which threshold the council actually adopted is unverified from these results — submitting only the undisputed fact (moratorium extended to Oct 2027); please confirm the final sq ft / MW caps against the council's adopted ordinance before recording those as confirmed figures. QUOTE CAVEAT: not independently fetched this run (WebFetch/curl blocked).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/aligned-breaks-ground-on-gigawatt-scale-data-center-campus-in-pennsylvania/",
+      "title": "Aligned breaks ground on gigawatt-scale data center campus in Pennsylvania",
+      "publisher": "DatacenterDynamics",
+      "publicationDate": "2026-09-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "a 2 GW campus representing roughly $10 billion in regional investment",
+      "suggestedProjectName": "Project Phoenix (Aligned Data Centers), Shippingport, PA",
+      "note": "NEW PROJECT (slightly outside the usual 24-72h window, but likely not yet tracked and high-value — flagging for review): Aligned Data Centers broke ground ~Sept 10, 2026 on 'Project Phoenix,' a three-building, 2 GW campus in the Shippingport Industrial Park, Beaver County, PA — Aligned's first PA campus. Site sits next to the former Shippingport Power Station (being redeveloped separately as a gas energy campus); Aligned's design runs off dedicated on-site generation rather than drawing from the grid, and Data Center Frontier reports the broader site could offer up to 3.6GW behind-the-meter in total (that 3.6GW figure covers more than just Aligned's 2GW campus — do not conflate them). Aligned cites ~$10B in regional investment, ~3,000 construction jobs, ~640 permanent operating jobs; land acquisition was ~650.9 acres for ~$223M (completed July 2026). IT load vs site power: 2GW is site/campus power capacity, not a disclosed IT load — leave IT load blank. QUOTE CAVEAT: excerpt reconstructed from search-engine synthesis across DCD/Baxtel/ConstructionReviewOnline/IntelligentCIO coverage, not independently confirmed against Aligned's own release (WebFetch/curl blocked this run) — verify before relying on it. Could not check against the tracker's project list (API unreachable) to confirm this isn't already tracked.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 2000, "unit": "MW", "confidenceLevel": "MEDIUM", "methodology": "Campus/site power capacity as stated in Aligned's announcement, relayed via trade press (DCD, Baxtel, ConstructionReviewOnline)"},
+        {"metricType": "CAPEX_USD", "numericValue": 10000000000, "unit": "USD", "confidenceLevel": "LOW", "methodology": "'roughly $10 billion in regional investment' figure relayed via trade press, not a precise disclosed capex breakdown"}
+      ]
+    },
+    {
+      "url": "https://energynow.com/2026/08/hundreds-of-millions-in-grid-deposits-linger-in-uncertainty-following-texas-data-center-pause/",
+      "title": "Hundreds of millions in grid deposits linger in uncertainty following Texas data center pause",
+      "publisher": "EnergyNow (syndicated Reuters reporting)",
+      "publicationDate": "2026-08-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "projects had to post $50,000 per megawatt in security to enter Batch Zero",
+      "note": "SITING RESTRICTION: utility connection rule, lower confidence on novelty. ERCOT/Texas requires large-load (data center) interconnection applicants to post $50,000/MW in security deposits to enter its 'Batch Zero' interconnection queue; a draft Sept 2026 rule reportedly would raise the non-refundable share of those deposits from 20% to 80%. A Breitbart piece citing the Wall Street Journal, dated Oct 13, 2026, describes utilities nationally tightening similar collateral requirements to screen out speculative 'phantom' AI data center load — this appears to be recirculating/extending the same underlying Texas policy rather than a brand-new rule. FLAGGING FRESHNESS CONCERN: the core $50k/MW figure traces to an Aug 7, 2026 Reuters report, well outside the usual 24-72h window — including it only because the Oct 13 coverage suggests it may still be unrecorded and is actively shaping other states' utility rules; please skip if the tracker already has this logged. QUOTE CAVEAT: relayed via search-engine synthesis, not independently fetched this run (WebFetch/curl blocked) — verify exact wording against a Reuters or WSJ original before relying on it.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
