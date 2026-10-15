@@ -1,0 +1,24 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/crusoe-files-for-48bn-data-center-campus-in-jayton-texas",
+      "title": "Crusoe files for $4.8bn data center campus in Jayton, Texas",
+      "publisher": "DataCenterDynamics",
+      "publicationDate": "2026-10-02",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Crusoe files for $4.8bn data center campus in Jayton, Texas",
+      "suggestedProjectName": "Crusoe Jayton (Project Hyper spur)",
+      "note": "New, not-yet-tracked Crusoe project: two data center buildings (~759,260 sq ft each, ~1.52M sq ft combined) filed with the Texas Dept. of Licensing & Regulation (TDLR) near Jayton, Kent County, TX (site along Country Road 233/P2390). The TDLR filings label both as 'spur buildings' of Crusoe's Project Hyper -- the already-tracked Childress campus (crusoe-goodnight-armstrong-county) is a separate, distinct site; Jayton is a new satellite location, not a duplicate. $4.8B is a combined construction-investment figure for the two Jayton buildings per the TDLR filings as reported by trade press -- this is a regulatory-filing figure, not a company capex statement, so it is recorded here at LOW confidence per the house rule that automated/extracted claims cap at LOW. No MW/IT-load figure has been disclosed for Jayton. Reported timeline: construction to start Jan 2027, buildings live May and July 2029 (Baxtel/TechRadar, same filings). Combined with Project Hyper's three Childress buildings (~$2.4B each per a separate TDLR filing dated 2026-09-11), total reported Project Hyper investment reaches ~$12B -- that $12B is a derived sum across multiple filings/sites, not a single stated figure, and is NOT itself recorded as a claim.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 4800000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Combined construction-investment figure for two Jayton buildings per Texas Dept. of Licensing & Regulation (TDLR) filings, as reported by trade press; not a company-stated capex figure."
+        }
+      ]
+    }
+  ]
+}
