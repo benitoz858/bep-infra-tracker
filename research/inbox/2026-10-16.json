@@ -1,0 +1,71 @@
+{
+  "submissions": [
+    {
+      "url": "https://region.com.au/wagga-ratepayers-seek-answers-over-giant-15-billion-gregadoo-data-centre/1004145/",
+      "title": "Wagga ratepayers seek answers over giant $15 billion Gregadoo data centre",
+      "publisher": "Region Group (region.com.au)",
+      "publicationDate": "2026-10-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "a potential electricity demand of 1.4 gigawatts",
+      "suggestedProjectName": "CDC Gregadoo (Wagga Wagga)",
+      "note": "NEW PROJECT. CDC Data Centres is proposing a four-building campus at Ashfords Road, Gregadoo (Wagga Wagga, NSW, Australia), ~63.4 ha of a 103.8 ha site, with reported capex of AUD 15bn (~USD 10bn at approx. Oct-2026 FX, not confirmed in USD by any source, so left out of claims) and up to 1.4GW of power demand. On 12 Oct 2026 Wagga Wagga City Council voted in closed session to authorize its General Manager to contract to sell the land to CDC; the project still requires NSW State Significant Development approval and is not yet approved by the state government. 1.4GW figure appears to be site/grid power demand, not confirmed IT load. Distinct from the separate IREN Redbank proposal also near Wagga Wagga (see companion submission) - do not conflate the two campuses.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1400,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Stated in CDC's project scoping materials as potential electricity demand; reported secondhand by Region.com.au, not independently fetched from CDC's own filing"
+        }
+      ]
+    },
+    {
+      "url": "https://stocktwits.com/news-articles/markets/equity/iren-s-redbank-campus-adds-900-mw-to-its-plans-but-power-is-not-secured-yet/cZxfkVMRBpn",
+      "title": "IREN's Redbank Campus Adds 900MW To Its Plans, But Power Is Not Secured Yet",
+      "publisher": "Stocktwits",
+      "publicationDate": "2026-10-14",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "not included in our announced 5GW secured-power portfolio",
+      "suggestedProjectName": "IREN Redbank (Wagga Wagga)",
+      "note": "NEW PROJECT, early stage. IREN disclosed (via company social post, relayed by Stocktwits) a proposed 900MW data center campus near Wagga Wagga, NSW, Australia - 'Redbank' - separate from its existing Childress/Sweetwater (TX) and Bundey (SA, 800MW) sites already tracked/known. Company explicitly says this capacity is NOT part of its already-announced 5GW secured-power portfolio and is in early assessment, with grid connection targeted from 2029 and reported investment potentially exceeding AUD 10bn (~USD 7bn, as estimated by secondary press, not company-confirmed). IREN shares fell ~12% the day of disclosure per market commentary (not verified independently). 900MW figure is the company's target site/grid power, not a confirmed IT load figure, and power/interconnection is explicitly not yet secured.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 900,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Company-stated target capacity for proposed campus (via company post, not yet an ASX/Nasdaq filing seen directly); power/interconnection explicitly not secured at time of disclosure"
+        }
+      ]
+    },
+    {
+      "url": "https://www.newsquawk.com/headlines/american-electric-power-aep-plans-to-invest-usd-4bln-to-advance-a-new-702-mw-fuel-cell-generation-project-near-cheyenne-wyoming-under-a-long-term-20-year-ppa-with-google-googl",
+      "title": "American Electric Power (AEP) plans to invest USD 4bln to advance a new 702 MW fuel cell generation project near Cheyenne, Wyoming under a long-term 20-year PPA with Google (GOOGL)",
+      "publisher": "Newsquawk",
+      "publicationDate": "2026-10-14",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "plans to invest USD 4bln to advance a new 702 MW fuel cell generation project near Cheyenne Wyoming under a 20-year PPA with Google",
+      "suggestedProjectName": "Google Cheyenne (Project Tembo)",
+      "note": "NEW POWER DISCLOSURE for an UNTRACKED Google campus. Google was revealed in July 2026 as the owner of 'Project Tembo' (formerly 'Project Jade'), a planned 2.7GW, four-data-hall campus near Cheyenne, Wyoming (716 acres, Switchgrass Industrial Park; Google subsidiary Jupiter Star Holdings took over development from Crusoe) - this campus is not currently in the tracker and is suggested as a new project. This specific finding (Oct 14, 2026) is narrower: AEP plans to invest ~USD 4bn to build a dedicated 702MW fuel-cell GENERATION plant (Bloom Energy solid-oxide units, entity 'Cheyenne Fuel Cell', 92% AEP / 8% Basalt Infrastructure Partners funds) under a 20-year PPA to supply Google. 702MW is generation capacity for one power asset, NOT the full campus's site power or IT load - Project Tembo's total eventual demand (2.7GW) is far larger and will draw on multiple power sources (this plant, Tallgrass Energy's planned on-site generation hub, and utility power from Black Hills Energy). Construction targeted to start 2026, full operation by end-2028. No company 8-K/press release was directly fetched (network access to AEP's and Google's own newsroom was unavailable to this agent); figures are as relayed identically across multiple financial wires (Newsquawk, Placera, goldesel.de) on the same day, which is why MEDIUM rather than HIGH confidence is used.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 702,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "AEP-stated nameplate capacity for the dedicated Cheyenne Fuel Cell generation plant, relayed by financial news wires; this is generation capacity under a bilateral PPA, not the full Project Tembo campus's site power or IT load"
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 4000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "AEP-stated construction cost for the fuel-cell plant itself (not the broader Project Tembo campus capex), relayed by financial news wires; primary AEP release not directly fetched"
+        }
+      ]
+    }
+  ]
+}
