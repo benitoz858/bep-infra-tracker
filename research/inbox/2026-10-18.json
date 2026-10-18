@@ -1,0 +1,44 @@
+{
+  "submissions": [
+    {
+      "url": "https://sfstandard.com/2026/10/16/mayor-lurie-data-center-moratorium",
+      "title": "San Francisco Mayor Signs 45-Day Data Center Moratorium",
+      "publisher": "The San Francisco Standard",
+      "publicationDate": "2026-10-16",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Mayor Daniel Lurie on Friday signed the moratorium, which lasts 45 days",
+      "note": "SITING RESTRICTION: San Francisco enacted a 45-day pause on new data-center approvals, covering expansions of existing facilities as well as new builds, while the Planning Department studies impacts; it can extend up to 22 months if a significant environmental impact is found. No tracked SF-area project in the current snapshot, but this is a notable new restriction given SF's status as an AI hub. VERIFICATION CAVEAT: WebFetch was non-functional for the entire research session (DNS resolution failed for every domain tested, including google.com), so this excerpt is taken from WebSearch's extracted summary of the article and could not be independently re-confirmed word-for-word against the live page. Please verify the exact quote before promoting.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.axios.com/local/raleigh/2026/10/07/duke-energy-agrees-on-new-rules-for-large-energy-users-like-data-centers",
+      "title": "Duke Energy Reaches Settlement on Large-Load Tariff for Data Centers in North Carolina",
+      "publisher": "Axios Raleigh",
+      "publicationDate": "2026-10-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "large-load customers of 50 MW or more with an 80% load factor that sign an electric service agreement after June 1, 2026",
+      "note": "SITING RESTRICTION: Duke Energy's two NC utilities, the NC Public Staff, and (per reporting) Amazon, Google, Meta and Microsoft agreed to a large-load tariff for data centers: a separate High Load Factor rate schedule, minimum monthly bills near 75% of projected demand, and upfront/deposit requirements for dedicated facilities and shared grid upgrades. Still needs NC Utilities Commission approval, reportedly expected around mid-November 2026. Possibly relevant to the tracked North Carolina project 'AWS Richmond County' (UNDER_CONSTRUCTION) since Duke Energy Progress serves that region -- a human should confirm the utility match before linking, since this could not be verified against the live tracker (see caveat below). VERIFICATION CAVEAT: WebFetch was non-functional this entire session (DNS resolution failed for every domain, confirmed against google.com), and the live tracker API at tracker.bepresearch.com was also unreachable (DNS + proxy policy denial), so neither this quote nor the Richmond County project link could be independently re-verified. Please verify before promoting.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://spectrumnews1.com/ky/louisville/news/2026/10/07/lexington-council-extends-data-center-ban",
+      "title": "Lexington Council Extends Data Center Moratorium to October 2027",
+      "publisher": "Spectrum News 1 Kentucky",
+      "publicationDate": "2026-10-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Council members voted unanimously to extend a moratorium on new data center development until Oct. 2027",
+      "note": "SITING RESTRICTION: Lexington, KY extended its data-center moratorium (first passed June 2026, previously set to expire Oct. 31, 2026) to October 2027, and separately passed a zoning text amendment: bans facilities over 50,000 sq ft, caps energy use at 25 MW, adds noise limits, and restricts smaller facilities to industrial zones. Note: one earlier (July 2026) report cited a 40,000 sq ft cap instead of 50,000 -- the October reports consistently say 50,000, but the final adopted ordinance text should be checked. No tracked Lexington project in the current snapshot; flagging as a new-market restriction precedent. VERIFICATION CAVEAT: WebFetch was non-functional this session (DNS resolution failed for every domain tested), so this excerpt is from WebSearch's extracted summary and could not be independently re-confirmed against the live article. Please verify before promoting.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://baxtel.com/news/memphis-council-delays-vote-on-proposed-year-long-data-center-moratorium-amid-protests",
+      "title": "Memphis Council Delays Vote on Proposed Data Center Moratorium Amid Protests",
+      "publisher": "Baxtel",
+      "publicationDate": "2026-10-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The Memphis City Council postponed its planned final vote on Ordinance 5982, a 12-month data center moratorium, to October 20, 2026",
+      "note": "SITING RESTRICTION (pending, not yet decided): Memphis City Council has twice postponed a final vote on Ordinance 5982, a proposed 12-month moratorium on new data-center approvals; the vote is now scheduled for October 20, 2026 -- two days after this submission. Council has said it would not apply to xAI's existing sites but would pause approval of new ones pending a zoning review. Directly relevant to the tracked, UNDER_CONSTRUCTION project 'xAI Colossus 2' (Memphis, TN) -- flagging ahead of the vote since the outcome is unknown; recommend a human follow up after Oct 20 to log the actual result. The Oct 6 council meeting was reportedly disrupted by a fight and police intervention; sources also disagree on the procedural vote tally (7-5 vs 6-5), noted here for caution. VERIFICATION CAVEAT: WebFetch was non-functional this session (DNS resolution failed for every domain tested), so this excerpt is from WebSearch's extracted summary and could not be independently re-confirmed against the live article. Please verify before promoting.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
