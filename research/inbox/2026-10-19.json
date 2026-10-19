@@ -1,0 +1,111 @@
+{
+  "submissions": [
+    {
+      "url": "https://bridgemi.com/michigan-environment-watch/township-vote-paves-way-for-michigans-second-hyperscale-data-center/",
+      "title": "Michigan's second hyperscale data center is poised to be built after a metro Detroit township's vote",
+      "publisher": "Bridge Michigan",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "DTE said the deal would save other customers $1.7 billion and would require Google to pay up to $2.5 billion",
+      "suggestedProjectName": "Google Van Buren Township",
+      "note": "NEW PROJECT. Van Buren Township Planning Commission approved (5-1) the final site plan for a 1 GW Google data center on a 280-acre site near Detroit Metro Airport. The Michigan Public Service Commission unanimously approved DTE Energy's 20-year power-supply and clean-capacity contracts for the project on Oct. 1, 2026 (the $1.7B/$2.5B figures are rate-case terms from that filing, not project capex). No confirmed capex figure found; 1 GW is site/contract capacity per DTE, not a confirmed IT load. Exact date of the planning-commission vote not confirmed from secondary reporting (described only as 'Wednesday night', likely the week of Oct. 12-16, 2026) — verify via Van Buren Township records before using. Not matched to any project currently in the tracker.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "1 GW stated by DTE officials and confirmed by Google as end user per Bridge Michigan reporting; describes site/contract capacity, not a confirmed IT load figure."
+        }
+      ]
+    },
+    {
+      "url": "https://www.fox19.com/2026/10/16/meta-revealed-partner-2000-acre-nky-data-center-residents-pushback/",
+      "title": "Meta revealed as partner in 2,000-acre NKY data center as residents pushback",
+      "publisher": "Fox19 (WXIX)",
+      "publicationDate": "2026-10-16",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "the initial investment will be around $15 billion, with the potential for up to $800 billion invested over the life of the project",
+      "suggestedProjectName": "Meta Maysville / Mason County",
+      "note": "NEW PROJECT. Mason County Judge-Executive Owen McNeill named Meta on Oct. 13, 2026 as the company behind a ~2,000-acre hyperscale campus in Maysville, KY, which the fiscal court approved in May 2026 and for which it passed a community benefits agreement (>$115M) at its Oct. 13 meeting. Capex figures conflict sharply across outlets: Fox19 reports ~$15B initial investment with up to $800B over the life of a 40-year agreement; DataCenterDynamics reports $10B for Meta's commitment specifically. Treat all capex as unconfirmed/estimated pending a primary company or county filing — do not average or pick one without checking the underlying agreement text. Project also faces two pending resident lawsuits over the deal.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 15000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Initial investment figure per Fox19, attributed to county announcement; DataCenterDynamics separately reports $10B for Meta's commitment and a 40-year agreement cites up to $800B lifetime — figures are not reconciled across outlets."
+        }
+      ]
+    },
+    {
+      "url": "https://datacenterdynamics.com/en/news/powerhouse-big-watt-secure-approval-for-1gw-behind-the-meter-campus-in-taylor-texas",
+      "title": "PowerHouse, Big Watt secure approval for 1GW behind-the-meter campus in Taylor, Texas",
+      "publisher": "DataCenterDynamics",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "designed to deliver up to 1GW of data center capacity using dedicated, behind-the-meter power via a new 750MW natural gas plant",
+      "suggestedProjectName": "Big Watt / PowerHouse Taylor Technology Campus",
+      "note": "NEW PROJECT. Taylor, TX city council unanimously approved an economic development agreement (previously 'Project Mustang') for a 664-acre, up-to-1GW campus between Big Watt Digital and PowerHouse Data Centers, announced mid-October 2026. The 1GW figure is site/campus capacity behind a new 750MW on-site gas plant, not a confirmed IT load; first phase targets 500MW with first power in H1 2028, full build 2027-2029. Economic-impact ($4.8B) and tax-revenue figures trace to a single secondary source (CRE Daily) and are not included here as a claim. Exact announcement/approval date not independently confirmed — sourced via trade press (DCD, W.Media, CRE Daily), no primary company or city release located.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Described by trade press as the campus's maximum behind-the-meter capacity ('up to 1GW'), not a confirmed IT load or a company-stated firm commitment."
+        }
+      ]
+    },
+    {
+      "url": "https://spectrumnews1.com/ky/louisville/news/2026/10/07/lexington-council-extends-data-center-ban",
+      "title": "Lexington council extends data center ban",
+      "publisher": "Spectrum News 1",
+      "publicationDate": "2026-10-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "zoning text amendment that bans data centers larger than 50,000 square feet, cap energy use at 25 megawatts",
+      "note": "SITING RESTRICTION: Lexington-Fayette Urban County Council (Kentucky) extended its data center moratorium — originally set to expire Oct. 31, 2026 — through October 2027, and separately passed a zoning text amendment capping new data centers at 50,000 sq ft and 25 MW of energy use, with added noise limits. City asked its planning commission to create a separate zoning classification for smaller data centers. This is a city-wide policy, not tied to one site, so no projectId/suggestedProjectName is attached — a reviewer should check whether any tracked project in Fayette County, KY is affected. Exact vote date is unclear in secondary reporting (Oct. 6 special session vs. Oct. 8 regular meeting cited in different pieces from the same outlet).",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://sfstandard.com/2026/10/06/data-center-moratorium-san-francisco/",
+      "title": "San Francisco passes data center moratorium",
+      "publisher": "The San Francisco Standard",
+      "publicationDate": "2026-10-06",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Board of Supervisors unanimously approved a 45-day moratorium on new data centers on Tuesday, October 6, 2026",
+      "note": "SITING RESTRICTION: San Francisco Board of Supervisors unanimously passed a 45-day moratorium (introduced by Supervisor Shamann Walton) on new data center development and on expansion of existing facilities, effective immediately. Covers at least a NOVVA expansion at 400 Paul Avenue (Bayview) and a Dogpatch waterfront project by name in reporting. Planning Department is to study energy/water/air-quality/land-use impacts before a November hearing that could extend the pause to 22 months. One secondary source (Let's Data Science) describes only committee-level advancement (3-0, Oct. 5) rather than final Board passage — multiple other outlets (Mission Local, Bloomberg Tax, SFist, NBC Bay Area) report the full Board vote as final, which I weight as more reliable. City-wide policy; no single project attached.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.indexjournal.com/news/greenwood-county-council-denies-data-center-text-amendment-advances-moratorium/article_8375e626-6fd2-424d-b8b3-3214a885a825.html",
+      "title": "Greenwood County Council denies data center text amendment, advances moratorium",
+      "publisher": "Index-Journal",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Council then voted 4-3 to approve an amended version that excludes data centers from those districts",
+      "note": "SITING RESTRICTION: Greenwood County, SC council voted 4-3 to amend Ordinance 2026-19 so that data centers are excluded from the I-1, I-2 and RDD zoning districts where they would otherwise have been a conditional use — per County Manager Toby Chappell, the practical effect is that data centers are not permitted anywhere in the county, since no district now allows them. Council separately passed a one-year data center moratorium (also 4-3; the planning commission had recommended 24 months). Exact vote date not confirmed from available excerpts — flagging for a human to verify against the Index-Journal's dated edition pages before treating as current. City/county-wide policy; no single project attached.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.foxcarolina.com/2026/10/07/judge-dismisses-lawsuit-challenging-28b-valara-data-center-spartanburg-county/",
+      "title": "Judge dismisses lawsuit challenging $2.8B Valara data center in Spartanburg County",
+      "publisher": "Fox Carolina",
+      "publicationDate": "2026-10-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Judge dismisses lawsuit challenging $2.8B Valara data center in Spartanburg County",
+      "suggestedProjectName": "Valara Spartanburg County",
+      "note": "LEGAL STATUS UPDATE on a project not currently in the tracker. On Oct. 6, 2026, Judge J. Derham Cole Jr. dismissed Concerned Citizens of Spartanburg County's suit challenging the $2.8B Valara Holdings data center's zoning classification, ruling the group hadn't shown specific harm and should have first appealed to the county Board of Zoning Appeals; he called a parallel challenge to a second permit (four new buildings, a power yard, cooling systems) premature since that application is still pending. Does not resolve whether the project was properly classified; opponents plan to appeal (per Southern Environmental Law Center). Separately, in August 2026 SC regulators ruled the facility isn't subject to public-utility power-plant rules since it won't export to the grid — a related but distinct siting-relevant ruling a reviewer may want tracked alongside this one. $2.8B capex figure is repeated consistently across multiple outlets but no primary filing was located to confirm it directly.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 2800000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Figure appears consistently across multiple news outlets (Fox Carolina, WRDW) describing the Valara project, but no primary company/permit filing was located to confirm it directly."
+        }
+      ]
+    }
+  ]
+}
