@@ -1,0 +1,179 @@
+{
+  "submissions": [
+    {
+      "url": "https://epoch.ai/data/data-centers-documentation/changelog",
+      "title": "AI Data Centers directory — changelog",
+      "publisher": "Epoch AI",
+      "publicationDate": "2026-04-22",
+      "sourceType": "INDUSTRY_REPORT",
+      "excerpt": "only 200 megawatts (or about 300 MW of total facility power by our estimate) was operational for Stargate Abilene",
+      "projectId": "stargate-abilene-texas",
+      "note": "AUDIT: [Project: Stargate Abilene — slug: stargate-abilene-texas] Tracker's confirmed_power_mw=200 and a metric row (300 MW, confidence=CONFIRMED, basis='IT load', methodology '200 MW operator-confirmed... Site target 1.2 GW') cite epoch.ai/publications/openai-stargate-where-the-us-sites-stand. Epoch's own changelog (2026-04-22 entry) shows this is inverted: 200 MW is only what an Oracle post 'implied', not a clean operator confirmation, and 300 MW is EPOCH'S OWN ESTIMATE of total facility/site power — not IT load, and not operator-stated. Recommend the CONFIRMED/300/IT-load row be corrected to reflect that neither figure is a clean operator confirmation, and that 300 MW (if kept) be relabeled as an Epoch analyst estimate of site power, not confirmed IT load. Separately, the cited 300 MW on-site gas-turbine figure (datacenterknowledge article) does not match the 360.5 MW figure independently reported via a Parker Hannifin equipment filing — worth a second look, source not re-verified here due to a WebFetch outage during this audit (verification relied on WebSearch-returned snippets of the Epoch changelog, not a direct page fetch).",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 300,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Epoch AI's own analyst estimate of total facility/site power (not IT load), derived from an Oracle post that only 'implied' ~200 MW was operational as of 2026-04-22. Not an operator-confirmed figure — recommend downgrading from CONFIRMED/IT-load to this framing."
+        }
+      ]
+    },
+    {
+      "url": "https://en.sharikatmubasher.com/media-hub/news/21485062/pifs-humain-nvidia-to-build-500-megawatt-data-center-in-kingdom?lang=en",
+      "title": "PIF's HUMAIN, NVIDIA to build 500-megawatt data center in Kingdom",
+      "publisher": "Sharikat Mubasher",
+      "publicationDate": "2025-05-14",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "HUMAIN plans to build AI factories with a projected capacity of up to 500 megawatts over five years",
+      "projectId": "humain-ai-factories-phase-1-riyadh-dammam",
+      "note": "AUDIT: [Project: HUMAIN AI Factories Phase 1 — slug: humain-ai-factories-phase-1-riyadh-dammam] Tracker records estimated_power_mw=200 at HIGH confidence, citing the GlobeNewswire HUMAIN/NVIDIA press release (2025-05-13) as the source. That same press release's own capacity language is 'a projected capacity of up to 500 megawatts' (Kingdom-wide, 5-year target) — not 200 MW. The 200 MW figure appears to actually trace to a different, uncited source (a DataCenterDynamics interview with CEO Tareq Amin reporting Riyadh and Dammam would each have 'an initial capacity of 100MW', i.e. 100+100=200MW combined) — recommend either re-citing DCD for the 200MW figure or correcting the figure/label to 500MW program-wide. Separately: expected_opening_date (2026-06-30) has passed with status still UNDER_CONSTRUCTION. Multiple independent analyses (vision2030.ai, dated 2026-07-31 and 2026-09-27) state no public source confirms either the Riyadh or Dammam site is operational as of late Sept 2026, and HUMAIN has twice declined to disclose delivery progress; a Feb-2026 company guidance update reportedly retargeted Riyadh Phase 1 commissioning to Q3 2026. Recommend updating expected_opening_date and/or status to reflect the confirmed delay rather than leaving the passed date unflagged.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 500,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Primary HUMAIN/NVIDIA press release's own stated 5-year program-wide target ('up to 500 megawatts'), not yet operating. Corrects a mismatch where the tracker's cited source does not contain the 200 MW figure currently recorded."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/softbank-to-spend-up-to-75-billion-on-french-ai-data-centers",
+      "title": "SoftBank to spend up to $87 billion on French AI data centers",
+      "publisher": "Tom's Hardware",
+      "publicationDate": "2026-05-31",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "first phase of 45 billion euros to bring 3.1 GW of data center capacity to the Hauts-de-France region by 2031",
+      "projectId": "softbank-france-ai-program-hauts-de-france",
+      "note": "AUDIT: [Project: SoftBank France Program — slug: softbank-france-ai-program-hauts-de-france] Tracker scopes this row specifically to Hauts-de-France and records estimated_power_mw=5000 / capex $87B at HIGH confidence. Multiple independent outlets (Tom's Hardware, Yahoo Finance/Reuters, Quartz) reporting on SoftBank's own May 2026 announcement are consistent that the Hauts-de-France-specific FIRST PHASE is 3.1 GW / ~€45B (~$52B) by 2031 (sites: Dunkirk/Loon-Plage, Bosquel, Bouchain), while 5 GW / €75B ($87B) is SoftBank's NATIONAL France-wide total including additional, as-yet-unsited capacity elsewhere in France. This looks like a national total recorded as if it were the regional figure. Recommend either rescoping this row to the 3.1 GW/~$52B Hauts-de-France first phase and creating a separate national/program-level row for the 5 GW/$87B total, or clearly relabeling the existing figures as national-program totals. The tracker's own note 'Basis: unclear' at HIGH confidence for the 5 GW figure remains unresolved — no source found specifies IT load vs. site power for either the 3.1 GW or 5 GW figures. $87B vs. Bloomberg's ~$75B headline is NOT a discrepancy — same figure, EUR vs USD.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 3100,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "SoftBank's own announced Hauts-de-France-specific first-phase target, by 2031 (Dunkirk, Bosquel, Bouchain sites). The existing 5000 MW/$87B tracker figures appear to be the France-wide national total, not specific to this region — recommend splitting the rows."
+        }
+      ]
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/softbanks-sb-energy-to-build-and-operate-openais-12gw-stargate-data-center-in-milam-county-texas/",
+      "title": "SoftBank's SB Energy to build and operate OpenAI's 1.2GW Stargate data center in Milam County, Texas",
+      "publisher": "Data Center Dynamics",
+      "publicationDate": "2026-01-12",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "OpenAI has also selected SB Energy to build and operate its previously-announced 1.2 GW data center site in Milam County",
+      "projectId": "stargate-milam-county",
+      "note": "AUDIT: [Project: Stargate Milam County — slug: stargate-milam-county] Tracker currently records no MW figure for this site, with the note 'capacity was not disclosed, so none is recorded' — accurate as of the original Sept 2025 OpenAI five-sites announcement, but now stale. Since a Jan 2026 SoftBank/OpenAI $1B investment in SB Energy, SB Energy and OpenAI have repeatedly and specifically disclosed Milam County's target capacity as 1.2 GW (SB Energy to 'build and operate' the site, powered by new solar generation and battery storage per SB Energy's own statements). This is a disclosed TARGET, not a confirmed/energized figure — recommend adding as estimated_power_mw, basis site/generation power (solar+battery), not IT load, and NOT confirmed.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1200,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "SB Energy/OpenAI's disclosed target capacity for the Milam County site (announced alongside SoftBank and OpenAI's Jan 2026 $1B investment in SB Energy). Basis: site/generation power (solar + battery storage, per SB Energy) — a future target, not an energized or confirmed figure."
+        }
+      ]
+    },
+    {
+      "url": "https://www.neom.com/en-us/newsroom/HUMAIN-and-DataVolt-to-develop-AI-data-center-in-NEOM",
+      "title": "HUMAIN partners with DataVolt to jointly develop 100MW of a 360MW AI data center project in NEOM",
+      "publisher": "NEOM",
+      "publicationDate": "2026-08-31",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "expanded their partnership to develop 100 MW of a 360 MW AI-ready data center at Oxagon",
+      "projectId": "datavolt-oxagon-ai-factory-neom",
+      "note": "AUDIT: [Project: DataVolt Oxagon — slug: datavolt-oxagon-ai-factory-neom] Tracker records only the original Feb 2025 1.5 GW/$5B ultimate-campus target (basis unclear) with no construction progress. A 2026-08-31 NEOM/HUMAIN/DataVolt announcement (LEAP 2026, Riyadh) discloses a new, more concrete first-phase scope not currently reflected: DataVolt's Oxagon campus first phase is sized at 360 MW, of which HUMAIN is now jointly developing 100 MW, with construction (groundbreaking) underway and first 100 MW targeted for 2028. Recommend adding this as a separate, more concrete near-term phase metric alongside (not replacing) the existing 1.5 GW ultimate target, and adding HUMAIN as a partner/supplier on this row. Still a construction/announced target, not an energized or confirmed figure.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 360,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "NEOM's own primary announcement (2026-08-31, LEAP 2026): DataVolt Oxagon campus first-phase target is 360 MW, with HUMAIN jointly developing a 100 MW portion now under construction. Basis: site power (renewable/wind+solar per NEOM) — a target, not yet energized."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kshb.com/news/local-news/data-centers/northland-ai-data-center-withdraws-bond-application-with-port-kc",
+      "title": "Northland AI data center withdraws bond application with Port KC",
+      "publisher": "KSHB",
+      "publicationDate": "2026-06-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "after further discussions with the project developer, they have agreed to voluntarily withdraw their application",
+      "projectId": "lambda-kansas-city",
+      "note": "AUDIT: [Project: Lambda Kansas City — slug: lambda-kansas-city] expected_opening_date (2026-06-30) has passed while status remains UNDER_CONSTRUCTION, and last_verified_at is from 2026-07-28. KSHB reports Lambda's Kansas City project ('Project Blitz') withdrew its bond/incentive application with Port KC around May/June 2026 amid community opposition over energy and water use, and amid a Missouri DNR finding that utility Evergy would not have full power supply available by Lambda's planned power-on date. No subsequent (July-Oct 2026) news found confirming resumption, relocation, or formal cancellation — the public trail goes cold after the withdrawal, and Lambda did not respond to media requests for comment. The MW/GPU/capex figures already in the tracker (24 MW, 10,000 GPUs, $500M) still check out against the original Oct 2025 PRNewswire announcement and are not themselves wrong, but recommend flagging the project's status as uncertain/at-risk (e.g. DELAYED, pending manual confirmation) rather than leaving it silently UNDER_CONSTRUCTION past its own target opening date. publicationDate above is approximate (exact date not confirmed from available search results; article content places the withdrawal around late May/June 2026).",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.wfmj.com/story/53113377/data-center-to-occupy-small-part-of-lordstown-ai-hub-feature-advanced-design",
+      "title": "Data center to occupy small part of Lordstown AI hub, feature advanced design",
+      "publisher": "WFMJ",
+      "publicationDate": "2025-09-01",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "advanced data center will use a small part of the existing footprint at the Lordstown site",
+      "projectId": "stargate-lordstown-ohio",
+      "note": "AUDIT: [Project: Stargate Lordstown — slug: stargate-lordstown-ohio] Tracker lists this as a Stargate AI-data-center project (status UNDER_CONSTRUCTION) with no MW disclosed, sourced only to OpenAI's Sept 2025 five-sites announcement. Local reporting (WFMJ, and a Vindicator article where Lordstown's mayor Jackie Woodward is quoted that an operational AI data center 'is not part of' SoftBank/OpenAI's plans for the site) describes this site as primarily a Foxconn/SoftBank manufacturing facility producing AI servers/data-center equipment, with only a small part of the footprint and a 'proof-of-concept' building as any data-center component; a Trumbull County commissioner is separately quoted that SoftBank confirmed there will not be a 'full-blown' data center at the site. Epoch AI's satellite tracker (updated 2026-07-15) likewise finds 'no visible construction' consistent with a data-center build and estimates likely capacity 'no more than 0.3 GW' if any. Recommend a human reviewer double-check whether this site should remain classified as a data-center project at all, versus being reclassified/footnoted as a manufacturing site with at most a small proof-of-concept data-center component.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/fir-hills-inc-claims-it-plans-to-build-3gw-35bn-ai-data-center-in-south-korea/",
+      "title": "Fir Hills Inc claims it plans to build 3GW '$35bn' AI data center in South Korea",
+      "publisher": "Data Center Dynamics",
+      "publicationDate": "2025-02-17",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "estimates that the 3GW data center will need at least $10 billion in investment, possibly increasing to $35 billion",
+      "projectId": "fir-hills-stock-farm-road-3gw-ai-data-center-jeollanam-do",
+      "note": "AUDIT: [Project: Fir Hills Jeollanam-do — slug: fir-hills-stock-farm-road-3gw-ai-data-center-jeollanam-do] Tracker records CAPEX_USD=$35,000,000,000 at HIGH confidence citing this same DCD article. The article's own text frames $35B as the upper end of a stated range ('at least $10 billion... possibly increasing to $35 billion'), not a single committed budget. Recommend recording this as a $10B-$35B range (or lowering confidence/noting the range) rather than a single HIGH-confidence $35B figure. Status=RUMORED already correctly reflects that no site/location has been confirmed; no denial, confirmation, or cancellation found in a ~30-day news search as of 2026-10-19.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "textValue": "$10 billion to $35 billion (reported as a range, not a single committed figure)",
+          "confidenceLevel": "LOW",
+          "methodology": "Source states $10B as the minimum and $35B as a possible increase — a range, not a single committed budget. Recommend not recording $35B alone at HIGH confidence."
+        }
+      ]
+    },
+    {
+      "url": "https://epoch.ai/data/ai-data-centers/directory/colossus-2",
+      "title": "Colossus 2 — Epoch AI Data Centers directory",
+      "publisher": "Epoch AI",
+      "publicationDate": "2026-08-12",
+      "sourceType": "INDUSTRY_REPORT",
+      "excerpt": "roughly 946 MW of current IT power, projecting a rise to approximately 1,531 MW in Q1 2027",
+      "projectId": "xai-colossus-2-memphis",
+      "note": "AUDIT: [Project: xAI Colossus 2 Memphis — slug: xai-colossus-2-memphis] Tracker's own analyst note on the existing 2000 MW estimated/site-power metric already says '~946 MW IT operating per Epoch (Aug 2026)', but no corresponding metric row exists for that IT-load figure — confirmed_power_mw is blank and the only current-capacity figure anywhere in the row is this unrecorded analyst estimate. Recommend adding it as a clearly-labeled Epoch AI analyst estimate (satellite-derived), LOW/ESTIMATED confidence, basis IT load — explicitly NOT an operator-confirmed figure, so it should not populate confirmed_power_mw. Unrelated context found: an NAACP/SELC lawsuit (filed 2026-04-14) over unpermitted gas turbines at the co-located Southaven, MS site may be relevant to power_source='On-site generation' but doesn't itself change the site-power target framing.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 946,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Epoch AI satellite-derived IT-load estimate, updated 2026-08-12 — an analyst estimate, not an operator-confirmed figure. Basis: IT load (distinct from the existing 2000 MW site-power target)."
+        }
+      ]
+    },
+    {
+      "url": "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/",
+      "title": "Deepening our investment in Richland Parish, Louisiana",
+      "publisher": "Meta",
+      "publicationDate": "2026-07-13",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "more than $50 billion in the Richland Parish region",
+      "projectId": "meta-hyperion-louisiana",
+      "note": "AUDIT: [Project: Meta Hyperion — slug: meta-hyperion-louisiana] Tracker already records this $50B figure at HIGH confidence from this same Meta primary source — that part is correct and this submission doesn't change it. However, the tracker ALSO still carries a separate $27,000,000,000 CAPEX_USD metric at MEDIUM confidence (sourced to a BlackRidge Research trade blog, 'across the full programme'). Per Data Center Dynamics' coverage of this project's cost history, that $27B figure reflects an earlier phase (after an initial $10B 2024 announcement, before a land purchase + Blue Owl JV, and before the July 2026 5GW/$50B+ expansion) and is now stale/superseded. Recommend retiring or clearly date-scoping the $27B MEDIUM row so it isn't read as a concurrent, still-current figure alongside the $50B HIGH figure. (Not re-verified by direct fetch this session due to a WebFetch/DNS outage affecting this audit; based on secondary reporting of Meta's own cost-history disclosures.) Separately, a minor acreage discrepancy was also noted: tracker records 3,600 acres (BlackRidge, MEDIUM) vs. ~3,200 acres reported elsewhere for the same expansion — both secondary figures, flagged for awareness only, no claim filed.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": []
+    }
+  ]
+}
