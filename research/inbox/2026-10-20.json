@@ -1,0 +1,81 @@
+{
+  "submissions": [
+    {
+      "url": "https://sfstandard.com/2026/10/06/data-center-moratorium-san-francisco/",
+      "title": "San Francisco Board of Supervisors Passes 45-Day Data Center Moratorium",
+      "publisher": "The San Francisco Standard",
+      "publicationDate": "2026-10-06",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "unanimously approved a 45-day moratorium on data centers that would pause city approvals",
+      "note": "SITING RESTRICTION: San Francisco Board of Supervisors unanimously passed a 45-day moratorium (effective immediately) pausing new approvals and expansions of data centers citywide, and directed the Planning Department to study impacts and draft long-term controls, with a progress hearing expected in November. The pause can reportedly be extended for up to roughly two years while permanent rules are considered. Sponsored by Supervisor Shamann Walton with Chan, Fielder and Chen. Not linked to a specific tracked project in this database — applies citywide and is a new restriction record, not an update to an existing one as far as I could determine without API access this run.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://spectrumnews1.com/ky/louisville/news/2026/10/07/lexington-council-extends-data-center-ban",
+      "title": "Lexington Council Extends Data Center Moratorium, Passes Zoning Caps",
+      "publisher": "Spectrum News 1",
+      "publicationDate": "2026-10-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "bans data centers larger than 50,000 square feet, cap energy use at 25 megawatts",
+      "note": "SITING RESTRICTION: Lexington-Fayette Urban County Council voted unanimously to extend its existing data center moratorium (originally due to expire Oct. 31, 2026) to October 2027, and separately passed a zoning text amendment (ZOTA) capping new data centers at 25 MW and restricting smaller facilities to industrial zones. Sources disagree on the square-footage cap: this article and a later council report say 50,000 sq ft, while the Lexington-Fayette Planning Commission's July recommendation (WEKU) cited 40,000 sq ft — flagging the discrepancy for a reviewer to resolve against the final ordinance text (not independently fetchable this run; see report). If this tracker already has a Lexington/Fayette County moratorium on file, treat this as an update extending its expiry and adding the MW/sq-ft caps rather than a new restriction.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://environmentalintegrity.org/news/environmental-groups-take-legal-action-against-illegal-data-center-and-power-plant-projects-in-san-antonio/",
+      "title": "Environmental Groups Take Legal Action Against Illegal Data Center and Power Plant Projects in San Antonio",
+      "publisher": "Environmental Integrity Project (plaintiff press release)",
+      "publicationDate": "2026-09-21",
+      "sourceType": "OTHER",
+      "excerpt": "two gas-fired power plants with a combined capacity of 423MW and 151 diesel backup generators",
+      "note": "SITING RESTRICTION (litigation): Environmental Integrity Project, Sierra Club and Public Citizen filed a Clean Air Act citizen-enforcement suit in San Antonio federal court against data center developer Vantage and its energy supplier VoltaGrid, covering two off-grid gas-powered campuses on San Antonio's west side (14270 Omicron Drive and 5207 Rogers Road). Plaintiffs allege the companies split the plants/data centers into artificially small pieces to qualify for fast-track minor-source permits and seek to halt construction/operation until proper major-source permitting occurs. This appears to be a DIFFERENT, currently untracked Vantage/VoltaGrid San Antonio project, distinct from the tracked Stargate Shackelford County and Stargate Wisconsin sites (both also Vantage). Filing date (Sept 21, 2026, a Monday) is inferred from a Law360 report referencing a 'Monday' filing and a 60-day post-notice window from a July 22 notice-of-intent-to-sue; not independently confirmed against the court docket since page-fetching was unavailable this run.",
+      "suggestedProjectName": "Vantage-VoltaGrid San Antonio Off-Grid Campus",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 423,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Combined nameplate capacity of the two on-site gas-fired power plants named in the lawsuit, as reported in secondary trade/legal press coverage (DataCenterDynamics, Law360); not drawn from a primary permit or court filing"
+        }
+      ]
+    },
+    {
+      "url": "https://www.wcax.com/2026/10/07/data-center-moratorium-vote-postponed-after-fight-protests/",
+      "title": "Memphis Data Center Moratorium Vote Postponed After Fight, Protests",
+      "publisher": "WCAX (AP wire)",
+      "publicationDate": "2026-10-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "proposed 12-month pause that would allow officials to assess data centers' social, health and environmental impacts",
+      "note": "SITING RESTRICTION, STATUS PENDING: Memphis City Council (Councilman JB Smiley Jr.) has been advancing a proposed 12-month moratorium on new data center approvals to assess social/health/environmental impacts. An Oct. 6 council session was disrupted by protests and a fight; the council voted 7-5 to delay and rescheduled the third and final reading for October 20, 2026 — which is TODAY, the date of this report. I could not confirm the outcome of today's vote (page-fetching was unavailable this run) — this is an UNVERIFIED/PENDING signal a human should check against local Memphis outlets (Action News 5, WREG, The Daily Memphian) or the council's own records before acting on it. Directly relevant to this tracker's xAI Colossus 2 (Memphis) and xAI MACROHARDRR (Southaven) entries: local coverage of the moratorium debate repeatedly cites xAI/SpaceXAI's Memphis-area facilities by name, though most of xAI's gas generation sits across the state line in Southaven, Mississippi, outside Memphis city jurisdiction — so the practical effect on those specific sites, if the moratorium passes, is unclear and worth a reviewer's read of the final ordinance scope.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.ctvnews.ca/atlantic/nova-scotia/article/everwind-says-10b-ai-data-centre-proposal-largest-private-investment-in-ns-history/",
+      "title": "EverWind says $10B AI data centre proposal largest private investment in N.S. history",
+      "publisher": "CTV News Atlantic",
+      "publicationDate": "2026-10-16",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "largest private investment in Nova Scotia's history",
+      "note": "NEW PROJECT CANDIDATE: EverWind Fuels announced a roughly C$10B AI data center and wind-power proposal at Point Tupper, Nova Scotia, Canada ($8B data centre campus + $2B onshore wind, per secondary reporting) — described in EverWind's own statement as the largest private investment in Nova Scotia's history. Reported scope: an 18,600 sqm facility with a 95 MW first-phase IT load targeted online in late 2027, scaling via a 325 MW expansion to 420 MW total by 2028; ~2,000 construction jobs and 215 permanent jobs; wind farms won't be ready at opening so the site initially draws on existing grid infrastructure. IMPORTANT CAVEAT: a separate Reuters report (syndicated via The Daily Guardian, same date) identifies the tenant as Anthropic — its first Canadian data center — but I could not independently corroborate that tenant identification from a second primary source this run (WebFetch/page access was unavailable in this environment), so treat the Anthropic tenant claim as a single-sourced, unverified signal pending human confirmation of the full Reuters text. This project does not appear in the tracker's current ~103-project list. Nova Scotia's provincial NDP leader has also publicly questioned enforcement of EverWind's cost assurances and criticized a lack of public consultation, which may be relevant siting-risk context once the project is added.",
+      "suggestedProjectName": "EverWind Point Tupper AI Data Centre (Nova Scotia)",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 95,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Phase-one IT load as stated in EverWind's announcement, relayed by CTV News/BNN Bloomberg secondary coverage; not verified against a primary release"
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 8000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Data-centre-campus portion of the ~C$10B announced total (separate from the ~$2B wind-power buildout), as reported by CTV News/BNN Bloomberg; currency and USD/CAD conversion not independently verified"
+        }
+      ]
+    }
+  ]
+}
