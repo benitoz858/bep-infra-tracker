@@ -1,0 +1,72 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.cnn.com/2026/10/20/us/memphis-council-data-center-vote",
+      "title": "Memphis 18-month data center moratorium fails to pass",
+      "publisher": "CNN",
+      "publicationDate": "2026-10-20",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "With a 6-6 tie, the 18-month moratorium failed; council passed a 135-day pause instead, 7-5",
+      "note": "SITING RESTRICTION: Memphis City Council voted down a proposed 18-month citywide data center moratorium 6-6 on 2026-10-20, then passed a narrower 135-day pause 7-5 on a floor-amended substitute ordinance. Mayor Paul Young separately ordered a 90-day administrative review to draft permanent data-center siting rules. Geographic overlap with tracked xAI Colossus 2 Memphis and xAI MACROHARDRR (Southaven, MS, outside city jurisdiction) is noted for context only — do not auto-attach; the pause's scope (new permits vs. already-permitted sites) was not confirmed and needs a human read of the actual ordinance text. NOTE ON SOURCING: WebFetch/curl to primary sources (council minutes, Commercial Appeal) were blocked by this sandbox's network policy this run, so this excerpt is reconstructed from converging WebSearch snippets across CNN, Memphis Flyer, WREG and Newsweek rather than a direct fetch of the primary text — please verify exact wording against the council's own record before treating the quote as verbatim.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://missionlocal.org/2026/10/sf-supervisors-pass-data-center-moratorium/",
+      "title": "SF supervisors pass data center moratorium",
+      "publisher": "Mission Local",
+      "publicationDate": "2026-10-06",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Board of Supervisors unanimously approved a 45-day moratorium on new data center development",
+      "note": "SITING RESTRICTION: San Francisco Board of Supervisors unanimously passed a 45-day moratorium (effective immediately, extendable to roughly two years) halting new data center development and expansion of existing facilities, while the Planning Department studies energy, water, air-quality and land-use impacts ahead of a hearing expected by November 2026. No tracked project in this database is sited in San Francisco; flagging for the siting-restrictions dataset generally. Outside the ideal 24-72h freshness window (vote was ~16 days before this run) but included because it is a significant, clearly-sourced municipal action not yet in the database.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.axios.com/local/raleigh/2026/10/07/duke-energy-agrees-on-new-rules-for-large-energy-users-like-data-centers",
+      "title": "Duke Energy strikes deal with data center giants",
+      "publisher": "Axios",
+      "publicationDate": "2026-10-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "rules apply to customers above 50 MW running near peak capacity, or any customer above 150 MW",
+      "note": "SITING RESTRICTION / utility connection rule: Duke Energy North Carolina reached a settlement with the Public Staff, backed by Amazon, Microsoft, Google and Meta, setting large-load tariff rules that apply to data center customers above 50 MW running near peak capacity, or any customer above 150 MW regardless of load factor — narrower than Duke's original proposal, which would have required large users to pay a minimum bill for at least a decade regardless of actual use. Not tied to a single tracked project; relevant as a general interconnection-rule change for any NC-sited AI campus. ~15 days outside the ideal freshness window; included for completeness.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/aligned-breaks-ground-on-gigawatt-scale-data-center-campus-in-pennsylvania/",
+      "title": "Aligned breaks ground on gigawatt-scale data center campus in Pennsylvania",
+      "publisher": "DataCenterDynamics",
+      "publicationDate": "2026-09-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Project Phoenix, a 2GW data center campus ... representing roughly $10 billion in regional investment",
+      "suggestedProjectName": "Aligned Project Phoenix (Shippingport, Pennsylvania)",
+      "note": "New, previously untracked project: Aligned Data Centers broke ground ~2026-09-10 on 'Project Phoenix', a three-building, 2GW campus on ~660 acres in Shippingport Industrial Park, Beaver County, PA, adjacent to the former Shippingport/Bruce Mansfield coal plant site (owned by Frontier Group of Companies). Aligned plans dedicated onsite generation rather than grid draw. ~2GW figure is site/campus power capacity as stated by the company, not confirmed IT load; ~$10B capex figure is a regional-investment estimate, not a confirmed capex disclosure. Distinct from the already-tracked 'Aligned Project Caprock' (Hale County, TX). Outside the 24-72h window (groundbreaking ~6 weeks prior) but flagged since this gigawatt-scale campus is not yet in the 103-project database.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 2000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Stated by Aligned as total campus/site power capacity ('2GW campus') in company groundbreaking announcement, as reported by DataCenterDynamics; not an IT-load figure."
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 10000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Reported as 'roughly $10 billion in regional investment' — a rounded estimate, not an itemized capex disclosure."
+        }
+      ]
+    },
+    {
+      "url": "https://nebius.com/newsroom/nebius-breaks-ground-on-gigawatt-scale-ai-factory-in-independence-missouri",
+      "title": "Nebius breaks ground on gigawatt-scale AI factory in Independence, Missouri",
+      "publisher": "Nebius",
+      "publicationDate": "2026-05-12",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "its first gigawatt-scale digital infrastructure project in the United States",
+      "suggestedProjectName": "Nebius Independence (Missouri)",
+      "note": "New, previously untracked project: Nebius broke ground 2026-05-12 on a gigawatt-scale AI factory on ~400 acres in Independence, Missouri — the company's first US gigawatt-scale site. Company estimates ~1,200 construction jobs and ~130 permanent roles; one secondary summary cites ~$650M in regional tax revenue over 20 years (not a capex figure, omitted here). No specific MW or capex figure was disclosed in the release beyond 'gigawatt-scale', so no numeric claims are submitted — left blank per policy rather than guessed. Already-tracked Nebius US sites are Nebius Highridge (PA, PLANNING) and Nebius Vineland (NJ, PARTIALLY_OPERATIONAL); this Missouri site is distinct from both. Well outside the 24-72h window (~5 months old) — lowest priority of this batch, included only because it is a primary-source-confirmed gigawatt-scale gap in the tracked set.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
