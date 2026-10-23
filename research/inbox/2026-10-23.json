@@ -1,0 +1,61 @@
+{
+  "submissions": [
+    {
+      "url": "https://datacenterdynamics.com/en/news/virginia-senator-proposes-three-year-state-wide-data-center-moratorium",
+      "title": "Virginia senator proposes three-year state-wide data center moratorium",
+      "publisher": "DatacenterDynamics",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "We cannot keep rubber-stamping new data centers when we can't even manage the ones already built.",
+      "note": "SITING RESTRICTION: Sen. Russet Perry (D-Loudoun), joined by Sen. Danica Roem (D-Prince William), filed Senate Bill 843 for Virginia's 2027 legislative session (convenes January 2027): a statewide moratorium on new data center approvals from July 1, 2027 to July 1, 2030, barring localities, the State Corporation Commission, and the Department of Environmental Quality from approving rezonings, site plans, permits, or related power-infrastructure authorizations. Not yet voted on - one of several competing VA moratorium bills this session (Sen. Sturtevant has separately pushed an indefinite moratorium; Loudoun County is separately weighing its own 12-month local moratorium). Quote confirmed verbatim across DatacenterDynamics, Baxtel, and Broadband Breakfast coverage. Publication date is approximate (reporting clustered Oct 13-16, 2026, around the bill's filing) - recommend checking Virginia's Legislative Information System for SB843's exact filing date and text.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://coreweave.com/news/coreweave-enters-india-expanding-ai-cloud-platform-with-adaniconnex",
+      "title": "CoreWeave Enters India, Expanding AI Cloud Platform With AdaniConneX",
+      "publisher": "CoreWeave",
+      "publicationDate": "2026-10-06",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "bringing 240 megawatts of capacity, NVIDIA Vera Rubin, and CoreWeave's expertise to customers building and scaling AI in India",
+      "suggestedProjectName": "CoreWeave-AdaniConneX Taloja Campus (Navi Mumbai, India)",
+      "note": "New capacity deal, CoreWeave's first India deployment: CoreWeave leases 240 MW of IT capacity across three 80MW buildings at AdaniConneX's Taloja campus near Mumbai as sole tenant, with an option to add up to another 240MW at the same site (reported potential total ~480MW; a DataCenterDynamics figure of 580MW looks like an outlier/error against other outlets). First phase targeted for mid-2028, using NVIDIA Vera Rubin systems with direct liquid cooling. No lease financial value disclosed in coverage. Quote is from CoreWeave COO Sachin Jain per the company's own press release (primary source).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 240,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Stated directly in CoreWeave's own press release as leased IT capacity at the Taloja campus"
+        }
+      ]
+    },
+    {
+      "url": "https://aa.com.tr/en/economy/turkiye-breaks-ground-on-massive-22-megawatt-data-center-project/4093804",
+      "title": "Turkiye breaks ground on massive 22-megawatt data center project",
+      "publisher": "Anadolu Agency (AA)",
+      "publicationDate": "2026-10-19",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Once all phases are complete, this facility will represent a fixed capital investment of $4.1 billion in the Ankara Temelli Baskent Organized Industrial Zone",
+      "suggestedProjectName": "Ankara Temelli Data Center (Ronesans Holding-Digital Realty JV)",
+      "note": "New project, strategically notable as a first large AI/cloud-scale data center JV investment in Turkiye, meeting the >=$1B threshold on total committed capex even though per-phase IT power is modest. Groundbreaking held Oct 19, 2026 at the Baskent Organized Industrial Zone near Ankara; a joint venture between Ronesans Holding and Digital Realty. Phase 1 is ~22MW of IT capacity targeted live in 2028, with roughly $450M for infrastructure/building plus roughly $900M for cooling/IT systems per the minister's remarks (note: Turkish outlet Teknoblog disputes whether that $900M figure fully represents IT hardware cost - treat the phase-level cost split as less certain than the $4.1B total). The $4.1B is total committed fixed capital investment across all phases (capex basis), not an IT power figure - most of that capacity has not yet been built. Part of a wider Ronesans-Digital Realty plan exceeding $10B combined across Ankara and a planned Istanbul (Deliklikaya) site, targeting 200MW combined national capacity; the Istanbul site's groundbreaking is expected Feb 2027. Quote is from Turkish Industry and Technology Minister Mehmet Fatih Kacir at the ceremony, as reported by Anadolu Agency (Turkey's state news agency).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 4100000000,
+          "unit": "USD",
+          "confidenceLevel": "HIGH",
+          "methodology": "Stated directly by Turkish Industry and Technology Minister Mehmet Fatih Kacir at the groundbreaking ceremony, as reported by Anadolu Agency"
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 22,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Reported first-phase IT capacity figure, consistent across multiple outlets (Anadolu Agency, Teknoblog), not a direct quote from the minister"
+        }
+      ]
+    }
+  ]
+}
