@@ -1,0 +1,71 @@
+{
+  "submissions": [
+    {
+      "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-advance-europes-sovereign-ai-ambitions-300mw-spanish-campus",
+      "title": "IREN to Advance Europe's Sovereign AI Ambitions with 300MW Spanish Campus",
+      "publisher": "IREN Limited (investor relations release)",
+      "publicationDate": "2026-10-21",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "The project is planned to deliver approximately 300MW of capacity, with initial operations targeted for 2028.",
+      "suggestedProjectName": "IREN Badajoz AI Data Center Campus (Extremadura, Spain)",
+      "note": "NEW PROJECT: IREN announced Oct 21, 2026 (at NVIDIA GTC Berlin) that its new IREN Europe subsidiary secured a civil-works license and grid-connected power for a planned ~300MW AI data center campus in Badajoz, Extremadura, Spain. This is a permitting/civil-works milestone, not energization - first operations targeted for 2028. IREN entered Europe via its June 2026 acquisition of Spanish developer Nostrum Group. 300MW is the company-stated planned site capacity; no capex figure disclosed in the release.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 300, "unit": "MW", "confidenceLevel": "HIGH", "methodology": "Company press release states planned ~300MW capacity for the site directly."}
+      ]
+    },
+    {
+      "url": "https://www.networkworld.com/article/4238599/microsoft-exits-uk-ai-data-center-project-over-electricity-delays.html",
+      "title": "Microsoft exits UK AI data center project over electricity delays",
+      "publisher": "Network World",
+      "publicationDate": "2026-10-18",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "It was intended to provide 50 megawatts of AI computing, with the potential of scaling to 90 MW.",
+      "suggestedProjectName": "Nscale Loughton AI Data Center (Essex, UK)",
+      "note": "STATUS CHANGE / DELAY: Microsoft terminated its agreement to anchor Nscale's planned Loughton, Essex (UK) AI data center after UK Power Networks reportedly told Nscale the grid connection would slip from end-2026 to the mid-2030s. Microsoft said in a statement 'This decision relates to a single site' and that it remains committed to its broader Nscale partnership; Nscale says it remains committed to Loughton and is exploring alternative power sources. Coverage also ties this to risk around Nscale's planned ~$35B NYSE IPO. This may already match an existing tracked Nscale/UK entry - please check before creating a new project. Figures (50MW scaling to 90MW) are reported site IT capacity, not a confirmed grid connection figure.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 50, "unit": "MW", "confidenceLevel": "LOW", "methodology": "Reported by news article as the site's intended AI computing capacity; secondary-source figure, not a primary company/government disclosure."}
+      ]
+    },
+    {
+      "url": "https://www.wtvr.com/news/local-news/richmond/state-senator-files-legislation-for-three-year-moratorium-on-new-data-centers",
+      "title": "State senator files legislation for three-year moratorium on new data centers",
+      "publisher": "WTVR CBS 6 Richmond",
+      "publicationDate": "2026-10-16",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "Senate Bill 843 would take effect July 1, 2027 and expire July 1, 2030.",
+      "note": "SITING RESTRICTION: Virginia state Sen. Russet Perry (D-Loudoun), joined by Sen. Danica Roem, filed SB 843 for the 2027 General Assembly session proposing a statewide 3-year moratorium (July 2027-July 2030) barring both localities and state agencies (incl. the State Corporation Commission and Dept. of Environmental Quality) from approving new data-center rezonings, special exceptions/use permits, site plans, or siting-related state permits. Gov. Spanberger has not endorsed a statewide moratorium, instead issuing a separate executive order on data-center accountability. Bill is newly filed/pre-session, not yet voted on - this is a proposed restriction, not an enacted one. Statewide scope: would affect every Virginia project if passed, not a single site.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000064463/000149315226047846/ex99-1.htm",
+      "title": "Soluna Agrees to Form Strategic Partnership with Applied Digital to Develop Wind-Powered AI Data Center in Texas",
+      "publisher": "Soluna Holdings, Inc. (SEC Form 8-K, Exhibit 99.1)",
+      "publicationDate": "2026-10-21",
+      "sourceType": "SEC_FILING",
+      "excerpt": "Phase 1 of Dorothy 3 (50 MW Critical IT) is expected to draw power from both Briscoe Wind and the grid.",
+      "suggestedProjectName": "Project Dorothy 3 (Soluna Holdings / Applied Digital, Briscoe County, TX)",
+      "note": "NEW PROJECT, below the usual 100MW/$1B bar but included for SEC-filing quality and a strategically notable bring-load-to-stranded-wind-power structure: Soluna Holdings and Applied Digital signed a definitive Transaction Agreement (Oct 21, 2026) to jointly build a 50MW critical-IT AI/HPC data center at Soluna's Dorothy 3 site next to the existing 150MW Briscoe Wind Farm in Briscoe County, TX. Applied Digital holds 51%/operates; Soluna holds 49% (contributing land and power-related assets). ChronoScale Holdings (majority-owned by Applied Digital) signed a non-binding LOI to lease the facility. Closing is subject to conditions (incl. a local tax abatement) and targeted for year-end 2026 - deal is signed but not yet closed.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 50, "unit": "MW", "confidenceLevel": "HIGH", "methodology": "Stated directly in the SEC 8-K exhibit as the planned Phase 1 Critical IT capacity."}
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001854368/000121390026089450/ea030173001ex99-1.htm",
+      "title": "Digi Power X Announces $200 Million Debt Financing Commitment to Support Completion of Alabama AI Data Center and Provides Expansion Update",
+      "publisher": "Digi Power X Inc. (SEC Form 8-K, Exhibit 99.1 / ACCESS Newswire)",
+      "publicationDate": "2026-10-13",
+      "sourceType": "SEC_FILING",
+      "excerpt": "received a commitment letter from a major lending institution for US$200 million in debt financing",
+      "suggestedProjectName": "Digi Power X Columbiana AI Data Center (Alabama)",
+      "note": "STATUS CHANGE / FINANCING, below the usual 100MW bar but included for SEC-filing quality: Digi Power X secured a $200M debt financing commitment (Goldman Sachs syndicating, ~90-day close subject to definitive documentation) to complete its 40MW AI data center in Columbiana, Alabama, phased at 15MW by end-2026 and +25MW by Q1 2027. The $200M is a debt-financing commitment/capex support figure, not a confirmed total project cost. This project is likely already tracked given the company's public profile - please check for an existing entry before creating a new one.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "CAPEX_USD", "numericValue": 200000000, "unit": "USD", "confidenceLevel": "HIGH", "methodology": "Stated directly in the SEC 8-K exhibit as the debt financing commitment amount."}
+      ]
+    }
+  ]
+}
