@@ -1,0 +1,64 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.networkworld.com/article/4238599/microsoft-exits-uk-ai-data-center-project-over-electricity-delays.html",
+      "title": "Microsoft exits UK AI data center project over electricity delays",
+      "publisher": "Network World",
+      "publicationDate": "2026-10-19",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The Loughton campus was to deliver 50MW of AI capacity, scalable to 90MW",
+      "suggestedProjectName": "Nscale Loughton",
+      "note": "STATUS CHANGE on tracked project 'Nscale Loughton' (ANNOUNCED, Loughton, Essex, UK): Microsoft has withdrawn as anchor tenant after UK Power Networks reportedly told Nscale grid capacity would not be available until the early-to-mid 2030s. First reported by The Telegraph 2026-10-18; Microsoft confirmed the next day, a spokesperson saying the decision 'relates to a single site.' Nscale says it is exploring alternative power sources and that its other Microsoft contracts (Norway, Portugal, US) are unaffected. Figure is IT/site capacity (50MW scalable to 90MW), not generation capacity. No live API access this run, so no projectId could be confirmed — please match by name/location to the existing Loughton project rather than creating a duplicate.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 50,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Secondary press reports citing planned site IT capacity, scalable to 90MW; not a primary company filing"
+        }
+      ]
+    },
+    {
+      "url": "https://www.opb.org/article/2026/10/13/oregon-data-centers-technology-amazon-tina-kotek/",
+      "title": "Gov. Kotek expands Oregon data center moratorium",
+      "publisher": "Oregon Public Broadcasting (OPB)",
+      "publicationDate": "2026-10-13",
+      "sourceType": "NEWS_ARTICLE",
+      "note": "SITING RESTRICTION: Gov. Tina Kotek directed DEQ (letter to Director Leah Feldon dated 2026-10-09) to pause issuing air and water discharge permits (NPDES, WPCF, ACDP, Title V) for new or expanding data centers statewide until July 1, 2027, pending recommendations from her Data Center Advisory Committee ahead of the 2027 legislative session. This is a de facto permitting moratorium, not a formal legislative ban — Kotek's office has said the state currently lacks authority to enact a statewide moratorium outright. Local reaction: Umatilla City Council voted 5-1 on 2026-10-20 to declare a state of emergency over lost tax revenue from the pause, formally asking Kotek to withdraw or modify the order and raising concerns it exceeds DEQ's statutory authority and infringes on municipal Home Rule (source: https://washingtonstatestandard.com/?p=17636, Washington State Standard/States Newsroom, 2026-10-20). Not yet linked to a specific tracked project; likely relevant to any ANNOUNCED or PLANNING-stage Oregon projects on the tracker that need new/expanded state permits before July 2027.",
+      "excerpt": "pause processing and issuance of air or water discharge permit applications until July 1, 2027",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.kron4.com/news/bay-area/san-francisco-approves-45-day-moratorium-on-new-data-centers/",
+      "title": "San Francisco approves 45-day moratorium on new data centers",
+      "publisher": "KRON4",
+      "publicationDate": "2026-10-06",
+      "sourceType": "NEWS_ARTICLE",
+      "note": "SITING RESTRICTION: San Francisco Board of Supervisors voted 11-0 on first reading (2026-10-06, File No. 261021, introduced by Supervisor Walton, under Govt Code Sec. 65858) to adopt a 45-day urgency moratorium pausing approval of new or expanded data center projects citywide; on-site server rooms serving a business's own operations are exempt. The moratorium can be extended for up to a further 22 months 15 days. Flagging a source conflict for the reviewer: one outlet (Let's Data Science, citing the Land Use and Transportation Committee record) reports only a committee-level advancement on 2026-10-05 with final enactment unconfirmed in the city's legislative file as of 2026-10-21, while Bloomberg Tax and KRON4/SF Standard both report the full Board passed it 2026-10-06. Recommend verifying against SF Board of Supervisors File No. 261021 before treating as finally enacted.",
+      "excerpt": "Board of Supervisors ... approved a 45-day moratorium on new data centers",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.edtechinnovationhub.com/news/meta-completes-first-phase-of-prometheus-ai-supercluster-targets-1-million-gpus",
+      "title": "Meta completes first phase of Prometheus AI supercluster, targets 1 million GPUs",
+      "publisher": "EdTech Innovation Hub",
+      "publicationDate": "2026-10-19",
+      "sourceType": "NEWS_ARTICLE",
+      "suggestedProjectName": "Meta Prometheus (New Albany, Ohio)",
+      "note": "NEW PROJECT, not currently tracked (only Meta El Paso, Meta Hyperion and Meta Lebanon are tracked for Meta). Per Meta's own engineering blog post (2026-10-19, URL not independently located this run — only secondary coverage), the first phase of Prometheus, Meta's AI training supercluster in New Albany, Ohio, is complete and was used to train Meta's Muse family of foundation models (incl. Muse Wonder). Meta is scaling the campus toward roughly 1 million GPUs at a stated gigawatt-scale IT load target; treat the 1GW/1M-GPU figures as Meta's stated full-build-out target, not a confirmed current deployed IT load. Caveat: multiple secondary outlets (CryptoBriefing, EdTechInnovationHub, LetsDataScience, Neoteo) report this consistently, but a contemporaneous GamesBeat piece (citing an AI Infra Summit talk by a Meta infrastructure lead) describes Prometheus as still under active construction while already running training jobs — read 'first phase complete' as 'substantially built and in active production use,' not full campus buildout finished. Site has also been reported (June 2026, Shopifreaks) to include temporary weatherproof tent structures with on-site gas generators pending permanent build-out.",
+      "excerpt": "scaling the supercluster toward roughly 1 million GPUs",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "GPU_COUNT",
+          "numericValue": 1000000,
+          "unit": "GPUs",
+          "confidenceLevel": "LOW",
+          "methodology": "Company-stated full-build-out target scale, reported by secondary press; not a confirmed current deployed count"
+        }
+      ]
+    }
+  ]
+}
