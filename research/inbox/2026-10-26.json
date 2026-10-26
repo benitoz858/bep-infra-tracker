@@ -1,0 +1,36 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.courtnewsohio.gov/cases/2026/SCO/1020/251497.asp",
+      "title": "Village Can Reject Data Center Construction Application After Moratorium Imposed",
+      "publisher": "Court News Ohio (Supreme Court of Ohio)",
+      "publicationDate": "2026-10-20",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "denied the writ of mandamus in State ex rel. Bristolville 25 Developer v. Lordstown, 2026-Ohio-4073",
+      "suggestedProjectName": "Lordstown data center campus (Bristolville 25 Developer / BHGH Properties)",
+      "note": "SITING RESTRICTION: Ohio Supreme Court unanimously (7-0, per secondary reporting) held Lordstown Village was within its rights to stop processing a site-plan review for a proposed four-building, three-story data center campus on ~133 acres, filed by Bristolville 25 Developer LLC/BHGH Properties the same day the village's data-center moratorium process began (Oct. 20, 2025). The village's moratorium now runs through January 2027. IMPORTANT: this is a DIFFERENT, unrelated Lordstown, Ohio project from the already-tracked 'Stargate Lordstown' (OpenAI/Oracle/SoftBank, the former GM/Foxconn plant) — do not merge the two. The ruling is still relevant context for siting risk in Lordstown generally. Could not WebFetch the court's own opinion text directly (sandbox network policy blocks tracker.bepresearch.com and all other external hosts this run, confirmed via proxy status check); excerpt and facts are drawn from WebSearch-returned summaries of Court News Ohio, Business Journal Daily, The Vindicator, and Law360, which corroborate each other on the case name, citation, and outcome.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.cbsnews.com/news/memphis-data-center-moratorium-city-council-vote/",
+      "title": "Memphis City Council votes on data center moratorium",
+      "publisher": "CBS News",
+      "publicationDate": "2026-10-20",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "ordinance ... would halt construction of data centers for 135 days",
+      "note": "SITING RESTRICTION: Memphis City Council voted Oct. 20, 2026; a proposed 12-month moratorium on new data center approvals failed on a 6-6 tie (one member absent), and the council instead passed a substitute ordinance pausing new data-center approvals for 135 days, timed to run alongside Mayor Paul Young's 90-day study of digital-infrastructure impacts (commissioned early Oct. 2026). Multiple outlets (CBS, DataCenterDynamics, E&E News) agree the ordinance explicitly does NOT apply to xAI's existing Colossus/Colossus 2 operations in the Memphis area — only new approvals are paused, so no change to the status of the tracked xAI Colossus 2 project itself. Flagging for siting-risk context given Memphis's concentration of tracked xAI capacity. Could not confirm via direct WebFetch of the city's own ordinance text (sandbox network access to external hosts is blocked this run); relying on corroborating WebSearch summaries of CBS News, DataCenterDynamics and FOX13/E&E News coverage.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://fox11online.com/news/local/wisconsin-rapids-denies-data-center-permit-after-months-long-battle",
+      "title": "Wisconsin Rapids denies data center permit after months-long battle",
+      "publisher": "FOX11 (WLUK-TV, Green Bay)",
+      "publicationDate": "2026-10-21",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "voted Tuesday night to deny a conditional use permit for a data center",
+      "suggestedProjectName": "PNK Group / DC Rapids data center (Wisconsin Rapids, WI — permit denied)",
+      "note": "SITING RESTRICTION / new, not-yet-tracked project: Wisconsin Rapids Common Council voted Oct. 20, 2026 to deny a conditional use permit for a roughly 670,000-sq-ft, multi-building data center campus (applicant DC Rapids LLC, developer PNK Group) proposed on a former paper-mill site. The city's Plan Commission had already recommended denial 7-0 on Sept. 16; city staff cited an incomplete application (no utility-approval letter, no employment/shift projections). The city separately enacted a 12-month data-center building freeze earlier in October. No MW/capex figures were disclosed for this project in any source found, so none are claimed here — leave blank rather than guess. Proposing as a new project record (status: proposal denied) rather than linking to an existing tracked project, since I could not confirm a match in the current data export. Could not WebFetch the source article directly (outbound network to external hosts is blocked in this sandbox this run); relying on the WebSearch tool's corroborated summary of this FOX11 article.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
