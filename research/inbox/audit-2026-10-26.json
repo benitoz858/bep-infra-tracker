@@ -1,0 +1,24 @@
+{
+  "submissions": [
+    {
+      "url": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-abilene",
+      "title": "OpenAI Stargate Abilene — Epoch AI Data Centers directory",
+      "publisher": "Epoch AI",
+      "publicationDate": "2026-05-23",
+      "sourceType": "INDUSTRY_REPORT",
+      "excerpt": "In Abilene, 200MW is already operational",
+      "projectId": "stargate-abilene-texas",
+      "note": "AUDIT: the tracker's CONFIRMED-confidence POWER_MW metrics row for this project records numeric_value=300, but its own methodology text reads 'Basis: IT load. 200 MW operator-confirmed operating (Oracle, April 2026). Site target 1.2 GW,' and projects.json's confirmedMw field correctly shows 200. The 300 figure appears duplicated from a separate, correctly-recorded on-site gas-turbine row for the same project (basis: generation, not IT load — also 300 but a different quantity). Recommend correcting the CONFIRMED metrics row's numeric_value to 200 MW (basis: IT load) so the metrics table matches projects.json and the gas-turbine generation figure is not conflated with confirmed IT load — this is the facility-power-vs-IT-load error class this audit targets, manifesting here as an internal data inconsistency rather than a source mismatch.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 200,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Basis: IT load. Epoch AI directory (analyst estimate, non-primary): 'In Abilene, 200MW is already operational.' Matches the project's existing projects.json confirmedMw=200 and the metrics row's own methodology text ('200 MW operator-confirmed operating, Oracle, April 2026'); the metrics.csv numeric_value field itself incorrectly reads 300, apparently duplicated from a separate on-site gas-turbine GENERATION entry for the same project. No primary source is currently cited for this fact in sources.csv — recommend sourcing the original Oracle/April 2026 confirmation directly."
+        }
+      ]
+    }
+  ]
+}
