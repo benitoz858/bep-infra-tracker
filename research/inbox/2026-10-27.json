@@ -1,0 +1,25 @@
+{
+  "submissions": [
+    {
+      "url": "https://spectrumnews1.com/ky/louisville/news/2026/10/07/lexington-council-extends-data-center-ban",
+      "title": "Lexington council extends data center ban",
+      "publisher": "Spectrum News 1 Kentucky",
+      "publicationDate": "2026-10-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "set a noise limit of 30 decibels and cap energy use at 25 megawatts",
+      "suggestedProjectName": "DartPoints Lexington (former Lexmark Data Center), Fayette County, KY",
+      "note": "SITING RESTRICTION: Lexington-Fayette Urban County Council voted unanimously on 2026-10-07 to extend the citywide data-center moratorium (previously set to expire Oct. 31, 2026) to October 2027, and separately adopted a zoning text amendment (ZOTA, passed 2026-10-13 per a follow-up Spectrum News piece) capping new data-center electricity use at 25 MW, a 30 dB noise limit at the property line, and a ban on facilities over 50,000 sq ft. This directly affects the DartPoints campus (the former Lexmark Data Center), which had sought 50 MW — the stated trigger for the moratorium. I could not confirm whether this project/site is already tracked under a different name (the tracker's live API was unreachable from this run's sandbox — network policy blocked tracker.bepresearch.com — so I could not pull the current project list to match an ID); please link to the correct projectId if one exists. CAVEAT: WebFetch was non-functional in this run's environment (DNS resolution failures on all hosts), so this excerpt is reconstructed from web-search result snippets rather than a direct fetch of the article; please verify exact wording against the primary link before treating the quote as literal. Secondary sourcing (news article), not primary (no ordinance/council-minutes link located).",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://sfstandard.com/2026/10/16/mayor-lurie-data-center-moratorium/",
+      "title": "Mayor Lurie signs San Francisco data center moratorium",
+      "publisher": "The San Francisco Standard",
+      "publicationDate": "2026-10-16",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "a 45-day moratorium on data centers that would pause city approvals of the facilities",
+      "note": "SITING RESTRICTION: San Francisco Mayor Daniel Lurie signed a 45-day citywide moratorium on new data-center approvals on Friday 2026-10-16 (effective immediately regardless of signature, per the ordinance), after the Board of Supervisors passed it unanimously the week before (first reported 2026-10-06, authored by Supervisor Shamann Walton). It directs the Planning Department to study energy/water/air impacts and can reportedly be extended up to ~22 months. No specific project is named in coverage, so this is submitted as a jurisdiction-wide restriction rather than linked to a projectId. CAVEAT: same WebFetch outage as the Lexington submission above — excerpt reconstructed from search snippets, not a direct article fetch; please verify exact wording against the primary link. Secondary sourcing (local news), not a primary ordinance-text link.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
