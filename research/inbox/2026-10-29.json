@@ -1,0 +1,36 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.wsmv.com/2026/10/21/memphis-city-council-declines-pass-data-center-moratorium/",
+      "title": "Memphis City Council declines to pass data center moratorium",
+      "publisher": "WSMV",
+      "publicationDate": "2026-10-21",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The 12-month moratorium vote tied 6-6; council instead passed a 135-day pause on data center permitting.",
+      "suggestedProjectName": "xAI Colossus (Memphis, TN)",
+      "note": "SITING RESTRICTION: Memphis City Council voted down a 1-year data center moratorium on 2026-10-20 (6-6 tie) and instead adopted a 135-day pause on new data center permitting, plus a separate ordinance on closed-loop water and a carbon-based-electricity phase-out schedule. Does not halt existing xAI Colossus operations. Trigger was council learning xAI is already building an undisclosed fourth Memphis facility on land it owns; mayor separately issued a 90-day executive order to study impacts. This project is almost certainly already tracked (xAI Colossus 1/2/3, Memphis) -- could not confirm against the tracker's project list this run because tracker.bepresearch.com was unreachable from this session (network policy blocked the API host), so projectId is omitted; please match manually. CAVEAT: WebFetch was also blocked this run, so this excerpt is reconstructed from WebSearch's summary of the article rather than fetched and quoted directly from source text -- verify exact wording against the original article before publishing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.coloradopolitics.com/2026/10/26/aurora-city-council-votes-down-indefinite-data-center-moratorium/",
+      "title": "Aurora City Council votes down indefinite data center moratorium",
+      "publisher": "Colorado Politics",
+      "publicationDate": "2026-10-26",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Six councilmembers voted for the indefinite moratorium and five against; a two-thirds majority was required to pass.",
+      "suggestedProjectName": "Trident Data Center (Aurora, CO)",
+      "note": "SITING RESTRICTION: Aurora, CO city council rejected an indefinite data center moratorium on 2026-10-26 (6-5, short of the required two-thirds). This is the second such rejection; an earlier 6-month moratorium was rejected in August. In the same session the council advanced a new zoning rule requiring data centers to sit at least 750 feet from residentially zoned districts. Separately (reported same week), Vantage, developer of the nearby Trident Data Center, agreed to seek an alternative site; the moratorium would not have applied to Trident regardless since it would not affect already-submitted applications. Could not confirm whether Trident is already a tracked project -- tracker.bepresearch.com was unreachable from this session (network policy blocked the API host) so Step 1 project-ID lookup could not be done; projectId omitted, please match manually. CAVEAT: WebFetch was blocked this run, so the excerpt is reconstructed from WebSearch's summary rather than fetched directly from the article -- verify exact wording before publishing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.wunc.org/2026-10-27/davidson-county-adopts-stricter-data-center-rules-rejects-moratorium",
+      "title": "Davidson County adopts stricter data center rules, rejects moratorium",
+      "publisher": "WUNC",
+      "publicationDate": "2026-10-27",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Commissioners voted 5-2 to adopt new data center restrictions in place of a proposed four-month moratorium.",
+      "note": "SITING RESTRICTION: Davidson County, NC board of commissioners rejected a proposed 4-month data center moratorium on 2026-10-26 and instead voted 5-2 to adopt new rules covering noise, water and power use, and environmental impact for future data center proposals in unincorporated county areas. Officials say no data center applications have been submitted in the county so far, so no specific project is attached to this finding. Note: this is Davidson County, NC -- distinct from the separate, earlier Davidson County/Nashville, TN (Metro Council) data center moratorium action; do not conflate. tracker.bepresearch.com was unreachable from this session (network policy blocked the API host), so Step 1 current-state lookup could not be performed this run. CAVEAT: WebFetch was blocked this run too, so the excerpt is reconstructed from WebSearch's summary rather than fetched directly from the article -- verify exact wording before publishing.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
