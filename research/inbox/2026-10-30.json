@@ -1,0 +1,36 @@
+{
+  "submissions": [
+    {
+      "url": "https://okcfox.com/news/local/once-in-a-century-development-okc-city-council-votes-6-3-to-rezone-land-for-data-center",
+      "title": "'Once in a century development': OKC City Council votes 6-3 to rezone land for data center",
+      "publisher": "KOKH FOX 25 Oklahoma City",
+      "publicationDate": "2026-10-27",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "How people vote today should not be interpreted as to how they vote in the future.",
+      "suggestedProjectName": "Beltline Energy data center campus, Oklahoma City (near I-40 & Frisco Rd)",
+      "note": "New project candidate, not yet in tracker. OKC Council voted 6-3 on Oct 27, 2026 to rezone land for Beltline Energy's data center campus despite the city's active data-center moratorium -- the application predates the moratorium, so Mayor Holt said the approval sets no precedent and separately asked to extend the moratorium (in place since April 2026) another 6 months, through Dec 31 2026 absent new zoning rules. Approval reportedly carries conditions on water, electricity and noise, but a specific 55 dB / 75,000-gal/day figure came from a single low-authority aggregator this run and is UNVERIFIED -- do not enter as confirmed. No MW/capex disclosed; left blank per policy. VERIFICATION CAVEAT: this run's sandbox could not reach tracker.bepresearch.com (network policy blocked the API) or fetch any external page directly -- WebFetch failed with DNS/CONNECT errors for every domain tried, not just this one. I relied on WebSearch's synthesized summaries rather than the primary article text; the excerpt above is the one verbatim-quoted sentence it surfaced, and it lacks a numeric figure. Please open the source URL to confirm wording and get the actual MW/cost figures before accepting.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.wsmv.com/2026/10/21/memphis-city-council-declines-pass-data-center-moratorium/",
+      "title": "Memphis City Council declines to pass data center moratorium",
+      "publisher": "WSMV",
+      "publicationDate": "2026-10-21",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "failed, with six votes for it and six votes against it",
+      "note": "SITING RESTRICTION: Memphis City Council tied 6-6 on Oct 20, 2026 on a 12-month (some outlets report 18-month) moratorium on new data centers, so it failed; council instead passed a 135-day pause on accepting/processing new data-center permits, timed alongside Mayor Paul Young's 90-day executive-order study of data-center impacts. Scope is reported as new permits only -- coverage does not say whether it reaches already-permitted, under-construction facilities. Relevant tracked projects in the area: xAI Colossus 2 (Memphis, TN, UNDER_CONSTRUCTION) and xAI Colossus 1 (Memphis, TN, OPERATIONAL); projectId omitted rather than guessed, since the live tracker API was unreachable this run. The quoted six-six line is reported via FOX13 Memphis coverage of the same vote; I cited WSMV's article as the URL because I could not locate FOX13's specific article URL in search results, and could not fetch either page directly (WebFetch blocked this run for every external domain) to confirm the exact wording appears verbatim on the cited URL. Please verify quote-to-source match before accepting. One lower-quality aggregator reported a conflicting 7-5 tally for the pause vote itself -- flagging as unresolved, not used in the excerpt.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.coloradopolitics.com/2026/10/26/aurora-city-council-votes-down-indefinite-data-center-moratorium/",
+      "title": "Aurora City Council votes down indefinite data center moratorium",
+      "publisher": "Colorado Politics",
+      "publicationDate": "2026-10-26",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "asked for at least 90 days to evaluate alternative sites, calling the timeframe \"considerably compressed\"",
+      "suggestedProjectName": "Trident Data Center (Vantage Data Centers, Aurora, Colorado)",
+      "note": "SITING RESTRICTION: Aurora, CO city council voted down an indefinite moratorium on new/expanded data-center applications for the second time on Oct 26, 2026 (council previously rejected a 6-month version in August 2026). The vote followed Vantage Data Centers' request for at least 90 days to evaluate alternate sites for its proposed Trident Data Center (application filed Aug 25, 2025; not yet in tracker, in Shackelford/Wisconsin's parent company Vantage but a distinct site) amid heavy resident opposition; Vantage asked the council to hold off on new data-center rules in the meantime. Outlets disagree on the Oct 26 vote's exact procedural mechanics (a substantive rejection per Colorado Politics vs. a blocked motion to reconsider per Denver7) and neither gives a numeric tally -- treat the outcome (moratorium did not pass) as confirmed, the mechanics as unresolved. No MW/capex for Trident found this run; left blank. VERIFICATION CAVEAT: WebFetch was blocked for every external domain this run (including coloradopolitics.com), so the excerpt was assembled from WebSearch's synthesized summary of Vantage's letter rather than the primary document -- confirm exact wording against the source before treating it as a verbatim quote.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
