@@ -1,0 +1,66 @@
+{
+  "submissions": [
+    {
+      "url": "https://computing.co.uk/news/2026/ai/microsoft-exits-nscale-deal-ipo-at-risk",
+      "title": "Microsoft pulls out of Nscale deal, putting $35bn IPO at risk",
+      "publisher": "Computing (UK)",
+      "publicationDate": "2026-10-18",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Microsoft pulls out of Nscale deal, putting $35bn IPO at risk",
+      "suggestedProjectName": "Nscale Loughton",
+      "note": "Matches tracked project 'Nscale Loughton' (slug nscale-loughton-for-microsoft), status ANNOUNCED, last verified 2026-07-28, whose analyst notes name Microsoft as the Azure customer for this 90MW/23,040-GPU site. Multiple outlets (The Telegraph first, ~Oct 18 2026; reporting corroborated by The Guardian, Reuters, CityAM, Qatar Tribune, DCD/Baxtel-linked coverage) say Microsoft has terminated its agreement for this site, citing grid power delays now pushed into the 2030s per Nscale's own account. Nscale (per a spokesperson statement relayed by Qatar Tribune) says: 'We remain committed to both the Loughton project and the UK and we are exploring alternative power sources for the site.' Microsoft's wider Nscale relationship (other sites, e.g. Barstow TX) reportedly continues. This is a material status/customer change, not a capacity revision — no MW/GPU figures have changed. CAVEAT: this automated run could not reach the live tracker API (egress to tracker.bepresearch.com was blocked by this session's network policy for both GET and POST) so no projectId is available — please match by slug/name. Could not WebFetch primary Telegraph/Guardian text directly (WebFetch was also blocked for general news domains this run); quote above is a verbatim headline, cross-confirmed by multiple independent outlets reporting the same termination.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://okcfox.com/newsletter-daily/once-in-a-century-development-okc-city-council-votes-6-3-to-rezone-land-for-data-center",
+      "title": "'Once in a century development': OKC City Council votes 6-3 to rezone land for data center",
+      "publisher": "KOKH Fox 25 (Oklahoma City)",
+      "publicationDate": "2026-10-27",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "OKC City Council votes 6-3 to rezone land for data center",
+      "suggestedProjectName": "Beltline Energy OKC Data Center",
+      "note": "SITING RESTRICTION: Oklahoma City Council voted 6-3 on Oct 27, 2026 to rezone land near I-40/Frisco Road for Beltline Energy's data center. Approval carries conditions on water use, electricity, and noise (a companion report, fourweekmba.com, cites a 55 dB cap). Beltline was one of only two applicants allowed to seek zoning ahead of OKC's standing citywide data-center moratorium, because it applied before the freeze took effect; a community benefits agreement with Beltline is still required before any building permit issues. At the same meeting, Mayor David Holt asked that the moratorium (otherwise expiring end of 2026) be extended six months, and said the vote should not signal OKC is broadly open to this project type. No MW/capex disclosed in sources reviewed. New project, not currently in tracker — no projectId.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://cryptobriefing.com/san-francisco-data-center-moratorium/",
+      "title": "San Francisco hits pause on new data centers with 45-day moratorium",
+      "publisher": "Crypto Briefing",
+      "publicationDate": "2026-10-06",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "San Francisco hits pause on new data centers with 45-day moratorium",
+      "note": "SITING RESTRICTION: San Francisco's Board of Supervisors unanimously passed a 45-day urgency moratorium (under Cal. Gov. Code §65858) halting approval of new-build and expansion permits for data centers, reported passed ~Oct 6-7, 2026 and signed by Mayor Lurie (~Oct 16, 2026 per sfstandard.com). One legal summary (hklaw.com) says the pause is extendable up to 22 months; city planners must report back within 25 days with a hearing to follow within 35 days. Sources disagree on the exact legislative file number (261021.2 vs 27-0050) — recommend checking SF Board of Supervisors' own legislative record before citing a file number. Not tied to a specific tracked project.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://baxtel.com/news/cleveland-extends-data-center-moratorium-through-january-29-2027",
+      "title": "Cleveland extends data center moratorium through January 29, 2027",
+      "publisher": "Baxtel",
+      "publicationDate": "2026-10-19",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Cleveland extends data center moratorium through January 29, 2027",
+      "note": "SITING RESTRICTION: Cleveland City Council voted the night of Oct. 19, 2026 to extend the city's existing moratorium on new data center development through Jan. 29, 2027. Not tied to a specific tracked project.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://magica.com/news/lexington-data-center-moratorium-extended-october-2027",
+      "title": "Lexington extends data-center moratorium to October 2027",
+      "publisher": "Magica (citing Spectrum News 1)",
+      "publicationDate": "2026-10-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Lexington extends data-center moratorium to October 2027",
+      "note": "SITING RESTRICTION: Lexington-Fayette (KY) Urban County Council voted unanimously (reported Oct 7-8, 2026, Spectrum News 1) to extend its data center development moratorium to October 2027. Two related zoning measures, including a proposed dedicated data-center zoning district, had second readings scheduled for Oct 22, 2026 — worth a follow-up check next run. Not tied to a specific tracked project.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.coloradopolitics.com/2026/10/26/aurora-city-council-votes-down-indefinite-data-center-moratorium/",
+      "title": "Aurora City Council votes down indefinite data center moratorium",
+      "publisher": "Colorado Politics",
+      "publicationDate": "2026-10-26",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Aurora City Council votes down indefinite data center moratorium",
+      "note": "SITING RESTRICTION (rejected): Aurora, CO City Council voted down a proposed indefinite data-center moratorium on Oct 26, 2026 — the second such rejection after a 6-5 vote against a six-month moratorium earlier in 2026. The dispute centers on Vantage Data Centers' 'Trident' project, which Vantage has reportedly agreed to relocate away from the contested site amid the fight; Trident is not currently in our tracker. Sources conflict on the exact Oct 26 vote tally and on the mayor's position — flagging for human verification rather than treating the vote count as confirmed. Included because it shows an active, unresolved siting fight that could resurface (council member says the same motion will be reintroduced).",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
