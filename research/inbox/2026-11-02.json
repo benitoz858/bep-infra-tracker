@@ -1,0 +1,47 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.windowscentral.com/microsoft/microsoft-is-no-longer-involved-in-a-planned-uk-ai-data-center-thats-still-waiting-for-power",
+      "title": "Microsoft is no longer involved in a planned UK AI data center that's still waiting for power",
+      "publisher": "Windows Central",
+      "publicationDate": "2026-10-18",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "told Nscale it could not supply enough electricity to Loughton until the early to mid 2030s",
+      "suggestedProjectName": "Nscale Loughton",
+      "note": "STATUS CHANGE: tracker currently lists this project (slug nscale-loughton-for-microsoft) as ANNOUNCED with Microsoft as anchor tenant. Multiple outlets (Telegraph-sourced, relayed by Windows Central, The Register, Qatar Tribune, Business Day) report Microsoft has pulled out of its agreement to anchor this Essex site, which was to host 23,040 Nvidia GB300 GPUs from Q1 2027, after UK Power Networks said it could not supply grid power until the early-to-mid 2030s. Nscale says it remains committed to Loughton and is seeking alternative power/sites; no replacement tenant named. This finding was assembled from search-result summaries, not a direct fetch of the source page (this session's outbound web-fetch tool was unavailable) -- please re-verify the exact wording against the original Telegraph/Windows Central reporting before raising confidence above LOW.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://dealroom.co/news/156472-oracle-files-force-majeure-on-2-45gw-new-mexico-stargate-data-center/",
+      "title": "Oracle files force majeure on 2.45GW New Mexico Stargate data center",
+      "publisher": "Dealroom",
+      "publicationDate": "2026-09-24",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "the state's environment department faces a 23 November 2026 deadline to decide",
+      "suggestedProjectName": "Stargate Doña Ana County",
+      "note": "STATUS CHANGE / DELAY: tracker lists this project (slug stargate-dona-ana-county) as UNDER_CONSTRUCTION. Reporting says Oracle sent a force majeure notice on the Project Jupiter campus; the Energy Transfer gas pipeline meant to supply it has slipped roughly six months to Feb 1, 2027 after New Mexico regulators denied permits, and a separate fuel-cell air-quality permit is pending with a Nov 23, 2026 state decision deadline -- i.e. still live as of this writing. Oracle maintains the overall project remains on schedule; a nonprofit and two residents are separately suing Doña Ana County to try to stall the 1,400-acre project. Quote taken from search-result summarization, not a direct page fetch (WebFetch was unavailable this session) -- verify against Oracle's own statement or primary NM regulatory filings before raising confidence.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/anthropic-signs-19bn-20-year-lease-for-kentucky-data-center-with-terawulf/",
+      "title": "Anthropic signs $19bn 20-year lease for Kentucky data center with TeraWulf",
+      "publisher": "DatacenterDynamics",
+      "publicationDate": "2026-07-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "transaction is expected to monetize about $450 million of invested capital",
+      "suggestedProjectName": "Fluidstack Abernathy",
+      "note": "OWNERSHIP CHANGE: tracker lists this project (slug cipher-black-pearl-for-aws is different; this is fluidstack-abernathy) as UNDER_CONSTRUCTION with TeraWulf/Fluidstack as the joint-venture owners. Alongside its Anthropic/Lake Mariner lease announcement, TeraWulf agreed to sell its 50.1% stake in the Abernathy, Texas JV with Fluidstack to a Fluidstack-led investor group, monetizing roughly $450M of invested capital -- this changes the ownership/owner field, not capex (the $450M is sale proceeds, not construction spend, and should not be entered as capex). Separately at Lake Mariner, Fluidstack's contracted capacity reportedly reached ~360MW after a CB-5 expansion, and Google agreed to backstop $1.8B of Fluidstack's lease obligations for ~8% TeraWulf equity -- both worth a human look if not already reflected. Sourced via search-result summarization without a direct page fetch (WebFetch unavailable this session); verify against TeraWulf's SEC 8-K/press release before updating owner field.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.coloradopolitics.com/2026/10/26/aurora-city-council-votes-down-indefinite-data-center-moratorium/",
+      "title": "Aurora City Council votes down indefinite data center moratorium",
+      "publisher": "Colorado Politics",
+      "publicationDate": "2026-10-26",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "an indefinite moratorium would have needed two-thirds of the councilmembers to vote \"yes\"",
+      "note": "SITING RESTRICTION: Aurora, CO city council failed to pass a proposed indefinite moratorium on new data center development (needed a two-thirds supermajority). Not tied to a specific tracked project -- flagging as a general siting-restriction data point for the siting-restrictions table since it's a contested-vote outcome (restriction attempt failed, clearing the way for continued development in that jurisdiction) rather than a new ban. Worth human judgment on whether/how to log a failed restriction vote distinct from an enacted one.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
