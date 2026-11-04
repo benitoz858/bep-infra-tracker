@@ -1,0 +1,86 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.silicon.co.uk/cloud/ai/microsoft-loughton-cancel-631918",
+      "title": "Microsoft reportedly exits Nscale's Loughton AI data-centre deal",
+      "publisher": "Silicon UK",
+      "publicationDate": "2026-10-19",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Microsoft has ended its agreement for Nscale's planned AI data centre in Loughton, Essex, The Telegraph reported on 18 October.",
+      "note": "STATUS CHANGE on tracked project nscale-loughton-for-microsoft (currently ANNOUNCED, Microsoft recorded as anchor customer, 90 MW estimated). Multiple UK outlets (Telegraph original; BBC, Guardian, Silicon UK, Qatar Tribune corroborating) report Microsoft withdrew as anchor tenant around Oct 18-19, 2026, with UK Power Networks reportedly unable to supply enough grid power to the Loughton site until the early-to-mid 2030s. Nscale says it remains committed to the site and is seeking alternative power. This is a material change not yet reflected in the tracker (project lastVerifiedAt is 2026-07-28). Reviewer should re-check anchor tenant / status and consider flagging the project as at-risk. CAVEAT: this environment could not WebFetch the Telegraph/BBC originals directly (network policy blocked general web fetch); the quote above is drawn from secondary UK tech-press coverage that attributes it to the Telegraph's Oct 18 report - please verify exact wording against a primary (Telegraph/BBC) source before treating the quote as authoritative.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.wwno.org/coastal-desk/2026-04-21/advocates-cite-lack-of-transparency-rising-costs-as-regulators-fast-track-second-meta-data-center",
+      "title": "Advocates cite lack of transparency, rising costs as regulators fast-track second Meta data center",
+      "publisher": "WWNO (New Orleans Public Radio)",
+      "publicationDate": "2026-04-21",
+      "sourceType": "NEWS_ARTICLE",
+      "projectId": "meta-hyperion-louisiana",
+      "excerpt": "the final vote on Entergy and Meta's seven new gas plants will take place on their requested date of Nov. 18",
+      "note": "Upcoming regulatory decision directly gating the tracked Meta Hyperion (meta-hyperion-louisiana) buildout. The Louisiana PSC voted 4-1 on 2026-04-15 to fast-track (and skip the ALJ recommendation step for) Entergy's application for seven new gas plants to power Hyperion's second phase, with the commission's own final vote calendared for Nov. 18, 2026 - deliberately scheduled after this fall's PSC elections but before new commissioners are sworn in, per WWNO. Filing estimates the seven plants alone at >$16B, rising to >$21B including associated infrastructure (this is a sub-component of the project's already-recorded $50B/5GW total, not a separate capex figure - do not overwrite the existing capex field with it). Flagging because: (1) the vote date (Nov 18, 2026) falls just after this submission and a human should watch for the outcome; (2) consumer/environmental groups (UCS, Alliance for Affordable Energy) have objected and appealed a related LPSC document-production ruling. UNVERIFIED SIGNAL: I could not confirm whether the Nov. 18 vote has occurred or its outcome as of this research run (2026-11-04) - worth a follow-up check.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/7/finland-orders-halt-to-work-on-google-data-sites-over-environment-concerns",
+      "title": "Finland orders halt to work on Google data centre sites",
+      "publisher": "Al Jazeera",
+      "publicationDate": "2026-10-07",
+      "sourceType": "NEWS_ARTICLE",
+      "suggestedProjectName": "Google Muhos / Kajaani Data Centers (Finland)",
+      "excerpt": "Finland's Licensing and Supervision Agency ordered Tuike Finland Oy to stop preparatory site work until mandatory environmental impact assessments are completed.",
+      "note": "SITING RESTRICTION: Finland's LVV (Licensing and Supervision Agency) ordered Google subsidiary Tuike Finland Oy on 2026-10-06 to halt preparatory work (forest clearing/drainage) at two planned data center sites, Muhos and Kajaani, pending mandatory environmental impact assessments - part of Google's announced ~€13B (~$15B) 2027-2028 Finland buildout spanning Hamina, Kajaani, Muhos and Vaala. Escalated 2026-10-29 when Finnish police opened a criminal investigation into suspected breaches of environmental law (forest clearing/drainage before the EIA was complete) at the Muhos site. Neither Muhos nor Kajaani appears to be in the tracker currently (only the operational Hamina campus and Nebius's separate Lappeenranta project are tracked for Finland) - suggesting these as new project candidates for the siting-restrictions page. CAVEAT: quote is drawn from secondary (Al Jazeera/wire) coverage synthesizing the LVV order; this environment could not WebFetch the regulator's own statement or Yle's Finnish-language original to confirm exact wording - please verify before citing verbatim.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://sfstandard.com/2026/10/16/mayor-lurie-data-center-moratorium/",
+      "title": "Mayor Lurie signs 45-day data center moratorium",
+      "publisher": "The San Francisco Standard",
+      "publicationDate": "2026-10-16",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Mayor Daniel Lurie signed Supervisor Shamann Walton's 45-day data center moratorium on Oct. 16, the deadline before it would take effect automatically.",
+      "note": "SITING RESTRICTION: San Francisco's Board of Supervisors unanimously passed a 45-day moratorium on new data center approvals and on permit applications to expand existing facilities (2026-10-06), and Mayor Lurie signed it 2026-10-16. The pause specifically covers expansion of the NOVVA data center at 400 Paul Ave. in Bayview; during the 45 days the planning department is to study water, energy, air-quality and land-use impacts. Not tied to any project currently in the tracker - flagging for the siting-restrictions dataset generally (notable as the first such move in AI's own hometown).",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.tpr.org/news/2026-10-13/hood-county-rejects-comanche-circle-data-center-settlement-permit-appeal",
+      "title": "Hood County rejects Comanche Circle data center settlement, permit appeal",
+      "publisher": "Texas Public Radio",
+      "publicationDate": "2026-10-13",
+      "sourceType": "NEWS_ARTICLE",
+      "suggestedProjectName": "Sailfish Comanche Circle (Hood County, TX)",
+      "excerpt": "Hood County commissioners unanimously denied Sailfish's appeal of its on-site permit applications, the same day they rejected a settlement.",
+      "note": "SITING RESTRICTION: Hood County, TX commissioners on 2026-10-13 rejected a proposed settlement with developer Sailfish Investors that would have shrunk its Comanche Circle data center footprint from ~2,523 acres to ~1,375 acres (despite Sailfish offering commitments on setbacks, cooling, light pollution and road repairs), then unanimously denied Sailfish's appeal of its on-site permit applications. Sailfish affiliate Panther Generation LLC's related Lion/Panther projects were separately denied on-site permits (county never voted on either plan). Baxtel reports Sailfish intends to go to court; no lawsuit filing confirmed yet. Project not currently tracked - suggesting as a new entry given the acreage and multi-round regulatory fight (county rejected a data-center moratorium itself 3-2 back in Feb 2026, then fought this specific project instead).",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.atlantanewsfirst.com/2026/09/09/dekalb-county-board-affirms-denial-data-center-proposal/",
+      "title": "DeKalb County board affirms denial of data center proposal",
+      "publisher": "Atlanta News First",
+      "publicationDate": "2026-09-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "DeKalb County's planning department denied Shadowbox's rezoning request because of the county's ongoing data center moratorium.",
+      "note": "SITING RESTRICTION: DeKalb County, GA's board of commissioners affirmed (2026-09-09) the planning department's denial of Shadowbox Studios' request to convert a ~200-acre film-studio property (3600 International Park Drive) to data-center use, citing the county's data center moratorium (passed 4-3 on 2025-07-08, since extended through March 2027). Shadowbox and affiliate Henrico 183 had sued DeKalb in August (filed 2026-08-05) claiming they'd spent >$30M developing the site after county officials allegedly told them in writing (June 2023, April 2024, Feb 2025) a data center would be allowed there, and that the moratorium has cut the property's value by ~$200M; the county disputes those letters were binding. Lawsuit was still pending with no hearing date as of the most recent coverage found. Not tied to a tracked project; flagging as a siting-restriction/legal-dispute data point (moratorium-vs-prior-approval conflicts are becoming a recurring pattern - see also Hood County, TX finding in this batch).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 30000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Plaintiff's own claim in an active lawsuit (amount spent developing the site to date); not an independently confirmed figure"
+        }
+      ]
+    },
+    {
+      "url": "https://fourweekmba.com/ai-okc-approves-a-data-center-with-a-55-db-cap-as-towns-pause/",
+      "title": "OKC Approves a Data Center With a 55 dB Cap as Towns Pause",
+      "publisher": "FourWeekMBA",
+      "publicationDate": "2026-10-27",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Mayor David Holt asked that the city's current moratorium be extended by six months.",
+      "note": "SITING RESTRICTION - LOW CONFIDENCE / UNVERIFIED: Oklahoma City's council reportedly voted 6-3 on 2026-10-27 to approve zoning for a Beltline Energy data center (with conditions incl. a 55 dB noise cap), and Mayor Holt asked at the same meeting that the city's existing data-center moratorium (in place since 2026-04-21, set to lapse 2026-12-31) be extended six months. This item is sourced only to a secondary aggregator (FourWeekMBA) citing The Oklahoman, which I could not reach directly in this environment (WebFetch to news domains was blocked by network policy) - I could not find the original Oklahoman report or confirm a council vote on the extension itself actually occurred. Flagging as an unverified signal worth a human look rather than a confirmed finding - please verify against The Oklahoman or OKC council minutes before acting on it.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
