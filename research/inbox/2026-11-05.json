@@ -1,0 +1,98 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html",
+      "title": "Voters rebuff data centers in every ballot measure except one during the 2026 midterms",
+      "publisher": "CNBC",
+      "publicationDate": "2026-11-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Voters sided against data centers in every one of 41 measures across 10 states except one, in Harwood, ND.",
+      "note": "SITING RESTRICTION: Election-night roundup of the Nov 3, 2026 US midterms, in which voters in 10 states decided roughly 41 local data-center ballot measures (Ohio alone had 21). Nearly all measures moved in the restrictive direction (bans, moratoriums, zoning blocks) rather than the pro-build direction. This is a national signal, not one project; see separate findings below for specific jurisdictions (Alhambra CA, Edgewater FL, Harwood ND) where outcomes are clear enough to cite individually. Could not confirm verbatim article text via WebFetch (outbound network to this and most other news domains was blocked in this session's sandbox) — excerpt is reconstructed from search-engine summaries of the piece, not copy-pasted from the live page. Treat as MEDIUM confidence pending a human re-read of the source.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://laist.com/news/alhambra-ballot-measure-data-center-ban-2026",
+      "title": "Alhambra ballot measure: data center ban, 2026",
+      "publisher": "LAist",
+      "publicationDate": "2026-11-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Alhambra voters approved Measure DB, banning data centers in every zoning district citywide.",
+      "note": "SITING RESTRICTION: Alhambra, CA (LA County) voters approved Measure DB on Nov 3, 2026, extending the city's existing office/industrial-zone data center prohibition to a citywide ban. Alhambra becomes the second CA city with a voter-enacted ban after Monterey Park's Measure NDC (June 2026, ~86% yes). No project in the tracker is sited in Alhambra as far as I could tell from the local snapshot, so this is a pure zoning-restriction entry, not tied to a projectId. Could not WebFetch the exact vote tally (sandbox network block); excerpt paraphrases the ballot's own prohibition language as reported. Recommend a human confirm the certified percentage via LA County Registrar-Recorder before marking CONFIRMED.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.fox35orlando.com/news/edgewater-approves-ban-ai-data-centers-orange-county-weighs-moratorium",
+      "title": "Edgewater approves ban on AI data centers as Orange County weighs moratorium",
+      "publisher": "FOX 35 Orlando",
+      "publicationDate": "2026-11-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The charter amendment bars the city from permitting, building, expanding or operating any new data center.",
+      "note": "SITING RESTRICTION: Edgewater, FL (Volusia County) voters approved a charter amendment on Nov 3, 2026 making the city council's earlier administrative data-center ban permanent and council-proof (only reversible by another public vote). No tracked project sits in Edgewater. Could not WebFetch the certified tally; the quoted scope language is reconstructed from the ballot measure's described text, not copy-pasted from a live page. Flag MEDIUM confidence pending confirmation.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.valleynewslive.com/2025/09/09/final-vote-harwood-ai-data-center-scheduled-special-meeting/",
+      "title": "Harwood AI data center industrial-project review ballot measure rejected",
+      "publisher": "CNBC / Valley News Live (background)",
+      "publicationDate": "2026-11-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Harwood was the lone measure of 41 nationwide where voters rejected the added review, a result read as pro-data-center.",
+      "note": "SITING RESTRICTION (exception): Harwood, ND voters rejected a proposed added review requirement for industrial projects (which would have covered Applied Digital's ~280 MW/$3B AI data center near Harwood) — the single measure nationwide on Nov 3, 2026 that did NOT move in the anti-data-center direction, per CNBC's roundup. Note: the Applied Digital Harwood, ND site itself does not appear to be the same project as the tracker's 'Applied Digital Polaris Forge 1' (Ellendale, Dickey County) — Harwood is in Cass County and looks like a separate, currently untracked site. Flagging this gap for a human to check; I did not submit it as a new-project candidate because I could not re-verify current MW/capex figures beyond the Sept 2025 rezoning coverage (background link given is for that context, not the Nov 2026 vote itself, which I could not find a dedicated article for).",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/openai-gets-green-light-for-32gw-power-deal-to-supply-planned-data-center-in-effingham-county-georgia/",
+      "title": "OpenAI gets green light for 3.2GW power deal to supply planned data center in Effingham County, Georgia",
+      "publisher": "DatacenterDynamics",
+      "publicationDate": "2026-08-27",
+      "sourceType": "NEWS_ARTICLE",
+      "suggestedProjectName": "OpenAI Project Camellia (Effingham County, Georgia)",
+      "excerpt": "Georgia regulators approved a 25-year deal adding 3,200 megawatts of new power demand for OpenAI's Project Camellia.",
+      "note": "NEW PROJECT, not currently in the tracker (confirmed against the 103-project local snapshot dated 2026-11-04 — no Effingham County or 'Project Camellia' entry; the only tracked Georgia site is Microsoft Fairwater–Atlanta). Georgia PSC approved a 25-year Georgia Power supply contract for OpenAI's planned Effingham County campus on 2026-08-27: 3,200 MW of new site power demand, plus OpenAI committing up to 1,000 MW of demand response during grid-stress events (Georgia Power calls it one of the largest single-facility demand-response commitments in the country). Reported capex differs by outlet ($20B vs $30B) — leaving capex blank rather than guessing. First phase targeted for 2028. This is several weeks old, not within the usual 24-72h window, but it is a real regulatory approval (closer to primary than most of today's finds) and a material gap in current coverage, so I'm surfacing it now. Could not WebFetch the PSC order itself to pull verbatim text; excerpt is reconstructed from converging secondary reporting (DCD, Fox5 Atlanta, Baxtel, Atlanta News First).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 3200,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Site power demand stated in Georgia Power's PSC-approved 25-year supply contract, per converging secondary reporting; not read directly from the PSC order."
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "OpenAI's demand-response commitment (load it can be asked to shed during grid stress), stated by Georgia Power per secondary reporting; distinct from the 3,200 MW site demand figure above."
+        }
+      ]
+    },
+    {
+      "url": "https://www.cnbc.com/2026/11/03/brookfield-ai-data-center-yorkshire-drax.html",
+      "title": "Brookfield plans $27 billion AI data center at power station; Drax rises 8%",
+      "publisher": "CNBC",
+      "publicationDate": "2026-11-03",
+      "sourceType": "NEWS_ARTICLE",
+      "suggestedProjectName": "Brookfield/Radiant AI Data Center at Drax Power Station (North Yorkshire, UK)",
+      "excerpt": "Brookfield's Radiant platform will jointly develop an AI data center at Drax's North Yorkshire site, targeting over 1 gigawatt.",
+      "note": "NEW PROJECT, not currently in the tracker (confirmed against the local snapshot — tracked UK sites are Isambard-AI Bristol, Nscale Loughton, and the paused Stargate UK/North Tyneside; none is at Drax's Selby/North Yorkshire power station). Drax Group announced on 2026-11-03 a joint-development agreement with Brookfield's AI-infrastructure platform Radiant to build an AI data center at the Drax Power Station estate (Selby, North Yorkshire), with an initial ~100 MW phase targeted for operation in Q1 2028 and an ambition to exceed 1 GW at the site thereafter. Brookfield estimated the potential investment could exceed £20bn (~$26.8B); this is explicitly described as an estimate, not a committed capex figure, and is contingent on planning/regulatory approval, a tenant, and final investment decision. IT-load vs. site/generation-capacity basis is unclear from available reporting — Drax had separately been pursuing a lower, ~500 MW CfD power allocation for 2027-2031 for a 100 MW first-phase facility on the same site before this partner was named, so figures here may represent the longer-term ambition rather than a confirmed near-term build. Could not WebFetch the CNBC article or a Drax/Brookfield press release directly (sandbox network block); treat the $26.8B and >1GW figures as LOW confidence pending primary-source confirmation.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 100,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "First-phase capacity as reported by CNBC, attributed to the Drax/Brookfield announcement; not confirmed against a primary release."
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 26800000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Brookfield's own stated estimate ('could exceed £20bn') converted to USD as reported by CNBC; explicitly an estimate, not a confirmed spend."
+        }
+      ]
+    }
+  ]
+}
