@@ -1,0 +1,54 @@
+{
+  "submissions": [
+    {
+      "url": "https://news.ballotpedia.org/2026/11/06/voters-favored-limiting-data-center-development-in-40-of-41-local-ballot-measures-on-nov-3/",
+      "title": "Voters favored limiting data center development in 40 of 41 local ballot measures on Nov. 3",
+      "publisher": "Ballotpedia News",
+      "publicationDate": "2026-11-06",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Voters favored limiting data center development in 40 of 41 local ballot measures on Nov. 3.",
+      "note": "SITING RESTRICTION: Nationwide roundup of the Nov. 3, 2026 election. Across 10 states and ~41 local ballot measures on data-center siting, 40 came down on the restrictive side (bans, MW thresholds, tax-guarantee requirements, voter-approval requirements); the lone exception was a defeated review requirement in Harwood, ND. Not tied to a single tracked project - flagging as broad siting-risk context. Individual local results (e.g., Ohio measures: Defiance - prohibit data centers over 25 MW; Granville - prohibit construction; Perry Issue 16 - financial guarantees for tax-incentive recipients) are itemized in the source and may warrant their own entries once county-certified.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.npr.org/2026/11/07/nx-s1-6007770/data-centers-activist-moratorium",
+      "title": "An unexpected activist emerged to help block a $5 billion data center in Maryland",
+      "publisher": "NPR",
+      "publicationDate": "2026-11-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "An unexpected activist emerged to help block a $5 billion data center in Maryland",
+      "suggestedProjectName": "Landover Mall AI Data Center (Prince George's County, MD)",
+      "note": "SITING RESTRICTION / possible new project: Not currently tracked. A $5B data center proposed for the demolished Landover Mall site in Prince George's County, MD won county planning approval in 2024 but has been halted by sustained local organizing (activist Taylor Frazier McCollum, a 25,000+ signature petition) and resulting county-level data-center moratoriums; project was set to break ground 2026-2027 and is now on hold. Developer name not confirmed in this pass - needs identification before promotion. Recommend adding as PAUSED/stalled and linking to the Prince George's County moratorium(s) once those restriction records exist.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 5000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "$5 billion figure as stated by NPR; secondary source, not a primary company/developer disclosure"
+        }
+      ]
+    },
+    {
+      "url": "https://www.venable.com/insights/publications/2026/11/voters-approve-data-center-restrictions",
+      "title": "Voters Approve Data Center Restrictions",
+      "publisher": "Venable LLP",
+      "publicationDate": "2026-11-04",
+      "sourceType": "INDUSTRY_REPORT",
+      "excerpt": "projects exceeding $450 million in project costs be decided by a majority vote of the electors",
+      "note": "SITING RESTRICTION: Janesville, WI referendum on the Nov. 3, 2026 ballot (full question: 'Should approval of proposed development agreements, development projects, sales, and leases of the GM/JATCO sites for projects exceeding $450 million in project costs be decided by a majority vote of the electors?') requires majority voter approval for any GM/JATCO-site development over $450M. It targeted a previously proposed Viridian/Veridian Partners ~$8B, 800MW, 11-building data center campus - though that specific deal had already lapsed (Janesville City Council let the development agreement expire in June 2026, then passed a 12-month data center moratorium in September). Venable's Nov. 4, 2026 client alert reports the measure passed as part of the nationwide Nov. 3 trend. I could not independently verify the certified Rock County vote tally (no local-paper results article surfaced in this pass) - flagging for human confirmation before treating as settled.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.santafenewmexican.com/news/local_news/a-plaintiff-withdrew-from-a-lawsuit-involving-project-jupiter-nobody-is-saying-why/article_556999b9-929c-4870-88ca-1030d59f0912.html",
+      "title": "A plaintiff withdrew from a lawsuit involving Project Jupiter; nobody is saying why",
+      "publisher": "Santa Fe New Mexican",
+      "publicationDate": "2026-11-06",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Empowerment Congress of Doña Ana County has withdrawn as a plaintiff in one of the civil complaints at the request of its nonprofit corporate parent",
+      "note": "Tracked project: Stargate Doña Ana County (Project Jupiter, slug stargate-dona-ana-county, currently UNDER_CONSTRUCTION). Litigation update, not a ruling: the nonprofit Empowerment Congress of Doña Ana County withdrew as a plaintiff from one of the civil suits challenging the county's $165B industrial-revenue-bond financing approval, per a Nov. 6 court filing - at the request of its corporate parent, the Community Action Agency of Southern New Mexico (which says it only learned of the litigation through news reports). This is the second plaintiff to withdraw from these suits in about a month. Does not resolve the underlying bond-validity or Open Meetings Act claims; litigation continues with remaining plaintiffs. Publication date of the underlying Nov. 6 filing is corroborated by a separate Albuquerque Journal report, but I could not confirm the exact publish date/year of this specific article via direct fetch (outbound fetch to this domain was blocked in this session) - cross-checked only via search-engine summary.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
