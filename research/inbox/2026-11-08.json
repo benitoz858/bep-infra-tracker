@@ -1,0 +1,42 @@
+{
+  "submissions": [
+    {
+      "url": "https://baxtel.com/news/microsoft-exits-nscale-s-50mw-loughton-data-center-deal-in-essex",
+      "title": "Microsoft exits Nscale's 50MW Loughton data center deal in Essex",
+      "publisher": "Baxtel (citing The Telegraph)",
+      "publicationDate": "2026-10-18",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Microsoft exits Nscale's 50MW Loughton data center deal in Essex",
+      "suggestedProjectName": "Nscale Loughton",
+      "note": "STATUS CHANGE on tracked project (slug: nscale-loughton-for-microsoft; currently ANNOUNCED, 90MW scalable ceiling / 50MW initial build, 23,040 NVIDIA GB300 GPUs; tracker record names no explicit tenant). Multiple outlets (Telegraph original, Baxtel, IBTimes UK, Kuwait Times) report Microsoft ended its anchor-tenant agreement for this site around Oct 18, 2026. Stated cause: UK Power Networks told Nscale adequate grid capacity would not reach the site until the early-to-mid 2030s. Nscale says it remains committed to the site, is exploring alternative power sources and other UK expansion locations; a spokesperson is quoted (not reproduced verbatim here, see link) affirming commitment. Separately, Google is reported to have taken capacity at an unrelated Nscale West London site, and Microsoft's other Nscale deals (Norway, Portugal, a 240MW Texas campus) are reportedly unaffected. Since Microsoft appears to have been the only disclosed anchor tenant for Loughton, recommend reviewer consider a status change (toward PAUSED or similar) pending a new tenant, and attach this source to the existing project rather than creating a new one. CAVEAT: this session's sandbox could not reach tracker.bepresearch.com or fetch arbitrary external URLs directly (outbound network policy blocked both plain curl and WebFetch to essentially all hosts outside a small allowlist), so the headline/figures above were relayed via a web-search index rather than a direct page fetch. Please re-open the source link to confirm exact wording before treating the excerpt as verbatim.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.tdlr.texas.gov/TABS/Search/Print/TABS2026017746",
+      "title": "Freebird Data Center Phase 1 — TABS accessibility project record (TABS2026017746)",
+      "publisher": "Texas Department of Licensing and Regulation",
+      "publicationDate": "2026-04-15",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "Estimated Cost: $470,000,000. Square Footage: 548,950. New construction, single-story data center, 4 data halls, Milam County, TX.",
+      "suggestedProjectName": "Stargate Milam County",
+      "note": "Matches existing tracked project (slug: stargate-milam-county; UNDER_CONSTRUCTION; no power/capex/sqft currently recorded). This is a Texas Department of Licensing and Regulation (TDLR) accessibility-review filing for 'Freebird Data Center Phase 1', owner of record Milam County Data Center LLC: single-story building, 4 data halls, 548,950 sq ft, estimated construction cost $470M. Filing lists registration 2026-04-15, a listed start date of 2025-10-20 and listed completion of 2026-10-15. Trade press (DataCenterDynamics, Baxtel, Pulse) ties the 'Freebird' codename to OpenAI/SB Energy's ~1.2GW Stargate Milam site, but that OpenAI/SB Energy/1.2GW attribution comes from secondary press coverage, NOT from the filing itself — treat the project-identity link as press-sourced, not primary. Also important: the $470M figure is a phase-1 construction-permit cost estimate (basis: building permit filing), not a disclosed total capex for the full campus — do not use it as whole-project capex. CAVEAT: this session's sandbox could not WebFetch or curl the live TDLR page directly (outbound network to arbitrary hosts was blocked), so these filing figures were relayed via a web-search index rather than read first-hand off the record. Recommend opening the TDLR link directly to confirm the figures and field wording before promoting this claim above LOW/MEDIUM confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 470000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Estimated-cost field in TDLR accessibility-review filing TABS2026017746 for Freebird Data Center Phase 1, Milam County, TX (phase-1 construction-permit cost, not confirmed as total project capex); relayed via search index, not a direct document read, in this session."
+        },
+        {
+          "metricType": "SQUARE_FEET",
+          "numericValue": 548950,
+          "unit": "sq ft",
+          "confidenceLevel": "LOW",
+          "methodology": "Square-footage field in the same TDLR filing (TABS2026017746), phase 1 only; relayed via search index, not a direct document read, in this session."
+        }
+      ]
+    }
+  ]
+}
