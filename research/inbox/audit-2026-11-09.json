@@ -1,0 +1,44 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.neom.com/en-us/newsroom/HUMAIN-and-DataVolt-to-develop-AI-data-center-in-NEOM",
+      "title": "HUMAIN partners with DataVolt to jointly develop 100MW of a 360MW AI data center project in NEOM",
+      "publisher": "NEOM",
+      "publicationDate": "2026-08-31",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "HUMAIN partners with DataVolt to jointly develop 100MW of a 360MW AI data center project in NEOM",
+      "projectId": "datavolt-oxagon-ai-factory-neom",
+      "note": "AUDIT: tracker/analyst notes currently say phase one is '~300 MW targeted for 2028' with no construction documented as of mid-2026. NEOM's Aug 31, 2026 release describes groundbreaking on a 360 MW first phase (HUMAIN taking 100MW of it), inside the wider 1.5GW campus. Recommend updating the phase-one figure toward 360 MW and reviewing whether status should move from ANNOUNCED toward UNDER_CONSTRUCTION. Basis: unclear (IT vs site power not stated in available coverage). CAVEAT: this session's WebFetch could not reach neom.com, datacenterdynamics.com, agbi.com or epoch.ai (sandbox network policy blocked all outbound fetches to these hosts this run) — the excerpt above is a press headline reconstructed from WebSearch snippets and corroborating secondary coverage (DataCenterDynamics, AGBI, MEED all reporting the same 100MW/360MW split in Aug-Sep 2026), not a directly fetched primary-source quote. A human should verify the exact NEOM release wording before committing this correction.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 360,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Basis: unclear. NEOM/HUMAIN/DataVolt company announcement states groundbreaking on a 360 MW first phase (vs. the tracker's prior ~300 MW phase-one figure). Confidence held at MEDIUM rather than HIGH because the primary-source article could not be directly fetched in this sandbox session (network-restricted); corroborated only via WebSearch snippets and secondary trade-press reprints."
+        }
+      ]
+    },
+    {
+      "url": "https://sbenergy.com/openai-and-softbank-group-partner-with-sb-energy/",
+      "title": "OpenAI and SoftBank Group Partner with SB Energy",
+      "publisher": "SB Energy",
+      "publicationDate": "2026-01-09",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "previously announced 1.2 GW data center in Milam County, Texas",
+      "projectId": "stargate-milam-county",
+      "note": "AUDIT: tracker currently records no power figure for Stargate Milam County (correctly blank as of the Sept 2025 OpenAI five-sites announcement, which named the site with no capacity disclosed). A Jan 9, 2026 SB Energy/SoftBank/OpenAI company announcement discloses the site as a 1.2 GW campus total. Recommend adding estimatedMw=1200 (basis: unclear — campus total vs IT load not distinguished in available coverage) rather than leaving the row blank, sourced to this primary announcement. Independently corroborated by Epoch AI's directory and Cleanview, both citing a 1.2 GW campus total with a ~300 MW first phase ('Building 1 / Freebird') targeted for 2027-2028. CAVEAT: this session's WebFetch could not reach sbenergy.com, tools.prnewswire.com, or openai.com (sandbox network policy blocked all outbound fetches to these hosts this run) — the quote is reconstructed from consistent WebSearch-surfaced snippets across independent reprints (PR Newswire, SB Energy's own site, OpenAI's own mirrors), not a directly fetched primary-source quote. A human should verify the exact SB Energy release wording before committing this correction.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1200,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "SB Energy/SoftBank/OpenAI joint company announcement (Jan 9, 2026) names the project as the 'previously announced 1.2 GW data center in Milam County, Texas.' Basis: unclear — campus total vs IT load not distinguished. Confidence held at MEDIUM rather than HIGH because this sandbox's network restrictions prevented a direct fetch of the primary document to confirm the quote's exact wording firsthand."
+        }
+      ]
+    }
+  ]
+}
