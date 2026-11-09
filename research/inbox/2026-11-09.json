@@ -1,0 +1,34 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.venable.com/insights/publications/2026/11/voters-approve-data-center-restrictions",
+      "title": "Voters Approve Data Center Restrictions",
+      "publisher": "Venable LLP",
+      "publicationDate": "2026-11-04",
+      "sourceType": "INDUSTRY_REPORT",
+      "excerpt": "Voters in 10 states approved nearly every local data center restriction on the Nov. 3 ballot.",
+      "note": "SITING RESTRICTION: Nov 3, 2026 local elections — voters approved restrictions (bans, moratoriums, or MW-size caps) in the large majority of roughly 41-47 local data-center ballot measures across about 9-10 states; trackers disagree on the exact count (Ballotpedia/Venable ~38-40 of 41; a separate Redbud Consulting tracker cites 46 of 47, with Harwood, ND the lone jurisdiction that voted against a restriction). Ohio alone had 21 measures across 18 jurisdictions. This is the single biggest siting-restriction event in the dataset's recent history and may already be known to the tracker if a prior daily run (Nov 4-8) caught it -- flagging in case not. All vote totals are unofficial/uncertified pending county canvass. CAVEAT: this agent's outbound network access to arbitrary news sites (WebFetch) was blocked this session, so the excerpt above is a close reconstruction from search-engine summarization of the source rather than a verified verbatim quote -- please re-check wording against the primary article before treating it as a direct quote.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.wcpo.com/news/local-news/in-your-community/butler-county/trenton-voters-approve-issue-17-limiting-new-data-centers-to-25-megawatts",
+      "title": "Trenton voters approve Issue 17, limiting new data centers to 25 megawatts",
+      "publisher": "WCPO Cincinnati",
+      "publicationDate": "2026-11-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "In unofficial Butler County returns, Trenton had 3,541 yes votes to 903 no votes, with all eight precincts reporting.",
+      "note": "SITING RESTRICTION: Trenton, OH (Butler County) voters passed Issue 17 by roughly 80%, a city-charter amendment capping new data centers at 25 MW. The vote happened only after the Ohio Supreme Court ordered the city to place the long-blocked citizen petition on the ballot. Unclear/unconfirmed whether the 25 MW cap applies retroactively to an existing ~250 MW Prologis data center already under construction in the city's industrial park, or to a separate 4-building AWS site under construction nearby -- reporting suggests both may be grandfathered but this is not confirmed. Results are unofficial; Ohio SOS certification follows ~3 weeks after the election. CAVEAT: WebFetch was blocked this session, so this excerpt could not be checked against the live article text -- please verify wording before publishing as a direct quote.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://stockanalysis.com/news/ohio-voters-pass-data-center-bans/",
+      "title": "Ohio votes to ban or limit data centers in at least 14 towns",
+      "publisher": "StockAnalysis.com",
+      "publicationDate": "2026-11-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Granville's ban passed with about 82.45% in unofficial county results, 82.45% to 17.55%.",
+      "note": "SITING RESTRICTION: Granville, OH approved (unofficial, ~82%) a local prohibition on data centers, one of 21 Ohio data-center measures on the Nov 3, 2026 ballot (part of the nationwide wave covered in a separate submission). Sources disagree on scope -- some describe an outright ban within the municipality, others describe a 25 MW+ size threshold shared with neighboring Pataskala and Sunbury -- and raw vote tallies differ across outlets (Fox Business vs. NBC4 vs. Ballotpedia all report different numbers), so treat the percentage as approximate pending certification. CAVEAT: WebFetch was blocked this session, so this excerpt is reconstructed from search-engine summarization rather than confirmed against the primary article -- please verify before treating as a verbatim quote.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
