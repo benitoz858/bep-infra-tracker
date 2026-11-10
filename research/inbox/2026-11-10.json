@@ -1,0 +1,75 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.ktbs.com/news/louisiana/louisiana-groups-sue-public-service-commission-over-fast-track-approval-for-meta-power-projects/article_5b0df3fd-c02f-5771-86f9-4eb9f13bad7a.html",
+      "title": "Louisiana groups sue Public Service Commission over fast-track approval for Meta power projects",
+      "publisher": "KTBS",
+      "publicationDate": "2026-11-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Louisiana groups sue Public Service Commission over fast-track approval for Meta power projects",
+      "suggestedProjectName": "",
+      "note": "SITING RESTRICTION: Three Louisiana nonprofits (Louisiana Landowners Coalition, Louisiana Citizen Advocacy Group, Save My Louisiana Inc.; counsel William Most) sued the LPSC on 2026-11-09, alleging its Dec-2025 'Lightning Directive' fast-track rule for utility-scale power projects was adopted without constitutionally required public notice. That directive is the pathway Entergy is using for ~7 new gas plants plus transmission tied to the tracker's existing 'Meta Hyperion' project (slug meta-hyperion-louisiana, Richland Parish). Plaintiffs are seeking a preliminary injunction against further PSC action under the directive -- a potential delay risk to Hyperion's power buildout not yet reflected in the tracker's analyst notes. Corroborated same-day by Verite News, WWNO/KRVS, and Yahoo/AP. IT vs. site power basis: not applicable, this finding is procedural/legal, not a new capacity figure. METHODOLOGY CAVEAT: this run's sandbox could not WebFetch/curl the source page directly (outbound network policy blocked every external host tried, confirmed via repeated connect_rejected errors), so the excerpt above is the article's verbatim headline, not a body quote -- please verify details against the link before treating any figure as confirmed.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://cryptobriefing.com/norway-halts-data-center-grid-connections-2027/",
+      "title": "Norway pauses new data center grid capacity reservations until at least August 2027",
+      "publisher": "CryptoBriefing",
+      "publicationDate": "2026-11-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Norway pauses new data center grid capacity reservations until at least August 2027",
+      "suggestedProjectName": "",
+      "note": "SITING RESTRICTION: Statnett, Norway's grid operator, froze evaluation of new grid-capacity reservation requests from large loads including data centers nationally as of 2026-11-09; holders of existing reservations and already-approved connections are unaffected. Outlets disagree on whether the pause runs 'at least' or 'at most' until 2026-08-01 [sic, reported as 2027-08-01] -- flagging that end-date as unconfirmed rather than picking one. Directly affects the tracker's existing 'Stargate Norway' project (slug stargate-norway-kvandal-narvik, Nscale/Aker JV, Narvik) and the broader Norwegian interconnection queue; reported queue figures (connected/reserved/pending MW) vary significantly by outlet and are deliberately NOT submitted as numeric claims here because they could not be reconciled. Corroborated by HostingJournalist, Briefs.co, Fudzilla, SpazioCrypto, and MLQ.ai, all within the same news cycle. METHODOLOGY CAVEAT: this run's sandbox could not WebFetch/curl Statnett's own press release or any of the secondary articles (outbound network policy blocked every external host tried), so the excerpt above is the article's verbatim headline, not a body quote, and the MW/date figures in this note are unverified against the primary source -- please check Statnett's own release before citing a number.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.wsbtv.com/news/local/openai-accused-racketeering-conspiracy-over-georgia-data-center-plan/LPT3VEPZURF4FHC3LDWZEKGIYQ/",
+      "title": "OpenAI accused of racketeering, conspiracy over Georgia data center plan",
+      "publisher": "WSB-TV",
+      "publicationDate": "2026-11-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "OpenAI accused of racketeering, conspiracy over Georgia data center plan",
+      "suggestedProjectName": "OpenAI Project Camellia (Effingham County, Georgia)",
+      "note": "SITING RESTRICTION: a third lawsuit over OpenAI's 'Project Camellia' campus near Rincon, Effingham County, GA was filed 2026-11-09 in Effingham State Court, alleging fraudulent concealment, civil conspiracy and Georgia RICO violations over how the project's local approvals and NDAs were handled. Plaintiffs' attorney Ben Michaud is quoted (per secondary reporting) calling the suit 'a demand for transparency and accountability.' This is the third suit targeting the project this year, after a September 2026 Open Meetings Act suit and an October 2026 open-records suit against the Effingham County Industrial Development Authority -- the pattern is itself a signal of elevated legal/timeline risk. Project Camellia does not appear among the tracker's current ~103 tracked projects, hence proposed as a new project rather than attached to an existing id. Separately reported: the project carries a ~$900M property-tax abatement over 15 years. IT vs. site power basis for the 3.2GW figure below: not specified in coverage found -- treat as site/contracted power, not IT load. METHODOLOGY CAVEAT: this run's sandbox could not WebFetch/curl OpenAI's own project page or any news source directly (outbound network policy blocked every external host tried), so the excerpt above is the article's verbatim headline, not a body quote, and the capex/power figures below are LOW confidence pending a primary-source check.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 20000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Widely reported across multiple secondary news sources as OpenAI's stated ~$20B project cost; not independently verified against a primary OpenAI or Georgia Power document this run."
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 3200,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Reported as OpenAI's contracted capacity with Georgia Power (up to 3.2 GW) per multiple secondary news sources; basis (site vs. IT load) unstated; not independently verified against a primary document this run."
+        }
+      ]
+    },
+    {
+      "url": "https://teslanorth.com/2026/10/31/spacex-spam-gun-range-clusters/",
+      "title": "SpaceX's Next AI Supercomputers Are Called Gun Range and Spam",
+      "publisher": "Tesla North",
+      "publicationDate": "2026-10-31",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "SpaceX's Next AI Supercomputers Are Called Gun Range and Spam",
+      "suggestedProjectName": "",
+      "note": "Elon Musk announced on X (~2026-10-31) two more GPU clusters at the Colossus 2 / Southaven, MS complex -- 'Gun Range' and 'Spam' -- joining the existing Macrohard/Macroharder/Minihard buildings already recorded. Secondary press puts the two new sites at roughly 420,000 additional Nvidia GB300 GPUs combined (paraphrase of Musk's claims, not a direct quote), with Musk targeting Gun Range operational by end of November 2026 and Spam in December 2026 -- his own targets, unverified. This is incremental GPU-count growth at the tracker's existing 'xAI Colossus 2' project (slug xai-colossus-2-memphis), which already carries analyst notes flagging conflicting GPU/MW figures between Musk's public statements and Epoch AI's satellite-based estimates; this finding adds to that pattern rather than resolving it, so a reviewer may want to fold it into the existing notes rather than treat it as a clean new number. Power source/basis for the two new sites is not stated in the coverage found. DATING CAVEAT: this is roughly 10 days old as of this run (outside the ideal 24-72h window) -- included because it is a material capacity update and no more recent coverage of it was found. METHODOLOGY CAVEAT: this run's sandbox could not WebFetch/curl the source or any corroborating article directly (outbound network policy blocked every external host tried), so the excerpt above is the article's verbatim headline, not a body quote.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "GPU_COUNT",
+          "numericValue": 420000,
+          "unit": "GPUs",
+          "confidenceLevel": "LOW",
+          "methodology": "Secondary press paraphrase of Elon Musk's public statements (X/Twitter) assigning GPU counts to two new Colossus 2 sites ('Gun Range', 'Spam'); not a direct quote and not independently verified."
+        }
+      ]
+    }
+  ]
+}
