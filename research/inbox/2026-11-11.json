@@ -1,0 +1,109 @@
+{
+  "submissions": [
+    {
+      "url": "https://thenextweb.com/news/oracle-force-majeure-project-jupiter-new-mexico",
+      "title": "Oracle cites force majeure over New Mexico data centre, Bloomberg reports",
+      "publisher": "The Next Web (citing Bloomberg)",
+      "publicationDate": "2026-09-24",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "\"Project Jupiter remains on our planned schedule,\" it said in a statement to CNBC",
+      "projectId": "stargate-dona-ana-county",
+      "note": "STATUS RISK: Oracle sent a force majeure notice (reported ~Sept 24, 2026) to the Blue Owl/Stack Infrastructure-backed developer of Project Jupiter, the 2.45GW Doña Ana County Stargate campus, reserving the right to delay payments if the site misses its 2028 start date. Oracle publicly maintains the project is on schedule. This tracked project's lastVerifiedAt (2026-07-27) predates this development, so it is not yet reflected. Could not independently verify exact statement wording via primary fetch (sandbox network restriction blocked direct access to techcrunch.com/Bloomberg); this quote is corroborated verbatim across multiple independent outlets (CNBC, TNW, dealroom.co, roic.ai). No new MW/capex figure disclosed; existing estimated power/capex fields should stay as-is pending human review of schedule risk.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.wpr.org/wp-content/uploads/2026/10/Type-C-Notice-for-Referendum-1132026.pdf",
+      "title": "Type C Notice for Referendum (City of Janesville, WI)",
+      "publisher": "City of Janesville, Wisconsin",
+      "publicationDate": "2026-10-01",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "projects over $450 million in project costs should be decided by a majority vote of the electors",
+      "note": "SITING RESTRICTION: Janesville, WI voters approved this direct-legislation referendum on Nov 3, 2026 (~62.8% per unofficial Rock County results; confirmed Nov 6, 2026 per Spectrum News 1 — https://spectrumnews1.com/wi/milwaukee/news/2026/11/06/gm-jatco-janesville-referendum-voter-approved). It requires voter sign-off for any development over $450M at the former GM/JATCO site -- the measure was driven directly by a now-withdrawn ~$8B data center proposal there, and the city council separately passed a 12-month data center moratorium in September 2026. Not linked to a tracked project (no Janesville project in current dataset; the $8B proposal never reached ANNOUNCED status with a named developer). publicationDate is approximate (notice filing month); exact day not confirmed.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.newsfromthestates.com/node/437086",
+      "title": "Several Maine towns approve data center moratoriums on local ballots",
+      "publisher": "Maine Morning Star / States Newsroom",
+      "publicationDate": "2026-11-05",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "would expire six months after enactment unless lifted earlier or extended",
+      "note": "SITING RESTRICTION: Wiscasset, ME voters approved a six-month moratorium on new/expanded data center applications on Nov 3-5, 2026 (1,363-713), following a previously killed ~$5B project proposal. Part of a wider wave of Nov 2026 Maine town votes (Peru, others) after Gov. Mills vetoed a statewide moratorium bill earlier in 2026. Excerpt is the ordinance's effective-duration language as reported; could not independently fetch the town's ordinance text to confirm exact wording (sandbox network restriction). Not linked to a specific tracked project.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://datacenterdynamics.com/en/news/google-announces-17bn-data-center-campus-in-cheyenne-wyoming",
+      "title": "Google announces $17bn data center campus in Cheyenne, Wyoming",
+      "publisher": "DataCenterDynamics",
+      "publicationDate": "2026-11-05",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Google announces $17bn data center campus in Cheyenne, Wyoming",
+      "suggestedProjectName": "Google Wyoming (Laramie County/Cheyenne)",
+      "note": "New project, not in current tracked set. Google's own Nov 5, 2026 blog post (by Steve Walter, VP Global Infrastructure and Energy; https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/) is the primary source but could not be independently fetched in this sandbox (network restriction) -- could not confirm exact blog wording, so used a corroborating trade-press headline instead. Site: Laramie County, ~8 miles south of Cheyenne, 716 acres, Switchgrass Industrial Park. Partners: Tallgrass Energy, Black Hills Energy, AEP, Related Digital. Power basis unclear/mixed: a 702 MW on-site gas fuel-cell plant with carbon capture is reported to supply the site, but campus IT/site load is NOT disclosed by Google (some secondary reports speculate up to 2.7GW full build -- unconfirmed, do not treat as a figure). Google says it will cover 100% of the power costs/needs for the project (pattern consistent with its other recent deals, e.g. West Memphis).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 17000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Stated as Google's own investment figure per its Nov 5, 2026 announcement, corroborated across 10+ independent outlets; exact primary-source wording not independently verified in this session."
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 702,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Reported capacity of the on-site gas fuel-cell + CCS plant supplying the site; this is generation/site power, not a disclosed IT load figure -- Google has not stated campus IT capacity."
+        }
+      ]
+    },
+    {
+      "url": "https://www.itv.com/news/2026-11-03/drax-and-brookfield-strike-investment-deal-of-up-to-20bn-for-data-centre",
+      "title": "Drax and Brookfield strike investment deal of up to £20bn for data centre",
+      "publisher": "ITV News",
+      "publicationDate": "2026-11-03",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Drax and Brookfield strike investment deal of up to £20bn for data centre",
+      "suggestedProjectName": "Drax Power Station AI Data Centre (North Yorkshire, UK)",
+      "note": "New project, not in current tracked set. Partnership between Drax Group, Brookfield (via the Brookfield-Qai AI infrastructure joint venture) and Radiant, targeting 'more than a gigawatt' of AI data centre capacity at Drax Power Station, North Yorkshire, UK, powered by the plant's existing 2.6GW of dispatchable generation (4GW total grid access). Phased: ~100MW targeted live Q1 2028, +500MW by 2028-2031, remainder unscheduled. The £20bn (~$26.8B at reported conversion) is Brookfield's own estimate, investment decision and planning approval still pending -- this is a plan, not committed capex or a groundbreaking. Drax CEO Will Gardiner quoted saying the deal can 'help secure the long-term future of the site and protect hundreds of jobs' (exact quote, but doesn't carry the capex/MW figure, hence the title is used as the excerpt instead).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 26800000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Brookfield's own estimate of 'up to £20bn' converted to USD as reported by ITV News; an estimate pending investment decision and planning approval, not committed spend."
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Described across multiple outlets as 'more than a gigawatt' target capacity; only the first ~100MW phase has a target date (Q1 2028), rest unscheduled and subject to approvals."
+        }
+      ]
+    },
+    {
+      "url": "https://w.media/gangwon-and-gs-sign-agreement-for-2-4-gw-ai-data-center-campus-in-donghae/",
+      "title": "Gangwon and GS sign agreement for 2.4 GW AI data center campus in Donghae",
+      "publisher": "w.media",
+      "publicationDate": "2026-07-07",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Gangwon and GS sign agreement for 2.4 GW AI data center campus in Donghae",
+      "suggestedProjectName": "GS AI Infrastructure Donghae Campus (South Korea)",
+      "note": "New project, not in current tracked set (checked against local dataset snapshot generated 2026-11-10; no Donghae/GS entry exists alongside South Korea's existing NAVER Sejong and SK Telecom Ulsan projects). MOU signed July 6, 2026 between GS Group (via new subsidiary GS AI Infrastructure), Gangwon Province and Donghae City for a 2.4GW campus at Bukpyeong 2nd General Industrial Complex -- part of the South Korean government's 'Three Mega-Projects' AI infrastructure plan announced June 29, 2026. Phased: 1.2GW by 2028, full 2.4GW by 2029. Reported investment figures are in Korean won (construction-only ~30 trillion KRW; ~120 trillion KRW including GPUs/memory) -- not converting to USD here to avoid an FX guess; flagging for human review with local-currency context only. This is older than the usual 24-72h window but appears to be a genuine gap in the tracked dataset, not previously submitted.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 2400,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "GS AI Infrastructure's stated full-build target (1.2GW by 2028 plus 1.2GW by 2029), per company plans as reported by Edaily and w.media."
+        }
+      ]
+    }
+  ]
+}
