@@ -1,0 +1,104 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.wtoc.com/2026/11/09/effingham-county-residents-sue-openai-county-officials-over-project-camellia-data-center/",
+      "title": "Effingham County residents file damages lawsuit against OpenAI, county officials over Project Camellia",
+      "publisher": "WTOC",
+      "publicationDate": "2026-11-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "accuses OpenAI, Effingham County officials and others of enacting a conspiracy and racketeering to bring the data center plan to life",
+      "suggestedProjectName": "OpenAI Project Camellia (Effingham County, Georgia)",
+      "note": "NEW project, not currently in the tracker. This is the second (RICO) suit filed Nov 6, 2026 in Effingham County State Court, alleging a secrecy scheme around the county's approval of the project; a separate Sept. 2026 suit challenges the underlying zoning ordinance and open-meetings compliance. Background for reviewer: widely reported (July 2026) as a 3.2 GW, 25-year Georgia Power PPA phased 2028-2032, with capex reported inconsistently across outlets as $20B-$30B — left blank here rather than guessed. Those background figures come from secondary press I could not re-verify against the primary OpenAI/Georgia Power announcements this run (see report caveat on network access). Submitting now because the lawsuit itself is the new, dated development.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xAI-data-center-pollution-to-move-forward/",
+      "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
+      "publisher": "TechCrunch",
+      "publicationDate": "2026-10-31",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "xAI operated at least 35 combustion turbines, along with other sources of air pollution, without required permits",
+      "note": "Status update for tracked project xAI Colossus 2 (Memphis, TN) — omitting projectId because the live database id wasn't reachable this run (API access blocked, see report). A federal judge denied xAI's motion to dismiss the NAACP's Clean Air Act suit over unpermitted gas turbines powering the site; the case proceeds to the merits, no violation has been found yet. No capacity or capex change implied.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.arabnews.pk/node/2630217/business-economy",
+      "title": "PIF-backed Humain secures up to $1.2bn to expand AI infrastructure",
+      "publisher": "Arab News",
+      "publicationDate": "2026-11-08",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "signed two financing agreements with HUMAIN in Riyadh, worth up to SAR 2.5 billion",
+      "note": "Financing update touching tracked project HUMAIN AI Factories Phase 1 (Riyadh) and HUMAIN's wider build-out — omitting projectId, live id unreachable this run. Saudi National Infrastructure Fund (Infra) signed the first tranche (~SAR 2.5bn / $667M) of a Davos-announced framework: one facility financing GPUs (~25 MW IT load), another financing substations/transmission sized for up to 1 GW of future IT capacity. This is debt financing, not a confirmed capacity-online event — do not read as MW delivered. Coincides with, but is separate from, Aramco's Nov 1, 2026 close of a 49% HUMAIN equity stake (~$2.6B).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 667000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Reported as SAR 2.5bn (~$667M) financing signed Nov 8 2026, first tranche of a larger up-to-$1.2bn framework; figure from secondary press, not independently verified against a primary Infra/HUMAIN release this run."
+        }
+      ]
+    },
+    {
+      "url": "https://www.itv.com/news/2026-11-03/drax-and-brookfield-strike-investment-deal-of-up-to-20bn-for-data-centre",
+      "title": "Drax and Brookfield strike investment deal of up to £20bn for data centre",
+      "publisher": "ITV News",
+      "publicationDate": "2026-11-03",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Brookfield estimates total investment could exceed £20 billion, with an initial £2.5 billion for phase one",
+      "suggestedProjectName": "Brookfield-Drax-Radiant Data Center (Selby, North Yorkshire, UK)",
+      "note": "NEW project, not currently tracked. Gigawatt-scale AI data center planned at Drax Power Station (Selby, North Yorkshire), using Drax's existing 4GW grid connection and 2.6GW of dispatchable generation on site. Phase 1 targets up to 100MW, online Q1 2028; phases 2-3 could reach 1GW by the early 2030s. Early-stage: no tenant, no planning approval, no final investment decision yet, so capacity/capex figures below are company targets, not confirmed build. Site power vs IT load not yet distinguished by the companies.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1000,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Company target for full build-out across three phases extending past 2031, per Drax/Brookfield/Radiant announcement; phase 1 alone is ~100MW."
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 20000000000,
+          "unit": "GBP",
+          "confidenceLevel": "LOW",
+          "methodology": "Brookfield's stated ceiling ('could exceed £20 billion') for full build-out, not committed spend; figure is in GBP, not USD, despite the metric type."
+        }
+      ]
+    },
+    {
+      "url": "https://richmondbizsense.com/2026/10/28/breaking-news-google-eyeing-data-center-campus-in-goochlands-west-creek/",
+      "title": "Google eyeing data center campus in Goochland's West Creek",
+      "publisher": "Richmond BizSense",
+      "publicationDate": "2026-10-28",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "considering developing a 1.2GW data center on an approximately 1,000-acre site at the West Creek Business Park",
+      "suggestedProjectName": "Google West Creek Campus (Goochland County, Virginia)",
+      "note": "NEW project, not currently tracked. Goochland County confirmed on Oct 28, 2026 that Google is the entity behind a proposed 1.2GW, ~1,000-acre campus at West Creek Business Park near Richmond, VA. Google was identified via an unsealed NDA tied to a State Corporation Commission filing, not a company announcement — Google itself has not confirmed scope. Very early stage: no permits, site plan, or construction confirmed.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1200,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Reported via an unsealed NDA/SCC filing identifying Google as the user behind the proposed campus; not confirmed by Google."
+        }
+      ]
+    },
+    {
+      "url": "https://www.wbtv.com/2026/10/27/data-center-moratorium-extended-city-charlotte-what-know/",
+      "title": "Data center moratorium extended in city of Charlotte: What to know",
+      "publisher": "WBTV",
+      "publicationDate": "2026-10-27",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "the council adopted a measure that extends the city's data center moratorium until Oct. 18, 2027",
+      "note": "SITING RESTRICTION: Charlotte City Council voted unanimously Oct 26, 2026 to extend its existing 150-day data center permitting moratorium (which was due to expire Nov 5, 2026) through Oct 18, 2027 — roughly 11 more months. New-permit approvals are paused citywide; permits already issued are unaffected. Stated purpose is to give the council time to write new zoning/siting rules, partly pending NC General Assembly action next session. No specific tracked project in this database sits in Charlotte, so no project link.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
