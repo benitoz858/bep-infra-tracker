@@ -1,0 +1,84 @@
+{
+  "submissions": [
+    {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/",
+      "title": "Investing in Wyoming's infrastructure, energy and workforce",
+      "publisher": "Google",
+      "publicationDate": "2026-11-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "We're building our first data center in Wyoming, representing a $17 billion investment in the Cowboy State.",
+      "suggestedProjectName": "Google Wyoming (Laramie County / Cheyenne)",
+      "note": "New project, not in current tracker snapshot (checked for 'Wyoming' and 'Google' — only Prometheus Hyperscale Evanston, WY is tracked, unrelated company). Google's own blog post names partners Tallgrass Energy, Black Hills Energy, AEP, and Related Digital. $17B is Google's own capex figure, basis (site vs multi-year program) unstated. Google did NOT disclose power/MW in its own post. Third-party outlets (not Google) cite a 702MW gas fuel-cell project and an unconfirmed 2.7GW figure sourced to county filings — do not import those MW numbers as Google-confirmed.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "CAPEX_USD", "numericValue": 17000000000, "unit": "USD", "confidenceLevel": "HIGH", "methodology": "Stated directly in Google's own announcement: 'a $17 billion investment in the Cowboy State'"}
+      ]
+    },
+    {
+      "url": "https://lambda.ai/blog/lambda-to-invest-33-billion-in-alabama-with-new-data-center",
+      "title": "Lambda to build new data center in Lowndes County, Alabama, investing more than $33 billion in state",
+      "publisher": "Lambda",
+      "publicationDate": "2026-11-04",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "The proposed Red Clay Technology Center Campus represents an estimated $33.1 billion investment in Alabama.",
+      "suggestedProjectName": "Lambda Red Clay Technology Center Campus (Lowndes County, Alabama)",
+      "note": "New project, not in tracker (only Lambda Kansas City is tracked). Site was originally readied as 'Project Red Clay' by developer Cloverleaf Infrastructure; Lambda announced Nov 4, 2026 it will anchor/occupy it. $33.1B is Lambda's own ESTIMATED initial-investment figure, not confirmed spend — securities.io explicitly flags the county agreement doesn't guarantee this figure. Power MW not disclosed; Alabama Power to supply electricity pending regulatory approval. Active local opposition: a second lawsuit (filed by Protect Lowndes County / SELC) seeks to invalidate the county's Oct 13, 2026 3-2 tax-abatement vote — timeline risk worth flagging to a reviewer.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "CAPEX_USD", "numericValue": 33100000000, "unit": "USD", "confidenceLevel": "HIGH", "methodology": "Stated as the company's own estimated investment figure in Lambda's announcement"}
+      ]
+    },
+    {
+      "url": "https://news.ballotpedia.org/2026/02/12/janesville-wisconsin-voters-to-decide-nov-3-2026-initiative-requiring-approval-for-development-projects-exceeding-450-million-at-gm-jatco-site-such-as-proposed-data-center/",
+      "title": "Janesville, Wisconsin voters to decide Nov. 3, 2026 initiative requiring approval for development projects exceeding $450 million at GM/JATCO site",
+      "publisher": "Ballotpedia",
+      "publicationDate": "2026-02-12",
+      "sourceType": "OTHER",
+      "excerpt": "initiative requiring approval for development projects exceeding $450 million at GM/JATCO site",
+      "note": "SITING RESTRICTION: Voters approved this measure on Nov 3, 2026 (unofficial count ~62.82% per Rock County, reported by Spectrum News Nov 6, 2026 — treat the percentage as unofficial pending canvass). It requires a public referendum before any project over $450M can proceed at the former GM/JATCO site in Janesville, WI — aimed at a previously proposed $8B/800MW, 11-building data center campus (developer Viridian Partners) that has since lapsed (city council let the development agreement expire in June 2026; a 12-month moratorium followed in September). Janesville is the second Wisconsin city (after Port Washington) to pass this type of measure, and part of a broader Nov 3, 2026 wave — one tracker counted 33+ local data-center-restriction ballot measures passing nationwide that night. No currently tracked project sits at this specific site (the proposal already lapsed before the vote), but the dollar-threshold-triggers-referendum mechanism is a notable template other jurisdictions may copy — worth watching for similar measures attaching to tracked ANNOUNCED-stage projects elsewhere.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.itv.com/news/2026-11-03/drax-and-brookfield-strike-investment-deal-of-up-to-20bn-for-data-centre",
+      "title": "Drax and Brookfield strike investment deal of up to £20bn for data centre",
+      "publisher": "ITV News",
+      "publicationDate": "2026-11-03",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Drax and Brookfield strike investment deal of up to £20bn for data centre",
+      "suggestedProjectName": "Brookfield-Drax-Radiant North Yorkshire AI Data Center (Drax Power Station, Selby, UK)",
+      "note": "New project, not in tracker. Brookfield, with Radiant (its UK AI-infrastructure arm, reportedly backed by a Brookfield-QIA 'Qai' JV), plans a >1GW data center co-located at Drax's Selby, North Yorkshire power station site, drawing generation directly rather than queuing for grid connection. Up to £20bn (~$26.8B at reporting-time FX) is Brookfield's own estimate per the company; some outlets report a higher ~$27B figure and a first-phase ~£2.5bn tranche. IMPORTANT: this is NOT a final investment decision — formal planning process had not yet started as of this report. Basis is generation co-location/capex estimate, not confirmed IT load; treat reported MW phasing (100MW by Q1 2028, +500MW 2028-31) as third-party estimates pending Drax/Brookfield confirmation.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "CAPEX_USD", "numericValue": 26800000000, "unit": "USD", "confidenceLevel": "MEDIUM", "methodology": "Reported as Brookfield's own estimate ('could draw more than £20 billion' investment), GBP converted by the outlet; no FID yet, so treat as a ceiling estimate not a committed spend"}
+      ]
+    },
+    {
+      "url": "https://www.thestar.com.my/tech/tech-news/2026/11/10/spacex-plans-24-billion-gas-power-plant-data-center-project-in-texas",
+      "title": "SpaceX plans $24 billion gas power plant, data center project in Texas",
+      "publisher": "The Star (Malaysia, wire reprint)",
+      "publicationDate": "2026-11-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "SpaceX plans $24 billion gas power plant, data center project in Texas",
+      "suggestedProjectName": "SpaceX Starbase Gas Plant & AI Data Center (Starbase, TX)",
+      "note": "New project, not in tracker. SpaceX filed with the City of Starbase (a Texas city SpaceX effectively controls; de-annexed from Brownsville earlier in 2026) for an initial ~$24B gas-fired power plant plus 'super-compute' facility on ~444 acres, intended to power the site independent of the state grid (generation-co-location basis, not utility-delivered power). Reported initial configuration is ~35 gas turbines / ~748MW — a third-party estimate; I could not directly access the City's hearing-notice text to confirm wording from this session (outbound network to most news/government sites was blocked). City Commission is to vote on a tax abatement/development agreement Dec 9, 2026. Note political headwind: incoming Texas governor has called for a pause on new data center approvals. SpaceX itself has not issued a public statement; attribution rests on the city filing as covered by multiple outlets (Texas Tribune, Bloomberg-sourced wire pickups).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "CAPEX_USD", "numericValue": 24000000000, "unit": "USD", "confidenceLevel": "MEDIUM", "methodology": "Reported initial-phase estimate from the City of Starbase's public hearing notice, as covered by multiple outlets; not a direct SpaceX company statement"}
+      ]
+    },
+    {
+      "url": "https://www.azfamily.com/2026/11/05/spacex-behind-proposed-data-center-cochise-county/",
+      "title": "SpaceX likely behind proposed data center in Cochise County",
+      "publisher": "AZFamily (KTVK/KPHO Phoenix)",
+      "publicationDate": "2026-11-05",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "SpaceX likely behind proposed data center in Cochise County",
+      "suggestedProjectName": "SpaceX/Tombstone Resources Cochise County AI Data Center (Arizona)",
+      "note": "New project, not in tracker; LOWER CONFIDENCE on company attribution than the Starbase, TX finding above — flagging for reviewer judgment. Filed under 'Tombstone Resources LLC' (reported SpaceXAI-linked applicant) for a ~747-acre, up to 6GW-at-full-build-out supercomputer/AI data center campus plus battery storage near US-191 in Cochise County, AZ, with ~$3.6B of applicant-funded grid/substation upgrades. The 6GW and $3.6B figures come from third-party reporting on the application; I could not access the filing text directly (outbound network to most non-tracker sites was blocked this session). A company representative reportedly confirmed SpaceX's involvement at a Nov 4, 2026 town hall, but no public SpaceX statement exists. Public hearing before the County Planning & Zoning Commission is set for Dec 9, 2026 — same date as the Starbase, TX hearing above.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 6000, "unit": "MW", "confidenceLevel": "LOW", "methodology": "Third-party reporting of the applicant's stated full-build-out electrical demand in the county filing; not independently verified against the filing text"}
+      ]
+    }
+  ]
+}
