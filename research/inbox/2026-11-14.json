@@ -1,0 +1,71 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/spacexai-data-center-arizona-cochise-county-elon-musk/",
+      "title": "SpaceXAI confirmed behind Cochise County, Arizona supercomputer campus proposal",
+      "publisher": "DatacenterDynamics",
+      "publicationDate": "2026-11-05",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "on the order of $3.6 billion of applicant-funded transmission and substation improvements",
+      "suggestedProjectName": "SpaceXAI Cochise County Campus (Tombstone Resources)",
+      "note": "NEW PROJECT, not currently tracked (no Arizona projects in the snapshot). SpaceX/xAI, now branded SpaceXAI, has been confirmed as the party behind a proposed nine-building supercomputer/AI data center campus on ~747 acres in Cochise County, AZ, filed through applicant Tombstone Resources. Reported total build-out up to 6 GW across four ~1.5 GW phases, with phase 1 around 1,500 MW -- this is a SITE POWER target at full build-out, not IT load, and is still pre-permitting (Planning & Zoning Commission public hearing scheduled Dec 9, 2026), not yet approved or under construction. A widely circulated $50B total-investment figure is UNVERIFIED -- several outlets (Aterio, KJZZ) flag it as reported but not tied to a specific phase or confirmed by the company -- so it is deliberately left out of the claims below and noted here for context only. The $3.6B claim is grid/transmission infrastructure capex quoted from the county application as covered by trade press; do not conflate with total project capex. Caveat: this run's sandbox could not reach most external sites directly (WebFetch/curl blocked outside a small allowlist), so this excerpt was extracted via a search-engine intermediary rather than a direct fetch of the article -- please verify exact wording against the primary DatacenterDynamics/Baxtel coverage and the Cochise County application before relying on it.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1500,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Phase 1 target power as reported from coverage of the county application; not company-confirmed, IT-load-vs-site-power basis unstated"
+        },
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 3600000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Applicant-funded transmission/substation improvements figure quoted from the Cochise County application as reported by trade press; grid infrastructure capex, not total project capex"
+        }
+      ]
+    },
+    {
+      "url": "https://www.itpro.com/infrastructure/data-centres/microsoft-pulls-plug-on-essex-data-center-development-over-power-supply",
+      "title": "Microsoft withdraws as anchor tenant from Nscale's Loughton, Essex AI campus",
+      "publisher": "ITPro",
+      "publicationDate": "2026-10-18",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "won't be able to supply enough power to the site until the early to mid-2030s",
+      "note": "STATUS CHANGE on a tracked project: 'Nscale Loughton' (data snapshot slug nscale-loughton-for-microsoft). The live tracker API was unreachable from this sandbox this run, so the numeric projectId could not be confirmed -- please match by name/slug rather than relying on an ID from me. Reported Oct 18, 2026, which is outside the usual ~72h window but is a materially significant change not yet reflected in the nightly snapshot (still describes the site as part of Nscale's Microsoft Azure contract, last verified 2026-07-28): Microsoft has pulled out as anchor/off-taker for this 50 MW (scalable to 90 MW) site after UK Power Networks reportedly told Nscale it could not supply adequate grid capacity until the early-to-mid 2030s. Microsoft said via spokesperson 'This decision relates to a single site' and that it remains committed to the broader Nscale partnership; Nscale says it remains committed to Loughton and is exploring alternative power sources. Reporting also ties this to risk around Nscale's planned ~$35B IPO (contract/revenue figure, not capex -- do not record as capex). Caveat: WebFetch/curl to external sites was blocked for this whole run, so this excerpt is a close paraphrase surfaced via a search-engine intermediary, not a verbatim fetch of the ITPro page -- please verify exact wording before citing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://idahonews.com/news/local/city-of-boise-approves-emergency-moratorium-on-large-data-centers",
+      "title": "City of Boise approves emergency moratorium on large data centers",
+      "publisher": "CBS2 Idaho News (idahonews.com)",
+      "publicationDate": "2026-11-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "facilities over 100,000 square feet or with at least 20 megawatts of projected demand at full buildout",
+      "note": "SITING RESTRICTION: Boise, ID city council voted unanimously on Nov 10, 2026 to adopt an emergency six-month moratorium on large data center development, effective immediately. It halts acceptance/processing of new applications for facilities over 100,000 sq ft or with projected demand of at least 20 MW at full buildout; projects with planning approval predating the moratorium are grandfathered. Proposed by Mayor Lauren McLean; the city says there were no pending mega-data-center applications at the time. This is a jurisdiction-wide zoning action, not tied to any single tracked project, so no projectId is attached (per the policy against inferring project links from location). Caveat: WebFetch/curl to external sites was blocked this run, so the excerpt is a close paraphrase surfaced via search rather than a direct fetch of the ordinance text -- please verify against Boise's own council/ordinance records before citing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://okcfox.com/news/local/edmond-city-council-extends-moratorium-on-new-data-centers-through-june",
+      "title": "Edmond City Council extends moratorium on new data centers through June 2027",
+      "publisher": "KOKH Fox 25 (okcfox.com)",
+      "publicationDate": "2026-11-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "extend the city's existing moratorium on data centers through June 30, 2027",
+      "note": "SITING RESTRICTION: Edmond, OK city council voted 5-0 on Nov 9, 2026 to extend its existing data-center moratorium (originally Ordinance 4091, enacted June 2026) through June 30, 2027, giving staff more time to write permanent zoning/land-use rules for data centers. Jurisdiction-wide action, not tied to a single project -- no projectId attached. Caveat: WebFetch/curl to external sites was blocked this run; excerpt reflects secondary news reporting surfaced via search, not a direct fetch of Edmond's own council/ordinance records -- please verify exact wording before citing.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://okcfox.com/news/local/oklahoma-city-extends-moratorium-on-data-center-applications-rezoning-requests",
+      "title": "Oklahoma City extends moratorium on data center applications and rezoning requests",
+      "publisher": "KOKH Fox 25 (okcfox.com)",
+      "publicationDate": "2026-11-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "extend a moratorium on new rezoning requests for data center projects through the end of next year",
+      "note": "SITING RESTRICTION: Oklahoma City council voted on Nov 10, 2026 to extend its moratorium on new data-center rezoning applications through the end of 2027, or until the zoning code is updated, whichever comes first. Extends OKC's earlier moratorium (first enacted ~April 2026). Jurisdiction-wide action, not tied to a single project -- no projectId attached. Caveat: WebFetch/curl to external sites was blocked this run; excerpt reflects secondary reporting surfaced via search, not a direct fetch of OKC's own council record -- please verify exact wording before citing.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
