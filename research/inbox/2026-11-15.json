@@ -1,0 +1,36 @@
+{
+  "submissions": [
+    {
+      "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-q1-fy27-results",
+      "title": "IREN Reports Q1 FY27 Results",
+      "publisher": "IREN Limited",
+      "publicationDate": "2026-11-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Horizons 2-4 have moved to late-stage construction",
+      "suggestedProjectName": "",
+      "note": "TRACKED PROJECT UPDATE: this is about the tracker's existing 'IREN Childress' project (slug iren-childress-horizon-for-microsoft, Childress, TX) under the ~$9.7B Microsoft GPU-cloud deal. IREN's Q1 FY27 results (quarter ended 2026-09-30, reported 2026-11-05) say Horizon 1 (50MW IT load, direct-to-chip liquid-cooled) was already delivered to and accepted by Microsoft (per an earlier Aug 2026 release), and that Horizons 2-4 -- the remaining three buildings of the four-building, ~200MW-IT-load first phase -- have now progressed to 'late-stage construction,' with the company's company-wide >$4B ARR target pushed from year-end 2026 to January 2027 (possible slip to February) citing a customer-requested design change plus supplier timing. This is a construction-progress/timeline update on a tracked UNDER_CONSTRUCTION project, not a new capacity figure -- IT load basis per IREN's own prior disclosure (50MW IT load per Horizon building). I could not find this specific update in any prior daily submission (checked all prior agent/daily-* branches for 'Horizon 2', 'late-stage construction', 'November 5' -- no hits; general 'IREN' mentions stop around 2026-10-24). METHODOLOGY CAVEAT: this run's sandbox could not WebFetch or curl IREN's press release, or any corroborating source, directly -- outbound network access to every external host attempted (including tracker.bepresearch.com itself, blocking the preferred API submission path) was refused by the environment's egress policy (DNS/connect failures), a condition that has persisted across this agent's entire visible run history (see prior agent/daily-* branches, which carry the same caveat back to at least August 2026). The excerpt above is reconstructed from a secondary aggregator's paraphrase of the release returned by web search, not read verbatim from IREN's own page -- please verify exact wording and any MW/dollar figures against the primary release before treating them as confirmed.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/data-center-pine-island/",
+      "title": "Google is coming to Minnesota and advancing clean energy goals",
+      "publisher": "Google",
+      "publicationDate": "2026-02-24",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "1,400 MW of wind, 200 MW of solar and 300 MW of iron-air battery storage",
+      "suggestedProjectName": "Google Pine Island AI Data Center (Minnesota)",
+      "note": "NEW PROJECT (not among the tracker's ~103 tracked projects, checked by slug/name/location against the current data/projects.json snapshot). Google announced a data center campus in Pine Island, Minnesota on 2026-02-24, paired with a Clean Energy Accelerator Charge (CEAC) agreement under which Google pays Xcel Energy for 1,400 MW wind + 200 MW solar + 300 MW Form Energy iron-air battery storage (site/generation power, NOT IT load) plus $50M toward Xcel's Capacity*Connect program; secondary coverage (AIWeekly) separately reports the data center itself at 780MW, origin/basis for that number not confirmed here. SITING RESTRICTION / regulatory-risk angle, and the actual reason this is timely: the deal still requires Minnesota PUC approval, and on 2026-10-01 the Minnesota Attorney General's Residential Utilities Division filed comments opposing approval as-is, arguing Xcel has not shown the deal protects other ratepayers from cost-shifting -- Xcel claims >$1.1B in net benefit to other customers, the AG's own analysis finds roughly $1B in net COST to other customers, and one tech-policy outlet flagged a possible PUC ruling on a related redaction dispute around 2026-11-15 (today), unconfirmed from a live docket. This AG dispute is the genuinely new signal (not previously flagged in any prior agent/daily-* branch searched for 'Pine Island'); the underlying project itself is ~9 months old and likely already known to a human reviewer, flagged here because it is absent from the tracker entirely. METHODOLOGY CAVEAT: this run's sandbox could not WebFetch or curl blog.google, the Minnesota AG's own release, or any Minnesota PUC docket directly -- outbound network access to every external host attempted was refused by the environment's egress policy, the same persistent condition noted in the first finding above. The excerpt is reconstructed from secondary coverage of Google's announcement, not read verbatim from the primary page; the $1.1B/$1B figures and the Nov-15 ruling date are UNVERIFIED against a primary PUC filing and should be checked before citing.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1900,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Sum of 1,400 MW wind + 200 MW solar + 300 MW battery storage Xcel Energy committed to add under the Google CEAC agreement, per Google's own 2026-02-24 announcement as paraphrased in secondary coverage; this is generation/site power contracted for the deal, explicitly NOT the data center's IT load (a separate, unconfirmed ~780MW figure appears only in one secondary source)."
+        }
+      ]
+    }
+  ]
+}
