@@ -1,0 +1,43 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.koreatimes.co.kr/business/tech-science/20260913/sk-chairman-says-ulsan-ai-data-center-expansion-nearing-900-megawatts",
+      "title": "SK chairman says Ulsan AI data center expansion nearing 900 megawatts",
+      "publisher": "The Korea Times",
+      "publicationDate": "2026-09-13",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "SK chairman says Ulsan AI data center expansion nearing 900 megawatts",
+      "note": "TRACKED PROJECT UPDATE: this is about the tracker's existing 'SK Telecom Ulsan' project (slug sk-telecom-aws-ulsan-ai-data-center, Ulsan, South Korea, AWS-anchored, status UNDER_CONSTRUCTION). The tracker currently records a phased build of 41 MW by Nov 2027 expanding to 103 MW by Feb 2029 (basis unstated). Korea Times reports SK Group Chairman Chey Tae-won said at the 2026 Ulsan Forum (2026-09-13) that the Ulsan AI data center expansion is nearing 900 MW -- roughly 9x the figure currently in the tracker -- having started as a 100 MW facility. This is a chairman's public remark at a forum, not an SK Telecom press release or filing, so I'm flagging it as a potential large capacity revision for human verification rather than asserting it as confirmed. I did not find this figure in any prior agent/daily-* branch (checked back to 2026-11-01 for 'Ulsan', 'SK Telecom', '900'; no hits in that window, though the remark itself is from September so an earlier run may have caught it outside the window I could check). METHODOLOGY CAVEAT: this run's sandbox could not WebFetch or curl koreatimes.co.kr, tracker.bepresearch.com (blocking the preferred API submission path), or any other external host apart from anthropic.com -- outbound network access to essentially every external domain was refused by the environment's egress policy (DNS/connect failures), the same persistent condition documented in this agent's own prior submissions (see e.g. agent/daily-2026-11-15). The excerpt above is the article's own headline, not a sentence pulled from its body, because the body text could not be fetched directly -- please verify the exact wording, the 900 MW figure, and whether it is IT load or site power against Korea Times' article or an SK Telecom primary source before treating it as confirmed.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 900,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "SK Group chairman Chey Tae-won's public remarks at the 2026 Ulsan Forum, as reported by Korea Times (2026-09-13); not a company filing or press release, and basis (IT load vs. site power) is not stated in the report. Shown here because it is far above the 103 MW currently recorded for this project in the tracker."
+        }
+      ]
+    },
+    {
+      "url": "https://www.insideindianabusiness.com/articles/jasper-county-approves-amazon-web-services-7b-data-center-project",
+      "title": "Jasper County approves $7B Amazon Web Services data center project",
+      "publisher": "Inside Indiana Business",
+      "publicationDate": "2026-06-18",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Jasper County approves $7B Amazon Web Services data center project",
+      "suggestedProjectName": "AWS Wheatfield (Jasper County, Indiana)",
+      "note": "NEW PROJECT (not among the tracker's ~103 tracked projects -- checked by name, slug, and location against the current data/projects.json snapshot; the tracker's only other Indiana entries are 'Meta Lebanon' and 'Project Rainier' in St. Joseph County, both unrelated). Jasper County, Indiana officials approved an AWS data center campus in Wheatfield around 2026-06-17/18, on a roughly 304-acre site owned by NIPSCO near its Schahfer Generating Station. Multiple secondary sources (Construction Review Online, ZeroHedge, Natural News, solwd.net) converge on: up to nine data center buildings, roughly $7 billion in AWS investment, $98 million paid upfront to the county, $25 million toward bringing municipal water service to Wheatfield for the first time, and a separate $1.25 billion AWS commitment to offset energy-cost impacts on local ratepayers; part of AWS's broader ~$15 billion Indiana investment announced Nov 2025. No MW figure for the campus itself was found in these sources, so power is left blank rather than guessed. I did not find this project (by name, 'Wheatfield', or 'Jasper County') in any prior agent/daily-* branch checked (back to 2026-11-01), so it appears to be a gap in the tracker rather than a duplicate, though the approval itself is from June 2026, not the last 72 hours. METHODOLOGY CAVEAT: this run's sandbox could not WebFetch or curl insideindianabusiness.com, constructionreviewonline.com, tracker.bepresearch.com (blocking the preferred API submission path), or any other external host apart from anthropic.com -- outbound network access to essentially every external domain was refused by the environment's egress policy (DNS/connect failures), the same persistent condition documented in this agent's own prior submissions (see e.g. agent/daily-2026-11-15). The excerpt above is the Inside Indiana Business headline, not a sentence from its body, because the body text could not be fetched directly; the $7B figure, building count, and all dollar figures above are reconstructed from secondary-source paraphrases, not read verbatim from a primary filing or AWS statement -- please verify against the county's own approval record or an AWS statement before citing.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 7000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Reported AWS investment figure for the Wheatfield, Jasper County campus per multiple secondary news outlets covering the county's June 2026 approval; not read from a primary AWS statement or filing, and not confirmed whether it is total project capex or a partial figure."
+        }
+      ]
+    }
+  ]
+}
