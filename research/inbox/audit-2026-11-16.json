@@ -1,0 +1,64 @@
+{
+  "submissions": [
+    {
+      "url": "https://nextplatform.com/cloud/2026/09/14/despite-hefty-capital-investments-the-cloud-starts-paying-off-for-oracle/5296362",
+      "title": "Despite Hefty Capital Investments, The Cloud Starts Paying Off For Oracle",
+      "publisher": "The Next Platform",
+      "publicationDate": "2026-09-14",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "OpenAI has taken delivery of 618 megawatts, or 75 percent of the total capacity, of the infrastructure going into Abilene from Oracle",
+      "projectId": "stargate-abilene-texas",
+      "note": "AUDIT: tracker's confirmed column shows 200 MW (Oracle's April 2026 'In Abilene, 200MW is already operational' statement) vs Oracle co-CEO Clay Magouyrk stating on the Sept 10, 2026 Q1 FY27 earnings call that 6 of 8 buildings, 618 MW (75% of the committed 1.2 GW), have been delivered to the customer — recommend updating confirmedMw from 200 to 618. Basis: IT load delivered to customer, consistent with how the prior 200 MW figure was recorded. This is the confirmed-power column, re-checked weekly without exception, and it has been stale for ~2 months.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 618,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Stated by Oracle co-CEO Clay Magouyrk on Oracle's Q1 FY27 earnings call (Sept 10, 2026) as megawatts of IT capacity delivered to the customer (OpenAI) at Abilene; reported verbatim by The Next Platform. Basis: IT load."
+        }
+      ]
+    },
+    {
+      "url": "https://www.neom.com/en-us/newsroom/HUMAIN-and-DataVolt-to-develop-AI-data-center-in-NEOM",
+      "title": "HUMAIN partners with DataVolt to jointly develop 100MW of a 360MW AI data center project in NEOM",
+      "publisher": "NEOM",
+      "publicationDate": "2026-08-31",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Construction has begun at NEOM Oxagon on a 100 MW AI data center through an expanded partnership between HUMAIN and DataVolt",
+      "projectId": "datavolt-oxagon-ai-factory-neom",
+      "note": "AUDIT: tracker's analyst notes state 'no construction on this campus is documented as of mid-2026' and status is ANNOUNCED, but NEOM's own Aug 31, 2026 release confirms groundbreaking has occurred on a 100 MW slice of the 360 MW first phase (part of the overall 1.5 GW campus). Recommend moving status from ANNOUNCED to UNDER_CONSTRUCTION. Note the first-phase figure now cited (360 MW) differs from the 300 MW first-phase figure in the existing DataCenterDynamics source — worth reconciling; estimatedMw of 1500 for the full campus remains correctly unchanged (full-build target, not current capacity). Basis: site/IT scope of the 100 MW tranche not explicitly broken out in the release.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 100,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "NEOM/HUMAIN/DataVolt primary announcement: construction begun on a 100 MW tranche of the planned 360 MW Oxagon first phase. Basis: unclear whether IT load or site power — not specified in the release."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kshb.com/news/local-news/data-centers/northland-ai-data-center-withdraws-bond-application-with-port-kc",
+      "title": "Northland AI data center withdraws bond application with Port KC",
+      "publisher": "KSHB 41 News",
+      "publicationDate": "",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "After further discussions with the project developer, they have agreed to voluntarily withdraw their application with Port KC",
+      "projectId": "lambda-kansas-city",
+      "note": "AUDIT: tracker shows status UNDER_CONSTRUCTION with expectedOpeningDate 2026-06-30 (already past, never updated). KSHB reports Lambda's 'Project Blitz' Kansas City site withdrew its Port KC bond/incentive application (quote from Port KC communications director Patrick Pierce) following community opposition over gas-capacity plans; exact withdrawal date not stated in the article (project appeared before Port KC commissioners in May 2026, so withdrawal is after that). No energization or launch has been confirmed anywhere. Recommend re-reviewing status — likely PAUSED or at minimum flag expectedOpeningDate as missed — pending a direct Lambda statement; filed as MEDIUM confidence since this is a secondary report of a port-authority statement, not a company confirmation of project status.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 24,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "No change to the announced 24 MW figure itself; claim filed to flag that the project's local incentive/bond application was withdrawn, casting doubt on the UNDER_CONSTRUCTION status and the missed June 2026 expected-opening date. Basis: unclear — original 24 MW figure's basis was already unstated."
+        }
+      ]
+    }
+  ]
+}
