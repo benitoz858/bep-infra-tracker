@@ -1,0 +1,34 @@
+{
+  "submissions": [
+    {
+      "url": "https://idahocapitalsun.com/?p=33208",
+      "title": "Boise City Council approves 6-month moratorium on large data center construction",
+      "publisher": "Idaho Capital Sun",
+      "publicationDate": "2026-11-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "applies to all data center projects that are 100,000 square-feet or larger, or use 20 megawatts of power",
+      "note": "SITING RESTRICTION: Boise, ID city council unanimously approved an immediate 6-month moratorium (effective Nov 10, 2026) on new applications for large data centers (>=100,000 sq ft OR >=20 MW), proposed by Mayor Lauren McLean, while the city studies water, energy/grid, wastewater, noise and public-safety impacts. Not tied to a specific tracked project in the database (no Boise-area project currently tracked); this is a citywide policy restriction, so left unlinked rather than guessed. Multiple consistent outlets (East Idaho News, Washington State Standard, Idaho News) corroborate the date and vote.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://baxtel.com/news/microsoft-exits-nscale-s-50mw-loughton-data-center-deal-in-essex",
+      "title": "Microsoft exits Nscale's 50MW Loughton data center deal in Essex",
+      "publisher": "Baxtel",
+      "publicationDate": "2026-10-19",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Microsoft had ended its anchor agreement for the 50MW facility",
+      "suggestedProjectName": "Nscale Loughton",
+      "note": "Status-change flag for tracked project 'Nscale Loughton' (Essex, UK; currently ANNOUNCED, 90MW scalable ceiling / 50MW initial per tracker, last verified 2026-07-28 -- i.e. BEFORE this event, so likely not yet reflected). Multiple outlets (City A.M., The Sun, CTV News, Baxtel, MobileWorldLive) report Microsoft withdrew as anchor tenant around Oct 18-19, 2026, reportedly because UK Power Networks could not supply grid power to the site on Nscale's timeline (one outlet cites early-to-mid 2030s). Nscale says it remains 'committed' to the site and is exploring alternative power sources; Microsoft called it specific to 'a single site,' not the wider partnership. This comes as Nscale pursues a reported NY IPO. CAVEAT: this run's sandbox had no outbound access to tracker.bepresearch.com and WebFetch could not reach any external site to re-verify the excerpt verbatim against the primary article -- treat the quote as reconstructed from search-result snippets, not confirmed against the live page, and verify before raising confidence above LOW.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 50,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Initial anchor-tenant capacity cited in secondary press coverage of Microsoft's withdrawal; matches tracker's existing 50MW-initial estimate, not a new figure"
+        }
+      ]
+    }
+  ]
+}
