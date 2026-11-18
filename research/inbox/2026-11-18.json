@@ -1,0 +1,44 @@
+{
+  "submissions": [
+    {
+      "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-delivers-horizon-1-microsoft-and-achieves-nvidia-exemplar",
+      "title": "IREN Delivers Horizon 1 to Microsoft and Achieves NVIDIA Exemplar Cloud Status on GB300 NVL72",
+      "publisher": "IREN Limited",
+      "publicationDate": "2026-08-13",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "first of four 50MW (IT load) direct-to-chip liquid cooled AI Cloud deployments delivered to Microsoft at IREN's Childress, Texas campus",
+      "suggestedProjectName": "IREN Childress",
+      "note": "STATUS UPDATE: Matches tracked project 'IREN Childress' (slug iren-childress-horizon-for-microsoft in the repo's nightly data/projects.json snapshot, lastVerifiedAt 2026-07-28, status UNDER_CONSTRUCTION). Horizon 1 -- the first of four 50MW IT-load buildings under IREN's five-year, $9.7B Microsoft cloud contract -- was delivered and accepted by Microsoft on 2026-08-13, after the tracker's last verification date. Figure is IT load, not site power or generation capacity. Horizons 2-4 still pending delivery later in 2026 per the same release. Project may warrant a status review (e.g. PARTIALLY_OPERATIONAL) rather than remaining plain UNDER_CONSTRUCTION. NOTE ON SOURCING: this session's live API (tracker.bepresearch.com) and general WebFetch were both blocked by the sandbox's network policy, so projectId is omitted (only the slug, not the DB id, is known) and the quote above is reproduced from WebSearch's extracted snippet of the press release rather than a byte-verified fetch of the raw page -- please double check the quote against the source link before using it as a CONFIRMED-level excerpt.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 50,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Company press release states Horizon 1 is a 50MW IT-load deployment, delivered to and accepted by Microsoft"
+        }
+      ]
+    },
+    {
+      "url": "https://idahocapitalsun.com/?p=33208",
+      "title": "Boise City Council approves 6-month moratorium on large data center construction",
+      "publisher": "Idaho Capital Sun",
+      "publicationDate": "2026-11-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "temporarily prohibit new data centre developments measuring more than 100,000 sqft or requiring more than 20 megawatts of power",
+      "note": "SITING RESTRICTION: Boise, Idaho City Council voted unanimously on 2026-11-10 to enact an emergency 6-month moratorium on large data center construction within city limits, triggered by projects over 100,000 sqft or drawing more than 20 MW. Purpose: time to review code, water, energy, wastewater, noise and public-safety impacts before accepting or processing new applications meeting those thresholds. Not tied to a specific tracked project -- this is a future-siting barrier, not a project-level event. Same caveat as above re: WebFetch being unavailable in this session to byte-verify the quoted ordinance language against the article.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://okcfox.com/news/local/edmond-city-council-extends-moratorium-on-new-data-centers-through-june",
+      "title": "Edmond City Council extends moratorium on new data centers through June",
+      "publisher": "KOKH FOX25 Oklahoma City (okcfox.com)",
+      "publicationDate": "2026-11-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "extend the city's existing moratorium on data centers through June 30, 2027",
+      "note": "SITING RESTRICTION: Edmond, Oklahoma City Council voted unanimously on 2026-11-09 to extend its existing data center moratorium (originally Ordinance 4091, enacted June 2026) through 2027-06-30. The pause covers acceptance of rezoning and building-permit applications enabling construction, expansion or operation of data centers citywide. Not tied to a specific tracked project. Distinct from the separate Oklahoma City (not Edmond) moratorium extension reported in the same news cycle -- do not conflate the two municipalities. Same WebFetch-unavailable caveat as the other findings in this batch.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
