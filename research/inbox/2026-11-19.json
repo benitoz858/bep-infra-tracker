@@ -1,0 +1,88 @@
+{
+  "submissions": [
+    {
+      "url": "https://thestar.com.my/tech/tech-news/2026/11/06/ai-data-center-firm-iren-delays-microsoft-ai-deliveries-plans-15-billion-spending-push",
+      "title": "AI data center firm IREN delays Microsoft AI deliveries, plans $15 billion spending push",
+      "publisher": "The Star (Reuters)",
+      "publicationDate": "2026-11-06",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "AI data center firm IREN delays Microsoft AI deliveries, plans $15 billion spending push",
+      "projectId": "iren-childress-horizon-for-microsoft",
+      "note": "Tracked project (last verified 2026-07-29) shows a schedule development: Reuters reports IREN delayed some Horizon-campus infrastructure deliveries to Microsoft at Childress, TX, citing a Microsoft-requested network-design change and supplier timing (no financial penalty). Separately, Horizon 1 (first GB300 cluster) has reportedly been delivered and formally accepted by Microsoft, while Horizon 2 is being commissioned, Horizon 3 has GPUs on site, and Horizon 4 GPUs are expected within weeks (as of ~Nov 5, 2026). IREN also announced ~$15B of additional company-wide spending — this is NOT Childress-specific capex and should not be attributed to site capex. Note: live tracker API (tracker.bepresearch.com) and WebFetch were both unreachable from this sandbox's network policy during this run, so projectId above is the project slug inferred from the nightly data/projects.json export rather than confirmed against the live API id — please verify the match before applying.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://baxtel.com/news/voters-back-data-center-limits-in-40-of-41-ballot-measures-across-10-states",
+      "title": "Voters back data center limits in 40 of 41 ballot measures across 10 states",
+      "publisher": "Baxtel (citing Ballotpedia tally)",
+      "publicationDate": "2026-11-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Voters back data center limits in 40 of 41 ballot measures across 10 states",
+      "note": "SITING RESTRICTION: In the Nov 3, 2026 general election, voters approved local data-center restrictions or outright bans in 40 of 41 local ballot measures across 10 states, per Ballotpedia's Nov 4 tally (Venable's Nov 4 legal alert reaches a similar conclusion; other trackers using different cutoff times/methodologies report 38-44). Ohio accounted for roughly half the measures (~21). Only one community (in North Dakota) passed a pro-data-center measure. Not tied to a single tracked project — flagging as a general, nationwide siting-climate signal that may be worth its own restriction-type record rather than a per-project one. Counts were still being finalized in the days after the election; verify against Ballotpedia's final certified tally before recording a hard number.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.axios.com/local/nw-arkansas/2026/01/12/arkansas-lands-6b-data-center-deal",
+      "title": "Arkansas lands $6B data center deal",
+      "publisher": "Axios",
+      "publicationDate": "2026-01-12",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Arkansas lands $6B data center deal",
+      "suggestedProjectName": "AVAIO Digital \"Leo\" Campus (Wrightsville, Pulaski County, Arkansas)",
+      "note": "New project not currently tracked: AVAIO Digital's ~760-acre AI data center campus ('Project Leo') near Wrightsville, Pulaski County, AR, ~10 miles south of Little Rock. Phase 1 capex reported at $6B; full buildout reported up to $21B (Arkansas Business) — treat the $21B figure as press-report derived, not company-confirmed. Initial Entergy Arkansas interconnection contract reported at 150 MW, with AVAIO saying demand could grow toward 1 GW at full buildout (site power / utility-contracted basis, not IT load; AVAIO has not disclosed an IT-load figure). AVAIO also reportedly plans >500 MW of behind-the-meter gas generation plus a 75 MW solar array on site. Surfacing now because the project is the subject of active Nov 2026 litigation over county zoning — see the companion SITING RESTRICTION submission below for the same project.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 6000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Phase 1 capex as reported by multiple outlets (Axios headline figure, Jan 2026); full buildout reported separately at up to $21B"
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 150,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Initial Entergy Arkansas interconnection contract per press reports; company statements cited in coverage say demand could grow toward 1,000 MW at full buildout"
+        }
+      ]
+    },
+    {
+      "url": "https://katv.com/news/avaio-asks-judge-to-halt-pulaski-county-data-center-ordinance-enforcement-amid-lawsuit",
+      "title": "AVAIO asks judge to halt Pulaski County data center ordinance enforcement amid lawsuit",
+      "publisher": "KATV",
+      "publicationDate": "2026-11-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "AVAIO asks judge to halt Pulaski County data center ordinance enforcement amid lawsuit",
+      "suggestedProjectName": "AVAIO Digital \"Leo\" Campus (Wrightsville, Pulaski County, Arkansas)",
+      "note": "SITING RESTRICTION: AVAIO Data Partners filed a motion for a preliminary injunction on Thursday, Nov. 4, 2026, in the U.S. District Court for the Eastern District of Arkansas, seeking to block Pulaski County from enforcing its new data-center ordinance against AVAIO's Wrightsville-area campus while AVAIO's underlying federal suit proceeds. The suit argues the county's regulations are preempted by federal authority over interstate electric transmission and commerce, and separately alleges Arkansas FOIA violations (withheld public records). The county's own 1-year data-center moratorium — which had exempted AVAIO's project — failed to take effect after the county clerk discovered a vote-counting error (miscount) in the quorum court tally; it is unclear whether the quorum court can revote on the original (non-exempting) ordinance. The county's defense rests partly on a 2023 Arkansas law barring local governments from banning data-center permits. No ruling on the injunction had been reported as of this research run — worth a follow-up check for the court's decision.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://www.fox4news.com/news/fort-worth-set-vote-data-center-moratorium",
+      "title": "Fort Worth advances proposed data center moratorium following late-night public hearing",
+      "publisher": "FOX 4 News (KDFW)",
+      "publicationDate": "2026-11-11",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Fort Worth advances proposed data center moratorium following late-night public hearing",
+      "note": "SITING RESTRICTION: Fort Worth, TX held the first of two legally required public hearings on a proposed 90-day data-center construction moratorium on Nov. 10, 2026; reporting indicates every speaker at the hearing favored the moratorium. Under the process the council began in August, a second vote is required roughly 28 days after the first, and final passage needs a three-fourths council supermajority (not a simple majority) — the moratorium is not yet in effect. Context: Fort Worth separately approved a revised site plan for Black Mountain's reported ~$10B, 187-acre data-center campus (Lon Stephenson Rd/Forest Hill Dr) amid this same debate; that project is not currently in the tracker and may warrant a separate new-project proposal if a megawatt figure can be confirmed (none found in this research pass — only dollar/acreage figures). Publication date for this article is approximate (day after the Nov. 10 hearing) — please confirm the exact date before promoting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://idahocapitalsun.com/?p=33208",
+      "title": "Boise City Council approves 6-month moratorium on large data center construction",
+      "publisher": "Idaho Capital Sun",
+      "publicationDate": "2026-11-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Boise City Council approves 6-month moratorium on large data center construction",
+      "note": "SITING RESTRICTION: Boise, ID city council approved a 6-month moratorium on large data-center construction (reported ~Nov 10, 2026) following a public hearing that drew more than 100 attendees. No BEP-tracked project is currently located in Boise. Publication date is approximate — confirm the exact vote date and the moratorium's size/MW threshold against the council's adopted ordinance text before recording this as a dated restriction.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
