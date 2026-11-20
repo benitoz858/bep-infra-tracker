@@ -1,0 +1,45 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/17/3405044/0/en/giga-energy-inks-10-year-1b-lease-on-project-clay-a-60mw-ai-data-center-in-hunt-county-tx.html",
+      "title": "Giga Energy Inks 10-Year, $1B Lease on Project Clay, a 60MW AI Data Center in Hunt County, TX",
+      "publisher": "Giga Energy (GlobeNewswire)",
+      "publicationDate": "2026-11-17",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "a 10-year, $1 billion lease agreement with an undisclosed US-based AI cloud provider for Project Clay, a 60MW data center in Hunt County, Texas",
+      "suggestedProjectName": "Giga Energy Project Clay (Hunt County, Texas)",
+      "note": "NEW PROJECT, not currently tracked. Developer Giga Energy (not a hyperscaler) signed a 10-year, $1B lease with an undisclosed AI cloud tenant for a 60MW data center near Royse City, Hunt County TX ('Project Clay'; a same-day GlobeNewswire release with near-identical text calls it 'Project Marl' with a Houston dateline -- naming conflict unresolved in coverage, flagging for reviewer). IMPORTANT: the $1B figure is 10-year LEASE/CONTRACT REVENUE, not capex -- do not record as CAPEX_USD. 60MW is the data center's stated capacity (basis -- IT load vs. site power -- not specified in secondary coverage). Construction reportedly began July 2026; target in-service spring 2027. Tenant and utility not named. I could not fetch the GlobeNewswire release directly (fetch tool blocked this domain in my sandbox), so the excerpt above is reconstructed from consistent secondary reporting (fourweekmba.com, BIC Magazine, ConstructionReview) rather than verified word-for-word against the primary text -- please verify the exact release wording before upgrading confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 60,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "60MW stated in company release per secondary reporting; could not verify exact wording against primary source directly"
+        }
+      ]
+    },
+    {
+      "url": "https://lailluminator.com/?p=36225",
+      "title": "Lawsuit challenges Landry-backed 'lightning' speed approval for data center power projects",
+      "publisher": "Louisiana Illuminator",
+      "publicationDate": "2026-11-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "asks a judge to declare the LPSC's 'Lightning Directive' as invalid and of no effect",
+      "projectId": "meta-hyperion-louisiana",
+      "note": "SITING RESTRICTION / regulatory risk: three groups (Louisiana Landowners Coalition, Louisiana Citizen Advocacy Group, Save My Louisiana) sued in the 19th Judicial District Court, Baton Rouge, to invalidate the Louisiana PSC's fast-track 'Lightning Directive' review pathway, which Entergy Louisiana plans to use to seek approval (~$14B of gas plants/transmission for Meta's Hyperion campus) at the LPSC's Dec. 8, 2026 meeting. Plaintiffs say the commission adopted the pathway without required public notice. FLAGGING: this was filed Nov 9, 2026 (~11 days before this report), older than the ideal 24-72h research window, but I surfaced it because it bears directly on a tracked UNDER_CONSTRUCTION project and the Dec 8 PSC vote is imminent -- worth a human look even though not 'breaking.' Live tracker API was unreachable from my sandbox so I could not confirm whether this is already logged against the project.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://gcn.com/?p=23300",
+      "title": "Oklahoma regulators approve 3.55% PSO rate hike, new data center tariff",
+      "publisher": "GCN",
+      "publicationDate": "2026-11-16",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "voted 2-1 ... to approve a 3.55% rate increase ... and a new large-load tariff for data centers",
+      "note": "SITING RESTRICTION: Oklahoma Corporation Commission (Order No. 761871, case PUD2025-000075) approved a 3.55% residential rate hike for Public Service Co. of Oklahoma and, separately, agreed in principle to create a new large-load utility tariff/rate class specifically for data centers (and the proposed Emirates Global Aluminum smelter). Underlying commission vote was Nov 5, 2026 (reported Nov 16) -- older than ideal 24-72h window, included because the data-center-specific tariff terms are still being worked out and may be worth tracking as it finalizes. Tariff terms themselves are NOT yet public in the coverage I found (commissioners agreed to 'circle back later'), so no numeric claim is included -- flagging as a signal to watch rather than a confirmed restriction. A related OG&E large-load tariff case is scheduled before the same commission on Jan 12, 2027.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
