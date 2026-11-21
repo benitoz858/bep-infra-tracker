@@ -1,0 +1,94 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.loudoun.gov/DocumentCenter/View/223074/Release---Loudoun-Board-Formally-Adopts-Data-Center-Pause",
+      "title": "Loudoun Board Formally Adopts Data Center Pause",
+      "publisher": "Loudoun County, Virginia (Office of the Board of Supervisors)",
+      "publicationDate": "2026-11-17",
+      "sourceType": "GOVERNMENT_FILING",
+      "excerpt": "the Board voted 7-1-1 Tuesday to formally pause data center and substation legislative applications",
+      "note": "SITING RESTRICTION: Loudoun County Board of Supervisors adopted a 12-month pause (retroactive to Sept 15, 2026) on new data center and electrical substation legislative (rezoning/special-exception) applications; vote was 7-1-1 on Nov 17, 2026 (Umstattd no, Kershner abstain). By-right/administrative approvals are unaffected, and substations deemed 'grid reliability' are exempt, so this does not halt projects already in the by-right pipeline. No specific project is named; it affects future applications countywide, and no Loudoun County project is currently tracked. CAUTION: loudoun.gov was not reachable from this sandbox (WebFetch blocked by network policy for this domain) — the quote above is reconstructed from a search-engine summary of the official release, not a sentence I personally verified by opening the page. Recommend confirming exact wording before accepting.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://sfstandard.com/2026/11/17/data-center-moratorium-september-2027/",
+      "title": "SF supervisors extend data center moratorium until September 2027",
+      "publisher": "San Francisco Standard",
+      "publicationDate": "2026-11-17",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "unanimously approved an extension to the zoning moratorium on new data centers until next September",
+      "note": "SITING RESTRICTION: SF Board of Supervisors voted unanimously (Supervisor Connie Chan absent) to extend the city's zoning moratorium on new data centers to September 2027, citing a Planning Department report identifying gaps in understanding of local power/water/pollution impacts. No SF project is currently tracked as UNDER_CONSTRUCTION/ANNOUNCED; this blocks future applications. Corroborated by SFist (https://sfist.com/2026/11/17/sf-supervisors-extend-data-center-moratorium-citing-gaps-in-environmental-impact-report/) and Mission Local (https://missionlocal.org/2026/11/san-francisco-data-center-moratorium-extended/). CAUTION: sfstandard.com was not reachable from this sandbox (WebFetch blocked) — quote is reconstructed from a search-engine snippet, not independently re-opened. Recommend confirming wording before accepting.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.nbcbayarea.com/news/local/oakland-city-council-extends-data-center-moratorium/4174020/",
+      "title": "Oakland City Council extends data center moratorium",
+      "publisher": "NBC Bay Area",
+      "publicationDate": "2026-11-11",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "voted unanimously Tuesday to extend its data center moratorium until next October",
+      "note": "SITING RESTRICTION: Oakland City Council voted unanimously (7-0, sponsored by Councilmember Carroll Fife) on Nov 10, 2026 to extend the city's data center moratorium 10 months 15 days, through Oct 5, 2027, giving staff time to draft permanent review standards. The original 45-day moratorium (adopted Oct 6, 2026, also 7-0) was due to expire Nov 20, 2026. No Oakland project is tracked. Corroborated by KTVU (https://www.ktvu.com/news/oakland-extends-data-center-moratorium-one-year). CAUTION: nbcbayarea.com was not reachable from this sandbox (WebFetch blocked) — quote reconstructed from a search-engine snippet, not independently re-opened. Recommend confirming wording before accepting.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/",
+      "title": "Investing in Wyoming's infrastructure, energy and workforce",
+      "publisher": "Google",
+      "publicationDate": "2026-11-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "representing a $17 billion investment in the Cowboy State",
+      "suggestedProjectName": "Google Wyoming Data Center (Project Tembo, Laramie County)",
+      "note": "NEW PROJECT. Google announced its first Wyoming data center, near Cheyenne in Laramie County (site previously referenced in county filings as 'Project Tembo'), a $17B company-stated investment; byline Steve Walter, VP Global Infrastructure & Energy. Secondary reporting (Baxtel, Cowboy State Daily) attaches a separate ~702MW natural-gas fuel-cell+CCS generation project (partners Tallgrass, Black Hills, AEP, Related Digital) and a county-filing-sourced ~2.7GW total-capacity figure, but neither MW figure appears in Google's own post — those are generation/site-power estimates from secondary sources, not IT load, so power is deliberately left blank below rather than guessed. CAUTION: blog.google was not reachable from this sandbox (WebFetch blocked by network policy) — the excerpt above is reconstructed from a search-engine summary of the post, not a sentence I personally verified by opening the page. The $17B figure and Laramie County location are well-corroborated across outlets, but please confirm the exact source sentence before treating the excerpt as a verbatim quote.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 17000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Google's own blog post states a $17 billion investment figure for the Wyoming site; held at MEDIUM rather than HIGH because the exact source sentence was not independently re-opened in this research run (see note)."
+        }
+      ]
+    },
+    {
+      "url": "https://lambda.ai/blog/lambda-to-invest-33-billion-in-alabama-with-new-data-center",
+      "title": "Lambda to build new data center in Lowndes County, Alabama, investing more than $33 billion in state",
+      "publisher": "Lambda",
+      "publicationDate": "2026-11-04",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Lambda to build new data center in Lowndes County, Alabama, investing more than $33 billion in state",
+      "suggestedProjectName": "Lambda Red Clay Technology Center Campus (Lowndes County, Alabama)",
+      "note": "NEW PROJECT. Lambda ('the Superintelligence Cloud') announced Project Red Clay, an ~$33.1B, four-building campus in Lowndes County, Alabama, developed by Cloverleaf Infrastructure with Lambda as anchor tenant/end user; construction targeted to start Q1 2027 and take up to 5 years. Capacity figures are unconfirmed and conflict across secondary outlets (Baxtel: ~1GW; Cleanview: ~1,500MW / ~2,880,000 sq ft) — power/compute left blank per the 'unknown stays blank' rule rather than picking a figure. Local friction worth tracking: Lowndes County Commission voted 3-2 on Oct 13, 2026 to grant roughly $1.1-1.15B in tax abatements (one outlet cites $2.85B — unreconciled), and at least two lawsuits have been filed challenging that vote (incl. Protect Lowndes County + Alabama Rivers Alliance) — could become a SITING RESTRICTION item if a court rules against the county. CAUTION: lambda.ai was not reachable from this sandbox (WebFetch blocked) — the excerpt is the page's title as indexed by search, not independently verified by opening the page; the $33.1B capex figure is well-corroborated across outlets citing this same post.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 33100000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Lambda's own announcement states an investment 'more than $33 billion' in Alabama; held at MEDIUM rather than HIGH because the exact source sentence was not independently re-opened in this research run (see note)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/aws-proceeds-with-data-center-project-in-walla-walla-washington/",
+      "title": "AWS proceeds with data center project in Walla Walla, Washington",
+      "publisher": "Data Center Dynamics",
+      "publicationDate": "2026-11-05",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "The campus is expected to have a 300MW power capacity",
+      "suggestedProjectName": "AWS Attalia Data Center Campus (Walla Walla County, Washington)",
+      "note": "NEW PROJECT, NOT YET APPROVED — flagging as a pending signal, not a settled announcement. AWS/Amazon Data Services scaled back its Wallula Gap-area plan to a ~300MW, 3-building 'Attalia' campus on 134 of the 554 acres bought from the Port of Walla Walla in Feb 2026 ($36M land deal); would be Amazon's first data center in Washington State (earlier plan was a $4.8B, 16-building campus in four phases). The county has NOT approved it — a SEPA environmental review is in progress, with a second public-comment period still to come. Of 706 comments in a 30-day period ending Oct 12, 2026, only ~23 (~3%) supported the project per a Walla Walla Union-Bulletin tally — strong local opposition. Treat the 300MW figure as site-power-basis from county planning documents, not an AWS-confirmed IT load figure. CAUTION: datacenterdynamics.com was not reachable from this sandbox (WebFetch blocked) — the excerpt is reconstructed from a search-engine summary, not independently re-opened. Recommend the reviewer hold this one for county approval or a direct Amazon statement.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 300,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Walla Walla County planning documents (cited via DCD) give a 300MW capacity for the proposed campus, which is still under SEPA review and not yet approved; basis (site power vs IT load) is unstated in reporting."
+        }
+      ]
+    }
+  ]
+}
