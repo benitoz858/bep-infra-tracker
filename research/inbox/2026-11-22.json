@@ -1,0 +1,101 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.cityam.com/?p=2466628",
+      "title": "Microsoft pulls out of Nscale deal for UK's largest AI data centre",
+      "publisher": "City A.M.",
+      "publicationDate": "2026-10-19",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Microsoft confirmed Monday that it has pulled out of a U.K. AI data centre deal with British start-up Nscale",
+      "suggestedProjectName": "Nscale Loughton",
+      "note": "STATUS CHANGE on tracked project 'Nscale Loughton' (slug nscale-loughton-for-microsoft, currently ANNOUNCED). Microsoft — the only publicly named anchor tenant for this Essex, UK site — has withdrawn, reported 2026-10-18/19 by multiple outlets (CTV News, Data Center Dynamics, City A.M., ITPro). Cause cited: UK Power Networks told Nscale the site would not get a national-grid connection until the 2030s (upstream grid capacity). Nscale says it remains committed to the UK and is seeking a replacement tenant/alternative power. This is a live-API lookup gap: the tracker's API was unreachable from this sandbox (DNS/proxy blocked tracker.bepresearch.com), so no projectId could be confirmed against current records — match by name/slug. Recommend reviewer consider whether status should move toward PAUSED or the project name should drop the '(for Microsoft)' qualifier used elsewhere in trackers. Site power basis: previously reported as supporting GB300 GPU capacity for Microsoft; no confirmed sitewide MW figure found in this pass.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "GPU_COUNT",
+          "numericValue": 23040,
+          "unit": "GPUs",
+          "confidenceLevel": "LOW",
+          "methodology": "Secondary reporting (Telegraph via IBTimes/City A.M.) of the now-terminated Microsoft GB300 GPU commitment at this site, not independently confirmed against a primary filing"
+        }
+      ]
+    },
+    {
+      "url": "https://lambda.ai/blog/lambda-to-invest-33-billion-in-alabama-with-new-data-center",
+      "title": "Lambda to build new data center in Lowndes County, Alabama, investing more than $33 billion in state",
+      "publisher": "Lambda",
+      "publicationDate": "2026-11-04",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "readied for development by Cloverleaf Infrastructure, represents an estimated $33.1 billion investment in Alabama",
+      "suggestedProjectName": "Lambda Red Clay (Lowndes County, Alabama)",
+      "note": "NEW PROJECT, not currently in tracker. Lambda (GPU cloud provider) announced 2026-11-04 the 'Red Clay Technology Center Campus' in Lowndes County, Alabama, developed by Cloverleaf Infrastructure, at an estimated $33.1B total investment. Construction targeted to start Q1 2027, up to 5 years to build; >1,000 construction jobs, >225 FTE operational jobs cited. Power: Alabama Power to supply, contract pending state regulatory approval; Lambda says it will cover power/grid infrastructure cost. No MW figure disclosed in any source found. Caveat: this is an estimated/announced capex figure from the company's own release (not yet spent), and a county tax-abatement package tied to the project (~$1.15B-$2.7B depending on source) is under legal challenge locally (second lawsuit filed per GovTech) — note this as context, do not conflate tax abatement with project capex.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 33100000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Company-stated estimated total investment figure from Lambda's own announcement, as relayed via secondary outlets (primary blog URL could not be directly fetched from this sandbox to verify exact wording)"
+        }
+      ]
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/",
+      "title": "Investing in Wyoming's infrastructure, energy and workforce",
+      "publisher": "Google",
+      "publicationDate": "2026-11-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "a $17 billion investment in the Cowboy State",
+      "suggestedProjectName": "Google Cheyenne / Switchgrass (Wyoming)",
+      "note": "NEW PROJECT, not currently in tracker. Google announced 2026-11-05 its first Wyoming data center campus, ~716 acres in the Switchgrass Industrial Park near Cheyenne (Laramie County), a $17B total investment. Power basis is notable and should be tracked carefully: the headline $17B and campus are distinct from a co-located 702 MW natural-gas fuel-cell + carbon-capture plant (Bloom Energy fuel cells, owned/operated by AEP under a PPA) — this 702 MW is GENERATION capacity, not confirmed IT load or even confirmed total site power draw; some secondary outlets speculate total campus capacity could reach up to 2.7 GW but that figure is not in Google's own materials per the sources checked. Google states it will pay 100% of the power it uses and the site will be air-cooled. Previously known under code names 'Project Jade'/'Project Tembo'.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 17000000000,
+          "unit": "USD",
+          "confidenceLevel": "LOW",
+          "methodology": "Company-stated total investment figure from Google's announcement, relayed via secondary outlets (primary blog URL could not be directly fetched from this sandbox to verify exact wording)"
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 702,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Generation capacity of the co-located Bloom Energy/AEP fuel-cell plant as reported by secondary outlets; this is generation, not a confirmed IT-load or total-site-power figure for the data center itself"
+        }
+      ]
+    },
+    {
+      "url": "https://ksl.com/article/51646605/salt-lake-city-passes-6-month-pause-on-data-centers-seeks-future-adjustments",
+      "title": "Salt Lake City passes 6-month pause on data centers, seeks future adjustments",
+      "publisher": "KSL.com",
+      "publicationDate": "2026-11-17",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "removes data centers as an allowed use in manufacturing and business park districts for 180 days",
+      "note": "SITING RESTRICTION: Salt Lake City Council voted 6-0 on 2026-11-17 to adopt a 180-day (6-month) moratorium removing data centers as a permitted use in manufacturing and business-park zoning districts, the maximum pause allowed under Utah state law, to give the city time to write energy/water-use rules. Added to the agenda last-minute with no public hearing, reportedly a direct response to a contested proposed data center in the Northpoint neighborhood. Coverage notes the pause may not stop that specific project if it has vested rights/filed applications already. No tracked project in this snapshot is sited in Salt Lake City; flagging for the siting-restrictions dataset and in case an unannounced project is later linked here.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://idahocapitalsun.com/?p=33208",
+      "title": "Boise City Council approves 6-month moratorium on large data center construction",
+      "publisher": "Idaho Capital Sun",
+      "publicationDate": "2026-11-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "the Boise City Council voted unanimously to approve a six-month moratorium in new large data center projects",
+      "note": "SITING RESTRICTION: Boise, Idaho City Council voted unanimously on 2026-11-10 to approve an immediate six-month moratorium on new 'mega data center' applications/permits within city limits, proposed by Mayor Lauren McLean on 2026-11-06 (three days after the Nov 3 election). Public hearing drew 100+ attendees, all speakers supported the pause or asked for stronger measures. Regional context: Bannock County, ID adopted a separate 180-day data-center permit moratorium in July 2026. No tracked project in this snapshot is sited in Boise.",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://www.news9.com/data-centers-in-oklahoma/edmond-city-council-extends-data-center-moratorium",
+      "title": "Edmond City Council extends data center moratorium",
+      "publisher": "News 9 (KWTV Oklahoma City)",
+      "publicationDate": "2026-11-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "extended its data center moratorium through June 30, 2027",
+      "note": "SITING RESTRICTION: Edmond, Oklahoma City Council voted unanimously (5-0) on 2026-11-09 to extend its existing data-center moratorium (first adopted June 2026, originally set to expire 2026-12-31) through 2027-06-30. Blocks new rezoning and building-permit applications enabling data centers within city limits. Distinct from, but concurrent with, the separate Oklahoma City moratorium extension (same region, different jurisdiction — do not merge). No tracked project in this snapshot is sited in Edmond.",
+      "submitterName": "BEP daily research agent (automated)"
+    }
+  ]
+}
