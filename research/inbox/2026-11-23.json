@@ -1,0 +1,92 @@
+{
+  "submissions": [
+    {
+      "url": "https://www.wsmv.com/2026/10/21/memphis-city-council-declines-pass-data-center-moratorium/",
+      "title": "Memphis City Council declines to pass data center moratorium",
+      "publisher": "WSMV News4",
+      "publicationDate": "2026-10-21",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Council voted down a year-long moratorium but passed an ordinance putting a 135-day pause on data centers.",
+      "note": "SITING RESTRICTION: concerns tracked project xAI Colossus 2 (Memphis, TN). On 2026-10-20 the Memphis City Council rejected a 12-month data center moratorium (Ordinance 19, tied 6-6) but passed a separate ordinance (Ordinance 18, 7-5) imposing a 135-day pause on NEW data center approvals, paired with Mayor Paul Young's 90-day executive-order review of digital infrastructure impacts. Multiple outlets (WREG, WSMV, Baxtel, Daily Memphian) report the pause does not apply to xAI's existing/already-approved facilities, so Colossus 2 construction itself is not halted, but any new expansion filings in the city would be. Flag for human review: this event is ~5 weeks old, not within the usual 24-72h window, and may have been surfaced by a prior run of this agent — check for a duplicate before promoting. I could not independently fetch the primary WREG/city-council text in this run (outbound fetch to news sites was blocked); the quote above is reconstructed from secondary synthesis and should be checked against the ordinance text or a cached version of the WREG/WSMV article before being marked CONFIRMED.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://dallasinnovates.com/?p=293756",
+      "title": "Giga Energy Nails Down $1B Lease With Tech Company for New Data Center in Hunt County",
+      "publisher": "Dallas Innovates",
+      "publicationDate": "2026-11-17",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "signed a 10-year, $1 billion deal to lease an under-construction data center in Hunt County",
+      "note": "New project, not currently tracked. Giga Energy (developer/operator) signed a 10-year, ~$1B lease with an undisclosed U.S. AI cloud provider for a 60 MW campus ('Project Clay', some outlets say 'Project Marl') on ~30 acres in Hunt County, Texas (near Royse City), targeted to open spring 2027. IMPORTANT: the $1B figure is stated LEASE/CONTRACT VALUE (revenue over 10 years), not capex — do not record it as capexUsd per the no-lease-as-capex rule. Tenant identity, construction cost, and exact site power basis (IT load vs. gross) are undisclosed. I could not reach the primary gigaenergy.com page directly in this sandbox run (outbound fetch to company sites was blocked); the excerpt is reconstructed from Dallas Innovates' reporting and should be checked against the company's own release before promotion.",
+      "suggestedProjectName": "Giga Energy Hunt County (Project Clay)",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 60,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Capacity as stated in secondary press coverage of the lease announcement; basis (IT vs. gross) not specified by the source."
+        }
+      ]
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/",
+      "title": "Investing in Wyoming's infrastructure, energy and workforce",
+      "publisher": "Google",
+      "publicationDate": "2026-11-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "Google will invest $17 billion in its first data center in Wyoming, a campus in Laramie County near Cheyenne.",
+      "note": "New project, not currently tracked. Google announced (via its own blog, Nov 5 2026, authored by VP Steve Walter) its first Wyoming data center: a $17B investment on 716 acres in the Switchgrass Industrial Park, Laramie County, near Cheyenne (previously known pre-disclosure as 'Project Tembo'/'Project Jade'). The $17B figure is Google's own total-investment statement. SEPARATELY, Google says it will fund a 702 MW fuel-cell-with-carbon-capture generation project (with Bloom Energy, Tallgrass Energy, Black Hills Energy and AEP as partners) to supply the campus — that 702 MW is a GENERATION figure, not confirmed site IT load. Third-party trackers (Cowboy State Daily, via local reporting predating Google's own confirmation) have cited a much larger ~2.7 GW total site-power figure for the campus, which Google itself has not confirmed; treat that figure as unconfirmed/analyst estimate, not primary. Could not directly fetch blog.google in this sandbox run (outbound fetch to company sites was blocked) — the excerpt above is reconstructed from secondary coverage that paraphrases/quotes the post, and should be checked against the primary post before being marked CONFIRMED.",
+      "suggestedProjectName": "Google Wyoming (Laramie County / Cheyenne)",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 17000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Google's own stated total investment figure for the Wyoming campus, per its Nov 5 2026 blog post, as corroborated by multiple independent news outlets."
+        },
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 702,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Stated capacity of the dedicated fuel-cell/carbon-capture generation project built to supply the campus, per company announcement and secondary coverage; this is a generation figure, not a confirmed site IT-load or total site-power figure."
+        }
+      ]
+    },
+    {
+      "url": "https://elkhornmediagroup.com/?p=219724",
+      "title": "Amazon's proposed data center application deemed complete by Walla Walla County",
+      "publisher": "Elkhorn Media Group",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "three buildings of 220,000 sq ft each on 134 acres, with an expected 300 MW capacity",
+      "note": "New project, not currently tracked (AWS's first announced Washington State site). Amazon Data Services ('Amazon Attalia' campus) plans three buildings (220,000 sq ft each) on 134 of the 554 acres it bought from the Port of Walla Walla in Feb 2026 ($36M), at Wallula Gap Business Park, Walla Walla County, WA, with an expected 300 MW capacity. This is a scale-down from an earlier-reported $4.8B/16-building plan for the same land, so treat the larger figure as superseded, not additive. SITING RESTRICTION angle: the county deemed the land-use application complete (Sept 2026) but has NOT approved it — a SEPA environmental review is still pending with no decision timeline, and a local group (Walla Walla Anti-Data Center League) has collected ~1,900 signatures on petitions for a county data-center moratorium that could affect this project before it's approved. Could not directly fetch the primary county docket or AWS's own statement in this sandbox run (outbound fetch blocked); excerpt reconstructed from secondary reporting — verify against the county's land-use file before promoting. Publication date left blank: available secondary sources gave inconsistent dates for this specific figure (Sept county filing vs. a later November report revealing the scaled-back plan).",
+      "suggestedProjectName": "AWS Attalia (Walla Walla County, Washington)",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 300,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Capacity as stated in county application documents per secondary press reporting; IT-load vs. site-power basis not specified by the source."
+        }
+      ]
+    },
+    {
+      "url": "https://idahocapitalsun.com/?p=33208",
+      "title": "Boise City Council approves 6-month moratorium on large data center construction",
+      "publisher": "Idaho Capital Sun",
+      "publicationDate": "2026-11-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "a six-month moratorium applies to facilities larger than 100,000 square feet or with at least 20 megawatts demand",
+      "note": "SITING RESTRICTION, new — not tied to a currently tracked project (no tracked project is sited in Boise, ID). On 2026-11-10 the Boise City Council voted unanimously to approve an emergency 6-month moratorium on new large data center applications, proposed by Mayor Lauren McLean. It covers facilities over 100,000 sq ft or with a projected power demand of at least 20 MW at full buildout; the city says it currently has no mega-data-center applications pending, and is using the window to write zoning/code standards and study water, energy, wastewater, noise and public-safety impacts. Reported as not affecting projects with pre-existing planning permission. Could not directly fetch the city's ordinance text or a news-site copy in this sandbox run (outbound fetch blocked); excerpt reconstructed from secondary reporting (multiple consistent outlets: Idaho Capital Sun, East Idaho News, Idaho News) — verify against the City of Boise's actual ordinance before promoting.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    }
+  ]
+}
