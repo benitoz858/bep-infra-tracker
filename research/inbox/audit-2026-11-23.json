@@ -1,0 +1,84 @@
+{
+  "submissions": [
+    {
+      "url": "https://nextplatform.com/cloud/2026/09/14/despite-hefty-capital-investments-the-cloud-starts-paying-off-for-oracle/5296362",
+      "title": "Despite Hefty Capital Investments, The Cloud Starts Paying Off For Oracle",
+      "publisher": "The Next Platform",
+      "publicationDate": "2026-09-14",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "6 of the 8 campus buildings, representing 618 megawatts and 75% of total capacity have now been delivered to the customer",
+      "projectId": "stargate-abilene-texas",
+      "note": "AUDIT: tracker confirmedMw=200 (sourced to an Oracle statement from April 2026) is now stale. On Oracle's Q1 FY27 earnings call (2026-09-10), Oracle's Clay Magouyrk stated 6 of the 8 Abilene campus buildings — 618 MW, 75% of total capacity — have been delivered to the customer. This is a direct operator statement (relayed via earnings-call reporting), corroborated independently by Epoch AI's directory citing the same call. Recommend updating confirmedMw to 618 (basis: IT load / delivered-to-customer capacity across 6 of 8 buildings), and retaining Epoch's separate ~824 MW Nov-2026 projection for the remaining 2 buildings as an ESTIMATED figure, not confirmed.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 618,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Basis: IT load (delivered-to-customer capacity). Oracle's Clay Magouyrk stated on the 2026-09-10 Q1 FY27 earnings call that 6 of 8 Abilene buildings, representing 618 MW / 75% of total capacity, have been delivered to the customer. Supersedes the prior 200 MW confirmed figure from April 2026."
+        }
+      ]
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/05/01/3286213/0/en/iren-announces-successful-energization-of-sweetwater-1.html",
+      "title": "IREN Announces Successful Energization of Sweetwater 1",
+      "publisher": "IREN / GlobeNewswire",
+      "publicationDate": "2026-05-01",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "successful energization of its 1.4GW Sweetwater 1 data center site in Texas",
+      "projectId": "iren-sweetwater",
+      "note": "AUDIT: internal inconsistency on the existing 2000 MW POWER_MW metric row — the methodology/Basis field currently reads 'Basis: IT load', but the tracker's OWN analyst note on this same project (and this same source) explicitly says energization is 'the high-voltage substation connection to ERCOT, not operating IT capacity.' This is exactly the facility/site-power-vs-critical-IT-load conflation class of error: the structured Basis field contradicts the analyst note it sits next to. Recommend correcting the Basis field on the 2000 MW POWER_MW claim to 'site power / grid interconnection (ERCOT energization), not IT load' so the structured field matches the narrative note. No numeric value needs to change — this is a basis/label correction only.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 2000,
+          "unit": "MW",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Basis: site power / grid interconnection (ERCOT energization of the Sweetwater hub), NOT critical IT load. 'Successful energization' refers to the substation connection, not operating data-center capacity; no critical-IT-load-online figure has been confirmed for Sweetwater 1 or 2. This corrects the existing claim row, which currently mislabels the Basis as 'IT load' in contradiction of the project's own analyst note."
+        }
+      ]
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-01-09/openai-softbank-invest-1-billion-in-stargate-partner-sb-energy",
+      "title": "OpenAI, SoftBank Invest $1 Billion in Stargate Partner SB Energy",
+      "publisher": "Bloomberg",
+      "publicationDate": "2026-01-09",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "OpenAI also said it has selected SB Energy to build and operate its 1.2 gigawatt data center in Milam County, Texas.",
+      "projectId": "stargate-milam-county",
+      "note": "AUDIT: tracker currently has power.estimatedMw and power.confirmedMw both blank for this site. That blank is a genuine data gap, not a deliberate 'not disclosed' — OpenAI itself disclosed a site-specific 1.2 GW figure for Milam County in a 2026-01-09 announcement (openai.com/index/stargate-sb-energy-partnership/, corroborated by Bloomberg and DataCenterDynamics), predating even the tracker's stale 2026-07-27 last-verified date. Recommend populating power.estimatedMw = 1200 (basis: announced/leased site capacity, NOT confirmed operating IT load — Epoch AI's independent estimate suggests near-term delivery may be well below this, so keep confirmedMw blank).",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 1200,
+          "unit": "MW",
+          "confidenceLevel": "HIGH",
+          "methodology": "Basis: announced lease/site capacity, not confirmed operating IT load. OpenAI's own 2026-01-09 announcement states SB Energy will build and operate OpenAI's 1.2 GW data center in Milam County, Texas. No construction-completion or energization figure has been separately confirmed, so this should be recorded as an announced target (estimatedMw), not confirmedMw."
+        }
+      ]
+    },
+    {
+      "url": "https://www.neom.com/en-us/newsroom/HUMAIN-and-DataVolt-to-develop-AI-data-center-in-NEOM",
+      "title": "HUMAIN partners with DataVolt to jointly develop 100MW of a 360MW AI data center project in NEOM",
+      "publisher": "NEOM",
+      "publicationDate": "2026-08-31",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "HUMAIN partners with DataVolt to jointly develop 100MW of a 360MW AI data center project in NEOM",
+      "projectId": "datavolt-oxagon-ai-factory-neom",
+      "note": "AUDIT: tracker's analyst note says 'no construction on this campus is documented as of mid-2026 — treat scale as aspirational,' which is now stale. HUMAIN and DataVolt announced an expanded partnership (LEAP 2026) and broke ground around late Aug/Sept 2026 on a 100 MW slice of the 360 MW first phase at Oxagon (corroborated by DataCenterDynamics 'HUMAIN breaks ground on NEOM's Oxagon data center' and AGBI 'construction begins on data centre at NEOM's Oxagon', Sept 2026). The overall 1.5 GW campus figure and 2028 target remain correctly aspirational/unbuilt for the full build — only the 100 MW/360 MW first-phase slice is now under active construction with HUMAIN as a co-developer. Recommend updating the analyst note to reflect the Aug/Sept 2026 groundbreaking and adding HUMAIN as a partner; no change to the existing 1500 MW estimatedMw or $5B capex figures, which still correctly represent the full aspirational campus.",
+      "submitterName": "BEP weekly self-audit agent (automated)",
+      "claims": [
+        {
+          "metricType": "OTHER",
+          "numericValue": null,
+          "unit": null,
+          "confidenceLevel": "HIGH",
+          "methodology": "Status update, not a capacity claim: construction has begun on a 100 MW slice of the planned 360 MW first phase (part of the larger 1.5 GW campus), with HUMAIN now a co-developer alongside DataVolt. Basis: site under active construction per company and trade-press reporting, Aug-Sept 2026. Does not change the existing 1500 MW aspirational campus-scale figure."
+        }
+      ]
+    }
+  ]
+}
