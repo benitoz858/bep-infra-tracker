@@ -1,0 +1,86 @@
+{
+  "submissions": [
+    {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/",
+      "title": "Investing in Wyoming's infrastructure, energy and workforce",
+      "publisher": "Google",
+      "publicationDate": "2026-11-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "a $17 billion investment in the Cowboy State",
+      "suggestedProjectName": "Google Cheyenne (Wyoming)",
+      "note": "NEW PROJECT. Google's first Wyoming data center, Laramie County near Cheyenne, on a site acquired from Crusoe/Tallgrass Energy; partners include Black Hills Energy, AEP and Related Digital. $17B is Google's own stated planned-investment figure (capex), not an IT-load or GPU count, and is NOT the acquisition price for the site. Secondary coverage (Crypto Briefing, AI Weekly -- not Google) cites a 702MW gas fuel-cell/CCS plant and up to 2.7GW of eventual campus capacity; those MW figures are not in Google's own post, so treat as unconfirmed estimates pending a primary source. CAVEAT: this agent's sandbox could not reach blog.google directly (network policy blocked WebFetch to that host), so the excerpt above is reconstructed from search-engine summarization of the post rather than an independently-fetched verbatim sentence -- please re-check the exact wording against the link before raising confidence above MEDIUM.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 17000000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Company-stated planned investment figure from Google's own announcement; exact source sentence not independently re-verified via direct fetch in this run"
+        }
+      ]
+    },
+    {
+      "url": "https://lambda.ai/blog/lambda-to-invest-33-billion-in-alabama-with-new-data-center",
+      "title": "Lambda to build new data center in Lowndes County, Alabama, investing more than $33 billion in state",
+      "publisher": "Lambda",
+      "publicationDate": "2026-11-04",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "investing more than $33 billion in state",
+      "suggestedProjectName": "Lambda Red Clay (Lowndes County, Alabama)",
+      "note": "NEW PROJECT, well above the $1B/100MW threshold. Four-building 'Project Red Clay' campus (~800 acres) developed with Cloverleaf Infrastructure; secondary reporting (AL Reporter, Baxtel) puts the figure precisely at $33.1 billion, creating 1,000+ construction jobs and 225+ permanent jobs, with closed-loop cooling; electricity supply still subject to regulatory approval, construction timeline up to 5 years. No confirmed MW figure found anywhere -- leave power blank, do not guess. Local opposition active: a residents' group and the Alabama Rivers Alliance sued Lowndes County commissioners over a tax abatement tied to the deal approved 3-2 on 2026-10-13; sources disagree sharply on the abatement's size ($1.1B vs $2.7B reported by different outlets) so flag that figure as unresolved rather than use either number. CAVEAT: this sandbox could not WebFetch lambda.ai directly to confirm exact sentence wording; excerpt is reconstructed from search-engine summarization -- please re-verify against the primary link.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "CAPEX_USD",
+          "numericValue": 33100000000,
+          "unit": "USD",
+          "confidenceLevel": "MEDIUM",
+          "methodology": "Company blog states 'more than $33 billion'; the more precise $33.1B figure comes from secondary outlets (AL Reporter, Baxtel) citing the same announcement, not independently re-verified by direct fetch in this run"
+        }
+      ]
+    },
+    {
+      "url": "https://idahocapitalsun.com/?p=33208",
+      "title": "Boise City Council approves 6-month moratorium on large data center construction",
+      "publisher": "Idaho Capital Sun",
+      "publicationDate": "2026-11-10",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "facilities larger than 100,000 square feet or those with a projected power demand of at least 20 megawatts",
+      "note": "SITING RESTRICTION: Boise, ID city council voted unanimously on 2026-11-10 for an immediate 6-month emergency moratorium on new large-data-center applications, triggered by any facility >=100,000 sq ft OR >=20MW projected demand at full buildout. Projects with planning approval already granted are grandfathered and unaffected. The city states no mega-data-center applications are currently pending inside city limits; Idaho Capital Sun separately flags a proposed ~4-million-sq-ft project just south of the city (outside this ordinance's jurisdiction) as the likely real target -- worth a human follow-up to see if that project is one we track. This agent cross-checked the 103-project local tracker snapshot and found no currently-tracked BEP project sited in Boise city limits, so no projectId is attached. Article-sourced (news coverage of the council vote), not the ordinance text itself -- a human reviewer may want to pull the actual Boise ordinance number for a primary cite.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://baxtel.com/news/voters-back-data-center-limits-in-40-of-41-ballot-measures-across-10-states",
+      "title": "Voters back data center limits in 40 of 41 ballot measures across 10 states",
+      "publisher": "Baxtel",
+      "publicationDate": "2026-11-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "Voters back data center limits in 40 of 41 ballot measures across 10 states",
+      "note": "SITING RESTRICTION, broad/national signal rather than one project: the 2026-11-03 US midterm ballot produced the largest coordinated wave yet of local data-center restrictions -- roughly 40 of 41 measures passed across 10 states per Baxtel/Ballotpedia (a Venable LLP client alert dated 2026-11-04 corroborates with a count of 41 measures in 10 states; the Washington Post's narrower count was >=38 jurisdictions, so treat the exact tally as approximate across outlets). Ohio accounted for 21 of the measures, including charter amendments in Piqua and Upper Sandusky that flatly prohibit data center construction; Wiscasset, ME adopted a 6-month moratorium. The lone reported rejection was in Harwood, ND. This agent did not find a currently-tracked BEP project located in any of the named jurisdictions (cross-checked against the 103-project local snapshot), but a human reviewer should double check the Ohio and Maine sites specifically since this agent could not exhaustively verify every affected locality against the tracker's location fields.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": []
+    },
+    {
+      "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-delivers-horizon-1-microsoft-and-achieves-nvidia-exemplar",
+      "title": "IREN Delivers Horizon 1 to Microsoft and Achieves NVIDIA Exemplar Cloud Status on GB300 NVL72",
+      "publisher": "IREN Limited",
+      "publicationDate": "2026-08-17",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "IREN Delivers Horizon 1 to Microsoft and Achieves NVIDIA Exemplar Cloud Status on GB300 NVL72",
+      "projectId": "iren-childress-horizon-for-microsoft",
+      "note": "STATUS-CHANGE SIGNAL for tracked project 'IREN Childress Horizon' (currently UNDER_CONSTRUCTION in the tracker, 750MW estimated / none confirmed). IREN's first ~50MW direct-to-chip liquid-cooled building ('Horizon 1') at the Childress, TX campus was delivered to and accepted by Microsoft under their $9.7B multi-year deal. This is IT load delivered/accepted by the customer for one of four planned buildings, not full-campus energization -- Horizons 2-4 remain under construction per IREN's Q1 FY27 call (Nov 5, 2026), with third-party imagery analysts (Aterio, Oct 21 note) flagging Horizon 4 as the most at-risk of slipping past year-end. FLAGGING THIS AS OLDER THAN THE USUAL 24-72H WINDOW (announced 2026-08-17, over 3 months ago): surfaced anyway because the tracker's status field looks like it may be stale against this milestone, not because it is a new development -- human judgment call on whether to update status/claims. Note 'projectId' above is actually this agent's best-guess tracker SLUG (iren-childress-horizon-for-microsoft), not a verified database ID -- this agent could not reach the live tracker API (tracker.bepresearch.com is not resolvable from this sandbox's network) to look up the real numeric/CUID id, so please match by slug/name manually.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {
+          "metricType": "POWER_MW",
+          "numericValue": 50,
+          "unit": "MW",
+          "confidenceLevel": "LOW",
+          "methodology": "Secondary reporting describes Horizon 1 as a 50MW direct-to-chip liquid-cooled deployment, one of four planned 50MW buildings; exact figure not independently confirmed against IREN's own press release text because this sandbox could not fetch iren.gcs-web.com directly"
+        }
+      ]
+    }
+  ]
+}
