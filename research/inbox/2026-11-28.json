@@ -1,0 +1,66 @@
+{
+  "submissions": [
+    {
+      "url": "https://lambda.ai/blog/lambda-to-invest-33-billion-in-alabama-with-new-data-center",
+      "title": "Lambda to Invest $33 Billion in Alabama with New Data Center",
+      "publisher": "Lambda",
+      "publicationDate": "2026-11-04",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "representing an estimated $33.1 billion investment in Alabama",
+      "suggestedProjectName": "Lambda Project Red Clay (Lowndes County, Alabama)",
+      "note": "NEW PROJECT, not in current tracker snapshot. Lambda will be the end-user/anchor tenant for the Red Clay Technology Center campus, developed by Cloverleaf Infrastructure, Lowndes County, AL. Secondary reporting (Baxtel) describes it as ~1 GW; Cleanview separately lists 1,500 MW - basis (IT load vs site power) is not stated in the company post, treat capacity as unconfirmed pending a primary figure. Lowndes County Commission approved a $1.15B tax abatement on a 3-2 vote (Oct 13, 2026); a second lawsuit, led by residents and the Alabama Rivers Alliance, challenges that approval and the tax breaks (NRDC/Route Fifty coverage). CAUTION: outbound WebFetch/curl were blocked for essentially every external host in this sandbox this run (including the tracker API itself - see summary), so this excerpt is reconstructed from a secondary WebSearch summary of the company post rather than a direct scrape. Please confirm exact wording at the source URL before promoting past LOW confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "CAPEX_USD", "numericValue": 33100000000, "unit": "USD", "confidenceLevel": "LOW", "methodology": "Stated as an estimated investment figure in the company announcement, per secondary summary (not independently re-verified by direct fetch this run)"}
+      ]
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/",
+      "title": "Investing in Wyoming's infrastructure, energy and workforce",
+      "publisher": "Google",
+      "publicationDate": "2026-11-05",
+      "sourceType": "COMPANY_ANNOUNCEMENT",
+      "excerpt": "$17 billion investment in our first Wyoming data center near Cheyenne",
+      "suggestedProjectName": "Google Project Tembo (Cheyenne, Wyoming)",
+      "note": "NEW PROJECT, not in current tracker snapshot (no Wyoming entries tracked). Site is ~716 acres in the Switchgrass Industrial Park, Laramie County, near Cheyenne; county filings had earlier code-named it 'Project Jade'/'Project Tembo' before Google confirmed ownership (Cowboy State Daily, Jul 2026). Secondary reporting describes a 702 MW fuel-cell project with carbon capture (partners AEP, Black Hills) tied to the campus - unclear whether this is generation, site power, or IT load; treat as generation/site-power, not IT load, pending confirmation. Some outlets cite a larger 2.7 GW figure sourced to county filings rather than Google's post - flag as unconfirmed, do not merge with the $17B/702MW figures above. CAUTION: WebFetch/curl could not reach this or almost any external host from this sandbox this run (see summary); excerpt is reconstructed from a secondary WebSearch summary of the primary post, not a direct scrape - verify exact wording before promoting past LOW confidence.",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "CAPEX_USD", "numericValue": 17000000000, "unit": "USD", "confidenceLevel": "LOW", "methodology": "Stated as the investment figure in Google's own blog post, per secondary summary (not independently re-verified by direct fetch this run)"},
+        {"metricType": "POWER_MW", "numericValue": 702, "unit": "MW", "confidenceLevel": "LOW", "methodology": "Secondary reporting describes a 702 MW fuel-cell/carbon-capture power project tied to the campus; basis (generation vs. site power vs. IT load) unclear"}
+      ]
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xAI-data-center-pollution-to-move-forward/",
+      "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
+      "publisher": "TechCrunch",
+      "publicationDate": "2026-10-31",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "denied xAI's motion to dismiss the NAACP's Clean Air Act suit over 27 gas turbines",
+      "note": "SITING RESTRICTION / legal-risk update, likely concerning tracked project xAI MACROHARDRR (Southaven, MS - slug xai-macrohardrr-southaven). U.S. District Judge Debra M. Brown (N.D. Miss.) denied xAI/MZX Tech's motion to dismiss the NAACP's Clean Air Act suit over 27 unpermitted gas turbines powering the Memphis-area data center, ruling issued Oct 30, 2026 (reported Oct 31). This only lets the claims proceed - it is not a finding of violation. A separate DOJ motion to dismiss was also rejected on Oct 19, 2026. NAMING CAUTION: press sometimes calls this Southaven, MS site 'Colossus 2', which risks confusion with the separately tracked 'xAI Colossus 2' project in Memphis, TN (slug xai-colossus-2-memphis) - please confirm which tracked entry this actually attaches to before recording. projectId omitted because the live tracker API (tracker.bepresearch.com) was unreachable from this sandbox this run (DNS/network blocked) - matched only against the local data/projects.json snapshot (generated 2026-11-26) by name. Could not re-verify exact wording via WebFetch (also blocked this run).",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://wreg.com/news/local/data-center-regulations-pass-on-1st-reading-in-city-council/amp/",
+      "title": "Memphis council rejects year-long data center moratorium, passes 135-day pause",
+      "publisher": "WREG",
+      "publicationDate": "2026-10-20",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "put a 135-day pause on data centers",
+      "note": "SITING RESTRICTION. Memphis City Council voted down a proposed 12- to 18-month data center moratorium on Oct 20, 2026, but passed a floor amendment imposing a 135-day pause, tied to a 90-day digital-infrastructure review Mayor Paul Young commissioned in early October 2026. Relevant backdrop for tracked Memphis-area xAI projects: xAI Colossus 2 (xai-colossus-2-memphis, TN) and xAI MACROHARDRR (xai-macrohardrr-southaven, MS, just across the state line). projectId omitted - the ordinance is citywide, not tied to one project, and the live tracker API was unreachable this run (see summary). This is from Oct 20 (~5 weeks old); flagging in case an earlier run has not already captured it. Could not re-verify exact wording via WebFetch (blocked this run).",
+      "submitterName": "BEP daily research agent (automated)"
+    },
+    {
+      "url": "https://baxtel.com/news/texas-governor-elect-pledges-moratorium-on-new-data-center-approvals",
+      "title": "Texas governor-elect pledges moratorium on new data center approvals",
+      "publisher": "Baxtel",
+      "publicationDate": "2026-11-04",
+      "sourceType": "NEWS_ARTICLE",
+      "excerpt": "could put 13.3 gigawatts of announced Texas data center projects at risk",
+      "note": "SITING RESTRICTION: statewide (Texas). Gina Hinojosa won the Texas governor's race on Nov 3-4, 2026, and pledged to issue a moratorium on all data center approvals until the Legislature passes new rules - effectively extending Gov. Abbott's existing Sept 21, 2026 TCEQ permitting freeze (tied to pending ERCOT/TWDB grid and water audits). Jefferies estimated the pledge could put 13.3 GW of announced Texas projects at risk. Potentially touches many tracked TX projects: Stargate Milam County, Microsoft Pecos, CyrusOne Freestone, Abilene Clean Campus (Crusoe), Aligned Caprock, Cipher Black Pearl, Compass Meridian, Crusoe Goodnight, Fluidstack Abernathy, IREN Childress, IREN Sweetwater, Meta El Paso, Nscale Barstow, QTS-Lancium Hall County, and Stargate Shackelford County. Hinojosa takes office Jan 19, 2027; the ERCOT audit (due mid-Dec 2026) and the Legislature's Jan 2027 session are the near-term items to watch. This is a high-impact but ~3.5-week-old development (election was Nov 3-4) - flagging in case an earlier daily run has not already captured it; treat as a known/duplicate candidate if so. Could not re-verify exact wording via WebFetch (blocked this run).",
+      "submitterName": "BEP daily research agent (automated)",
+      "claims": [
+        {"metricType": "POWER_MW", "numericValue": 13300, "unit": "MW", "confidenceLevel": "LOW", "methodology": "Jefferies estimate of Texas data center capacity 'at risk' from the moratorium pledge, as reported by secondary source; a portfolio-level estimate, not a single-project figure"}
+      ]
+    }
+  ]
+}
